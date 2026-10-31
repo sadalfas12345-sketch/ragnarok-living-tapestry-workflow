@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $cfg = Get-Content (Join-Path $root 'story_config.json') -Raw | ConvertFrom-Json
-$video = Join-Path $root 'ragnarok_v16.mp4'
+$video = Join-Path $root 'ragnarok_v17.mp4'
 $captions = Get-Content (Join-Path $root 'Captions_v18.srt') -Raw
 $failures = [System.Collections.Generic.List[string]]::new()
 

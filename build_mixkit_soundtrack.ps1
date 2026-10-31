@@ -40,5 +40,5 @@ Copy-Item $bed (Join-Path $root 'audio\music_stem_mixkit_ducked.wav') -Force
 
 # Replace only the audio stream; all video, captions, and visuals remain intact.
 $video = Join-Path $root 'final_vertical_1080x1920.mp4'
-$outVideo = Join-Path $root 'ragnarok_v16.mp4'
+$outVideo = Join-Path $root 'ragnarok_v17.mp4'
 & ffmpeg -y -hide_banner -loglevel error -i $video -i $final -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart $outVideo
