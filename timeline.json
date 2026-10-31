@@ -1,0 +1,398 @@
+{
+  "version": 2,
+  "master_clock": "audio/narration_v2.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 116.578,
+  "narration": {
+    "tempo_factor": 0.75,
+    "sentence_pause_seconds": 0.3,
+    "final_resonance_seconds": 2.0,
+    "sentences": [
+      {
+        "id": 1,
+        "scene": "S01",
+        "text": "What if the gods knew exactly how the world would end—and chose to face it anyway?",
+        "start": 0.0,
+        "end": 5.801,
+        "caption_start": 0.0,
+        "caption_end": 5.801
+      },
+      {
+        "id": 2,
+        "scene": "S01",
+        "text": "The Norse called that ending Ragnarök.",
+        "start": 6.101,
+        "end": 8.941,
+        "caption_start": 6.101,
+        "caption_end": 8.941
+      },
+      {
+        "id": 3,
+        "scene": "S02",
+        "text": "It began with three terrible winters, one after another.",
+        "start": 9.841,
+        "end": 14.341,
+        "caption_start": 9.841,
+        "caption_end": 14.341
+      },
+      {
+        "id": 4,
+        "scene": "S02",
+        "text": "No summer came.",
+        "start": 14.641,
+        "end": 15.901,
+        "caption_start": 14.641,
+        "caption_end": 15.901
+      },
+      {
+        "id": 5,
+        "scene": "S02",
+        "text": "Families turned against each other, and the world grew cold.",
+        "start": 16.201,
+        "end": 20.022,
+        "caption_start": 16.201,
+        "caption_end": 20.022
+      },
+      {
+        "id": 6,
+        "scene": "S03",
+        "text": "Then a wolf swallowed the sun.",
+        "start": 20.922,
+        "end": 23.187,
+        "caption_start": 20.922,
+        "caption_end": 23.187
+      },
+      {
+        "id": 7,
+        "scene": "S03",
+        "text": "Another seized the moon.",
+        "start": 23.487,
+        "end": 25.3,
+        "caption_start": 23.487,
+        "caption_end": 25.3
+      },
+      {
+        "id": 8,
+        "scene": "S03",
+        "text": "The stars vanished, and the roots of Yggdrasil, the world tree, began to shake.",
+        "start": 25.6,
+        "end": 31.768,
+        "caption_start": 25.6,
+        "caption_end": 31.768
+      },
+      {
+        "id": 9,
+        "scene": "S04",
+        "text": "Fenrir, the giant wolf, shattered his chains.",
+        "start": 32.668,
+        "end": 36.002,
+        "caption_start": 32.668,
+        "caption_end": 36.002
+      },
+      {
+        "id": 10,
+        "scene": "S04",
+        "text": "From the ocean rose Jörmungandr, the serpent that encircled the earth, dragging waves across the land.",
+        "start": 36.302,
+        "end": 44.147,
+        "caption_start": 36.302,
+        "caption_end": 44.147
+      },
+      {
+        "id": 11,
+        "scene": "S05",
+        "text": "Heimdall blew his horn.",
+        "start": 45.147,
+        "end": 46.834,
+        "caption_start": 45.147,
+        "caption_end": 46.834
+      },
+      {
+        "id": 12,
+        "scene": "S05",
+        "text": "The gods armed themselves, and Odin rode at their head.",
+        "start": 47.134,
+        "end": 51.04,
+        "caption_start": 47.134,
+        "caption_end": 51.04
+      },
+      {
+        "id": 13,
+        "scene": "S05",
+        "text": "The prophecy had told them how this battle would end.",
+        "start": 51.34,
+        "end": 54.638,
+        "caption_start": 51.34,
+        "caption_end": 54.638
+      },
+      {
+        "id": 14,
+        "scene": "S06",
+        "text": "Odin confronted Fenrir.",
+        "start": 55.638,
+        "end": 57.706,
+        "caption_start": 55.638,
+        "caption_end": 57.706
+      },
+      {
+        "id": 15,
+        "scene": "S06",
+        "text": "The wolf swallowed the king of the gods.",
+        "start": 58.006,
+        "end": 60.542,
+        "caption_start": 58.006,
+        "caption_end": 60.542
+      },
+      {
+        "id": 16,
+        "scene": "S06",
+        "text": "But Odin’s son, Víðarr, stepped forward and tore the beast apart.",
+        "start": 60.842,
+        "end": 65.762,
+        "caption_start": 60.842,
+        "caption_end": 65.762
+      },
+      {
+        "id": 17,
+        "scene": "S07",
+        "text": "Thor met the world serpent amid poisonous waves.",
+        "start": 66.762,
+        "end": 70.344,
+        "caption_start": 66.762,
+        "caption_end": 70.344
+      },
+      {
+        "id": 18,
+        "scene": "S07",
+        "text": "His hammer killed Jörmungandr.",
+        "start": 70.644,
+        "end": 72.896,
+        "caption_start": 70.644,
+        "caption_end": 72.896
+      },
+      {
+        "id": 19,
+        "scene": "S07",
+        "text": "Thor staggered nine steps away—then fell to the serpent’s venom.",
+        "start": 73.196,
+        "end": 78.102,
+        "caption_start": 73.196,
+        "caption_end": 78.102
+      },
+      {
+        "id": 20,
+        "scene": "S08",
+        "text": "And then Surtr came, his sword blazing brighter than the sun.",
+        "start": 79.102,
+        "end": 83.537,
+        "caption_start": 79.102,
+        "caption_end": 83.537
+      },
+      {
+        "id": 21,
+        "scene": "S08",
+        "text": "Fire swept across the battlefield, and the old world sank beneath the sea.",
+        "start": 83.837,
+        "end": 89.151,
+        "caption_start": 83.837,
+        "caption_end": 89.151
+      },
+      {
+        "id": 22,
+        "scene": "S09",
+        "text": "For a moment, nothing remained.",
+        "start": 91.151,
+        "end": 93.446,
+        "caption_start": 91.151,
+        "caption_end": 93.446
+      },
+      {
+        "id": 23,
+        "scene": "S09",
+        "text": "Then the water receded.",
+        "start": 93.746,
+        "end": 95.247,
+        "caption_start": 93.746,
+        "caption_end": 95.247
+      },
+      {
+        "id": 24,
+        "scene": "S09",
+        "text": "Green earth rose again.",
+        "start": 95.547,
+        "end": 97.267,
+        "caption_start": 95.547,
+        "caption_end": 97.267
+      },
+      {
+        "id": 25,
+        "scene": "S09",
+        "text": "The surviving gods returned, and two humans emerged to begin anew.",
+        "start": 97.567,
+        "end": 102.968,
+        "caption_start": 97.567,
+        "caption_end": 102.968
+      },
+      {
+        "id": 26,
+        "scene": "S10",
+        "text": "So Ragnarök was never only a prophecy of destruction.",
+        "start": 104.068,
+        "end": 107.552,
+        "caption_start": 104.068,
+        "caption_end": 107.552
+      },
+      {
+        "id": 27,
+        "scene": "S10",
+        "text": "It was a story of courage in the face of fate—and of life after the end.",
+        "start": 107.852,
+        "end": 114.578,
+        "caption_start": 107.852,
+        "caption_end": 114.578
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 8.941,
+      "end": 9.841,
+      "sentence_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 9.841,
+      "speech_end": 20.022,
+      "end": 20.922,
+      "sentence_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 20.922,
+      "speech_end": 31.768,
+      "end": 32.668,
+      "sentence_ids": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 32.668,
+      "speech_end": 44.147,
+      "end": 45.147,
+      "sentence_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 45.147,
+      "speech_end": 54.638,
+      "end": 55.638,
+      "sentence_ids": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 55.638,
+      "speech_end": 65.762,
+      "end": 66.762,
+      "sentence_ids": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "S07",
+      "asset": "assets/P07.png",
+      "start": 66.762,
+      "speech_end": 78.102,
+      "end": 79.102,
+      "sentence_ids": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "S08",
+      "asset": "assets/P08.png",
+      "start": 79.102,
+      "speech_end": 89.151,
+      "end": 91.151,
+      "sentence_ids": [
+        20,
+        21
+      ]
+    },
+    {
+      "id": "S09",
+      "asset": "assets/P09.png",
+      "start": 91.151,
+      "speech_end": 102.968,
+      "end": 104.068,
+      "sentence_ids": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "S10",
+      "asset": "assets/P10.png",
+      "start": 104.068,
+      "speech_end": 114.578,
+      "end": 114.578,
+      "sentence_ids": [
+        26,
+        27
+      ]
+    }
+  ],
+  "music": {
+    "intro": [
+      0.0,
+      9.841
+    ],
+    "drums": [
+      9.841,
+      45.147
+    ],
+    "battle": [
+      32.668,
+      91.151
+    ],
+    "rebirth": [
+      91.151,
+      114.578
+    ]
+  },
+  "sfx": {
+    "duck_to_narration": true,
+    "surtr_silence_start": 89.151,
+    "surtr_silence_end": 91.151
+  }
+}
