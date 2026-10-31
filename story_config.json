@@ -1,6 +1,6 @@
 {
   "title": "Ragnarök Living Tapestry",
-  "duration_seconds": 118,
+  "duration_seconds": 80.28,
   "format": { "width": 1080, "height": 1920, "fps": 30 },
   "scenes": [
     { "id": "S01", "start": 0.000, "end": 9.373, "asset": "assets/P01.png", "required_visuals": ["ending prophecy", "eclipse", "wolf"], "caption": "What if the gods knew exactly how the world would end—and chose to face it anyway? The Norse called that ending Ragnarök." },
