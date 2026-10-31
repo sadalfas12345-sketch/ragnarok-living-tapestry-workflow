@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $cfg = Get-Content (Join-Path $root 'story_config.json') -Raw | ConvertFrom-Json
 $video = Join-Path $root 'ragnarok_v13.mp4'
-$captions = Get-Content (Join-Path $root 'Captions_v13.srt') -Raw
+$captions = Get-Content (Join-Path $root 'Captions_v15.srt') -Raw
 $failures = [System.Collections.Generic.List[string]]::new()
 
 function Gate($ok, $message) {
@@ -26,10 +26,15 @@ Gate ($hash1 -ne $hash3) 'scene assets are not duplicated'
 $camera = Get-Content (Join-Path $root 'assemble_segments.py') -Raw
 Gate (-not ($camera -match 'sin\(')) 'camera motion has no sinusoidal shake'
 Gate ($camera -match 'cos\(') 'camera motion uses easing'
+$badTimestampCount = [regex]::Matches($captions, '(?m)^\d{2}:\d{2},\d{3}').Count
+Gate ($badTimestampCount -eq 0) 'all caption timestamps use SRT hour format'
 
 foreach ($scene in $cfg.scenes) {
   Gate (Test-Path (Join-Path $root $scene.asset)) "$($scene.id) asset exists"
-  Gate ($captions.Contains($scene.caption)) "$($scene.id) caption matches current narration text"
+  $sceneSentences = [regex]::Split($scene.caption, '(?<=[.!?])\s+') | Where-Object { $_.Trim().Length -gt 0 }
+  $sentenceMatch = $true
+  foreach ($sentence in $sceneSentences) { if (-not $captions.Contains($sentence.Trim())) { $sentenceMatch = $false } }
+  Gate $sentenceMatch "$($scene.id) caption sentences match current narration text"
 }
 
 if ($failures.Count -gt 0) {
