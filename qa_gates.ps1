@@ -1,8 +1,8 @@
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $cfg = Get-Content (Join-Path $root 'story_config.json') -Raw | ConvertFrom-Json
-$video = Join-Path $root 'ragnarok_v13.mp4'
-$captions = Get-Content (Join-Path $root 'Captions_v15.srt') -Raw
+$video = Join-Path $root 'ragnarok_v15.mp4'
+$captions = Get-Content (Join-Path $root 'Captions_v16.srt') -Raw
 $failures = [System.Collections.Generic.List[string]]::new()
 
 function Gate($ok, $message) {

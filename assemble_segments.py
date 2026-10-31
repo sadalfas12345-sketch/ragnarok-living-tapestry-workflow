@@ -10,7 +10,7 @@ for i,du in enumerate(d,1):
  subprocess.run(['ffmpeg','-y','-loop','1','-i',str(V/f'P{i:02d}.png'),'-vf',vf,'-frames:v',str(frames),'-an','-c:v','libx264','-preset','veryfast','-b:v','350k','-maxrate','450k','-bufsize','700k',str(out)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 lst=W/'concat.txt'; lst.write_text('\n'.join("file '"+str((W/f'S{i:02d}.mp4').resolve()).replace("'","'\\''")+"'" for i in range(1,11)),encoding='utf-8')
 vid=W/'video_only.mp4'; subprocess.run(['ffmpeg','-y','-f','concat','-safe','0','-i',str(lst),'-c','copy',str(vid)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-sub=str((R/'Captions_v15.srt').resolve()).replace('\\','/').replace(':','\\:')
+sub=str((R/'Captions_v16.srt').resolve()).replace('\\','/').replace(':','\\:')
 fc="[1:a]atempo=1.0[n];[2:a]volume=0.28[m];[3:a]volume=0.5[s];[n][m][s]amix=inputs=3:duration=longest:normalize=0,loudnorm=I=-14:TP=-1:LRA=11[a]"
 subf=f"subtitles=filename='{sub}':force_style='FontName=Georgia,FontSize=18,PrimaryColour=&H00F5F1E8,OutlineColour=&H80000000,BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginV=125'"
 subprocess.run(['ffmpeg','-y','-i',str(vid),'-i',str(A/'narration.wav'),'-i',str(A/'music.wav'),'-i',str(A/'sfx.wav'),'-filter_complex',fc,'-map','0:v','-map','[a]','-vf',subf,'-t','118','-r','30','-c:v','libx264','-preset','veryfast','-b:v','350k','-maxrate','450k','-bufsize','700k','-c:a','aac','-b:a','128k','-movflags','+faststart',str(R/'final_vertical_1080x1920.mp4')],check=True)
