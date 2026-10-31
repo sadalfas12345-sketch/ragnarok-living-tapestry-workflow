@@ -1,0 +1,14 @@
+name: Story QA
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gates:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run production QA gates
+        shell: pwsh
+        run: ./qa_gates.ps1

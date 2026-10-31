@@ -1,0 +1,17 @@
+{
+  "title": "Ragnarök Living Tapestry",
+  "duration_seconds": 118,
+  "format": { "width": 1080, "height": 1920, "fps": 30 },
+  "scenes": [
+    { "id": "S01", "start": 0.000, "end": 9.373, "asset": "assets/P01.png", "required_visuals": ["ending prophecy", "eclipse", "wolf"], "caption": "What if the gods knew exactly how the world would end—and chose to face it anyway? The Norse called that ending Ragnarök." },
+    { "id": "S02", "start": 9.373, "end": 21.449, "asset": "assets/P02.png", "required_visuals": ["three winters", "cold village", "families divided"], "caption": "It began with three terrible winters, one after another. No summer came. Families turned against each other, and the world grew cold." },
+    { "id": "S03", "start": 21.449, "end": 33.501, "asset": "assets/P03.png", "required_visuals": ["wolf", "moon", "stars vanishing", "Yggdrasil world tree", "shaking roots"], "caption": "Then a wolf swallowed the sun. Another seized the moon. The stars vanished, and the roots of Yggdrasil, the world tree, began to shake." },
+    { "id": "S04", "start": 33.501, "end": 45.663, "asset": "assets/P04.png", "required_visuals": ["Fenrir", "broken chains", "Jörmungandr", "ocean waves"], "caption": "Fenrir, the giant wolf, shattered his chains. From the ocean rose Jörmungandr, the serpent that encircled the earth, dragging waves across the land." },
+    { "id": "S05", "start": 45.663, "end": 57.327, "asset": "assets/P05.png", "required_visuals": ["Heimdall horn", "armed gods", "Odin"], "caption": "Heimdall blew his horn. The gods armed themselves, and Odin rode at their head. The prophecy had told them how this battle would end." },
+    { "id": "S06", "start": 57.327, "end": 69.318, "asset": "assets/P06.png", "required_visuals": ["Odin", "Fenrir", "Víðarr", "beast torn apart"], "caption": "Odin confronted Fenrir. The wolf swallowed the king of the gods. But Odin’s son, Víðarr, stepped forward and tore the beast apart." },
+    { "id": "S07", "start": 69.318, "end": 81.977, "asset": "assets/P07.png", "required_visuals": ["Thor", "hammer", "world serpent", "poisonous waves"], "caption": "Thor met the world serpent amid poisonous waves. His hammer killed Jörmungandr. Thor staggered nine steps away—then fell to the serpent’s venom." },
+    { "id": "S08", "start": 81.977, "end": 92.804, "asset": "assets/P08.png", "required_visuals": ["Surtr", "blazing sword", "battlefield fire", "old world sinking"], "caption": "And then Surtr came, his sword blazing brighter than the sun. Fire swept across the battlefield, and the old world sank beneath the sea." },
+    { "id": "S09", "start": 92.804, "end": 107.500, "asset": "assets/P09.png", "required_visuals": ["receding water", "green earth", "surviving gods", "two humans"], "caption": "For a moment, nothing remained. Then the water receded. Green earth rose again. The surviving gods returned, and two humans emerged to begin anew." },
+    { "id": "S10", "start": 107.500, "end": 118.000, "asset": "assets/P10.png", "required_visuals": ["renewal", "life after destruction"], "caption": "So Ragnarök was never only a prophecy of destruction. It was a story of courage in the face of fate—and of life after the end." }
+  ]
+}

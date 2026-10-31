@@ -1,0 +1,12 @@
+assets/*.png
+audio/*.wav
+audio/*.mp3
+audio/mixkit/*.mp3
+audio/mixkit/*.html
+video_segments/
+*.mp4
+*.jpg
+*.png
+*.log
+__pycache__/
+.venv/

@@ -1,0 +1,58 @@
+{
+  "project": "Ragnarok Living Tapestry",
+  "license_verified_at": "2026-10-31",
+  "license": {
+    "name": "Mixkit Stock Music Free License",
+    "url": "https://mixkit.co/license/modal/musicFree/",
+    "commercial_use": true,
+    "youtube_allowed": true,
+    "social_media_allowed": true,
+    "tiktok_intended_use": "User's TikTok account, original mythology film content",
+    "attribution_required": false,
+    "restrictions_observed": [
+      "No standalone music distribution",
+      "No music-only remix or incorporation into a music-only track",
+      "No rights-management or Content ID registration",
+      "No CD or DVD distribution",
+      "No television or radio broadcast"
+    ],
+    "evidence_file": "audio/mixkit/mixkit_music_free_license.html"
+  },
+  "tracks": [
+    {
+      "role": "Track A",
+      "title": "Epical Drums 05",
+      "artist": "Grigoriy Nuzhny",
+      "source_page": "https://mixkit.co/free-stock-music/orchestral-hybrid/",
+      "download_url": "https://assets.mixkit.co/music/680/680.mp3",
+      "local_file": "audio/mixkit/mixkit_epical_drums_05_grigoriy_nuzhny.mp3",
+      "intended_window": "00:20-00:45",
+      "use": "Approaching apocalypse, war drums, ominous escalation"
+    },
+    {
+      "role": "Track B",
+      "title": "Epic Games",
+      "artist": "Ahjay Stelino",
+      "source_page": "https://mixkit.co/free-stock-music/mood/tension/",
+      "download_url": "https://assets.mixkit.co/music/76/76.mp3",
+      "local_file": "audio/mixkit/mixkit_epic_games_ahjay_stelino.mp3",
+      "intended_window": "00:45-01:25",
+      "use": "Fenrir, Thor's final battle, Surtr's destruction"
+    },
+    {
+      "role": "Track C",
+      "title": "A New Life",
+      "artist": "Eugenio Mininni",
+      "source_page": "https://mixkit.co/free-stock-music/orchestral-hybrid/",
+      "download_url": "https://assets.mixkit.co/music/543/543.mp3",
+      "local_file": "audio/mixkit/mixkit_a_new_life_eugenio_mininni.mp3",
+      "intended_window": "01:40-01:58",
+      "use": "Peaceful rebirth of the world"
+    }
+  ],
+  "additional_sfx": {
+    "local_file": "audio/sfx_stem.wav",
+    "license_status": "Original synthesized project SFX retained from the source project; no third-party stock SFX added",
+    "content": ["Nordic horn", "thunder", "chains", "wolf howl", "ocean/serpent", "battle impacts", "flames", "embers", "wind", "birdsong"]
+  }
+}
