@@ -4,6 +4,11 @@ audio/*.mp3
 audio/mixkit/*.mp3
 audio/mixkit/*.html
 video_segments/
+ragnarok_living_tapestry_production.json
+Asset_audio_manifest.json
+Camera_timeline.csv
+QC_report.md
+Captions.srt
 *.mp4
 *.jpg
 *.png
