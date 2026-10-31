@@ -5,7 +5,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent
 audio = ROOT / "audio"
 out = audio / "narration_woman_compact.wav"
-gap_frames = 2880  # 120 ms at 24 kHz
+gap_frames = 6000  # 250 ms at 24 kHz
 
 parts = []
 sample_rate = None

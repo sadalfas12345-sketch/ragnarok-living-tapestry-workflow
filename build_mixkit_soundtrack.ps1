@@ -15,7 +15,7 @@ $final = Join-Path $root 'audio\final_mixed_audio_mixkit.wav'
 # rebirth cue enters only at the end.
 & ffmpeg -y -hide_banner -loglevel error `
   -i $a -i $a -i $b -i $c `
-  -filter_complex "[0:a]atrim=0:15,asetpts=PTS-STARTPTS,lowpass=f=1200,volume=0.35,afade=t=in:st=0:d=3,afade=t=out:st=12:d=3,adelay=0|0[intro];[1:a]atrim=20:36,asetpts=PTS-STARTPTS,volume=0.45,afade=t=in:st=0:d=2,afade=t=out:st=13:d=3,adelay=15000|15000[a];[2:a]atrim=0:34,asetpts=PTS-STARTPTS,volume=0.48,afade=t=in:st=0:d=3,afade=t=out:st=30:d=4,adelay=31000|31000[b];[3:a]atrim=0:10,asetpts=PTS-STARTPTS,volume=0.38,afade=t=in:st=0:d=3,afade=t=out:st=7:d=3,adelay=70000|70000[c];[intro][a][b][c]amix=inputs=4:duration=longest:dropout_transition=0,apad,atrim=0:80.28,asetpts=PTS-STARTPTS,equalizer=f=3000:t=q:w=1:g=-2,alimiter=limit=0.95[bed]" `
+  -filter_complex "[0:a]atrim=0:15,asetpts=PTS-STARTPTS,lowpass=f=1200,volume=0.35,afade=t=in:st=0:d=3,afade=t=out:st=12:d=3,adelay=0|0[intro];[1:a]atrim=20:36,asetpts=PTS-STARTPTS,volume=0.45,afade=t=in:st=0:d=2,afade=t=out:st=13:d=3,adelay=15000|15000[a];[2:a]atrim=0:34,asetpts=PTS-STARTPTS,volume=0.48,afade=t=in:st=0:d=3,afade=t=out:st=30:d=4,adelay=31000|31000[b];[3:a]atrim=0:10,asetpts=PTS-STARTPTS,volume=0.38,afade=t=in:st=0:d=3,afade=t=out:st=7:d=3,adelay=70000|70000[c];[intro][a][b][c]amix=inputs=4:duration=longest:dropout_transition=0,apad,atrim=0:81.45,asetpts=PTS-STARTPTS,equalizer=f=3000:t=q:w=1:g=-2,alimiter=limit=0.95[bed]" `
   -map "[bed]" -ar 48000 -ac 2 -c:a pcm_s24le $bed
 
 # Narration-driven ducking with smooth attack and release. The original
@@ -40,5 +40,5 @@ Copy-Item $bed (Join-Path $root 'audio\music_stem_mixkit_ducked.wav') -Force
 
 # Replace only the audio stream; all video, captions, and visuals remain intact.
 $video = Join-Path $root 'final_vertical_1080x1920.mp4'
-$outVideo = Join-Path $root 'ragnarok_v17.mp4'
+$outVideo = Join-Path $root 'ragnarok_final.mp4'
 & ffmpeg -y -hide_banner -loglevel error -i $video -i $final -map 0:v:0 -map 1:a:0 -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart $outVideo
