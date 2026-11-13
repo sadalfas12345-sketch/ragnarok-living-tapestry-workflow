@@ -1,0 +1,515 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 74.503,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "In an ancient Greek account, the gods fashioned Pandora and sent her among humans.",
+        "start": 0.0,
+        "end": 6.46
+      },
+      {
+        "scene": "S01",
+        "text": "She carried a sealed jar, though its contents were not hers to command.",
+        "start": 7.18,
+        "end": 11.72
+      },
+      {
+        "scene": "S02",
+        "text": "Epimetheus accepted the gift despite his brother Prometheus having warned him about presents from Zeus.",
+        "start": 12.66,
+        "end": 19.6
+      },
+      {
+        "scene": "S02",
+        "text": "The jar waited in their home, heavy with mystery.",
+        "start": 20.26,
+        "end": 23.38
+      },
+      {
+        "scene": "S03",
+        "text": "When Pandora removed its lid, afflictions escaped and spread into the human world.",
+        "start": 24.136,
+        "end": 31.26
+      },
+      {
+        "scene": "S03",
+        "text": "Illness, toil, and suffering could no longer be contained.",
+        "start": 31.76,
+        "end": 36.02
+      },
+      {
+        "scene": "S04",
+        "text": "She tried to close it.",
+        "start": 37.28,
+        "end": 38.86
+      },
+      {
+        "scene": "S04",
+        "text": "But the things already released moved beyond any human hand, turning a single moment into a permanent condition of life.",
+        "start": 39.06,
+        "end": 48.112
+      },
+      {
+        "scene": "S05",
+        "text": "Only Elpis remained inside the jar.",
+        "start": 49.18,
+        "end": 51.62
+      },
+      {
+        "scene": "S05",
+        "text": "That word is often rendered as hope, though scholars debate whether its confinement is comforting or troubling.",
+        "start": 51.62,
+        "end": 59.32
+      },
+      {
+        "scene": "S06",
+        "text": "Was hope preserved for humanity, or withheld?",
+        "start": 60.82,
+        "end": 63.58
+      },
+      {
+        "scene": "S06",
+        "text": "The oldest telling does not settle the answer neatly.",
+        "start": 64.3,
+        "end": 67.2
+      },
+      {
+        "scene": "S06",
+        "text": "That uncertainty is what keeps Pandora’s jar open in our imagination.",
+        "start": 67.94,
+        "end": 72.7
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "In an ancient Greek account,",
+        "start": 0.0,
+        "end": 2.0,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "the gods fashioned Pandora and sent her",
+        "start": 2.42,
+        "end": 5.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "among humans. She carried a sealed jar,",
+        "start": 5.52,
+        "end": 8.76,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "though its contents were not hers to",
+        "start": 9.04,
+        "end": 11.22,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "command.",
+        "start": 11.22,
+        "end": 11.72,
+        "word_count": 1
+      },
+      {
+        "scene": "S02",
+        "text": "Epimetheus accepted the gift despite his brother",
+        "start": 12.66,
+        "end": 15.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "Prometheus having warned him about presents from",
+        "start": 15.98,
+        "end": 19.12,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "Zeus. The jar waited in their home,",
+        "start": 19.12,
+        "end": 22.02,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "heavy with mystery.",
+        "start": 22.46,
+        "end": 23.38,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "When Pandora removed its lid,",
+        "start": 24.136,
+        "end": 27.0,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "afflictions escaped and spread into the human",
+        "start": 27.54,
+        "end": 30.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "world. Illness, toil,",
+        "start": 30.58,
+        "end": 33.0,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "and suffering could no longer be contained.",
+        "start": 33.16,
+        "end": 36.02,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "She tried to close it.",
+        "start": 37.28,
+        "end": 38.86,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "But the things already released moved beyond",
+        "start": 39.06,
+        "end": 42.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "any human hand,",
+        "start": 42.18,
+        "end": 43.7,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "turning a single moment into a permanent",
+        "start": 44.26,
+        "end": 46.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "condition of life.",
+        "start": 46.78,
+        "end": 48.112,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "Only Elpis remained inside the jar.",
+        "start": 49.18,
+        "end": 51.62,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "That word is often rendered as hope,",
+        "start": 51.62,
+        "end": 54.54,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "though scholars debate whether its confinement is",
+        "start": 55.04,
+        "end": 58.0,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "comforting or troubling.",
+        "start": 58.0,
+        "end": 59.32,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "Was hope preserved for humanity,",
+        "start": 60.82,
+        "end": 62.54,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "or withheld? The oldest telling does not",
+        "start": 62.54,
+        "end": 66.1,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "settle the answer neatly.",
+        "start": 66.1,
+        "end": 67.2,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "That uncertainty is what keeps Pandora’s jar",
+        "start": 67.94,
+        "end": 71.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "open in our imagination.",
+        "start": 71.24,
+        "end": 72.7,
+        "word_count": 4
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.72,
+      "end": 12.233,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.233
+      },
+      "measured_pause_after": 0.513
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.233,
+      "speech_end": 23.38,
+      "end": 24.136,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.233,
+        "end": 24.136
+      },
+      "measured_pause_after": 0.756
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 24.136,
+      "speech_end": 36.02,
+      "end": 36.899,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 24.136,
+        "end": 36.899
+      },
+      "measured_pause_after": 0.879
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 36.899,
+      "speech_end": 48.112,
+      "end": 48.912,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 36.899,
+        "end": 48.912
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 48.912,
+      "speech_end": 59.32,
+      "end": 60.521,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 48.912,
+        "end": 60.521
+      },
+      "measured_pause_after": 1.201
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 60.521,
+      "speech_end": 72.7,
+      "end": 74.503,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 60.521,
+        "end": 74.503
+      },
+      "measured_pause_after": 1.803
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "lyre harmonics, soft rattles, swelling low strings, whispering winds",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.233
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "lyre harmonics, soft rattles, swelling low strings, whispering winds",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.233,
+      "end": 24.136
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "lyre harmonics, soft rattles, swelling low strings, whispering winds",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 24.136,
+      "end": 36.899
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "lyre harmonics, soft rattles, swelling low strings, whispering winds",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 36.899,
+      "end": 48.912
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "lyre harmonics, soft rattles, swelling low strings, whispering winds",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 48.912,
+      "end": 60.521
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "lyre harmonics, soft rattles, swelling low strings, whispering winds",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 60.521,
+      "end": 74.503
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.233
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.233,
+      "end": 24.136
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 24.136,
+      "end": 36.899
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 36.899,
+      "end": 48.912
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 48.912,
+      "end": 60.521
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 60.521,
+      "end": 74.503
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "profile": "pandora_liminal_mystery",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Sun and His Daughter",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_sun_and_his_daughter_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_sun_and_his_daughter_eugenio_mininni.mp3"
+    },
+    {
+      "title": "Discover",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_discover_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_discover_eugenio_mininni.mp3"
+    },
+    {
+      "title": "Spirit in the Woods",
+      "artist": "Alejandro Magaña (A. M.)",
+      "url": "https://mixkit.co/free-stock-music/mood/mysterious/",
+      "file": "mixkit_spirit_in_the_woods_alejandro_magana.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_spirit_in_the_woods_alejandro_magana.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}
