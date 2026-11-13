@@ -1,0 +1,10 @@
+{
+  "episode": 3,
+  "workflow": "batch_01",
+  "voice": "en-US-AvaNeural",
+  "ffmpeg_binary": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "whisper_alignment": "in-process WAV resampling to 16 kHz",
+  "final_timeline_runtime_seconds": 66.02,
+  "final_video_runtime_seconds": 66.0,
+  "measurement_note": "Process-level resource sampling was not captured for this run; render and QA artifacts were measured directly."
+}

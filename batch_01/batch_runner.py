@@ -33,6 +33,19 @@ FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
 VOICE = os.environ.get("LIVING_TAPESTRIES_VOICE", "en-US-AvaNeural")
 
+MUSIC_PROFILES = {
+    "default": [
+        {"title": "Epical Drums 05", "artist": "Grigoriy Nuzhny", "url": "https://mixkit.co/free-stock-music/orchestral-hybrid/", "file": "mixkit_epical_drums_05_grigoriy_nuzhny.mp3"},
+        {"title": "Epic Games", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/mood/tension/", "file": "mixkit_epic_games_ahjay_stelino.mp3"},
+        {"title": "A New Life", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/orchestral-hybrid/", "file": "mixkit_a_new_life_eugenio_mininni.mp3"},
+    ],
+    3: [
+        {"title": "Fright Night", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/mood/suspenseful/", "file": "mixkit_fright_night_michael_ramir_c.mp3"},
+        {"title": "Valley Sunset", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_valley_sunset_alejandro_magana.mp3"},
+        {"title": "Silent Descent", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_silent_descent_eugenio_mininni.mp3"},
+    ],
+}
+
 
 def run(cmd: list[str], *, capture=False) -> str:
     p = subprocess.run(cmd, check=True, text=True, capture_output=capture)
@@ -155,8 +168,14 @@ def word_groups(words: list[dict[str, Any]], scene_start: float, scene_audio_sta
 def whisper_align(audio_path: Path) -> list[dict[str, Any]]:
     """Measure word onsets from the final narration waveform."""
     import whisper
+    from scipy.signal import resample_poly
     model = whisper.load_model(os.environ.get("WHISPER_MODEL", "tiny.en"))
-    result = model.transcribe(str(audio_path), language="en", word_timestamps=True, fp16=False, condition_on_previous_text=False)
+    audio, sample_rate = sf.read(str(audio_path), dtype="float32")
+    if audio.ndim > 1:
+        audio = audio.mean(axis=1)
+    if sample_rate != 16000:
+        audio = resample_poly(audio, 16000, sample_rate).astype("float32")
+    result = model.transcribe(audio, language="en", word_timestamps=True, fp16=False, condition_on_previous_text=False)
     measured = []
     for segment in result.get("segments", []):
         for word in segment.get("words", []):
@@ -302,7 +321,8 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     runtime = tl["runtime_seconds"]
     adir = epdir / "audio"
     mixdir = adir / "mixkit"; mixdir.mkdir(exist_ok=True)
-    tracks = [ROOT.parent / "audio" / "mixkit" / x for x in ("mixkit_epical_drums_05_grigoriy_nuzhny.mp3", "mixkit_epic_games_ahjay_stelino.mp3", "mixkit_a_new_life_eugenio_mininni.mp3")]
+    profile = MUSIC_PROFILES.get(spec["episode_number"], MUSIC_PROFILES["default"])
+    tracks = [ROOT.parent / "audio" / "mixkit" / item["file"] for item in profile]
     if not all(x.exists() for x in tracks):
         raise FileNotFoundError("Mixkit tracks missing from the existing licensed asset cache")
     music = adir / "music_stem.wav"
@@ -322,7 +342,7 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     final = adir / "final_mixed_audio.wav"
     mix = f"[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[narr][key];[1:a]aresample=48000,pan=stereo|c0=c0|c1=c1[music];[music][key]sidechaincompress=threshold=0.015:ratio=5:attack=60:release=700:makeup=1[duck];[2:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume=0.45[s];[narr][duck][s]amix=inputs=3:duration=longest:dropout_transition=0,atrim=0:{runtime:.3f},loudnorm=I=-14:TP=-1:LRA=11:print_format=summary[out]"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "warning", "-i", str(narration), "-i", str(music), "-i", str(sfx), "-filter_complex", mix, "-map", "[out]", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(final)])
-    (epdir / "music_sources.json").write_text(json.dumps({"license_policy": "commercial_use_true_attribution_required_false", "sources": [{"title": "Epical Drums 05", "artist": "Grigoriy Nuzhny", "url": "https://mixkit.co/free-stock-music/orchestral-hybrid/", "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": tracks[0].name}, {"title": "Epic Games", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/mood/tension/", "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": tracks[1].name}, {"title": "A New Life", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/orchestral-hybrid/", "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": tracks[2].name}], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization."}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (epdir / "music_sources.json").write_text(json.dumps({"profile": "midas_mystery_reflection" if spec["episode_number"] == 3 else "default_ragnarok_palette", "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     out = epdir / "final_vertical_1080x1920.mp4"
     video = epdir / "video_captioned.mp4"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(video), "-i", str(final), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)])
@@ -334,6 +354,13 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
 def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     tl = json.loads((epdir / "timeline.json").read_text(encoding="utf-8"))
     errors = []
+    sources_path = epdir / "music_sources.json"
+    if sources_path.exists():
+        sources = json.loads(sources_path.read_text(encoding="utf-8"))
+        if spec["episode_number"] == 3:
+            reused = {"Epical Drums 05", "Epic Games", "A New Life"}.intersection(item.get("title", "") for item in sources.get("sources", []))
+            if reused: errors.append("episode 3 reused default Ragnarok soundtrack: " + ", ".join(sorted(reused)))
+            if sources.get("profile") != "midas_mystery_reflection": errors.append("episode 3 music profile is not midas_mystery_reflection")
     narration_duration = duration(epdir / "audio" / "narration.wav")
     video_duration = duration(epdir / "final_vertical_1080x1920.mp4")
     if abs(narration_duration - tl["runtime_seconds"]) > 0.06: errors.append("narration duration disagrees with timeline")

@@ -1,0 +1,512 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 66.02,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "King Midas did a kindness for a companion of Dionysus.",
+        "start": 0.0,
+        "end": 4.68
+      },
+      {
+        "scene": "S01",
+        "text": "In return, the god offered him a reward.",
+        "start": 5.2,
+        "end": 8.14
+      },
+      {
+        "scene": "S01",
+        "text": "Midas chose the power to turn anything he touched into gold.",
+        "start": 8.94,
+        "end": 12.74
+      },
+      {
+        "scene": "S02",
+        "text": "At first it seemed perfect.",
+        "start": 13.54,
+        "end": 15.42
+      },
+      {
+        "scene": "S02",
+        "text": "A branch became treasure.",
+        "start": 16.04,
+        "end": 17.6
+      },
+      {
+        "scene": "S02",
+        "text": "A stone became treasure.",
+        "start": 18.42,
+        "end": 19.9
+      },
+      {
+        "scene": "S02",
+        "text": "The ordinary world glittered beneath his fingertips.",
+        "start": 20.46,
+        "end": 23.62
+      },
+      {
+        "scene": "S03",
+        "text": "Then Midas sat down to eat.",
+        "start": 24.78,
+        "end": 26.8
+      },
+      {
+        "scene": "S03",
+        "text": "Bread hardened into metal.",
+        "start": 27.38,
+        "end": 28.66
+      },
+      {
+        "scene": "S03",
+        "text": "Wine shone like gold, but could no longer nourish him.",
+        "start": 28.66,
+        "end": 33.235
+      },
+      {
+        "scene": "S04",
+        "text": "The king had acquired limitless riches, and lost the ability to enjoy the simplest meal.",
+        "start": 34.32,
+        "end": 40.44
+      },
+      {
+        "scene": "S04",
+        "text": "The blessing measured everything by value, except the value of living.",
+        "start": 41.06,
+        "end": 45.94
+      },
+      {
+        "scene": "S05",
+        "text": "Horrified, Midas begged Dionysus to take the gift away.",
+        "start": 47.28,
+        "end": 51.36
+      },
+      {
+        "scene": "S05",
+        "text": "The god directed him to wash in the river Pactolus.",
+        "start": 51.92,
+        "end": 55.48
+      },
+      {
+        "scene": "S06",
+        "text": "Midas entered the water and shed the fatal touch.",
+        "start": 56.96,
+        "end": 60.32
+      },
+      {
+        "scene": "S06",
+        "text": "He had learned too late that more wealth does not mean more life.",
+        "start": 61.04,
+        "end": 64.52
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "King Midas did a kindness for a",
+        "start": 0.0,
+        "end": 2.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "companion of Dionysus.",
+        "start": 2.74,
+        "end": 4.68,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "In return, the god offered him a",
+        "start": 5.2,
+        "end": 7.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "reward. Midas chose the power to turn",
+        "start": 7.66,
+        "end": 10.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "anything he touched into gold.",
+        "start": 10.84,
+        "end": 12.74,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "At first it seemed perfect.",
+        "start": 13.54,
+        "end": 15.42,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "A branch became treasure.",
+        "start": 16.04,
+        "end": 17.6,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "A stone became treasure.",
+        "start": 18.42,
+        "end": 19.9,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "The ordinary world glittered beneath his fingertips.",
+        "start": 20.46,
+        "end": 23.62,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "Then Midas sat down to eat.",
+        "start": 24.78,
+        "end": 26.8,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "Bread hardened into metal.",
+        "start": 27.38,
+        "end": 28.66,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "Wine shone like gold,",
+        "start": 28.66,
+        "end": 30.78,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "but could no longer nourish him.",
+        "start": 31.04,
+        "end": 33.235,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "The king had acquired limitless riches,",
+        "start": 34.32,
+        "end": 36.72,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "and lost the ability to enjoy the",
+        "start": 36.72,
+        "end": 39.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "simplest meal. The blessing measured everything by",
+        "start": 39.58,
+        "end": 43.16,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "value, except the value of living.",
+        "start": 43.16,
+        "end": 45.94,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "Horrified, Midas begged Dionysus to take the",
+        "start": 47.28,
+        "end": 50.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "gift away. The god directed him to",
+        "start": 50.84,
+        "end": 53.6,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "wash in the river Pactolus.",
+        "start": 53.6,
+        "end": 55.48,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "Midas entered the water and shed the",
+        "start": 56.96,
+        "end": 59.76,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "fatal touch. He had learned too late",
+        "start": 59.76,
+        "end": 62.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "that more wealth does not mean more",
+        "start": 62.08,
+        "end": 64.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "life.",
+        "start": 64.04,
+        "end": 64.52,
+        "word_count": 1
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.74,
+      "end": 13.215,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 13.215
+      },
+      "measured_pause_after": 0.475
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 13.215,
+      "speech_end": 23.62,
+      "end": 24.482,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 13.215,
+        "end": 24.482
+      },
+      "measured_pause_after": 0.862
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 24.482,
+      "speech_end": 33.235,
+      "end": 34.035,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 24.482,
+        "end": 34.035
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 34.035,
+      "speech_end": 45.94,
+      "end": 46.776,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 34.035,
+        "end": 46.776
+      },
+      "measured_pause_after": 0.836
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 46.776,
+      "speech_end": 55.48,
+      "end": 56.677,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 46.776,
+        "end": 56.677
+      },
+      "measured_pause_after": 1.197
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 56.677,
+      "speech_end": 64.52,
+      "end": 66.02,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 56.677,
+        "end": 66.02
+      },
+      "measured_pause_after": 1.5
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "kithara, playful mallets changing into hollow drones, metallic chimes",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 13.215
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "kithara, playful mallets changing into hollow drones, metallic chimes",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 13.215,
+      "end": 24.482
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "kithara, playful mallets changing into hollow drones, metallic chimes",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 24.482,
+      "end": 34.035
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "kithara, playful mallets changing into hollow drones, metallic chimes",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 34.035,
+      "end": 46.776
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "kithara, playful mallets changing into hollow drones, metallic chimes",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 46.776,
+      "end": 56.677
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "kithara, playful mallets changing into hollow drones, metallic chimes",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 56.677,
+      "end": 66.02
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 13.215
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 13.215,
+      "end": 24.482
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 24.482,
+      "end": 34.035
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 34.035,
+      "end": 46.776
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 46.776,
+      "end": 56.677
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 56.677,
+      "end": 66.02
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "profile": "midas_mystery_reflection",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Fright Night",
+      "artist": "Michael Ramir C.",
+      "url": "https://mixkit.co/free-stock-music/mood/suspenseful/",
+      "file": "mixkit_fright_night_michael_ramir_c.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_fright_night_michael_ramir_c.mp3"
+    },
+    {
+      "title": "Valley Sunset",
+      "artist": "Alejandro Magaña (A. M.)",
+      "url": "https://mixkit.co/free-stock-music/mood/mysterious/",
+      "file": "mixkit_valley_sunset_alejandro_magana.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_valley_sunset_alejandro_magana.mp3"
+    },
+    {
+      "title": "Silent Descent",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_silent_descent_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_silent_descent_eugenio_mininni.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

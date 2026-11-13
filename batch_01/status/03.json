@@ -1,0 +1,18 @@
+{
+  "episode": 3,
+  "source_file": "03_midas.json",
+  "source_sha256": "e9e0ccd1d8cefde63cb63aaa750c6bdd888e4876fd1a83e843016b7e6de89bbf",
+  "updated_at": "2026-11-13T14:32:18.917064+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
