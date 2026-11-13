@@ -14,4 +14,13 @@ Captions.srt
 *.png
 *.log
 __pycache__/
+batch_01/source_batch01.zip
+batch_01/episodes/*/audio/
+batch_01/episodes/*/segments/
+batch_01/episodes/*/*.mp4
+batch_01/episodes/*/*.wav
+batch_01/episodes/*/*.mp3
+batch_01/episodes/*/caption_audit/
+batch_01/episodes/*/assets/
+batch_01/episodes/*/references/
 .venv/

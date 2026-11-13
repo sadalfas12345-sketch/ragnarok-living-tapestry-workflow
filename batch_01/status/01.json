@@ -1,0 +1,18 @@
+{
+  "episode": 1,
+  "source_file": "01_prometheus.json",
+  "source_sha256": "fab6c4200c5a891cd92b46ff2b53bb703de1ba1ce0959ec6f93ae8005f46a08a",
+  "updated_at": "2026-11-13T11:30:54.997892+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

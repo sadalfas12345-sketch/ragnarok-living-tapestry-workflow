@@ -1,0 +1,275 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 29,
+  "slug": "29_sundiata",
+  "title": "Sundiata: The Lion Who Built Mali",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "oral epic, resilience",
+  "civilization": "Manding / West Africa",
+  "source_integrity": {
+    "primary_source_or_tradition": "Epic of Sunjata; Manding oral narratives, varying by griot and period",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Sundiata: The Lion Who Built Mali in Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "Sunjata Keita",
+      "Sogolon",
+      "Sumanguru"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "The epic of Sunjata tells of a boy whose early difficulties made others doubt him. His mother Sogolon endured ridicule, while rivals plotted around the court.",
+      "beat_title": "The child underestimated",
+      "required_visuals": [
+        "Manding royal courtyard",
+        "mother holding young Sunjata"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Scene: Manding royal courtyard, mother holding young Sunjata. The source story is Sundiata: The Lion Who Built Mali. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "In a celebrated episode, Sunjata rises and shows strength that surprises everyone. Oral versions differ, but the moment becomes a symbol of possibility.",
+      "beat_title": "Standing",
+      "required_visuals": [
+        "young hero stands beneath iron rod or baobab imagery"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Scene: young hero stands beneath iron rod or baobab imagery. The source story is Sundiata: The Lion Who Built Mali. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "Court rivalries forced Sunjata and his family away from their home. They survived through networks of welcome and loyalty beyond the palace walls.",
+      "beat_title": "Exile",
+      "required_visuals": [
+        "family caravan crosses Sahel and river lands"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Scene: family caravan crosses Sahel and river lands. The source story is Sundiata: The Lion Who Built Mali. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "When the ruler Sumanguru threatened the region, Sunjata returned with allies gathered across communities. His power depended on coalition, not bloodline alone.",
+      "beat_title": "Return",
+      "required_visuals": [
+        "allied banners meet beneath Sahelian city walls"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Scene: allied banners meet beneath Sahelian city walls. The source story is Sundiata: The Lion Who Built Mali. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "The epic associates his victory with the battle of Kirina. Details of the contest belong to oral traditions that are not identical to a modern military record.",
+      "beat_title": "The battle",
+      "required_visuals": [
+        "Manding cavalry and infantry in symbolic battle frieze"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Scene: Manding cavalry and infantry in symbolic battle frieze. The source story is Sundiata: The Lion Who Built Mali. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "Sunjata became the founding figure of the Mali Empire in collective memory. His story is preserved through living griot performance, where history and meaning travel together.",
+      "beat_title": "The foundation",
+      "required_visuals": [
+        "griot plays instrument before mud-brick city and families"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Manding-inspired carved relief and illuminated Sahelian architecture, indigo cloth, ochre mud-brick, gold dust. Scene: griot plays instrument before mud-brick city and families. The source story is Sundiata: The Lion Who Built Mali. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

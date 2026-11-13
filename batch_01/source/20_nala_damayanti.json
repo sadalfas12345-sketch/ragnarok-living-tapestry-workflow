@@ -1,0 +1,277 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 20,
+  "slug": "20_nala_damayanti",
+  "title": "Nala and Damayanti: The King Who Lost Everything",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "epic, love and loss",
+  "civilization": "Ancient India",
+  "source_integrity": {
+    "primary_source_or_tradition": "Mahabharata, Nala-Damayanti episode",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Nala and Damayanti: The King Who Lost Everything in Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "Nala",
+      "Damayanti",
+      "Kali",
+      "Pushkara"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "sarangi, veena, gentle tabla, sorrowful flute",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "Damayanti chose King Nala despite the gods appearing among her suitors. Their union began with devotion, but happiness would not protect them from disaster.",
+      "beat_title": "A chosen love",
+      "required_visuals": [
+        "royal swayamvara scene",
+        "Damayanti garlands Nala"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Scene: royal swayamvara scene, Damayanti garlands Nala. The source story is Nala and Damayanti: The King Who Lost Everything. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "Nala fell under a ruinous influence and lost his kingdom at dice to his brother Pushkara. With power gone, the couple entered the wilderness.",
+      "beat_title": "The dice",
+      "required_visuals": [
+        "dice board before vanishing palace"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Scene: dice board before vanishing palace. The source story is Nala and Damayanti: The King Who Lost Everything. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "Exhausted and ashamed, Nala abandoned Damayanti while she slept. She woke alone in a forest full of danger and set out to find him.",
+      "beat_title": "Separation",
+      "required_visuals": [
+        "forest clearing",
+        "abandoned queen waking beside empty cloak"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Scene: forest clearing, abandoned queen waking beside empty cloak. The source story is Nala and Damayanti: The King Who Lost Everything. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "Nala wandered in disguise, learned new skills, and struggled with regret. Damayanti refused to accept that their story was finished.",
+      "beat_title": "Transformation",
+      "required_visuals": [
+        "disguised charioteer and determined queen in parallel miniatures"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Scene: disguised charioteer and determined queen in parallel miniatures. The source story is Nala and Damayanti: The King Who Lost Everything. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Through ingenuity and careful tests, Damayanti discovered Nala’s whereabouts. The two could finally speak after years of fear and separation.",
+      "beat_title": "Recognition",
+      "required_visuals": [
+        "recognition between disguised man and queen at palace"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Scene: recognition between disguised man and queen at palace. The source story is Nala and Damayanti: The King Who Lost Everything. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "Nala recovered his position, but the deeper victory was their reunion. The tale understands that pride can destroy what misfortune alone could not.",
+      "beat_title": "Restoration",
+      "required_visuals": [
+        "couple reunited amid restored gardens"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns. Scene: couple reunited amid restored gardens. The source story is Nala and Damayanti: The King Who Lost Everything. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

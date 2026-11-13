@@ -1,0 +1,280 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 25,
+  "slug": "25_dancing_plague",
+  "title": "Strasbourg 1518: The Dancing Plague",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "history, social mystery",
+  "civilization": "Holy Roman Empire, Strasbourg, 1518",
+  "source_integrity": {
+    "primary_source_or_tradition": "Early accounts of the 1518 dancing outbreak; causes debated",
+    "classification": "historical_reconstruction_with_disputed_details",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Strasbourg 1518: The Dancing Plague in Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "town residents",
+      "civic authorities"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "In the summer of 1518, people in Strasbourg began dancing uncontrollably. Contemporary and later accounts describe a troubling outbreak that baffled the city.",
+      "beat_title": "An impossible sight",
+      "required_visuals": [
+        "crowded Renaissance square",
+        "figure dancing beneath clock"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: crowded Renaissance square, figure dancing beneath clock. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "Reports describe more people joining, some apparently unable to stop. The numbers and exact details vary in the sources, but the episode became notorious.",
+      "beat_title": "The spread",
+      "required_visuals": [
+        "lines of dancers spread through timbered square"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: lines of dancers spread through timbered square. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "Authorities tried measures that included organizing space and musicians for the dancers. Those choices reflected theories about the illness that we would not share today.",
+      "beat_title": "The response",
+      "required_visuals": [
+        "town council and musicians at raised platform"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: town council and musicians at raised platform. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "Chroniclers reported exhaustion and suffering. Claims about large numbers of deaths are much less securely documented than popular retellings suggest.",
+      "beat_title": "The danger",
+      "required_visuals": [
+        "exhausted dancers on benches",
+        "rain in square"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: exhausted dancers on benches, rain in square. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Modern historians have considered stress, belief, disease and social contagion. No single cause has been proved from the surviving evidence.",
+      "beat_title": "The explanations",
+      "required_visuals": [
+        "woodcut panels: famine field",
+        "saints",
+        "crowd",
+        "physician"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: woodcut panels: famine field, saints, crowd, physician. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "What remains is a city confronting behavior it could not control, while leaders acted without understanding its mechanism. The strangest part may be the response.",
+      "beat_title": "The mystery",
+      "required_visuals": [
+        "empty street",
+        "abandoned shoes",
+        "clock continues"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: empty street, abandoned shoes, clock continues. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

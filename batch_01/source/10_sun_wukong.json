@@ -1,0 +1,275 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 10,
+  "slug": "10_sun_wukong",
+  "title": "Sun Wukong: The Monkey Who Challenged Heaven",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "myth, trickster",
+  "civilization": "China",
+  "source_integrity": {
+    "primary_source_or_tradition": "Journey to the West, early chapters; Ming novel",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Sun Wukong: The Monkey Who Challenged Heaven in Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "Sun Wukong",
+      "Jade Emperor",
+      "Buddha"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "dizi, gongs, nimble plucked strings, chaotic percussion",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "Sun Wukong rose from a stone egg and became king of the monkeys. But victories on earth were not enough; he wanted recognition from Heaven itself.",
+      "beat_title": "A monkey king",
+      "required_visuals": [
+        "stone monkey bursts from mountain",
+        "monkey court"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Scene: stone monkey bursts from mountain, monkey court. The source story is Sun Wukong: The Monkey Who Challenged Heaven. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "The celestial court gave him a minor post, thinking it would contain him. When he learned how little the title meant, the Monkey King rebelled.",
+      "beat_title": "The insult",
+      "required_visuals": [
+        "small monkey facing immense bureaucratic heavenly court"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Scene: small monkey facing immense bureaucratic heavenly court. The source story is Sun Wukong: The Monkey Who Challenged Heaven. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "He stole celestial peaches, disrupted a banquet, and survived attempts to destroy him. Even heavenly troops struggled to bring him to heel.",
+      "beat_title": "The havoc",
+      "required_visuals": [
+        "monkey with staff through palace clouds and peach trees"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Scene: monkey with staff through palace clouds and peach trees. The source story is Sun Wukong: The Monkey Who Challenged Heaven. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "At last the Buddha challenged him to escape the palm of his hand. Wukong leapt to what he thought was the end of the universe.",
+      "beat_title": "The wager",
+      "required_visuals": [
+        "monkey bounding across five mountains and cosmic clouds"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Scene: monkey bounding across five mountains and cosmic clouds. The source story is Sun Wukong: The Monkey Who Challenged Heaven. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "The pillars he marked were only fingers. His limitless journey had never left the Buddha’s palm. A mountain then held him fast.",
+      "beat_title": "The revelation",
+      "required_visuals": [
+        "five giant fingers become enclosing mountain"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Scene: five giant fingers become enclosing mountain. The source story is Sun Wukong: The Monkey Who Challenged Heaven. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "His story did not end in defeat. Later, the same unruly strength would be redirected into a pilgrimage, where power had to learn restraint.",
+      "beat_title": "The next chapter",
+      "required_visuals": [
+        "pilgrim path departs from mountain into sunrise"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Ming-dynasty woodblock illustration with cloud scrolls, jade palace, cinnabar accents. Scene: pilgrim path departs from mountain into sunrise. The source story is Sun Wukong: The Monkey Who Challenged Heaven. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

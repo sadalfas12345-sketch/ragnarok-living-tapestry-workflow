@@ -1,0 +1,217 @@
+{
+  "schema": "living_tapestry_batch_validation_v1",
+  "count": 30,
+  "reports": [
+    {
+      "episode": 1,
+      "file": "01_prometheus.json",
+      "title": "Prometheus: The God Who Stole Fire",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 2,
+      "file": "02_icarus.json",
+      "title": "Icarus: The Flight That Went Too High",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 3,
+      "file": "03_midas.json",
+      "title": "Midas: The King Whose Wish Became a Curse",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 4,
+      "file": "04_pandora.json",
+      "title": "Pandora: The Jar That Changed the World",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 5,
+      "file": "05_orpheus.json",
+      "title": "Orpheus: The Song That Almost Defeated Death",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 6,
+      "file": "06_amaterasu.json",
+      "title": "Amaterasu: When the Sun Hid Away",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 7,
+      "file": "07_houyi.json",
+      "title": "Hou Yi: The Archer Who Shot the Suns",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 8,
+      "file": "08_yuki_onna.json",
+      "title": "Yuki-onna: The Woman in the Snow",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 9,
+      "file": "09_honnoji.json",
+      "title": "Honnō-ji: The General Who Betrayed Nobunaga",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 10,
+      "file": "10_sun_wukong.json",
+      "title": "Sun Wukong: The Monkey Who Challenged Heaven",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 11,
+      "file": "11_osiris.json",
+      "title": "Osiris: The Murdered King of the Afterlife",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 12,
+      "file": "12_inanna.json",
+      "title": "Inanna: The Goddess Who Went Below",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 13,
+      "file": "13_sekhmet.json",
+      "title": "Sekhmet: When the Sun Sent Its Wrath",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 14,
+      "file": "14_atrahasis.json",
+      "title": "Atrahasis: The Flood Sent by the Gods",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 15,
+      "file": "15_isis_scorpions.json",
+      "title": "Isis and the Seven Scorpions",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 16,
+      "file": "16_arjuna.json",
+      "title": "Arjuna: The Warrior Who Would Not Fight",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 17,
+      "file": "17_savitri.json",
+      "title": "Savitri: The Woman Who Bargained With Death",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 18,
+      "file": "18_rostam_sohrab.json",
+      "title": "Rostam and Sohrab: Father Against Son",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 19,
+      "file": "19_fisherman_jinni.json",
+      "title": "The Fisherman and the Jinni",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 20,
+      "file": "20_nala_damayanti.json",
+      "title": "Nala and Damayanti: The King Who Lost Everything",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 21,
+      "file": "21_lancelot.json",
+      "title": "Lancelot and Guinevere: Love Against a Kingdom",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 22,
+      "file": "22_constantinople.json",
+      "title": "Constantinople 1453: The Last Walls",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 23,
+      "file": "23_joan_arc.json",
+      "title": "Joan of Arc: The Girl on Trial",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 24,
+      "file": "24_princes_tower.json",
+      "title": "The Princes in the Tower: A Vanishing",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 25,
+      "file": "25_dancing_plague.json",
+      "title": "Strasbourg 1518: The Dancing Plague",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 26,
+      "file": "26_hero_twins.json",
+      "title": "The Maya Hero Twins and the Lords of Death",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 27,
+      "file": "27_anansi.json",
+      "title": "Anansi: How Stories Came to Earth",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 28,
+      "file": "28_maui.json",
+      "title": "Māui: The Hero Who Fished Up Islands",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 29,
+      "file": "29_sundiata.json",
+      "title": "Sundiata: The Lion Who Built Mali",
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "episode": 30,
+      "file": "30_roanoke.json",
+      "title": "Roanoke: The Colony That Disappeared",
+      "errors": [],
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

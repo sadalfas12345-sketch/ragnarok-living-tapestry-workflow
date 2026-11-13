@@ -1,0 +1,494 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 71.609,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Before humans mastered fire, one Titan dared to defy Zeus.",
+        "start": 0.0,
+        "end": 5.22
+      },
+      {
+        "scene": "S01",
+        "text": "Prometheus saw people shivering in darkness and decided they deserved more than the gods allowed.",
+        "start": 5.92,
+        "end": 12.0
+      },
+      {
+        "scene": "S02",
+        "text": "He stole a spark from the divine realm, hiding it in a hollow fennel stalk.",
+        "start": 12.8,
+        "end": 18.02
+      },
+      {
+        "scene": "S02",
+        "text": "As the flame passed from hand to hand, night changed forever.",
+        "start": 18.6,
+        "end": 22.92
+      },
+      {
+        "scene": "S03",
+        "text": "Fire cooked food, warmed shelters, and made metalwork possible.",
+        "start": 23.688,
+        "end": 28.52
+      },
+      {
+        "scene": "S03",
+        "text": "In the myth, a single stolen gift shifted the balance between immortals and mortals.",
+        "start": 29.12,
+        "end": 35.131
+      },
+      {
+        "scene": "S04",
+        "text": "Zeus answered not with gratitude, but punishment.",
+        "start": 36.3,
+        "end": 39.34
+      },
+      {
+        "scene": "S04",
+        "text": "He ordered Prometheus chained to a remote rock, where a great eagle would tear at his liver.",
+        "start": 40.16,
+        "end": 46.22
+      },
+      {
+        "scene": "S05",
+        "text": "The wound renewed, and the torment returned.",
+        "start": 47.36,
+        "end": 50.14
+      },
+      {
+        "scene": "S05",
+        "text": "Each day the bird descended again.",
+        "start": 50.14,
+        "end": 52.86
+      },
+      {
+        "scene": "S05",
+        "text": "Yet the Titan remained the figure who had chosen suffering over obedience.",
+        "start": 53.42,
+        "end": 57.66
+      },
+      {
+        "scene": "S06",
+        "text": "His story leaves a question burning: when power withholds something essential, is taking it theft, or liberation?",
+        "start": 59.22,
+        "end": 66.94
+      },
+      {
+        "scene": "S06",
+        "text": "The flame still shines between them.",
+        "start": 67.84,
+        "end": 70.109
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Before humans mastered fire one Titan dared",
+        "start": 0.0,
+        "end": 4.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "to defy Zeus Prometheus saw people shivering",
+        "start": 4.06,
+        "end": 7.6,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "in darkness and decided they deserved more",
+        "start": 7.6,
+        "end": 10.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "than the gods allowed",
+        "start": 10.8,
+        "end": 12.0,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "He stole a spark from the divine",
+        "start": 12.8,
+        "end": 14.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "realm hiding it in a hollow fennel",
+        "start": 14.82,
+        "end": 17.56,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "stalk As the flame passed from hand",
+        "start": 17.56,
+        "end": 20.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "to hand night changed forever",
+        "start": 20.4,
+        "end": 22.92,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Fire cooked food warmed shelters and made",
+        "start": 23.688,
+        "end": 27.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "metalwork possible In the myth a single",
+        "start": 27.36,
+        "end": 30.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "stolen gift shifted the balance between immortals",
+        "start": 30.74,
+        "end": 34.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "and mortals",
+        "start": 34.18,
+        "end": 35.131,
+        "word_count": 2
+      },
+      {
+        "scene": "S04",
+        "text": "Zeus answered not with gratitude but punishment",
+        "start": 36.3,
+        "end": 39.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "He ordered Prometheus chained to a remote",
+        "start": 40.16,
+        "end": 42.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "rock where a great eagle would tear",
+        "start": 42.8,
+        "end": 45.5,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "at his liver",
+        "start": 45.5,
+        "end": 46.22,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "The wound renewed and the torment returned",
+        "start": 47.36,
+        "end": 50.14,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "Each day the bird descended again Yet",
+        "start": 50.14,
+        "end": 53.64,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "the Titan remained the figure who had",
+        "start": 53.64,
+        "end": 55.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "chosen suffering over obedience",
+        "start": 55.66,
+        "end": 57.66,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "His story leaves a question burning when",
+        "start": 59.22,
+        "end": 61.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "power withholds something essential is taking it",
+        "start": 61.84,
+        "end": 65.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "theft or liberation The flame still shines",
+        "start": 65.34,
+        "end": 69.26,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "between them",
+        "start": 69.26,
+        "end": 70.109,
+        "word_count": 2
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.0,
+      "end": 12.466,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.466
+      },
+      "measured_pause_after": 0.466
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.466,
+      "speech_end": 22.92,
+      "end": 23.688,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.466,
+        "end": 23.688
+      },
+      "measured_pause_after": 0.768
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 23.688,
+      "speech_end": 35.131,
+      "end": 35.931,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 23.688,
+        "end": 35.931
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 35.931,
+      "speech_end": 46.22,
+      "end": 47.112,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 35.931,
+        "end": 47.112
+      },
+      "measured_pause_after": 0.892
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 47.112,
+      "speech_end": 57.66,
+      "end": 58.868,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 47.112,
+        "end": 58.868
+      },
+      "measured_pause_after": 1.208
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 58.868,
+      "speech_end": 70.109,
+      "end": 71.609,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 58.868,
+        "end": 71.609
+      },
+      "measured_pause_after": 1.5
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "low aulos, deep frame drums, bronze strikes, ember crackle",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.466
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "low aulos, deep frame drums, bronze strikes, ember crackle",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.466,
+      "end": 23.688
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "low aulos, deep frame drums, bronze strikes, ember crackle",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 23.688,
+      "end": 35.931
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "low aulos, deep frame drums, bronze strikes, ember crackle",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 35.931,
+      "end": 47.112
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "low aulos, deep frame drums, bronze strikes, ember crackle",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 47.112,
+      "end": 58.868
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "low aulos, deep frame drums, bronze strikes, ember crackle",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 58.868,
+      "end": 71.609
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.466
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.466,
+      "end": 23.688
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 23.688,
+      "end": 35.931
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 35.931,
+      "end": 47.112
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 47.112,
+      "end": 58.868
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 58.868,
+      "end": 71.609
+    }
+  ]
+}
