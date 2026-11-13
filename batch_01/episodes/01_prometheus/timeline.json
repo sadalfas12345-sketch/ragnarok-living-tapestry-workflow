@@ -89,31 +89,38 @@
     "captions": [
       {
         "scene": "S01",
-        "text": "Before humans mastered fire one Titan dared",
+        "text": "Before humans mastered fire,",
         "start": 0.0,
-        "end": 4.06,
-        "word_count": 7
-      },
-      {
-        "scene": "S01",
-        "text": "to defy Zeus Prometheus saw people shivering",
-        "start": 4.06,
-        "end": 7.6,
-        "word_count": 7
-      },
-      {
-        "scene": "S01",
-        "text": "in darkness and decided they deserved more",
-        "start": 7.6,
-        "end": 10.8,
-        "word_count": 7
-      },
-      {
-        "scene": "S01",
-        "text": "than the gods allowed",
-        "start": 10.8,
-        "end": 12.0,
+        "end": 2.5,
         "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "one Titan dared to defy Zeus.",
+        "start": 2.96,
+        "end": 5.22,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "Prometheus saw people shivering in darkness and",
+        "start": 5.92,
+        "end": 9.02,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "decided they deserved more than the gods",
+        "start": 9.02,
+        "end": 11.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "allowed.",
+        "start": 11.42,
+        "end": 12.0,
+        "word_count": 1
       },
       {
         "scene": "S02",
@@ -124,136 +131,164 @@
       },
       {
         "scene": "S02",
-        "text": "realm hiding it in a hollow fennel",
+        "text": "realm, hiding it in a hollow fennel",
         "start": 14.82,
         "end": 17.56,
         "word_count": 7
       },
       {
         "scene": "S02",
-        "text": "stalk As the flame passed from hand",
+        "text": "stalk. As the flame passed from hand",
         "start": 17.56,
         "end": 20.4,
         "word_count": 7
       },
       {
         "scene": "S02",
-        "text": "to hand night changed forever",
+        "text": "to hand, night changed forever.",
         "start": 20.4,
         "end": 22.92,
         "word_count": 5
       },
       {
         "scene": "S03",
-        "text": "Fire cooked food warmed shelters and made",
+        "text": "Fire cooked food,",
         "start": 23.688,
-        "end": 27.36,
+        "end": 25.3,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "warmed shelters, and made metalwork possible.",
+        "start": 25.88,
+        "end": 28.52,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "In the myth,",
+        "start": 29.12,
+        "end": 29.8,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "a single stolen gift shifted the balance",
+        "start": 30.16,
+        "end": 32.88,
         "word_count": 7
       },
       {
         "scene": "S03",
-        "text": "metalwork possible In the myth a single",
-        "start": 27.36,
-        "end": 30.74,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "stolen gift shifted the balance between immortals",
-        "start": 30.74,
-        "end": 34.18,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "and mortals",
-        "start": 34.18,
+        "text": "between immortals and mortals.",
+        "start": 32.88,
         "end": 35.131,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "Zeus answered not with gratitude,",
+        "start": 36.3,
+        "end": 38.18,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "but punishment. He ordered Prometheus chained to",
+        "start": 38.54,
+        "end": 42.26,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "a remote rock,",
+        "start": 42.26,
+        "end": 43.22,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "where a great eagle would tear at",
+        "start": 43.64,
+        "end": 45.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "his liver.",
+        "start": 45.66,
+        "end": 46.22,
         "word_count": 2
       },
       {
-        "scene": "S04",
-        "text": "Zeus answered not with gratitude but punishment",
-        "start": 36.3,
-        "end": 39.34,
-        "word_count": 7
-      },
-      {
-        "scene": "S04",
-        "text": "He ordered Prometheus chained to a remote",
-        "start": 40.16,
-        "end": 42.8,
-        "word_count": 7
-      },
-      {
-        "scene": "S04",
-        "text": "rock where a great eagle would tear",
-        "start": 42.8,
-        "end": 45.5,
-        "word_count": 7
-      },
-      {
-        "scene": "S04",
-        "text": "at his liver",
-        "start": 45.5,
-        "end": 46.22,
+        "scene": "S05",
+        "text": "The wound renewed,",
+        "start": 47.36,
+        "end": 48.34,
         "word_count": 3
       },
       {
         "scene": "S05",
-        "text": "The wound renewed and the torment returned",
-        "start": 47.36,
+        "text": "and the torment returned.",
+        "start": 48.34,
         "end": 50.14,
-        "word_count": 7
+        "word_count": 4
       },
       {
         "scene": "S05",
-        "text": "Each day the bird descended again Yet",
+        "text": "Each day the bird descended again.",
         "start": 50.14,
-        "end": 53.64,
+        "end": 52.86,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "Yet the Titan remained the figure who",
+        "start": 53.42,
+        "end": 55.42,
         "word_count": 7
       },
       {
         "scene": "S05",
-        "text": "the Titan remained the figure who had",
-        "start": 53.64,
-        "end": 55.66,
-        "word_count": 7
-      },
-      {
-        "scene": "S05",
-        "text": "chosen suffering over obedience",
-        "start": 55.66,
+        "text": "had chosen suffering over obedience.",
+        "start": 55.42,
         "end": 57.66,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "His story leaves a question burning:",
+        "start": 59.22,
+        "end": 61.2,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "when power withholds something essential,",
+        "start": 61.2,
+        "end": 64.0,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "is taking it theft,",
+        "start": 64.0,
+        "end": 65.8,
         "word_count": 4
       },
       {
         "scene": "S06",
-        "text": "His story leaves a question burning when",
-        "start": 59.22,
-        "end": 61.84,
+        "text": "or liberation? The flame still shines between",
+        "start": 65.8,
+        "end": 69.68,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "power withholds something essential is taking it",
-        "start": 61.84,
-        "end": 65.34,
-        "word_count": 7
-      },
-      {
-        "scene": "S06",
-        "text": "theft or liberation The flame still shines",
-        "start": 65.34,
-        "end": 69.26,
-        "word_count": 7
-      },
-      {
-        "scene": "S06",
-        "text": "between them",
-        "start": 69.26,
+        "text": "them.",
+        "start": 69.68,
         "end": 70.109,
-        "word_count": 2
+        "word_count": 1
       }
     ]
   },

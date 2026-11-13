@@ -1,0 +1,18 @@
+{
+  "episode": 2,
+  "source_file": "02_icarus.json",
+  "source_sha256": "aaa8959b46fa42bdedc91aafc0983c6126ade0a51f73a386080581550de06b3f",
+  "updated_at": "2026-11-13T12:43:53.542555+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

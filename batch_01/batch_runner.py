@@ -113,6 +113,11 @@ def split_sentences(text: str) -> list[str]:
     return [x.strip() for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x.strip()]
 
 
+def script_tokens(text: str) -> list[str]:
+    """Return words with terminal punctuation retained for caption breaks."""
+    return re.findall(r"[\wÀ-ÖØ-öø-ÿ'’-]+[.!?,;:]*", text)
+
+
 async def edge_scene(text: str, out_mp3: Path, words_json: Path) -> None:
     import edge_tts
     communicate = edge_tts.Communicate(text, VOICE, rate=os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"), volume="+0%", pitch="+0Hz")
@@ -147,7 +152,7 @@ def word_groups(words: list[dict[str, Any]], scene_start: float, scene_audio_sta
     return result
 
 
-def whisper_align(audio_path: Path, spec: dict[str, Any]) -> list[dict[str, Any]]:
+def whisper_align(audio_path: Path) -> list[dict[str, Any]]:
     """Measure word onsets from the final narration waveform."""
     import whisper
     model = whisper.load_model(os.environ.get("WHISPER_MODEL", "tiny.en"))
@@ -158,24 +163,9 @@ def whisper_align(audio_path: Path, spec: dict[str, Any]) -> list[dict[str, Any]
             text = word.get("word", "").strip()
             if text:
                 measured.append({"text": text, "start": float(word["start"]), "end": float(word["end"])})
-    expected = [token for scene in spec["scenes"] for token in re.findall(r"[\wÀ-ÖØ-öø-ÿ'’-]+", scene["caption"])]
     if not measured:
         raise RuntimeError("Whisper returned no word timestamps")
-    pairs = []
-    j = 0
-    for token in expected:
-        target = re.sub(r"[^a-z0-9]", "", token.lower())
-        found = None
-        for k in range(j, min(j + 6, len(measured))):
-            cand = re.sub(r"[^a-z0-9]", "", measured[k]["text"].lower())
-            if cand == target or (len(target) > 4 and (cand in target or target in cand)):
-                found = k
-                break
-        if found is None:
-            found = min(j, len(measured) - 1)
-        pairs.append({"text": token, "start": measured[found]["start"], "end": measured[found]["end"]})
-        j = min(found + 1, len(measured))
-    return pairs
+    return measured
 
 
 def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
@@ -217,20 +207,35 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     data = np.concatenate(all_audio)
     narration = audio_dir / "narration.wav"
     sf.write(str(narration), data, RATE, subtype="PCM_16")
-    aligned = whisper_align(narration, spec)
+    measured = whisper_align(narration)
     captions = []
     phrases = []
     cursor_word = 0
     for scene, scene_tl in zip(spec["scenes"], scenes):
-        tokens = re.findall(r"[\wÀ-ÖØ-öø-ÿ'’-]+", scene["caption"])
-        scene_pairs = aligned[cursor_word:cursor_word + len(tokens)]
-        cursor_word += len(tokens)
+        tokens = script_tokens(scene["caption"])
+        scene_measured = [x for x in measured if x["end"] >= scene_tl["start"] - 0.2 and x["start"] <= scene_tl["speech_end"] + 0.2]
+        scene_pairs = []
+        local_index = 0
+        for token in tokens:
+            target = re.sub(r"[^a-z0-9]", "", token.lower())
+            found = None
+            for k in range(local_index, min(local_index + 6, len(scene_measured))):
+                candidate = re.sub(r"[^a-z0-9]", "", scene_measured[k]["text"].lower())
+                if candidate == target or (len(target) > 4 and len(candidate) > 3 and (candidate in target or target in candidate)):
+                    found = k
+                    break
+            if found is None:
+                found = min(local_index, len(scene_measured) - 1)
+            if found < 0:
+                raise RuntimeError(f"no measured word alignment for {scene['id']}")
+            scene_pairs.append({"text": token, "start": scene_measured[found]["start"], "end": scene_measured[found]["end"]})
+            local_index = min(found + 1, len(scene_measured))
         if scene_pairs:
             scene_pairs = [{**x, "start": max(scene_tl["start"], x["start"]), "end": min(scene_tl["speech_end"], x["end"])} for x in scene_pairs]
             scene_tl["speech_end"] = round(max(x["end"] for x in scene_pairs), 3)
         local = 0
         for phrase in split_sentences(scene["caption"]):
-            n = len(re.findall(r"[\wÀ-ÖØ-öø-ÿ'’-]+", phrase))
+            n = len(script_tokens(phrase))
             pp = scene_pairs[local:local + n]
             local += n
             if pp:

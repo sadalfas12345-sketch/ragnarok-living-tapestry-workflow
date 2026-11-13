@@ -1,95 +1,115 @@
 1
-00:00:00,000 --> 00:00:04,060
-Before humans mastered fire one Titan dared
+00:00:00,000 --> 00:00:02,500
+Before humans mastered fire,
 
 2
-00:00:04,060 --> 00:00:07,600
-to defy Zeus Prometheus saw people shivering
+00:00:02,960 --> 00:00:05,220
+one Titan dared to defy Zeus.
 
 3
-00:00:07,600 --> 00:00:10,800
-in darkness and decided they deserved more
+00:00:05,920 --> 00:00:09,020
+Prometheus saw people shivering in darkness and
 
 4
-00:00:10,800 --> 00:00:12,000
-than the gods allowed
+00:00:09,020 --> 00:00:11,420
+decided they deserved more than the gods
 
 5
+00:00:11,420 --> 00:00:12,000
+allowed.
+
+6
 00:00:12,800 --> 00:00:14,820
 He stole a spark from the divine
 
-6
-00:00:14,820 --> 00:00:17,560
-realm hiding it in a hollow fennel
-
 7
-00:00:17,560 --> 00:00:20,400
-stalk As the flame passed from hand
+00:00:14,820 --> 00:00:17,560
+realm, hiding it in a hollow fennel
 
 8
-00:00:20,400 --> 00:00:22,920
-to hand night changed forever
+00:00:17,560 --> 00:00:20,400
+stalk. As the flame passed from hand
 
 9
-00:00:23,688 --> 00:00:27,360
-Fire cooked food warmed shelters and made
+00:00:20,400 --> 00:00:22,920
+to hand, night changed forever.
 
 10
-00:00:27,360 --> 00:00:30,740
-metalwork possible In the myth a single
+00:00:23,688 --> 00:00:25,300
+Fire cooked food,
 
 11
-00:00:30,740 --> 00:00:34,180
-stolen gift shifted the balance between immortals
+00:00:25,880 --> 00:00:28,520
+warmed shelters, and made metalwork possible.
 
 12
-00:00:34,180 --> 00:00:35,131
-and mortals
+00:00:29,120 --> 00:00:29,800
+In the myth,
 
 13
-00:00:36,300 --> 00:00:39,340
-Zeus answered not with gratitude but punishment
+00:00:30,160 --> 00:00:32,880
+a single stolen gift shifted the balance
 
 14
-00:00:40,160 --> 00:00:42,800
-He ordered Prometheus chained to a remote
+00:00:32,880 --> 00:00:35,131
+between immortals and mortals.
 
 15
-00:00:42,800 --> 00:00:45,500
-rock where a great eagle would tear
+00:00:36,300 --> 00:00:38,180
+Zeus answered not with gratitude,
 
 16
-00:00:45,500 --> 00:00:46,220
-at his liver
+00:00:38,540 --> 00:00:42,260
+but punishment. He ordered Prometheus chained to
 
 17
-00:00:47,360 --> 00:00:50,140
-The wound renewed and the torment returned
+00:00:42,260 --> 00:00:43,220
+a remote rock,
 
 18
-00:00:50,140 --> 00:00:53,640
-Each day the bird descended again Yet
+00:00:43,640 --> 00:00:45,660
+where a great eagle would tear at
 
 19
-00:00:53,640 --> 00:00:55,660
-the Titan remained the figure who had
+00:00:45,660 --> 00:00:46,220
+his liver.
 
 20
-00:00:55,660 --> 00:00:57,660
-chosen suffering over obedience
+00:00:47,360 --> 00:00:48,340
+The wound renewed,
 
 21
-00:00:59,220 --> 00:01:01,840
-His story leaves a question burning when
+00:00:48,340 --> 00:00:50,140
+and the torment returned.
 
 22
-00:01:01,840 --> 00:01:05,340
-power withholds something essential is taking it
+00:00:50,140 --> 00:00:52,860
+Each day the bird descended again.
 
 23
-00:01:05,340 --> 00:01:09,260
-theft or liberation The flame still shines
+00:00:53,420 --> 00:00:55,420
+Yet the Titan remained the figure who
 
 24
-00:01:09,260 --> 00:01:10,109
-between them
+00:00:55,420 --> 00:00:57,660
+had chosen suffering over obedience.
+
+25
+00:00:59,220 --> 00:01:01,200
+His story leaves a question burning:
+
+26
+00:01:01,200 --> 00:01:04,000
+when power withholds something essential,
+
+27
+00:01:04,000 --> 00:01:05,800
+is taking it theft,
+
+28
+00:01:05,800 --> 00:01:09,680
+or liberation? The flame still shines between
+
+29
+00:01:09,680 --> 00:01:10,109
+them.

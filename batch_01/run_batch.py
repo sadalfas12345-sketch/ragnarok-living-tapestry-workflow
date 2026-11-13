@@ -103,6 +103,7 @@ def process(ep: int, requested: str, resume: bool) -> dict:
         try:
             run_stage(ep, stage)
             data["stages"][stage] = "PASS"
+            data["errors"] = [e for e in data.get("errors", []) if not e.startswith(f"{stage}:")]
         except subprocess.CalledProcessError as exc:
             data["stages"][stage] = "FAIL"
             data["errors"].append(f"{stage}: exit {exc.returncode}")
