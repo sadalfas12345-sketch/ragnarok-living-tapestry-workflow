@@ -49,6 +49,11 @@ MUSIC_PROFILES = {
         {"title": "Discover", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_discover_eugenio_mininni.mp3"},
         {"title": "Spirit in the Woods", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_spirit_in_the_woods_alejandro_magana.mp3"},
     ],
+    5: [
+        {"title": "Fallen (Asper)", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_fallen_asper_eugenio_mininni.mp3"},
+        {"title": "Tapis", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_tapis_eugenio_mininni.mp3"},
+        {"title": "Echoes", "artist": "Andrew Ev", "url": "https://mixkit.co/free-stock-music/mood/suspenseful/", "file": "mixkit_echoes_andrew_ev.mp3"},
+    ],
 }
 
 
@@ -347,7 +352,7 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     final = adir / "final_mixed_audio.wav"
     mix = f"[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[narr][key];[1:a]aresample=48000,pan=stereo|c0=c0|c1=c1[music];[music][key]sidechaincompress=threshold=0.015:ratio=5:attack=60:release=700:makeup=1[duck];[2:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume=0.45[s];[narr][duck][s]amix=inputs=3:duration=longest:dropout_transition=0,atrim=0:{runtime:.3f},loudnorm=I=-14:TP=-1:LRA=11:print_format=summary[out]"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "warning", "-i", str(narration), "-i", str(music), "-i", str(sfx), "-filter_complex", mix, "-map", "[out]", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(final)])
-    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery"}.get(spec["episode_number"], "default_ragnarok_palette")
+    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence"}.get(spec["episode_number"], "default_ragnarok_palette")
     (epdir / "music_sources.json").write_text(json.dumps({"profile": profile_name, "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     out = epdir / "final_vertical_1080x1920.mp4"
     video = epdir / "video_captioned.mp4"
@@ -363,10 +368,10 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     sources_path = epdir / "music_sources.json"
     if sources_path.exists():
         sources = json.loads(sources_path.read_text(encoding="utf-8"))
-        if spec["episode_number"] in (3, 4):
-            reused = {"Epical Drums 05", "Epic Games", "A New Life", "Fright Night", "Valley Sunset", "Silent Descent"}.intersection(item.get("title", "") for item in sources.get("sources", []))
+        if spec["episode_number"] in (3, 4, 5):
+            reused = {"Epical Drums 05", "Epic Games", "A New Life", "Fright Night", "Valley Sunset", "Silent Descent", "Sun and His Daughter", "Discover", "Spirit in the Woods"}.intersection(item.get("title", "") for item in sources.get("sources", []))
             if reused: errors.append(f"episode {spec['episode_number']} reused an earlier soundtrack: " + ", ".join(sorted(reused)))
-            expected_profile = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery"}[spec["episode_number"]]
+            expected_profile = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence"}[spec["episode_number"]]
             if sources.get("profile") != expected_profile: errors.append(f"episode {spec['episode_number']} music profile is not {expected_profile}")
     narration_duration = duration(epdir / "audio" / "narration.wav")
     video_duration = duration(epdir / "final_vertical_1080x1920.mp4")

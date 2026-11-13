@@ -1,0 +1,31 @@
+{
+  "profile": "orpheus_underworld_silence",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Fallen (Asper)",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/mood/mysterious/",
+      "file": "mixkit_fallen_asper_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_fallen_asper_eugenio_mininni.mp3"
+    },
+    {
+      "title": "Tapis",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/mood/mysterious/",
+      "file": "mixkit_tapis_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_tapis_eugenio_mininni.mp3"
+    },
+    {
+      "title": "Echoes",
+      "artist": "Andrew Ev",
+      "url": "https://mixkit.co/free-stock-music/mood/suspenseful/",
+      "file": "mixkit_echoes_andrew_ev.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_echoes_andrew_ev.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

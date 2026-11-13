@@ -1,0 +1,18 @@
+{
+  "episode": 5,
+  "source_file": "05_orpheus.json",
+  "source_sha256": "c6ff15291142c70b0d5c843fd388afbb7c6667a4e6f2567443ece848cbcacdba",
+  "updated_at": "2026-11-13T20:28:49.356182+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

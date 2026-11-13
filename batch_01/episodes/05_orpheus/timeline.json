@@ -1,0 +1,494 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 63.676,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Orpheus could make the world listen when he sang.",
+        "start": 0.0,
+        "end": 3.28
+      },
+      {
+        "scene": "S01",
+        "text": "But when his wife Eurydice died, music could not reach her where she had gone.",
+        "start": 3.66,
+        "end": 8.66
+      },
+      {
+        "scene": "S02",
+        "text": "He descended into the underworld with only his lyre.",
+        "start": 9.52,
+        "end": 12.92
+      },
+      {
+        "scene": "S02",
+        "text": "Even the dead paused.",
+        "start": 13.48,
+        "end": 14.74
+      },
+      {
+        "scene": "S02",
+        "text": "The rulers below listened to his grief and offered a terrible bargain.",
+        "start": 15.34,
+        "end": 20.115
+      },
+      {
+        "scene": "S03",
+        "text": "Eurydice could follow him back toward daylight.",
+        "start": 21.22,
+        "end": 23.8
+      },
+      {
+        "scene": "S03",
+        "text": "But until both had left the realm of death, Orpheus must not turn to look at her.",
+        "start": 23.8,
+        "end": 30.061
+      },
+      {
+        "scene": "S04",
+        "text": "He walked ahead and heard her footsteps behind him.",
+        "start": 31.22,
+        "end": 34.76
+      },
+      {
+        "scene": "S04",
+        "text": "Near the exit, afraid she was not truly there, he looked back.",
+        "start": 35.12,
+        "end": 40.0
+      },
+      {
+        "scene": "S05",
+        "text": "He saw Eurydice only for an instant.",
+        "start": 41.1,
+        "end": 43.54
+      },
+      {
+        "scene": "S05",
+        "text": "Then she faded into the shadows, lost again, and the path behind him closed.",
+        "start": 44.12,
+        "end": 50.3
+      },
+      {
+        "scene": "S06",
+        "text": "A voice powerful enough to move the dead could not undo one moment of fear.",
+        "start": 51.457,
+        "end": 57.16
+      },
+      {
+        "scene": "S06",
+        "text": "Orpheus returned alone, carrying the song that had almost worked.",
+        "start": 57.86,
+        "end": 62.06
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Orpheus could make the world listen when",
+        "start": 0.0,
+        "end": 2.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "he sang. But when his wife Eurydice",
+        "start": 2.52,
+        "end": 5.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "died, music could not reach her where",
+        "start": 5.26,
+        "end": 7.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "she had gone.",
+        "start": 7.88,
+        "end": 8.66,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "He descended into the underworld with only",
+        "start": 9.52,
+        "end": 12.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "his lyre. Even the dead paused.",
+        "start": 12.18,
+        "end": 14.74,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "The rulers below listened to his grief",
+        "start": 15.34,
+        "end": 17.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "and offered a terrible bargain.",
+        "start": 17.82,
+        "end": 20.115,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Eurydice could follow him back toward daylight.",
+        "start": 21.22,
+        "end": 23.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "But until both had left the realm",
+        "start": 23.8,
+        "end": 26.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "of death, Orpheus must not turn to",
+        "start": 26.4,
+        "end": 29.46,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "look at her.",
+        "start": 29.46,
+        "end": 30.061,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "He walked ahead and heard her footsteps",
+        "start": 31.22,
+        "end": 33.5,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "behind him. Near the exit,",
+        "start": 33.5,
+        "end": 36.04,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "afraid she was not truly there,",
+        "start": 36.84,
+        "end": 38.96,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "he looked back.",
+        "start": 39.04,
+        "end": 40.0,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "He saw Eurydice only for an instant.",
+        "start": 41.1,
+        "end": 43.54,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "Then she faded into the shadows,",
+        "start": 44.12,
+        "end": 46.04,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "lost again, and the path behind him",
+        "start": 46.68,
+        "end": 49.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "closed.",
+        "start": 49.7,
+        "end": 50.3,
+        "word_count": 1
+      },
+      {
+        "scene": "S06",
+        "text": "A voice powerful enough to move the",
+        "start": 51.457,
+        "end": 54.12,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "dead could not undo one moment of",
+        "start": 54.12,
+        "end": 56.68,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "fear. Orpheus returned alone,",
+        "start": 56.68,
+        "end": 59.24,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "carrying the song that had almost worked.",
+        "start": 60.0,
+        "end": 62.06,
+        "word_count": 7
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 8.66,
+      "end": 9.164,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 9.164
+      },
+      "measured_pause_after": 0.504
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 9.164,
+      "speech_end": 20.115,
+      "end": 20.765,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 9.164,
+        "end": 20.765
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 20.765,
+      "speech_end": 30.061,
+      "end": 30.861,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 20.765,
+        "end": 30.861
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 30.861,
+      "speech_end": 40.0,
+      "end": 40.805,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 30.861,
+        "end": 40.805
+      },
+      "measured_pause_after": 0.805
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 40.805,
+      "speech_end": 50.3,
+      "end": 51.457,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 40.805,
+        "end": 51.457
+      },
+      "measured_pause_after": 1.157
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 51.457,
+      "speech_end": 62.06,
+      "end": 63.676,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 51.457,
+        "end": 63.676
+      },
+      "measured_pause_after": 1.616
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "solo lyre, low cello, breathy reed, silence",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 9.164
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "solo lyre, low cello, breathy reed, silence",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 9.164,
+      "end": 20.765
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "solo lyre, low cello, breathy reed, silence",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 20.765,
+      "end": 30.861
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "solo lyre, low cello, breathy reed, silence",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 30.861,
+      "end": 40.805
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "solo lyre, low cello, breathy reed, silence",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 40.805,
+      "end": 51.457
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "solo lyre, low cello, breathy reed, silence",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 51.457,
+      "end": 63.676
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 9.164
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 9.164,
+      "end": 20.765
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 20.765,
+      "end": 30.861
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 30.861,
+      "end": 40.805
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 40.805,
+      "end": 51.457
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 51.457,
+      "end": 63.676
+    }
+  ]
+}
