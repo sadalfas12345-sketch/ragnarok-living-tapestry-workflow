@@ -2,12 +2,13 @@
   "episode": 1,
   "command": "batch_runner.py --episode 1 --stage qa",
   "exit_code": 0,
-  "peak_rss_bytes_observed": 1171791872,
-  "peak_rss_mib_observed": 1117.5,
-  "max_process_cpu_seconds_observed": 104.9,
-  "sampler_seconds": 55,
+  "peak_rss_bytes_observed": 1102630912,
+  "peak_rss_mib_observed": 1051.6,
+  "max_process_cpu_seconds_observed": 98.3,
+  "sampler_seconds": 53,
   "host_ram_bytes": 16945106944,
   "host_ram_mib": 16160.1,
   "gpu": "NVIDIA GeForce RTX 2060 with Max-Q Design, 6144 MiB",
+  "final_timeline_runtime_seconds": 71.609,
   "note": "CPU Whisper tiny.en alignment; image generation ran through the built-in image service and is not included in this local process sample."
 }
