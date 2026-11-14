@@ -1,0 +1,18 @@
+{
+  "episode": 23,
+  "source_file": "23_joan_arc.json",
+  "source_sha256": "7a56194577a06bd48f161330bf05d58558c82eee59e54cd2c710bfd04c5858c8",
+  "updated_at": "2026-11-14T03:04:26.483663+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

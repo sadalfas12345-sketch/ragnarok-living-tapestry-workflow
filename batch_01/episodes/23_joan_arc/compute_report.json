@@ -1,0 +1,24 @@
+{
+  "episode": 23,
+  "title": "Joan of Arc: The Girl on Trial",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation and non-overlap clamp",
+  "timeline_runtime_seconds": 74.115,
+  "narration_runtime_seconds": 74.115,
+  "video_runtime_seconds": 74.115,
+  "caption_count": 26,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.45, 0.696, 0.813, 0.8, 1.1],
+  "loudness": {
+    "integrated_lufs": -14.1,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.2,
+    "output_integrated_lufs": -14.1,
+    "output_lra_lu": 2.6
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}

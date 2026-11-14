@@ -1,0 +1,502 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 74.115,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "A teenage peasant from Lorraine said she heard saints urging her to help France.",
+        "start": 0.0,
+        "end": 5.26
+      },
+      {
+        "scene": "S01",
+        "text": "In 1429, Joan reached the French royal court during a desperate war.",
+        "start": 5.88,
+        "end": 11.176
+      },
+      {
+        "scene": "S02",
+        "text": "She helped inspire a French effort at Orléans, where the siege was lifted.",
+        "start": 12.0,
+        "end": 16.88
+      },
+      {
+        "scene": "S02",
+        "text": "Her presence turned military momentum into a powerful political symbol.",
+        "start": 17.48,
+        "end": 22.76
+      },
+      {
+        "scene": "S03",
+        "text": "The campaign helped clear a path for Charles the Seventh to be crowned at Reims.",
+        "start": 23.72,
+        "end": 29.54
+      },
+      {
+        "scene": "S03",
+        "text": "Joan had helped accomplish what had seemed unreachable.",
+        "start": 29.54,
+        "end": 32.58
+      },
+      {
+        "scene": "S04",
+        "text": "Soon after, Joan was captured by Burgundian forces and transferred to English custody.",
+        "start": 33.78,
+        "end": 39.9
+      },
+      {
+        "scene": "S04",
+        "text": "Her enemies pursued her through an ecclesiastical trial.",
+        "start": 40.68,
+        "end": 44.389
+      },
+      {
+        "scene": "S05",
+        "text": "The court condemned Joan, including allegations tied to her claimed revelations and clothing.",
+        "start": 45.48,
+        "end": 52.04
+      },
+      {
+        "scene": "S05",
+        "text": "She was executed by burning in Rouen in 1431, about nineteen years old.",
+        "start": 52.04,
+        "end": 58.449
+      },
+      {
+        "scene": "S06",
+        "text": "A later inquiry overturned the condemnation.",
+        "start": 60.04,
+        "end": 62.82
+      },
+      {
+        "scene": "S06",
+        "text": "The case shows how military, religious and political power could shape whose voice was called holy—and whose was called dangerous.",
+        "start": 63.64,
+        "end": 72.26
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "A teenage peasant from Lorraine said she",
+        "start": 0.0,
+        "end": 2.9,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "heard saints urging her to help France.",
+        "start": 2.9,
+        "end": 5.26,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "In 1429, Joan reached the French royal",
+        "start": 5.88,
+        "end": 9.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "court during a desperate war.",
+        "start": 9.48,
+        "end": 11.176,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "She helped inspire a French effort at",
+        "start": 12.0,
+        "end": 14.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "Orléans, where the siege was lifted.",
+        "start": 14.36,
+        "end": 16.88,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "Her presence turned military momentum into a",
+        "start": 17.48,
+        "end": 21.22,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "powerful political symbol.",
+        "start": 21.22,
+        "end": 22.76,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "The campaign helped clear a path for",
+        "start": 23.72,
+        "end": 26.1,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "Charles the Seventh to be crowned at",
+        "start": 26.1,
+        "end": 28.62,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "Reims. Joan had helped accomplish what had",
+        "start": 28.62,
+        "end": 31.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "seemed unreachable.",
+        "start": 31.74,
+        "end": 32.58,
+        "word_count": 2
+      },
+      {
+        "scene": "S04",
+        "text": "Soon after, Joan was captured by Burgundian",
+        "start": 33.78,
+        "end": 36.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "forces and transferred to English custody.",
+        "start": 36.96,
+        "end": 39.9,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Her enemies pursued her through an ecclesiastical",
+        "start": 40.68,
+        "end": 43.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "trial.",
+        "start": 43.8,
+        "end": 44.389,
+        "word_count": 1
+      },
+      {
+        "scene": "S05",
+        "text": "The court condemned Joan,",
+        "start": 45.48,
+        "end": 47.2,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "including allegations tied to her claimed revelations",
+        "start": 47.72,
+        "end": 50.86,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "and clothing. She was executed by burning",
+        "start": 50.86,
+        "end": 54.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "in Rouen in 1431,",
+        "start": 54.36,
+        "end": 56.52,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "about nineteen years old.",
+        "start": 57.06,
+        "end": 58.449,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "A later inquiry overturned the condemnation.",
+        "start": 60.04,
+        "end": 62.82,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "The case shows how military,",
+        "start": 63.64,
+        "end": 65.44,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "religious and political power could shape whose",
+        "start": 66.32,
+        "end": 68.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "voice was called holy and whose was",
+        "start": 68.96,
+        "end": 71.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "called dangerous.",
+        "start": 71.48,
+        "end": 72.26,
+        "word_count": 2
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.176,
+      "end": 11.626,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.626
+      },
+      "measured_pause_after": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.626,
+      "speech_end": 22.76,
+      "end": 23.456,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.626,
+        "end": 23.456
+      },
+      "measured_pause_after": 0.696
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 23.456,
+      "speech_end": 32.58,
+      "end": 33.393,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 23.456,
+        "end": 33.393
+      },
+      "measured_pause_after": 0.813
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 33.393,
+      "speech_end": 44.389,
+      "end": 45.189,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 33.393,
+        "end": 45.189
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 45.189,
+      "speech_end": 58.449,
+      "end": 59.549,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 45.189,
+        "end": 59.549
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 59.549,
+      "speech_end": 72.26,
+      "end": 74.114,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 59.549,
+        "end": 74.114
+      },
+      "measured_pause_after": 1.854
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "church bell, hurdy-gurdy, restrained drum, solemn choir",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.626
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "church bell, hurdy-gurdy, restrained drum, solemn choir",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.626,
+      "end": 23.456
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "church bell, hurdy-gurdy, restrained drum, solemn choir",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 23.456,
+      "end": 33.393
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "church bell, hurdy-gurdy, restrained drum, solemn choir",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 33.393,
+      "end": 45.189
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "church bell, hurdy-gurdy, restrained drum, solemn choir",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 45.189,
+      "end": 59.549
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "church bell, hurdy-gurdy, restrained drum, solemn choir",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 59.549,
+      "end": 74.114
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.626
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.626,
+      "end": 23.456
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 23.456,
+      "end": 33.393
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 33.393,
+      "end": 45.189
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 45.189,
+      "end": 59.549
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 59.549,
+      "end": 74.114
+    }
+  ]
+}
