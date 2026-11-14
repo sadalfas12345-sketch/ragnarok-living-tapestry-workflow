@@ -1,0 +1,502 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 67.654,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Inanna, goddess of love and power, descended to the realm ruled by her sister Ereshkigal.",
+        "start": 0.0,
+        "end": 6.46
+      },
+      {
+        "scene": "S01",
+        "text": "Seven gates barred the way, and every gate demanded a price.",
+        "start": 7.86,
+        "end": 11.68
+      },
+      {
+        "scene": "S02",
+        "text": "At each gate a piece of her regalia was taken.",
+        "start": 12.44,
+        "end": 15.5
+      },
+      {
+        "scene": "S02",
+        "text": "Crown, jewels and marks of authority vanished until she faced her sister without the signs of power.",
+        "start": 16.12,
+        "end": 22.946
+      },
+      {
+        "scene": "S03",
+        "text": "The judges of the underworld condemned Inanna.",
+        "start": 23.88,
+        "end": 26.62
+      },
+      {
+        "scene": "S03",
+        "text": "Her lifeless body was suspended, while her servant Ninshubur sought help in the world above.",
+        "start": 26.62,
+        "end": 33.515
+      },
+      {
+        "scene": "S04",
+        "text": "Help came through beings sent to the underworld, and Inanna rose again.",
+        "start": 34.68,
+        "end": 39.02
+      },
+      {
+        "scene": "S04",
+        "text": "But there was a law: a replacement would have to descend in her place.",
+        "start": 39.52,
+        "end": 43.737
+      },
+      {
+        "scene": "S05",
+        "text": "Accounts tell of Dumuzi becoming entangled in that demand.",
+        "start": 44.94,
+        "end": 48.5
+      },
+      {
+        "scene": "S05",
+        "text": "His fate joined the rhythms of absence and return, grief and seasonal renewal.",
+        "start": 49.1,
+        "end": 54.86
+      },
+      {
+        "scene": "S06",
+        "text": "Even a great goddess could not cross death’s borders without consequence.",
+        "start": 56.096,
+        "end": 60.74
+      },
+      {
+        "scene": "S06",
+        "text": "The story is less a victory over mortality than a warning about its price.",
+        "start": 61.54,
+        "end": 66.12
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Inanna, goddess of love and power,",
+        "start": 0.0,
+        "end": 3.34,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "descended to the realm ruled by her",
+        "start": 3.84,
+        "end": 5.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "sister Ereshkigal. Seven gates barred the way,",
+        "start": 5.84,
+        "end": 9.32,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "and every gate demanded a price.",
+        "start": 9.6,
+        "end": 11.68,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "At each gate a piece of her",
+        "start": 12.44,
+        "end": 14.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "regalia was taken.",
+        "start": 14.2,
+        "end": 15.5,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "Crown, jewels and marks of authority vanished",
+        "start": 16.12,
+        "end": 19.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "until she faced her sister without the",
+        "start": 19.36,
+        "end": 21.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "signs of power.",
+        "start": 21.98,
+        "end": 22.946,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "The judges of the underworld condemned Inanna.",
+        "start": 23.88,
+        "end": 26.62,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "Her lifeless body was suspended,",
+        "start": 26.62,
+        "end": 29.48,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "while her servant Ninshubur sought help in",
+        "start": 30.0,
+        "end": 32.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "the world above.",
+        "start": 32.52,
+        "end": 33.515,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "Help came through beings sent to the",
+        "start": 34.68,
+        "end": 36.56,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "underworld, and Inanna rose again.",
+        "start": 36.56,
+        "end": 39.02,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "But there was a law:",
+        "start": 39.52,
+        "end": 40.72,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "a replacement would have to descend in",
+        "start": 40.98,
+        "end": 43.0,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "her place.",
+        "start": 43.0,
+        "end": 43.737,
+        "word_count": 2
+      },
+      {
+        "scene": "S05",
+        "text": "Accounts tell of Dumuzi becoming entangled in",
+        "start": 44.94,
+        "end": 47.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "that demand. His fate joined the rhythms",
+        "start": 47.7,
+        "end": 50.56,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "of absence and return,",
+        "start": 50.56,
+        "end": 52.48,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "grief and seasonal renewal.",
+        "start": 52.78,
+        "end": 54.86,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "Even a great goddess could not cross",
+        "start": 56.096,
+        "end": 58.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "death’s borders without consequence.",
+        "start": 58.82,
+        "end": 60.74,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "The story is less a victory over",
+        "start": 61.54,
+        "end": 63.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "mortality than a warning about its price.",
+        "start": 63.58,
+        "end": 66.12,
+        "word_count": 7
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.68,
+      "end": 12.154,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.154
+      },
+      "measured_pause_after": 0.474
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.154,
+      "speech_end": 22.946,
+      "end": 23.596,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.154,
+        "end": 23.596
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 23.596,
+      "speech_end": 33.515,
+      "end": 34.315,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 23.596,
+        "end": 34.315
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 34.315,
+      "speech_end": 43.737,
+      "end": 44.537,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 34.315,
+        "end": 44.537
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 44.537,
+      "speech_end": 54.86,
+      "end": 56.096,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 44.537,
+        "end": 56.096
+      },
+      "measured_pause_after": 1.236
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 56.096,
+      "speech_end": 66.12,
+      "end": 67.654,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 56.096,
+        "end": 67.654
+      },
+      "measured_pause_after": 1.534
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "ancient lyre timbre, hand drums, low reed, suspended drones",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.154
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "ancient lyre timbre, hand drums, low reed, suspended drones",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.154,
+      "end": 23.596
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "ancient lyre timbre, hand drums, low reed, suspended drones",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 23.596,
+      "end": 34.315
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "ancient lyre timbre, hand drums, low reed, suspended drones",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 34.315,
+      "end": 44.537
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "ancient lyre timbre, hand drums, low reed, suspended drones",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 44.537,
+      "end": 56.096
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "ancient lyre timbre, hand drums, low reed, suspended drones",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 56.096,
+      "end": 67.654
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.154
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.154,
+      "end": 23.596
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 23.596,
+      "end": 34.315
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 34.315,
+      "end": 44.537
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 44.537,
+      "end": 56.096
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 56.096,
+      "end": 67.654
+    }
+  ]
+}

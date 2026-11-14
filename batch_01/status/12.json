@@ -1,0 +1,18 @@
+{
+  "episode": 12,
+  "source_file": "12_inanna.json",
+  "source_sha256": "ab027aa4673fc661b2f2cc3634af78130ea896d891e9bec744de1b7cee95674e",
+  "updated_at": "2026-11-14T01:31:55.311669+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
