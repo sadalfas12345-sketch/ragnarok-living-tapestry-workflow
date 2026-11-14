@@ -504,27 +504,21 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         max_hold = float(camera.get("max_static_hold_seconds", 9999))
         allow_reframe = bool(camera.get("allow_internal_reframe", False))
         start = float(scene["start"]); end = float(scene["end"])
-        cuts = [start]
-        if allow_reframe and max_hold > 0:
-            phrase_ends = [float(p["end"]) for p in tl["narration"]["phrases"] if p["scene"] == scene["id"]]
-            cursor = start
-            while end - cursor > max_hold + 0.05:
-                candidates = [p for p in phrase_ends if cursor + max_hold * 0.65 <= p <= cursor + max_hold]
-                cut = min(candidates, key=lambda p: abs(p - (cursor + max_hold))) if candidates else cursor + max_hold
-                cuts.append(round(cut, 3)); cursor = cut
-        cuts.append(end)
+        # Keep each scene as one continuous camera move. The JSON's internal
+        # reframe permission is descriptive, not a command to hard-cut crops.
+        cuts = [start, end]
         beats = []
         for b in range(len(cuts) - 1):
             beat_start, beat_end = cuts[b], cuts[b + 1]
             dur = beat_end - beat_start
             frames = max(2, round(dur * 30))
             progress = f"(1-cos(on/{frames-1}*PI))/2"
-            focus_offset = -90 if b % 2 == 0 else 90
-            fade = "" if len(cuts) > 2 and b not in (0, len(cuts) - 2) else f",fade=t=in:st=0:d=0.18,fade=t=out:st={max(0,dur-0.18):.3f}:d=0.18"
+            focus_offset = 0
+            fade = f",fade=t=in:st=0:d=0.18,fade=t=out:st={max(0,dur-0.18):.3f}:d=0.18"
             vf = f"zoompan=z=1+0.10*{progress}:x=iw/2-(iw/zoom/2)+{focus_offset}:y=ih/2-(ih/zoom/2):d={frames}:s=1080x1920:fps=30,format=yuv420p{fade}"
             out = segdir / f"S{i:02d}_B{b+1:02d}.mp4"
             run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
-            files.append(out); beats.append({"start": round(beat_start, 3), "end": round(beat_end, 3), "reason": "sentence_boundary_or_max_visual_hold"})
+            files.append(out); beats.append({"start": round(beat_start, 3), "end": round(beat_end, 3), "reason": "continuous_camera_move"})
         scene["visual_beats"] = beats
     (epdir / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     concat = segdir / "concat.txt"
