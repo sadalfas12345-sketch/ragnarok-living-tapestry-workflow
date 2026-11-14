@@ -1,0 +1,18 @@
+{
+  "episode": 27,
+  "source_file": "27_anansi.json",
+  "source_sha256": "aec1792f71acf06b76f10d6ac329e0cb9f445e702965237d4b64fc2cadf72c3d",
+  "updated_at": "2026-11-14T03:37:46.216792+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
