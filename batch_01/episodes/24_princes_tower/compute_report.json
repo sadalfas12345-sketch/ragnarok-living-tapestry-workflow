@@ -1,0 +1,24 @@
+{
+  "episode": 24,
+  "title": "The Princes in the Tower: A Vanishing",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation and non-overlap clamp",
+  "timeline_runtime_seconds": 68.63,
+  "narration_runtime_seconds": 68.63,
+  "video_runtime_seconds": 68.63,
+  "caption_count": 23,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.494, 0.65, 0.825, 0.847, 1.13],
+  "loudness": {
+    "integrated_lufs": -14.2,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.4,
+    "output_integrated_lufs": -14.2,
+    "output_lra_lu": 3.2
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}

@@ -1,0 +1,463 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 68.63,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "In 1483, young Edward the Fifth and his brother Richard were housed in the Tower of London during a struggle over the English crown.",
+        "start": 0.0,
+        "end": 9.98
+      },
+      {
+        "scene": "S02",
+        "text": "Their uncle became King Richard the Third after the boys’ claim was declared invalid.",
+        "start": 10.82,
+        "end": 16.08
+      },
+      {
+        "scene": "S02",
+        "text": "The princes gradually disappeared from public view.",
+        "start": 16.68,
+        "end": 19.849
+      },
+      {
+        "scene": "S03",
+        "text": "No secure record shows exactly when or how the brothers died.",
+        "start": 20.9,
+        "end": 24.96
+      },
+      {
+        "scene": "S03",
+        "text": "Their absence became the most enduring mystery of the dynasty.",
+        "start": 24.96,
+        "end": 29.48
+      },
+      {
+        "scene": "S04",
+        "text": "Richard the Third has long been suspected, but other possible perpetrators and scenarios have been proposed.",
+        "start": 30.78,
+        "end": 38.58
+      },
+      {
+        "scene": "S04",
+        "text": "The surviving evidence does not conclusively identify a killer.",
+        "start": 38.58,
+        "end": 42.4
+      },
+      {
+        "scene": "S05",
+        "text": "Centuries later, remains found in the Tower were traditionally identified as the princes, but their identity has not been conclusively established by modern testing.",
+        "start": 43.68,
+        "end": 55.38
+      },
+      {
+        "scene": "S06",
+        "text": "The brothers became symbols of a brutal question: when a kingdom changes hands, who can protect children whose existence threatens the new ruler?",
+        "start": 56.82,
+        "end": 66.98
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "In 1483, young Edward the Fifth and",
+        "start": 0.0,
+        "end": 4.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "his brother Richard were housed in the",
+        "start": 4.36,
+        "end": 6.72,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "Tower of London during a struggle over",
+        "start": 6.72,
+        "end": 9.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "the English crown.",
+        "start": 9.04,
+        "end": 9.98,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "Their uncle became King Richard the Third",
+        "start": 10.82,
+        "end": 13.26,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "after the boys’ claim was declared invalid.",
+        "start": 13.26,
+        "end": 16.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "The princes gradually disappeared from public view.",
+        "start": 16.68,
+        "end": 19.849,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "No secure record shows exactly when or",
+        "start": 20.9,
+        "end": 23.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "how the brothers died.",
+        "start": 23.8,
+        "end": 24.96,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "Their absence became the most enduring mystery",
+        "start": 24.96,
+        "end": 28.54,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "of the dynasty.",
+        "start": 28.54,
+        "end": 29.48,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "Richard the Third has long been suspected,",
+        "start": 30.78,
+        "end": 33.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "but other possible perpetrators and scenarios have",
+        "start": 33.82,
+        "end": 37.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "been proposed. The surviving evidence does not",
+        "start": 37.08,
+        "end": 40.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "conclusively identify a killer.",
+        "start": 40.98,
+        "end": 42.4,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "Centuries later, remains found in the Tower",
+        "start": 43.68,
+        "end": 46.68,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "were traditionally identified as the princes,",
+        "start": 46.68,
+        "end": 49.52,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "but their identity has not been conclusively",
+        "start": 49.52,
+        "end": 52.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "established by modern testing.",
+        "start": 52.98,
+        "end": 55.38,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "The brothers became symbols of a brutal",
+        "start": 56.82,
+        "end": 59.28,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "question: when a kingdom changes hands,",
+        "start": 59.28,
+        "end": 62.5,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "who can protect children whose existence threatens",
+        "start": 63.06,
+        "end": 66.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "the new ruler?",
+        "start": 66.04,
+        "end": 66.98,
+        "word_count": 3
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 9.98,
+      "end": 10.474,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 10.474
+      },
+      "measured_pause_after": 0.494
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 10.474,
+      "speech_end": 19.849,
+      "end": 20.499,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 10.474,
+        "end": 20.499
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 20.499,
+      "speech_end": 29.48,
+      "end": 30.305,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 20.499,
+        "end": 30.305
+      },
+      "measured_pause_after": 0.825
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 30.305,
+      "speech_end": 42.4,
+      "end": 43.247,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 30.305,
+        "end": 43.247
+      },
+      "measured_pause_after": 0.847
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 43.247,
+      "speech_end": 55.38,
+      "end": 56.51,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 43.247,
+        "end": 56.51
+      },
+      "measured_pause_after": 1.13
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 56.51,
+      "speech_end": 66.98,
+      "end": 68.63,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 56.51,
+        "end": 68.63
+      },
+      "measured_pause_after": 1.65
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "low viol, soft chimes, quiet heartbeat, wind",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 10.474
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "low viol, soft chimes, quiet heartbeat, wind",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 10.474,
+      "end": 20.499
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "low viol, soft chimes, quiet heartbeat, wind",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 20.499,
+      "end": 30.305
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "low viol, soft chimes, quiet heartbeat, wind",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 30.305,
+      "end": 43.247
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "low viol, soft chimes, quiet heartbeat, wind",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 43.247,
+      "end": 56.51
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "low viol, soft chimes, quiet heartbeat, wind",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 56.51,
+      "end": 68.63
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 10.474
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 10.474,
+      "end": 20.499
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 20.499,
+      "end": 30.305
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 30.305,
+      "end": 43.247
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 43.247,
+      "end": 56.51
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 56.51,
+      "end": 68.63
+    }
+  ]
+}

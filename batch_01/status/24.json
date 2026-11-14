@@ -1,0 +1,18 @@
+{
+  "episode": 24,
+  "source_file": "24_princes_tower.json",
+  "source_sha256": "f31cedccacc1b685ea65cb83cc7a0ffc8b9188deaebdce3b910eb68f0d69ae49",
+  "updated_at": "2026-11-14T03:13:28.656796+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
