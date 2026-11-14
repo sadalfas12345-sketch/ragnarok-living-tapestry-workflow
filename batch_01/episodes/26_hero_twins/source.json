@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld. Its lords specialized in humiliating and defeating visitors through trickery.",
+      "caption": "What if two brothers had to outwit the lords of the underworld? Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld. Its lords specialized in humiliating and defeating visitors through trickery.",
       "beat_title": "A deadly invitation",
       "required_visuals": [
         "two Maya heroes before underworld staircase"
@@ -272,5 +273,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if two brothers had to outwit the lords of the underworld?"
 }

@@ -156,7 +156,7 @@ MUSIC_PROFILES = {
     ],
     26: [
         {"title": "Feedback Dreams", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_feedback_dreams_eugenio_mininni.mp3"},
-        {"title": "Delirium", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_delirium_eugenio_mininni.mp3"},
+        {"title": "Deep Urban", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_deep_urban_eugenio_mininni.mp3"},
         {"title": "Selpan", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_selpan_eugenio_mininni.mp3"},
     ],
     27: [
