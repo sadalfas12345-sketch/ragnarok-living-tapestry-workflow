@@ -1,0 +1,31 @@
+{
+  "profile": "maui_island_lift",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Romantic 03",
+      "artist": "Lily J",
+      "url": "https://mixkit.co/free-stock-music/world-fusion/",
+      "file": "mixkit_romantic_03_lily_j.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_romantic_03_lily_j.mp3"
+    },
+    {
+      "title": "Nield Grohm Hanging 3",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/world-fusion/",
+      "file": "mixkit_nield_grohm_hanging_3_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_nield_grohm_hanging_3_eugenio_mininni.mp3"
+    },
+    {
+      "title": "Gold Virginia",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/world-fusion/",
+      "file": "mixkit_gold_virginia_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_gold_virginia_eugenio_mininni.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

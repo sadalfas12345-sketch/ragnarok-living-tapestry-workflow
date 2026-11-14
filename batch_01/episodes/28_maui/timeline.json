@@ -1,0 +1,508 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 71.814,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Across Polynesian traditions, Māui is a restless trickster and culture hero.",
+        "start": 0.0,
+        "end": 6.46
+      },
+      {
+        "scene": "S01",
+        "text": "In some stories, he hid a miraculous fishhook aboard his brothers’ canoe.",
+        "start": 7.04,
+        "end": 12.38
+      },
+      {
+        "scene": "S02",
+        "text": "The brothers rowed out to sea.",
+        "start": 13.22,
+        "end": 15.16
+      },
+      {
+        "scene": "S02",
+        "text": "Māui lowered his line far below the surface, where it caught on something too vast to move easily.",
+        "start": 15.82,
+        "end": 21.86
+      },
+      {
+        "scene": "S03",
+        "text": "The canoe shook.",
+        "start": 22.88,
+        "end": 23.88
+      },
+      {
+        "scene": "S03",
+        "text": "Māui urged his brothers to pull together, but what rose was no ordinary catch.",
+        "start": 23.88,
+        "end": 29.96
+      },
+      {
+        "scene": "S03",
+        "text": "Earth itself came up from the water.",
+        "start": 30.68,
+        "end": 32.6
+      },
+      {
+        "scene": "S04",
+        "text": "In Māori traditions, this story is associated with the North Island of Aotearoa New Zealand, Te Ika-a-Māui, the fish of Māui.",
+        "start": 33.72,
+        "end": 44.38
+      },
+      {
+        "scene": "S04",
+        "text": "Other islands tell different versions.",
+        "start": 44.68,
+        "end": 46.7
+      },
+      {
+        "scene": "S05",
+        "text": "The brothers’ actions shaped the new land in some tellings.",
+        "start": 47.92,
+        "end": 51.38
+      },
+      {
+        "scene": "S05",
+        "text": "The terrain became hills and valleys, a landscape explained through the hero’s audacity.",
+        "start": 51.38,
+        "end": 58.149
+      },
+      {
+        "scene": "S06",
+        "text": "Māui’s feats belong to living cultures, not a single interchangeable Pacific myth.",
+        "start": 59.72,
+        "end": 65.06
+      },
+      {
+        "scene": "S06",
+        "text": "This episode follows one strand of a much wider ocean of stories.",
+        "start": 65.64,
+        "end": 70.16
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Across Polynesian traditions,",
+        "start": 0.0,
+        "end": 2.38,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "Māui is a restless trickster and culture",
+        "start": 3.14,
+        "end": 5.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "hero. In some stories,",
+        "start": 5.98,
+        "end": 8.14,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "he hid a miraculous fishhook aboard his",
+        "start": 8.74,
+        "end": 11.5,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "brothers’ canoe.",
+        "start": 11.5,
+        "end": 12.38,
+        "word_count": 2
+      },
+      {
+        "scene": "S02",
+        "text": "The brothers rowed out to sea.",
+        "start": 13.22,
+        "end": 15.16,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "Māui lowered his line far below the",
+        "start": 15.82,
+        "end": 18.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "surface, where it caught on something too",
+        "start": 18.08,
+        "end": 20.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "vast to move easily.",
+        "start": 20.48,
+        "end": 21.86,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "The canoe shook.",
+        "start": 22.88,
+        "end": 23.88,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "Māui urged his brothers to pull together,",
+        "start": 23.88,
+        "end": 27.14,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "but what rose was no ordinary catch.",
+        "start": 27.38,
+        "end": 29.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "Earth itself came up from the water.",
+        "start": 30.68,
+        "end": 32.6,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "In Māori traditions,",
+        "start": 33.72,
+        "end": 34.78,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "this story is associated with the North",
+        "start": 35.46,
+        "end": 38.16,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Island of Aotearoa New Zealand,",
+        "start": 38.16,
+        "end": 40.6,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Te Ika-a-Māui, the fish of Māui.",
+        "start": 41.3,
+        "end": 44.38,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Other islands tell different versions.",
+        "start": 44.68,
+        "end": 46.7,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "The brothers’ actions shaped the new land",
+        "start": 47.92,
+        "end": 50.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "in some tellings.",
+        "start": 50.34,
+        "end": 51.38,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "The terrain became hills and valleys,",
+        "start": 51.38,
+        "end": 54.42,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "a landscape explained through the hero’s audacity.",
+        "start": 55.0,
+        "end": 58.149,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "Māui’s feats belong to living cultures,",
+        "start": 59.72,
+        "end": 61.96,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "not a single interchangeable Pacific myth.",
+        "start": 62.5,
+        "end": 65.06,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "This episode follows one strand of a",
+        "start": 65.64,
+        "end": 68.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "much wider ocean of stories.",
+        "start": 68.4,
+        "end": 70.16,
+        "word_count": 5
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.38,
+      "end": 12.953,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.953
+      },
+      "measured_pause_after": 0.573
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.953,
+      "speech_end": 21.86,
+      "end": 22.577,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.953,
+        "end": 22.577
+      },
+      "measured_pause_after": 0.717
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.577,
+      "speech_end": 32.6,
+      "end": 33.403,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.577,
+        "end": 33.403
+      },
+      "measured_pause_after": 0.803
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 33.403,
+      "speech_end": 46.7,
+      "end": 47.627,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 33.403,
+        "end": 47.627
+      },
+      "measured_pause_after": 0.927
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 47.627,
+      "speech_end": 58.149,
+      "end": 59.249,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 47.627,
+        "end": 59.249
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 59.249,
+      "speech_end": 70.16,
+      "end": 71.814,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 59.249,
+        "end": 71.814
+      },
+      "measured_pause_after": 1.654
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.953
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.953,
+      "end": 22.577
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.577,
+      "end": 33.403
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 33.403,
+      "end": 47.627
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 47.627,
+      "end": 59.249
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 59.249,
+      "end": 71.814
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.953
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.953,
+      "end": 22.577
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.577,
+      "end": 33.403
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 33.403,
+      "end": 47.627
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 47.627,
+      "end": 59.249
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 59.249,
+      "end": 71.814
+    }
+  ]
+}
