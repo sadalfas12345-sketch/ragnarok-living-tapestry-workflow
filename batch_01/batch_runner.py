@@ -145,9 +145,9 @@ MUSIC_PROFILES = {
         {"title": "Classical vibes 3", "artist": "Grigoriy Nuzhny", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_classical_vibes_3_grigoriy_nuzhny.mp3"},
     ],
     24: [
-        {"title": "Relax", "artist": "Francisco Alvear", "url": "https://mixkit.co/free-stock-music/traditional/", "file": "mixkit_relax_francisco_alvear.mp3"},
-        {"title": "A Decade in Beijing", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/traditional/", "file": "mixkit_a_decade_in_beijing_michael_ramir_c.mp3"},
-        {"title": "Nield Grohm Hanging 2", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_2_eugenio_mininni.mp3"},
+        {"title": "Unforgiven", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_unforgiven_michael_ramir_c.mp3"},
+        {"title": "Torn Threads", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_torn_threads_ahjay_stelino.mp3"},
+        {"title": "Staring at the Night Sky", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_staring_at_the_night_sky_alejandro_magana.mp3"},
     ],
 }
 

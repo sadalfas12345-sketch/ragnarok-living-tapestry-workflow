@@ -1,0 +1,24 @@
+{
+  "episode": 25,
+  "title": "Strasbourg 1518: The Dancing Plague",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation and non-overlap clamp",
+  "timeline_runtime_seconds": 74.038,
+  "narration_runtime_seconds": 74.038,
+  "video_runtime_seconds": 74.038,
+  "caption_count": 24,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.45, 0.851, 0.8, 0.806, 1.131],
+  "loudness": {
+    "integrated_lufs": -14.4,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.3,
+    "output_integrated_lufs": -14.3,
+    "output_lra_lu": 2.7
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}
