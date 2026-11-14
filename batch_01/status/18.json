@@ -1,0 +1,18 @@
+{
+  "episode": 18,
+  "source_file": "18_rostam_sohrab.json",
+  "source_sha256": "6112d91814bf79b76f91a2a230722c51cda96a02f48ee13bf8dc9a9eeab2665f",
+  "updated_at": "2026-11-14T02:22:18.124541+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

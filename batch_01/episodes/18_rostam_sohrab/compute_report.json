@@ -1,0 +1,23 @@
+{
+  "episode": 18,
+  "title": "Rostam and Sohrab: Father Against Son",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation",
+  "timeline_runtime_seconds": 64.848,
+  "narration_runtime_seconds": 64.848,
+  "video_runtime_seconds": 64.848,
+  "caption_count": 23,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.45, 0.65, 0.8, 0.822, 1.12],
+  "loudness": {
+    "integrated_lufs": -14.4,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 4.7,
+    "output_lra_lu": 3.2
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}

@@ -1,0 +1,481 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 64.848,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "A young champion named Sohrab grew up seeking his father, the mighty warrior Rostam.",
+        "start": 0.0,
+        "end": 6.42
+      },
+      {
+        "scene": "S01",
+        "text": "War placed them on opposing sides before they could truly meet.",
+        "start": 7.14,
+        "end": 10.949
+      },
+      {
+        "scene": "S02",
+        "text": "Schemes and uncertainty kept the truth concealed.",
+        "start": 11.88,
+        "end": 15.08
+      },
+      {
+        "scene": "S02",
+        "text": "Two unmatched warriors entered combat, each unaware that his opponent was his own blood.",
+        "start": 15.82,
+        "end": 22.073
+      },
+      {
+        "scene": "S03",
+        "text": "Their struggle shook the battlefield.",
+        "start": 22.98,
+        "end": 24.9
+      },
+      {
+        "scene": "S03",
+        "text": "Rostam finally struck a fatal blow, believing he had defeated a dangerous enemy.",
+        "start": 25.68,
+        "end": 32.018
+      },
+      {
+        "scene": "S04",
+        "text": "Only afterward did a token reveal Sohrab’s identity.",
+        "start": 33.14,
+        "end": 36.38
+      },
+      {
+        "scene": "S04",
+        "text": "The victor realized he had killed the son he had never known.",
+        "start": 37.06,
+        "end": 40.92
+      },
+      {
+        "scene": "S05",
+        "text": "Rostam cried out for help, but the damage could not be reversed.",
+        "start": 42.1,
+        "end": 46.52
+      },
+      {
+        "scene": "S05",
+        "text": "His greatest strength had brought him the worst possible defeat.",
+        "start": 47.14,
+        "end": 51.04
+      },
+      {
+        "scene": "S06",
+        "text": "The Shahnameh preserves a tragedy in which courage cannot compensate for deception and silence.",
+        "start": 52.16,
+        "end": 59.08
+      },
+      {
+        "scene": "S06",
+        "text": "A battlefield victory becomes a lifetime of grief.",
+        "start": 59.9,
+        "end": 63.26
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "A young champion named Sohrab grew up",
+        "start": 0.0,
+        "end": 2.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "seeking his father,",
+        "start": 2.98,
+        "end": 4.08,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "the mighty warrior Rostam.",
+        "start": 4.58,
+        "end": 6.42,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "War placed them on opposing sides before",
+        "start": 7.14,
+        "end": 9.6,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "they could truly meet.",
+        "start": 9.6,
+        "end": 10.949,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "Schemes and uncertainty kept the truth concealed.",
+        "start": 11.88,
+        "end": 15.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "Two unmatched warriors entered combat,",
+        "start": 15.82,
+        "end": 18.4,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "each unaware that his opponent was his",
+        "start": 19.18,
+        "end": 21.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "own blood.",
+        "start": 21.42,
+        "end": 22.073,
+        "word_count": 2
+      },
+      {
+        "scene": "S03",
+        "text": "Their struggle shook the battlefield.",
+        "start": 22.98,
+        "end": 24.9,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Rostam finally struck a fatal blow,",
+        "start": 25.68,
+        "end": 28.76,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "believing he had defeated a dangerous enemy.",
+        "start": 29.22,
+        "end": 32.018,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Only afterward did a token reveal Sohrab’s",
+        "start": 33.14,
+        "end": 35.92,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "identity. The victor realized he had killed",
+        "start": 35.92,
+        "end": 38.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "the son he had never known.",
+        "start": 38.98,
+        "end": 40.92,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "Rostam cried out for help,",
+        "start": 42.1,
+        "end": 43.82,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "but the damage could not be reversed.",
+        "start": 44.18,
+        "end": 46.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "His greatest strength had brought him the",
+        "start": 47.14,
+        "end": 49.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "worst possible defeat.",
+        "start": 49.42,
+        "end": 51.04,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "The Shahnameh preserves a tragedy in which",
+        "start": 52.16,
+        "end": 55.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "courage cannot compensate for deception and silence.",
+        "start": 55.34,
+        "end": 59.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "A battlefield victory becomes a lifetime of",
+        "start": 59.9,
+        "end": 62.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "grief.",
+        "start": 62.8,
+        "end": 63.26,
+        "word_count": 1
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 10.949,
+      "end": 11.399,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.399
+      },
+      "measured_pause_after": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.399,
+      "speech_end": 22.073,
+      "end": 22.723,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.399,
+        "end": 22.723
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.723,
+      "speech_end": 32.018,
+      "end": 32.818,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.723,
+        "end": 32.818
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 32.818,
+      "speech_end": 40.92,
+      "end": 41.742,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 32.818,
+        "end": 41.742
+      },
+      "measured_pause_after": 0.822
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 41.742,
+      "speech_end": 51.04,
+      "end": 52.16,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 41.742,
+        "end": 52.16
+      },
+      "measured_pause_after": 1.12
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 52.16,
+      "speech_end": 63.26,
+      "end": 64.848,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 52.16,
+        "end": 64.848
+      },
+      "measured_pause_after": 1.588
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "setar, kamancheh, daf, grief-laden strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.399
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "setar, kamancheh, daf, grief-laden strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.399,
+      "end": 22.723
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "setar, kamancheh, daf, grief-laden strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.723,
+      "end": 32.818
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "setar, kamancheh, daf, grief-laden strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 32.818,
+      "end": 41.742
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "setar, kamancheh, daf, grief-laden strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 41.742,
+      "end": 52.16
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "setar, kamancheh, daf, grief-laden strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 52.16,
+      "end": 64.848
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.399
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.399,
+      "end": 22.723
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.723,
+      "end": 32.818
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 32.818,
+      "end": 41.742
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 41.742,
+      "end": 52.16
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 52.16,
+      "end": 64.848
+    }
+  ]
+}
