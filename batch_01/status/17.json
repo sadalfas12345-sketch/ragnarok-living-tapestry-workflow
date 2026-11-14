@@ -1,0 +1,18 @@
+{
+  "episode": 17,
+  "source_file": "17_savitri.json",
+  "source_sha256": "4a81a263da2cb2e40438e336190aa05b01f12ba7f3a195c406aa6be7b743aad4",
+  "updated_at": "2026-11-14T02:11:06.801369+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

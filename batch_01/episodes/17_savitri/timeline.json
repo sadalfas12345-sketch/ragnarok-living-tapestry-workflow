@@ -1,0 +1,481 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 64.541,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Savitri chose Satyavan as her husband, even after learning that he was fated to die within a year.",
+        "start": 0.0,
+        "end": 7.4
+      },
+      {
+        "scene": "S01",
+        "text": "She married him without abandoning her choice.",
+        "start": 7.96,
+        "end": 10.728
+      },
+      {
+        "scene": "S02",
+        "text": "When the day arrived, Satyavan collapsed while gathering wood in the forest.",
+        "start": 11.5,
+        "end": 16.46
+      },
+      {
+        "scene": "S02",
+        "text": "Yama, lord of death, came to claim his life.",
+        "start": 17.16,
+        "end": 20.602
+      },
+      {
+        "scene": "S03",
+        "text": "Savitri followed Yama along the road away from the living.",
+        "start": 21.68,
+        "end": 25.56
+      },
+      {
+        "scene": "S03",
+        "text": "He told her to return, but she answered with wisdom and would not leave.",
+        "start": 25.56,
+        "end": 31.577
+      },
+      {
+        "scene": "S04",
+        "text": "Impressed, Yama granted her boons—except Satyavan’s life.",
+        "start": 32.9,
+        "end": 37.64
+      },
+      {
+        "scene": "S04",
+        "text": "Savitri asked for blessings on her family and for children of her own.",
+        "start": 38.22,
+        "end": 42.827
+      },
+      {
+        "scene": "S05",
+        "text": "Her final request made the contradiction impossible: how could she have children with Satyavan if he remained dead?",
+        "start": 43.92,
+        "end": 51.4
+      },
+      {
+        "scene": "S05",
+        "text": "Yama restored his life.",
+        "start": 51.96,
+        "end": 53.824
+      },
+      {
+        "scene": "S06",
+        "text": "She had not overpowered death with a weapon.",
+        "start": 54.924,
+        "end": 57.82
+      },
+      {
+        "scene": "S06",
+        "text": "She had followed it with resolve and reason, and brought her husband home.",
+        "start": 58.5,
+        "end": 63.0
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Savitri chose Satyavan as her husband,",
+        "start": 0.0,
+        "end": 3.18,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "even after learning that he was fated",
+        "start": 3.76,
+        "end": 5.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "to die within a year.",
+        "start": 5.78,
+        "end": 7.4,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "She married him without abandoning her choice.",
+        "start": 7.96,
+        "end": 10.728,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "When the day arrived,",
+        "start": 11.5,
+        "end": 12.68,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "Satyavan collapsed while gathering wood in the",
+        "start": 13.34,
+        "end": 16.0,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "forest. Yama, lord of death,",
+        "start": 16.0,
+        "end": 18.68,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "came to claim his life.",
+        "start": 19.1,
+        "end": 20.602,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Savitri followed Yama along the road away",
+        "start": 21.68,
+        "end": 24.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "from the living.",
+        "start": 24.78,
+        "end": 25.56,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "He told her to return,",
+        "start": 25.56,
+        "end": 27.78,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "but she answered with wisdom and would",
+        "start": 27.98,
+        "end": 30.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "not leave.",
+        "start": 30.78,
+        "end": 31.577,
+        "word_count": 2
+      },
+      {
+        "scene": "S04",
+        "text": "Impressed, Yama granted her boons except Satyavan’s",
+        "start": 32.9,
+        "end": 37.02,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "life. Savitri asked for blessings on her",
+        "start": 37.02,
+        "end": 40.5,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "family and for children of her own.",
+        "start": 40.5,
+        "end": 42.827,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "Her final request made the contradiction impossible:",
+        "start": 43.92,
+        "end": 47.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "how could she have children with Satyavan",
+        "start": 48.04,
+        "end": 50.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "if he remained dead?",
+        "start": 50.2,
+        "end": 51.4,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "Yama restored his life.",
+        "start": 51.96,
+        "end": 53.824,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "She had not overpowered death with a",
+        "start": 54.924,
+        "end": 57.44,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "weapon. She had followed it with resolve",
+        "start": 57.44,
+        "end": 60.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "and reason, and brought her husband home.",
+        "start": 60.08,
+        "end": 63.0,
+        "word_count": 7
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 10.728,
+      "end": 11.178,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.178
+      },
+      "measured_pause_after": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.178,
+      "speech_end": 20.602,
+      "end": 21.252,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.178,
+        "end": 21.252
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 21.252,
+      "speech_end": 31.577,
+      "end": 32.377,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 21.252,
+        "end": 32.377
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 32.377,
+      "speech_end": 42.827,
+      "end": 43.627,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 32.377,
+        "end": 43.627
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 43.627,
+      "speech_end": 53.824,
+      "end": 54.924,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 43.627,
+        "end": 54.924
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 54.924,
+      "speech_end": 63.0,
+      "end": 64.541,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 54.924,
+        "end": 64.541
+      },
+      "measured_pause_after": 1.541
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "santoor, flute, soft drone, low percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.178
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "santoor, flute, soft drone, low percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.178,
+      "end": 21.252
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "santoor, flute, soft drone, low percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 21.252,
+      "end": 32.377
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "santoor, flute, soft drone, low percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 32.377,
+      "end": 43.627
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "santoor, flute, soft drone, low percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 43.627,
+      "end": 54.924
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "santoor, flute, soft drone, low percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 54.924,
+      "end": 64.541
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.178
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.178,
+      "end": 21.252
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 21.252,
+      "end": 32.377
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 32.377,
+      "end": 43.627
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 43.627,
+      "end": 54.924
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 54.924,
+      "end": 64.541
+    }
+  ]
+}

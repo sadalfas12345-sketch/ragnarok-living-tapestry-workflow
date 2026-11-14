@@ -1,0 +1,31 @@
+{
+  "profile": "savitri_death_bargain",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Chill Bro",
+      "artist": "Diego Nava",
+      "url": "https://mixkit.co/free-stock-music/mood/chill/",
+      "file": "mixkit_chill_bro_diego_nava.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_chill_bro_diego_nava.mp3"
+    },
+    {
+      "title": "Just Chill",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/mood/chill/",
+      "file": "mixkit_just_chill_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_just_chill_ahjay_stelino.mp3"
+    },
+    {
+      "title": "Recline and Chill",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/mood/chill/",
+      "file": "mixkit_recline_and_chill_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_recline_and_chill_ahjay_stelino.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}
