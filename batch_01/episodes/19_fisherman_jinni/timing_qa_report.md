@@ -5,7 +5,7 @@
 - **timeline_runtime_seconds:** 62.248
 - **narration_runtime_seconds:** 62.248
 - **video_runtime_seconds:** 62.233
-- **caption_count:** 22
+- **caption_count:** 24
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** traditional_narrative_or_literary_retelling
 - **research_status:** editorial_outline_needs_source_review_before_publication
