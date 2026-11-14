@@ -1,0 +1,502 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 75.257,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "The epic of Sunjata tells of a boy whose early difficulties made others doubt him.",
+        "start": 0.0,
+        "end": 5.54
+      },
+      {
+        "scene": "S01",
+        "text": "His mother Sogolon endured ridicule, while rivals plotted around the court.",
+        "start": 6.02,
+        "end": 11.44
+      },
+      {
+        "scene": "S02",
+        "text": "In a celebrated episode, Sunjata rises and shows strength that surprises everyone.",
+        "start": 12.2,
+        "end": 18.44
+      },
+      {
+        "scene": "S02",
+        "text": "Oral versions differ, but the moment becomes a symbol of possibility.",
+        "start": 19.08,
+        "end": 23.7
+      },
+      {
+        "scene": "S03",
+        "text": "Court rivalries forced Sunjata and his family away from their home.",
+        "start": 24.82,
+        "end": 29.04
+      },
+      {
+        "scene": "S03",
+        "text": "They survived through networks of welcome and loyalty beyond the palace walls.",
+        "start": 29.04,
+        "end": 34.771
+      },
+      {
+        "scene": "S04",
+        "text": "When the ruler Sumanguru threatened the region, Sunjata returned with allies gathered across communities.",
+        "start": 36.0,
+        "end": 43.1
+      },
+      {
+        "scene": "S04",
+        "text": "His power depended on coalition, not bloodline alone.",
+        "start": 43.84,
+        "end": 48.34
+      },
+      {
+        "scene": "S05",
+        "text": "The epic associates his victory with the battle of Kirina.",
+        "start": 49.5,
+        "end": 52.98
+      },
+      {
+        "scene": "S05",
+        "text": "Details of the contest belong to oral traditions that are not identical to a modern military record.",
+        "start": 53.74,
+        "end": 59.999
+      },
+      {
+        "scene": "S06",
+        "text": "Sunjata became the founding figure of the Mali Empire in collective memory.",
+        "start": 61.5,
+        "end": 66.22
+      },
+      {
+        "scene": "S06",
+        "text": "His story is preserved through living griot performance, where history and meaning travel together.",
+        "start": 67.08,
+        "end": 73.64
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "The epic of Sunjata tells of a",
+        "start": 0.0,
+        "end": 2.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "boy whose early difficulties made others doubt",
+        "start": 2.24,
+        "end": 5.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "him. His mother Sogolon endured ridicule,",
+        "start": 5.06,
+        "end": 8.42,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "while rivals plotted around the court.",
+        "start": 8.98,
+        "end": 11.44,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "In a celebrated episode,",
+        "start": 12.2,
+        "end": 14.02,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "Sunjata rises and shows strength that surprises",
+        "start": 14.6,
+        "end": 17.72,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "everyone. Oral versions differ,",
+        "start": 17.72,
+        "end": 20.3,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "but the moment becomes a symbol of",
+        "start": 20.66,
+        "end": 22.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "possibility.",
+        "start": 22.96,
+        "end": 23.7,
+        "word_count": 1
+      },
+      {
+        "scene": "S03",
+        "text": "Court rivalries forced Sunjata and his family",
+        "start": 24.82,
+        "end": 27.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "away from their home.",
+        "start": 27.84,
+        "end": 29.04,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "They survived through networks of welcome and",
+        "start": 29.04,
+        "end": 32.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "loyalty beyond the palace walls.",
+        "start": 32.4,
+        "end": 34.771,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "When the ruler Sumanguru threatened the region,",
+        "start": 36.0,
+        "end": 38.86,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Sunjata returned with allies gathered across communities.",
+        "start": 39.54,
+        "end": 43.1,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "His power depended on coalition,",
+        "start": 43.84,
+        "end": 46.18,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "not bloodline alone.",
+        "start": 46.88,
+        "end": 48.34,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "The epic associates his victory with the",
+        "start": 49.5,
+        "end": 52.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "battle of Kirina.",
+        "start": 52.08,
+        "end": 52.98,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "Details of the contest belong to oral",
+        "start": 53.74,
+        "end": 56.12,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "traditions that are not identical to a",
+        "start": 56.12,
+        "end": 58.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "modern military record.",
+        "start": 58.58,
+        "end": 59.999,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "Sunjata became the founding figure of the",
+        "start": 61.5,
+        "end": 63.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "Mali Empire in collective memory.",
+        "start": 63.96,
+        "end": 66.22,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "His story is preserved through living griot",
+        "start": 67.08,
+        "end": 69.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "performance, where history and meaning travel together.",
+        "start": 69.8,
+        "end": 73.64,
+        "word_count": 7
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.44,
+      "end": 11.915,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.915
+      },
+      "measured_pause_after": 0.475
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.915,
+      "speech_end": 23.7,
+      "end": 24.454,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.915,
+        "end": 24.454
+      },
+      "measured_pause_after": 0.754
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 24.454,
+      "speech_end": 34.771,
+      "end": 35.571,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 24.454,
+        "end": 35.571
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 35.571,
+      "speech_end": 48.34,
+      "end": 49.213,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 35.571,
+        "end": 49.213
+      },
+      "measured_pause_after": 0.873
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 49.213,
+      "speech_end": 59.999,
+      "end": 61.099,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 49.213,
+        "end": 61.099
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 61.099,
+      "speech_end": 73.64,
+      "end": 75.257,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 61.099,
+        "end": 75.257
+      },
+      "measured_pause_after": 1.617
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.915
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.915,
+      "end": 24.454
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 24.454,
+      "end": 35.571
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 35.571,
+      "end": 49.213
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 49.213,
+      "end": 61.099
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "kora-style plucked strings, balafon-inspired wooden tones, dunun pulses",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 61.099,
+      "end": 75.257
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.915
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.915,
+      "end": 24.454
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 24.454,
+      "end": 35.571
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 35.571,
+      "end": 49.213
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 49.213,
+      "end": 61.099
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 61.099,
+      "end": 75.257
+    }
+  ]
+}

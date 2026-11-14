@@ -1,0 +1,20 @@
+{
+  "episode": 29,
+  "title": "Sundiata: The Lion Who Built Mali",
+  "runtime_seconds": 75.257,
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "caption_count": 26,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.475, 0.754, 0.8, 0.873, 1.1],
+  "loudness": {
+    "input_integrated_lufs": -14.1,
+    "input_true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.0,
+    "output_integrated_lufs": -14.1,
+    "output_true_peak_dbtp": -1.0,
+    "output_lra_lu": 2.9
+  },
+  "status": "PASS",
+  "auditory_playback": "unavailable; automated waveform, loudness, frame, caption, and synchronization checks completed"
+}

@@ -1,0 +1,18 @@
+{
+  "episode": 29,
+  "source_file": "29_sundiata.json",
+  "source_sha256": "e299ab2d92fd7fcc062f40ea5e52e374733d185e1b73f27a2fbd062bbbcf7b95",
+  "updated_at": "2026-11-14T03:57:43.467480+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
