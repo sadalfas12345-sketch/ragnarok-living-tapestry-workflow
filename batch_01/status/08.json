@@ -1,0 +1,18 @@
+{
+  "episode": 8,
+  "source_file": "08_yuki_onna.json",
+  "source_sha256": "6e653e4c7af05be5b03347189b1b5b84d7a68d8238e13612389e509fce6635ce",
+  "updated_at": "2026-11-14T01:02:09.436812+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

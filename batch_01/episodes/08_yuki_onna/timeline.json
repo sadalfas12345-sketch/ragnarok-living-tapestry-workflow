@@ -1,0 +1,502 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 66.398,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Two woodcutters sheltered from a deadly snowstorm.",
+        "start": 0.0,
+        "end": 3.68
+      },
+      {
+        "scene": "S01",
+        "text": "During the night, a pale woman entered, and one man died beneath her freezing breath.",
+        "start": 4.46,
+        "end": 11.469
+      },
+      {
+        "scene": "S02",
+        "text": "She spared the younger man, Minokichi, only if he never told anyone what he had seen.",
+        "start": 12.3,
+        "end": 18.66
+      },
+      {
+        "scene": "S02",
+        "text": "By morning she had vanished into the blizzard.",
+        "start": 19.22,
+        "end": 21.76
+      },
+      {
+        "scene": "S03",
+        "text": "Minokichi later married a beautiful woman called O-Yuki.",
+        "start": 22.88,
+        "end": 26.8
+      },
+      {
+        "scene": "S03",
+        "text": "They built a life together and raised children; the winter vision slowly became a secret memory.",
+        "start": 26.8,
+        "end": 34.585
+      },
+      {
+        "scene": "S04",
+        "text": "One evening he told his wife the old tale.",
+        "start": 35.74,
+        "end": 38.54
+      },
+      {
+        "scene": "S04",
+        "text": "As he spoke, she changed: O-Yuki was the very woman who had made him promise silence.",
+        "start": 39.06,
+        "end": 46.16
+      },
+      {
+        "scene": "S05",
+        "text": "She was furious that he had broken his word, but for their children she spared his life.",
+        "start": 47.38,
+        "end": 53.58
+      },
+      {
+        "scene": "S05",
+        "text": "Then she disappeared into the night.",
+        "start": 53.58,
+        "end": 55.919
+      },
+      {
+        "scene": "S06",
+        "text": "He kept the family, but lost the woman he loved.",
+        "start": 57.36,
+        "end": 60.74
+      },
+      {
+        "scene": "S06",
+        "text": "Some promises are not tested until a lifetime has passed.",
+        "start": 61.58,
+        "end": 64.898
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Two woodcutters sheltered from a deadly snowstorm.",
+        "start": 0.0,
+        "end": 3.68,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "During the night,",
+        "start": 4.46,
+        "end": 5.46,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "a pale woman entered,",
+        "start": 5.9,
+        "end": 7.38,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "and one man died beneath her freezing",
+        "start": 7.8,
+        "end": 10.9,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "breath.",
+        "start": 10.9,
+        "end": 11.469,
+        "word_count": 1
+      },
+      {
+        "scene": "S02",
+        "text": "She spared the younger man,",
+        "start": 12.3,
+        "end": 14.08,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "Minokichi, only if he never told anyone",
+        "start": 14.58,
+        "end": 17.62,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "what he had seen.",
+        "start": 17.62,
+        "end": 18.66,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "By morning she had vanished into the",
+        "start": 19.22,
+        "end": 21.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "blizzard.",
+        "start": 21.36,
+        "end": 21.76,
+        "word_count": 1
+      },
+      {
+        "scene": "S03",
+        "text": "Minokichi later married a beautiful woman called",
+        "start": 22.88,
+        "end": 26.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "O-Yuki. They built a life together and",
+        "start": 26.18,
+        "end": 29.26,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "raised children; the winter vision slowly became",
+        "start": 29.26,
+        "end": 33.16,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "a secret memory.",
+        "start": 33.16,
+        "end": 34.585,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "One evening he told his wife the",
+        "start": 35.74,
+        "end": 37.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "old tale. As he spoke,",
+        "start": 37.88,
+        "end": 40.12,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "she changed: O-Yuki was the very woman",
+        "start": 40.36,
+        "end": 43.9,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "who had made him promise silence.",
+        "start": 43.9,
+        "end": 46.16,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "She was furious that he had broken",
+        "start": 47.38,
+        "end": 49.56,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "his word, but for their children she",
+        "start": 49.56,
+        "end": 52.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "spared his life.",
+        "start": 52.4,
+        "end": 53.58,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "Then she disappeared into the night.",
+        "start": 53.58,
+        "end": 55.919,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "He kept the family,",
+        "start": 57.36,
+        "end": 58.42,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "but lost the woman he loved.",
+        "start": 58.88,
+        "end": 60.74,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "Some promises are not tested until a",
+        "start": 61.58,
+        "end": 63.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "lifetime has passed.",
+        "start": 63.82,
+        "end": 64.898,
+        "word_count": 3
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.469,
+      "end": 11.919,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.919
+      },
+      "measured_pause_after": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.919,
+      "speech_end": 21.76,
+      "end": 22.482,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.919,
+        "end": 22.482
+      },
+      "measured_pause_after": 0.722
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.482,
+      "speech_end": 34.585,
+      "end": 35.385,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.482,
+        "end": 35.385
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 35.385,
+      "speech_end": 46.16,
+      "end": 47.064,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 35.385,
+        "end": 47.064
+      },
+      "measured_pause_after": 0.904
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 47.064,
+      "speech_end": 55.919,
+      "end": 57.019,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 47.064,
+        "end": 57.019
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 57.019,
+      "speech_end": 64.898,
+      "end": 66.398,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 57.019,
+        "end": 66.398
+      },
+      "measured_pause_after": 1.5
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.919
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.919,
+      "end": 22.482
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.482,
+      "end": 35.385
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 35.385,
+      "end": 47.064
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 47.064,
+      "end": 57.019
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 57.019,
+      "end": 66.398
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.919
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.919,
+      "end": 22.482
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.482,
+      "end": 35.385
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 35.385,
+      "end": 47.064
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 47.064,
+      "end": 57.019
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 57.019,
+      "end": 66.398
+    }
+  ]
+}
