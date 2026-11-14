@@ -1,0 +1,481 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 65.931,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "In an Egyptian myth, humanity plotted against the aging sun god Ra.",
+        "start": 0.0,
+        "end": 5.76
+      },
+      {
+        "scene": "S01",
+        "text": "He sent his fierce eye, Sekhmet, to punish those who defied him.",
+        "start": 6.28,
+        "end": 11.227
+      },
+      {
+        "scene": "S02",
+        "text": "Sekhmet struck with such fury that the destruction threatened to continue beyond any measured punishment.",
+        "start": 11.677,
+        "end": 18.4
+      },
+      {
+        "scene": "S02",
+        "text": "The force sent to restore order became difficult to stop.",
+        "start": 19.1,
+        "end": 22.649
+      },
+      {
+        "scene": "S03",
+        "text": "Ra feared she might destroy humanity entirely.",
+        "start": 23.72,
+        "end": 26.94
+      },
+      {
+        "scene": "S03",
+        "text": "He needed a way to halt the goddess without confronting her in another battle.",
+        "start": 26.94,
+        "end": 32.18
+      },
+      {
+        "scene": "S04",
+        "text": "Vast quantities of beer were colored red and poured across the fields.",
+        "start": 33.52,
+        "end": 38.02
+      },
+      {
+        "scene": "S04",
+        "text": "Sekhmet mistook the liquid for blood and drank deeply.",
+        "start": 38.86,
+        "end": 41.92
+      },
+      {
+        "scene": "S05",
+        "text": "Intoxicated, she ceased her slaughter.",
+        "start": 43.16,
+        "end": 45.8
+      },
+      {
+        "scene": "S05",
+        "text": "The people survived because the gods answered overwhelming violence with deception rather than more violence.",
+        "start": 46.5,
+        "end": 53.5
+      },
+      {
+        "scene": "S06",
+        "text": "In this tale, even divine punishment can outrun its purpose.",
+        "start": 54.646,
+        "end": 59.5
+      },
+      {
+        "scene": "S06",
+        "text": "Saving the world required restraining the power that claimed to defend it.",
+        "start": 60.28,
+        "end": 64.431
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "In an Egyptian myth,",
+        "start": 0.0,
+        "end": 1.8,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "humanity plotted against the aging sun god",
+        "start": 2.28,
+        "end": 5.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "Ra. He sent his fierce eye,",
+        "start": 5.34,
+        "end": 8.22,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "Sekhmet, to punish those who defied him.",
+        "start": 8.44,
+        "end": 11.227,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "Sekhmet struck with such fury that the",
+        "start": 11.677,
+        "end": 14.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "destruction threatened to continue beyond any measured",
+        "start": 14.48,
+        "end": 17.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "punishment. The force sent to restore order",
+        "start": 17.74,
+        "end": 20.92,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "became difficult to stop.",
+        "start": 20.92,
+        "end": 22.649,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "Ra feared she might destroy humanity entirely.",
+        "start": 23.72,
+        "end": 26.94,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "He needed a way to halt the",
+        "start": 26.94,
+        "end": 29.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "goddess without confronting her in another battle.",
+        "start": 29.24,
+        "end": 32.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Vast quantities of beer were colored red",
+        "start": 33.52,
+        "end": 36.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "and poured across the fields.",
+        "start": 36.08,
+        "end": 38.02,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Sekhmet mistook the liquid for blood and",
+        "start": 38.86,
+        "end": 41.12,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "drank deeply.",
+        "start": 41.12,
+        "end": 41.92,
+        "word_count": 2
+      },
+      {
+        "scene": "S05",
+        "text": "Intoxicated, she ceased her slaughter.",
+        "start": 43.16,
+        "end": 45.8,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "The people survived because the gods answered",
+        "start": 46.5,
+        "end": 49.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "overwhelming violence with deception rather than more",
+        "start": 49.4,
+        "end": 52.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "violence.",
+        "start": 52.84,
+        "end": 53.5,
+        "word_count": 1
+      },
+      {
+        "scene": "S06",
+        "text": "In this tale,",
+        "start": 54.646,
+        "end": 55.94,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "even divine punishment can outrun its purpose.",
+        "start": 56.36,
+        "end": 59.5,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "Saving the world required restraining the power",
+        "start": 60.28,
+        "end": 62.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "that claimed to defend it.",
+        "start": 62.7,
+        "end": 64.431,
+        "word_count": 5
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.227,
+      "end": 11.677,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.677
+      },
+      "measured_pause_after": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.677,
+      "speech_end": 22.649,
+      "end": 23.299,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.677,
+        "end": 23.299
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 23.299,
+      "speech_end": 32.18,
+      "end": 33.082,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 23.299,
+        "end": 33.082
+      },
+      "measured_pause_after": 0.902
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 33.082,
+      "speech_end": 41.92,
+      "end": 42.72,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 33.082,
+        "end": 42.72
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 42.72,
+      "speech_end": 53.5,
+      "end": 54.646,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 42.72,
+        "end": 54.646
+      },
+      "measured_pause_after": 1.146
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 54.646,
+      "speech_end": 64.431,
+      "end": 65.931,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 54.646,
+        "end": 65.931
+      },
+      "measured_pause_after": 1.5
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "rattles, sistrum, war drums, hypnotic reed, heartbeat",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.677
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "rattles, sistrum, war drums, hypnotic reed, heartbeat",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.677,
+      "end": 23.299
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "rattles, sistrum, war drums, hypnotic reed, heartbeat",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 23.299,
+      "end": 33.082
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "rattles, sistrum, war drums, hypnotic reed, heartbeat",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 33.082,
+      "end": 42.72
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "rattles, sistrum, war drums, hypnotic reed, heartbeat",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 42.72,
+      "end": 54.646
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "rattles, sistrum, war drums, hypnotic reed, heartbeat",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 54.646,
+      "end": 65.931
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.677
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.677,
+      "end": 23.299
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 23.299,
+      "end": 33.082
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 33.082,
+      "end": 42.72
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 42.72,
+      "end": 54.646
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 54.646,
+      "end": 65.931
+    }
+  ]
+}

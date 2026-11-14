@@ -1,0 +1,31 @@
+{
+  "profile": "sekhmet_red_flood",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "C.B.P.D",
+      "artist": "Arulo",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_cbpd_arulo.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_cbpd_arulo.mp3"
+    },
+    {
+      "title": "Pop 05",
+      "artist": "Grigoriy Nuzhny",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_pop_05_grigoriy_nuzhny.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_pop_05_grigoriy_nuzhny.mp3"
+    },
+    {
+      "title": "Villa Penthouse",
+      "artist": "Arulo",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_villa_penthouse_arulo.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_villa_penthouse_arulo.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

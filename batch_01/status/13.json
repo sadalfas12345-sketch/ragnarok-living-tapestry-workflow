@@ -1,0 +1,18 @@
+{
+  "episode": 13,
+  "source_file": "13_sekhmet.json",
+  "source_sha256": "35cebf958a30b2c3be1858519e4dd76a3c94bc9472d91c76823c2ee541c99fc5",
+  "updated_at": "2026-11-14T01:39:10.368475+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
