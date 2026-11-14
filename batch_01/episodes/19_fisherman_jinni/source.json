@@ -1,0 +1,276 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 19,
+  "slug": "19_fisherman_jinni",
+  "title": "The Fisherman and the Jinni",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "folklore, cunning",
+  "civilization": "Arabian Nights tradition",
+  "source_integrity": {
+    "primary_source_or_tradition": "One Thousand and One Nights, Fisherman and Jinni frame tale",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for The Fisherman and the Jinni in Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "fisherman",
+      "jinni"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "oud, ney, riq, eerie drones, splash",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "A poor fisherman hauled a heavy sealed vessel from the sea. Inside was no treasure, only an enormous spirit imprisoned for centuries.",
+      "beat_title": "The catch",
+      "required_visuals": [
+        "fisherman lifts brass jar from blue fishing shore"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Scene: fisherman lifts brass jar from blue fishing shore. The source story is The Fisherman and the Jinni. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "oud, ney, riq, eerie drones, splash",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "The jinni emerged in smoke and announced that his first decision was to kill the person who had freed him. Gratitude had curdled into rage.",
+      "beat_title": "A cruel promise",
+      "required_visuals": [
+        "towering smoke jinni above miniature fisherman"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Scene: towering smoke jinni above miniature fisherman. The source story is The Fisherman and the Jinni. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "oud, ney, riq, eerie drones, splash",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "The fisherman did not reach for a sword. He asked a question: how could such a gigantic spirit ever have fitted into so small a vessel?",
+      "beat_title": "The impossible claim",
+      "required_visuals": [
+        "tiny jar next to giant looming figure"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Scene: tiny jar next to giant looming figure. The source story is The Fisherman and the Jinni. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "oud, ney, riq, eerie drones, splash",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "Offended, the jinni turned to smoke and flowed back inside to prove the feat. The fisherman immediately sealed the lid.",
+      "beat_title": "The demonstration",
+      "required_visuals": [
+        "smoke spirals downward into jar",
+        "fisherman closes seal"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Scene: smoke spirals downward into jar, fisherman closes seal. The source story is The Fisherman and the Jinni. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "oud, ney, riq, eerie drones, splash",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Now the prisoner begged for release. The fisherman had reversed their positions with nothing but a question and quick hands.",
+      "beat_title": "A new negotiation",
+      "required_visuals": [
+        "fisherman faces jar",
+        "jinni face appears in brass"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Scene: fisherman faces jar, jinni face appears in brass. The source story is The Fisherman and the Jinni. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "oud, ney, riq, eerie drones, splash",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "In stories like this, intelligence is the weapon of those without force. The man who owned almost nothing suddenly controlled the bargain.",
+      "beat_title": "The rule",
+      "required_visuals": [
+        "fisherman carries jar",
+        "setting sun across harbor"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Arabic manuscript miniature, azure sea, brass lamp-metal highlights, geometric borders. Scene: fisherman carries jar, setting sun across harbor. The source story is The Fisherman and the Jinni. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "oud, ney, riq, eerie drones, splash",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

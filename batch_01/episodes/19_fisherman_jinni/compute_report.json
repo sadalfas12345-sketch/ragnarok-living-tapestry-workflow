@@ -1,0 +1,24 @@
+{
+  "episode": 19,
+  "title": "The Fisherman and the Jinni",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation",
+  "timeline_runtime_seconds": 62.248,
+  "narration_runtime_seconds": 62.248,
+  "video_runtime_seconds": 62.233,
+  "caption_count": 22,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.56, 0.713, 0.873, 0.8, 1.13],
+  "loudness": {
+    "integrated_lufs": -14.2,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.1,
+    "output_integrated_lufs": -14.1,
+    "output_lra_lu": 2.5
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}

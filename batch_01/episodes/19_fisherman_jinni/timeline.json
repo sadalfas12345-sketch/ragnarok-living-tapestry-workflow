@@ -1,0 +1,474 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 62.248,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "A poor fisherman hauled a heavy sealed vessel from the sea.",
+        "start": 0.0,
+        "end": 4.38
+      },
+      {
+        "scene": "S01",
+        "text": "Inside was no treasure, only an enormous spirit imprisoned for centuries.",
+        "start": 4.96,
+        "end": 10.04
+      },
+      {
+        "scene": "S02",
+        "text": "The jinni emerged in smoke and announced that his first decision was to kill the person who had freed him.",
+        "start": 10.9,
+        "end": 17.98
+      },
+      {
+        "scene": "S02",
+        "text": "Gratitude had curdled into rage.",
+        "start": 18.46,
+        "end": 20.46
+      },
+      {
+        "scene": "S03",
+        "text": "The fisherman did not reach for a sword.",
+        "start": 21.42,
+        "end": 23.7
+      },
+      {
+        "scene": "S03",
+        "text": "He asked a question: how could such a gigantic spirit ever have fitted into so small a vessel?",
+        "start": 24.26,
+        "end": 30.68
+      },
+      {
+        "scene": "S04",
+        "text": "Offended, the jinni turned to smoke and flowed back inside to prove the feat.",
+        "start": 32.04,
+        "end": 37.58
+      },
+      {
+        "scene": "S04",
+        "text": "The fisherman immediately sealed the lid.",
+        "start": 37.58,
+        "end": 40.222
+      },
+      {
+        "scene": "S05",
+        "text": "Now the prisoner begged for release.",
+        "start": 41.4,
+        "end": 43.52
+      },
+      {
+        "scene": "S05",
+        "text": "The fisherman had reversed their positions with nothing but a question and quick hands.",
+        "start": 44.16,
+        "end": 49.66
+      },
+      {
+        "scene": "S06",
+        "text": "In stories like this, intelligence is the weapon of those without force.",
+        "start": 50.79,
+        "end": 56.14
+      },
+      {
+        "scene": "S06",
+        "text": "The man who owned almost nothing suddenly controlled the bargain.",
+        "start": 56.84,
+        "end": 60.54
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "A poor fisherman hauled a heavy sealed",
+        "start": 0.0,
+        "end": 3.02,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "vessel from the sea.",
+        "start": 3.02,
+        "end": 4.38,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "Inside was no treasure,",
+        "start": 4.96,
+        "end": 6.34,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "only an enormous spirit imprisoned for centuries.",
+        "start": 6.86,
+        "end": 10.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "The jinni emerged in smoke and announced",
+        "start": 10.9,
+        "end": 13.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "that his first decision was to kill",
+        "start": 13.66,
+        "end": 15.92,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "the person who had freed him.",
+        "start": 15.92,
+        "end": 17.98,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "Gratitude had curdled into rage.",
+        "start": 18.46,
+        "end": 20.46,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "The fisherman did not reach for a",
+        "start": 21.42,
+        "end": 23.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "sword. He asked a question:",
+        "start": 23.4,
+        "end": 25.44,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "how could such a gigantic spirit ever",
+        "start": 25.44,
+        "end": 28.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "have fitted into so small a vessel?",
+        "start": 28.36,
+        "end": 30.68,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Offended, the jinni turned to smoke and",
+        "start": 32.04,
+        "end": 34.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "flowed back inside to prove the feat.",
+        "start": 34.96,
+        "end": 37.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "The fisherman immediately sealed the lid.",
+        "start": 37.58,
+        "end": 40.222,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "Now the prisoner begged for release.",
+        "start": 41.4,
+        "end": 43.52,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "The fisherman had reversed their positions with",
+        "start": 44.16,
+        "end": 46.9,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "nothing but a question and quick hands.",
+        "start": 46.9,
+        "end": 49.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "In stories like this,",
+        "start": 50.79,
+        "end": 52.8,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "intelligence is the weapon of those without",
+        "start": 53.16,
+        "end": 55.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "force. The man who owned almost nothing",
+        "start": 55.58,
+        "end": 58.94,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "suddenly controlled the bargain.",
+        "start": 58.94,
+        "end": 60.54,
+        "word_count": 4
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 10.04,
+      "end": 10.6,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 10.6
+      },
+      "measured_pause_after": 0.56
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 10.6,
+      "speech_end": 20.46,
+      "end": 21.173,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 10.6,
+        "end": 21.173
+      },
+      "measured_pause_after": 0.713
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 21.173,
+      "speech_end": 30.68,
+      "end": 31.553,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 21.173,
+        "end": 31.553
+      },
+      "measured_pause_after": 0.873
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 31.553,
+      "speech_end": 40.222,
+      "end": 41.022,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 31.553,
+        "end": 41.022
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 41.022,
+      "speech_end": 49.66,
+      "end": 50.79,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 41.022,
+        "end": 50.79
+      },
+      "measured_pause_after": 1.13
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 50.79,
+      "speech_end": 60.54,
+      "end": 62.248,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 50.79,
+        "end": 62.248
+      },
+      "measured_pause_after": 1.708
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "oud, ney, riq, eerie drones, splash",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 10.6
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "oud, ney, riq, eerie drones, splash",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 10.6,
+      "end": 21.173
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "oud, ney, riq, eerie drones, splash",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 21.173,
+      "end": 31.553
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "oud, ney, riq, eerie drones, splash",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 31.553,
+      "end": 41.022
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "oud, ney, riq, eerie drones, splash",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 41.022,
+      "end": 50.79
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "oud, ney, riq, eerie drones, splash",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 50.79,
+      "end": 62.248
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 10.6
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 10.6,
+      "end": 21.173
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 21.173,
+      "end": 31.553
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 31.553,
+      "end": 41.022
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 41.022,
+      "end": 50.79
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 50.79,
+      "end": 62.248
+    }
+  ]
+}
