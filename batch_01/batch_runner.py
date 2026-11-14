@@ -544,11 +544,12 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
         raise FileNotFoundError("Mixkit tracks missing from the existing licensed asset cache")
     music = adir / "music_stem.wav"
     # Use the story's emotional cue labels to arrange a three-part licensed bed.
+    music_scale = 1.5 if spec["episode_number"] == 7 else 1.0
     cue_two = round(tl["scenes"][1]["start"] * 1000)
     cue_three = round(tl["scenes"][3]["start"] * 1000)
-    f = (f"[0:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume=0.22,lowpass=f=3200,afade=t=in:st=0:d=3,afade=t=out:st={max(0,runtime-3):.3f}:d=3[m0];"
-         f"[1:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume=0.20,lowpass=f=4800,adelay={cue_two}|{cue_two}[m1];"
-         f"[2:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume=0.16,lowpass=f=5200,adelay={cue_three}|{cue_three}[m2];"
+    f = (f"[0:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume={0.22*music_scale:.3f},lowpass=f=3200,afade=t=in:st=0:d=3,afade=t=out:st={max(0,runtime-3):.3f}:d=3[m0];"
+         f"[1:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume={0.20*music_scale:.3f},lowpass=f=4800,adelay={cue_two}|{cue_two}[m1];"
+         f"[2:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume={0.16*music_scale:.3f},lowpass=f=5200,adelay={cue_three}|{cue_three}[m2];"
          f"[m0][m1][m2]amix=inputs=3:duration=longest:dropout_transition=2,atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,equalizer=f=2600:t=q:w=1:g=-3,aresample=48000[m]")
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(tracks[0]), "-i", str(tracks[1]), "-i", str(tracks[2]), "-filter_complex", f, "-map", "[m]", "-ac", "2", "-c:a", "pcm_s16le", str(music)])
     narration = adir / "narration.wav"
