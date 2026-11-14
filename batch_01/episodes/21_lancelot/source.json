@@ -88,13 +88,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Sir Lancelot was among Arthur’s greatest knights, celebrated for courage and loyalty. Yet his devotion to Queen Guinevere grew into a love that threatened the court itself.",
+      "caption": "What if the greatest knight betrayed the very court he served? Sir Lancelot was among Arthur’s greatest knights, celebrated for courage and loyalty. Yet his devotion to Queen Guinevere grew into a love that threatened the court itself.",
       "beat_title": "The loyal knight",
       "required_visuals": [
         "knight kneels before queen under gothic arch"
@@ -275,5 +276,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if the greatest knight betrayed the very court he served?"
 }
