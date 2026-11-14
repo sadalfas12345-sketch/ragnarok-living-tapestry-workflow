@@ -89,13 +89,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Isis fled danger with the child Horus. Seven scorpions guarded her as she traveled, vulnerable despite her divine identity.",
+      "caption": "What if even a goddess and her child had to flee for safety? Isis fled danger with the child Horus. Seven scorpions guarded her as she traveled, vulnerable despite her divine identity.",
       "beat_title": "Flight",
       "required_visuals": [
         "Isis carrying Horus through marsh",
@@ -276,5 +277,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if even a goddess and her child had to flee for safety?"
 }
