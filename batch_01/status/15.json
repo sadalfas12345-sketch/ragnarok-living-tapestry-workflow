@@ -1,0 +1,18 @@
+{
+  "episode": 15,
+  "source_file": "15_isis_scorpions.json",
+  "source_sha256": "5a418e687818dfc7ca5a63d585c4edaa7725a674868671ea63a48d78795c5a1b",
+  "updated_at": "2026-11-14T01:54:44.526468+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
