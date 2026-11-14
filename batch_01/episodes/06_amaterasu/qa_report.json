@@ -1,0 +1,46 @@
+{
+  "episode": 6,
+  "title": "Amaterasu: When the Sun Hid Away",
+  "timeline_runtime_seconds": 67.12,
+  "narration_runtime_seconds": 67.12,
+  "video_runtime_seconds": 67.1,
+  "caption_count": 24,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [
+    {
+      "from": "S01",
+      "to": "S02",
+      "seconds": 0.467,
+      "intended_seconds": 0.45
+    },
+    {
+      "from": "S02",
+      "to": "S03",
+      "seconds": 0.737,
+      "intended_seconds": 0.65
+    },
+    {
+      "from": "S03",
+      "to": "S04",
+      "seconds": 0.8,
+      "intended_seconds": 0.8
+    },
+    {
+      "from": "S04",
+      "to": "S05",
+      "seconds": 0.8,
+      "intended_seconds": 0.8
+    },
+    {
+      "from": "S05",
+      "to": "S06",
+      "seconds": 1.1,
+      "intended_seconds": 1.1
+    }
+  ],
+  "source_integrity_classification": "traditional_narrative_or_literary_retelling",
+  "research_status": "editorial_outline_needs_source_review_before_publication",
+  "auditory_playback": "not available to the agent; waveform, loudness, rendered-frame, and synchronization checks completed",
+  "errors": [],
+  "status": "PASS"
+}

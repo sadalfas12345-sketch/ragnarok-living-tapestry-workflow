@@ -1,0 +1,494 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 67.12,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "The sun goddess Amaterasu withdrew into a heavenly cave after violent conduct by her brother Susanoo.",
+        "start": 0.0,
+        "end": 7.5
+      },
+      {
+        "scene": "S01",
+        "text": "With her light hidden, darkness settled across the world.",
+        "start": 8.08,
+        "end": 12.08
+      },
+      {
+        "scene": "S02",
+        "text": "The other gods gathered outside.",
+        "start": 12.84,
+        "end": 14.68
+      },
+      {
+        "scene": "S02",
+        "text": "Fields and living creatures waited without sunlight.",
+        "start": 15.38,
+        "end": 18.82
+      },
+      {
+        "scene": "S02",
+        "text": "They could not simply command the cave to open.",
+        "start": 19.34,
+        "end": 21.92
+      },
+      {
+        "scene": "S03",
+        "text": "The goddess Ame-no-Uzume began a wild dance.",
+        "start": 22.94,
+        "end": 26.2
+      },
+      {
+        "scene": "S03",
+        "text": "The assembled gods laughed so loudly that curiosity stirred behind the stone door.",
+        "start": 26.2,
+        "end": 32.681
+      },
+      {
+        "scene": "S04",
+        "text": "Amaterasu peered out to discover why everyone celebrated without her.",
+        "start": 34.0,
+        "end": 38.8
+      },
+      {
+        "scene": "S04",
+        "text": "A sacred mirror caught her eye, and the gods seized their chance.",
+        "start": 39.18,
+        "end": 43.77
+      },
+      {
+        "scene": "S05",
+        "text": "The cave opened fully, and light poured back over heaven and earth.",
+        "start": 44.94,
+        "end": 49.22
+      },
+      {
+        "scene": "S05",
+        "text": "A rope marked the passage that must not close again.",
+        "start": 49.92,
+        "end": 53.384
+      },
+      {
+        "scene": "S06",
+        "text": "In this myth, even the sun returns through ingenuity, ritual, and laughter—not force alone.",
+        "start": 54.484,
+        "end": 62.16
+      },
+      {
+        "scene": "S06",
+        "text": "The world needed every god to work together.",
+        "start": 62.74,
+        "end": 65.48
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "The sun goddess Amaterasu withdrew into a",
+        "start": 0.0,
+        "end": 3.44,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "heavenly cave after violent conduct by her",
+        "start": 3.44,
+        "end": 6.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "brother Susanoo. With her light hidden,",
+        "start": 6.52,
+        "end": 9.5,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "darkness settled across the world.",
+        "start": 10.32,
+        "end": 12.08,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "The other gods gathered outside.",
+        "start": 12.84,
+        "end": 14.68,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "Fields and living creatures waited without sunlight.",
+        "start": 15.38,
+        "end": 18.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "They could not simply command the cave",
+        "start": 19.34,
+        "end": 21.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "to open.",
+        "start": 21.36,
+        "end": 21.92,
+        "word_count": 2
+      },
+      {
+        "scene": "S03",
+        "text": "The goddess Ame-no-Uzume began a wild dance.",
+        "start": 22.94,
+        "end": 26.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "The assembled gods laughed so loudly that",
+        "start": 26.2,
+        "end": 29.94,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "curiosity stirred behind the stone door.",
+        "start": 29.94,
+        "end": 32.681,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Amaterasu peered out to discover why everyone",
+        "start": 34.0,
+        "end": 36.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "celebrated without her.",
+        "start": 36.98,
+        "end": 38.8,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "A sacred mirror caught her eye,",
+        "start": 39.18,
+        "end": 41.34,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "and the gods seized their chance.",
+        "start": 41.62,
+        "end": 43.77,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "The cave opened fully,",
+        "start": 44.94,
+        "end": 46.16,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "and light poured back over heaven and",
+        "start": 46.16,
+        "end": 48.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "earth. A rope marked the passage that",
+        "start": 48.78,
+        "end": 51.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "must not close again.",
+        "start": 51.74,
+        "end": 53.384,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "In this myth,",
+        "start": 54.484,
+        "end": 55.74,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "even the sun returns through ingenuity,",
+        "start": 56.24,
+        "end": 58.5,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "ritual, and laughter not force alone.",
+        "start": 59.68,
+        "end": 62.16,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "The world needed every god to work",
+        "start": 62.74,
+        "end": 65.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "together.",
+        "start": 65.08,
+        "end": 65.48,
+        "word_count": 1
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.08,
+      "end": 12.547,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.547
+      },
+      "measured_pause_after": 0.467
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.547,
+      "speech_end": 21.92,
+      "end": 22.657,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.547,
+        "end": 22.657
+      },
+      "measured_pause_after": 0.737
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.657,
+      "speech_end": 32.681,
+      "end": 33.481,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.657,
+        "end": 33.481
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 33.481,
+      "speech_end": 43.77,
+      "end": 44.57,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 33.481,
+        "end": 44.57
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 44.57,
+      "speech_end": 53.384,
+      "end": 54.484,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 44.57,
+        "end": 54.484
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 54.484,
+      "speech_end": 65.48,
+      "end": 67.12,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 54.484,
+        "end": 67.12
+      },
+      "measured_pause_after": 1.64
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "shō, shakuhachi, shrine bells, festival percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.547
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "shō, shakuhachi, shrine bells, festival percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.547,
+      "end": 22.657
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "shō, shakuhachi, shrine bells, festival percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.657,
+      "end": 33.481
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "shō, shakuhachi, shrine bells, festival percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 33.481,
+      "end": 44.57
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "shō, shakuhachi, shrine bells, festival percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 44.57,
+      "end": 54.484
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "shō, shakuhachi, shrine bells, festival percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 54.484,
+      "end": 67.12
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.547
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.547,
+      "end": 22.657
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.657,
+      "end": 33.481
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 33.481,
+      "end": 44.57
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 44.57,
+      "end": 54.484
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 54.484,
+      "end": 67.12
+    }
+  ]
+}

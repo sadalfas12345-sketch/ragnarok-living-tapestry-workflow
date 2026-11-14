@@ -1,0 +1,31 @@
+{
+  "profile": "amaterasu_sunrise_ritual",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Games Worldbeat",
+      "artist": "Bernardo R.",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_games_worldbeat_bernardo_r.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_games_worldbeat_bernardo_r.mp3"
+    },
+    {
+      "title": "Serene View",
+      "artist": "Arulo",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_serene_view_arulo.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_serene_view_arulo.mp3"
+    },
+    {
+      "title": "Forest Treasure",
+      "artist": "Alejandro Magaña (A. M.)",
+      "url": "https://mixkit.co/free-stock-music/mood/mysterious/",
+      "file": "mixkit_forest_treasure_alejandro_magana.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_forest_treasure_alejandro_magana.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

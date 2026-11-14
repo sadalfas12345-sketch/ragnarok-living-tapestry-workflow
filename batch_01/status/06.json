@@ -1,0 +1,18 @@
+{
+  "episode": 6,
+  "source_file": "06_amaterasu.json",
+  "source_sha256": "081e9c3ed4586f476b33b54e552bb35be134f0b2d336bdfe0816096c75e967fb",
+  "updated_at": "2026-11-14T00:48:08.405714+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
