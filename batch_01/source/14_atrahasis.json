@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "In the Atrahasis epic, humanity multiplied, and its noise disturbed the gods. Their response grew harsher as the human world refused to fall silent.",
+      "caption": "What if the gods decided humanity had become too noisy to tolerate? In the Atrahasis epic, humanity multiplied, and its noise disturbed the gods. Their response grew harsher as the human world refused to fall silent.",
       "beat_title": "A crowded world",
       "required_visuals": [
         "crowded clay relief of cities under watching gods"
@@ -274,5 +275,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if the gods decided humanity had become too noisy to tolerate?"
 }

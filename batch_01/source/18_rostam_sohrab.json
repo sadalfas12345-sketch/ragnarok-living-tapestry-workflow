@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "A young champion named Sohrab grew up seeking his father, the mighty warrior Rostam. War placed them on opposing sides before they could truly meet.",
+      "caption": "What if a father and son met as enemies on a battlefield? A young champion named Sohrab grew up seeking his father, the mighty warrior Rostam. War placed them on opposing sides before they could truly meet.",
       "beat_title": "The unknown son",
       "required_visuals": [
         "young armored Sohrab rides toward vast camp"
@@ -271,5 +272,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a father and son met as enemies on a battlefield?"
 }

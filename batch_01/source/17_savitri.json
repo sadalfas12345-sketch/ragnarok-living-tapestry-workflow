@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Savitri chose Satyavan as her husband, even after learning that he was fated to die within a year. She married him without abandoning her choice.",
+      "caption": "What if you married someone knowing death would soon come for him? Savitri chose Satyavan as her husband, even after learning that he was fated to die within a year. She married him without abandoning her choice.",
       "beat_title": "The prediction",
       "required_visuals": [
         "princess and forest-dwelling husband beneath trees"
@@ -272,5 +273,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if you married someone knowing death would soon come for him?"
 }

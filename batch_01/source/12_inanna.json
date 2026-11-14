@@ -88,13 +88,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Inanna, goddess of love and power, descended to the realm ruled by her sister Ereshkigal. Seven gates barred the way, and every gate demanded a price.",
+      "caption": "What if a goddess entered the underworld and surrendered something at every gate? Inanna, goddess of love and power, descended to the realm ruled by her sister Ereshkigal. Seven gates barred the way, and every gate demanded a price.",
       "beat_title": "Seven gates",
       "required_visuals": [
         "Inanna arrives before seven concentric underworld gates"
@@ -272,5 +273,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a goddess entered the underworld and surrendered something at every gate?"
 }

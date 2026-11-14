@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "The epic of Sunjata tells of a boy whose early difficulties made others doubt him. His mother Sogolon endured ridicule, while rivals plotted around the court.",
+      "caption": "What if the child others dismissed was destined to become a great ruler? The epic of Sunjata tells of a boy whose early difficulties made others doubt him. His mother Sogolon endured ridicule, while rivals plotted around the court.",
       "beat_title": "The child underestimated",
       "required_visuals": [
         "Manding royal courtyard",
@@ -271,5 +272,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if the child others dismissed was destined to become a great ruler?"
 }

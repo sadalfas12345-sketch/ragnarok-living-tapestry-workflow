@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "In 1590, governor John White returned to an English settlement on Roanoke Island. He expected to find colonists, including his family. Instead, the site was deserted.",
+      "caption": "What if you returned to a settlement and found everyone gone? In 1590, governor John White returned to an English settlement on Roanoke Island. He expected to find colonists, including his family. Instead, the site was deserted.",
       "beat_title": "An empty settlement",
       "required_visuals": [
         "small 16th-century coastal palisade overgrown",
@@ -272,5 +273,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if you returned to a settlement and found everyone gone?"
 }

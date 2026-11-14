@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Across Polynesian traditions, Māui is a restless trickster and culture hero. In some stories, he hid a miraculous fishhook aboard his brothers’ canoe.",
+      "caption": "What if a trickster used a magical fishhook to pull land from the sea? Across Polynesian traditions, Māui is a restless trickster and culture hero. In some stories, he hid a miraculous fishhook aboard his brothers’ canoe.",
       "beat_title": "The secret hook",
       "required_visuals": [
         "carved canoe offshore",
@@ -271,5 +272,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a trickster used a magical fishhook to pull land from the sea?"
 }

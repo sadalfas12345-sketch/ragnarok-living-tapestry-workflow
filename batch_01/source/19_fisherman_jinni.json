@@ -86,13 +86,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "A poor fisherman hauled a heavy sealed vessel from the sea. Inside was no treasure, only an enormous spirit imprisoned for centuries.",
+      "caption": "What if a fisherman opened a vessel imprisoning a dangerous spirit? A poor fisherman hauled a heavy sealed vessel from the sea. Inside was no treasure, only an enormous spirit imprisoned for centuries.",
       "beat_title": "The catch",
       "required_visuals": [
         "fisherman lifts brass jar from blue fishing shore"
@@ -272,5 +273,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a fisherman opened a vessel imprisoning a dangerous spirit?"
 }

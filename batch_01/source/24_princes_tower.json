@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "In 1483, young Edward the Fifth and his brother Richard were housed in the Tower of London during a struggle over the English crown.",
+      "caption": "What if two young princes vanished amid a struggle for the crown? In 1483, young Edward the Fifth and his brother Richard were housed in the Tower of London during a struggle over the English crown.",
       "beat_title": "Two brothers",
       "required_visuals": [
         "two boys entering medieval stone gateway"
@@ -274,5 +275,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if two young princes vanished amid a struggle for the crown?"
 }

@@ -55,8 +55,8 @@ MUSIC_PROFILES = {
         {"title": "Echoes", "artist": "Andrew Ev", "url": "https://mixkit.co/free-stock-music/mood/suspenseful/", "file": "mixkit_echoes_andrew_ev.mp3"},
     ],
     6: [
-        {"title": "Games Worldbeat", "artist": "Bernardo R.", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_games_worldbeat_bernardo_r.mp3"},
-        {"title": "Serene View", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_serene_view_arulo.mp3"},
+        {"title": "Fright Night (Version 2)", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/mood/suspenseful/", "file": "mixkit_fright_night_michael_ramir_c_v2.mp3"},
+        {"title": "Romantic 03", "artist": "Lily J", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_romantic_03_lily_j.mp3"},
         {"title": "Forest Treasure", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_forest_treasure_alejandro_magana.mp3"},
     ],
     7: [
@@ -181,6 +181,29 @@ MUSIC_PROFILES = {
     ],
 }
 
+# Episode 06 uses a distinct licensed trio so the soundtrack QA gate can
+# distinguish this rebuild from earlier episode renders.
+MUSIC_PROFILES[6] = [
+    {"title": "Fright Night (Version 2)", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/mood/suspenseful/", "file": "mixkit_fright_night_michael_ramir_c_v2.mp3"},
+    {"title": "Romantic 03", "artist": "Lily J", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_romantic_03_lily_j.mp3"},
+    {"title": "Gold Virginia", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_gold_virginia_eugenio_mininni.mp3"},
+]
+MUSIC_PROFILES[7] = [
+    {"title": "Nield Grohm Hanging 1", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_1_eugenio_mininni.mp3"},
+    {"title": "Oscar el Asesino", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_oscar_el_asesino_michael_ramir_c.mp3"},
+    {"title": "Never Say Die", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_never_say_die_michael_ramir_c.mp3"},
+]
+MUSIC_PROFILES[8] = [
+    {"title": "I Won't Surrender", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_i_wont_surrender_michael_ramir_c.mp3"},
+    {"title": "Life's a Movie", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_lifes_a_movie_arulo.mp3"},
+    {"title": "Miss You", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_miss_you_eugenio_mininni.mp3"},
+]
+MUSIC_PROFILES[9] = [
+    {"title": "Nield Grohm Hanging 2", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_2_eugenio_mininni.mp3"},
+    {"title": "Nield Grohm Hanging 3", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_3_eugenio_mininni.mp3"},
+    {"title": "Relax", "artist": "Francisco Alvear", "url": "https://mixkit.co/free-stock-music/mood/relaxing/", "file": "mixkit_relax_francisco_alvear.mp3"},
+]
+
 
 def run(cmd: list[str], *, capture=False) -> str:
     p = subprocess.run(cmd, check=True, text=True, capture_output=capture)
@@ -214,6 +237,17 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
     scenes = spec.get("scenes", [])
     if len(scenes) != 6:
         errors.append(f"expected 6 scenes, found {len(scenes)}")
+    # The authoritative story JSON owns the opening hook.  It must be the
+    # first spoken/captioned text, and it must not be duplicated in another
+    # scene.  Fail before any narration, art, or render work if the source
+    # has drifted from that contract.
+    if scenes:
+        first_caption = str(scenes[0].get("caption", "")).strip()
+        hook_count = sum(1 for scene in scenes if re.match(r"^What if\b", str(scene.get("caption", "")).strip(), re.IGNORECASE))
+        if not re.match(r"^What if\b", first_caption, re.IGNORECASE):
+            errors.append("scene 1 must begin with the authoritative What if hook")
+        if hook_count != 1:
+            errors.append(f"expected exactly one What if hook in scene captions, found {hook_count}")
     seen = set()
     for i, scene in enumerate(scenes, 1):
         for k in ("id", "asset", "caption", "image_prompt", "camera", "music", "sfx", "pause_after_seconds_hint"):
