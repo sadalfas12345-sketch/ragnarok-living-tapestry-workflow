@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "At Kurukshetra, the archer Arjuna looked across the armies and saw his own teachers, cousins and relatives facing him. Victory suddenly looked like a catastrophe.",
+      "caption": "What if winning a war meant fighting the people you loved? At Kurukshetra, the archer Arjuna looked across the armies and saw his own teachers, cousins and relatives facing him. Victory suddenly looked like a catastrophe.",
       "beat_title": "The battlefield",
       "required_visuals": [
         "war chariot between two armies with family banners"
@@ -271,5 +272,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if winning a war meant fighting the people you loved?"
 }
