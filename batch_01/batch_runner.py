@@ -165,9 +165,9 @@ MUSIC_PROFILES = {
         {"title": "Sicilian Coffee", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_sicilian_coffee_eugenio_mininni.mp3"},
     ],
     28: [
-        {"title": "Romantic 03", "artist": "Lily J", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_romantic_03_lily_j.mp3"},
-        {"title": "Nield Grohm Hanging 3", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_3_eugenio_mininni.mp3"},
-        {"title": "Gold Virginia", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_gold_virginia_eugenio_mininni.mp3"},
+        {"title": "Serene View", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_serene_view_arulo.mp3"},
+        {"title": "Romantic", "artist": "Francisco Alvear", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_romantic_francisco_alvear.mp3"},
+        {"title": "Sports Highlights", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_sports_highlights_ahjay_stelino.mp3"},
     ],
     29: [
         {"title": "Nield Grohm Hanging 1", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_1_eugenio_mininni.mp3"},
@@ -373,10 +373,23 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     for idx, scene in enumerate(spec["scenes"], 1):
         mp3 = audio_dir / f"scene_{idx:02d}.mp3"
         words_file = audio_dir / f"scene_{idx:02d}_words.json"
-        if not mp3.exists() or not words_file.exists():
-            asyncio.run(edge_scene(scene["caption"], mp3, words_file))
         wav = audio_dir / f"scene_{idx:02d}.wav"
-        if not wav.exists():
+        cache_file = audio_dir / f"scene_{idx:02d}_cache.json"
+        cache_key = {
+            "text": scene["caption"],
+            "voice": VOICE,
+            "rate": os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"),
+        }
+        cache_matches = False
+        if cache_file.exists():
+            try:
+                cache_matches = json.loads(cache_file.read_text(encoding="utf-8")) == cache_key
+            except Exception:
+                cache_matches = False
+        if not mp3.exists() or not words_file.exists() or not cache_matches:
+            asyncio.run(edge_scene(scene["caption"], mp3, words_file))
+            cache_file.write_text(json.dumps(cache_key, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if not wav.exists() or not cache_matches:
             run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(mp3), "-ar", str(RATE), "-ac", "1", str(wav)])
         data, rate = sf.read(str(wav), dtype="float32")
         if rate != RATE:
@@ -405,6 +418,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     narration = audio_dir / "narration.wav"
     sf.write(str(narration), data, RATE, subtype="PCM_16")
     measured = whisper_align(narration)
+    (audio_dir / "whisper_alignment.json").write_text(json.dumps(measured, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     captions = []
     phrases = []
     cursor_word = 0
@@ -568,6 +582,16 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     if abs(narration_duration - tl["runtime_seconds"]) > 0.06: errors.append("narration duration disagrees with timeline")
     if abs(video_duration - tl["runtime_seconds"]) > 0.12: errors.append("video duration disagrees with timeline")
     caps = tl["narration"]["captions"]
+    hook = str(spec.get("opening_hook", "")).strip()
+    alignment_file = epdir / "audio" / "whisper_alignment.json"
+    if hook and alignment_file.exists():
+        measured = json.loads(alignment_file.read_text(encoding="utf-8"))
+        actual_first = [re.sub(r"[^a-z0-9]", "", str(w.get("text", "")).lower()) for w in measured[:4]]
+        expected_first = [re.sub(r"[^a-z0-9]", "", w.lower()) for w in script_tokens(hook)[:2]]
+        if expected_first[:2] != actual_first[:2]:
+            errors.append("audio opening does not match the authoritative hook: expected " + " ".join(expected_first[:2]) + ", heard " + " ".join(actual_first[:2]))
+    elif hook:
+        errors.append("missing Whisper alignment artifact for audio hook verification")
     for i, c in enumerate(caps):
         if c["end"] <= c["start"]: errors.append(f"caption {i+1} has non-positive duration")
         if i and c["start"] <= caps[i-1]["end"] + 0.001: errors.append(f"caption overlap or touching interval {i} -> {i+1}")

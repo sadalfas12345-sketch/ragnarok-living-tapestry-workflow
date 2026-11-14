@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Once, according to a Chinese legend, ten suns rose together instead of taking turns. Rivers dried, crops burned, and ordinary people suffered under relentless heat.",
+      "caption": "What if ten suns rose at once and scorched the earth? Once, according to a Chinese legend, ten suns rose together instead of taking turns. Rivers dried, crops burned, and ordinary people suffered under relentless heat.",
       "beat_title": "Ten suns",
       "required_visuals": [
         "ten vermilion sun disks above cracked farmland"
@@ -273,5 +274,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if ten suns rose at once and scorched the earth?"
 }

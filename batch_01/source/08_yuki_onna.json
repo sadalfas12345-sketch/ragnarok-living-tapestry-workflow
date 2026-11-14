@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Two woodcutters sheltered from a deadly snowstorm. During the night, a pale woman entered, and one man died beneath her freezing breath.",
+      "caption": "What if a stranger in a snowstorm could take your life with a breath? Two woodcutters sheltered from a deadly snowstorm. During the night, a pale woman entered, and one man died beneath her freezing breath.",
       "beat_title": "The blizzard",
       "required_visuals": [
         "snowy river hut",
@@ -275,5 +276,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a stranger in a snowstorm could take your life with a breath?"
 }
