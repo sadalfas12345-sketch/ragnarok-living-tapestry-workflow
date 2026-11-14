@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "A teenage peasant from Lorraine said she heard saints urging her to help France. In 1429, Joan reached the French royal court during a desperate war.",
+      "caption": "What if a teenage peasant claimed a divine mission to save her country? A teenage peasant from Lorraine said she heard saints urging her to help France. In 1429, Joan reached the French royal court during a desperate war.",
       "beat_title": "The voices",
       "required_visuals": [
         "young Joan at French royal hall",
@@ -274,5 +275,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a teenage peasant claimed a divine mission to save her country?"
 }
