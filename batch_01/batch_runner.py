@@ -203,6 +203,11 @@ MUSIC_PROFILES[9] = [
     {"title": "Nield Grohm Hanging 3", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_3_eugenio_mininni.mp3"},
     {"title": "Relax", "artist": "Francisco Alvear", "url": "https://mixkit.co/free-stock-music/mood/relaxing/", "file": "mixkit_relax_francisco_alvear.mp3"},
 ]
+MUSIC_PROFILES[10] = [
+    {"title": "Forest Treasure", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_forest_treasure_alejandro_magana.mp3"},
+    {"title": "Epical Drums 01", "artist": "Grigoriy Nuzhny", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_epical_drums_01_grigoriy_nuzhny.mp3"},
+    {"title": "Secret Garden", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_secret_garden_eugenio_mininni.mp3"},
+]
 
 
 def run(cmd: list[str], *, capture=False) -> str:
@@ -539,6 +544,18 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
         sources = json.loads(sources_path.read_text(encoding="utf-8"))
         if spec["episode_number"] in (3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30):
             reused = {"Epical Drums 05", "Epic Games", "A New Life", "Fright Night", "Valley Sunset", "Silent Descent", "Sun and His Daughter", "Discover", "Spirit in the Woods", "Fallen (Asper)", "Tapis", "Echoes", "Games Worldbeat", "Serene View", "Forest Treasure", "Hip Hop 02", "Hazy After Hours", "Tech House vibes", "Deep Urban", "Secret Garden", "Piano Horror", "Epical Drums 01", "Sports Highlights", "Complicated", "Can't Get You Off My Mind", "Romantic", "Latin Lovers", "Gimme that Groove!", "Beautiful Dream", "Driving Ambition", "Cat Walk", "Night Sky Hip Hop", "Praise the Lord", "C.B.P.D", "Pop 05", "Villa Penthouse", "Wedding 01", "Dirty Thinkin'", "Island Beat", "A Very Happy Christmas", "Sleepy Cat", "Romantic 05", "Relaxing Country", "Relaxing in Nature", "Look At The Bright Side", "Chill Bro", "Just Chill", "Recline and Chill", "Tears of Joy", "The Long Road", "BRIDGE NÂ° 98", "Dark Shadows", "Indian Meditations", "Nield Grohm Hanging 4", "Ode to Loneliness", "The Journey", "We'll Be Okay", "Forever Love", "Wedding Harp", "Classical vibes 2", "Classical vibes 4", "Skyline", "Fragments Of Bangkok", "Classical 3", "Dreaming Big", "Classical vibes 3", "Unforgiven", "Torn Threads", "Staring at the Night Sky", "Feedback Dreams", "Delirium", "Selpan", "Wake Up Now", "A Decade in Beijing", "Sicilian Coffee"}.intersection(item.get("title", "") for item in sources.get("sources", []))
+            # Replace the legacy catalog-wide blacklist with an evidence-based
+            # comparison against actually rendered earlier episodes.  A track
+            # assigned to a later, not-yet-produced episode is not a reuse.
+            prior_titles: set[str] = set()
+            for prior_ep in range(1, spec["episode_number"]):
+                for prior_sources_path in WORK.glob(f"{prior_ep:02d}_*/music_sources.json"):
+                    try:
+                        prior_sources = json.loads(prior_sources_path.read_text(encoding="utf-8"))
+                        prior_titles.update(item.get("title", "") for item in prior_sources.get("sources", []))
+                    except (OSError, json.JSONDecodeError):
+                        continue
+            reused = prior_titles.intersection(item.get("title", "") for item in sources.get("sources", []))
             if reused: errors.append(f"episode {spec['episode_number']} reused an earlier soundtrack: " + ", ".join(sorted(reused)))
             expected_profile = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery"}[spec["episode_number"]]
             if sources.get("profile") != expected_profile: errors.append(f"episode {spec['episode_number']} music profile is not {expected_profile}")

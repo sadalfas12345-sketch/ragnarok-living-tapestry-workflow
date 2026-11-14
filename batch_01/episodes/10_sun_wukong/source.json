@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Sun Wukong rose from a stone egg and became king of the monkeys. But victories on earth were not enough; he wanted recognition from Heaven itself.",
+      "caption": "What if the Monkey King demanded a place among the gods? Sun Wukong rose from a stone egg and became king of the monkeys. But victories on earth were not enough; he wanted recognition from Heaven itself.",
       "beat_title": "A monkey king",
       "required_visuals": [
         "stone monkey bursts from mountain",
@@ -271,5 +272,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if the Monkey King demanded a place among the gods?"
 }
