@@ -1,0 +1,18 @@
+{
+  "episode": 7,
+  "source_file": "07_houyi.json",
+  "source_sha256": "590e452ef3356aeb3d4e5dd0f2e8ee72a8f596555c53701e7a945ef46678bb7f",
+  "updated_at": "2026-11-14T00:55:25.976344+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

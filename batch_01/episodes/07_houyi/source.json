@@ -1,0 +1,277 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 7,
+  "slug": "07_houyi",
+  "title": "Hou Yi: The Archer Who Shot the Suns",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "myth, survival",
+  "civilization": "China",
+  "source_integrity": {
+    "primary_source_or_tradition": "Chinese Hou Yi and ten suns myth, multiple traditional variants",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Hou Yi: The Archer Who Shot the Suns in Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "Hou Yi",
+      "ten suns",
+      "people"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "Once, according to a Chinese legend, ten suns rose together instead of taking turns. Rivers dried, crops burned, and ordinary people suffered under relentless heat.",
+      "beat_title": "Ten suns",
+      "required_visuals": [
+        "ten vermilion sun disks above cracked farmland"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: ten vermilion sun disks above cracked farmland. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "The earth could not survive ten heavens burning at once. Hunters, farmers, and animals searched in vain for water or shade.",
+      "beat_title": "No shelter",
+      "required_visuals": [
+        "desiccated fields",
+        "people shielding eyes"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: desiccated fields, people shielding eyes. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below.",
+      "beat_title": "The archer",
+      "required_visuals": [
+        "hero archer on mountain",
+        "enormous composite bow"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: hero archer on mountain, enormous composite bow. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "He shot down nine suns, one after another. Each impact dimmed the sky until only the light the world needed remained.",
+      "beat_title": "Nine arrows",
+      "required_visuals": [
+        "nine glowing suns falling like birds",
+        "one sun left"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: nine glowing suns falling like birds, one sun left. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "With a single sun moving overhead, crops could grow again. Water returned to land that had nearly become desert.",
+      "beat_title": "The balance",
+      "required_visuals": [
+        "one warm sun over restored rivers and rice fields"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one warm sun over restored rivers and rice fields. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "The hero did not make the world safe by destroying all power. He made it livable by leaving enough—and no more.",
+      "beat_title": "The point",
+      "required_visuals": [
+        "one circle sun above bow resting on ground"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one circle sun above bow resting on ground. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

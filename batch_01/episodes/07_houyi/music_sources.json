@@ -1,0 +1,31 @@
+{
+  "profile": "houyi_solar_balance",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Hip Hop 02",
+      "artist": "Lily J",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_hip_hop_02_lily_j.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_hip_hop_02_lily_j.mp3"
+    },
+    {
+      "title": "Hazy After Hours",
+      "artist": "Alejandro Magaña (A. M.)",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_hazy_after_hours_alejandro_magana.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_hazy_after_hours_alejandro_magana.mp3"
+    },
+    {
+      "title": "Tech House vibes",
+      "artist": "Alejandro Magaña (A. M.)",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_tech_house_vibes_alejandro_magana.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_tech_house_vibes_alejandro_magana.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

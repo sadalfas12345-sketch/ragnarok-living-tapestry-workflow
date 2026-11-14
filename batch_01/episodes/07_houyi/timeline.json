@@ -1,0 +1,495 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 60.973,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Once, according to a Chinese legend, ten suns rose together instead of taking turns.",
+        "start": 0.0,
+        "end": 6.74
+      },
+      {
+        "scene": "S01",
+        "text": "Rivers dried, crops burned, and ordinary people suffered under relentless heat.",
+        "start": 7.68,
+        "end": 13.457
+      },
+      {
+        "scene": "S02",
+        "text": "The earth could not survive ten heavens burning at once.",
+        "start": 14.26,
+        "end": 17.74
+      },
+      {
+        "scene": "S02",
+        "text": "Hunters, farmers, and animals searched in vain for water or shade.",
+        "start": 18.6,
+        "end": 22.92
+      },
+      {
+        "scene": "S03",
+        "text": "Hou Yi raised his bow.",
+        "start": 23.577,
+        "end": 25.46
+      },
+      {
+        "scene": "S03",
+        "text": "He was asked to restore balance where power from above had scorched the world below.",
+        "start": 26.06,
+        "end": 31.623
+      },
+      {
+        "scene": "S04",
+        "text": "He shot down nine suns, one after another.",
+        "start": 32.78,
+        "end": 35.48
+      },
+      {
+        "scene": "S04",
+        "text": "Each impact dimmed the sky until only the light the world needed remained.",
+        "start": 36.12,
+        "end": 40.88
+      },
+      {
+        "scene": "S05",
+        "text": "With a single sun moving overhead, crops could grow again.",
+        "start": 42.04,
+        "end": 46.3
+      },
+      {
+        "scene": "S05",
+        "text": "Water returned to land that had nearly become desert.",
+        "start": 46.9,
+        "end": 50.12
+      },
+      {
+        "scene": "S06",
+        "text": "The hero did not make the world safe by destroying all power.",
+        "start": 51.264,
+        "end": 55.96
+      },
+      {
+        "scene": "S06",
+        "text": "He made it livable by leaving enough—and no more.",
+        "start": 56.5,
+        "end": 59.44
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Once, according to a Chinese legend,",
+        "start": 0.0,
+        "end": 2.9,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "ten suns rose together instead of taking",
+        "start": 3.6,
+        "end": 6.16,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "turns. Rivers dried,",
+        "start": 6.16,
+        "end": 8.4,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "crops burned, and ordinary people suffered under",
+        "start": 9.0,
+        "end": 12.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "relentless heat.",
+        "start": 12.3,
+        "end": 13.457,
+        "word_count": 2
+      },
+      {
+        "scene": "S02",
+        "text": "The earth could not survive ten heavens",
+        "start": 14.26,
+        "end": 16.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "burning at once.",
+        "start": 16.48,
+        "end": 17.74,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "Hunters, farmers, and animals searched in vain",
+        "start": 18.6,
+        "end": 21.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "for water or shade.",
+        "start": 21.52,
+        "end": 22.92,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "Hou Yi raised his bow.",
+        "start": 23.577,
+        "end": 25.46,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "He was asked to restore balance where",
+        "start": 26.06,
+        "end": 28.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "power from above had scorched the world",
+        "start": 28.34,
+        "end": 31.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "below.",
+        "start": 31.06,
+        "end": 31.623,
+        "word_count": 1
+      },
+      {
+        "scene": "S04",
+        "text": "He shot down nine suns,",
+        "start": 32.78,
+        "end": 34.28,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "one after another.",
+        "start": 34.28,
+        "end": 35.48,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "Each impact dimmed the sky until only",
+        "start": 36.12,
+        "end": 38.72,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "the light the world needed remained.",
+        "start": 38.72,
+        "end": 40.88,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "With a single sun moving overhead,",
+        "start": 42.04,
+        "end": 44.44,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "crops could grow again.",
+        "start": 45.14,
+        "end": 46.3,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "Water returned to land that had nearly",
+        "start": 46.9,
+        "end": 49.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "become desert.",
+        "start": 49.18,
+        "end": 50.12,
+        "word_count": 2
+      },
+      {
+        "scene": "S06",
+        "text": "The hero did not make the world",
+        "start": 51.264,
+        "end": 53.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "safe by destroying all power.",
+        "start": 53.58,
+        "end": 55.96,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "He made it livable by leaving enough",
+        "start": 56.5,
+        "end": 58.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "and no more.",
+        "start": 58.52,
+        "end": 59.44,
+        "word_count": 3
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 13.457,
+      "end": 13.906,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 13.906
+      },
+      "measured_pause_after": 0.449
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 13.906,
+      "speech_end": 22.92,
+      "end": 23.577,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 13.906,
+        "end": 23.577
+      },
+      "measured_pause_after": 0.657
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 23.577,
+      "speech_end": 31.623,
+      "end": 32.423,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 23.577,
+        "end": 32.423
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 32.423,
+      "speech_end": 40.88,
+      "end": 41.755,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 32.423,
+        "end": 41.755
+      },
+      "measured_pause_after": 0.875
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 41.755,
+      "speech_end": 50.12,
+      "end": 51.264,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 41.755,
+        "end": 51.264
+      },
+      "measured_pause_after": 1.144
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 51.264,
+      "speech_end": 59.44,
+      "end": 60.973,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 51.264,
+        "end": 60.973
+      },
+      "measured_pause_after": 1.533
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 13.906
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 13.906,
+      "end": 23.577
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 23.577,
+      "end": 32.423
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 32.423,
+      "end": 41.755
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 41.755,
+      "end": 51.264
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 51.264,
+      "end": 60.973
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 13.906
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 13.906,
+      "end": 23.577
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 23.577,
+      "end": 32.423
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 32.423,
+      "end": 41.755
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 41.755,
+      "end": 51.264
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 51.264,
+      "end": 60.973
+    }
+  ]
+}
