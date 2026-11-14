@@ -88,13 +88,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Damayanti chose King Nala despite the gods appearing among her suitors. Their union began with devotion, but happiness would not protect them from disaster.",
+      "caption": "What if love could not protect a royal couple from ruin? Damayanti chose King Nala despite the gods appearing among her suitors. Their union began with devotion, but happiness would not protect them from disaster.",
       "beat_title": "A chosen love",
       "required_visuals": [
         "royal swayamvara scene",
@@ -273,5 +274,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if love could not protect a royal couple from ruin?"
 }
