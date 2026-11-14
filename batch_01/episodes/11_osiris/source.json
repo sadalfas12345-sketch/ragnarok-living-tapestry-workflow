@@ -88,13 +88,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Osiris ruled as a divine king. His brother Seth became his enemy and, in a familiar telling, tricked him into a coffin made to fit him exactly.",
+      "caption": "What if a god-king was betrayed by his own brother? Osiris ruled as a divine king. His brother Seth became his enemy and, in a familiar telling, tricked him into a coffin made to fit him exactly.",
       "beat_title": "The plot",
       "required_visuals": [
         "Egyptian painted banquet with decorated chest and suspicious Seth"
@@ -273,5 +274,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a god-king was betrayed by his own brother?"
 }
