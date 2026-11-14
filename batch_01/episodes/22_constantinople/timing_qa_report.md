@@ -4,8 +4,8 @@
 - **title:** Constantinople 1453: The Last Walls
 - **timeline_runtime_seconds:** 72.971
 - **narration_runtime_seconds:** 72.971
-- **video_runtime_seconds:** 72.967
-- **caption_count:** 24
+- **video_runtime_seconds:** 72.966
+- **caption_count:** 26
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** historical_reconstruction_with_disputed_details
 - **research_status:** editorial_outline_needs_source_review_before_publication
