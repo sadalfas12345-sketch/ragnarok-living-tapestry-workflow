@@ -1,0 +1,31 @@
+{
+  "profile": "constantinople_last_walls",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Classical vibes 4",
+      "artist": "Grigoriy Nuzhny",
+      "url": "https://mixkit.co/free-stock-music/film-score/",
+      "file": "mixkit_classical_vibes_4_grigoriy_nuzhny.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_classical_vibes_4_grigoriy_nuzhny.mp3"
+    },
+    {
+      "title": "Skyline",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/film-score/",
+      "file": "mixkit_skyline_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_skyline_eugenio_mininni.mp3"
+    },
+    {
+      "title": "Fragments Of Bangkok",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/film-score/",
+      "file": "mixkit_fragments_of_bangkok_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_fragments_of_bangkok_eugenio_mininni.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

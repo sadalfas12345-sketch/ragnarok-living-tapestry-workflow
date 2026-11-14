@@ -1,0 +1,18 @@
+{
+  "episode": 22,
+  "source_file": "22_constantinople.json",
+  "source_sha256": "0b564d523d68d73e09644429082c58b9f3251750fc6247019640812a3872347d",
+  "updated_at": "2026-11-14T02:55:35.734189+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

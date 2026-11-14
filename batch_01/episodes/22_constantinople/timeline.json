@@ -1,0 +1,488 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 72.971,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "For centuries Constantinople stood behind formidable walls.",
+        "start": 0.0,
+        "end": 4.54
+      },
+      {
+        "scene": "S01",
+        "text": "In 1453, Sultan Mehmed II brought an Ottoman army to besiege the capital of the diminished Byzantine Empire.",
+        "start": 5.26,
+        "end": 14.107
+      },
+      {
+        "scene": "S02",
+        "text": "Large cannons battered defenses once thought impregnable.",
+        "start": 14.98,
+        "end": 18.44
+      },
+      {
+        "scene": "S02",
+        "text": "The defenders repaired breaches repeatedly, short of men and hope of substantial relief.",
+        "start": 19.08,
+        "end": 25.54
+      },
+      {
+        "scene": "S03",
+        "text": "A chain helped defend the Golden Horn.",
+        "start": 26.54,
+        "end": 29.06
+      },
+      {
+        "scene": "S03",
+        "text": "Ottoman forces moved ships overland into the inlet, adding pressure from a direction the city feared.",
+        "start": 29.06,
+        "end": 36.658
+      },
+      {
+        "scene": "S04",
+        "text": "After weeks of siege, the Ottomans launched a major attack on May twenty-ninth.",
+        "start": 37.82,
+        "end": 42.94
+      },
+      {
+        "scene": "S04",
+        "text": "The defenses broke, and the Byzantine capital fell.",
+        "start": 43.88,
+        "end": 47.329
+      },
+      {
+        "scene": "S05",
+        "text": "Constantine the Eleventh died during the fighting, though accounts vary about the exact circumstances.",
+        "start": 48.56,
+        "end": 57.44
+      },
+      {
+        "scene": "S05",
+        "text": "His empire ended with the city.",
+        "start": 57.18,
+        "end": 57.44
+      },
+      {
+        "scene": "S06",
+        "text": "Mehmed entered Constantinople, which became the Ottoman imperial capital.",
+        "start": 58.594,
+        "end": 64.04
+      },
+      {
+        "scene": "S06",
+        "text": "What ended for one state became a beginning for another—and a turning point in Mediterranean history.",
+        "start": 64.68,
+        "end": 71.3
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "For centuries Constantinople stood behind formidable walls.",
+        "start": 0.0,
+        "end": 4.54,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "In 1453, Sultan Mehmed II brought an",
+        "start": 5.26,
+        "end": 9.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "Ottoman army to besiege the capital of",
+        "start": 9.7,
+        "end": 11.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "the diminished Byzantine Empire.",
+        "start": 11.98,
+        "end": 14.107,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "Large cannons battered defenses once thought impregnable.",
+        "start": 14.98,
+        "end": 18.44,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "The defenders repaired breaches repeatedly,",
+        "start": 19.08,
+        "end": 21.7,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "short of men and hope of substantial",
+        "start": 22.42,
+        "end": 24.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "relief.",
+        "start": 24.88,
+        "end": 25.54,
+        "word_count": 1
+      },
+      {
+        "scene": "S03",
+        "text": "A chain helped defend the Golden Horn.",
+        "start": 26.54,
+        "end": 29.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "Ottoman forces moved ships overland into the",
+        "start": 29.06,
+        "end": 32.92,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "inlet, adding pressure from a direction the",
+        "start": 32.92,
+        "end": 35.94,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "city feared.",
+        "start": 35.94,
+        "end": 36.658,
+        "word_count": 2
+      },
+      {
+        "scene": "S04",
+        "text": "After weeks of siege,",
+        "start": 37.82,
+        "end": 39.12,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "the Ottomans launched a major attack on",
+        "start": 39.66,
+        "end": 42.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "May twenty-ninth. The defenses broke,",
+        "start": 42.24,
+        "end": 45.1,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "and the Byzantine capital fell.",
+        "start": 45.1,
+        "end": 47.329,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "Constantine the Eleventh died during the fighting,",
+        "start": 48.56,
+        "end": 53.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "though accounts vary about the exact circumstances.",
+        "start": 53.84,
+        "end": 57.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "His empire ended with the city.",
+        "start": 57.18,
+        "end": 57.44,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "Mehmed entered Constantinople,",
+        "start": 58.594,
+        "end": 60.6,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "which became the Ottoman imperial capital.",
+        "start": 61.34,
+        "end": 64.04,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "What ended for one state became a",
+        "start": 64.68,
+        "end": 66.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "beginning for another and a turning point",
+        "start": 66.96,
+        "end": 69.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "in Mediterranean history.",
+        "start": 69.7,
+        "end": 71.3,
+        "word_count": 3
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 14.107,
+      "end": 14.557,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 14.557
+      },
+      "measured_pause_after": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 14.557,
+      "speech_end": 25.54,
+      "end": 26.238,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 14.557,
+        "end": 26.238
+      },
+      "measured_pause_after": 0.698
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 26.238,
+      "speech_end": 36.658,
+      "end": 37.458,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 26.238,
+        "end": 37.458
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 37.458,
+      "speech_end": 47.329,
+      "end": 48.129,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 37.458,
+        "end": 48.129
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 48.129,
+      "speech_end": 57.44,
+      "end": 58.594,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 48.129,
+        "end": 58.594
+      },
+      "measured_pause_after": 1.154
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 58.594,
+      "speech_end": 71.3,
+      "end": 72.971,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 58.594,
+        "end": 72.971
+      },
+      "measured_pause_after": 1.671
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "deep bells, ney, frame drums, brass, siege impacts",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 14.557
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "deep bells, ney, frame drums, brass, siege impacts",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 14.557,
+      "end": 26.238
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "deep bells, ney, frame drums, brass, siege impacts",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 26.238,
+      "end": 37.458
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "deep bells, ney, frame drums, brass, siege impacts",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 37.458,
+      "end": 48.129
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "deep bells, ney, frame drums, brass, siege impacts",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 48.129,
+      "end": 58.594
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "deep bells, ney, frame drums, brass, siege impacts",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 58.594,
+      "end": 72.971
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 14.557
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 14.557,
+      "end": 26.238
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 26.238,
+      "end": 37.458
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 37.458,
+      "end": 48.129
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 48.129,
+      "end": 58.594
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 58.594,
+      "end": 72.971
+    }
+  ]
+}
