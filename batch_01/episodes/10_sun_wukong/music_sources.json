@@ -1,0 +1,31 @@
+{
+  "profile": "sun_wukong_cloud_quest",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Can't Get You Off My Mind",
+      "artist": "Michael Ramir C.",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_cant_get_you_off_my_mind_michael_ramir_c.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_cant_get_you_off_my_mind_michael_ramir_c.mp3"
+    },
+    {
+      "title": "Romantic",
+      "artist": "Francisco Alvear",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_romantic_francisco_alvear.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_romantic_francisco_alvear.mp3"
+    },
+    {
+      "title": "Latin Lovers",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_latin_lovers_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_latin_lovers_ahjay_stelino.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

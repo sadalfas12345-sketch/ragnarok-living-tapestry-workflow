@@ -1,0 +1,501 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 66.576,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Sun Wukong rose from a stone egg and became king of the monkeys.",
+        "start": 0.0,
+        "end": 5.04
+      },
+      {
+        "scene": "S01",
+        "text": "But victories on earth were not enough; he wanted recognition from Heaven itself.",
+        "start": 5.7,
+        "end": 11.06
+      },
+      {
+        "scene": "S02",
+        "text": "The celestial court gave him a minor post, thinking it would contain him.",
+        "start": 12.04,
+        "end": 17.02
+      },
+      {
+        "scene": "S02",
+        "text": "When he learned how little the title meant, the Monkey King rebelled.",
+        "start": 17.34,
+        "end": 21.64
+      },
+      {
+        "scene": "S03",
+        "text": "He stole celestial peaches, disrupted a banquet, and survived attempts to destroy him.",
+        "start": 22.7,
+        "end": 29.22
+      },
+      {
+        "scene": "S03",
+        "text": "Even heavenly troops struggled to bring him to heel.",
+        "start": 29.22,
+        "end": 32.855
+      },
+      {
+        "scene": "S04",
+        "text": "At last the Buddha challenged him to escape the palm of his hand.",
+        "start": 33.96,
+        "end": 38.46
+      },
+      {
+        "scene": "S04",
+        "text": "Wukong leapt to what he thought was the end of the universe.",
+        "start": 39.0,
+        "end": 42.2
+      },
+      {
+        "scene": "S05",
+        "text": "The pillars he marked were only fingers.",
+        "start": 43.34,
+        "end": 45.82
+      },
+      {
+        "scene": "S05",
+        "text": "His limitless journey had never left the Buddha’s palm.",
+        "start": 46.5,
+        "end": 50.34
+      },
+      {
+        "scene": "S05",
+        "text": "A mountain then held him fast.",
+        "start": 50.96,
+        "end": 52.88
+      },
+      {
+        "scene": "S06",
+        "text": "His story did not end in defeat.",
+        "start": 54.3,
+        "end": 56.48
+      },
+      {
+        "scene": "S06",
+        "text": "Later, the same unruly strength would be redirected into a pilgrimage, where power had to learn restraint.",
+        "start": 56.48,
+        "end": 64.92
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Sun Wukong rose from a stone egg",
+        "start": 0.0,
+        "end": 3.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "and became king of the monkeys.",
+        "start": 3.08,
+        "end": 5.04,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "But victories on earth were not enough;",
+        "start": 5.7,
+        "end": 8.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "he wanted recognition from Heaven itself.",
+        "start": 8.46,
+        "end": 11.06,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "The celestial court gave him a minor",
+        "start": 12.04,
+        "end": 14.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "post, thinking it would contain him.",
+        "start": 14.3,
+        "end": 17.02,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "When he learned how little the title",
+        "start": 17.34,
+        "end": 19.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "meant, the Monkey King rebelled.",
+        "start": 19.18,
+        "end": 21.64,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "He stole celestial peaches,",
+        "start": 22.7,
+        "end": 24.64,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "disrupted a banquet,",
+        "start": 25.52,
+        "end": 26.3,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "and survived attempts to destroy him.",
+        "start": 26.98,
+        "end": 29.22,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "Even heavenly troops struggled to bring him",
+        "start": 29.22,
+        "end": 32.32,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "to heel.",
+        "start": 32.32,
+        "end": 32.855,
+        "word_count": 2
+      },
+      {
+        "scene": "S04",
+        "text": "At last the Buddha challenged him to",
+        "start": 33.96,
+        "end": 36.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "escape the palm of his hand.",
+        "start": 36.4,
+        "end": 38.46,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Wukong leapt to what he thought was",
+        "start": 39.0,
+        "end": 40.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "the end of the universe.",
+        "start": 40.84,
+        "end": 42.2,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "The pillars he marked were only fingers.",
+        "start": 43.34,
+        "end": 45.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "His limitless journey had never left the",
+        "start": 46.5,
+        "end": 49.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "Buddha’s palm. A mountain then held him",
+        "start": 49.3,
+        "end": 52.32,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "fast.",
+        "start": 52.32,
+        "end": 52.88,
+        "word_count": 1
+      },
+      {
+        "scene": "S06",
+        "text": "His story did not end in defeat.",
+        "start": 54.3,
+        "end": 56.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "Later, the same unruly strength would be",
+        "start": 56.48,
+        "end": 60.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "redirected into a pilgrimage,",
+        "start": 60.42,
+        "end": 62.0,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "where power had to learn restraint.",
+        "start": 62.74,
+        "end": 64.92,
+        "word_count": 6
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.06,
+      "end": 11.597,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.597
+      },
+      "measured_pause_after": 0.537
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.597,
+      "speech_end": 21.64,
+      "end": 22.346,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.597,
+        "end": 22.346
+      },
+      "measured_pause_after": 0.706
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.346,
+      "speech_end": 32.855,
+      "end": 33.655,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.346,
+        "end": 33.655
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 33.655,
+      "speech_end": 42.2,
+      "end": 43.051,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 33.655,
+        "end": 43.051
+      },
+      "measured_pause_after": 0.851
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 43.051,
+      "speech_end": 52.88,
+      "end": 53.994,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 43.051,
+        "end": 53.994
+      },
+      "measured_pause_after": 1.114
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 53.994,
+      "speech_end": 64.92,
+      "end": 66.576,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 53.994,
+        "end": 66.576
+      },
+      "measured_pause_after": 1.656
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.597
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.597,
+      "end": 22.346
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.346,
+      "end": 33.655
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 33.655,
+      "end": 43.051
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 43.051,
+      "end": 53.994
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "dizi, gongs, nimble plucked strings, chaotic percussion",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 53.994,
+      "end": 66.576
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.597
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.597,
+      "end": 22.346
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.346,
+      "end": 33.655
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 33.655,
+      "end": 43.051
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 43.051,
+      "end": 53.994
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 53.994,
+      "end": 66.576
+    }
+  ]
+}

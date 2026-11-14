@@ -1,0 +1,18 @@
+{
+  "episode": 10,
+  "source_file": "10_sun_wukong.json",
+  "source_sha256": "e846d080f6abd302cf0ae79f2acb2a2c3869dbd5a729868eb63690552ef079ab",
+  "updated_at": "2026-11-14T01:16:49.429741+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
