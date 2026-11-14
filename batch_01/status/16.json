@@ -1,0 +1,18 @@
+{
+  "episode": 16,
+  "source_file": "16_arjuna.json",
+  "source_sha256": "847c11a108ef2870e4857b46baf8ab6b599cd004d85d58157441837dd8d3c7dd",
+  "updated_at": "2026-11-14T02:03:41.937360+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

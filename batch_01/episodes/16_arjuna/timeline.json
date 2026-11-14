@@ -1,0 +1,482 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 69.17,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "At Kurukshetra, the archer Arjuna looked across the armies and saw his own teachers, cousins and relatives facing him.",
+        "start": 0.0,
+        "end": 9.38
+      },
+      {
+        "scene": "S01",
+        "text": "Victory suddenly looked like a catastrophe.",
+        "start": 9.8,
+        "end": 11.98
+      },
+      {
+        "scene": "S02",
+        "text": "His bow lowered.",
+        "start": 12.98,
+        "end": 13.92
+      },
+      {
+        "scene": "S02",
+        "text": "He asked what meaning a kingdom could have if obtaining it required killing those he loved and respected.",
+        "start": 14.62,
+        "end": 20.74
+      },
+      {
+        "scene": "S03",
+        "text": "His charioteer Krishna answered with a long teaching on duty, action, the self and the difficulty of living rightly amid conflict.",
+        "start": 21.9,
+        "end": 31.26
+      },
+      {
+        "scene": "S04",
+        "text": "The teaching did not make the battlefield disappear.",
+        "start": 32.42,
+        "end": 35.42
+      },
+      {
+        "scene": "S04",
+        "text": "It challenged Arjuna to confront his obligations without pretending he could avoid consequences.",
+        "start": 36.1,
+        "end": 41.68
+      },
+      {
+        "scene": "S05",
+        "text": "In the Gita, Krishna reveals an overwhelming cosmic form in which creation and destruction are entwined.",
+        "start": 43.1,
+        "end": 50.88
+      },
+      {
+        "scene": "S05",
+        "text": "Arjuna sees a scale far beyond his individual fear.",
+        "start": 51.66,
+        "end": 55.173
+      },
+      {
+        "scene": "S06",
+        "text": "The dialogue ends with Arjuna prepared to act.",
+        "start": 56.273,
+        "end": 60.12
+      },
+      {
+        "scene": "S06",
+        "text": "Whether one agrees with his decision or not, the story refuses to make moral conflict painless.",
+        "start": 60.46,
+        "end": 67.62
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "At Kurukshetra, the archer Arjuna looked across",
+        "start": 0.0,
+        "end": 3.94,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "the armies and saw his own teachers,",
+        "start": 3.94,
+        "end": 6.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "cousins and relatives facing him.",
+        "start": 7.02,
+        "end": 9.38,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "Victory suddenly looked like a catastrophe.",
+        "start": 9.8,
+        "end": 11.98,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "His bow lowered.",
+        "start": 12.98,
+        "end": 13.92,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "He asked what meaning a kingdom could",
+        "start": 14.62,
+        "end": 16.6,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "have if obtaining it required killing those",
+        "start": 16.6,
+        "end": 19.14,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "he loved and respected.",
+        "start": 19.14,
+        "end": 20.74,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "His charioteer Krishna answered with a long",
+        "start": 21.9,
+        "end": 24.9,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "teaching on duty,",
+        "start": 24.9,
+        "end": 25.9,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "action, the self and the difficulty of",
+        "start": 26.36,
+        "end": 29.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "living rightly amid conflict.",
+        "start": 29.2,
+        "end": 31.26,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "The teaching did not make the battlefield",
+        "start": 32.42,
+        "end": 34.62,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "disappear. It challenged Arjuna to confront his",
+        "start": 34.62,
+        "end": 38.54,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "obligations without pretending he could avoid consequences.",
+        "start": 38.54,
+        "end": 41.68,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "In the Gita,",
+        "start": 43.1,
+        "end": 43.92,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "Krishna reveals an overwhelming cosmic form in",
+        "start": 44.56,
+        "end": 47.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "which creation and destruction are entwined.",
+        "start": 47.82,
+        "end": 50.88,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "Arjuna sees a scale far beyond his",
+        "start": 51.66,
+        "end": 54.14,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "individual fear.",
+        "start": 54.14,
+        "end": 55.173,
+        "word_count": 2
+      },
+      {
+        "scene": "S06",
+        "text": "The dialogue ends with Arjuna prepared to",
+        "start": 56.273,
+        "end": 59.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "act. Whether one agrees with his decision",
+        "start": 59.4,
+        "end": 62.36,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "or not, the story refuses to make",
+        "start": 62.36,
+        "end": 65.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "moral conflict painless.",
+        "start": 65.8,
+        "end": 67.62,
+        "word_count": 3
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.98,
+      "end": 12.678,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.678
+      },
+      "measured_pause_after": 0.698
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.678,
+      "speech_end": 20.74,
+      "end": 21.588,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.678,
+        "end": 21.588
+      },
+      "measured_pause_after": 0.848
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 21.588,
+      "speech_end": 31.26,
+      "end": 32.153,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 21.588,
+        "end": 32.153
+      },
+      "measured_pause_after": 0.893
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 32.153,
+      "speech_end": 41.68,
+      "end": 42.793,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 32.153,
+        "end": 42.793
+      },
+      "measured_pause_after": 1.113
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 42.793,
+      "speech_end": 55.173,
+      "end": 56.273,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 42.793,
+        "end": 56.273
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 56.273,
+      "speech_end": 67.62,
+      "end": 69.17,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 56.273,
+        "end": 69.17
+      },
+      "measured_pause_after": 1.55
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "veena, low tanpura, pakhawaj, solemn strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.678
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "veena, low tanpura, pakhawaj, solemn strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.678,
+      "end": 21.588
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "veena, low tanpura, pakhawaj, solemn strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 21.588,
+      "end": 32.153
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "veena, low tanpura, pakhawaj, solemn strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 32.153,
+      "end": 42.793
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "veena, low tanpura, pakhawaj, solemn strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 42.793,
+      "end": 56.273
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "veena, low tanpura, pakhawaj, solemn strings",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 56.273,
+      "end": 69.17
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.678
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.678,
+      "end": 21.588
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 21.588,
+      "end": 32.153
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 32.153,
+      "end": 42.793
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 42.793,
+      "end": 56.273
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 56.273,
+      "end": 69.17
+    }
+  ]
+}

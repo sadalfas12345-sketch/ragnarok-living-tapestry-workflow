@@ -1,0 +1,31 @@
+{
+  "profile": "arjuna_dharma_choice",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Relaxing Country",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/mood/relaxing/",
+      "file": "mixkit_relaxing_country_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_relaxing_country_ahjay_stelino.mp3"
+    },
+    {
+      "title": "Relaxing in Nature",
+      "artist": "Diego Nava",
+      "url": "https://mixkit.co/free-stock-music/mood/relaxing/",
+      "file": "mixkit_relaxing_in_nature_diego_nava.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_relaxing_in_nature_diego_nava.mp3"
+    },
+    {
+      "title": "Look At The Bright Side",
+      "artist": "Michael Ramir C.",
+      "url": "https://mixkit.co/free-stock-music/mood/bright/",
+      "file": "mixkit_look_at_the_bright_side_michael_ramir_c.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_look_at_the_bright_side_michael_ramir_c.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}
