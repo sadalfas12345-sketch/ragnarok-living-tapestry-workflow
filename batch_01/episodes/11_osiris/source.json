@@ -1,0 +1,277 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 11,
+  "slug": "11_osiris",
+  "title": "Osiris: The Murdered King of the Afterlife",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "myth, family tragedy",
+  "civilization": "Ancient Egypt",
+  "source_integrity": {
+    "primary_source_or_tradition": "Osiris myth, Plutarch De Iside et Osiride and Egyptian funerary sources; accounts vary",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Osiris: The Murdered King of the Afterlife in Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "Osiris",
+      "Isis",
+      "Seth",
+      "Horus"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "sistrum, reed flute, bowed bass, temple reverb",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "Osiris ruled as a divine king. His brother Seth became his enemy and, in a familiar telling, tricked him into a coffin made to fit him exactly.",
+      "beat_title": "The plot",
+      "required_visuals": [
+        "Egyptian painted banquet with decorated chest and suspicious Seth"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Scene: Egyptian painted banquet with decorated chest and suspicious Seth. The source story is Osiris: The Murdered King of the Afterlife. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "The chest was sealed and carried away. Isis searched desperately for her husband, following traces of him across river and shore.",
+      "beat_title": "The river",
+      "required_visuals": [
+        "Nile boat",
+        "goddess searching among papyrus reeds"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Scene: Nile boat, goddess searching among papyrus reeds. The source story is Osiris: The Murdered King of the Afterlife. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "In one version, Seth tore Osiris apart and scattered the pieces. Isis gathered what she could, helped by divine allies and funerary rites.",
+      "beat_title": "The broken body",
+      "required_visuals": [
+        "hieroglyphic ritual assembly",
+        "wrapped limbs symbolic"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Scene: hieroglyphic ritual assembly, wrapped limbs symbolic. The source story is Osiris: The Murdered King of the Afterlife. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "Osiris was restored in a form that belonged to the realm of the dead. He would judge and rule there, but not simply return to ordinary life.",
+      "beat_title": "Another realm",
+      "required_visuals": [
+        "green-faced Osiris enthroned beneath stars"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Scene: green-faced Osiris enthroned beneath stars. The source story is Osiris: The Murdered King of the Afterlife. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Their son Horus confronted Seth over kingship. The conflict became a struggle over rightful authority, inheritance and the order of the world.",
+      "beat_title": "The successor",
+      "required_visuals": [
+        "falcon-headed Horus facing Seth on judgment papyrus"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Scene: falcon-headed Horus facing Seth on judgment papyrus. The source story is Osiris: The Murdered King of the Afterlife. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "Osiris lost his earthly kingdom, yet became central to hopes of life beyond death. His murder transformed into an Egyptian story about continuity.",
+      "beat_title": "The endurance",
+      "required_visuals": [
+        "river and tomb linked with green shoots in painted register"
+      ],
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Egyptian tomb-painting registers and painted papyrus, malachite, ochre and turquoise. Scene: river and tomb linked with green shoots in painted register. The source story is Osiris: The Murdered King of the Afterlife. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ]
+}

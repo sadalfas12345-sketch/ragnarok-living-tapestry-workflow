@@ -1,0 +1,31 @@
+{
+  "profile": "osiris_afterlife_registers",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Gimme that Groove!",
+      "artist": "Michael Ramir C.",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_gimme_that_groove_michael_ramir_c.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_gimme_that_groove_michael_ramir_c.mp3"
+    },
+    {
+      "title": "Beautiful Dream",
+      "artist": "Diego Nava",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_beautiful_dream_diego_nava.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_beautiful_dream_diego_nava.mp3"
+    },
+    {
+      "title": "Driving Ambition",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_driving_ambition_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_driving_ambition_ahjay_stelino.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

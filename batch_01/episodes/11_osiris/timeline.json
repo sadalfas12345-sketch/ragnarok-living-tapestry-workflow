@@ -1,0 +1,495 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 72.269,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Osiris ruled as a divine king.",
+        "start": 0.0,
+        "end": 2.96
+      },
+      {
+        "scene": "S01",
+        "text": "His brother Seth became his enemy and, in a familiar telling, tricked him into a coffin made to fit him exactly.",
+        "start": 3.46,
+        "end": 11.6
+      },
+      {
+        "scene": "S02",
+        "text": "The chest was sealed and carried away.",
+        "start": 12.46,
+        "end": 14.98
+      },
+      {
+        "scene": "S02",
+        "text": "Isis searched desperately for her husband, following traces of him across river and shore.",
+        "start": 15.78,
+        "end": 22.168
+      },
+      {
+        "scene": "S03",
+        "text": "In one version, Seth tore Osiris apart and scattered the pieces.",
+        "start": 23.12,
+        "end": 28.44
+      },
+      {
+        "scene": "S03",
+        "text": "Isis gathered what she could, helped by divine allies and funerary rites.",
+        "start": 28.44,
+        "end": 34.694
+      },
+      {
+        "scene": "S04",
+        "text": "Osiris was restored in a form that belonged to the realm of the dead.",
+        "start": 35.86,
+        "end": 40.52
+      },
+      {
+        "scene": "S04",
+        "text": "He would judge and rule there, but not simply return to ordinary life.",
+        "start": 41.12,
+        "end": 45.939
+      },
+      {
+        "scene": "S05",
+        "text": "Their son Horus confronted Seth over kingship.",
+        "start": 47.06,
+        "end": 50.28
+      },
+      {
+        "scene": "S05",
+        "text": "The conflict became a struggle over rightful authority, inheritance and the order of the world.",
+        "start": 50.28,
+        "end": 57.778
+      },
+      {
+        "scene": "S06",
+        "text": "Osiris lost his earthly kingdom, yet became central to hopes of life beyond death.",
+        "start": 59.24,
+        "end": 65.74
+      },
+      {
+        "scene": "S06",
+        "text": "His murder transformed into an Egyptian story about continuity.",
+        "start": 66.32,
+        "end": 70.48
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Osiris ruled as a divine king.",
+        "start": 0.0,
+        "end": 2.96,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "His brother Seth became his enemy and,",
+        "start": 3.46,
+        "end": 6.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "in a familiar telling,",
+        "start": 6.5,
+        "end": 8.02,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "tricked him into a coffin made to",
+        "start": 8.44,
+        "end": 10.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "fit him exactly.",
+        "start": 10.48,
+        "end": 11.6,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "The chest was sealed and carried away.",
+        "start": 12.46,
+        "end": 14.98,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "Isis searched desperately for her husband,",
+        "start": 15.78,
+        "end": 18.42,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "following traces of him across river and",
+        "start": 19.44,
+        "end": 21.76,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "shore.",
+        "start": 21.76,
+        "end": 22.168,
+        "word_count": 1
+      },
+      {
+        "scene": "S03",
+        "text": "In one version,",
+        "start": 23.12,
+        "end": 24.14,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "Seth tore Osiris apart and scattered the",
+        "start": 24.8,
+        "end": 27.92,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "pieces. Isis gathered what she could,",
+        "start": 27.92,
+        "end": 30.96,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "helped by divine allies and funerary rites.",
+        "start": 31.38,
+        "end": 34.694,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Osiris was restored in a form that",
+        "start": 35.86,
+        "end": 38.54,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "belonged to the realm of the dead.",
+        "start": 38.54,
+        "end": 40.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "He would judge and rule there,",
+        "start": 41.12,
+        "end": 42.98,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "but not simply return to ordinary life.",
+        "start": 43.14,
+        "end": 45.939,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "Their son Horus confronted Seth over kingship.",
+        "start": 47.06,
+        "end": 50.28,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "The conflict became a struggle over rightful",
+        "start": 50.28,
+        "end": 53.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "authority, inheritance and the order of the",
+        "start": 53.8,
+        "end": 57.32,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "world.",
+        "start": 57.32,
+        "end": 57.778,
+        "word_count": 1
+      },
+      {
+        "scene": "S06",
+        "text": "Osiris lost his earthly kingdom,",
+        "start": 59.24,
+        "end": 61.74,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "yet became central to hopes of life",
+        "start": 62.3,
+        "end": 64.72,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "beyond death. His murder transformed into an",
+        "start": 64.72,
+        "end": 68.48,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "Egyptian story about continuity.",
+        "start": 68.48,
+        "end": 70.48,
+        "word_count": 4
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.6,
+      "end": 12.179,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.179
+      },
+      "measured_pause_after": 0.579
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.179,
+      "speech_end": 22.168,
+      "end": 22.818,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.179,
+        "end": 22.818
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.818,
+      "speech_end": 34.694,
+      "end": 35.494,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.818,
+        "end": 35.494
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 35.494,
+      "speech_end": 45.939,
+      "end": 46.739,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 35.494,
+        "end": 46.739
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 46.739,
+      "speech_end": 57.778,
+      "end": 58.878,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 46.739,
+        "end": 58.878
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 58.878,
+      "speech_end": 70.48,
+      "end": 72.269,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 58.878,
+        "end": 72.269
+      },
+      "measured_pause_after": 1.789
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.179
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.179,
+      "end": 22.818
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.818,
+      "end": 35.494
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 35.494,
+      "end": 46.739
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 46.739,
+      "end": 58.878
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "sistrum, reed flute, bowed bass, temple reverb",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 58.878,
+      "end": 72.269
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.179
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.179,
+      "end": 22.818
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.818,
+      "end": 35.494
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 35.494,
+      "end": 46.739
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 46.739,
+      "end": 58.878
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 58.878,
+      "end": 72.269
+    }
+  ]
+}
