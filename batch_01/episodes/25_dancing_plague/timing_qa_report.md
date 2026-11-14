@@ -5,7 +5,7 @@
 - **timeline_runtime_seconds:** 74.038
 - **narration_runtime_seconds:** 74.038
 - **video_runtime_seconds:** 74.038
-- **caption_count:** 24
+- **caption_count:** 26
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** historical_reconstruction_with_disputed_details
 - **research_status:** editorial_outline_needs_source_review_before_publication

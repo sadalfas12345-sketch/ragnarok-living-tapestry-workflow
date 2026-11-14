@@ -150,8 +150,8 @@ MUSIC_PROFILES = {
         {"title": "Staring at the Night Sky", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_staring_at_the_night_sky_alejandro_magana.mp3"},
     ],
     25: [
-        {"title": "Unrest", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_unrest_michael_ramir_c.mp3"},
-        {"title": "Nield Grohm Hanging 2", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_2_eugenio_mininni.mp3"},
+        {"title": "Delirium", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_delirium_eugenio_mininni.mp3"},
+        {"title": "Piano Horror", "artist": "Francisco Alvear", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_piano_horror_francisco_alvear.mp3"},
         {"title": "Staring at the Night Sky", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_staring_at_the_night_sky_alejandro_magana.mp3"},
     ],
     26: [
@@ -180,6 +180,10 @@ MUSIC_PROFILES = {
         {"title": "Miss You", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_miss_you_eugenio_mininni.mp3"},
     ],
 }
+
+# Episode 25's third cue is overridden here because the original catalog entry
+# was already used by an earlier rendered episode.
+MUSIC_PROFILES[25][2] = {"title": "Games Worldbeat", "artist": "Bernardo R.", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_games_worldbeat_bernardo_r.mp3"}
 
 # Episode 06 uses a distinct licensed trio so the soundtrack QA gate can
 # distinguish this rebuild from earlier episode renders.
