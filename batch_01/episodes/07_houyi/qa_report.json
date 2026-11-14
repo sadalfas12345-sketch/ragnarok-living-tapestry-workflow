@@ -1,22 +1,22 @@
 {
   "episode": 7,
   "title": "Hou Yi: The Archer Who Shot the Suns",
-  "timeline_runtime_seconds": 60.973,
-  "narration_runtime_seconds": 60.973,
-  "video_runtime_seconds": 60.933,
-  "caption_count": 25,
+  "timeline_runtime_seconds": 62.266,
+  "narration_runtime_seconds": 62.266,
+  "video_runtime_seconds": 62.266,
+  "caption_count": 26,
   "caption_overlap_count": 0,
   "scene_pauses_seconds": [
     {
       "from": "S01",
       "to": "S02",
-      "seconds": 0.449,
-      "intended_seconds": 0.45
+      "seconds": 0.15,
+      "intended_seconds": 0.15
     },
     {
       "from": "S02",
       "to": "S03",
-      "seconds": 0.657,
+      "seconds": 0.65,
       "intended_seconds": 0.65
     },
     {
@@ -28,13 +28,13 @@
     {
       "from": "S04",
       "to": "S05",
-      "seconds": 0.875,
+      "seconds": 0.87,
       "intended_seconds": 0.8
     },
     {
       "from": "S05",
       "to": "S06",
-      "seconds": 1.144,
+      "seconds": 1.139,
       "intended_seconds": 1.1
     }
   ],

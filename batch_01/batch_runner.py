@@ -500,25 +500,52 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         if not source_asset.exists():
             raise FileNotFoundError(source_asset)
         source_scene = spec["scenes"][i - 1]
-        camera = source_scene.get("camera", {})
-        max_hold = float(camera.get("max_static_hold_seconds", 9999))
-        allow_reframe = bool(camera.get("allow_internal_reframe", False))
         start = float(scene["start"]); end = float(scene["end"])
-        # Keep each scene as one continuous camera move. The JSON's internal
-        # reframe permission is descriptive, not a command to hard-cut crops.
-        cuts = [start, end]
+        progression = source_scene.get("visual_progression", {})
+        ordered = progression.get("ordered_story_beats", [])
+        if len(ordered) != 3:
+            raise ValueError(f"{scene['id']} must define exactly three ordered visual beats")
+        phrases = [p for p in tl["narration"]["phrases"] if p.get("scene") == scene["id"]]
+        if not phrases:
+            raise ValueError(f"No measured narration phrases for {scene['id']}")
+        # Beat positions are driven by measured phrase starts, never equal slots.
+        # With two phrases, the final beat is the scene's measured speech end.
+        anchor_times = [start]
+        if len(phrases) >= 3:
+            anchor_times += [float(phrases[1]["start"]), float(phrases[2]["start"])]
+        else:
+            anchor_times += [float(phrases[1]["start"]), float(scene["speech_end"])]
+        anchor_times = [max(start, min(end, t)) for t in anchor_times]
+        anchor_times = [anchor_times[0], max(anchor_times[0] + 0.01, anchor_times[1]), max(anchor_times[1] + 0.01, anchor_times[2])]
+        anchors = [
+            {"anchor": "opening", "y_focus": 0.0, "spoken_anchor": phrases[0]["text"]},
+            {"anchor": "development", "y_focus": 0.5, "spoken_anchor": phrases[min(1, len(phrases)-1)]["text"]},
+            {"anchor": "reveal", "y_focus": 1.0, "spoken_anchor": phrases[min(2, len(phrases)-1)]["text"]},
+        ]
         beats = []
-        for b in range(len(cuts) - 1):
-            beat_start, beat_end = cuts[b], cuts[b + 1]
-            dur = beat_end - beat_start
-            frames = max(2, round(dur * 30))
-            progress = f"(1-cos(on/{frames-1}*PI))/2"
-            focus_offset = 0
-            fade = f",fade=t=in:st=0:d=0.18,fade=t=out:st={max(0,dur-0.18):.3f}:d=0.18"
-            vf = f"zoompan=z=1+0.10*{progress}:x=iw/2-(iw/zoom/2)+{focus_offset}:y=ih/2-(ih/zoom/2):d={frames}:s=1080x1920:fps=30,format=yuv420p{fade}"
-            out = segdir / f"S{i:02d}_B{b+1:02d}.mp4"
-            run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
-            files.append(out); beats.append({"start": round(beat_start, 3), "end": round(beat_end, 3), "reason": "continuous_camera_move"})
+        for b, item in enumerate(ordered):
+            beats.append({"start": round(anchor_times[b], 3), "end": round(anchor_times[b + 1] if b < 2 else end, 3), "reason": item.get("visual", ""), **anchors[b]})
+        scene["visual_beats"] = beats
+        dur = end - start
+        frames = max(2, round(dur * 30))
+        a1 = (anchor_times[1] - start) / dur
+        a2 = (anchor_times[2] - start) / dur
+        # One zoompan per scene. Y travels smoothly through the three explicitly
+        # authored vignettes; there are no internal cuts, resets, or hold limits.
+        p = f"on/{frames-1}"
+        eased = f"(1-cos({p}*PI))/2"
+        yprog = f"if(lt({eased}\\,{a1:.6f})\\,0.5*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,0.5+0.5*({eased}-{a1:.6f})/({a2-a1:.6f})\\,0.5+0.5*({eased}-{a2:.6f})/{max(1-a2,0.0001):.6f}))"
+        # The generated source is a vertical triptych. A near-1.0 zoom would
+        # expose all three vignettes at once and make the move look like a
+        # slideshow. This scale keeps the authored opening/development/reveal
+        # regions readable while the single eased viewport travels between them.
+        zoom = f"1.55+0.10*{eased}"
+        y = f"(ih-ih/zoom)*({yprog})"
+        fade = f",fade=t=in:st=0:d=0.18,fade=t=out:st={max(0,dur-0.18):.3f}:d=0.18"
+        vf = f"zoompan=z={zoom}:x=iw/2-(iw/zoom/2):y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p{fade}"
+        out = segdir / f"S{i:02d}_B01.mp4"
+        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
+        files.append(out)
         scene["visual_beats"] = beats
     (epdir / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     concat = segdir / "concat.txt"

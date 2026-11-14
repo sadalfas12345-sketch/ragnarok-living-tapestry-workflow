@@ -1,99 +1,103 @@
 1
-00:00:00,000 --> 00:00:02,900
-Once, according to a Chinese legend,
+00:00:00,000 --> 00:00:02,300
+What if ten suns rose at once
 
 2
-00:00:03,600 --> 00:00:06,160
-ten suns rose together instead of taking
+00:00:02,310 --> 00:00:03,600
+and scorched the earth?
 
 3
-00:00:06,160 --> 00:00:08,400
-turns. Rivers dried,
+00:00:04,180 --> 00:00:07,180
+Chinese legend says they abandoned their usual
 
 4
-00:00:09,000 --> 00:00:12,300
-crops burned, and ordinary people suffered under
+00:00:07,190 --> 00:00:07,848
+turns.
 
 5
-00:00:12,300 --> 00:00:13,457
-relentless heat.
+00:00:08,740 --> 00:00:10,640
+Rivers dried, crops burned,
 
 6
-00:00:14,260 --> 00:00:16,480
-The earth could not survive ten heavens
+00:00:10,940 --> 00:00:14,700
+and ordinary people suffered under relentless heat.
 
 7
-00:00:16,480 --> 00:00:17,740
-burning at once.
+00:00:15,080 --> 00:00:17,320
+The earth could not survive ten heavens
 
 8
-00:00:18,600 --> 00:00:21,520
-Hunters, farmers, and animals searched in vain
+00:00:17,330 --> 00:00:18,370
+burning at once.
 
 9
-00:00:21,520 --> 00:00:22,920
-for water or shade.
+00:00:19,860 --> 00:00:22,840
+Hunters, farmers, and animals searched in vain
 
 10
-00:00:23,577 --> 00:00:25,460
-Hou Yi raised his bow.
+00:00:22,850 --> 00:00:24,220
+for water or shade.
 
 11
-00:00:26,060 --> 00:00:28,340
-He was asked to restore balance where
+00:00:24,880 --> 00:00:26,260
+Hou Yi raised his bow.
 
 12
-00:00:28,340 --> 00:00:31,060
-power from above had scorched the world
+00:00:26,270 --> 00:00:29,200
+He was asked to restore balance where
 
 13
-00:00:31,060 --> 00:00:31,623
-below.
+00:00:29,210 --> 00:00:31,920
+power from above had scorched the world
 
 14
-00:00:32,780 --> 00:00:34,280
-He shot down nine suns,
+00:00:31,930 --> 00:00:32,478
+below.
 
 15
-00:00:34,280 --> 00:00:35,480
-one after another.
+00:00:33,640 --> 00:00:35,200
+He shot down nine suns,
 
 16
-00:00:36,120 --> 00:00:38,720
-Each impact dimmed the sky until only
+00:00:35,210 --> 00:00:36,460
+one after another.
 
 17
-00:00:38,720 --> 00:00:40,880
-the light the world needed remained.
+00:00:37,020 --> 00:00:39,580
+Each impact dimmed the sky until only
 
 18
-00:00:42,040 --> 00:00:44,440
-With a single sun moving overhead,
+00:00:39,590 --> 00:00:41,740
+the light the world needed remained.
 
 19
-00:00:45,140 --> 00:00:46,300
-crops could grow again.
+00:00:42,900 --> 00:00:45,300
+With a single sun moving overhead,
 
 20
-00:00:46,900 --> 00:00:49,180
-Water returned to land that had nearly
+00:00:46,000 --> 00:00:47,160
+crops could grow again.
 
 21
-00:00:49,180 --> 00:00:50,120
-become desert.
+00:00:47,760 --> 00:00:50,040
+Water returned to land that had nearly
 
 22
-00:00:51,264 --> 00:00:53,580
-The hero did not make the world
+00:00:50,050 --> 00:00:50,980
+become desert.
 
 23
-00:00:53,580 --> 00:00:55,960
-safe by destroying all power.
+00:00:52,119 --> 00:00:54,420
+The hero did not make the world
 
 24
-00:00:56,500 --> 00:00:58,520
-He made it livable by leaving enough
+00:00:54,430 --> 00:00:56,780
+safe by destroying all power.
 
 25
-00:00:58,520 --> 00:00:59,440
+00:00:57,340 --> 00:00:59,240
+He made it livable by leaving enoughâ
+
+26
+00:00:59,920 --> 00:01:00,700
 and no more.

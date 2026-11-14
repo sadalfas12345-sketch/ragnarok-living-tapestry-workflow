@@ -2,10 +2,10 @@
 
 - **episode:** 7
 - **title:** Hou Yi: The Archer Who Shot the Suns
-- **timeline_runtime_seconds:** 60.973
-- **narration_runtime_seconds:** 60.973
-- **video_runtime_seconds:** 60.933
-- **caption_count:** 25
+- **timeline_runtime_seconds:** 62.266
+- **narration_runtime_seconds:** 62.266
+- **video_runtime_seconds:** 62.266
+- **caption_count:** 26
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** traditional_narrative_or_literary_retelling
 - **research_status:** editorial_outline_needs_source_review_before_publication
@@ -13,11 +13,11 @@
 - **status:** PASS
 
 ## Scene pauses
-- S01 -> S02: 0.449s
-- S02 -> S03: 0.657s
+- S01 -> S02: 0.150s
+- S02 -> S03: 0.650s
 - S03 -> S04: 0.800s
-- S04 -> S05: 0.875s
-- S05 -> S06: 1.144s
+- S04 -> S05: 0.870s
+- S05 -> S06: 1.139s
 
 ## Errors
 - None

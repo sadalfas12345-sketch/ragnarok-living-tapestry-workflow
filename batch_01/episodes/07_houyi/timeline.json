@@ -2,258 +2,271 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 60.973,
+  "runtime_seconds": 62.266,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
     "phrases": [
       {
         "scene": "S01",
-        "text": "Once, according to a Chinese legend, ten suns rose together instead of taking turns.",
+        "text": "What if ten suns rose at once and scorched the earth?",
         "start": 0.0,
-        "end": 6.74
+        "end": 3.6
       },
       {
         "scene": "S01",
+        "text": "Chinese legend says they abandoned their usual turns.",
+        "start": 4.18,
+        "end": 7.848
+      },
+      {
+        "scene": "S02",
         "text": "Rivers dried, crops burned, and ordinary people suffered under relentless heat.",
-        "start": 7.68,
-        "end": 13.457
+        "start": 8.74,
+        "end": 14.7
       },
       {
         "scene": "S02",
         "text": "The earth could not survive ten heavens burning at once.",
-        "start": 14.26,
-        "end": 17.74
+        "start": 15.08,
+        "end": 18.37
       },
       {
-        "scene": "S02",
+        "scene": "S03",
         "text": "Hunters, farmers, and animals searched in vain for water or shade.",
-        "start": 18.6,
-        "end": 22.92
+        "start": 19.86,
+        "end": 24.22
       },
       {
         "scene": "S03",
         "text": "Hou Yi raised his bow.",
-        "start": 23.577,
-        "end": 25.46
+        "start": 24.88,
+        "end": 26.26
       },
       {
         "scene": "S03",
         "text": "He was asked to restore balance where power from above had scorched the world below.",
-        "start": 26.06,
-        "end": 31.623
+        "start": 26.26,
+        "end": 32.478
       },
       {
         "scene": "S04",
         "text": "He shot down nine suns, one after another.",
-        "start": 32.78,
-        "end": 35.48
+        "start": 33.64,
+        "end": 36.46
       },
       {
         "scene": "S04",
         "text": "Each impact dimmed the sky until only the light the world needed remained.",
-        "start": 36.12,
-        "end": 40.88
+        "start": 37.02,
+        "end": 41.74
       },
       {
         "scene": "S05",
         "text": "With a single sun moving overhead, crops could grow again.",
-        "start": 42.04,
-        "end": 46.3
+        "start": 42.9,
+        "end": 47.16
       },
       {
         "scene": "S05",
         "text": "Water returned to land that had nearly become desert.",
-        "start": 46.9,
-        "end": 50.12
+        "start": 47.76,
+        "end": 50.98
       },
       {
         "scene": "S06",
         "text": "The hero did not make the world safe by destroying all power.",
-        "start": 51.264,
-        "end": 55.96
+        "start": 52.119,
+        "end": 56.78
       },
       {
         "scene": "S06",
-        "text": "He made it livable by leaving enough—and no more.",
-        "start": 56.5,
-        "end": 59.44
+        "text": "He made it livable by leaving enoughâ€”and no more.",
+        "start": 57.34,
+        "end": 60.7
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "Once, according to a Chinese legend,",
+        "text": "What if ten suns rose at once",
         "start": 0.0,
-        "end": 2.9,
-        "word_count": 6
-      },
-      {
-        "scene": "S01",
-        "text": "ten suns rose together instead of taking",
-        "start": 3.6,
-        "end": 6.16,
+        "end": 2.3,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "turns. Rivers dried,",
-        "start": 6.16,
-        "end": 8.4,
-        "word_count": 3
+        "text": "and scorched the earth?",
+        "start": 2.31,
+        "end": 3.6,
+        "word_count": 4
       },
       {
         "scene": "S01",
-        "text": "crops burned, and ordinary people suffered under",
-        "start": 9.0,
-        "end": 12.3,
+        "text": "Chinese legend says they abandoned their usual",
+        "start": 4.18,
+        "end": 7.18,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "relentless heat.",
-        "start": 12.3,
-        "end": 13.457,
-        "word_count": 2
+        "text": "turns.",
+        "start": 7.19,
+        "end": 7.848,
+        "word_count": 1
+      },
+      {
+        "scene": "S02",
+        "text": "Rivers dried, crops burned,",
+        "start": 8.74,
+        "end": 10.64,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "and ordinary people suffered under relentless heat.",
+        "start": 10.94,
+        "end": 14.7,
+        "word_count": 7
       },
       {
         "scene": "S02",
         "text": "The earth could not survive ten heavens",
-        "start": 14.26,
-        "end": 16.48,
+        "start": 15.08,
+        "end": 17.32,
         "word_count": 7
       },
       {
         "scene": "S02",
         "text": "burning at once.",
-        "start": 16.48,
-        "end": 17.74,
+        "start": 17.33,
+        "end": 18.37,
         "word_count": 3
       },
       {
-        "scene": "S02",
+        "scene": "S03",
         "text": "Hunters, farmers, and animals searched in vain",
-        "start": 18.6,
-        "end": 21.52,
+        "start": 19.86,
+        "end": 22.84,
         "word_count": 7
       },
       {
-        "scene": "S02",
+        "scene": "S03",
         "text": "for water or shade.",
-        "start": 21.52,
-        "end": 22.92,
+        "start": 22.85,
+        "end": 24.22,
         "word_count": 4
       },
       {
         "scene": "S03",
         "text": "Hou Yi raised his bow.",
-        "start": 23.577,
-        "end": 25.46,
+        "start": 24.88,
+        "end": 26.26,
         "word_count": 5
       },
       {
         "scene": "S03",
         "text": "He was asked to restore balance where",
-        "start": 26.06,
-        "end": 28.34,
+        "start": 26.27,
+        "end": 29.2,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "power from above had scorched the world",
-        "start": 28.34,
-        "end": 31.06,
+        "start": 29.21,
+        "end": 31.92,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "below.",
-        "start": 31.06,
-        "end": 31.623,
+        "start": 31.93,
+        "end": 32.478,
         "word_count": 1
       },
       {
         "scene": "S04",
         "text": "He shot down nine suns,",
-        "start": 32.78,
-        "end": 34.28,
+        "start": 33.64,
+        "end": 35.2,
         "word_count": 5
       },
       {
         "scene": "S04",
         "text": "one after another.",
-        "start": 34.28,
-        "end": 35.48,
+        "start": 35.21,
+        "end": 36.46,
         "word_count": 3
       },
       {
         "scene": "S04",
         "text": "Each impact dimmed the sky until only",
-        "start": 36.12,
-        "end": 38.72,
+        "start": 37.02,
+        "end": 39.58,
         "word_count": 7
       },
       {
         "scene": "S04",
         "text": "the light the world needed remained.",
-        "start": 38.72,
-        "end": 40.88,
+        "start": 39.59,
+        "end": 41.74,
         "word_count": 6
       },
       {
         "scene": "S05",
         "text": "With a single sun moving overhead,",
-        "start": 42.04,
-        "end": 44.44,
+        "start": 42.9,
+        "end": 45.3,
         "word_count": 6
       },
       {
         "scene": "S05",
         "text": "crops could grow again.",
-        "start": 45.14,
-        "end": 46.3,
+        "start": 46.0,
+        "end": 47.16,
         "word_count": 4
       },
       {
         "scene": "S05",
         "text": "Water returned to land that had nearly",
-        "start": 46.9,
-        "end": 49.18,
+        "start": 47.76,
+        "end": 50.04,
         "word_count": 7
       },
       {
         "scene": "S05",
         "text": "become desert.",
-        "start": 49.18,
-        "end": 50.12,
+        "start": 50.05,
+        "end": 50.98,
         "word_count": 2
       },
       {
         "scene": "S06",
         "text": "The hero did not make the world",
-        "start": 51.264,
-        "end": 53.58,
+        "start": 52.119,
+        "end": 54.42,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "safe by destroying all power.",
-        "start": 53.58,
-        "end": 55.96,
+        "start": 54.43,
+        "end": 56.78,
         "word_count": 5
       },
       {
         "scene": "S06",
-        "text": "He made it livable by leaving enough",
-        "start": 56.5,
-        "end": 58.52,
+        "text": "He made it livable by leaving enoughâ",
+        "start": 57.34,
+        "end": 59.24,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "and no more.",
-        "start": 58.52,
-        "end": 59.44,
+        "start": 59.92,
+        "end": 60.7,
         "word_count": 3
       }
     ]
@@ -263,133 +276,307 @@
       "id": "S01",
       "asset": "assets/P01.png",
       "start": 0.0,
-      "speech_end": 13.457,
-      "end": 13.906,
-      "pause_after": 0.45,
+      "speech_end": 7.848,
+      "end": 7.998,
+      "pause_after": 0.15,
       "camera": {
-        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "description": "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing one sun disk in its normal cycle; glide along the connected illustrated narrative to uncover a second and third sun join the sky; finish by revealing pull back to reveal all ten suns over cracking farmland. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
         "style": "continuous_panorama_when_possible",
         "max_zoom_fraction": 0.12,
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals"
       },
       "image_interval": {
         "start": 0.0,
-        "end": 13.906
+        "end": 7.998
       },
-      "measured_pause_after": 0.449
+      "measured_pause_after": 0.15,
+      "visual_beats": [
+        {
+          "start": 0.0,
+          "end": 4.18,
+          "reason": "One sun disk in its normal cycle",
+          "anchor": "opening",
+          "y_focus": 0.0,
+          "spoken_anchor": "What if ten suns rose at once and scorched the earth?"
+        },
+        {
+          "start": 4.18,
+          "end": 7.848,
+          "reason": "A second and third sun join the sky",
+          "anchor": "development",
+          "y_focus": 0.5,
+          "spoken_anchor": "Chinese legend says they abandoned their usual turns."
+        },
+        {
+          "start": 7.848,
+          "end": 7.998,
+          "reason": "Pull back to reveal all ten suns over cracking farmland",
+          "anchor": "reveal",
+          "y_focus": 1.0,
+          "spoken_anchor": "Chinese legend says they abandoned their usual turns."
+        }
+      ]
     },
     {
       "id": "S02",
       "asset": "assets/P02.png",
-      "start": 13.906,
-      "speech_end": 22.92,
-      "end": 23.577,
+      "start": 7.998,
+      "speech_end": 18.37,
+      "end": 19.02,
       "pause_after": 0.65,
       "camera": {
-        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "description": "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing dry riverbed and exposed stones; glide along the connected illustrated narrative to uncover brown ruined crops and scorched soil; finish by revealing families and animals searching beneath a merciless sky. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
         "style": "continuous_panorama_when_possible",
         "max_zoom_fraction": 0.12,
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals"
       },
       "image_interval": {
-        "start": 13.906,
-        "end": 23.577
+        "start": 7.998,
+        "end": 19.02
       },
-      "measured_pause_after": 0.657
+      "measured_pause_after": 0.65,
+      "visual_beats": [
+        {
+          "start": 7.998,
+          "end": 15.08,
+          "reason": "Dry riverbed and exposed stones",
+          "anchor": "opening",
+          "y_focus": 0.0,
+          "spoken_anchor": "Rivers dried, crops burned, and ordinary people suffered under relentless heat."
+        },
+        {
+          "start": 15.08,
+          "end": 18.37,
+          "reason": "Brown ruined crops and scorched soil",
+          "anchor": "development",
+          "y_focus": 0.5,
+          "spoken_anchor": "The earth could not survive ten heavens burning at once."
+        },
+        {
+          "start": 18.37,
+          "end": 19.02,
+          "reason": "Families and animals searching beneath a merciless sky",
+          "anchor": "reveal",
+          "y_focus": 1.0,
+          "spoken_anchor": "The earth could not survive ten heavens burning at once."
+        }
+      ]
     },
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "start": 23.577,
-      "speech_end": 31.623,
-      "end": 32.423,
+      "start": 19.02,
+      "speech_end": 32.478,
+      "end": 33.278,
       "pause_after": 0.8,
       "camera": {
-        "description": "push gently into the key object or decision; hold for the last important word",
+        "description": "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing thirsty animals and farmers seeking shade; glide along the connected illustrated narrative to uncover hou yi steps onto the ridge with his bow; finish by revealing bowstring drawn toward the overwhelming cluster of suns. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
         "style": "continuous_panorama_when_possible",
         "max_zoom_fraction": 0.12,
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals"
       },
       "image_interval": {
-        "start": 23.577,
-        "end": 32.423
+        "start": 19.02,
+        "end": 33.278
       },
-      "measured_pause_after": 0.8
+      "measured_pause_after": 0.8,
+      "visual_beats": [
+        {
+          "start": 19.02,
+          "end": 24.88,
+          "reason": "Thirsty animals and farmers seeking shade",
+          "anchor": "opening",
+          "y_focus": 0.0,
+          "spoken_anchor": "Hunters, farmers, and animals searched in vain for water or shade."
+        },
+        {
+          "start": 24.88,
+          "end": 26.26,
+          "reason": "Hou Yi steps onto the ridge with his bow",
+          "anchor": "development",
+          "y_focus": 0.5,
+          "spoken_anchor": "Hou Yi raised his bow."
+        },
+        {
+          "start": 26.26,
+          "end": 33.278,
+          "reason": "Bowstring drawn toward the overwhelming cluster of suns",
+          "anchor": "reveal",
+          "y_focus": 1.0,
+          "spoken_anchor": "He was asked to restore balance where power from above had scorched the world below."
+        }
+      ]
     },
     {
       "id": "S04",
       "asset": "assets/P04.png",
-      "start": 32.423,
-      "speech_end": 40.88,
-      "end": 41.755,
+      "start": 33.278,
+      "speech_end": 41.74,
+      "end": 42.61,
       "pause_after": 0.8,
       "camera": {
-        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "description": "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing first arrow arcs toward blazing suns; glide along the connected illustrated narrative to uncover a sequence of sun-bird forms falls across the sky; finish by revealing nine darkened paths leave one steady sun aloft. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
         "style": "continuous_panorama_when_possible",
         "max_zoom_fraction": 0.12,
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals"
       },
       "image_interval": {
-        "start": 32.423,
-        "end": 41.755
+        "start": 33.278,
+        "end": 42.61
       },
-      "measured_pause_after": 0.875
+      "measured_pause_after": 0.87,
+      "visual_beats": [
+        {
+          "start": 33.278,
+          "end": 37.02,
+          "reason": "First arrow arcs toward blazing suns",
+          "anchor": "opening",
+          "y_focus": 0.0,
+          "spoken_anchor": "He shot down nine suns, one after another."
+        },
+        {
+          "start": 37.02,
+          "end": 41.74,
+          "reason": "A sequence of sun-bird forms falls across the sky",
+          "anchor": "development",
+          "y_focus": 0.5,
+          "spoken_anchor": "Each impact dimmed the sky until only the light the world needed remained."
+        },
+        {
+          "start": 41.74,
+          "end": 42.61,
+          "reason": "Nine darkened paths leave one steady sun aloft",
+          "anchor": "reveal",
+          "y_focus": 1.0,
+          "spoken_anchor": "Each impact dimmed the sky until only the light the world needed remained."
+        }
+      ]
     },
     {
       "id": "S05",
       "asset": "assets/P05.png",
-      "start": 41.755,
-      "speech_end": 50.12,
-      "end": 51.264,
+      "start": 42.61,
+      "speech_end": 50.98,
+      "end": 52.119,
       "pause_after": 1.1,
       "camera": {
-        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "description": "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing one gentle sun over parched earth; glide along the connected illustrated narrative to uncover water reappears in the river channel; finish by revealing green fields and people returning to work. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
         "style": "continuous_panorama_when_possible",
         "max_zoom_fraction": 0.12,
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals"
       },
       "image_interval": {
-        "start": 41.755,
-        "end": 51.264
+        "start": 42.61,
+        "end": 52.119
       },
-      "measured_pause_after": 1.144
+      "measured_pause_after": 1.139,
+      "visual_beats": [
+        {
+          "start": 42.61,
+          "end": 47.76,
+          "reason": "One gentle sun over parched earth",
+          "anchor": "opening",
+          "y_focus": 0.0,
+          "spoken_anchor": "With a single sun moving overhead, crops could grow again."
+        },
+        {
+          "start": 47.76,
+          "end": 50.98,
+          "reason": "Water reappears in the river channel",
+          "anchor": "development",
+          "y_focus": 0.5,
+          "spoken_anchor": "Water returned to land that had nearly become desert."
+        },
+        {
+          "start": 50.98,
+          "end": 52.119,
+          "reason": "Green fields and people returning to work",
+          "anchor": "reveal",
+          "y_focus": 1.0,
+          "spoken_anchor": "Water returned to land that had nearly become desert."
+        }
+      ]
     },
     {
       "id": "S06",
       "asset": "assets/P06.png",
-      "start": 51.264,
-      "speech_end": 59.44,
-      "end": 60.973,
+      "start": 52.119,
+      "speech_end": 60.7,
+      "end": 62.266,
       "pause_after": 1.5,
       "camera": {
-        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "description": "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing nine absent suns and a resting bow; glide along the connected illustrated narrative to uncover single remaining sun over a habitable landscape; finish by revealing people beneath the restored sky, not another shot. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
         "style": "continuous_panorama_when_possible",
         "max_zoom_fraction": 0.12,
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals"
       },
       "image_interval": {
-        "start": 51.264,
-        "end": 60.973
+        "start": 52.119,
+        "end": 62.266
       },
-      "measured_pause_after": 1.533
+      "measured_pause_after": 1.566,
+      "visual_beats": [
+        {
+          "start": 52.119,
+          "end": 57.34,
+          "reason": "Nine absent suns and a resting bow",
+          "anchor": "opening",
+          "y_focus": 0.0,
+          "spoken_anchor": "The hero did not make the world safe by destroying all power."
+        },
+        {
+          "start": 57.34,
+          "end": 60.7,
+          "reason": "Single remaining sun over a habitable landscape",
+          "anchor": "development",
+          "y_focus": 0.5,
+          "spoken_anchor": "He made it livable by leaving enoughâ€”and no more."
+        },
+        {
+          "start": 60.7,
+          "end": 62.266,
+          "reason": "People beneath the restored sky, not another shot",
+          "anchor": "reveal",
+          "y_focus": 1.0,
+          "spoken_anchor": "He made it livable by leaving enoughâ€”and no more."
+        }
+      ]
     }
   ],
   "music": [
@@ -400,7 +587,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 13.906
+      "end": 7.998
     },
     {
       "scene": "S02",
@@ -408,8 +595,8 @@
       "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 13.906,
-      "end": 23.577
+      "start": 7.998,
+      "end": 19.02
     },
     {
       "scene": "S03",
@@ -417,8 +604,8 @@
       "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 23.577,
-      "end": 32.423
+      "start": 19.02,
+      "end": 33.278
     },
     {
       "scene": "S04",
@@ -426,8 +613,8 @@
       "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 32.423,
-      "end": 41.755
+      "start": 33.278,
+      "end": 42.61
     },
     {
       "scene": "S05",
@@ -435,8 +622,8 @@
       "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 41.755,
-      "end": 51.264
+      "start": 42.61,
+      "end": 52.119
     },
     {
       "scene": "S06",
@@ -444,8 +631,8 @@
       "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 51.264,
-      "end": 60.973
+      "start": 52.119,
+      "end": 62.266
     }
   ],
   "sfx": [
@@ -454,42 +641,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 13.906
+      "end": 7.998
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 13.906,
-      "end": 23.577
+      "start": 7.998,
+      "end": 19.02
     },
     {
       "scene": "S03",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 23.577,
-      "end": 32.423
+      "start": 19.02,
+      "end": 33.278
     },
     {
       "scene": "S04",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 32.423,
-      "end": 41.755
+      "start": 33.278,
+      "end": 42.61
     },
     {
       "scene": "S05",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 41.755,
-      "end": 51.264
+      "start": 42.61,
+      "end": 52.119
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 51.264,
-      "end": 60.973
+      "start": 52.119,
+      "end": 62.266
     }
   ]
 }

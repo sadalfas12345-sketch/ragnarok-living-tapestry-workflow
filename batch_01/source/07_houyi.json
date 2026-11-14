@@ -30,8 +30,7 @@
                     "voice_speed_wpm_target":  [
                                                    125,
                                                    145
-                                               ],
-                    "max_visual_hold_seconds_before_internal_reframe":  6.5
+                                               ]
                 },
     "image_reference":  {
                             "path":  "references/style_board.png",
@@ -90,7 +89,8 @@
                                      "references/style_board.png"
                                  ],
                      "narration_source":  "scenes[].caption; do not use any old cached Sxx.txt narration; opening_hook is metadata only",
-                     "timing_adjustment":  "Render timings must be recomputed from new scene narration; existing audio, SRT and timeline are invalidated by script changes."
+                     "timing_adjustment":  "Render timings must be recomputed from new scene narration; existing audio, SRT and timeline are invalidated by script changes.",
+                     "visual_progression_qa_gate":  "Every scene must reveal its ordered first/middle/final narrative anchors through a single smooth camera journey. Verify an actual new narrated event or visual fact appears at each anchor; moving or zooming over one unchanged picture is not sufficient. Reject hard crop jumps, arbitrary timed reframes and static single-tableau scenes; do not change narration or force scene duration."
                  },
     "scenes":  [
                    {
@@ -99,20 +99,23 @@
                        "caption":  "What if ten suns rose at once and scorched the earth? Chinese legend says they abandoned their usual turns.",
                        "beat_title":  "Ten suns",
                        "required_visuals":  [
-                                                "ten vermilion sun disks above cracked farmland"
+                                                "ten vermilion sun disks above cracked farmland",
+                                                "Ordered opening visual discovery: One sun disk in its normal cycle",
+                                                "Ordered middle visual discovery: A second and third sun join the sky",
+                                                "Ordered ending visual discovery: Pull back to reveal all ten suns over cracking farmland"
                                             ],
-                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: ten vermilion sun disks above cracked farmland. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: What if ten suns rose at once and scorched the earth? Once, according to a Chinese legend, ten suns rose together instead of taking turns. Depict this scene timing, but avoid literal words or text.",
+                       "image_prompt":  "Extended sequential illustration for a smoothly travelling vertical 9:16 camera window, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: ten vermilion sun disks above cracked farmland. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: What if ten suns rose at once and scorched the earth? Once, according to a Chinese legend, ten suns rose together instead of taking turns. Depict this scene timing, but avoid literal words or text. VISUAL PROGRESSION FOR THIS SCENE: Compose three readable connected focal regions in one material-consistent story illustration, with clearly distinguishable content, accessible to a moving vertical viewport. LEFT/OPENING: One sun disk in its normal cycle. MIDDLE/DEVELOPMENT: A second and third sun join the sky. RIGHT/CONSEQUENCE: Pull back to reveal all ten suns over cracking farmland. Each region must depict a different narrated beat, not merely the same character from a different zoom. Make the regions large enough to occupy the viewport individually. Preserve all originally required subjects and the established medium. Plan visual continuity across adjacent regions so the virtual camera can travel continuously without hard crop jumps, cutaways, or arbitrary 6.5-second reframes. If the pipeline uses a single scene image, compose it as an elongated, illustrated continuous story panel; if it requires multiple matched segments, seamlessly assemble them into the same scene asset without visible discontinuities. Keep readable focal elements above the caption-safe lower zone and do not add text or event details beyond the narration.",
                        "camera":  {
-                                      "description":  "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+                                      "description":  "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing one sun disk in its normal cycle; glide along the connected illustrated narrative to uncover a second and third sun join the sky; finish by revealing pull back to reveal all ten suns over cracking farmland. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
                                       "style":  "continuous_panorama_when_possible",
                                       "max_zoom_fraction":  0.12,
                                       "no_shake":  true,
                                       "caption_safe_area":  {
                                                                 "bottom_percent":  20
                                                             },
-                                      "allow_internal_reframe":  true,
-                                      "max_static_hold_seconds":  6.5,
-                                      "reframe_at_sentence_boundaries":  true
+                                      "allow_internal_reframe":  false,
+                                      "no_hard_crop_changes":  true,
+                                      "motion_alignment":  "narration_semantic_beats_not_fixed_intervals"
                                   },
                        "music":  {
                                      "cue":  "mystery_and_hook",
@@ -140,6 +143,27 @@
                                                   "do_not_narrate_reference_only_fields":  true,
                                                   "max_scene_seconds":  10,
                                                   "derive_actual_scene_end_from_regenerated_narration":  true
+                                              },
+                       "visual_progression":  {
+                                                  "purpose":  "Reveal new narrative information during each scene, not just motion over an unchanged tableau",
+                                                  "ordered_story_beats":  [
+                                                                              {
+                                                                                  "phase":  "opening",
+                                                                                  "visual":  "One sun disk in its normal cycle"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "development",
+                                                                                  "visual":  "A second and third sun join the sky"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "consequence_or_reveal",
+                                                                                  "visual":  "Pull back to reveal all ten suns over cracking farmland"
+                                                                              }
+                                                                          ],
+                                                  "composition":  "Three spatially separated, readable vignettes connected in one coherent illustration; one continuous travelling vertical viewport",
+                                                  "synchronization":  "Align visual reveals to spoken semantic clauses as delivered; preserve actual narration audio timing, with no fixed intra-scene cut frequency",
+                                                  "prohibited":  "Hard crop jumps, timed automatic reframes, repetitive zoom on an unchanged pose, unrelated generated actions, added narration",
+                                                  "qa":  "Frame sampling must show visually different narrated events/facts at first, middle and last anchor; if not, revise scene artwork rather than speeding camera or cutting narration"
                                               }
                    },
                    {
@@ -149,20 +173,23 @@
                        "beat_title":  "No shelter",
                        "required_visuals":  [
                                                 "desiccated fields",
-                                                "people shielding eyes"
+                                                "people shielding eyes",
+                                                "Ordered opening visual discovery: Dry riverbed and exposed stones",
+                                                "Ordered middle visual discovery: Brown ruined crops and scorched soil",
+                                                "Ordered ending visual discovery: Families and animals searching beneath a merciless sky"
                                             ],
-                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: desiccated fields, people shielding eyes. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: Rivers dried, crops burned, and ordinary people suffered under relentless heat. The earth could not survive ten heavens burning at once. Depict this scene timing, but avoid literal words or text.",
+                       "image_prompt":  "Extended sequential illustration for a smoothly travelling vertical 9:16 camera window, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: desiccated fields, people shielding eyes. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: Rivers dried, crops burned, and ordinary people suffered under relentless heat. The earth could not survive ten heavens burning at once. Depict this scene timing, but avoid literal words or text. VISUAL PROGRESSION FOR THIS SCENE: Compose three readable connected focal regions in one material-consistent story illustration, with clearly distinguishable content, accessible to a moving vertical viewport. LEFT/OPENING: Dry riverbed and exposed stones. MIDDLE/DEVELOPMENT: Brown ruined crops and scorched soil. RIGHT/CONSEQUENCE: Families and animals searching beneath a merciless sky. Each region must depict a different narrated beat, not merely the same character from a different zoom. Make the regions large enough to occupy the viewport individually. Preserve all originally required subjects and the established medium. Plan visual continuity across adjacent regions so the virtual camera can travel continuously without hard crop jumps, cutaways, or arbitrary 6.5-second reframes. If the pipeline uses a single scene image, compose it as an elongated, illustrated continuous story panel; if it requires multiple matched segments, seamlessly assemble them into the same scene asset without visible discontinuities. Keep readable focal elements above the caption-safe lower zone and do not add text or event details beyond the narration.",
                        "camera":  {
-                                      "description":  "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+                                      "description":  "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing dry riverbed and exposed stones; glide along the connected illustrated narrative to uncover brown ruined crops and scorched soil; finish by revealing families and animals searching beneath a merciless sky. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
                                       "style":  "continuous_panorama_when_possible",
                                       "max_zoom_fraction":  0.12,
                                       "no_shake":  true,
                                       "caption_safe_area":  {
                                                                 "bottom_percent":  20
                                                             },
-                                      "allow_internal_reframe":  true,
-                                      "max_static_hold_seconds":  6.5,
-                                      "reframe_at_sentence_boundaries":  true
+                                      "allow_internal_reframe":  false,
+                                      "no_hard_crop_changes":  true,
+                                      "motion_alignment":  "narration_semantic_beats_not_fixed_intervals"
                                   },
                        "music":  {
                                      "cue":  "rising_conflict",
@@ -182,7 +209,28 @@
                        "narration_visual_alignment":  {
                                                           "spoken_text_for_scene":  "Rivers dried, crops burned, and ordinary people suffered under relentless heat. The earth could not survive ten heavens burning at once.",
                                                           "sync_camera_to_spoken_sentences":  true
-                                                      }
+                                                      },
+                       "visual_progression":  {
+                                                  "purpose":  "Reveal new narrative information during each scene, not just motion over an unchanged tableau",
+                                                  "ordered_story_beats":  [
+                                                                              {
+                                                                                  "phase":  "opening",
+                                                                                  "visual":  "Dry riverbed and exposed stones"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "development",
+                                                                                  "visual":  "Brown ruined crops and scorched soil"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "consequence_or_reveal",
+                                                                                  "visual":  "Families and animals searching beneath a merciless sky"
+                                                                              }
+                                                                          ],
+                                                  "composition":  "Three spatially separated, readable vignettes connected in one coherent illustration; one continuous travelling vertical viewport",
+                                                  "synchronization":  "Align visual reveals to spoken semantic clauses as delivered; preserve actual narration audio timing, with no fixed intra-scene cut frequency",
+                                                  "prohibited":  "Hard crop jumps, timed automatic reframes, repetitive zoom on an unchanged pose, unrelated generated actions, added narration",
+                                                  "qa":  "Frame sampling must show visually different narrated events/facts at first, middle and last anchor; if not, revise scene artwork rather than speeding camera or cutting narration"
+                                              }
                    },
                    {
                        "id":  "S03",
@@ -191,20 +239,23 @@
                        "beat_title":  "The archer",
                        "required_visuals":  [
                                                 "hero archer on mountain",
-                                                "enormous composite bow"
+                                                "enormous composite bow",
+                                                "Ordered opening visual discovery: Thirsty animals and farmers seeking shade",
+                                                "Ordered middle visual discovery: Hou Yi steps onto the ridge with his bow",
+                                                "Ordered ending visual discovery: Bowstring drawn toward the overwhelming cluster of suns"
                                             ],
-                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: hero archer on mountain, enormous composite bow. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: Hunters, farmers, and animals searched in vain for water or shade. Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below. Depict this scene timing, but avoid literal words or text.",
+                       "image_prompt":  "Extended sequential illustration for a smoothly travelling vertical 9:16 camera window, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: hero archer on mountain, enormous composite bow. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: Hunters, farmers, and animals searched in vain for water or shade. Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below. Depict this scene timing, but avoid literal words or text. VISUAL PROGRESSION FOR THIS SCENE: Compose three readable connected focal regions in one material-consistent story illustration, with clearly distinguishable content, accessible to a moving vertical viewport. LEFT/OPENING: Thirsty animals and farmers seeking shade. MIDDLE/DEVELOPMENT: Hou Yi steps onto the ridge with his bow. RIGHT/CONSEQUENCE: Bowstring drawn toward the overwhelming cluster of suns. Each region must depict a different narrated beat, not merely the same character from a different zoom. Make the regions large enough to occupy the viewport individually. Preserve all originally required subjects and the established medium. Plan visual continuity across adjacent regions so the virtual camera can travel continuously without hard crop jumps, cutaways, or arbitrary 6.5-second reframes. If the pipeline uses a single scene image, compose it as an elongated, illustrated continuous story panel; if it requires multiple matched segments, seamlessly assemble them into the same scene asset without visible discontinuities. Keep readable focal elements above the caption-safe lower zone and do not add text or event details beyond the narration.",
                        "camera":  {
-                                      "description":  "push gently into the key object or decision; hold for the last important word",
+                                      "description":  "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing thirsty animals and farmers seeking shade; glide along the connected illustrated narrative to uncover hou yi steps onto the ridge with his bow; finish by revealing bowstring drawn toward the overwhelming cluster of suns. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
                                       "style":  "continuous_panorama_when_possible",
                                       "max_zoom_fraction":  0.12,
                                       "no_shake":  true,
                                       "caption_safe_area":  {
                                                                 "bottom_percent":  20
                                                             },
-                                      "allow_internal_reframe":  true,
-                                      "max_static_hold_seconds":  6.5,
-                                      "reframe_at_sentence_boundaries":  true
+                                      "allow_internal_reframe":  false,
+                                      "no_hard_crop_changes":  true,
+                                      "motion_alignment":  "narration_semantic_beats_not_fixed_intervals"
                                   },
                        "music":  {
                                      "cue":  "moral_decision",
@@ -224,7 +275,28 @@
                        "narration_visual_alignment":  {
                                                           "spoken_text_for_scene":  "Hunters, farmers, and animals searched in vain for water or shade. Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below.",
                                                           "sync_camera_to_spoken_sentences":  true
-                                                      }
+                                                      },
+                       "visual_progression":  {
+                                                  "purpose":  "Reveal new narrative information during each scene, not just motion over an unchanged tableau",
+                                                  "ordered_story_beats":  [
+                                                                              {
+                                                                                  "phase":  "opening",
+                                                                                  "visual":  "Thirsty animals and farmers seeking shade"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "development",
+                                                                                  "visual":  "Hou Yi steps onto the ridge with his bow"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "consequence_or_reveal",
+                                                                                  "visual":  "Bowstring drawn toward the overwhelming cluster of suns"
+                                                                              }
+                                                                          ],
+                                                  "composition":  "Three spatially separated, readable vignettes connected in one coherent illustration; one continuous travelling vertical viewport",
+                                                  "synchronization":  "Align visual reveals to spoken semantic clauses as delivered; preserve actual narration audio timing, with no fixed intra-scene cut frequency",
+                                                  "prohibited":  "Hard crop jumps, timed automatic reframes, repetitive zoom on an unchanged pose, unrelated generated actions, added narration",
+                                                  "qa":  "Frame sampling must show visually different narrated events/facts at first, middle and last anchor; if not, revise scene artwork rather than speeding camera or cutting narration"
+                                              }
                    },
                    {
                        "id":  "S04",
@@ -233,20 +305,23 @@
                        "beat_title":  "Nine arrows",
                        "required_visuals":  [
                                                 "nine glowing suns falling like birds",
-                                                "one sun left"
+                                                "one sun left",
+                                                "Ordered opening visual discovery: First arrow arcs toward blazing suns",
+                                                "Ordered middle visual discovery: A sequence of sun-bird forms falls across the sky",
+                                                "Ordered ending visual discovery: Nine darkened paths leave one steady sun aloft"
                                             ],
-                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: nine glowing suns falling like birds, one sun left. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+                       "image_prompt":  "Extended sequential illustration for a smoothly travelling vertical 9:16 camera window, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: nine glowing suns falling like birds, one sun left. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. VISUAL PROGRESSION FOR THIS SCENE: Compose three readable connected focal regions in one material-consistent story illustration, with clearly distinguishable content, accessible to a moving vertical viewport. LEFT/OPENING: First arrow arcs toward blazing suns. MIDDLE/DEVELOPMENT: A sequence of sun-bird forms falls across the sky. RIGHT/CONSEQUENCE: Nine darkened paths leave one steady sun aloft. Each region must depict a different narrated beat, not merely the same character from a different zoom. Make the regions large enough to occupy the viewport individually. Preserve all originally required subjects and the established medium. Plan visual continuity across adjacent regions so the virtual camera can travel continuously without hard crop jumps, cutaways, or arbitrary 6.5-second reframes. If the pipeline uses a single scene image, compose it as an elongated, illustrated continuous story panel; if it requires multiple matched segments, seamlessly assemble them into the same scene asset without visible discontinuities. Keep readable focal elements above the caption-safe lower zone and do not add text or event details beyond the narration.",
                        "camera":  {
-                                      "description":  "wide camera drift across consequences; slower movement and space for narration to breathe",
+                                      "description":  "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing first arrow arcs toward blazing suns; glide along the connected illustrated narrative to uncover a sequence of sun-bird forms falls across the sky; finish by revealing nine darkened paths leave one steady sun aloft. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
                                       "style":  "continuous_panorama_when_possible",
                                       "max_zoom_fraction":  0.12,
                                       "no_shake":  true,
                                       "caption_safe_area":  {
                                                                 "bottom_percent":  20
                                                             },
-                                      "allow_internal_reframe":  true,
-                                      "max_static_hold_seconds":  6.5,
-                                      "reframe_at_sentence_boundaries":  true
+                                      "allow_internal_reframe":  false,
+                                      "no_hard_crop_changes":  true,
+                                      "motion_alignment":  "narration_semantic_beats_not_fixed_intervals"
                                   },
                        "music":  {
                                      "cue":  "consequences",
@@ -266,7 +341,28 @@
                        "narration_visual_alignment":  {
                                                           "spoken_text_for_scene":  "He shot down nine suns, one after another. Each impact dimmed the sky until only the light the world needed remained.",
                                                           "sync_camera_to_spoken_sentences":  true
-                                                      }
+                                                      },
+                       "visual_progression":  {
+                                                  "purpose":  "Reveal new narrative information during each scene, not just motion over an unchanged tableau",
+                                                  "ordered_story_beats":  [
+                                                                              {
+                                                                                  "phase":  "opening",
+                                                                                  "visual":  "First arrow arcs toward blazing suns"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "development",
+                                                                                  "visual":  "A sequence of sun-bird forms falls across the sky"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "consequence_or_reveal",
+                                                                                  "visual":  "Nine darkened paths leave one steady sun aloft"
+                                                                              }
+                                                                          ],
+                                                  "composition":  "Three spatially separated, readable vignettes connected in one coherent illustration; one continuous travelling vertical viewport",
+                                                  "synchronization":  "Align visual reveals to spoken semantic clauses as delivered; preserve actual narration audio timing, with no fixed intra-scene cut frequency",
+                                                  "prohibited":  "Hard crop jumps, timed automatic reframes, repetitive zoom on an unchanged pose, unrelated generated actions, added narration",
+                                                  "qa":  "Frame sampling must show visually different narrated events/facts at first, middle and last anchor; if not, revise scene artwork rather than speeding camera or cutting narration"
+                                              }
                    },
                    {
                        "id":  "S05",
@@ -274,20 +370,23 @@
                        "caption":  "With a single sun moving overhead, crops could grow again. Water returned to land that had nearly become desert.",
                        "beat_title":  "The balance",
                        "required_visuals":  [
-                                                "one warm sun over restored rivers and rice fields"
+                                                "one warm sun over restored rivers and rice fields",
+                                                "Ordered opening visual discovery: One gentle sun over parched earth",
+                                                "Ordered middle visual discovery: Water reappears in the river channel",
+                                                "Ordered ending visual discovery: Green fields and people returning to work"
                                             ],
-                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one warm sun over restored rivers and rice fields. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+                       "image_prompt":  "Extended sequential illustration for a smoothly travelling vertical 9:16 camera window, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one warm sun over restored rivers and rice fields. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. VISUAL PROGRESSION FOR THIS SCENE: Compose three readable connected focal regions in one material-consistent story illustration, with clearly distinguishable content, accessible to a moving vertical viewport. LEFT/OPENING: One gentle sun over parched earth. MIDDLE/DEVELOPMENT: Water reappears in the river channel. RIGHT/CONSEQUENCE: Green fields and people returning to work. Each region must depict a different narrated beat, not merely the same character from a different zoom. Make the regions large enough to occupy the viewport individually. Preserve all originally required subjects and the established medium. Plan visual continuity across adjacent regions so the virtual camera can travel continuously without hard crop jumps, cutaways, or arbitrary 6.5-second reframes. If the pipeline uses a single scene image, compose it as an elongated, illustrated continuous story panel; if it requires multiple matched segments, seamlessly assemble them into the same scene asset without visible discontinuities. Keep readable focal elements above the caption-safe lower zone and do not add text or event details beyond the narration.",
                        "camera":  {
-                                      "description":  "controlled zoom into the turning point, then stillness during the reveal",
+                                      "description":  "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing one gentle sun over parched earth; glide along the connected illustrated narrative to uncover water reappears in the river channel; finish by revealing green fields and people returning to work. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
                                       "style":  "continuous_panorama_when_possible",
                                       "max_zoom_fraction":  0.12,
                                       "no_shake":  true,
                                       "caption_safe_area":  {
                                                                 "bottom_percent":  20
                                                             },
-                                      "allow_internal_reframe":  true,
-                                      "max_static_hold_seconds":  6.5,
-                                      "reframe_at_sentence_boundaries":  true
+                                      "allow_internal_reframe":  false,
+                                      "no_hard_crop_changes":  true,
+                                      "motion_alignment":  "narration_semantic_beats_not_fixed_intervals"
                                   },
                        "music":  {
                                      "cue":  "climax",
@@ -307,7 +406,28 @@
                        "narration_visual_alignment":  {
                                                           "spoken_text_for_scene":  "With a single sun moving overhead, crops could grow again. Water returned to land that had nearly become desert.",
                                                           "sync_camera_to_spoken_sentences":  true
-                                                      }
+                                                      },
+                       "visual_progression":  {
+                                                  "purpose":  "Reveal new narrative information during each scene, not just motion over an unchanged tableau",
+                                                  "ordered_story_beats":  [
+                                                                              {
+                                                                                  "phase":  "opening",
+                                                                                  "visual":  "One gentle sun over parched earth"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "development",
+                                                                                  "visual":  "Water reappears in the river channel"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "consequence_or_reveal",
+                                                                                  "visual":  "Green fields and people returning to work"
+                                                                              }
+                                                                          ],
+                                                  "composition":  "Three spatially separated, readable vignettes connected in one coherent illustration; one continuous travelling vertical viewport",
+                                                  "synchronization":  "Align visual reveals to spoken semantic clauses as delivered; preserve actual narration audio timing, with no fixed intra-scene cut frequency",
+                                                  "prohibited":  "Hard crop jumps, timed automatic reframes, repetitive zoom on an unchanged pose, unrelated generated actions, added narration",
+                                                  "qa":  "Frame sampling must show visually different narrated events/facts at first, middle and last anchor; if not, revise scene artwork rather than speeding camera or cutting narration"
+                                              }
                    },
                    {
                        "id":  "S06",
@@ -315,20 +435,23 @@
                        "caption":  "The hero did not make the world safe by destroying all power. He made it livable by leaving enoughâ€”and no more.",
                        "beat_title":  "The point",
                        "required_visuals":  [
-                                                "one circle sun above bow resting on ground"
+                                                "one circle sun above bow resting on ground",
+                                                "Ordered opening visual discovery: Nine absent suns and a resting bow",
+                                                "Ordered middle visual discovery: Single remaining sun over a habitable landscape",
+                                                "Ordered ending visual discovery: People beneath the restored sky, not another shot"
                                             ],
-                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one circle sun above bow resting on ground. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+                       "image_prompt":  "Extended sequential illustration for a smoothly travelling vertical 9:16 camera window, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one circle sun above bow resting on ground. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. VISUAL PROGRESSION FOR THIS SCENE: Compose three readable connected focal regions in one material-consistent story illustration, with clearly distinguishable content, accessible to a moving vertical viewport. LEFT/OPENING: Nine absent suns and a resting bow. MIDDLE/DEVELOPMENT: Single remaining sun over a habitable landscape. RIGHT/CONSEQUENCE: People beneath the restored sky, not another shot. Each region must depict a different narrated beat, not merely the same character from a different zoom. Make the regions large enough to occupy the viewport individually. Preserve all originally required subjects and the established medium. Plan visual continuity across adjacent regions so the virtual camera can travel continuously without hard crop jumps, cutaways, or arbitrary 6.5-second reframes. If the pipeline uses a single scene image, compose it as an elongated, illustrated continuous story panel; if it requires multiple matched segments, seamlessly assemble them into the same scene asset without visible discontinuities. Keep readable focal elements above the caption-safe lower zone and do not add text or event details beyond the narration.",
                        "camera":  {
-                                      "description":  "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+                                      "description":  "CONTINUOUS STORY REVEAL, ONE SHOT: start by clearly showing nine absent suns and a resting bow; glide along the connected illustrated narrative to uncover single remaining sun over a habitable landscape; finish by revealing people beneath the restored sky, not another shot. Follow the meaning and pauses of the actual spoken narration, not fixed-time crop switches. Smooth eased, physically connected camera travel throughout; no jumps, no snap reframes, no forced 6.5-second hold limit. Any artistic hold is motivated by the story, not a timer.",
                                       "style":  "continuous_panorama_when_possible",
                                       "max_zoom_fraction":  0.12,
                                       "no_shake":  true,
                                       "caption_safe_area":  {
                                                                 "bottom_percent":  20
                                                             },
-                                      "allow_internal_reframe":  true,
-                                      "max_static_hold_seconds":  6.5,
-                                      "reframe_at_sentence_boundaries":  true
+                                      "allow_internal_reframe":  false,
+                                      "no_hard_crop_changes":  true,
+                                      "motion_alignment":  "narration_semantic_beats_not_fixed_intervals"
                                   },
                        "music":  {
                                      "cue":  "resolution",
@@ -348,7 +471,28 @@
                        "narration_visual_alignment":  {
                                                           "spoken_text_for_scene":  "The hero did not make the world safe by destroying all power. He made it livable by leaving enoughâ€”and no more.",
                                                           "sync_camera_to_spoken_sentences":  true
-                                                      }
+                                                      },
+                       "visual_progression":  {
+                                                  "purpose":  "Reveal new narrative information during each scene, not just motion over an unchanged tableau",
+                                                  "ordered_story_beats":  [
+                                                                              {
+                                                                                  "phase":  "opening",
+                                                                                  "visual":  "Nine absent suns and a resting bow"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "development",
+                                                                                  "visual":  "Single remaining sun over a habitable landscape"
+                                                                              },
+                                                                              {
+                                                                                  "phase":  "consequence_or_reveal",
+                                                                                  "visual":  "People beneath the restored sky, not another shot"
+                                                                              }
+                                                                          ],
+                                                  "composition":  "Three spatially separated, readable vignettes connected in one coherent illustration; one continuous travelling vertical viewport",
+                                                  "synchronization":  "Align visual reveals to spoken semantic clauses as delivered; preserve actual narration audio timing, with no fixed intra-scene cut frequency",
+                                                  "prohibited":  "Hard crop jumps, timed automatic reframes, repetitive zoom on an unchanged pose, unrelated generated actions, added narration",
+                                                  "qa":  "Frame sampling must show visually different narrated events/facts at first, middle and last anchor; if not, revise scene artwork rather than speeding camera or cutting narration"
+                                              }
                    }
                ],
     "opening_hook":  "What if ten suns rose at once and scorched the earth?"
