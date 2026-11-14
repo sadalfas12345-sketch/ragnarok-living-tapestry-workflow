@@ -1,281 +1,357 @@
 {
-  "schema_version": "living_tapestry_story_v1",
-  "episode_number": 8,
-  "slug": "08_yuki_onna",
-  "title": "Yuki-onna: The Woman in the Snow",
-  "series": "Living Tapestries — The World’s Great Stories",
-  "genre": "supernatural, tragic romance",
-  "civilization": "Japan",
-  "source_integrity": {
-    "primary_source_or_tradition": "Lafcadio Hearn, Kwaidan (1904), Yuki-Onna; literary retelling",
-    "classification": "traditional_narrative_or_literary_retelling",
-    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
-    "translation_policy": "New original paraphrase only; do not quote protected translations",
-    "research_status": "editorial_outline_needs_source_review_before_publication"
-  },
-  "format": {
-    "width": 1080,
-    "height": 1920,
-    "fps": 30,
-    "language": "en"
-  },
-  "runtime": {
-    "target_seconds_range": [
-      85,
-      135
-    ],
-    "timing_authority": "derive_from_final_narration_waveform",
-    "no_hardcoded_scene_times": true,
-    "allow_longer_for_natural_delivery": true,
-    "voice_speed_wpm_target": [
-      125,
-      145
-    ]
-  },
-  "image_reference": {
-    "path": "references/style_board.png",
-    "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Yuki-onna: The Woman in the Snow in Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern",
-    "palette": "derive from the specified art style, not the preceding episode",
-    "character_design_lock": [
-      "Minokichi",
-      "Yuki-onna",
-      "O-Yuki"
-    ],
-    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
-    "do_not_reuse_ragnarok_norse_tapestry": true
-  },
-  "audio": {
-    "narrator": "one expressive documentary storyteller, natural cadence",
-    "soundtrack_direction": "shakuhachi breath, bells, wind and snow hiss",
-    "music_licensing": {
-      "commercial_use": true,
-      "attribution_required": false,
-      "allow_attribution_if_explicitly_approved": true,
-      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
-      "track_titles": "unassigned; search within vetted libraries at production time"
-    },
-    "dialogue": false,
-    "mix": {
-      "duck_music_on_speech": true,
-      "target_lufs": -14,
-      "max_true_peak_db": -1,
-      "music_relative_to_narration_db_start": -18,
-      "check_phone_speaker": true
-    }
-  },
-  "workflow": {
-    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
-    "manifest_role": "authoritative_story_and_visual_intent",
-    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
-    "steps": [
-      "validate story JSON and factual claims",
-      "generate one style board first",
-      "generate panels P01–P06 with consistent characters",
-      "generate narration sentence by sentence from caption",
-      "compose one timeline.json from measured narration and explicit pauses",
-      "word-align captions to speech, no overlaps",
-      "render camera moves from the same timeline",
-      "build licensed soundtrack and SFX from same timeline",
-      "run audio-visual QA and deliver MP4, SRT, manifest"
-    ],
-    "outputs": [
-      "final_vertical_1080x1920.mp4",
-      "Captions_final.srt",
-      "timeline.json",
-      "music_sources.json",
-      "QC_report.md",
-      "references/style_board.png"
-    ],
-    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
-  },
-  "scenes": [
-    {
-      "id": "S01",
-      "asset": "assets/P01.png",
-      "caption": "What if a stranger in a snowstorm could take your life with a breath? Two woodcutters sheltered from a deadly snowstorm. During the night, a pale woman entered, and one man died beneath her freezing breath.",
-      "beat_title": "The blizzard",
-      "required_visuals": [
-        "snowy river hut",
-        "white apparition at doorway"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: snowy river hut, white apparition at doorway. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "mystery_and_hook",
-        "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "ambient_place",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 0.45
-    },
-    {
-      "id": "S02",
-      "asset": "assets/P02.png",
-      "caption": "She spared the younger man, Minokichi, only if he never told anyone what he had seen. By morning she had vanished into the blizzard.",
-      "beat_title": "The promise",
-      "required_visuals": [
-        "young woodcutter kneels beneath white ghost",
-        "frozen bridge"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: young woodcutter kneels beneath white ghost, frozen bridge. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "rising_conflict",
-        "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "gesture_detail",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 0.65
-    },
-    {
-      "id": "S03",
-      "asset": "assets/P03.png",
-      "caption": "Minokichi later married a beautiful woman called O-Yuki. They built a life together and raised children; the winter vision slowly became a secret memory.",
-      "beat_title": "Years pass",
-      "required_visuals": [
-        "woodblock family near hearth",
-        "snow visible outside"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: woodblock family near hearth, snow visible outside. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "push gently into the key object or decision; hold for the last important word",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "moral_decision",
-        "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "dramatic_hit",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 0.8
-    },
-    {
-      "id": "S04",
-      "asset": "assets/P04.png",
-      "caption": "One evening he told his wife the old tale. As he spoke, she changed: O-Yuki was the very woman who had made him promise silence.",
-      "beat_title": "A confession",
-      "required_visuals": [
-        "wife transforms into snow apparition",
-        "lanterns dim"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: wife transforms into snow apparition, lanterns dim. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "consequences",
-        "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "texture_environment",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 0.8
-    },
-    {
-      "id": "S05",
-      "asset": "assets/P05.png",
-      "caption": "She was furious that he had broken his word, but for their children she spared his life. Then she disappeared into the night.",
-      "beat_title": "An impossible mercy",
-      "required_visuals": [
-        "ghost recedes into snow",
-        "father reaches for children"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: ghost recedes into snow, father reaches for children. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "controlled zoom into the turning point, then stillness during the reveal",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "climax",
-        "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "critical_event",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 1.1
-    },
-    {
-      "id": "S06",
-      "asset": "assets/P06.png",
-      "caption": "He kept the family, but lost the woman he loved. Some promises are not tested until a lifetime has passed.",
-      "beat_title": "The emptiness",
-      "required_visuals": [
-        "empty doorway fills with drifting white flakes"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: empty doorway fills with drifting white flakes. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "resolution",
-        "instrumentation": "shakuhachi breath, bells, wind and snow hiss",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "fade_to_atmosphere",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 1.5
-    }
-  ],
-  "opening_hook": "What if a stranger in a snowstorm could take your life with a breath?"
+    "schema_version":  "living_tapestry_story_v1",
+    "episode_number":  8,
+    "slug":  "08_yuki_onna",
+    "title":  "Yuki-onna: The Woman in the Snow",
+    "series":  "Living Tapestries â€” The Worldâ€™s Great Stories",
+    "genre":  "supernatural, tragic romance",
+    "civilization":  "Japan",
+    "source_integrity":  {
+                             "primary_source_or_tradition":  "Lafcadio Hearn, Kwaidan (1904), Yuki-Onna; literary retelling",
+                             "classification":  "traditional_narrative_or_literary_retelling",
+                             "narration_style":  "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+                             "translation_policy":  "New original paraphrase only; do not quote protected translations",
+                             "research_status":  "editorial_outline_needs_source_review_before_publication"
+                         },
+    "format":  {
+                   "width":  1080,
+                   "height":  1920,
+                   "fps":  30,
+                   "language":  "en"
+               },
+    "runtime":  {
+                    "target_seconds_range":  [
+                                                 85,
+                                                 135
+                                             ],
+                    "timing_authority":  "derive_from_final_narration_waveform",
+                    "no_hardcoded_scene_times":  true,
+                    "allow_longer_for_natural_delivery":  true,
+                    "voice_speed_wpm_target":  [
+                                                   125,
+                                                   145
+                                               ],
+                    "max_visual_hold_seconds_before_internal_reframe":  6.5
+                },
+    "image_reference":  {
+                            "path":  "references/style_board.png",
+                            "status":  "GENERATE_BEFORE_RENDER",
+                            "style_board_prompt":  "Create one horizontal 3:1 cohesive six-beat visual development frieze for Yuki-onna: The Woman in the Snow in Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+                            "art_style":  "Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern",
+                            "palette":  "derive from the specified art style, not the preceding episode",
+                            "character_design_lock":  [
+                                                          "Minokichi",
+                                                          "Yuki-onna",
+                                                          "O-Yuki"
+                                                      ],
+                            "material_consistency":  "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+                            "do_not_reuse_ragnarok_norse_tapestry":  true
+                        },
+    "audio":  {
+                  "narrator":  "one expressive documentary storyteller, natural cadence",
+                  "soundtrack_direction":  "shakuhachi breath, bells, wind and snow hiss",
+                  "music_licensing":  {
+                                          "commercial_use":  true,
+                                          "attribution_required":  false,
+                                          "allow_attribution_if_explicitly_approved":  true,
+                                          "source_files":  "locate and verify current track licenses before download; avoid unlicensed music",
+                                          "track_titles":  "unassigned; search within vetted libraries at production time"
+                                      },
+                  "dialogue":  false,
+                  "mix":  {
+                              "duck_music_on_speech":  true,
+                              "target_lufs":  -14,
+                              "max_true_peak_db":  -1,
+                              "music_relative_to_narration_db_start":  -18,
+                              "check_phone_speaker":  true
+                          }
+              },
+    "workflow":  {
+                     "renderer_repo":  "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+                     "manifest_role":  "authoritative_story_and_visual_intent",
+                     "adapter_required":  "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+                     "steps":  [
+                                   "validate story JSON and factual claims",
+                                   "generate one style board first",
+                                   "generate panels P01â€“P06 with consistent characters",
+                                   "generate narration sentence by sentence from caption",
+                                   "compose one timeline.json from measured narration and explicit pauses",
+                                   "word-align captions to speech, no overlaps",
+                                   "render camera moves from the same timeline",
+                                   "build licensed soundtrack and SFX from same timeline",
+                                   "run audio-visual QA and deliver MP4, SRT, manifest"
+                               ],
+                     "outputs":  [
+                                     "final_vertical_1080x1920.mp4",
+                                     "Captions_final.srt",
+                                     "timeline.json",
+                                     "music_sources.json",
+                                     "QC_report.md",
+                                     "references/style_board.png"
+                                 ],
+                     "narration_source":  "scenes[].caption; do not use any old cached Sxx.txt narration; opening_hook is metadata only",
+                     "timing_adjustment":  "Render timings must be recomputed from new scene narration; existing audio, SRT and timeline are invalidated by script changes."
+                 },
+    "scenes":  [
+                   {
+                       "id":  "S01",
+                       "asset":  "assets/P01.png",
+                       "caption":  "What if a stranger in a snowstorm could take your life with a breath? Two woodcutters sought shelter.",
+                       "beat_title":  "The blizzard",
+                       "required_visuals":  [
+                                                "snowy river hut",
+                                                "white apparition at doorway"
+                                            ],
+                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: snowy river hut, white apparition at doorway. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: What if a stranger in a snowstorm could take your life with a breath? Two woodcutters sheltered from a deadly snowstorm. Depict this scene timing, but avoid literal words or text.",
+                       "camera":  {
+                                      "description":  "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            },
+                                      "allow_internal_reframe":  true,
+                                      "max_static_hold_seconds":  6.5,
+                                      "reframe_at_sentence_boundaries":  true
+                                  },
+                       "music":  {
+                                     "cue":  "mystery_and_hook",
+                                     "instrumentation":  "shakuhachi breath, bells, wind and snow hiss",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "ambient_place",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.15,
+                       "target_duration_seconds_range":  [
+                                                             8,
+                                                             10
+                                                         ],
+                       "narration_visual_alignment":  {
+                                                          "spoken_text_for_scene":  "What if a stranger in a snowstorm could take your life with a breath? Two woodcutters sought shelter.",
+                                                          "sync_camera_to_spoken_sentences":  true
+                                                      },
+                       "trimmed_setup_reference_only_not_spoken":  "Two woodcutters sheltered from a deadly snowstorm.",
+                       "narration_contract":  {
+                                                  "authoritative_spoken_text_field":  "scenes[0].caption",
+                                                  "first_spoken_sentence_starts_with":  "What if",
+                                                  "do_not_narrate_reference_only_fields":  true,
+                                                  "max_scene_seconds":  10,
+                                                  "derive_actual_scene_end_from_regenerated_narration":  true
+                                              }
+                   },
+                   {
+                       "id":  "S02",
+                       "asset":  "assets/P02.png",
+                       "caption":  "During the night, a pale woman entered, and one man died beneath her freezing breath. She spared the younger man, Minokichi, only if he never told anyone what he had seen.",
+                       "beat_title":  "The promise",
+                       "required_visuals":  [
+                                                "young woodcutter kneels beneath white ghost",
+                                                "frozen bridge"
+                                            ],
+                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: young woodcutter kneels beneath white ghost, frozen bridge. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: During the night, a pale woman entered, and one man died beneath her freezing breath. She spared the younger man, Minokichi, only if he never told anyone what he had seen. Depict this scene timing, but avoid literal words or text.",
+                       "camera":  {
+                                      "description":  "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            },
+                                      "allow_internal_reframe":  true,
+                                      "max_static_hold_seconds":  6.5,
+                                      "reframe_at_sentence_boundaries":  true
+                                  },
+                       "music":  {
+                                     "cue":  "rising_conflict",
+                                     "instrumentation":  "shakuhachi breath, bells, wind and snow hiss",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "gesture_detail",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.65,
+                       "target_duration_seconds_range":  [
+                                                             8,
+                                                             15
+                                                         ],
+                       "narration_visual_alignment":  {
+                                                          "spoken_text_for_scene":  "During the night, a pale woman entered, and one man died beneath her freezing breath. She spared the younger man, Minokichi, only if he never told anyone what he had seen.",
+                                                          "sync_camera_to_spoken_sentences":  true
+                                                      }
+                   },
+                   {
+                       "id":  "S03",
+                       "asset":  "assets/P03.png",
+                       "caption":  "By morning she had vanished into the blizzard. Minokichi later married a beautiful woman called O-Yuki. They built a life together and raised children; the winter vision slowly became a secret memory.",
+                       "beat_title":  "Years pass",
+                       "required_visuals":  [
+                                                "woodblock family near hearth",
+                                                "snow visible outside"
+                                            ],
+                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: woodblock family near hearth, snow visible outside. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: By morning she had vanished into the blizzard. Minokichi later married a beautiful woman called O-Yuki. They built a life together and raised children; the winter vision slowly became a secret memory. Depict this scene timing, but avoid literal words or text.",
+                       "camera":  {
+                                      "description":  "push gently into the key object or decision; hold for the last important word",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            },
+                                      "allow_internal_reframe":  true,
+                                      "max_static_hold_seconds":  6.5,
+                                      "reframe_at_sentence_boundaries":  true
+                                  },
+                       "music":  {
+                                     "cue":  "moral_decision",
+                                     "instrumentation":  "shakuhachi breath, bells, wind and snow hiss",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "dramatic_hit",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.8,
+                       "target_duration_seconds_range":  [
+                                                             8,
+                                                             15
+                                                         ],
+                       "narration_visual_alignment":  {
+                                                          "spoken_text_for_scene":  "By morning she had vanished into the blizzard. Minokichi later married a beautiful woman called O-Yuki. They built a life together and raised children; the winter vision slowly became a secret memory.",
+                                                          "sync_camera_to_spoken_sentences":  true
+                                                      }
+                   },
+                   {
+                       "id":  "S04",
+                       "asset":  "assets/P04.png",
+                       "caption":  "One evening he told his wife the old tale. As he spoke, she changed: O-Yuki was the very woman who had made him promise silence.",
+                       "beat_title":  "A confession",
+                       "required_visuals":  [
+                                                "wife transforms into snow apparition",
+                                                "lanterns dim"
+                                            ],
+                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: wife transforms into snow apparition, lanterns dim. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+                       "camera":  {
+                                      "description":  "wide camera drift across consequences; slower movement and space for narration to breathe",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            },
+                                      "allow_internal_reframe":  true,
+                                      "max_static_hold_seconds":  6.5,
+                                      "reframe_at_sentence_boundaries":  true
+                                  },
+                       "music":  {
+                                     "cue":  "consequences",
+                                     "instrumentation":  "shakuhachi breath, bells, wind and snow hiss",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "texture_environment",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.8,
+                       "target_duration_seconds_range":  [
+                                                             8,
+                                                             15
+                                                         ],
+                       "narration_visual_alignment":  {
+                                                          "spoken_text_for_scene":  "One evening he told his wife the old tale. As he spoke, she changed: O-Yuki was the very woman who had made him promise silence.",
+                                                          "sync_camera_to_spoken_sentences":  true
+                                                      }
+                   },
+                   {
+                       "id":  "S05",
+                       "asset":  "assets/P05.png",
+                       "caption":  "She was furious that he had broken his word, but for their children she spared his life. Then she disappeared into the night.",
+                       "beat_title":  "An impossible mercy",
+                       "required_visuals":  [
+                                                "ghost recedes into snow",
+                                                "father reaches for children"
+                                            ],
+                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: ghost recedes into snow, father reaches for children. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+                       "camera":  {
+                                      "description":  "controlled zoom into the turning point, then stillness during the reveal",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            },
+                                      "allow_internal_reframe":  true,
+                                      "max_static_hold_seconds":  6.5,
+                                      "reframe_at_sentence_boundaries":  true
+                                  },
+                       "music":  {
+                                     "cue":  "climax",
+                                     "instrumentation":  "shakuhachi breath, bells, wind and snow hiss",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "critical_event",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  1.1,
+                       "target_duration_seconds_range":  [
+                                                             8,
+                                                             15
+                                                         ],
+                       "narration_visual_alignment":  {
+                                                          "spoken_text_for_scene":  "She was furious that he had broken his word, but for their children she spared his life. Then she disappeared into the night.",
+                                                          "sync_camera_to_spoken_sentences":  true
+                                                      }
+                   },
+                   {
+                       "id":  "S06",
+                       "asset":  "assets/P06.png",
+                       "caption":  "He kept the family, but lost the woman he loved. Some promises are not tested until a lifetime has passed.",
+                       "beat_title":  "The emptiness",
+                       "required_visuals":  [
+                                                "empty doorway fills with drifting white flakes"
+                                            ],
+                       "image_prompt":  "Vertical cinematic crop of a coherent sequential Edo-period ukiyo-e woodblock, indigo snow, pale ink, vermilion lantern. Scene: empty doorway fills with drifting white flakes. The source story is Yuki-onna: The Woman in the Snow. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+                       "camera":  {
+                                      "description":  "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            },
+                                      "allow_internal_reframe":  true,
+                                      "max_static_hold_seconds":  6.5,
+                                      "reframe_at_sentence_boundaries":  true
+                                  },
+                       "music":  {
+                                     "cue":  "resolution",
+                                     "instrumentation":  "shakuhachi breath, bells, wind and snow hiss",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "fade_to_atmosphere",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  1.5,
+                       "target_duration_seconds_range":  [
+                                                             8,
+                                                             13
+                                                         ],
+                       "narration_visual_alignment":  {
+                                                          "spoken_text_for_scene":  "He kept the family, but lost the woman he loved. Some promises are not tested until a lifetime has passed.",
+                                                          "sync_camera_to_spoken_sentences":  true
+                                                      }
+                   }
+               ],
+    "opening_hook":  "What if a stranger in a snowstorm could take your life with a breath?"
 }
