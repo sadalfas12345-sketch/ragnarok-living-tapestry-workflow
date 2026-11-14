@@ -89,13 +89,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "In one Akan tale, all the world’s stories belonged to Nyame, the sky god. The spider Anansi wanted to bring them down to the people.",
+      "caption": "What if a spider could win the world’s stories from the sky god? In one Akan tale, all the world’s stories belonged to Nyame, the sky god. The spider Anansi wanted to bring them down to the people.",
       "beat_title": "Who owned stories",
       "required_visuals": [
         "sky god high above miniature village",
@@ -276,5 +277,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if a spider could win the world’s stories from the sky god?"
 }
