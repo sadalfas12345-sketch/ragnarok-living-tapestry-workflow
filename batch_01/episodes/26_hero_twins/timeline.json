@@ -1,0 +1,495 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 68.966,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld.",
+        "start": 0.0,
+        "end": 6.6
+      },
+      {
+        "scene": "S01",
+        "text": "Its lords specialized in humiliating and defeating visitors through trickery.",
+        "start": 7.3,
+        "end": 12.26
+      },
+      {
+        "scene": "S02",
+        "text": "The brothers entered houses filled with darkness, sharp blades, cold and fierce creatures.",
+        "start": 13.1,
+        "end": 19.84
+      },
+      {
+        "scene": "S02",
+        "text": "Each test demanded more than physical courage.",
+        "start": 20.42,
+        "end": 23.42
+      },
+      {
+        "scene": "S03",
+        "text": "The lords challenged them at ball play and set cruel tasks.",
+        "start": 24.44,
+        "end": 29.26
+      },
+      {
+        "scene": "S03",
+        "text": "The twins answered with observation, cooperation and deception of their own.",
+        "start": 29.26,
+        "end": 34.274
+      },
+      {
+        "scene": "S04",
+        "text": "The story tells of death, transformation and astonishing returns.",
+        "start": 35.6,
+        "end": 40.48
+      },
+      {
+        "scene": "S04",
+        "text": "In the end the twins used the lords’ desire for spectacle against them.",
+        "start": 41.1,
+        "end": 45.476
+      },
+      {
+        "scene": "S05",
+        "text": "When the lords expected to be restored after imitating the trick, the brothers refused.",
+        "start": 46.56,
+        "end": 52.0
+      },
+      {
+        "scene": "S05",
+        "text": "Xibalba’s authority was broken.",
+        "start": 52.82,
+        "end": 54.871
+      },
+      {
+        "scene": "S06",
+        "text": "In the Popol Vuh, the victory helps reorder the cosmos and honors family memory.",
+        "start": 55.971,
+        "end": 62.5
+      },
+      {
+        "scene": "S06",
+        "text": "The strongest weapon is knowing a trickster better than he knows himself.",
+        "start": 63.18,
+        "end": 67.42
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Two young heroes,",
+        "start": 0.0,
+        "end": 1.72,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "Hunahpu and Xbalanque,",
+        "start": 2.16,
+        "end": 3.4,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "were summoned into Xibalba,",
+        "start": 3.84,
+        "end": 5.42,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "the underworld. Its lords specialized in humiliating",
+        "start": 5.84,
+        "end": 9.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "and defeating visitors through trickery.",
+        "start": 9.8,
+        "end": 12.26,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "The brothers entered houses filled with darkness,",
+        "start": 13.1,
+        "end": 16.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "sharp blades, cold and fierce creatures.",
+        "start": 16.7,
+        "end": 19.84,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "Each test demanded more than physical courage.",
+        "start": 20.42,
+        "end": 23.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "The lords challenged them at ball play",
+        "start": 24.44,
+        "end": 27.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "and set cruel tasks.",
+        "start": 27.3,
+        "end": 29.26,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "The twins answered with observation,",
+        "start": 29.26,
+        "end": 32.3,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "cooperation and deception of their own.",
+        "start": 32.86,
+        "end": 34.274,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "The story tells of death,",
+        "start": 35.6,
+        "end": 37.06,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "transformation and astonishing returns.",
+        "start": 37.74,
+        "end": 40.48,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "In the end the twins used the",
+        "start": 41.1,
+        "end": 42.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "lords’ desire for spectacle against them.",
+        "start": 42.82,
+        "end": 45.476,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "When the lords expected to be restored",
+        "start": 46.56,
+        "end": 48.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "after imitating the trick,",
+        "start": 48.66,
+        "end": 50.26,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "the brothers refused.",
+        "start": 50.84,
+        "end": 52.0,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "Xibalba’s authority was broken.",
+        "start": 52.82,
+        "end": 54.871,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "In the Popol Vuh,",
+        "start": 55.971,
+        "end": 57.5,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "the victory helps reorder the cosmos and",
+        "start": 57.88,
+        "end": 61.0,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "honors family memory.",
+        "start": 61.0,
+        "end": 62.5,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "The strongest weapon is knowing a trickster",
+        "start": 63.18,
+        "end": 65.8,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "better than he knows himself.",
+        "start": 65.8,
+        "end": 67.42,
+        "word_count": 5
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.26,
+      "end": 12.789,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.789
+      },
+      "measured_pause_after": 0.529
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.789,
+      "speech_end": 23.42,
+      "end": 24.164,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.789,
+        "end": 24.164
+      },
+      "measured_pause_after": 0.744
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 24.164,
+      "speech_end": 34.274,
+      "end": 35.074,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 24.164,
+        "end": 35.074
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 35.074,
+      "speech_end": 45.476,
+      "end": 46.276,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 35.074,
+        "end": 46.276
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 46.276,
+      "speech_end": 54.871,
+      "end": 55.971,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 46.276,
+        "end": 55.971
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 55.971,
+      "speech_end": 67.42,
+      "end": 68.966,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 55.971,
+        "end": 68.966
+      },
+      "measured_pause_after": 1.546
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.789
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.789,
+      "end": 24.164
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 24.164,
+      "end": 35.074
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 35.074,
+      "end": 46.276
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 46.276,
+      "end": 55.971
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 55.971,
+      "end": 68.966
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.789
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.789,
+      "end": 24.164
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 24.164,
+      "end": 35.074
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 35.074,
+      "end": 46.276
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 46.276,
+      "end": 55.971
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 55.971,
+      "end": 68.966
+    }
+  ]
+}

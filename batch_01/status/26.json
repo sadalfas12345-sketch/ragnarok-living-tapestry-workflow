@@ -1,0 +1,18 @@
+{
+  "episode": 26,
+  "source_file": "26_hero_twins.json",
+  "source_sha256": "426006eb42e9c95899c49bd0d4520e78bdcb7dff435099970301e5a499892d3d",
+  "updated_at": "2026-11-14T03:29:23.473474+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
