@@ -1,0 +1,46 @@
+{
+  "episode": 30,
+  "title": "Roanoke: The Colony That Disappeared",
+  "timeline_runtime_seconds": 79.902,
+  "narration_runtime_seconds": 79.902,
+  "video_runtime_seconds": 79.902,
+  "caption_count": 28,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [
+    {
+      "from": "S01",
+      "to": "S02",
+      "seconds": 0.612,
+      "intended_seconds": 0.45
+    },
+    {
+      "from": "S02",
+      "to": "S03",
+      "seconds": 0.65,
+      "intended_seconds": 0.65
+    },
+    {
+      "from": "S03",
+      "to": "S04",
+      "seconds": 0.827,
+      "intended_seconds": 0.8
+    },
+    {
+      "from": "S04",
+      "to": "S05",
+      "seconds": 0.872,
+      "intended_seconds": 0.8
+    },
+    {
+      "from": "S05",
+      "to": "S06",
+      "seconds": 1.1,
+      "intended_seconds": 1.1
+    }
+  ],
+  "source_integrity_classification": "historical_reconstruction_with_disputed_details",
+  "research_status": "editorial_outline_needs_source_review_before_publication",
+  "auditory_playback": "not available to the agent; waveform, loudness, rendered-frame, and synchronization checks completed",
+  "errors": [],
+  "status": "PASS"
+}

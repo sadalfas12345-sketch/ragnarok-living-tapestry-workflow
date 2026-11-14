@@ -1,0 +1,20 @@
+{
+  "episode": 30,
+  "title": "Roanoke: The Colony That Disappeared",
+  "runtime_seconds": 79.902,
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "caption_count": 28,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.612, 0.65, 0.827, 0.872, 1.1],
+  "loudness": {
+    "input_integrated_lufs": -14.3,
+    "input_true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.0,
+    "output_integrated_lufs": -14.0,
+    "output_true_peak_dbtp": -1.0,
+    "output_lra_lu": 2.5
+  },
+  "status": "PASS",
+  "auditory_playback": "unavailable; automated waveform, loudness, frame, caption, and synchronization checks completed"
+}
