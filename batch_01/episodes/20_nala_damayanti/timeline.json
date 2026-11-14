@@ -1,0 +1,509 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 69.709,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Damayanti chose King Nala despite the gods appearing among her suitors.",
+        "start": 0.46,
+        "end": 5.24
+      },
+      {
+        "scene": "S01",
+        "text": "Their union began with devotion, but happiness would not protect them from disaster.",
+        "start": 5.78,
+        "end": 11.08
+      },
+      {
+        "scene": "S02",
+        "text": "Nala fell under a ruinous influence and lost his kingdom at dice to his brother Pushkara.",
+        "start": 12.18,
+        "end": 19.14
+      },
+      {
+        "scene": "S02",
+        "text": "With power gone, the couple entered the wilderness.",
+        "start": 19.14,
+        "end": 21.96
+      },
+      {
+        "scene": "S03",
+        "text": "Exhausted and ashamed, Nala abandoned Damayanti while she slept.",
+        "start": 23.28,
+        "end": 28.4
+      },
+      {
+        "scene": "S03",
+        "text": "She woke alone in a forest full of danger and set out to find him.",
+        "start": 28.4,
+        "end": 33.694
+      },
+      {
+        "scene": "S04",
+        "text": "Nala wandered in disguise, learned new skills, and struggled with regret.",
+        "start": 35.06,
+        "end": 40.18
+      },
+      {
+        "scene": "S04",
+        "text": "Damayanti refused to accept that their story was finished.",
+        "start": 41.02,
+        "end": 44.48
+      },
+      {
+        "scene": "S05",
+        "text": "Through ingenuity and careful tests, Damayanti discovered Nala’s whereabouts.",
+        "start": 45.66,
+        "end": 51.28
+      },
+      {
+        "scene": "S05",
+        "text": "The two could finally speak after years of fear and separation.",
+        "start": 52.06,
+        "end": 56.22
+      },
+      {
+        "scene": "S06",
+        "text": "Nala recovered his position, but the deeper victory was their reunion.",
+        "start": 57.502,
+        "end": 62.58
+      },
+      {
+        "scene": "S06",
+        "text": "The tale understands that pride can destroy what misfortune alone could not.",
+        "start": 63.38,
+        "end": 68.209
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Damayanti chose King Nala despite the gods",
+        "start": 0.46,
+        "end": 3.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "appearing among her suitors.",
+        "start": 3.4,
+        "end": 5.24,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "Their union began with devotion,",
+        "start": 5.78,
+        "end": 7.58,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "but happiness would not protect them from",
+        "start": 8.0,
+        "end": 10.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "disaster.",
+        "start": 10.52,
+        "end": 11.08,
+        "word_count": 1
+      },
+      {
+        "scene": "S02",
+        "text": "Nala fell under a ruinous influence and",
+        "start": 12.18,
+        "end": 14.9,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "lost his kingdom at dice to his",
+        "start": 14.9,
+        "end": 17.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "brother Pushkara. With power gone,",
+        "start": 18.36,
+        "end": 20.66,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "the couple entered the wilderness.",
+        "start": 21.1,
+        "end": 21.96,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Exhausted and ashamed,",
+        "start": 23.28,
+        "end": 24.78,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "Nala abandoned Damayanti while she slept.",
+        "start": 25.6,
+        "end": 28.4,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "She woke alone in a forest full",
+        "start": 28.4,
+        "end": 31.18,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "of danger and set out to find",
+        "start": 31.18,
+        "end": 33.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "him.",
+        "start": 33.3,
+        "end": 33.694,
+        "word_count": 1
+      },
+      {
+        "scene": "S04",
+        "text": "Nala wandered in disguise,",
+        "start": 35.06,
+        "end": 36.54,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "learned new skills,",
+        "start": 37.3,
+        "end": 38.34,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "and struggled with regret.",
+        "start": 38.76,
+        "end": 40.18,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "Damayanti refused to accept that their story",
+        "start": 41.02,
+        "end": 43.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "was finished.",
+        "start": 43.66,
+        "end": 44.48,
+        "word_count": 2
+      },
+      {
+        "scene": "S05",
+        "text": "Through ingenuity and careful tests,",
+        "start": 45.66,
+        "end": 48.08,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "Damayanti discovered Nala’s whereabouts.",
+        "start": 48.82,
+        "end": 51.28,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "The two could finally speak after years",
+        "start": 52.06,
+        "end": 54.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "of fear and separation.",
+        "start": 54.52,
+        "end": 56.22,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "Nala recovered his position,",
+        "start": 57.502,
+        "end": 59.72,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "but the deeper victory was their reunion.",
+        "start": 60.16,
+        "end": 62.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "The tale understands that pride can destroy",
+        "start": 63.38,
+        "end": 66.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "what misfortune alone could not.",
+        "start": 66.04,
+        "end": 68.209,
+        "word_count": 5
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 11.08,
+      "end": 11.674,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 11.674
+      },
+      "measured_pause_after": 0.594
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 11.674,
+      "speech_end": 21.96,
+      "end": 22.82,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 11.674,
+        "end": 22.82
+      },
+      "measured_pause_after": 0.86
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.82,
+      "speech_end": 33.694,
+      "end": 34.494,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.82,
+        "end": 34.494
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 34.494,
+      "speech_end": 44.48,
+      "end": 45.36,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 34.494,
+        "end": 45.36
+      },
+      "measured_pause_after": 0.88
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 45.36,
+      "speech_end": 56.22,
+      "end": 57.502,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 45.36,
+        "end": 57.502
+      },
+      "measured_pause_after": 1.282
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 57.502,
+      "speech_end": 68.209,
+      "end": 69.709,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 57.502,
+        "end": 69.709
+      },
+      "measured_pause_after": 1.5
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 11.674
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 11.674,
+      "end": 22.82
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.82,
+      "end": 34.494
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 34.494,
+      "end": 45.36
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 45.36,
+      "end": 57.502
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "sarangi, veena, gentle tabla, sorrowful flute",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 57.502,
+      "end": 69.709
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 11.674
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 11.674,
+      "end": 22.82
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.82,
+      "end": 34.494
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 34.494,
+      "end": 45.36
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 45.36,
+      "end": 57.502
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 57.502,
+      "end": 69.709
+    }
+  ]
+}

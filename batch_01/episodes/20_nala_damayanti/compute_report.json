@@ -1,0 +1,24 @@
+{
+  "episode": 20,
+  "title": "Nala and Damayanti: The King Who Lost Everything",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation",
+  "timeline_runtime_seconds": 69.709,
+  "narration_runtime_seconds": 69.709,
+  "video_runtime_seconds": 69.667,
+  "caption_count": 27,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.594, 0.86, 0.8, 0.88, 1.282],
+  "loudness": {
+    "integrated_lufs": -14.1,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 3.3,
+    "output_integrated_lufs": -14.0,
+    "output_lra_lu": 2.7
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}

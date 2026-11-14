@@ -1,0 +1,18 @@
+{
+  "episode": 20,
+  "source_file": "20_nala_damayanti.json",
+  "source_sha256": "0a2fadd8e1c3995656f8c6b4f760f6017b0bedfb95d552ea596fc900d7fc5ec8",
+  "updated_at": "2026-11-14T02:36:54.147970+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
