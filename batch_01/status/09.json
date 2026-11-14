@@ -1,0 +1,18 @@
+{
+  "episode": 9,
+  "source_file": "09_honnoji.json",
+  "source_sha256": "188ca8f9c0008e178a9736f87c9deec7a6ef3a175d1d6ee564fed7a6b6edae2d",
+  "updated_at": "2026-11-14T01:09:13.036748+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

@@ -1,0 +1,508 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 78.368,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "In 1582, Oda Nobunaga was close to dominating Japan.",
+        "start": 0.0,
+        "end": 5.64
+      },
+      {
+        "scene": "S01",
+        "text": "He stayed at Kyoto’s Honnō-ji temple with a small escort, trusting that his own commanders held the roads.",
+        "start": 6.28,
+        "end": 13.36
+      },
+      {
+        "scene": "S02",
+        "text": "Akechi Mitsuhide, one of Nobunaga’s generals, marched his army toward Kyoto.",
+        "start": 14.32,
+        "end": 20.38
+      },
+      {
+        "scene": "S02",
+        "text": "Instead of attacking an outside enemy, his soldiers surrounded their own lord.",
+        "start": 21.1,
+        "end": 26.46
+      },
+      {
+        "scene": "S03",
+        "text": "The temple became a battlefield.",
+        "start": 27.11,
+        "end": 29.36
+      },
+      {
+        "scene": "S03",
+        "text": "Outnumbered, Nobunaga died as fire consumed the buildings; the precise circumstances of his final moments remain uncertain.",
+        "start": 30.08,
+        "end": 39.98
+      },
+      {
+        "scene": "S04",
+        "text": "Why did Mitsuhide turn?",
+        "start": 41.22,
+        "end": 42.5
+      },
+      {
+        "scene": "S04",
+        "text": "Grievance, ambition, fear and political calculation have all been proposed.",
+        "start": 43.1,
+        "end": 48.44
+      },
+      {
+        "scene": "S04",
+        "text": "No single motive has been established beyond serious dispute.",
+        "start": 49.16,
+        "end": 53.56
+      },
+      {
+        "scene": "S05",
+        "text": "Mitsuhide’s triumph did not last.",
+        "start": 54.68,
+        "end": 57.12
+      },
+      {
+        "scene": "S05",
+        "text": "Toyotomi Hideyoshi hurried back, defeated him at Yamazaki, and the rebellion collapsed within days.",
+        "start": 57.78,
+        "end": 65.4
+      },
+      {
+        "scene": "S06",
+        "text": "The betrayal killed Nobunaga—but cleared the way for another unifier.",
+        "start": 66.82,
+        "end": 71.12
+      },
+      {
+        "scene": "S06",
+        "text": "A decision intended to seize power can end by handing it to someone else.",
+        "start": 71.12,
+        "end": 76.84
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "In 1582, Oda Nobunaga was close to",
+        "start": 0.0,
+        "end": 4.64,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "dominating Japan. He stayed at Kyoto’s Honnō-ji",
+        "start": 4.64,
+        "end": 8.16,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "temple with a small escort,",
+        "start": 8.16,
+        "end": 10.02,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "trusting that his own commanders held the",
+        "start": 10.78,
+        "end": 12.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "roads.",
+        "start": 12.96,
+        "end": 13.36,
+        "word_count": 1
+      },
+      {
+        "scene": "S02",
+        "text": "Akechi Mitsuhide, one of Nobunaga’s generals,",
+        "start": 14.32,
+        "end": 17.96,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "marched his army toward Kyoto.",
+        "start": 18.44,
+        "end": 20.38,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "Instead of attacking an outside enemy,",
+        "start": 21.1,
+        "end": 23.2,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "his soldiers surrounded their own lord.",
+        "start": 23.78,
+        "end": 26.46,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "The temple became a battlefield.",
+        "start": 27.11,
+        "end": 29.36,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Outnumbered, Nobunaga died as fire consumed the",
+        "start": 30.08,
+        "end": 34.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "buildings; the precise circumstances of his final",
+        "start": 34.2,
+        "end": 38.0,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "moments remain uncertain.",
+        "start": 38.0,
+        "end": 39.98,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "Why did Mitsuhide turn?",
+        "start": 41.22,
+        "end": 42.5,
+        "word_count": 4
+      },
+      {
+        "scene": "S04",
+        "text": "Grievance, ambition, fear and political calculation have",
+        "start": 43.1,
+        "end": 47.28,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "all been proposed.",
+        "start": 47.28,
+        "end": 48.44,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "No single motive has been established beyond",
+        "start": 49.16,
+        "end": 52.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "serious dispute.",
+        "start": 52.3,
+        "end": 53.56,
+        "word_count": 2
+      },
+      {
+        "scene": "S05",
+        "text": "Mitsuhide’s triumph did not last.",
+        "start": 54.68,
+        "end": 57.12,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "Toyotomi Hideyoshi hurried back,",
+        "start": 57.78,
+        "end": 60.22,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "defeated him at Yamazaki,",
+        "start": 60.82,
+        "end": 62.14,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "and the rebellion collapsed within days.",
+        "start": 62.68,
+        "end": 65.4,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "The betrayal killed Nobunaga but cleared the",
+        "start": 66.82,
+        "end": 69.72,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "way for another unifier.",
+        "start": 69.72,
+        "end": 71.12,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "A decision intended to seize power can",
+        "start": 71.12,
+        "end": 74.5,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "end by handing it to someone else.",
+        "start": 74.5,
+        "end": 76.84,
+        "word_count": 7
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 13.36,
+      "end": 13.882,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 13.882
+      },
+      "measured_pause_after": 0.522
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 13.882,
+      "speech_end": 26.46,
+      "end": 27.11,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 13.882,
+        "end": 27.11
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 27.11,
+      "speech_end": 39.98,
+      "end": 40.823,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 27.11,
+        "end": 40.823
+      },
+      "measured_pause_after": 0.843
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 40.823,
+      "speech_end": 53.56,
+      "end": 54.385,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 40.823,
+        "end": 54.385
+      },
+      "measured_pause_after": 0.825
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 54.385,
+      "speech_end": 65.4,
+      "end": 66.506,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 54.385,
+        "end": 66.506
+      },
+      "measured_pause_after": 1.106
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 66.506,
+      "speech_end": 76.84,
+      "end": 78.368,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 66.506,
+        "end": 78.368
+      },
+      "measured_pause_after": 1.528
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "taiko pulse, biwa, high strings, burning wood",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 13.882
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "taiko pulse, biwa, high strings, burning wood",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 13.882,
+      "end": 27.11
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "taiko pulse, biwa, high strings, burning wood",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 27.11,
+      "end": 40.823
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "taiko pulse, biwa, high strings, burning wood",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 40.823,
+      "end": 54.385
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "taiko pulse, biwa, high strings, burning wood",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 54.385,
+      "end": 66.506
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "taiko pulse, biwa, high strings, burning wood",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 66.506,
+      "end": 78.368
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 13.882
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 13.882,
+      "end": 27.11
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 27.11,
+      "end": 40.823
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 40.823,
+      "end": 54.385
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 54.385,
+      "end": 66.506
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 66.506,
+      "end": 78.368
+    }
+  ]
+}

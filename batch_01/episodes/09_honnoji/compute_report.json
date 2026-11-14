@@ -1,0 +1,14 @@
+{
+  "episode": 9,
+  "workflow": "living-tapestries-ragnarok/batch_01",
+  "voice": "en-US-AvaNeural",
+  "voice_rate": "-15%",
+  "ffmpeg": "C:\\Users\\USER\\Wan2GP\\ffmpeg_bins\\ffmpeg.exe",
+  "ffprobe": "C:\\Users\\USER\\Wan2GP\\ffmpeg_bins\\ffprobe.exe",
+  "alignment": "Whisper word alignment after WAV resampling to 16 kHz",
+  "timeline_runtime_seconds": 78.368,
+  "video_runtime_seconds": 78.366,
+  "caption_count": 26,
+  "caption_overlap_count": 0,
+  "measurement_note": "Process-level sampling was not captured; final artifact QA is reported from the completed render and generated audit artifacts."
+}

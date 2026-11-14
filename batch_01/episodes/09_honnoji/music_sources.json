@@ -1,0 +1,31 @@
+{
+  "profile": "honnoji_fire_and_ash",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Epical Drums 01",
+      "artist": "Grigoriy Nuzhny",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_epical_drums_01_grigoriy_nuzhny.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_epical_drums_01_grigoriy_nuzhny.mp3"
+    },
+    {
+      "title": "Sports Highlights",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_sports_highlights_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_sports_highlights_ahjay_stelino.mp3"
+    },
+    {
+      "title": "Complicated",
+      "artist": "Arulo",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_complicated_arulo.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_complicated_arulo.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}
