@@ -87,13 +87,14 @@
       "music_sources.json",
       "QC_report.md",
       "references/style_board.png"
-    ]
+    ],
+    "narration_source": "scenes[].caption (opening_hook is metadata, do not narrate twice)"
   },
   "scenes": [
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "In an Egyptian myth, humanity plotted against the aging sun god Ra. He sent his fierce eye, Sekhmet, to punish those who defied him.",
+      "caption": "What if the gods unleashed a destroyer upon humanity? In an Egyptian myth, humanity plotted against the aging sun god Ra. He sent his fierce eye, Sekhmet, to punish those who defied him.",
       "beat_title": "Divine anger",
       "required_visuals": [
         "Ra solar disk enthroned",
@@ -272,5 +273,6 @@
       },
       "pause_after_seconds_hint": 1.5
     }
-  ]
+  ],
+  "opening_hook": "What if the gods unleashed a destroyer upon humanity?"
 }

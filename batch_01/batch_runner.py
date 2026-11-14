@@ -443,13 +443,13 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         for group in groups:
             captions.append({"scene": scene["id"], "text": " ".join(x["text"] for x in group), "start": round(group[0]["start"], 3), "end": round(group[-1]["end"], 3), "word_count": len(group)})
     # Word alignment can place a short trailing phrase inside the previous
-    # phrase's final word. Keep the measured start of the later caption, but
-    # trim the earlier display interval so captions never overlap.
+    # phrase's final word. Keep the measured order, but enforce a visible
+    # separation after rounding so the burned SRT can never overlap.
     for i in range(1, len(captions)):
         previous = captions[i - 1]
         current = captions[i]
-        if current["start"] < previous["end"]:
-            previous["end"] = round(max(previous["start"] + 0.01, current["start"]), 3)
+        if current["start"] <= previous["end"] + 0.01:
+            current["start"] = round(previous["end"] + 0.01, 3)
             if current["end"] <= current["start"]:
                 current["end"] = round(current["start"] + 0.01, 3)
     for i in range(len(scenes) - 1):
@@ -566,7 +566,7 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     caps = tl["narration"]["captions"]
     for i, c in enumerate(caps):
         if c["end"] <= c["start"]: errors.append(f"caption {i+1} has non-positive duration")
-        if i and c["start"] < caps[i-1]["end"] - 0.01: errors.append(f"caption overlap {i} -> {i+1}")
+        if i and c["start"] <= caps[i-1]["end"] + 0.001: errors.append(f"caption overlap or touching interval {i} -> {i+1}")
         if c["start"] < 0 or c["end"] > tl["runtime_seconds"] + 0.01: errors.append(f"caption {i+1} outside runtime")
         scene = next((s for s in tl["scenes"] if s["id"] == c["scene"]), None)
         if scene and (c["start"] < scene["start"] - 0.08 or c["end"] > scene["speech_end"] + 0.08): errors.append(f"caption {i+1} crosses a scene speech boundary")
