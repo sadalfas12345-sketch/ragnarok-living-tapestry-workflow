@@ -1,0 +1,502 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 73.379,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "Sir Lancelot was among Arthur’s greatest knights, celebrated for courage and loyalty.",
+        "start": 0.0,
+        "end": 6.62
+      },
+      {
+        "scene": "S01",
+        "text": "Yet his devotion to Queen Guinevere grew into a love that threatened the court itself.",
+        "start": 7.32,
+        "end": 12.96
+      },
+      {
+        "scene": "S02",
+        "text": "Their relationship could not remain private forever.",
+        "start": 13.82,
+        "end": 16.74
+      },
+      {
+        "scene": "S02",
+        "text": "In many Arthurian tellings, the very bonds that made Camelot glorious became tangled in betrayal.",
+        "start": 17.5,
+        "end": 24.66
+      },
+      {
+        "scene": "S03",
+        "text": "When the affair was revealed, conflict erupted among people who had once fought shoulder to shoulder.",
+        "start": 25.467,
+        "end": 32.38
+      },
+      {
+        "scene": "S03",
+        "text": "Loyalty divided the Round Table.",
+        "start": 33.12,
+        "end": 35.077
+      },
+      {
+        "scene": "S04",
+        "text": "Lancelot acted to save Guinevere, but the rescue intensified the war within Arthur’s kingdom.",
+        "start": 36.3,
+        "end": 43.32
+      },
+      {
+        "scene": "S04",
+        "text": "Each choice made the next disaster harder to prevent.",
+        "start": 43.96,
+        "end": 47.1
+      },
+      {
+        "scene": "S05",
+        "text": "While Arthur pursued the conflict, other enemies exploited the division.",
+        "start": 48.28,
+        "end": 53.22
+      },
+      {
+        "scene": "S05",
+        "text": "Camelot’s downfall arrived not through lack of strength, but through broken trust.",
+        "start": 54.08,
+        "end": 59.335
+      },
+      {
+        "scene": "S06",
+        "text": "Later retellings remember not one villain, but a tragic knot of love, honor, and duty.",
+        "start": 60.82,
+        "end": 67.16
+      },
+      {
+        "scene": "S06",
+        "text": "A perfect court could not contain imperfect human hearts.",
+        "start": 67.96,
+        "end": 71.8
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "Sir Lancelot was among Arthur’s greatest knights,",
+        "start": 0.0,
+        "end": 3.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "celebrated for courage and loyalty.",
+        "start": 4.32,
+        "end": 6.62,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "Yet his devotion to Queen Guinevere grew",
+        "start": 7.32,
+        "end": 10.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "into a love that threatened the court",
+        "start": 10.06,
+        "end": 12.28,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "itself.",
+        "start": 12.28,
+        "end": 12.96,
+        "word_count": 1
+      },
+      {
+        "scene": "S02",
+        "text": "Their relationship could not remain private forever.",
+        "start": 13.82,
+        "end": 16.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "In many Arthurian tellings,",
+        "start": 17.5,
+        "end": 19.2,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "the very bonds that made Camelot glorious",
+        "start": 19.8,
+        "end": 22.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "became tangled in betrayal.",
+        "start": 22.74,
+        "end": 24.66,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "When the affair was revealed,",
+        "start": 25.467,
+        "end": 27.44,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "conflict erupted among people who had once",
+        "start": 27.92,
+        "end": 30.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "fought shoulder to shoulder.",
+        "start": 30.7,
+        "end": 32.38,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "Loyalty divided the Round Table.",
+        "start": 33.12,
+        "end": 35.077,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Lancelot acted to save Guinevere,",
+        "start": 36.3,
+        "end": 38.84,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "but the rescue intensified the war within",
+        "start": 39.32,
+        "end": 42.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Arthur’s kingdom. Each choice made the next",
+        "start": 42.3,
+        "end": 45.46,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "disaster harder to prevent.",
+        "start": 45.46,
+        "end": 47.1,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "While Arthur pursued the conflict,",
+        "start": 48.28,
+        "end": 50.34,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "other enemies exploited the division.",
+        "start": 50.34,
+        "end": 53.22,
+        "word_count": 5
+      },
+      {
+        "scene": "S05",
+        "text": "Camelot’s downfall arrived not through lack of",
+        "start": 54.08,
+        "end": 56.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "strength, but through broken trust.",
+        "start": 56.88,
+        "end": 59.335,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "Later retellings remember not one villain,",
+        "start": 60.82,
+        "end": 63.36,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "but a tragic knot of love,",
+        "start": 63.78,
+        "end": 65.58,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "honor, and duty.",
+        "start": 66.14,
+        "end": 67.16,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "A perfect court could not contain imperfect",
+        "start": 67.96,
+        "end": 70.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "human hearts.",
+        "start": 70.82,
+        "end": 71.8,
+        "word_count": 2
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.96,
+      "end": 13.414,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 13.414
+      },
+      "measured_pause_after": 0.454
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 13.414,
+      "speech_end": 24.66,
+      "end": 25.467,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 13.414,
+        "end": 25.467
+      },
+      "measured_pause_after": 0.807
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 25.467,
+      "speech_end": 35.077,
+      "end": 35.877,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 25.467,
+        "end": 35.877
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 35.877,
+      "speech_end": 47.1,
+      "end": 47.952,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 35.877,
+        "end": 47.952
+      },
+      "measured_pause_after": 0.852
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 47.952,
+      "speech_end": 59.335,
+      "end": 60.435,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 47.952,
+        "end": 60.435
+      },
+      "measured_pause_after": 1.1
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 60.435,
+      "speech_end": 71.8,
+      "end": 73.378,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 60.435,
+        "end": 73.378
+      },
+      "measured_pause_after": 1.578
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "harp, viol, choir, distant castle bells",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 13.414
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "harp, viol, choir, distant castle bells",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 13.414,
+      "end": 25.467
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "harp, viol, choir, distant castle bells",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 25.467,
+      "end": 35.877
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "harp, viol, choir, distant castle bells",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 35.877,
+      "end": 47.952
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "harp, viol, choir, distant castle bells",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 47.952,
+      "end": 60.435
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "harp, viol, choir, distant castle bells",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 60.435,
+      "end": 73.378
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 13.414
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 13.414,
+      "end": 25.467
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 25.467,
+      "end": 35.877
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 35.877,
+      "end": 47.952
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 47.952,
+      "end": 60.435
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 60.435,
+      "end": 73.378
+    }
+  ]
+}

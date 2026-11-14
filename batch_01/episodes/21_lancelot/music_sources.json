@@ -1,0 +1,31 @@
+{
+  "profile": "lancelot_guinevere_forbidden_love",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Forever Love",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/film-score/",
+      "file": "mixkit_forever_love_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_forever_love_ahjay_stelino.mp3"
+    },
+    {
+      "title": "Wedding Harp",
+      "artist": "Francisco Alvear",
+      "url": "https://mixkit.co/free-stock-music/film-score/",
+      "file": "mixkit_wedding_harp_francisco_alvear.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_wedding_harp_francisco_alvear.mp3"
+    },
+    {
+      "title": "Classical vibes 2",
+      "artist": "Grigoriy Nuzhny",
+      "url": "https://mixkit.co/free-stock-music/film-score/",
+      "file": "mixkit_classical_vibes_2_grigoriy_nuzhny.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_classical_vibes_2_grigoriy_nuzhny.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

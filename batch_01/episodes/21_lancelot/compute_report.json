@@ -1,0 +1,24 @@
+{
+  "episode": 21,
+  "title": "Lancelot and Guinevere: Love Against a Kingdom",
+  "voice": "en-US-AvaNeural",
+  "rate": "-15%",
+  "ffmpeg": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffmpeg.exe",
+  "ffprobe": "C:/Users/USER/Wan2GP/ffmpeg_bins/ffprobe.exe",
+  "alignment": "measured narration waveform with word-timed caption generation",
+  "timeline_runtime_seconds": 73.379,
+  "narration_runtime_seconds": 73.379,
+  "video_runtime_seconds": 73.333,
+  "caption_count": 26,
+  "caption_overlap_count": 0,
+  "scene_pauses_seconds": [0.454, 0.807, 0.8, 0.852, 1.1],
+  "loudness": {
+    "integrated_lufs": -14.2,
+    "true_peak_dbtp": -1.0,
+    "input_lra_lu": 2.8,
+    "output_integrated_lufs": -14.1,
+    "output_lra_lu": 2.7
+  },
+  "auditory_playback": "not available to the agent",
+  "status": "PASS"
+}

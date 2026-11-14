@@ -1,0 +1,18 @@
+{
+  "episode": 21,
+  "source_file": "21_lancelot.json",
+  "source_sha256": "73edb6c5d6f1d412455a684b54fc8dd772a1632404640d9f244369e7e562acb9",
+  "updated_at": "2026-11-14T02:43:50.741410+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}
