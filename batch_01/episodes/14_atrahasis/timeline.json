@@ -1,0 +1,494 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 68.125,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "In the Atrahasis epic, humanity multiplied, and its noise disturbed the gods.",
+        "start": 0.0,
+        "end": 7.48
+      },
+      {
+        "scene": "S01",
+        "text": "Their response grew harsher as the human world refused to fall silent.",
+        "start": 7.48,
+        "end": 12.18
+      },
+      {
+        "scene": "S02",
+        "text": "Attempts to reduce the population through hardship did not end the dispute.",
+        "start": 13.12,
+        "end": 17.52
+      },
+      {
+        "scene": "S02",
+        "text": "Finally, the gods resolved upon a devastating flood.",
+        "start": 18.36,
+        "end": 21.773
+      },
+      {
+        "scene": "S03",
+        "text": "Enki, sympathetic to Atrahasis, conveyed a warning indirectly.",
+        "start": 22.74,
+        "end": 27.76
+      },
+      {
+        "scene": "S03",
+        "text": "The human hero was told to build a vessel before the waters rose.",
+        "start": 27.76,
+        "end": 32.933
+      },
+      {
+        "scene": "S04",
+        "text": "Atrahasis prepared the craft and sheltered life aboard.",
+        "start": 34.36,
+        "end": 38.08
+      },
+      {
+        "scene": "S04",
+        "text": "Then the storm broke.",
+        "start": 38.58,
+        "end": 39.82
+      },
+      {
+        "scene": "S04",
+        "text": "Human settlements vanished beneath the rising water.",
+        "start": 40.58,
+        "end": 43.96
+      },
+      {
+        "scene": "S05",
+        "text": "The gods themselves recoiled from the scale of destruction.",
+        "start": 45.08,
+        "end": 48.7
+      },
+      {
+        "scene": "S05",
+        "text": "The flood exposed how deeply divine power depended on the life it nearly erased.",
+        "start": 49.42,
+        "end": 54.76
+      },
+      {
+        "scene": "S06",
+        "text": "Human life returned, but under new conditions in the story.",
+        "start": 55.935,
+        "end": 60.2
+      },
+      {
+        "scene": "S06",
+        "text": "The epic asks whether the rulers of the world understood the cost of their own decisions.",
+        "start": 60.82,
+        "end": 66.42
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "In the Atrahasis epic,",
+        "start": 0.0,
+        "end": 2.9,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "humanity multiplied, and its noise disturbed the",
+        "start": 2.9,
+        "end": 6.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "gods. Their response grew harsher as the",
+        "start": 7.22,
+        "end": 10.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "human world refused to fall silent.",
+        "start": 10.04,
+        "end": 12.18,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "Attempts to reduce the population through hardship",
+        "start": 13.12,
+        "end": 15.86,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "did not end the dispute.",
+        "start": 15.86,
+        "end": 17.52,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "Finally, the gods resolved upon a devastating",
+        "start": 18.36,
+        "end": 21.12,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "flood.",
+        "start": 21.12,
+        "end": 21.773,
+        "word_count": 1
+      },
+      {
+        "scene": "S03",
+        "text": "Enki, sympathetic to Atrahasis,",
+        "start": 22.74,
+        "end": 25.24,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "conveyed a warning indirectly.",
+        "start": 25.9,
+        "end": 27.76,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "The human hero was told to build",
+        "start": 27.76,
+        "end": 30.74,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "a vessel before the waters rose.",
+        "start": 30.74,
+        "end": 32.933,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Atrahasis prepared the craft and sheltered life",
+        "start": 34.36,
+        "end": 37.62,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "aboard. Then the storm broke.",
+        "start": 37.62,
+        "end": 39.82,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Human settlements vanished beneath the rising water.",
+        "start": 40.58,
+        "end": 43.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "The gods themselves recoiled from the scale",
+        "start": 45.08,
+        "end": 47.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "of destruction. The flood exposed how deeply",
+        "start": 47.88,
+        "end": 51.46,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "divine power depended on the life it",
+        "start": 51.46,
+        "end": 53.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "nearly erased.",
+        "start": 53.78,
+        "end": 54.76,
+        "word_count": 2
+      },
+      {
+        "scene": "S06",
+        "text": "Human life returned,",
+        "start": 55.935,
+        "end": 57.44,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "but under new conditions in the story.",
+        "start": 57.9,
+        "end": 60.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "The epic asks whether the rulers of",
+        "start": 60.82,
+        "end": 63.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "the world understood the cost of their",
+        "start": 63.2,
+        "end": 65.7,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "own decisions.",
+        "start": 65.7,
+        "end": 66.42,
+        "word_count": 2
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "start": 0.0,
+      "speech_end": 12.18,
+      "end": 12.694,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 12.694
+      },
+      "measured_pause_after": 0.514
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "start": 12.694,
+      "speech_end": 21.773,
+      "end": 22.423,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 12.694,
+        "end": 22.423
+      },
+      "measured_pause_after": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "start": 22.423,
+      "speech_end": 32.933,
+      "end": 33.733,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "push gently into the key object or decision; hold for the last important word",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 22.423,
+        "end": 33.733
+      },
+      "measured_pause_after": 0.8
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "start": 33.733,
+      "speech_end": 43.96,
+      "end": 44.82,
+      "pause_after": 0.8,
+      "camera": {
+        "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 33.733,
+        "end": 44.82
+      },
+      "measured_pause_after": 0.86
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "start": 44.82,
+      "speech_end": 54.76,
+      "end": 55.935,
+      "pause_after": 1.1,
+      "camera": {
+        "description": "controlled zoom into the turning point, then stillness during the reveal",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 44.82,
+        "end": 55.935
+      },
+      "measured_pause_after": 1.175
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "start": 55.935,
+      "speech_end": 66.42,
+      "end": 68.125,
+      "pause_after": 1.5,
+      "camera": {
+        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "image_interval": {
+        "start": 55.935,
+        "end": 68.125
+      },
+      "measured_pause_after": 1.705
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "low lyre, thunder sheet, ocean drum, bowed bass",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 12.694
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "low lyre, thunder sheet, ocean drum, bowed bass",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 12.694,
+      "end": 22.423
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "low lyre, thunder sheet, ocean drum, bowed bass",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 22.423,
+      "end": 33.733
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "low lyre, thunder sheet, ocean drum, bowed bass",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 33.733,
+      "end": 44.82
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "low lyre, thunder sheet, ocean drum, bowed bass",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 44.82,
+      "end": 55.935
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "low lyre, thunder sheet, ocean drum, bowed bass",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 55.935,
+      "end": 68.125
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 12.694
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 12.694,
+      "end": 22.423
+    },
+    {
+      "scene": "S03",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 22.423,
+      "end": 33.733
+    },
+    {
+      "scene": "S04",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 33.733,
+      "end": 44.82
+    },
+    {
+      "scene": "S05",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 44.82,
+      "end": 55.935
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 55.935,
+      "end": 68.125
+    }
+  ]
+}

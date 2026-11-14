@@ -94,6 +94,11 @@ MUSIC_PROFILES = {
         {"title": "Pop 05", "artist": "Grigoriy Nuzhny", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_pop_05_grigoriy_nuzhny.mp3"},
         {"title": "Villa Penthouse", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_villa_penthouse_arulo.mp3"},
     ],
+    14: [
+        {"title": "Wedding 01", "artist": "Francisco Alvear", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_wedding_01_francisco_alvear.mp3"},
+        {"title": "Dirty Thinkin'", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_dirty_thinkin_michael_ramir_c.mp3"},
+        {"title": "Island Beat", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_island_beat_arulo.mp3"},
+    ],
 }
 
 
@@ -392,7 +397,7 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     final = adir / "final_mixed_audio.wav"
     mix = f"[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[narr][key];[1:a]aresample=48000,pan=stereo|c0=c0|c1=c1[music];[music][key]sidechaincompress=threshold=0.015:ratio=5:attack=60:release=700:makeup=1[duck];[2:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume=0.45[s];[narr][duck][s]amix=inputs=3:duration=longest:dropout_transition=0,atrim=0:{runtime:.3f},loudnorm=I=-14:TP=-1:LRA=11:print_format=summary[out]"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "warning", "-i", str(narration), "-i", str(music), "-i", str(sfx), "-filter_complex", mix, "-map", "[out]", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(final)])
-    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood"}.get(spec["episode_number"], "default_ragnarok_palette")
+    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood"}.get(spec["episode_number"], "default_ragnarok_palette")
     (epdir / "music_sources.json").write_text(json.dumps({"profile": profile_name, "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     out = epdir / "final_vertical_1080x1920.mp4"
     video = epdir / "video_captioned.mp4"
@@ -408,10 +413,10 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     sources_path = epdir / "music_sources.json"
     if sources_path.exists():
         sources = json.loads(sources_path.read_text(encoding="utf-8"))
-        if spec["episode_number"] in (3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13):
-            reused = {"Epical Drums 05", "Epic Games", "A New Life", "Fright Night", "Valley Sunset", "Silent Descent", "Sun and His Daughter", "Discover", "Spirit in the Woods", "Fallen (Asper)", "Tapis", "Echoes", "Games Worldbeat", "Serene View", "Forest Treasure", "Hip Hop 02", "Hazy After Hours", "Tech House vibes", "Deep Urban", "Secret Garden", "Piano Horror", "Epical Drums 01", "Sports Highlights", "Complicated", "Can't Get You Off My Mind", "Romantic", "Latin Lovers", "Gimme that Groove!", "Beautiful Dream", "Driving Ambition", "Cat Walk", "Night Sky Hip Hop", "Praise the Lord"}.intersection(item.get("title", "") for item in sources.get("sources", []))
+        if spec["episode_number"] in (3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14):
+            reused = {"Epical Drums 05", "Epic Games", "A New Life", "Fright Night", "Valley Sunset", "Silent Descent", "Sun and His Daughter", "Discover", "Spirit in the Woods", "Fallen (Asper)", "Tapis", "Echoes", "Games Worldbeat", "Serene View", "Forest Treasure", "Hip Hop 02", "Hazy After Hours", "Tech House vibes", "Deep Urban", "Secret Garden", "Piano Horror", "Epical Drums 01", "Sports Highlights", "Complicated", "Can't Get You Off My Mind", "Romantic", "Latin Lovers", "Gimme that Groove!", "Beautiful Dream", "Driving Ambition", "Cat Walk", "Night Sky Hip Hop", "Praise the Lord", "C.B.P.D", "Pop 05", "Villa Penthouse"}.intersection(item.get("title", "") for item in sources.get("sources", []))
             if reused: errors.append(f"episode {spec['episode_number']} reused an earlier soundtrack: " + ", ".join(sorted(reused)))
-            expected_profile = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood"}[spec["episode_number"]]
+            expected_profile = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood"}[spec["episode_number"]]
             if sources.get("profile") != expected_profile: errors.append(f"episode {spec['episode_number']} music profile is not {expected_profile}")
     narration_duration = duration(epdir / "audio" / "narration.wav")
     video_duration = duration(epdir / "final_vertical_1080x1920.mp4")

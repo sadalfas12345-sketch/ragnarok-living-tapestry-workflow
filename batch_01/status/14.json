@@ -1,0 +1,18 @@
+{
+  "episode": 14,
+  "source_file": "14_atrahasis.json",
+  "source_sha256": "5e474def25d8771c16410a153cebe3ecd0315ebd7ebb54a71f616604e22fd48b",
+  "updated_at": "2026-11-14T01:47:22.214335+00:00",
+  "stages": {
+    "source_validation": "PASS",
+    "style_board": "PASS",
+    "scene_assets": "PASS",
+    "narration": "PASS",
+    "timeline": "PASS",
+    "captions": "PASS",
+    "render": "PASS",
+    "audio": "PASS",
+    "qa": "PASS"
+  },
+  "errors": []
+}

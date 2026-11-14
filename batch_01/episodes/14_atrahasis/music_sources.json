@@ -1,0 +1,31 @@
+{
+  "profile": "atrahasis_blue_flood",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Wedding 01",
+      "artist": "Francisco Alvear",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_wedding_01_francisco_alvear.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_wedding_01_francisco_alvear.mp3"
+    },
+    {
+      "title": "Dirty Thinkin'",
+      "artist": "Michael Ramir C.",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_dirty_thinkin_michael_ramir_c.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_dirty_thinkin_michael_ramir_c.mp3"
+    },
+    {
+      "title": "Island Beat",
+      "artist": "Arulo",
+      "url": "https://mixkit.co/free-stock-music/",
+      "file": "mixkit_island_beat_arulo.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_island_beat_arulo.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}
