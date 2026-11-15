@@ -595,7 +595,9 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         else:
             vf = f"zoompan=z={zoom}:x={x}:y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p"
         out = segdir / f"S{i:02d}_B01.mp4"
-        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
+        # Keep intermediate scenes visually clean so the final caption pass
+        # does not amplify macroblocking in the fine tapestry texture.
+        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "3M", "-bufsize", "6M", str(out)])
         files.append(out)
         scene["visual_beats"] = beats
     (epdir / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -621,13 +623,13 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         offset += durations[idx]
     graph.append(f"{current}trim=duration={runtime:.3f},setpts=PTS-STARTPTS,format=yuv420p[outv]")
     raw = epdir / "video_only.mp4"
-    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", *inputs, "-filter_complex", ";".join(graph), "-map", "[outv]", "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "900k", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(raw)])
+    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", *inputs, "-filter_complex", ";".join(graph), "-map", "[outv]", "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "6M", "-bufsize", "12M", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(raw)])
     if SUBTITLE_MODE == "burned":
         srt = epdir / "Captions_final.srt"
         sub_path = str(srt.resolve()).replace("\\", "/").replace(":", "\\:")
         vf = f"subtitles=filename='{sub_path}':force_style='FontName=Georgia,FontSize=18,PrimaryColour=&H00F5F1E8,OutlineColour=&H80000000,BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginV=125'"
         captioned = epdir / "video_captioned.mp4"
-        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(raw), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "900k", "-pix_fmt", "yuv420p", str(captioned)])
+        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(raw), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "6M", "-bufsize", "12M", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(captioned)])
         return captioned
     return raw
 
