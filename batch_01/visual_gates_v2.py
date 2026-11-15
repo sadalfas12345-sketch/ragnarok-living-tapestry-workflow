@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "batch_01"
 FFMPEG = Path(shutil.which("ffmpeg") or (Path.home() / "Wan2GP" / "ffmpeg_bins" / "ffmpeg.exe"))
 FFPROBE = Path(shutil.which("ffprobe") or (Path.home() / "Wan2GP" / "ffmpeg_bins" / "ffprobe.exe"))
+POLICY = json.loads((ROOT / "production_feedback_gates.json").read_text(encoding="utf-8"))
 
 
 def run(cmd: list[str], *, capture: bool = True) -> str:
@@ -107,9 +108,18 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if end <= start: errors.append(f"scene {scene['id']} has non-positive duration")
         if speech_end > end + 0.02: errors.append(f"scene {scene['id']} speech ends after scene end")
         beats = scene.get("visual_beats", [])
-        if len(beats) != 3: errors.append(f"scene {scene['id']} does not expose exactly three visual beats")
-        if scene.get("travel_axis") == "horizontal" and scene.get("camera", {}).get("primary_direction") != "right":
+        if len(beats) != POLICY["scenes"]["required_visual_beats"]: errors.append(f"scene {scene['id']} does not expose exactly three visual beats")
+        if scene.get("travel_axis") == "horizontal" and scene.get("camera", {}).get("primary_direction") != POLICY["camera"]["default_direction"]:
             errors.append(f"scene {scene['id']} horizontal travel is not rightward")
+        if scene.get("travel_axis") == "horizontal" and beats:
+            travel_rate = abs(float(beats[-1].get("x_focus", 0)) - float(beats[0].get("x_focus", 0))) / max(0.001, end - start)
+            if travel_rate > POLICY["camera"]["max_normalized_travel_per_second"]:
+                errors.append(f"scene {scene['id']} camera travel is too fast: {travel_rate:.3f} normalized units/sec")
+        camera = scene.get("camera", {})
+        if POLICY["camera"]["forbid_shake"] and camera.get("no_shake") is not True:
+            errors.append(f"scene {scene['id']} does not explicitly forbid camera shake")
+        if POLICY["camera"]["forbid_hard_crop_changes"] and camera.get("no_hard_crop_changes") is not True:
+            errors.append(f"scene {scene['id']} does not explicitly forbid hard crop changes")
         previous_end = end
     if scenes and abs(previous_end - runtime) > 0.12: errors.append("last scene end disagrees with timeline runtime")
 
@@ -139,8 +149,8 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         frames = [frame_bytes(video, boundary + off) for off in offsets]
         diffs = [round(mean_abs_diff(frames[i], frames[i + 1]), 3) for i in range(len(frames) - 1)]
         means = [round(sum(frame) / len(frame), 2) if frame else 0.0 for frame in frames]
-        if any(value < 2.0 for value in means): errors.append(f"black/near-black transition frame at {right['id']} boundary")
-        if diffs[1] < 0.05 and diffs[2] < 0.05: errors.append(f"transition into {right['id']} appears frozen")
+        if any(value < POLICY["scenes"]["transition_max_black_luma"] for value in means): errors.append(f"black/near-black transition frame at {right['id']} boundary")
+        if diffs[1] < POLICY["scenes"]["transition_min_progression_diff"] and diffs[2] < POLICY["scenes"]["transition_min_progression_diff"]: errors.append(f"transition into {right['id']} appears frozen")
         transition_audit.append({"from": left["id"], "to": right["id"], "boundary": boundary,
                                  "offsets": offsets, "mean_abs_diffs": diffs, "mean_luma": means})
 

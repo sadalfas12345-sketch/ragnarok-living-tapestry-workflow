@@ -1,0 +1,27 @@
+{
+  "policy": "living_tapestries_v2_feedback",
+  "source_of_truth": "narration_waveform_and_authoritative_episode_json",
+  "camera": {
+    "default_direction": "right",
+    "max_normalized_travel_per_second": 0.12,
+    "require_smooth_continuous_path": true,
+    "forbid_shake": true,
+    "forbid_hard_crop_changes": true,
+    "forbid_arbitrary_hold_timers": true
+  },
+  "scenes": {
+    "required_visual_beats": 3,
+    "transition_max_black_luma": 2.0,
+    "transition_min_progression_diff": 0.05
+  },
+  "captions": {
+    "allow_overlap_seconds": 0.0,
+    "speech_boundary_tolerance_seconds": 0.08,
+    "must_follow_narration": true,
+    "must_not_linger_in_authored_silence": true
+  },
+  "audio": {
+    "narration_is_master_clock": true,
+    "audition_required_when_available": true
+  }
+}

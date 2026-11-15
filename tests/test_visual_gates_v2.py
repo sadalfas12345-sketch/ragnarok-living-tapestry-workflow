@@ -26,6 +26,11 @@ class VisualGateUnitTests(unittest.TestCase):
         self.assertAlmostEqual(captions[0]["end"], 2.25)
         self.assertIn("What if ten suns", captions[0]["text"])
 
+    def test_feedback_policy_is_episode_agnostic(self):
+        self.assertEqual(gates.POLICY["scenes"]["required_visual_beats"], 3)
+        self.assertEqual(gates.POLICY["camera"]["default_direction"], "right")
+        self.assertTrue(gates.POLICY["audio"]["narration_is_master_clock"])
+
 
 if __name__ == "__main__":
     unittest.main()

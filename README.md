@@ -17,6 +17,8 @@ Reusable pipeline for vertical illustrated stories with narration, licensed musi
 
 `timeline.json` is the only timing authority. It owns narration phrase boundaries, scene boundaries, authored pauses, captions, camera intervals, music cues, SFX cues, and runtime.
 
+`production_feedback_gates.json` is the reusable production policy derived from review feedback. It requires narration-led timing, smooth rightward story travel, three distinct visual beats, no shake or hard crop resets, natural transitions, caption discipline, and rendered-output verification. Episode-specific code must not override these gates.
+
 For a temporary review export:
 
 ```powershell
