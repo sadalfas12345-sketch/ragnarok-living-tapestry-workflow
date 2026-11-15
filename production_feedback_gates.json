@@ -23,5 +23,12 @@
   "audio": {
     "narration_is_master_clock": true,
     "audition_required_when_available": true
+  },
+  "pronunciation": {
+    "fallback": "english_source_spelling",
+    "preserve_caption_spelling": true,
+    "reject_empty_overrides": true,
+    "reject_letter_by_letter_overrides": true,
+    "audit_proper_names": true
   }
 }

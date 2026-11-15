@@ -243,6 +243,15 @@ def source_files() -> list[Path]:
 
 def validate_spec(spec: dict[str, Any]) -> list[str]:
     errors: list[str] = []
+    pronunciation_policy = FEEDBACK_POLICY.get("pronunciation", {})
+    if pronunciation_policy.get("reject_empty_overrides"):
+        for written, phonetic in PRONUNCIATION_LEXICON.items():
+            if not str(written).strip() or not str(phonetic).strip():
+                errors.append(f"empty pronunciation override for {written!r}")
+    if pronunciation_policy.get("reject_letter_by_letter_overrides"):
+        for written, phonetic in PRONUNCIATION_LEXICON.items():
+            if re.fullmatch(r"(?:[A-Za-z]\s+){1,}[A-Za-z]", str(phonetic).strip()):
+                errors.append(f"letter-by-letter pronunciation override for {written!r}")
     required = ["schema_version", "episode_number", "title", "civilization", "source_integrity", "format", "runtime", "image_reference", "audio", "scenes"]
     errors.extend(f"missing top-level field: {k}" for k in required if k not in spec)
     if spec.get("schema_version") != "living_tapestry_story_v1":
