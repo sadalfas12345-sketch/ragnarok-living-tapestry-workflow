@@ -3,7 +3,7 @@
   "source_of_truth": "narration_waveform_and_authoritative_episode_json",
   "camera": {
     "default_direction": "right",
-    "max_normalized_travel_per_second": 0.09,
+    "max_normalized_travel_per_second": 0.078,
     "require_smooth_continuous_path": true,
     "forbid_shake": true,
     "forbid_hard_crop_changes": true,

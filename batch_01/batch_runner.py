@@ -30,6 +30,7 @@ SOURCE = ROOT / "source"
 WORK = ROOT / "episodes"
 FEEDBACK_POLICY = json.loads((ROOT.parent / "production_feedback_gates.json").read_text(encoding="utf-8"))
 MAX_HORIZONTAL_TRAVEL_RATE = float(FEEDBACK_POLICY["camera"]["max_normalized_travel_per_second"])
+PRONUNCIATION_LEXICON = json.loads((ROOT / "pronunciation_lexicon.json").read_text(encoding="utf-8"))
 FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
@@ -312,6 +313,14 @@ def script_tokens(text: str) -> list[str]:
     return re.findall(r"[\wÀ-ÖØ-öø-ÿ'’-]+[.!?,;:]*", text)
 
 
+def speech_text(text: str) -> str:
+    """Use native-friendly TTS phonetics while preserving caption spelling."""
+    spoken = text
+    for written, phonetic in sorted(PRONUNCIATION_LEXICON.items(), key=lambda item: len(item[0]), reverse=True):
+        spoken = re.sub(rf"(?<!\w){re.escape(written)}(?!\w)", phonetic, spoken)
+    return spoken
+
+
 async def edge_scene(text: str, out_mp3: Path, words_json: Path) -> None:
     import edge_tts
     communicate = edge_tts.Communicate(text, VOICE, rate=os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"), volume="+0%", pitch="+0Hz")
@@ -378,8 +387,10 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         words_file = audio_dir / f"scene_{idx:02d}_words.json"
         wav = audio_dir / f"scene_{idx:02d}.wav"
         cache_file = audio_dir / f"scene_{idx:02d}_cache.json"
+        spoken_caption = speech_text(scene["caption"])
         cache_key = {
             "text": scene["caption"],
+            "spoken_text": spoken_caption,
             "voice": VOICE,
             "rate": os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"),
         }
@@ -390,7 +401,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
             except Exception:
                 cache_matches = False
         if not mp3.exists() or not words_file.exists() or not cache_matches:
-            asyncio.run(edge_scene(scene["caption"], mp3, words_file))
+            asyncio.run(edge_scene(spoken_caption, mp3, words_file))
             cache_file.write_text(json.dumps(cache_key, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         if not wav.exists() or not cache_matches:
             run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(mp3), "-ar", str(RATE), "-ac", "1", str(wav)])
