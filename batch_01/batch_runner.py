@@ -28,6 +28,8 @@ if hasattr(sys.stdout, "reconfigure"):
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "source"
 WORK = ROOT / "episodes"
+FEEDBACK_POLICY = json.loads((ROOT.parent / "production_feedback_gates.json").read_text(encoding="utf-8"))
+MAX_HORIZONTAL_TRAVEL_RATE = float(FEEDBACK_POLICY["camera"]["max_normalized_travel_per_second"])
 FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
@@ -549,6 +551,20 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
                 ((0.48) - viewport / 2.0) / denom,
                 ((0.78) - viewport / 2.0) / denom,
             ]
+            # Keep the camera's perceptual travel rate within the reusable
+            # review benchmark. Short scenes must move more gently rather than
+            # racing across the full frieze. The authored scene duration and
+            # narration remain unchanged; only the three camera anchors are
+            # compressed proportionally, preserving chronological order.
+            raw_span = focus_points[-1] - focus_points[0]
+            allowed_span = MAX_HORIZONTAL_TRAVEL_RATE * (end - start)
+            if raw_span > allowed_span:
+                scale = allowed_span / raw_span
+                focus_points = [
+                    focus_points[0],
+                    focus_points[0] + (focus_points[1] - focus_points[0]) * scale,
+                    focus_points[0] + allowed_span,
+                ]
         else:
             focus_points = [0.0, 0.5, 1.0]
         y_points = anchor_manifest.get("scenes", {}).get(scene["id"], {}).get("y_focus", [0.5, 0.5, 0.5])

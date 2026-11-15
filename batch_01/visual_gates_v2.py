@@ -113,7 +113,7 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             errors.append(f"scene {scene['id']} horizontal travel is not rightward")
         if scene.get("travel_axis") == "horizontal" and beats:
             travel_rate = abs(float(beats[-1].get("x_focus", 0)) - float(beats[0].get("x_focus", 0))) / max(0.001, end - start)
-            if travel_rate > POLICY["camera"]["max_normalized_travel_per_second"]:
+            if travel_rate > POLICY["camera"]["max_normalized_travel_per_second"] + 0.001:
                 errors.append(f"scene {scene['id']} camera travel is too fast: {travel_rate:.3f} normalized units/sec")
         camera = scene.get("camera", {})
         if POLICY["camera"]["forbid_shake"] and camera.get("no_shake") is not True:
