@@ -496,7 +496,8 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     segdir = epdir / "segments"; segdir.mkdir(exist_ok=True)
     files = []
     for i, scene in enumerate(tl["scenes"], 1):
-        source_asset = epdir / "assets" / f"P{i:02d}.png"
+        horizontal_asset = epdir / "assets" / f"H{i:02d}.png"
+        source_asset = horizontal_asset if horizontal_asset.exists() else epdir / "assets" / f"P{i:02d}.png"
         if not source_asset.exists():
             raise FileNotFoundError(source_asset)
         source_scene = spec["scenes"][i - 1]
@@ -517,10 +518,11 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             anchor_times += [float(phrases[1]["start"]), float(scene["speech_end"])]
         anchor_times = [max(start, min(end, t)) for t in anchor_times]
         anchor_times = [anchor_times[0], max(anchor_times[0] + 0.01, anchor_times[1]), max(anchor_times[1] + 0.01, anchor_times[2])]
+        horizontal = source_asset == horizontal_asset
         anchors = [
-            {"anchor": "opening", "y_focus": 0.0, "spoken_anchor": phrases[0]["text"]},
-            {"anchor": "development", "y_focus": 0.5, "spoken_anchor": phrases[min(1, len(phrases)-1)]["text"]},
-            {"anchor": "reveal", "y_focus": 1.0, "spoken_anchor": phrases[min(2, len(phrases)-1)]["text"]},
+            {"anchor": "opening", "x_focus": 0.0, "y_focus": 0.5, "spoken_anchor": phrases[0]["text"]},
+            {"anchor": "development", "x_focus": 0.5, "y_focus": 0.5, "spoken_anchor": phrases[min(1, len(phrases)-1)]["text"]},
+            {"anchor": "reveal", "x_focus": 1.0, "y_focus": 0.5, "spoken_anchor": phrases[min(2, len(phrases)-1)]["text"]},
         ]
         beats = []
         for b, item in enumerate(ordered):
@@ -530,19 +532,26 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         frames = max(2, round(dur * 30))
         a1 = (anchor_times[1] - start) / dur
         a2 = (anchor_times[2] - start) / dur
-        # One zoompan per scene. Y travels smoothly through the three explicitly
+        # One zoompan per scene. The camera travels smoothly through the three
         # authored vignettes; there are no internal cuts, resets, or hold limits.
         p = f"on/{frames-1}"
         eased = f"(1-cos({p}*PI))/2"
-        yprog = f"if(lt({eased}\\,{a1:.6f})\\,0.5*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,0.5+0.5*({eased}-{a1:.6f})/({a2-a1:.6f})\\,0.5+0.5*({eased}-{a2:.6f})/{max(1-a2,0.0001):.6f}))"
-        # The generated source is a vertical triptych. A near-1.0 zoom would
-        # expose all three vignettes at once and make the move look like a
-        # slideshow. This scale keeps the authored opening/development/reveal
-        # regions readable while the single eased viewport travels between them.
-        zoom = f"1.55+0.10*{eased}"
-        y = f"(ih-ih/zoom)*({yprog})"
+        progress = f"if(lt({eased}\\,{a1:.6f})\\,0.5*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,0.5+0.5*({eased}-{a1:.6f})/({a2-a1:.6f})\\,0.5+0.5*({eased}-{a2:.6f})/{max(1-a2,0.0001):.6f}))"
+        if horizontal:
+            # Horizontal friezes are composed at a wide source aspect ratio.
+            # A 5.25x viewport gives a phone-shaped window while preserving
+            # enough detail to read each vignette. X is the only travel axis.
+            zoom = f"5.25+0.10*{eased}"
+            x = f"(iw-iw/zoom)*({progress})"
+            y = "ih/2-(ih/zoom/2)"
+            scene["travel_axis"] = "horizontal"
+        else:
+            zoom = f"1.55+0.10*{eased}"
+            x = "iw/2-(iw/zoom/2)"
+            y = f"(ih-ih/zoom)*({progress})"
+            scene["travel_axis"] = "vertical"
         fade = f",fade=t=in:st=0:d=0.18,fade=t=out:st={max(0,dur-0.18):.3f}:d=0.18"
-        vf = f"zoompan=z={zoom}:x=iw/2-(iw/zoom/2):y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p{fade}"
+        vf = f"zoompan=z={zoom}:x={x}:y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p{fade}"
         out = segdir / f"S{i:02d}_B01.mp4"
         run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
         files.append(out)

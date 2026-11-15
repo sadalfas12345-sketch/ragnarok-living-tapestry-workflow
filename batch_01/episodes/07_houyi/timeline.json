@@ -302,7 +302,8 @@
           "end": 4.18,
           "reason": "One sun disk in its normal cycle",
           "anchor": "opening",
-          "y_focus": 0.0,
+          "x_focus": 0.0,
+          "y_focus": 0.5,
           "spoken_anchor": "What if ten suns rose at once and scorched the earth?"
         },
         {
@@ -310,6 +311,7 @@
           "end": 7.848,
           "reason": "A second and third sun join the sky",
           "anchor": "development",
+          "x_focus": 0.5,
           "y_focus": 0.5,
           "spoken_anchor": "Chinese legend says they abandoned their usual turns."
         },
@@ -318,10 +320,12 @@
           "end": 7.998,
           "reason": "Pull back to reveal all ten suns over cracking farmland",
           "anchor": "reveal",
-          "y_focus": 1.0,
+          "x_focus": 1.0,
+          "y_focus": 0.5,
           "spoken_anchor": "Chinese legend says they abandoned their usual turns."
         }
-      ]
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S02",
@@ -353,7 +357,8 @@
           "end": 15.08,
           "reason": "Dry riverbed and exposed stones",
           "anchor": "opening",
-          "y_focus": 0.0,
+          "x_focus": 0.0,
+          "y_focus": 0.5,
           "spoken_anchor": "Rivers dried, crops burned, and ordinary people suffered under relentless heat."
         },
         {
@@ -361,6 +366,7 @@
           "end": 18.37,
           "reason": "Brown ruined crops and scorched soil",
           "anchor": "development",
+          "x_focus": 0.5,
           "y_focus": 0.5,
           "spoken_anchor": "The earth could not survive ten heavens burning at once."
         },
@@ -369,10 +375,12 @@
           "end": 19.02,
           "reason": "Families and animals searching beneath a merciless sky",
           "anchor": "reveal",
-          "y_focus": 1.0,
+          "x_focus": 1.0,
+          "y_focus": 0.5,
           "spoken_anchor": "The earth could not survive ten heavens burning at once."
         }
-      ]
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S03",
@@ -404,7 +412,8 @@
           "end": 24.88,
           "reason": "Thirsty animals and farmers seeking shade",
           "anchor": "opening",
-          "y_focus": 0.0,
+          "x_focus": 0.0,
+          "y_focus": 0.5,
           "spoken_anchor": "Hunters, farmers, and animals searched in vain for water or shade."
         },
         {
@@ -412,6 +421,7 @@
           "end": 26.26,
           "reason": "Hou Yi steps onto the ridge with his bow",
           "anchor": "development",
+          "x_focus": 0.5,
           "y_focus": 0.5,
           "spoken_anchor": "Hou Yi raised his bow."
         },
@@ -420,10 +430,12 @@
           "end": 33.278,
           "reason": "Bowstring drawn toward the overwhelming cluster of suns",
           "anchor": "reveal",
-          "y_focus": 1.0,
+          "x_focus": 1.0,
+          "y_focus": 0.5,
           "spoken_anchor": "He was asked to restore balance where power from above had scorched the world below."
         }
-      ]
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S04",
@@ -455,7 +467,8 @@
           "end": 37.02,
           "reason": "First arrow arcs toward blazing suns",
           "anchor": "opening",
-          "y_focus": 0.0,
+          "x_focus": 0.0,
+          "y_focus": 0.5,
           "spoken_anchor": "He shot down nine suns, one after another."
         },
         {
@@ -463,6 +476,7 @@
           "end": 41.74,
           "reason": "A sequence of sun-bird forms falls across the sky",
           "anchor": "development",
+          "x_focus": 0.5,
           "y_focus": 0.5,
           "spoken_anchor": "Each impact dimmed the sky until only the light the world needed remained."
         },
@@ -471,10 +485,12 @@
           "end": 42.61,
           "reason": "Nine darkened paths leave one steady sun aloft",
           "anchor": "reveal",
-          "y_focus": 1.0,
+          "x_focus": 1.0,
+          "y_focus": 0.5,
           "spoken_anchor": "Each impact dimmed the sky until only the light the world needed remained."
         }
-      ]
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S05",
@@ -506,7 +522,8 @@
           "end": 47.76,
           "reason": "One gentle sun over parched earth",
           "anchor": "opening",
-          "y_focus": 0.0,
+          "x_focus": 0.0,
+          "y_focus": 0.5,
           "spoken_anchor": "With a single sun moving overhead, crops could grow again."
         },
         {
@@ -514,6 +531,7 @@
           "end": 50.98,
           "reason": "Water reappears in the river channel",
           "anchor": "development",
+          "x_focus": 0.5,
           "y_focus": 0.5,
           "spoken_anchor": "Water returned to land that had nearly become desert."
         },
@@ -522,10 +540,12 @@
           "end": 52.119,
           "reason": "Green fields and people returning to work",
           "anchor": "reveal",
-          "y_focus": 1.0,
+          "x_focus": 1.0,
+          "y_focus": 0.5,
           "spoken_anchor": "Water returned to land that had nearly become desert."
         }
-      ]
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S06",
@@ -557,7 +577,8 @@
           "end": 57.34,
           "reason": "Nine absent suns and a resting bow",
           "anchor": "opening",
-          "y_focus": 0.0,
+          "x_focus": 0.0,
+          "y_focus": 0.5,
           "spoken_anchor": "The hero did not make the world safe by destroying all power."
         },
         {
@@ -565,6 +586,7 @@
           "end": 60.7,
           "reason": "Single remaining sun over a habitable landscape",
           "anchor": "development",
+          "x_focus": 0.5,
           "y_focus": 0.5,
           "spoken_anchor": "He made it livable by leaving enoughâ€”and no more."
         },
@@ -573,10 +595,12 @@
           "end": 62.266,
           "reason": "People beneath the restored sky, not another shot",
           "anchor": "reveal",
-          "y_focus": 1.0,
+          "x_focus": 1.0,
+          "y_focus": 0.5,
           "spoken_anchor": "He made it livable by leaving enoughâ€”and no more."
         }
-      ]
+      ],
+      "travel_axis": "horizontal"
     }
   ],
   "music": [
