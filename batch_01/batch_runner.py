@@ -578,7 +578,7 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             # Use one uninterrupted scene-wide curve. The artwork contains
             # the three story beats; changing path equations at their anchors
             # creates visible speed shifts even when each segment is eased.
-            whole_scene = f"({eased})*({eased})*(3-2*({eased}))"
+            whole_scene = f"n/{frames-1}"
             progress = f"{f0:.6f}+({f2-f0:.6f})*{whole_scene}"
             x = f"(iw-ow)*({progress})"
             y = "0"
