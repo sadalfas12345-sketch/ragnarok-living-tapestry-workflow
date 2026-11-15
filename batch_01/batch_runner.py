@@ -560,7 +560,14 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         p = f"n/{frames-1}" if horizontal else f"on/{frames-1}"
         eased = f"(1-cos({p}*PI))/2"
         f0, f1, f2 = focus_points
-        progress = f"if(lt({eased}\\,{a1:.6f})\\,{f0:.6f}+({f1-f0:.6f})*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,{f1:.6f}+({f2-f1:.6f})*({eased}-{a1:.6f})/({a2-a1:.6f})\\,{f2:.6f}))"
+        # Use smoothstep within each authored beat interval. This makes the
+        # camera arrive at every visual anchor with zero velocity, avoiding
+        # the visible speed discontinuity caused by straight interpolation.
+        u1 = f"max(0\\,min(1\\,{eased}/{a1:.6f}))"
+        u2 = f"max(0\\,min(1\\,({eased}-{a1:.6f})/({a2-a1:.6f})))"
+        s1 = f"({u1})*({u1})*(3-2*({u1}))"
+        s2 = f"({u2})*({u2})*(3-2*({u2}))"
+        progress = f"if(lt({eased}\\,{a1:.6f})\\,{f0:.6f}+({f1-f0:.6f})*{s1}\\,if(lt({eased}\\,{a2:.6f})\\,{f1:.6f}+({f2-f1:.6f})*{s2}\\,{f2:.6f}))"
         y0, y1, y2 = [float(v) for v in y_points]
         yprogress = f"if(lt({eased}\\,{a1:.6f})\\,{y0:.6f}+({y1-y0:.6f})*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,{y1:.6f}+({y2-y1:.6f})*({eased}-{a1:.6f})/({a2-a1:.6f})\\,{y2:.6f}))"
         if horizontal:
