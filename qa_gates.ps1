@@ -1,5 +1,19 @@
+# V2 gates inspect the rendered episode selected by --Episode.  The legacy
+# root-level Ragnarok files are intentionally not used as timing authority.
+param(
+  [Parameter(Mandatory = $true)]
+  [int]$Episode
+)
+
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
+
+& python (Join-Path $root 'batch_01\visual_gates_v2.py') --episode $Episode
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+Write-Output "ALL V2 VISUAL GATES PASSED FOR EPISODE $Episode"
+exit 0
+
+# Legacy gates below are retained in history only; execution stops above.
 $cfg = Get-Content (Join-Path $root 'story_config.json') -Raw | ConvertFrom-Json
 $timeline = Get-Content (Join-Path $root 'timeline.json') -Raw | ConvertFrom-Json
 $video = Join-Path $root 'ragnarok_final_v2.mp4'

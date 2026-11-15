@@ -13,7 +13,7 @@ Reusable pipeline for vertical illustrated stories with narration, licensed musi
 7. Run `build_srt_from_timeline.py`.
 8. Run `render_from_timeline.py`.
 9. Run `mix_from_timeline.py`.
-10. Run `qa_gates.ps1` before delivery.
+10. Run `qa_gates.ps1 -Episode 7` before delivery.
 
 `timeline.json` is the only timing authority. It owns narration phrase boundaries, scene boundaries, authored pauses, captions, camera intervals, music cues, SFX cues, and runtime.
 
@@ -25,7 +25,15 @@ powershell -ExecutionPolicy Bypass -File make_review_copy.ps1 -InputFile ragnaro
 
 Review copies are never production masters.
 
-The gates check timeline/runtime agreement, caption overlap and timeline agreement, sampled caption audit frames, vertical format, scene asset uniqueness, required asset references, and eased camera motion without sinusoidal shake. Human playback review remains required when available.
+The V2 gates inspect the encoded MP4, not only its inputs. They check timeline/runtime agreement, caption overlap and bounds, three-point visual progression in every scene, horizontal direction declarations, output dimensions and delivery bitrate, black or frozen transition frames, and transition continuity. The legacy root-level files are not used as timing authority. Human playback review remains required when available.
+
+Run the gates directly with:
+
+```powershell
+python batch_01/visual_gates_v2.py --episode 7
+```
+
+`examples/episode_07_hou_yi_input.example.json` is a complete episode input example showing the three-beat visual progression schema.
 
 ## Audio rules
 

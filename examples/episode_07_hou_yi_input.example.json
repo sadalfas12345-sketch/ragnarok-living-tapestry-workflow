@@ -1,0 +1,659 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 7,
+  "slug": "07_houyi",
+  "title": "Hou Yi: The Archer Who Shot the Suns",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "myth, survival",
+  "civilization": "China",
+  "source_integrity": {
+    "primary_source_or_tradition": "Chinese Hou Yi and ten suns myth, multiple traditional variants",
+    "classification": "traditional_narrative_or_literary_retelling",
+    "narration_style": "Clearly distinguish myth/legend from established history; do not present illustrative details as verified facts",
+    "translation_policy": "New original paraphrase only; do not quote protected translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Hou Yi: The Archer Who Shot the Suns in Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines",
+    "palette": "derive from the specified art style, not the preceding episode",
+    "character_design_lock": [
+      "Hou Yi",
+      "ten suns",
+      "people"
+    ],
+    "material_consistency": "all individual scene panels must look as though carved, painted, embroidered or printed on the same physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive documentary storyteller, natural cadence",
+    "soundtrack_direction": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "locate and verify current track licenses before download; avoid unlicensed music",
+      "track_titles": "unassigned; search within vetted libraries at production time"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read caption fields directly; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate panels P01–P06 with consistent characters",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ],
+    "narration_source": "scenes[].caption; do not use any old cached Sxx.txt narration; opening_hook is metadata only",
+    "timing_adjustment": "Render timings must be recomputed from new scene narration; existing audio, SRT and timeline are invalidated by script changes.",
+    "visual_progression_qa_gate": "Every scene must reveal its ordered first/middle/final narrative anchors through a single smooth camera journey. Verify an actual new narrated event or visual fact appears at each anchor; moving or zooming over one unchanged picture is not sufficient. Reject hard crop jumps, arbitrary timed reframes and static single-tableau scenes; do not change narration or force scene duration.",
+    "visual_render_contract": "Build one continuous horizontal story panorama per scene with three distinct subplots and semantic camera anchors. Use an alpha fade-in of the next scene over the outgoing image at scene boundaries; do not fade to black.",
+    "caption_render_contract": "Export synchronized .srt and optional embedded selectable MP4 soft-subtitle track (mov_text); NO hardcoded/burn-in subtitle overlays or text on artwork."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "What if ten suns rose at once and scorched the earth? Chinese legend says they abandoned their usual turns.",
+      "beat_title": "Ten suns",
+      "required_visuals": [
+        "ten vermilion sun disks above cracked farmland",
+        "Ordered opening visual discovery: One sun disk in its normal cycle",
+        "Ordered middle visual discovery: A second and third sun join the sky",
+        "Ordered ending visual discovery: Pull back to reveal all ten suns over cracking farmland"
+      ],
+      "image_prompt": "Wide contiguous horizontal left-to-right sequential story frieze for a travelling vertical 9:16 camera, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: ten vermilion sun disks above cracked farmland. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: What if ten suns rose at once and scorched the earth? Once, according to a Chinese legend, ten suns rose together instead of taking turns. Depict this scene timing, but avoid literal words or text. ONE SCENE, THREE CONTIGUOUS LEFT-TO-RIGHT SUBPLOTS: LEFT—One sun disk in its normal cycle. MIDDLE—A second and third sun join the sky. RIGHT—Pull back to reveal all ten suns over cracking farmland. Depict these as distinct chronological visual facts from the existing narration, not three zooms of the same tableau. Create one physically coherent continuous illustrated environment and shared materials across boundaries, not separate stacked pictures or a three-card collage. Keep each important narrated subject big enough for its own vertical 9:16 crop, including adequate safe margins for optional player-drawn subtitles. Generate enough horizontal width and genuine detail for all three focal camera positions, using seamless high-resolution tiles if necessary. A continuous camera follows the artwork smoothly from left to right; do not expose the entire triptych at the start, pan across irrelevant empty terrain, or introduce hard crop jumps. Between DIFFERENT scenes use a normal alpha fade-in of the next scene over the outgoing scene—not a black flash. NO captions, text, watermarks, or subtitles burned into the generated illustration. Do not introduce facts absent from the existing narration.",
+      "camera": {
+        "description": "ONE UNBROKEN LEFT-TO-RIGHT STORY PASS: open on One sun disk in its normal cycle; glide over continuously joined artwork to reveal A second and third sun join the sky; arrive on Pull back to reveal all ten suns over cracking farmland. Use subject-anchored 9:16 portrait framing and narration-semantic timing. Rightward travel is the default; only minor vertical corrections or story-motivated zoom are allowed. No black flash, snap crop, or timer-driven reframe. Between scenes, use the episode-level alpha fade-in transition.",
+        "style": "continuous_left_to_right_horizontal_frieze",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals",
+        "primary_direction": "right",
+        "anchor_selection": "grounded_in_rendered_subject_bbox_and_portrait_crop_safe_zone",
+        "allow_small_vertical_adjustments_for_legibility": true,
+        "no_forced_hold_seconds": true
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.15,
+      "target_duration_seconds_range": [
+        8,
+        10
+      ],
+      "narration_visual_alignment": {
+        "spoken_text_for_scene": "What if ten suns rose at once and scorched the earth? Chinese legend says they abandoned their usual turns.",
+        "sync_camera_to_spoken_sentences": true
+      },
+      "trimmed_setup_reference_only_not_spoken": "Once, according to a Chinese legend, ten suns rose together instead of taking turns.",
+      "narration_contract": {
+        "authoritative_spoken_text_field": "scenes[0].caption",
+        "first_spoken_sentence_starts_with": "What if",
+        "do_not_narrate_reference_only_fields": true,
+        "max_scene_seconds": 10,
+        "derive_actual_scene_end_from_regenerated_narration": true
+      },
+      "visual_progression": {
+        "purpose": "Reveal three different narrated developments in chronological order within a single uninterrupted illustration, not one tableau with repeated camera crops.",
+        "ordered_story_beats": [
+          {
+            "phase": "opening",
+            "subplot_position": "left",
+            "visual": "One sun disk in its normal cycle"
+          },
+          {
+            "phase": "development",
+            "subplot_position": "middle",
+            "visual": "A second and third sun join the sky"
+          },
+          {
+            "phase": "consequence_or_reveal",
+            "subplot_position": "right",
+            "visual": "Pull back to reveal all ten suns over cracking farmland"
+          }
+        ],
+        "composition": "ONE visually contiguous horizontal left-to-right story frieze with three chronological subplots. Keep a shared illustrated physical medium, coherent ground, backgrounds, borders, and character identity across adjoining regions; never stack vertically.",
+        "asset_geometry": "Provide sufficient source width for three separate 9:16 crop anchors at 1080x1920 delivery quality. Prefer stitched or generated matched high-resolution tiles over enlarging a portrait image. Determine crop anchors after inspecting artwork.",
+        "synchronization": "Camera reaches each subplot when the corresponding narration clause is spoken; rely on actual narration waveform, not three equal timed slides or a hold timer.",
+        "scene_to_next_transition": "Incoming next scene fades in over outgoing scene at existing scene boundary (~0.4s nominal). No fade to black, no inserted black frames; each new scene starts at its own left subplot.",
+        "negative_constraints": "Do not show all three moments at once in a 9:16 camera view; do not repeat one pose in three crops; no subject cutoff, empty-landscape replacement, snap reframing, unnecessary cuts, or new narrated events.",
+        "qa": "Inspect rendered opening, center and end anchors as well as the fade into the next scene; all essential subjects visible and the visual difference is meaningful."
+      },
+      "scene_transition_out": {
+        "type": "video_alpha_fade_in_next_scene_over_outgoing_scene",
+        "target_seconds": 0.4,
+        "overlay_incoming_on_outgoing": true,
+        "fade_through_black": false,
+        "insert_black_frames": false,
+        "preserve_existing_scene_boundaries": true,
+        "preserve_total_runtime": true,
+        "implementation_note": "Incoming scene begins from its own leftmost subplot/camera position; blend over the tail of the outgoing scene for a normal video fade-in. Do not create extra black gaps or change narration timestamps. Fade duration is adjustable only to fit available boundary handles."
+      },
+      "subtitle_burn_in": false
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "Rivers dried, crops burned, and ordinary people suffered under relentless heat. The earth could not survive ten heavens burning at once.",
+      "beat_title": "No shelter",
+      "required_visuals": [
+        "desiccated fields",
+        "people shielding eyes",
+        "Ordered opening visual discovery: Dry riverbed and exposed stones",
+        "Ordered middle visual discovery: Brown ruined crops and scorched soil",
+        "Ordered ending visual discovery: Families and animals searching beneath a merciless sky"
+      ],
+      "image_prompt": "Wide contiguous horizontal left-to-right sequential story frieze for a travelling vertical 9:16 camera, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: desiccated fields, people shielding eyes. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: Rivers dried, crops burned, and ordinary people suffered under relentless heat. The earth could not survive ten heavens burning at once. Depict this scene timing, but avoid literal words or text. ONE SCENE, THREE CONTIGUOUS LEFT-TO-RIGHT SUBPLOTS: LEFT—Dry riverbed and exposed stones. MIDDLE—Brown ruined crops and scorched soil. RIGHT—Families and animals searching beneath a merciless sky. Depict these as distinct chronological visual facts from the existing narration, not three zooms of the same tableau. Create one physically coherent continuous illustrated environment and shared materials across boundaries, not separate stacked pictures or a three-card collage. Keep each important narrated subject big enough for its own vertical 9:16 crop, including adequate safe margins for optional player-drawn subtitles. Generate enough horizontal width and genuine detail for all three focal camera positions, using seamless high-resolution tiles if necessary. A continuous camera follows the artwork smoothly from left to right; do not expose the entire triptych at the start, pan across irrelevant empty terrain, or introduce hard crop jumps. Between DIFFERENT scenes use a normal alpha fade-in of the next scene over the outgoing scene—not a black flash. NO captions, text, watermarks, or subtitles burned into the generated illustration. Do not introduce facts absent from the existing narration.",
+      "camera": {
+        "description": "ONE UNBROKEN LEFT-TO-RIGHT STORY PASS: open on Dry riverbed and exposed stones; glide over continuously joined artwork to reveal Brown ruined crops and scorched soil; arrive on Families and animals searching beneath a merciless sky. Use subject-anchored 9:16 portrait framing and narration-semantic timing. Rightward travel is the default; only minor vertical corrections or story-motivated zoom are allowed. No black flash, snap crop, or timer-driven reframe. Between scenes, use the episode-level alpha fade-in transition.",
+        "style": "continuous_left_to_right_horizontal_frieze",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals",
+        "primary_direction": "right",
+        "anchor_selection": "grounded_in_rendered_subject_bbox_and_portrait_crop_safe_zone",
+        "allow_small_vertical_adjustments_for_legibility": true,
+        "no_forced_hold_seconds": true
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65,
+      "target_duration_seconds_range": [
+        8,
+        15
+      ],
+      "narration_visual_alignment": {
+        "spoken_text_for_scene": "Rivers dried, crops burned, and ordinary people suffered under relentless heat. The earth could not survive ten heavens burning at once.",
+        "sync_camera_to_spoken_sentences": true
+      },
+      "visual_progression": {
+        "purpose": "Reveal three different narrated developments in chronological order within a single uninterrupted illustration, not one tableau with repeated camera crops.",
+        "ordered_story_beats": [
+          {
+            "phase": "opening",
+            "subplot_position": "left",
+            "visual": "Dry riverbed and exposed stones"
+          },
+          {
+            "phase": "development",
+            "subplot_position": "middle",
+            "visual": "Brown ruined crops and scorched soil"
+          },
+          {
+            "phase": "consequence_or_reveal",
+            "subplot_position": "right",
+            "visual": "Families and animals searching beneath a merciless sky"
+          }
+        ],
+        "composition": "ONE visually contiguous horizontal left-to-right story frieze with three chronological subplots. Keep a shared illustrated physical medium, coherent ground, backgrounds, borders, and character identity across adjoining regions; never stack vertically.",
+        "asset_geometry": "Provide sufficient source width for three separate 9:16 crop anchors at 1080x1920 delivery quality. Prefer stitched or generated matched high-resolution tiles over enlarging a portrait image. Determine crop anchors after inspecting artwork.",
+        "synchronization": "Camera reaches each subplot when the corresponding narration clause is spoken; rely on actual narration waveform, not three equal timed slides or a hold timer.",
+        "scene_to_next_transition": "Incoming next scene fades in over outgoing scene at existing scene boundary (~0.4s nominal). No fade to black, no inserted black frames; each new scene starts at its own left subplot.",
+        "negative_constraints": "Do not show all three moments at once in a 9:16 camera view; do not repeat one pose in three crops; no subject cutoff, empty-landscape replacement, snap reframing, unnecessary cuts, or new narrated events.",
+        "qa": "Inspect rendered opening, center and end anchors as well as the fade into the next scene; all essential subjects visible and the visual difference is meaningful."
+      },
+      "scene_transition_out": {
+        "type": "video_alpha_fade_in_next_scene_over_outgoing_scene",
+        "target_seconds": 0.4,
+        "overlay_incoming_on_outgoing": true,
+        "fade_through_black": false,
+        "insert_black_frames": false,
+        "preserve_existing_scene_boundaries": true,
+        "preserve_total_runtime": true,
+        "implementation_note": "Incoming scene begins from its own leftmost subplot/camera position; blend over the tail of the outgoing scene for a normal video fade-in. Do not create extra black gaps or change narration timestamps. Fade duration is adjustable only to fit available boundary handles."
+      },
+      "subtitle_burn_in": false
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "Hunters, farmers, and animals searched in vain for water or shade. Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below.",
+      "beat_title": "The archer",
+      "required_visuals": [
+        "hero archer on mountain",
+        "enormous composite bow",
+        "Ordered opening visual discovery: Thirsty animals and farmers seeking shade",
+        "Ordered middle visual discovery: Hou Yi steps onto the ridge with his bow",
+        "Ordered ending visual discovery: Bowstring drawn toward the overwhelming cluster of suns"
+      ],
+      "image_prompt": "Wide contiguous horizontal left-to-right sequential story frieze for a travelling vertical 9:16 camera, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: hero archer on mountain, enormous composite bow. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. Additional narrative context for THIS scene: Hunters, farmers, and animals searched in vain for water or shade. Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below. Depict this scene timing, but avoid literal words or text. ONE SCENE, THREE CONTIGUOUS LEFT-TO-RIGHT SUBPLOTS: LEFT—Thirsty animals and farmers seeking shade. MIDDLE—Hou Yi steps onto the ridge with his bow. RIGHT—Bowstring drawn toward the overwhelming cluster of suns. Depict these as distinct chronological visual facts from the existing narration, not three zooms of the same tableau. Create one physically coherent continuous illustrated environment and shared materials across boundaries, not separate stacked pictures or a three-card collage. Keep each important narrated subject big enough for its own vertical 9:16 crop, including adequate safe margins for optional player-drawn subtitles. Generate enough horizontal width and genuine detail for all three focal camera positions, using seamless high-resolution tiles if necessary. A continuous camera follows the artwork smoothly from left to right; do not expose the entire triptych at the start, pan across irrelevant empty terrain, or introduce hard crop jumps. Between DIFFERENT scenes use a normal alpha fade-in of the next scene over the outgoing scene—not a black flash. NO captions, text, watermarks, or subtitles burned into the generated illustration. Do not introduce facts absent from the existing narration.",
+      "camera": {
+        "description": "ONE UNBROKEN LEFT-TO-RIGHT STORY PASS: open on Thirsty animals and farmers seeking shade; glide over continuously joined artwork to reveal Hou Yi steps onto the ridge with his bow; arrive on Bowstring drawn toward the overwhelming cluster of suns. Use subject-anchored 9:16 portrait framing and narration-semantic timing. Rightward travel is the default; only minor vertical corrections or story-motivated zoom are allowed. No black flash, snap crop, or timer-driven reframe. Between scenes, use the episode-level alpha fade-in transition.",
+        "style": "continuous_left_to_right_horizontal_frieze",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals",
+        "primary_direction": "right",
+        "anchor_selection": "grounded_in_rendered_subject_bbox_and_portrait_crop_safe_zone",
+        "allow_small_vertical_adjustments_for_legibility": true,
+        "no_forced_hold_seconds": true
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8,
+      "target_duration_seconds_range": [
+        8,
+        15
+      ],
+      "narration_visual_alignment": {
+        "spoken_text_for_scene": "Hunters, farmers, and animals searched in vain for water or shade. Hou Yi raised his bow. He was asked to restore balance where power from above had scorched the world below.",
+        "sync_camera_to_spoken_sentences": true
+      },
+      "visual_progression": {
+        "purpose": "Reveal three different narrated developments in chronological order within a single uninterrupted illustration, not one tableau with repeated camera crops.",
+        "ordered_story_beats": [
+          {
+            "phase": "opening",
+            "subplot_position": "left",
+            "visual": "Thirsty animals and farmers seeking shade"
+          },
+          {
+            "phase": "development",
+            "subplot_position": "middle",
+            "visual": "Hou Yi steps onto the ridge with his bow"
+          },
+          {
+            "phase": "consequence_or_reveal",
+            "subplot_position": "right",
+            "visual": "Bowstring drawn toward the overwhelming cluster of suns"
+          }
+        ],
+        "composition": "ONE visually contiguous horizontal left-to-right story frieze with three chronological subplots. Keep a shared illustrated physical medium, coherent ground, backgrounds, borders, and character identity across adjoining regions; never stack vertically.",
+        "asset_geometry": "Provide sufficient source width for three separate 9:16 crop anchors at 1080x1920 delivery quality. Prefer stitched or generated matched high-resolution tiles over enlarging a portrait image. Determine crop anchors after inspecting artwork.",
+        "synchronization": "Camera reaches each subplot when the corresponding narration clause is spoken; rely on actual narration waveform, not three equal timed slides or a hold timer.",
+        "scene_to_next_transition": "Incoming next scene fades in over outgoing scene at existing scene boundary (~0.4s nominal). No fade to black, no inserted black frames; each new scene starts at its own left subplot.",
+        "negative_constraints": "Do not show all three moments at once in a 9:16 camera view; do not repeat one pose in three crops; no subject cutoff, empty-landscape replacement, snap reframing, unnecessary cuts, or new narrated events.",
+        "qa": "Inspect rendered opening, center and end anchors as well as the fade into the next scene; all essential subjects visible and the visual difference is meaningful."
+      },
+      "scene_transition_out": {
+        "type": "video_alpha_fade_in_next_scene_over_outgoing_scene",
+        "target_seconds": 0.4,
+        "overlay_incoming_on_outgoing": true,
+        "fade_through_black": false,
+        "insert_black_frames": false,
+        "preserve_existing_scene_boundaries": true,
+        "preserve_total_runtime": true,
+        "implementation_note": "Incoming scene begins from its own leftmost subplot/camera position; blend over the tail of the outgoing scene for a normal video fade-in. Do not create extra black gaps or change narration timestamps. Fade duration is adjustable only to fit available boundary handles."
+      },
+      "subtitle_burn_in": false
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "He shot down nine suns, one after another. Each impact dimmed the sky until only the light the world needed remained.",
+      "beat_title": "Nine arrows",
+      "required_visuals": [
+        "nine glowing suns falling like birds",
+        "one sun left",
+        "Ordered opening visual discovery: First arrow arcs toward blazing suns",
+        "Ordered middle visual discovery: A sequence of sun-bird forms falls across the sky",
+        "Ordered ending visual discovery: Nine darkened paths leave one steady sun aloft"
+      ],
+      "image_prompt": "Wide contiguous horizontal left-to-right sequential story frieze for a travelling vertical 9:16 camera, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: nine glowing suns falling like birds, one sun left. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. ONE SCENE, THREE CONTIGUOUS LEFT-TO-RIGHT SUBPLOTS: LEFT—First arrow arcs toward blazing suns. MIDDLE—A sequence of sun-bird forms falls across the sky. RIGHT—Nine darkened paths leave one steady sun aloft. Depict these as distinct chronological visual facts from the existing narration, not three zooms of the same tableau. Create one physically coherent continuous illustrated environment and shared materials across boundaries, not separate stacked pictures or a three-card collage. Keep each important narrated subject big enough for its own vertical 9:16 crop, including adequate safe margins for optional player-drawn subtitles. Generate enough horizontal width and genuine detail for all three focal camera positions, using seamless high-resolution tiles if necessary. A continuous camera follows the artwork smoothly from left to right; do not expose the entire triptych at the start, pan across irrelevant empty terrain, or introduce hard crop jumps. Between DIFFERENT scenes use a normal alpha fade-in of the next scene over the outgoing scene—not a black flash. NO captions, text, watermarks, or subtitles burned into the generated illustration. Do not introduce facts absent from the existing narration.",
+      "camera": {
+        "description": "ONE UNBROKEN LEFT-TO-RIGHT STORY PASS: open on First arrow arcs toward blazing suns; glide over continuously joined artwork to reveal A sequence of sun-bird forms falls across the sky; arrive on Nine darkened paths leave one steady sun aloft. Use subject-anchored 9:16 portrait framing and narration-semantic timing. Rightward travel is the default; only minor vertical corrections or story-motivated zoom are allowed. No black flash, snap crop, or timer-driven reframe. Between scenes, use the episode-level alpha fade-in transition.",
+        "style": "continuous_left_to_right_horizontal_frieze",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals",
+        "primary_direction": "right",
+        "anchor_selection": "grounded_in_rendered_subject_bbox_and_portrait_crop_safe_zone",
+        "allow_small_vertical_adjustments_for_legibility": true,
+        "no_forced_hold_seconds": true
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8,
+      "target_duration_seconds_range": [
+        8,
+        15
+      ],
+      "narration_visual_alignment": {
+        "spoken_text_for_scene": "He shot down nine suns, one after another. Each impact dimmed the sky until only the light the world needed remained.",
+        "sync_camera_to_spoken_sentences": true
+      },
+      "visual_progression": {
+        "purpose": "Reveal three different narrated developments in chronological order within a single uninterrupted illustration, not one tableau with repeated camera crops.",
+        "ordered_story_beats": [
+          {
+            "phase": "opening",
+            "subplot_position": "left",
+            "visual": "First arrow arcs toward blazing suns"
+          },
+          {
+            "phase": "development",
+            "subplot_position": "middle",
+            "visual": "A sequence of sun-bird forms falls across the sky"
+          },
+          {
+            "phase": "consequence_or_reveal",
+            "subplot_position": "right",
+            "visual": "Nine darkened paths leave one steady sun aloft"
+          }
+        ],
+        "composition": "ONE visually contiguous horizontal left-to-right story frieze with three chronological subplots. Keep a shared illustrated physical medium, coherent ground, backgrounds, borders, and character identity across adjoining regions; never stack vertically.",
+        "asset_geometry": "Provide sufficient source width for three separate 9:16 crop anchors at 1080x1920 delivery quality. Prefer stitched or generated matched high-resolution tiles over enlarging a portrait image. Determine crop anchors after inspecting artwork.",
+        "synchronization": "Camera reaches each subplot when the corresponding narration clause is spoken; rely on actual narration waveform, not three equal timed slides or a hold timer.",
+        "scene_to_next_transition": "Incoming next scene fades in over outgoing scene at existing scene boundary (~0.4s nominal). No fade to black, no inserted black frames; each new scene starts at its own left subplot.",
+        "negative_constraints": "Do not show all three moments at once in a 9:16 camera view; do not repeat one pose in three crops; no subject cutoff, empty-landscape replacement, snap reframing, unnecessary cuts, or new narrated events.",
+        "qa": "Inspect rendered opening, center and end anchors as well as the fade into the next scene; all essential subjects visible and the visual difference is meaningful."
+      },
+      "scene_transition_out": {
+        "type": "video_alpha_fade_in_next_scene_over_outgoing_scene",
+        "target_seconds": 0.4,
+        "overlay_incoming_on_outgoing": true,
+        "fade_through_black": false,
+        "insert_black_frames": false,
+        "preserve_existing_scene_boundaries": true,
+        "preserve_total_runtime": true,
+        "implementation_note": "Incoming scene begins from its own leftmost subplot/camera position; blend over the tail of the outgoing scene for a normal video fade-in. Do not create extra black gaps or change narration timestamps. Fade duration is adjustable only to fit available boundary handles."
+      },
+      "subtitle_burn_in": false
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "With a single sun moving overhead, crops could grow again. Water returned to land that had nearly become desert.",
+      "beat_title": "The balance",
+      "required_visuals": [
+        "one warm sun over restored rivers and rice fields",
+        "Ordered opening visual discovery: One gentle sun over parched earth",
+        "Ordered middle visual discovery: Water reappears in the river channel",
+        "Ordered ending visual discovery: Green fields and people returning to work"
+      ],
+      "image_prompt": "Wide contiguous horizontal left-to-right sequential story frieze for a travelling vertical 9:16 camera, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one warm sun over restored rivers and rice fields. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. ONE SCENE, THREE CONTIGUOUS LEFT-TO-RIGHT SUBPLOTS: LEFT—One gentle sun over parched earth. MIDDLE—Water reappears in the river channel. RIGHT—Green fields and people returning to work. Depict these as distinct chronological visual facts from the existing narration, not three zooms of the same tableau. Create one physically coherent continuous illustrated environment and shared materials across boundaries, not separate stacked pictures or a three-card collage. Keep each important narrated subject big enough for its own vertical 9:16 crop, including adequate safe margins for optional player-drawn subtitles. Generate enough horizontal width and genuine detail for all three focal camera positions, using seamless high-resolution tiles if necessary. A continuous camera follows the artwork smoothly from left to right; do not expose the entire triptych at the start, pan across irrelevant empty terrain, or introduce hard crop jumps. Between DIFFERENT scenes use a normal alpha fade-in of the next scene over the outgoing scene—not a black flash. NO captions, text, watermarks, or subtitles burned into the generated illustration. Do not introduce facts absent from the existing narration.",
+      "camera": {
+        "description": "ONE UNBROKEN LEFT-TO-RIGHT STORY PASS: open on One gentle sun over parched earth; glide over continuously joined artwork to reveal Water reappears in the river channel; arrive on Green fields and people returning to work. Use subject-anchored 9:16 portrait framing and narration-semantic timing. Rightward travel is the default; only minor vertical corrections or story-motivated zoom are allowed. No black flash, snap crop, or timer-driven reframe. Between scenes, use the episode-level alpha fade-in transition.",
+        "style": "continuous_left_to_right_horizontal_frieze",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals",
+        "primary_direction": "right",
+        "anchor_selection": "grounded_in_rendered_subject_bbox_and_portrait_crop_safe_zone",
+        "allow_small_vertical_adjustments_for_legibility": true,
+        "no_forced_hold_seconds": true
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.1,
+      "target_duration_seconds_range": [
+        8,
+        15
+      ],
+      "narration_visual_alignment": {
+        "spoken_text_for_scene": "With a single sun moving overhead, crops could grow again. Water returned to land that had nearly become desert.",
+        "sync_camera_to_spoken_sentences": true
+      },
+      "visual_progression": {
+        "purpose": "Reveal three different narrated developments in chronological order within a single uninterrupted illustration, not one tableau with repeated camera crops.",
+        "ordered_story_beats": [
+          {
+            "phase": "opening",
+            "subplot_position": "left",
+            "visual": "One gentle sun over parched earth"
+          },
+          {
+            "phase": "development",
+            "subplot_position": "middle",
+            "visual": "Water reappears in the river channel"
+          },
+          {
+            "phase": "consequence_or_reveal",
+            "subplot_position": "right",
+            "visual": "Green fields and people returning to work"
+          }
+        ],
+        "composition": "ONE visually contiguous horizontal left-to-right story frieze with three chronological subplots. Keep a shared illustrated physical medium, coherent ground, backgrounds, borders, and character identity across adjoining regions; never stack vertically.",
+        "asset_geometry": "Provide sufficient source width for three separate 9:16 crop anchors at 1080x1920 delivery quality. Prefer stitched or generated matched high-resolution tiles over enlarging a portrait image. Determine crop anchors after inspecting artwork.",
+        "synchronization": "Camera reaches each subplot when the corresponding narration clause is spoken; rely on actual narration waveform, not three equal timed slides or a hold timer.",
+        "scene_to_next_transition": "Incoming next scene fades in over outgoing scene at existing scene boundary (~0.4s nominal). No fade to black, no inserted black frames; each new scene starts at its own left subplot.",
+        "negative_constraints": "Do not show all three moments at once in a 9:16 camera view; do not repeat one pose in three crops; no subject cutoff, empty-landscape replacement, snap reframing, unnecessary cuts, or new narrated events.",
+        "qa": "Inspect rendered opening, center and end anchors as well as the fade into the next scene; all essential subjects visible and the visual difference is meaningful."
+      },
+      "scene_transition_out": {
+        "type": "video_alpha_fade_in_next_scene_over_outgoing_scene",
+        "target_seconds": 0.4,
+        "overlay_incoming_on_outgoing": true,
+        "fade_through_black": false,
+        "insert_black_frames": false,
+        "preserve_existing_scene_boundaries": true,
+        "preserve_total_runtime": true,
+        "implementation_note": "Incoming scene begins from its own leftmost subplot/camera position; blend over the tail of the outgoing scene for a normal video fade-in. Do not create extra black gaps or change narration timestamps. Fade duration is adjustable only to fit available boundary handles."
+      },
+      "subtitle_burn_in": false
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "The hero did not make the world safe by destroying all power. He made it livable by leaving enough—and no more.",
+      "beat_title": "The point",
+      "required_visuals": [
+        "one circle sun above bow resting on ground",
+        "Ordered opening visual discovery: Nine absent suns and a resting bow",
+        "Ordered middle visual discovery: Single remaining sun over a habitable landscape",
+        "Ordered ending visual discovery: People beneath the restored sky, not another shot"
+      ],
+      "image_prompt": "Wide contiguous horizontal left-to-right sequential story frieze for a travelling vertical 9:16 camera, with coherent Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines. Scene: one circle sun above bow resting on ground. The source story is Hou Yi: The Archer Who Shot the Suns. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors. ONE SCENE, THREE CONTIGUOUS LEFT-TO-RIGHT SUBPLOTS: LEFT—Nine absent suns and a resting bow. MIDDLE—Single remaining sun over a habitable landscape. RIGHT—People beneath the restored sky, not another shot. Depict these as distinct chronological visual facts from the existing narration, not three zooms of the same tableau. Create one physically coherent continuous illustrated environment and shared materials across boundaries, not separate stacked pictures or a three-card collage. Keep each important narrated subject big enough for its own vertical 9:16 crop, including adequate safe margins for optional player-drawn subtitles. Generate enough horizontal width and genuine detail for all three focal camera positions, using seamless high-resolution tiles if necessary. A continuous camera follows the artwork smoothly from left to right; do not expose the entire triptych at the start, pan across irrelevant empty terrain, or introduce hard crop jumps. Between DIFFERENT scenes use a normal alpha fade-in of the next scene over the outgoing scene—not a black flash. NO captions, text, watermarks, or subtitles burned into the generated illustration. Do not introduce facts absent from the existing narration.",
+      "camera": {
+        "description": "ONE UNBROKEN LEFT-TO-RIGHT STORY PASS: open on Nine absent suns and a resting bow; glide over continuously joined artwork to reveal Single remaining sun over a habitable landscape; arrive on People beneath the restored sky, not another shot. Use subject-anchored 9:16 portrait framing and narration-semantic timing. Rightward travel is the default; only minor vertical corrections or story-motivated zoom are allowed. No black flash, snap crop, or timer-driven reframe. Between scenes, use the episode-level alpha fade-in transition.",
+        "style": "continuous_left_to_right_horizontal_frieze",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "allow_internal_reframe": false,
+        "no_hard_crop_changes": true,
+        "motion_alignment": "narration_semantic_beats_not_fixed_intervals",
+        "primary_direction": "right",
+        "anchor_selection": "grounded_in_rendered_subject_bbox_and_portrait_crop_safe_zone",
+        "allow_small_vertical_adjustments_for_legibility": true,
+        "no_forced_hold_seconds": true
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "guqin pulses, bamboo flute, thunder drum, string glissandi",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5,
+      "target_duration_seconds_range": [
+        8,
+        13
+      ],
+      "narration_visual_alignment": {
+        "spoken_text_for_scene": "The hero did not make the world safe by destroying all power. He made it livable by leaving enough—and no more.",
+        "sync_camera_to_spoken_sentences": true
+      },
+      "visual_progression": {
+        "purpose": "Reveal three different narrated developments in chronological order within a single uninterrupted illustration, not one tableau with repeated camera crops.",
+        "ordered_story_beats": [
+          {
+            "phase": "opening",
+            "subplot_position": "left",
+            "visual": "Nine absent suns and a resting bow"
+          },
+          {
+            "phase": "development",
+            "subplot_position": "middle",
+            "visual": "Single remaining sun over a habitable landscape"
+          },
+          {
+            "phase": "consequence_or_reveal",
+            "subplot_position": "right",
+            "visual": "People beneath the restored sky, not another shot"
+          }
+        ],
+        "composition": "ONE visually contiguous horizontal left-to-right story frieze with three chronological subplots. Keep a shared illustrated physical medium, coherent ground, backgrounds, borders, and character identity across adjoining regions; never stack vertically.",
+        "asset_geometry": "Provide sufficient source width for three separate 9:16 crop anchors at 1080x1920 delivery quality. Prefer stitched or generated matched high-resolution tiles over enlarging a portrait image. Determine crop anchors after inspecting artwork.",
+        "synchronization": "Camera reaches each subplot when the corresponding narration clause is spoken; rely on actual narration waveform, not three equal timed slides or a hold timer.",
+        "scene_to_next_transition": "Incoming next scene fades in over outgoing scene at existing scene boundary (~0.4s nominal). No fade to black, no inserted black frames; each new scene starts at its own left subplot.",
+        "negative_constraints": "Do not show all three moments at once in a 9:16 camera view; do not repeat one pose in three crops; no subject cutoff, empty-landscape replacement, snap reframing, unnecessary cuts, or new narrated events.",
+        "qa": "Inspect rendered opening, center and end anchors as well as the fade into the next scene; all essential subjects visible and the visual difference is meaningful."
+      },
+      "scene_transition_out": {
+        "type": "end_of_episode_no_forced_black_fade",
+        "preserve_existing_runtime": true
+      },
+      "subtitle_burn_in": false
+    }
+  ],
+  "opening_hook": "What if ten suns rose at once and scorched the earth?",
+  "scene_transition": {
+    "type": "video_alpha_fade_in_next_scene_over_outgoing_scene",
+    "target_seconds": 0.4,
+    "overlay_incoming_on_outgoing": true,
+    "fade_through_black": false,
+    "insert_black_frames": false,
+    "preserve_existing_scene_boundaries": true,
+    "preserve_total_runtime": true,
+    "implementation_note": "Incoming scene begins from its own leftmost subplot/camera position; blend over the tail of the outgoing scene for a normal video fade-in. Do not create extra black gaps or change narration timestamps. Fade duration is adjustable only to fit available boundary handles."
+  },
+  "subtitle_delivery": {
+    "format": "standalone_srt_plus_optional_embedded_mp4_soft_subtitle_track",
+    "burned_in": false,
+    "generate_standalone_srt": true,
+    "embed_mp4_subtitle_track_when_supported": true,
+    "preferred_mp4_codec": "mov_text",
+    "selectable_by_player": true,
+    "intended_display": "floating_text_near_lower_center_when_enabled",
+    "display_style_is_player_controlled": true,
+    "avoid_artwork_text": true,
+    "subtitle_source": "existing_spoken_caption_and_word_alignment",
+    "preserve_existing_caption_text_and_timings": true,
+    "platform_limit": "Players or social platforms may not retain or display embedded soft subtitles; provide external SRT separately. Never burn subtitles as a workaround without explicit approval."
+  },
+  "visual_layout": {
+    "description": "Each scene is a single visually contiguous horizontal illustrated strip with three chronological subplots, individually readable through a traveling 9:16 portrait viewport. One continuous pass from left to right.",
+    "subplot_count_per_scene": 3,
+    "read_order": "left_to_right",
+    "frieze_medium_lock": "Han dynasty stone-rubbing motifs and silk painting, vermilion ink, lacquer-black outlines",
+    "seams": "Connect visual regions by contiguous landscape, architecture, ornament, or physical medium. Do not stack panels vertically or make a disconnected collage.",
+    "rendering_strategy": "Generate enough native-resolution panorama tiles for three distinct portrait crops; assemble them seamlessly. Do not stretch one small portrait image across the frieze.",
+    "camera": {
+      "primary_direction": "left_to_right",
+      "motion_type": "one_continuous_framed_travel_across_connected_horizontal_artwork",
+      "allow_minor_vertical_framing_adjustments": true,
+      "allow_motivated_zoom": true,
+      "no_fixed_hold_limit": true,
+      "no_internal_scene_cuts": true,
+      "no_internal_hard_crop_changes": true,
+      "camera_anchor_method": "Derive left/middle/right anchors from actual generated subjects and readable 9:16 crops, not blindly from fixed fractional coordinates",
+      "timing_method": "Align each anchor arrival to the relevant spoken narration clause using actual waveform or word alignment; do not divide time equally by subplot",
+      "frame_validation": "Confirm all required subjects are readable on a phone and all three subplots reveal different narrated information"
+    }
+  }
+}
