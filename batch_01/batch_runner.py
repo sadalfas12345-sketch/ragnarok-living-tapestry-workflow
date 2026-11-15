@@ -356,7 +356,11 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
     if not sentences:
         return caption
     bridge = origin_context(spec)
-    if bridge.lower().rstrip(",") in caption.lower():
+    existing_context = " ".join(sentences[1:]).lstrip().lower()
+    if (
+        bridge.lower().rstrip(",") in caption.lower()
+        or re.match(r"^(in|from|according to|set in)\b", existing_context)
+    ):
         return caption
     return " ".join([sentences[0], bridge, *sentences[1:]])
 
