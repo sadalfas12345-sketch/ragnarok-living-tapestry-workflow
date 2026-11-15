@@ -554,21 +554,22 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         frames = max(2, round(dur * 30))
         a1 = (anchor_times[1] - start) / dur
         a2 = (anchor_times[2] - start) / dur
-        # One zoompan per scene. The camera travels smoothly through the three
-        # authored vignettes; there are no internal cuts, resets, or hold limits.
-        p = f"on/{frames-1}"
+        # One continuous camera path per scene. The camera travels smoothly
+        # through the three authored vignettes; there are no internal cuts,
+        # resets, or hold limits.
+        p = f"n/{frames-1}" if horizontal else f"on/{frames-1}"
         eased = f"(1-cos({p}*PI))/2"
         f0, f1, f2 = focus_points
         progress = f"if(lt({eased}\\,{a1:.6f})\\,{f0:.6f}+({f1-f0:.6f})*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,{f1:.6f}+({f2-f1:.6f})*({eased}-{a1:.6f})/({a2-a1:.6f})\\,{f2:.6f}))"
         y0, y1, y2 = [float(v) for v in y_points]
         yprogress = f"if(lt({eased}\\,{a1:.6f})\\,{y0:.6f}+({y1-y0:.6f})*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,{y1:.6f}+({y2-y1:.6f})*({eased}-{a1:.6f})/({a2-a1:.6f})\\,{y2:.6f}))"
         if horizontal:
-            # Horizontal friezes are composed at a wide source aspect ratio.
-            # A 5.25x viewport gives a phone-shaped window while preserving
-            # enough detail to read each vignette. X is the only travel axis.
-            zoom = f"3.0+0.04*{eased}"
-            x = f"(iw-iw/zoom)*({progress})"
-            y = f"(ih-ih/zoom)*({yprogress})"
+            # The artwork is a complete landscape frieze. Crop a full-height
+            # 9:16 viewport and travel across it; do not use zoompan, which
+            # would rescale a 16:9 crop into a portrait frame and make the
+            # scroll feel like an artificial punch-in.
+            x = f"(iw-ow)*({progress})"
+            y = "0"
             scene["travel_axis"] = "horizontal"
         else:
             zoom = f"1.55+0.10*{eased}"
@@ -577,7 +578,10 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             scene["travel_axis"] = "vertical"
         # Scene boundaries are composited later as incoming-scene alpha fades.
         # Do not fade individual segments to black here.
-        vf = f"zoompan=z={zoom}:x={x}:y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p"
+        if horizontal:
+            vf = f"crop=w=ih*9/16:h=ih:x={x}:y={y},scale=1080:1920:flags=lanczos,fps=30,format=yuv420p"
+        else:
+            vf = f"zoompan=z={zoom}:x={x}:y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p"
         out = segdir / f"S{i:02d}_B01.mp4"
         run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
         files.append(out)
