@@ -533,8 +533,8 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             denom = 1.0 - viewport
             focus_points = [
                 ((1.0 / 6.0) - viewport / 2.0) / denom,
-                ((1.0 / 2.0) - viewport / 2.0) / denom,
-                ((5.0 / 6.0) - viewport / 2.0) / denom,
+                ((0.48) - viewport / 2.0) / denom,
+                ((0.78) - viewport / 2.0) / denom,
             ]
         else:
             focus_points = [0.0, 0.5, 1.0]
