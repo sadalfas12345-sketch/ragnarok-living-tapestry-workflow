@@ -32,6 +32,7 @@ FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
 VOICE = os.environ.get("LIVING_TAPESTRIES_VOICE", "en-US-AvaNeural")
+SUBTITLE_MODE = os.environ.get("LIVING_TAPESTRIES_SUBTITLE_MODE", "burned")
 
 MUSIC_PROFILES = {
     "default": [
@@ -493,6 +494,8 @@ def write_srt(timeline: dict[str, Any], out: Path) -> None:
 
 def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     tl = json.loads((epdir / "timeline.json").read_text(encoding="utf-8"))
+    anchor_manifest_path = epdir / "assets" / "anchor_manifest.json"
+    anchor_manifest = json.loads(anchor_manifest_path.read_text(encoding="utf-8")) if anchor_manifest_path.exists() else {}
     segdir = epdir / "segments"; segdir.mkdir(exist_ok=True)
     files = []
     for i, scene in enumerate(tl["scenes"], 1):
@@ -519,10 +522,24 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         anchor_times = [max(start, min(end, t)) for t in anchor_times]
         anchor_times = [anchor_times[0], max(anchor_times[0] + 0.01, anchor_times[1]), max(anchor_times[1] + 0.01, anchor_times[2])]
         horizontal = source_asset == horizontal_asset
+        if horizontal:
+            base_zoom = 5.25
+            viewport = 1.0 / base_zoom
+            denom = 1.0 - viewport
+            focus_points = [
+                ((1.0 / 6.0) - viewport / 2.0) / denom,
+                ((1.0 / 2.0) - viewport / 2.0) / denom,
+                ((5.0 / 6.0) - viewport / 2.0) / denom,
+            ]
+        else:
+            focus_points = [0.0, 0.5, 1.0]
+        y_points = anchor_manifest.get("scenes", {}).get(scene["id"], {}).get("y_focus", [0.5, 0.5, 0.5])
+        if len(y_points) != 3:
+            raise ValueError(f"{scene['id']} anchor manifest must contain three y_focus values")
         anchors = [
-            {"anchor": "opening", "x_focus": 0.0, "y_focus": 0.5, "spoken_anchor": phrases[0]["text"]},
-            {"anchor": "development", "x_focus": 0.5, "y_focus": 0.5, "spoken_anchor": phrases[min(1, len(phrases)-1)]["text"]},
-            {"anchor": "reveal", "x_focus": 1.0, "y_focus": 0.5, "spoken_anchor": phrases[min(2, len(phrases)-1)]["text"]},
+            {"anchor": "opening", "x_focus": round(focus_points[0], 4), "y_focus": 0.5, "spoken_anchor": phrases[0]["text"]},
+            {"anchor": "development", "x_focus": round(focus_points[1], 4), "y_focus": 0.5, "spoken_anchor": phrases[min(1, len(phrases)-1)]["text"]},
+            {"anchor": "reveal", "x_focus": round(focus_points[2], 4), "y_focus": 0.5, "spoken_anchor": phrases[min(2, len(phrases)-1)]["text"]},
         ]
         beats = []
         for b, item in enumerate(ordered):
@@ -536,22 +553,26 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         # authored vignettes; there are no internal cuts, resets, or hold limits.
         p = f"on/{frames-1}"
         eased = f"(1-cos({p}*PI))/2"
-        progress = f"if(lt({eased}\\,{a1:.6f})\\,0.5*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,0.5+0.5*({eased}-{a1:.6f})/({a2-a1:.6f})\\,0.5+0.5*({eased}-{a2:.6f})/{max(1-a2,0.0001):.6f}))"
+        f0, f1, f2 = focus_points
+        progress = f"if(lt({eased}\\,{a1:.6f})\\,{f0:.6f}+({f1-f0:.6f})*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,{f1:.6f}+({f2-f1:.6f})*({eased}-{a1:.6f})/({a2-a1:.6f})\\,{f2:.6f}))"
+        y0, y1, y2 = [float(v) for v in y_points]
+        yprogress = f"if(lt({eased}\\,{a1:.6f})\\,{y0:.6f}+({y1-y0:.6f})*{eased}/{a1:.6f}\\,if(lt({eased}\\,{a2:.6f})\\,{y1:.6f}+({y2-y1:.6f})*({eased}-{a1:.6f})/({a2-a1:.6f})\\,{y2:.6f}))"
         if horizontal:
             # Horizontal friezes are composed at a wide source aspect ratio.
             # A 5.25x viewport gives a phone-shaped window while preserving
             # enough detail to read each vignette. X is the only travel axis.
             zoom = f"5.25+0.10*{eased}"
             x = f"(iw-iw/zoom)*({progress})"
-            y = "ih/2-(ih/zoom/2)"
+            y = f"(ih-ih/zoom)*({yprogress})"
             scene["travel_axis"] = "horizontal"
         else:
             zoom = f"1.55+0.10*{eased}"
             x = "iw/2-(iw/zoom/2)"
-            y = f"(ih-ih/zoom)*({progress})"
+            y = f"(ih-ih/zoom)*({yprogress})"
             scene["travel_axis"] = "vertical"
-        fade = f",fade=t=in:st=0:d=0.18,fade=t=out:st={max(0,dur-0.18):.3f}:d=0.18"
-        vf = f"zoompan=z={zoom}:x={x}:y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p{fade}"
+        # Scene boundaries are composited later as incoming-scene alpha fades.
+        # Do not fade individual segments to black here.
+        vf = f"zoompan=z={zoom}:x={x}:y={y}:d={frames}:s=1080x1920:fps=30,format=yuv420p"
         out = segdir / f"S{i:02d}_B01.mp4"
         run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", str(source_asset), "-vf", vf, "-frames:v", str(frames), "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
         files.append(out)
@@ -559,14 +580,35 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     (epdir / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     concat = segdir / "concat.txt"
     concat.write_text("\n".join(f"file '{p.resolve()}'" for p in files), encoding="utf-8")
+    # Build a single scene timeline with the outgoing frame held underneath
+    # each incoming scene's 0.4s alpha fade. This preserves the authored total
+    # runtime and never creates a fade-to-black gap.
+    runtime = float(tl["runtime_seconds"])
+    durations = [float(s["end"]) - float(s["start"]) for s in tl["scenes"]]
+    inputs = []
+    for p in files:
+        inputs += ["-i", str(p)]
+    graph = [f"[0:v]tpad=stop_mode=clone:stop_duration={max(0,runtime-durations[0]):.3f},trim=duration={runtime:.3f},setpts=PTS-STARTPTS[base]"]
+    current = "[base]"
+    offset = durations[0]
+    for idx in range(1, len(files)):
+        incoming = f"[v{idx}]"
+        graph.append(f"[{idx}:v]format=yuva420p,fade=t=in:st=0:d=0.4:alpha=1,setpts=PTS-STARTPTS+{offset:.3f}/TB{incoming}")
+        nxt = f"[mix{idx}]"
+        graph.append(f"{current}{incoming}overlay=0:0:eof_action=pass:format=auto{nxt}")
+        current = nxt
+        offset += durations[idx]
+    graph.append(f"{current}trim=duration={runtime:.3f},setpts=PTS-STARTPTS,format=yuv420p[outv]")
     raw = epdir / "video_only.mp4"
-    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(concat), "-c", "copy", str(raw)])
-    srt = epdir / "Captions_final.srt"
-    sub_path = str(srt.resolve()).replace("\\", "/").replace(":", "\\:")
-    vf = f"subtitles=filename='{sub_path}':force_style='FontName=Georgia,FontSize=18,PrimaryColour=&H00F5F1E8,OutlineColour=&H80000000,BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginV=125'"
-    out = epdir / "video_captioned.mp4"
-    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(raw), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "500k", str(out)])
-    return out
+    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", *inputs, "-filter_complex", ";".join(graph), "-map", "[outv]", "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "900k", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(raw)])
+    if SUBTITLE_MODE == "burned":
+        srt = epdir / "Captions_final.srt"
+        sub_path = str(srt.resolve()).replace("\\", "/").replace(":", "\\:")
+        vf = f"subtitles=filename='{sub_path}':force_style='FontName=Georgia,FontSize=18,PrimaryColour=&H00F5F1E8,OutlineColour=&H80000000,BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginV=125'"
+        captioned = epdir / "video_captioned.mp4"
+        run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(raw), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "veryfast", "-b:v", "900k", "-pix_fmt", "yuv420p", str(captioned)])
+        return captioned
+    return raw
 
 
 def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
@@ -600,8 +642,10 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery"}.get(spec["episode_number"], "default_ragnarok_palette")
     (epdir / "music_sources.json").write_text(json.dumps({"profile": profile_name, "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     out = epdir / "final_vertical_1080x1920.mp4"
-    video = epdir / "video_captioned.mp4"
-    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(video), "-i", str(final), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)])
+    video = epdir / ("video_captioned.mp4" if SUBTITLE_MODE == "burned" else "video_only.mp4")
+    # Do not use -shortest here: an SRT's final cue can end before the
+    # narration tail, which would truncate an otherwise correct video.
+    run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(video), "-i", str(final), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{runtime:.3f}", "-movflags", "+faststart", str(out)])
     for stem in (narration, music, sfx):
         shutil.copy2(stem, epdir / stem.name)
     return out
@@ -652,7 +696,15 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
         scene = next((s for s in tl["scenes"] if s["id"] == c["scene"]), None)
         if scene and (c["start"] < scene["start"] - 0.08 or c["end"] > scene["speech_end"] + 0.08): errors.append(f"caption {i+1} crosses a scene speech boundary")
     for i in range(1, 7):
-        if not (epdir / "assets" / f"P{i:02d}.png").exists(): errors.append(f"missing P{i:02d}.png")
+        if not ((epdir / "assets" / f"H{i:02d}.png").exists() or (epdir / "assets" / f"P{i:02d}.png").exists()):
+            errors.append(f"missing scene artwork H{i:02d}.png or P{i:02d}.png")
+    if SUBTITLE_MODE not in {"burned", "soft"}:
+        errors.append(f"unsupported subtitle mode: {SUBTITLE_MODE}")
+    if SUBTITLE_MODE == "soft":
+        stream_info = json.loads(run([FFPROBE, "-v", "error", "-show_streams", "-of", "json", str(epdir / "final_vertical_1080x1920.mp4")], capture=True)).get("streams", [])
+        subtitle_streams = [s for s in stream_info if s.get("codec_type") == "subtitle"]
+        if not subtitle_streams or subtitle_streams[0].get("codec_name") != "mov_text":
+            errors.append("final MP4 is missing selectable mov_text subtitles")
     audit = epdir / "caption_audit"; audit.mkdir(exist_ok=True)
     for i, c in enumerate(caps, 1):
         out = audit / f"caption_{i:03d}.jpg"

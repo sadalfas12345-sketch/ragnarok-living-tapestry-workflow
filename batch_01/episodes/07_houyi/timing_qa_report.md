@@ -2,9 +2,9 @@
 
 - **episode:** 7
 - **title:** Hou Yi: The Archer Who Shot the Suns
-- **timeline_runtime_seconds:** 62.266
-- **narration_runtime_seconds:** 62.266
-- **video_runtime_seconds:** 62.266
+- **timeline_runtime_seconds:** 61.828
+- **narration_runtime_seconds:** 61.828
+- **video_runtime_seconds:** 61.833
 - **caption_count:** 26
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** traditional_narrative_or_literary_retelling

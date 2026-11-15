@@ -87,17 +87,17 @@ Water returned to land that had nearly
 become desert.
 
 23
-00:00:52,119 --> 00:00:54,420
+00:00:52,119 --> 00:00:54,440
 The hero did not make the world
 
 24
-00:00:54,430 --> 00:00:56,780
+00:00:54,450 --> 00:00:56,820
 safe by destroying all power.
 
 25
-00:00:57,340 --> 00:00:59,240
-He made it livable by leaving enoughâ
+00:00:57,360 --> 00:00:59,360
+He made it livable by leaving enough
 
 26
-00:00:59,920 --> 00:01:00,700
+00:00:59,370 --> 00:01:00,300
 and no more.

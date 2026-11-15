@@ -1,0 +1,12 @@
+{
+  "schema": "living_tapestry_subject_anchor_v1",
+  "source": "hand-verified focal regions in the generated 3-tile panoramas",
+  "scenes": {
+    "S01": {"y_focus": [0.02, 0.02, 0.02]},
+    "S02": {"y_focus": [0.78, 0.68, 0.72]},
+    "S03": {"y_focus": [0.48, 0.48, 0.48]},
+    "S04": {"y_focus": [0.18, 0.22, 0.28]},
+    "S05": {"y_focus": [0.46, 0.52, 0.58]},
+    "S06": {"y_focus": [0.56, 0.62, 0.68]}
+  }
+}
