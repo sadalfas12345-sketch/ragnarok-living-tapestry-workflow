@@ -321,6 +321,46 @@ def speech_text(text: str) -> str:
     return spoken
 
 
+def origin_context(spec: dict[str, Any]) -> str:
+    """Return a brief spoken provenance tag derived from authoritative JSON."""
+    civilization = str(spec.get("civilization", "")).strip()
+    lower = civilization.lower()
+    if "ancient egypt" in lower:
+        return "In Egyptian mythology,"
+    if "ancient mesopotamia" in lower:
+        return "In Mesopotamian mythology,"
+    if "ancient greece" in lower:
+        return "In Greek mythology,"
+    if "japan" in lower:
+        year = re.search(r"\b(\d{3,4})\b", civilization)
+        if year:
+            y = int(year.group(1))
+            century = (y - 1) // 100 + 1
+            names = {15: "fifteenth", 16: "sixteenth", 17: "seventeenth", 18: "eighteenth", 19: "nineteenth", 20: "twentieth"}
+            if century in names:
+                return f"In {names[century]}-century Japan,"
+            return f"In Japan in {y},"
+        return "In Japanese legend,"
+    if "china" in lower:
+        return "In Chinese legend,"
+    if civilization:
+        return f"In {civilization} tradition,"
+    return "In this traditional story,"
+
+
+def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str) -> str:
+    """Add provenance after an existing What-if hook without editing source JSON."""
+    if scene_index != 0 or not re.match(r"^What if\b", caption.strip(), re.IGNORECASE):
+        return caption
+    sentences = split_sentences(caption)
+    if not sentences:
+        return caption
+    bridge = origin_context(spec)
+    if bridge.lower().rstrip(",") in caption.lower():
+        return caption
+    return " ".join([sentences[0], bridge, *sentences[1:]])
+
+
 async def edge_scene(text: str, out_mp3: Path, words_json: Path) -> None:
     import edge_tts
     communicate = edge_tts.Communicate(text, VOICE, rate=os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"), volume="+0%", pitch="+0Hz")
@@ -380,9 +420,13 @@ def whisper_align(audio_path: Path) -> list[dict[str, Any]]:
 def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     audio_dir = epdir / "audio"
     audio_dir.mkdir(parents=True, exist_ok=True)
+    effective_scenes = [
+        {**scene, "caption": effective_scene_caption(spec, idx, str(scene["caption"]))}
+        for idx, scene in enumerate(spec["scenes"])
+    ]
     scene_wavs: list[np.ndarray] = []
     scene_meta = []
-    for idx, scene in enumerate(spec["scenes"], 1):
+    for idx, scene in enumerate(effective_scenes, 1):
         mp3 = audio_dir / f"scene_{idx:02d}.mp3"
         words_file = audio_dir / f"scene_{idx:02d}_words.json"
         wav = audio_dir / f"scene_{idx:02d}.wav"
@@ -436,7 +480,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     captions = []
     phrases = []
     cursor_word = 0
-    for scene, scene_tl in zip(spec["scenes"], scenes):
+    for scene, scene_tl in zip(effective_scenes, scenes):
         tokens = script_tokens(scene["caption"])
         scene_measured = [x for x in measured if x["end"] >= scene_tl["start"] - 0.2 and x["start"] <= scene_tl["speech_end"] + 0.2]
         scene_pairs = []
