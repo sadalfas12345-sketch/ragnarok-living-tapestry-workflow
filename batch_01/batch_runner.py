@@ -498,6 +498,7 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     anchor_manifest = json.loads(anchor_manifest_path.read_text(encoding="utf-8")) if anchor_manifest_path.exists() else {}
     segdir = epdir / "segments"; segdir.mkdir(exist_ok=True)
     files = []
+    transition_duration = 0.22
     for i, scene in enumerate(tl["scenes"], 1):
         horizontal_asset = epdir / "assets" / f"H{i:02d}.png"
         source_asset = horizontal_asset if horizontal_asset.exists() else epdir / "assets" / f"P{i:02d}.png"
@@ -551,7 +552,10 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             beats.append({"start": round(anchor_times[b], 3), "end": round(anchor_times[b + 1] if b < 2 else end, 3), "reason": item.get("visual", ""), **anchors[b]})
         scene["visual_beats"] = beats
         dur = end - start
-        frames = max(2, round(dur * 30))
+        # Let each outgoing scene continue moving through the short fade.
+        # The overlap is part of the scene motion, not a frozen hold.
+        overlap = transition_duration if i < len(tl["scenes"]) else 0.0
+        frames = max(2, round((dur + overlap) * 30))
         a1 = (anchor_times[1] - start) / dur
         a2 = (anchor_times[2] - start) / dur
         # One continuous camera path per scene. The camera travels smoothly
@@ -603,9 +607,9 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     (epdir / "timeline.json").write_text(json.dumps(tl, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     concat = segdir / "concat.txt"
     concat.write_text("\n".join(f"file '{p.resolve()}'" for p in files), encoding="utf-8")
-    # Build a single scene timeline with the outgoing frame held underneath
-    # each incoming scene's 0.4s alpha fade. This preserves the authored total
-    # runtime and never creates a fade-to-black gap.
+    # Build a single scene timeline with a short incoming-scene fade. Each
+    # outgoing segment was rendered through the overlap, so it keeps moving
+    # underneath the fade instead of freezing or reverting to Scene 01.
     runtime = float(tl["runtime_seconds"])
     durations = [float(s["end"]) - float(s["start"]) for s in tl["scenes"]]
     inputs = []
@@ -614,7 +618,6 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     graph = [f"[0:v]tpad=stop_mode=clone:stop_duration={max(0,runtime-durations[0]):.3f},trim=duration={runtime:.3f},setpts=PTS-STARTPTS[base]"]
     current = "[base]"
     offset = durations[0]
-    transition_duration = 0.22
     for idx in range(1, len(files)):
         incoming = f"[v{idx}]"
         graph.append(f"[{idx}:v]format=yuva420p,fade=t=in:st=0:d={transition_duration:.2f}:alpha=1,setpts=PTS-STARTPTS+{offset:.3f}/TB{incoming}")
