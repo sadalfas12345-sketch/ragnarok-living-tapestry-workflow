@@ -532,8 +532,13 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         anchor_times = [start]
         if len(phrases) >= 3:
             anchor_times += [float(phrases[1]["start"]), float(phrases[2]["start"])]
-        else:
+        elif len(phrases) == 2:
             anchor_times += [float(phrases[1]["start"]), float(scene["speech_end"])]
+        else:
+            # A short scene may contain one measured phrase. Keep three
+            # chronological visual anchors by using its measured speech end
+            # and the authored scene end, without fabricating spoken text.
+            anchor_times += [float(scene["speech_end"]), end]
         anchor_times = [max(start, min(end, t)) for t in anchor_times]
         anchor_times = [anchor_times[0], max(anchor_times[0] + 0.01, anchor_times[1]), max(anchor_times[1] + 0.01, anchor_times[2])]
         horizontal = source_asset == horizontal_asset
