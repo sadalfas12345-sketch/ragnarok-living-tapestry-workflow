@@ -614,9 +614,10 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     graph = [f"[0:v]tpad=stop_mode=clone:stop_duration={max(0,runtime-durations[0]):.3f},trim=duration={runtime:.3f},setpts=PTS-STARTPTS[base]"]
     current = "[base]"
     offset = durations[0]
+    transition_duration = 0.22
     for idx in range(1, len(files)):
         incoming = f"[v{idx}]"
-        graph.append(f"[{idx}:v]format=yuva420p,fade=t=in:st=0:d=0.4:alpha=1,setpts=PTS-STARTPTS+{offset:.3f}/TB{incoming}")
+        graph.append(f"[{idx}:v]format=yuva420p,fade=t=in:st=0:d={transition_duration:.2f}:alpha=1,setpts=PTS-STARTPTS+{offset:.3f}/TB{incoming}")
         nxt = f"[mix{idx}]"
         graph.append(f"{current}{incoming}overlay=0:0:eof_action=pass:format=auto{nxt}")
         current = nxt
