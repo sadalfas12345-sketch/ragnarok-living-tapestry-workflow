@@ -523,7 +523,12 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         anchor_times = [anchor_times[0], max(anchor_times[0] + 0.01, anchor_times[1]), max(anchor_times[1] + 0.01, anchor_times[2])]
         horizontal = source_asset == horizontal_asset
         if horizontal:
-            base_zoom = 5.25
+            # Keep the 9:16 view readable without a harsh punch-in. The
+            # panorama is built from three portrait tiles, so 3x is the
+            # natural scene-scale view; the earlier 5.25x setting felt like
+            # an artificial zoom instead of a camera traveling through the
+            # frieze.
+            base_zoom = 3.0
             viewport = 1.0 / base_zoom
             denom = 1.0 - viewport
             focus_points = [
@@ -561,7 +566,7 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             # Horizontal friezes are composed at a wide source aspect ratio.
             # A 5.25x viewport gives a phone-shaped window while preserving
             # enough detail to read each vignette. X is the only travel axis.
-            zoom = f"5.25+0.10*{eased}"
+            zoom = f"3.0+0.04*{eased}"
             x = f"(iw-iw/zoom)*({progress})"
             y = f"(ih-ih/zoom)*({yprogress})"
             scene["travel_axis"] = "horizontal"
