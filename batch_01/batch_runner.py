@@ -509,7 +509,19 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         progression = source_scene.get("visual_progression", {})
         ordered = progression.get("ordered_story_beats", [])
         if len(ordered) != 3:
-            raise ValueError(f"{scene['id']} must define exactly three ordered visual beats")
+            # Older authoritative story JSONs express the same intent through
+            # required_visuals and beat_title. Derive a renderer-only
+            # three-beat view from those fields instead of inventing content
+            # or rejecting an otherwise valid episode.
+            required = list(source_scene.get("required_visuals", []))
+            title = str(source_scene.get("beat_title", scene["id"]))
+            if not required:
+                raise ValueError(f"{scene['id']} has neither ordered_story_beats nor required_visuals")
+            ordered = [
+                {"visual": f"Opening: {required[0]}"},
+                {"visual": f"Development: {required[min(1, len(required) - 1)]}"},
+                {"visual": f"Reveal: {title}; {required[-1]}"},
+            ]
         phrases = [p for p in tl["narration"]["phrases"] if p.get("scene") == scene["id"]]
         if not phrases:
             raise ValueError(f"No measured narration phrases for {scene['id']}")
