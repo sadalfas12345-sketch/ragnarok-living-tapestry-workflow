@@ -575,6 +575,11 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             # 9:16 viewport and travel across it; do not use zoompan, which
             # would rescale a 16:9 crop into a portrait frame and make the
             # scroll feel like an artificial punch-in.
+            # Use one uninterrupted scene-wide curve. The artwork contains
+            # the three story beats; changing path equations at their anchors
+            # creates visible speed shifts even when each segment is eased.
+            whole_scene = f"({eased})*({eased})*(3-2*({eased}))"
+            progress = f"{f0:.6f}+({f2-f0:.6f})*{whole_scene}"
             x = f"(iw-ow)*({progress})"
             y = "0"
             scene["travel_axis"] = "horizontal"
