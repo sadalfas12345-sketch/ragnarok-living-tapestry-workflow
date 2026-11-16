@@ -871,6 +871,12 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     if abs(narration_duration - tl["runtime_seconds"]) > 0.06: errors.append("narration duration disagrees with timeline")
     if abs(video_duration - tl["runtime_seconds"]) > 0.12: errors.append("video duration disagrees with timeline")
     caps = tl["narration"]["captions"]
+    intro_policy = FEEDBACK_POLICY.get("character_intros", {})
+    if intro_policy.get("spoiler_free", True):
+        for name, intro in CHARACTER_INTRO_LEXICON.items():
+            for term in intro_policy.get("forbidden_outcome_terms", []):
+                if re.search(rf"\b{re.escape(str(term))}\b", str(intro), re.IGNORECASE):
+                    errors.append(f"character intro for {name} contains spoiler outcome term {term!r}")
     hook = str(spec.get("opening_hook", "")).strip()
     alignment_file = epdir / "audio" / "whisper_alignment.json"
     if hook and alignment_file.exists():

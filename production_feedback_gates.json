@@ -53,6 +53,8 @@
     "max_inserted_words": 6,
     "max_new_intro_per_scene": 1,
     "never_repeat": true,
-    "timing_authority": "narration_waveform"
+    "timing_authority": "narration_waveform",
+    "spoiler_free": true,
+    "forbidden_outcome_terms": ["survivor", "dies", "dead", "murdered", "killed", "returns", "wins", "loses", "defeated"]
   }
 }
