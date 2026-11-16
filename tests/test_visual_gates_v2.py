@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import unittest
 from pathlib import Path
 
@@ -7,6 +8,7 @@ MODULE = Path(__file__).parents[1] / "batch_01" / "visual_gates_v2.py"
 spec = importlib.util.spec_from_file_location("visual_gates_v2", MODULE)
 gates = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gates)
+LEXICON = json.loads((MODULE.parent / "character_intro_lexicon.json").read_text(encoding="utf-8"))
 
 
 class VisualGateUnitTests(unittest.TestCase):
@@ -49,7 +51,7 @@ class VisualGateUnitTests(unittest.TestCase):
         policy = gates.POLICY["character_intros"]
         self.assertTrue(policy["spoiler_free"])
         forbidden = tuple(policy["forbidden_outcome_terms"])
-        for intro in gates.CHARACTER_INTRO_LEXICON.values():
+        for intro in LEXICON.values():
             self.assertLessEqual(len(str(intro).split()), policy["max_inserted_words"])
             self.assertFalse(any(term.lower() in str(intro).lower().split() for term in forbidden))
 
