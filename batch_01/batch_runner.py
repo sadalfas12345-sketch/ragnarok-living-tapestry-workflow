@@ -419,7 +419,8 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     prior = " ".join(prior_captions).lower()
     max_words = int(CHARACTER_INTRO_POLICY.get("max_inserted_words", 6))
     for name, intro in CHARACTER_INTRO_LEXICON.items():
-        if name.lower() not in caption.lower() or name.lower() in prior:
+        name_pattern = rf"\b{re.escape(name)}\b"
+        if not re.search(name_pattern, caption, re.IGNORECASE) or re.search(name_pattern, prior, re.IGNORECASE):
             continue
         intro_text = str(intro).lower()
         intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
