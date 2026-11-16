@@ -31,6 +31,20 @@ class VisualGateUnitTests(unittest.TestCase):
         self.assertEqual(gates.POLICY["camera"]["default_direction"], "right")
         self.assertTrue(gates.POLICY["audio"]["narration_is_master_clock"])
 
+    def test_artwork_gate_forbids_portrait_fallback(self):
+        self.assertTrue(gates.POLICY["artwork"]["require_horizontal_panorama"])
+        self.assertFalse(gates.POLICY["artwork"]["allow_legacy_portrait_fallback"])
+        self.assertGreaterEqual(gates.POLICY["artwork"]["minimum_width_pixels"], 2500)
+
+    def test_provenance_gate_is_source_specific(self):
+        self.assertEqual(gates.expected_provenance("Ancient Mesopotamia"), "mesopotamian mythology")
+        self.assertEqual(gates.expected_provenance("Ancient Egypt"), "egyptian mythology")
+        self.assertIn("mythology", gates.POLICY["provenance"]["recognized_markers"])
+
+    def test_caption_gate_rejects_mojibake(self):
+        forbidden = gates.POLICY["rendered_caption_text"]["forbidden_sequences"]
+        self.assertIn("Ã¢", forbidden)
+
 
 if __name__ == "__main__":
     unittest.main()

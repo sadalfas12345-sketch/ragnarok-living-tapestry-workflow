@@ -12,7 +12,24 @@
   "scenes": {
     "required_visual_beats": 3,
     "transition_max_black_luma": 2.0,
-    "transition_min_progression_diff": 0.05
+    "transition_min_progression_diff": 0.05,
+    "require_actual_rendered_progression": true
+  },
+  "artwork": {
+    "require_horizontal_panorama": true,
+    "required_asset_prefix": "H",
+    "allow_legacy_portrait_fallback": false,
+    "minimum_width_pixels": 2500,
+    "minimum_height_pixels": 1600
+  },
+  "provenance": {
+    "required_after_what_if": true,
+    "must_be_derived_from_civilization": true,
+    "recognized_markers": ["mythology", "legend", "tradition", "century", "historical account", "epic"]
+  },
+  "rendered_caption_text": {
+    "reject_mojibake": true,
+    "forbidden_sequences": ["â€™", "â€œ", "â€", "Ã¢", "Ã‚"]
   },
   "captions": {
     "allow_overlap_seconds": 0.0,

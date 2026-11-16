@@ -42,6 +42,11 @@ MOJIBAKE_REPLACEMENTS = {
     "â€”": "—",
     "Â": "",
 }
+MOJIBAKE_EXTRA_REPLACEMENTS = {
+    "Ã¢â‚¬Â": '"',
+    "Ã¢â‚¬â€”": "—",
+}
+MOJIBAKE_REPLACEMENTS.update(MOJIBAKE_EXTRA_REPLACEMENTS)
 FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
@@ -385,10 +390,11 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
         return caption
     bridge = origin_context(spec)
     existing_context = " ".join(sentences[1:]).lstrip().lower()
-    if (
-        bridge.lower().rstrip(",") in caption.lower()
-        or re.match(r"^(in|from|according to|set in)\b", existing_context)
-    ):
+    provenance_markers = tuple(str(x).lower() for x in FEEDBACK_POLICY.get("provenance", {}).get("recognized_markers", []))
+    has_provenance = bool(re.match(r"^(in|from|according to|set in)\b", existing_context)) and any(
+        marker in existing_context for marker in provenance_markers
+    )
+    if bridge.lower().rstrip(",") in caption.lower() or has_provenance:
         return caption
     caption = " ".join([sentences[0], bridge, *sentences[1:]])
     return caption
@@ -616,7 +622,16 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     transition_duration = 0.22
     for i, scene in enumerate(tl["scenes"], 1):
         horizontal_asset = epdir / "assets" / f"H{i:02d}.png"
-        source_asset = horizontal_asset if horizontal_asset.exists() else epdir / "assets" / f"P{i:02d}.png"
+        require_horizontal = bool(FEEDBACK_POLICY.get("artwork", {}).get("require_horizontal_panorama", True))
+        if require_horizontal:
+            if not horizontal_asset.exists():
+                raise RuntimeError(
+                    f"artwork gate failed for {scene['id']}: missing required horizontal panorama {horizontal_asset.name}; "
+                    "legacy portrait fallback is disabled"
+                )
+            source_asset = horizontal_asset
+        else:
+            source_asset = horizontal_asset if horizontal_asset.exists() else epdir / "assets" / f"P{i:02d}.png"
         if not source_asset.exists():
             raise FileNotFoundError(source_asset)
         source_scene = spec["scenes"][i - 1]
@@ -868,9 +883,26 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
         if c["start"] < 0 or c["end"] > tl["runtime_seconds"] + 0.01: errors.append(f"caption {i+1} outside runtime")
         scene = next((s for s in tl["scenes"] if s["id"] == c["scene"]), None)
         if scene and (c["start"] < scene["start"] - 0.08 or c["end"] > scene["speech_end"] + 0.08): errors.append(f"caption {i+1} crosses a scene speech boundary")
+    artwork_policy = FEEDBACK_POLICY.get("artwork", {})
     for i in range(1, 7):
-        if not ((epdir / "assets" / f"H{i:02d}.png").exists() or (epdir / "assets" / f"P{i:02d}.png").exists()):
-            errors.append(f"missing scene artwork H{i:02d}.png or P{i:02d}.png")
+        h_asset = epdir / "assets" / f"H{i:02d}.png"
+        if artwork_policy.get("require_horizontal_panorama", True) and not h_asset.exists():
+            errors.append(f"missing required horizontal panorama H{i:02d}.png")
+        elif not h_asset.exists() and not (epdir / "assets" / f"P{i:02d}.png").exists():
+            errors.append(f"missing scene artwork H{i:02d}.png")
+    caption_text = " ".join(str(c.get("text", "")) for c in caps)
+    if FEEDBACK_POLICY.get("rendered_caption_text", {}).get("reject_mojibake", True):
+        for bad in FEEDBACK_POLICY.get("rendered_caption_text", {}).get("forbidden_sequences", []):
+            if bad in caption_text:
+                errors.append(f"caption text contains forbidden mojibake sequence {bad!r}")
+    if FEEDBACK_POLICY.get("provenance", {}).get("required_after_what_if", True) and tl.get("scenes"):
+        first_id = tl["scenes"][0]["id"]
+        first_scene_text = " ".join(str(c.get("text", "")) for c in caps if c.get("scene") == first_id)
+        first_sentences = split_sentences(first_scene_text)
+        if first_sentences and re.match(r"^What if\b", first_sentences[0], re.I):
+            markers = tuple(str(x).lower() for x in FEEDBACK_POLICY.get("provenance", {}).get("recognized_markers", []))
+            if not any(marker in first_scene_text.lower() for marker in markers):
+                errors.append("first What if scene is missing a spoken source/provenance phrase")
     if SUBTITLE_MODE not in {"burned", "soft"}:
         errors.append(f"unsupported subtitle mode: {SUBTITLE_MODE}")
     if SUBTITLE_MODE == "soft":

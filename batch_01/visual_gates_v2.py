@@ -74,6 +74,27 @@ def mean_abs_diff(a: bytes, b: bytes) -> float:
     return sum(abs(x - y) for x, y in zip(a, b)) / len(a)
 
 
+def expected_provenance(civilization: str) -> str:
+    value = civilization.lower()
+    if "ancient egypt" in value:
+        return "egyptian mythology"
+    if "ancient mesopotamia" in value:
+        return "mesopotamian mythology"
+    if "ancient greece" in value:
+        return "greek mythology"
+    if "japan" in value:
+        return "japan"
+    if "china" in value:
+        return "chinese legend"
+    return "tradition"
+
+
+def image_dimensions(path: Path) -> tuple[int, int]:
+    probe = ffprobe_json(path)
+    stream = next((x for x in probe.get("streams", []) if x.get("codec_type") == "video"), {})
+    return int(stream.get("width", 0)), int(stream.get("height", 0))
+
+
 def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     timeline_path = epdir / "timeline.json"
     video = epdir / "final_vertical_1080x1920.mp4"
@@ -128,6 +149,32 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if cap["end"] <= cap["start"]: errors.append(f"caption {i + 1} has non-positive duration")
         if cap["start"] < -0.01 or cap["end"] > runtime + 0.12: errors.append(f"caption {i + 1} is outside the timeline")
         if i and cap["start"] < captions[i - 1]["end"] - 0.001: errors.append(f"caption overlap {i} -> {i + 1}")
+
+    caption_text = " ".join(str(c.get("text", "")) for c in captions)
+    for bad in POLICY.get("rendered_caption_text", {}).get("forbidden_sequences", []):
+        if bad in caption_text:
+            errors.append(f"captions contain forbidden mojibake sequence {bad!r}")
+
+    source_path = epdir / "source.json"
+    if source_path.exists() and POLICY.get("provenance", {}).get("required_after_what_if", True):
+        source = json.loads(source_path.read_text(encoding="utf-8"))
+        first_scene_id = str(scenes[0].get("id", "S01")) if scenes else "S01"
+        first_text = " ".join(str(c.get("text", "")) for c in captions if c.get("scene") == first_scene_id)
+        if re.match(r"^What if\b", first_text, re.I):
+            expected = expected_provenance(str(source.get("civilization", "")))
+            if expected not in first_text.lower() and not any(marker in first_text.lower() for marker in POLICY["provenance"].get("recognized_markers", [])):
+                errors.append(f"first What if scene lacks source/provenance phrase for {source.get('civilization', 'unknown civilization')}")
+
+    artwork_policy = POLICY.get("artwork", {})
+    for index in range(1, len(scenes) + 1):
+        asset = epdir / "assets" / f"H{index:02d}.png"
+        if artwork_policy.get("require_horizontal_panorama", True) and not asset.exists():
+            errors.append(f"scene S{index:02d} is missing required horizontal panorama H{index:02d}.png")
+            continue
+        if asset.exists():
+            aw, ah = image_dimensions(asset)
+            if aw < int(artwork_policy.get("minimum_width_pixels", 0)) or ah < int(artwork_policy.get("minimum_height_pixels", 0)):
+                errors.append(f"scene S{index:02d} panorama is too small: {aw}x{ah}")
 
     audit_dir = epdir / "visual_gates_audit"
     audit_dir.mkdir(exist_ok=True)
