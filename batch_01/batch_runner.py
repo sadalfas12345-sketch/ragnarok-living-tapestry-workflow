@@ -428,6 +428,9 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
             continue
         if len(str(intro).split()) > max_words:
             continue
+        source_pattern = rf"\bIn\s+{re.escape(name)}\b\s*,?"
+        if re.search(source_pattern, caption, re.IGNORECASE):
+            return re.sub(source_pattern, f"{name}, {intro},", caption, count=1, flags=re.IGNORECASE)
         pattern = rf"\b{re.escape(name)}\b\s*,?"
         replacement = f"{name}, {intro},"
         return re.sub(pattern, replacement, caption, count=1)
