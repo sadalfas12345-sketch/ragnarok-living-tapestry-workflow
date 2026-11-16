@@ -260,6 +260,18 @@ def source_files() -> list[Path]:
 def validate_spec(spec: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     pronunciation_policy = FEEDBACK_POLICY.get("pronunciation", {})
+    intro_policy = FEEDBACK_POLICY.get("character_intros", {})
+    if intro_policy.get("enabled", True):
+        max_intro_words = int(intro_policy.get("max_inserted_words", 6))
+        forbidden_intro_terms = [str(x).lower() for x in intro_policy.get("forbidden_outcome_terms", [])]
+        for name, intro in CHARACTER_INTRO_LEXICON.items():
+            intro_words = str(intro).split()
+            if len(intro_words) > max_intro_words:
+                errors.append(f"character intro for {name} exceeds {max_intro_words} words")
+            if intro_policy.get("spoiler_free", True):
+                for term in forbidden_intro_terms:
+                    if re.search(rf"\b{re.escape(term)}\b", str(intro).lower()):
+                        errors.append(f"character intro for {name} contains spoiler outcome term {term!r}")
     if pronunciation_policy.get("reject_empty_overrides"):
         for written, phonetic in PRONUNCIATION_LEXICON.items():
             if not str(written).strip() or not str(phonetic).strip():

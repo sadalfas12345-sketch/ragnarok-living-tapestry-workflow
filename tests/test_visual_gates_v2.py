@@ -45,6 +45,14 @@ class VisualGateUnitTests(unittest.TestCase):
         forbidden = gates.POLICY["rendered_caption_text"]["forbidden_sequences"]
         self.assertIn("Ã¢", forbidden)
 
+    def test_character_intros_are_short_and_spoiler_free(self):
+        policy = gates.POLICY["character_intros"]
+        self.assertTrue(policy["spoiler_free"])
+        forbidden = tuple(policy["forbidden_outcome_terms"])
+        for intro in gates.CHARACTER_INTRO_LEXICON.values():
+            self.assertLessEqual(len(str(intro).split()), policy["max_inserted_words"])
+            self.assertFalse(any(term.lower() in str(intro).lower().split() for term in forbidden))
+
 
 if __name__ == "__main__":
     unittest.main()
