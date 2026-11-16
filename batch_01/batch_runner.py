@@ -33,6 +33,15 @@ MAX_HORIZONTAL_TRAVEL_RATE = float(FEEDBACK_POLICY["camera"]["max_normalized_tra
 PRONUNCIATION_LEXICON = json.loads((ROOT / "pronunciation_lexicon.json").read_text(encoding="utf-8"))
 CHARACTER_INTRO_LEXICON = json.loads((ROOT / "character_intro_lexicon.json").read_text(encoding="utf-8"))
 CHARACTER_INTRO_POLICY = FEEDBACK_POLICY.get("character_intros", {})
+MOJIBAKE_REPLACEMENTS = {
+    "â€™": "'",
+    "â€˜": "'",
+    "â€œ": '"',
+    "â€\u009d": '"',
+    "â€“": "-",
+    "â€”": "—",
+    "Â": "",
+}
 FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
@@ -326,10 +335,18 @@ def script_tokens(text: str) -> list[str]:
 
 def speech_text(text: str) -> str:
     """Use native-friendly TTS phonetics while preserving caption spelling."""
-    spoken = text
+    spoken = normalize_text(text)
     for written, phonetic in sorted(PRONUNCIATION_LEXICON.items(), key=lambda item: len(item[0]), reverse=True):
         spoken = re.sub(rf"(?<!\w){re.escape(written)}(?!\w)", phonetic, spoken)
     return spoken
+
+
+def normalize_text(text: str) -> str:
+    """Repair common UTF-8/Windows-1252 mojibake before audio or captions."""
+    normalized = str(text)
+    for bad, good in MOJIBAKE_REPLACEMENTS.items():
+        normalized = normalized.replace(bad, good)
+    return normalized
 
 
 def origin_context(spec: dict[str, Any]) -> str:
@@ -456,7 +473,8 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     effective_scenes = []
     prior_captions: list[str] = []
     for idx, scene in enumerate(spec["scenes"]):
-        caption = effective_scene_caption(spec, idx, str(scene["caption"]), prior_captions)
+        caption = normalize_text(str(scene["caption"]))
+        caption = effective_scene_caption(spec, idx, caption, prior_captions)
         caption = add_character_intro(caption, prior_captions)
         effective_scenes.append({**scene, "caption": caption})
         prior_captions.append(caption)
