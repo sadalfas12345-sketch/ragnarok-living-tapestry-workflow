@@ -95,6 +95,10 @@ def image_dimensions(path: Path) -> tuple[int, int]:
     return int(stream.get("width", 0)), int(stream.get("height", 0))
 
 
+def _reason_tokens(text: str) -> set[str]:
+    return {t.lower() for t in re.findall(r"[a-zA-Z]{3,}", str(text))}
+
+
 def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     timeline_path = epdir / "timeline.json"
     video = epdir / "final_vertical_1080x1920.mp4"
@@ -143,6 +147,22 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             errors.append(f"scene {scene['id']} does not explicitly forbid hard crop changes")
         previous_end = end
     if scenes and abs(previous_end - runtime) > 0.12: errors.append("last scene end disagrees with timeline runtime")
+
+    if POLICY["scenes"].get("require_narrative_state_change_between_scenes", True):
+        minimum_new = int(POLICY["scenes"].get("minimum_new_transition_tokens", 2))
+        for left, right in zip(scenes, scenes[1:]):
+            left_beats = left.get("visual_beats", [])
+            right_beats = right.get("visual_beats", [])
+            if not left_beats or not right_beats:
+                continue
+            left_tokens = _reason_tokens(left_beats[-1].get("reason", ""))
+            right_tokens = _reason_tokens(right_beats[0].get("reason", ""))
+            new_tokens = right_tokens - left_tokens
+            if len(new_tokens) < minimum_new:
+                errors.append(
+                    f"transition {left['id']} -> {right['id']} lacks a clear narrative state change "
+                    f"({len(new_tokens)} new visual-reason tokens; need {minimum_new})"
+                )
 
     captions = parse_srt(srt)
     for i, cap in enumerate(captions):

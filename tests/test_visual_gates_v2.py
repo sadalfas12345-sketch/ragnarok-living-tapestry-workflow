@@ -32,6 +32,8 @@ class VisualGateUnitTests(unittest.TestCase):
         self.assertEqual(gates.POLICY["scenes"]["required_visual_beats"], 3)
         self.assertEqual(gates.POLICY["camera"]["default_direction"], "right")
         self.assertTrue(gates.POLICY["audio"]["narration_is_master_clock"])
+        self.assertTrue(gates.POLICY["scenes"]["require_narrative_state_change_between_scenes"])
+        self.assertGreaterEqual(gates.POLICY["scenes"]["minimum_new_transition_tokens"], 2)
 
     def test_artwork_gate_forbids_portrait_fallback(self):
         self.assertTrue(gates.POLICY["artwork"]["require_horizontal_panorama"])
