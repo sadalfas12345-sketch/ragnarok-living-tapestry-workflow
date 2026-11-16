@@ -511,7 +511,11 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         if not mp3.exists() or not words_file.exists() or not cache_matches:
             asyncio.run(edge_scene(spoken_caption, mp3, words_file))
             cache_file.write_text(json.dumps(cache_key, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        if not wav.exists() or not cache_matches:
+        # The MP3 is the TTS source of truth.  A stale WAV can survive a
+        # caption/text cache update and silently put the old narration back
+        # on the master clock, so invalidate it whenever the MP3 is newer.
+        wav_stale = wav.exists() and mp3.exists() and wav.stat().st_mtime_ns < mp3.stat().st_mtime_ns
+        if not wav.exists() or not cache_matches or wav_stale:
             run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(mp3), "-ar", str(RATE), "-ac", "1", str(wav)])
         data, rate = sf.read(str(wav), dtype="float32")
         if rate != RATE:
