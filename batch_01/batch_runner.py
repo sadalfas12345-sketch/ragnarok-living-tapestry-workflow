@@ -443,7 +443,7 @@ def smooth_prose(caption: str) -> str:
         return caption
     pattern = re.compile(
         r"(?P<context>In\s+[^,.!?]+),\s+(?P<name>[A-Z][\w’'-]+),\s+"
-        r"(?P<article>a|an|the)\s+(?P<role>[^,.!?]+),\s+(?P<rest>[^.!?]+[.!?])"
+        r"(?P<article>a|an|the)\s+(?P<role>[^,.!?]+),\s*(?P<rest>[^.!?]+[.!?])"
     )
     match = pattern.search(caption)
     if not match:
@@ -453,9 +453,17 @@ def smooth_prose(caption: str) -> str:
         rest = "As humanity multiplied, its noise disturbed the gods."
     else:
         rest = rest[0].upper() + rest[1:]
+    role_text = f"{match.group('article')} {match.group('role')}"
+    role_lower = role_text.lower()
+    if any(word in role_lower for word in ("goddess", "woman", "queen", "mother", "girl")):
+        pronoun = "She"
+    elif any(word in role_lower for word in ("god", "king", "hero", "man", "father", "son", "boy")):
+        pronoun = "He"
+    else:
+        pronoun = "They"
     replacement = (
-        f"{match.group('context')}, {match.group('name')} was "
-        f"{match.group('article')} {match.group('role')}. {rest}"
+        f"{match.group('context')}, {match.group('name')} was {role_text}. "
+        f"{pronoun} {rest}"
     )
     return caption[:match.start()] + replacement + caption[match.end():]
 
