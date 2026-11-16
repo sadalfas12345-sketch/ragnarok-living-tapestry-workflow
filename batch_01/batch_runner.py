@@ -755,7 +755,7 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     if SUBTITLE_MODE == "burned":
         srt = epdir / "Captions_final.srt"
         sub_path = str(srt.resolve()).replace("\\", "/").replace(":", "\\:")
-        vf = f"subtitles=filename='{sub_path}':force_style='FontName=Georgia,FontSize=18,PrimaryColour=&H00F5F1E8,OutlineColour=&H80000000,BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginV=125'"
+        vf = f"subtitles=filename='{sub_path}':force_style='FontName=Arial,FontSize=18,PrimaryColour=&H00F5F1E8,OutlineColour=&H80000000,BorderStyle=1,Outline=2,Shadow=1,Alignment=2,MarginV=125'"
         captioned = epdir / "video_captioned.mp4"
         run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(raw), "-vf", vf, "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "6M", "-bufsize", "12M", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(captioned)])
         return captioned
