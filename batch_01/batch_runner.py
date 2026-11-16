@@ -403,10 +403,12 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     for name, intro in CHARACTER_INTRO_LEXICON.items():
         if name.lower() not in caption.lower() or name.lower() in prior:
             continue
+        if str(intro).lower() in caption.lower():
+            continue
         if len(str(intro).split()) > max_words:
             continue
-        pattern = rf"\b{re.escape(name)}\b"
-        replacement = f"{name}, {intro},"
+        pattern = rf"\b{re.escape(name)}\b\s*,?"
+        replacement = f"{name}, {intro}"
         return re.sub(pattern, replacement, caption, count=1)
     return caption
 
