@@ -30,5 +30,12 @@
     "reject_empty_overrides": true,
     "reject_letter_by_letter_overrides": true,
     "audit_proper_names": true
+  },
+  "character_intros": {
+    "enabled": true,
+    "max_inserted_words": 6,
+    "max_new_intro_per_scene": 1,
+    "never_repeat": true,
+    "timing_authority": "narration_waveform"
   }
 }

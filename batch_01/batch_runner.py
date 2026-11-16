@@ -31,6 +31,8 @@ WORK = ROOT / "episodes"
 FEEDBACK_POLICY = json.loads((ROOT.parent / "production_feedback_gates.json").read_text(encoding="utf-8"))
 MAX_HORIZONTAL_TRAVEL_RATE = float(FEEDBACK_POLICY["camera"]["max_normalized_travel_per_second"])
 PRONUNCIATION_LEXICON = json.loads((ROOT / "pronunciation_lexicon.json").read_text(encoding="utf-8"))
+CHARACTER_INTRO_LEXICON = json.loads((ROOT / "character_intro_lexicon.json").read_text(encoding="utf-8"))
+CHARACTER_INTRO_POLICY = FEEDBACK_POLICY.get("character_intros", {})
 FFMPEG = os.environ.get("FFMPEG", "ffmpeg")
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 RATE = 24000
@@ -357,8 +359,8 @@ def origin_context(spec: dict[str, Any]) -> str:
     return "In this traditional story,"
 
 
-def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str) -> str:
-    """Add provenance after an existing What-if hook without editing source JSON."""
+def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str, prior_captions: list[str]) -> str:
+    """Add brief provenance and first-use character context without editing source JSON."""
     if scene_index != 0 or not re.match(r"^What if\b", caption.strip(), re.IGNORECASE):
         return caption
     sentences = split_sentences(caption)
@@ -371,7 +373,25 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
         or re.match(r"^(in|from|according to|set in)\b", existing_context)
     ):
         return caption
-    return " ".join([sentences[0], bridge, *sentences[1:]])
+    caption = " ".join([sentences[0], bridge, *sentences[1:]])
+    return caption
+
+
+def add_character_intro(caption: str, prior_captions: list[str]) -> str:
+    """Add at most one short identifier for a character's first spoken appearance."""
+    if not CHARACTER_INTRO_POLICY.get("enabled", True):
+        return caption
+    prior = " ".join(prior_captions).lower()
+    max_words = int(CHARACTER_INTRO_POLICY.get("max_inserted_words", 6))
+    for name, intro in CHARACTER_INTRO_LEXICON.items():
+        if name.lower() not in caption.lower() or name.lower() in prior:
+            continue
+        if len(str(intro).split()) > max_words:
+            continue
+        pattern = rf"\b{re.escape(name)}\b"
+        replacement = f"{name}, {intro},"
+        return re.sub(pattern, replacement, caption, count=1)
+    return caption
 
 
 async def edge_scene(text: str, out_mp3: Path, words_json: Path) -> None:
@@ -433,10 +453,13 @@ def whisper_align(audio_path: Path) -> list[dict[str, Any]]:
 def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     audio_dir = epdir / "audio"
     audio_dir.mkdir(parents=True, exist_ok=True)
-    effective_scenes = [
-        {**scene, "caption": effective_scene_caption(spec, idx, str(scene["caption"]))}
-        for idx, scene in enumerate(spec["scenes"])
-    ]
+    effective_scenes = []
+    prior_captions: list[str] = []
+    for idx, scene in enumerate(spec["scenes"]):
+        caption = effective_scene_caption(spec, idx, str(scene["caption"]), prior_captions)
+        caption = add_character_intro(caption, prior_captions)
+        effective_scenes.append({**scene, "caption": caption})
+        prior_captions.append(caption)
     scene_wavs: list[np.ndarray] = []
     scene_meta = []
     for idx, scene in enumerate(effective_scenes, 1):
