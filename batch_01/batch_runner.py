@@ -33,6 +33,7 @@ MAX_HORIZONTAL_TRAVEL_RATE = float(FEEDBACK_POLICY["camera"]["max_normalized_tra
 PRONUNCIATION_LEXICON = json.loads((ROOT / "pronunciation_lexicon.json").read_text(encoding="utf-8"))
 CHARACTER_INTRO_LEXICON = json.loads((ROOT / "character_intro_lexicon.json").read_text(encoding="utf-8"))
 CHARACTER_INTRO_POLICY = FEEDBACK_POLICY.get("character_intros", {})
+ARTWORK_POLICY = FEEDBACK_POLICY.get("artwork", {})
 MOJIBAKE_REPLACEMENTS = {
     "â€™": "'",
     "â€˜": "'",
@@ -764,6 +765,12 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         for b, item in enumerate(ordered):
             beats.append({"start": round(anchor_times[b], 3), "end": round(anchor_times[b + 1] if b < 2 else end, 3), "reason": item.get("visual", ""), **anchors[b]})
         scene["visual_beats"] = beats
+        scene["art_direction"] = {
+            "density": ARTWORK_POLICY.get("density_direction", "dense_narrative_tableau"),
+            "requirements": ARTWORK_POLICY.get("density_requirements", []),
+            "avoid": ARTWORK_POLICY.get("density_avoid", []),
+            "culture_period_alignment": True,
+        }
         dur = end - start
         # Let each outgoing scene continue moving through the short fade.
         # The overlap is part of the scene motion, not a frozen hold.

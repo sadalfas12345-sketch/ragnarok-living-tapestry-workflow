@@ -38,6 +38,13 @@ class VisualGateUnitTests(unittest.TestCase):
         self.assertFalse(gates.POLICY["artwork"]["allow_legacy_portrait_fallback"])
         self.assertGreaterEqual(gates.POLICY["artwork"]["minimum_width_pixels"], 2500)
 
+    def test_artwork_gate_requires_dense_period_aligned_tableaux(self):
+        artwork = gates.POLICY["artwork"]
+        self.assertEqual(artwork["density_direction"], "dense_narrative_tableau")
+        self.assertIn("meaningful foreground, midground, and background activity", artwork["density_requirements"])
+        self.assertIn("culture- and period-aligned clothing, architecture, objects, and materials", artwork["density_requirements"])
+        self.assertIn("three copies of the same pose", artwork["density_avoid"])
+
     def test_provenance_gate_is_source_specific(self):
         self.assertEqual(gates.expected_provenance("Ancient Mesopotamia"), "mesopotamian mythology")
         self.assertEqual(gates.expected_provenance("Ancient Egypt"), "egyptian mythology")
