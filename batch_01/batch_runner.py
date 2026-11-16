@@ -452,7 +452,7 @@ def smooth_prose(caption: str) -> str:
     if rest.lower() == "humanity multiplied, disturbing the gods.":
         rest = "As humanity multiplied, its noise disturbed the gods."
     else:
-        rest = rest[0].upper() + rest[1:]
+        rest = rest[0].lower() + rest[1:]
     role_text = f"{match.group('article')} {match.group('role')}"
     role_lower = role_text.lower()
     if any(word in role_lower for word in ("goddess", "woman", "queen", "mother", "girl")):
