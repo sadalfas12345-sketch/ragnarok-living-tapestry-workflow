@@ -31,6 +31,10 @@
     "reject_mojibake": true,
     "forbidden_sequences": ["â€™", "â€œ", "â€", "Ã¢", "Ã‚"]
   },
+  "prose": {
+    "smooth_character_intro_joins": true,
+    "reject_awkward_intro_joins": true
+  },
   "captions": {
     "allow_overlap_seconds": 0.0,
     "speech_boundary_tolerance_seconds": 0.08,

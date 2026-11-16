@@ -55,6 +55,10 @@ class VisualGateUnitTests(unittest.TestCase):
             self.assertLessEqual(len(str(intro).split()), policy["max_inserted_words"])
             self.assertFalse(any(term.lower() in str(intro).lower().split() for term in forbidden))
 
+    def test_prose_gate_requires_smoothing(self):
+        self.assertTrue(gates.POLICY["prose"]["smooth_character_intro_joins"])
+        self.assertTrue(gates.POLICY["prose"]["reject_awkward_intro_joins"])
+
 
 if __name__ == "__main__":
     unittest.main()

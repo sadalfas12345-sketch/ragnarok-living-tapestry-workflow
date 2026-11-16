@@ -437,6 +437,29 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     return caption
 
 
+def smooth_prose(caption: str) -> str:
+    """Repair awkward source-context plus character-intro sentence joins."""
+    if not FEEDBACK_POLICY.get("prose", {}).get("smooth_character_intro_joins", True):
+        return caption
+    pattern = re.compile(
+        r"(?P<context>In\s+[^,.!?]+),\s+(?P<name>[A-Z][\w’'-]+),\s+"
+        r"(?P<article>a|an|the)\s+(?P<role>[^,.!?]+),\s+(?P<rest>[^.!?]+[.!?])"
+    )
+    match = pattern.search(caption)
+    if not match:
+        return caption
+    rest = match.group("rest").strip()
+    if rest.lower() == "humanity multiplied, disturbing the gods.":
+        rest = "As humanity multiplied, its noise disturbed the gods."
+    else:
+        rest = rest[0].upper() + rest[1:]
+    replacement = (
+        f"{match.group('context')}, {match.group('name')} was "
+        f"{match.group('article')} {match.group('role')}. {rest}"
+    )
+    return caption[:match.start()] + replacement + caption[match.end():]
+
+
 async def edge_scene(text: str, out_mp3: Path, words_json: Path) -> None:
     import edge_tts
     communicate = edge_tts.Communicate(text, VOICE, rate=os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"), volume="+0%", pitch="+0Hz")
@@ -502,6 +525,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         caption = normalize_text(str(scene["caption"]))
         caption = effective_scene_caption(spec, idx, caption, prior_captions)
         caption = add_character_intro(caption, prior_captions)
+        caption = smooth_prose(caption)
         effective_scenes.append({**scene, "caption": caption})
         prior_captions.append(caption)
     scene_wavs: list[np.ndarray] = []
@@ -921,6 +945,9 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
         for bad in FEEDBACK_POLICY.get("rendered_caption_text", {}).get("forbidden_sequences", []):
             if bad in caption_text:
                 errors.append(f"caption text contains forbidden mojibake sequence {bad!r}")
+    if FEEDBACK_POLICY.get("prose", {}).get("reject_awkward_intro_joins", True):
+        if re.search(r"\bIn\s+[^,.!?]+,\s+[A-Z][\w’'-]+,\s+(?:a|an|the)\s+[^,.!?]+,\s+", caption_text):
+            errors.append("captions contain an unsmoothed source/character-intro sentence join")
     if FEEDBACK_POLICY.get("provenance", {}).get("required_after_what_if", True) and tl.get("scenes"):
         first_id = tl["scenes"][0]["id"]
         first_scene_text = " ".join(str(c.get("text", "")) for c in caps if c.get("scene") == first_id)
