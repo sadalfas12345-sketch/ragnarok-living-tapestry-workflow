@@ -403,7 +403,9 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     for name, intro in CHARACTER_INTRO_LEXICON.items():
         if name.lower() not in caption.lower() or name.lower() in prior:
             continue
-        if str(intro).lower() in caption.lower():
+        intro_text = str(intro).lower()
+        intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
+        if intro_text in caption.lower() or intro_core in caption.lower():
             continue
         if len(str(intro).split()) > max_words:
             continue
