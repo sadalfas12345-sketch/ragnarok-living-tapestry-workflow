@@ -50,3 +50,19 @@ Stock music is documented per episode with source and license URLs. The
 default representative arrangement uses the verified Mixkit cache already in
 this workspace. Synthetic SFX are generated locally and have no third-party
 attribution requirement.
+
+## Visual direction gates
+
+Each episode must use its own authoritative `civilization`,
+`image_reference.art_style`, `image_reference.palette`, and scene
+`image_prompt` direction. Artwork should express the culture's materials,
+clothing, architecture, landscape, ornament, and visual tradition while
+remaining cinematic and legible on a phone. A generic historical-painting
+treatment must not be reused across unrelated cultures.
+
+Every scene remains a left-to-right three-beat panorama, but adjacent scenes
+must also be meaningfully different. Rendered QA compares opening, middle, and
+ending samples between neighboring scenes and fails when they are too similar.
+When that gate fails, regenerate the deficient scene with a different
+narrative composition; do not hide the problem with a faster camera move or a
+crop reset.

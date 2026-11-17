@@ -156,6 +156,18 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             errors.append(f"captions contain forbidden mojibake sequence {bad!r}")
 
     source_path = epdir / "source.json"
+    if POLICY.get("artwork", {}).get("require_culture_specific_style", True) and source_path.exists():
+        source = json.loads(source_path.read_text(encoding="utf-8"))
+        reference = source.get("image_reference", {})
+        art_style = str(reference.get("art_style", "")).strip()
+        palette = str(reference.get("palette", "")).strip()
+        civilization = str(source.get("civilization", "")).strip()
+        if not civilization or not art_style or not palette:
+            errors.append("authoritative JSON lacks culture-specific civilization, art_style, or palette direction")
+        for index, scene_spec in enumerate(source.get("scenes", []), 1):
+            prompt = str(scene_spec.get("image_prompt", "")).lower()
+            if civilization and civilization.lower() not in prompt and art_style.lower() not in prompt:
+                warnings.append(f"scene S{index:02d} image prompt does not repeat the episode's cultural/style direction")
     if source_path.exists() and POLICY.get("provenance", {}).get("required_after_what_if", True):
         source = json.loads(source_path.read_text(encoding="utf-8"))
         first_scene_id = str(scenes[0].get("id", "S01")) if scenes else "S01"
@@ -201,11 +213,27 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         transition_audit.append({"from": left["id"], "to": right["id"], "boundary": boundary,
                                  "offsets": offsets, "mean_abs_diffs": diffs, "mean_luma": means})
 
+    adjacent_scene_audit = []
+    contrast_policy = POLICY.get("scene_contrast", {})
+    if contrast_policy.get("enabled", True) and len(scenes) > 1:
+        fractions = [float(x) for x in contrast_policy.get("sample_fractions", [0.08, 0.50, 0.92])]
+        minimum = float(contrast_policy.get("minimum_pair_mean_abs_diff", 4.0))
+        required_distinct = int(contrast_policy.get("minimum_distinct_samples", 2))
+        for left, right in zip(scenes, scenes[1:]):
+            left_frames = [frame_bytes(video, float(left["start"]) + (float(left["end"]) - float(left["start"])) * f) for f in fractions]
+            right_frames = [frame_bytes(video, float(right["start"]) + (float(right["end"]) - float(right["start"])) * f) for f in fractions]
+            pair_diffs = [round(mean_abs_diff(a, b), 3) for a, b in zip(left_frames, right_frames)]
+            distinct = sum(value >= minimum for value in pair_diffs)
+            if distinct < required_distinct:
+                errors.append(f"{contrast_policy.get('failure_message', 'adjacent scenes are visually too similar')}: {left['id']} -> {right['id']} diffs={pair_diffs}")
+            adjacent_scene_audit.append({"from": left["id"], "to": right["id"], "sample_fractions": fractions, "mean_abs_diffs": pair_diffs, "distinct_sample_count": distinct})
+
     report = {
         "episode": epdir.name, "status": "PASS" if not errors else "FAIL", "errors": errors,
         "warnings": warnings, "timeline_runtime_seconds": runtime, "video_runtime_seconds": round(actual_runtime, 3),
         "dimensions": [width, height], "video_bitrate": bitrate, "caption_count": len(captions),
         "scene_visual_audit": scene_audit, "transition_audit": transition_audit,
+        "adjacent_scene_contrast_audit": adjacent_scene_audit,
     }
     (audit_dir / "visual_gates_report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     if not keep_audit:

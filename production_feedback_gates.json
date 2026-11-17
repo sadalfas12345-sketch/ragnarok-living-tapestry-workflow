@@ -20,7 +20,17 @@
     "required_asset_prefix": "H",
     "allow_legacy_portrait_fallback": false,
     "minimum_width_pixels": 2500,
-    "minimum_height_pixels": 1600
+    "minimum_height_pixels": 1600,
+    "require_culture_specific_style": true,
+    "require_distinct_adjacent_scene_storytelling": true,
+    "culture_direction_source": "authoritative episode JSON civilization, art_style, palette, image_prompt, and visual_progression"
+  },
+  "scene_contrast": {
+    "enabled": true,
+    "sample_fractions": [0.08, 0.50, 0.92],
+    "minimum_pair_mean_abs_diff": 4.0,
+    "minimum_distinct_samples": 2,
+    "failure_message": "adjacent scenes are visually too similar; regenerate the deficient scene with a distinct narrative composition"
   },
   "provenance": {
     "required_after_what_if": true,
