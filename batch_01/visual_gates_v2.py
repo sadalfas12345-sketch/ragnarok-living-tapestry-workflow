@@ -143,6 +143,11 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             errors.append(f"scene {scene['id']} does not explicitly forbid hard crop changes")
         previous_end = end
     if scenes and abs(previous_end - runtime) > 0.12: errors.append("last scene end disagrees with timeline runtime")
+    if POLICY.get("delivery_integrity", {}).get("require_timeline_asset_paths_exist", True):
+        for scene in scenes:
+            asset_path = epdir / str(scene.get("asset", ""))
+            if not asset_path.exists():
+                errors.append(f"timeline asset is missing for {scene.get('id', 'unknown')}: {scene.get('asset', '')}")
 
     captions = parse_srt(srt)
     for i, cap in enumerate(captions):
@@ -160,6 +165,24 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     for bad in POLICY.get("rendered_caption_text", {}).get("forbidden_sequences", []):
         if bad in caption_text:
             errors.append(f"captions contain forbidden mojibake sequence {bad!r}")
+    manifest_path = epdir / "audio" / "audio_manifest.json"
+    if POLICY.get("audio", {}).get("require_mix_manifest", True):
+        if not manifest_path.exists():
+            errors.append("missing audio manifest; final mix may be stale relative to narration")
+        else:
+            try:
+                manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+                narration_path = epdir / "audio" / "narration.wav"
+                mix_path = epdir / "audio" / "final_mixed_audio.wav"
+                video_path = epdir / "final_vertical_1080x1920.mp4"
+                if str(manifest.get("narration_sha256", "")).lower() != hashlib.sha256(narration_path.read_bytes()).hexdigest().lower():
+                    errors.append("audio manifest narration hash does not match current narration")
+                if str(manifest.get("final_mix_sha256", "")).lower() != hashlib.sha256(mix_path.read_bytes()).hexdigest().lower():
+                    errors.append("audio manifest final-mix hash does not match current mix")
+                if str(manifest.get("final_video_sha256", "")).lower() != hashlib.sha256(video_path.read_bytes()).hexdigest().lower():
+                    errors.append("audio manifest final-video hash does not match current MP4")
+            except (OSError, ValueError, TypeError, json.JSONDecodeError):
+                errors.append("audio manifest is unreadable")
 
     source_path = epdir / "source.json"
     if POLICY.get("artwork", {}).get("require_culture_specific_style", True) and source_path.exists():

@@ -239,6 +239,14 @@ def run(cmd: list[str], *, capture=False) -> str:
     return p.stdout if capture else ""
 
 
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
 def duration(path: Path) -> float:
     out = run([FFPROBE, "-v", "error", "-show_entries", "format=duration", "-of", "json", str(path)], capture=True)
     return float(json.loads(out)["format"]["duration"])
@@ -905,6 +913,19 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     # Do not use -shortest here: an SRT's final cue can end before the
     # narration tail, which would truncate an otherwise correct video.
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-i", str(video), "-i", str(final), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{runtime:.3f}", "-movflags", "+faststart", str(out)])
+    manifest = {
+        "schema": "living_tapestry_audio_manifest_v1",
+        "narration_sha256": file_sha256(narration),
+        "music_sha256": file_sha256(music),
+        "sfx_sha256": file_sha256(sfx),
+        "final_mix_sha256": file_sha256(final),
+        "final_video_sha256": file_sha256(out),
+        "runtime_seconds": round(runtime, 3),
+        "narration_duration_seconds": round(duration(narration), 3),
+        "final_mix_duration_seconds": round(duration(final), 3),
+        "final_video_duration_seconds": round(duration(out), 3),
+    }
+    (adir / "audio_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     for stem in (narration, music, sfx):
         shutil.copy2(stem, epdir / stem.name)
     return out
@@ -937,6 +958,51 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     video_duration = duration(epdir / "final_vertical_1080x1920.mp4")
     if abs(narration_duration - tl["runtime_seconds"]) > 0.06: errors.append("narration duration disagrees with timeline")
     if abs(video_duration - tl["runtime_seconds"]) > 0.12: errors.append("video duration disagrees with timeline")
+    integrity_policy = FEEDBACK_POLICY.get("delivery_integrity", {})
+    if integrity_policy.get("require_timeline_asset_paths_exist", True):
+        for scene in tl.get("scenes", []):
+            asset = epdir / str(scene.get("asset", ""))
+            if not asset.exists():
+                errors.append(f"timeline asset is missing for {scene.get('id', 'unknown')}: {scene.get('asset', '')}")
+    audio_policy = FEEDBACK_POLICY.get("audio", {})
+    manifest_path = epdir / "audio" / "audio_manifest.json"
+    if audio_policy.get("require_mix_manifest", True):
+        if not manifest_path.exists():
+            errors.append("missing audio manifest; final mix may be stale relative to narration")
+        else:
+            try:
+                manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+                narration_path = epdir / "audio" / "narration.wav"
+                final_mix_path = epdir / "audio" / "final_mixed_audio.wav"
+                final_video_path = epdir / "final_vertical_1080x1920.mp4"
+                if audio_policy.get("require_narration_mix_hash_match", True):
+                    if str(manifest.get("narration_sha256", "")).lower() != file_sha256(narration_path).lower():
+                        errors.append("audio manifest narration hash does not match current narration")
+                    if str(manifest.get("final_mix_sha256", "")).lower() != file_sha256(final_mix_path).lower():
+                        errors.append("audio manifest final-mix hash does not match current mix")
+                if abs(float(manifest.get("narration_duration_seconds", -1)) - narration_duration) > 0.06:
+                    errors.append("audio manifest narration duration is stale")
+                if abs(float(manifest.get("final_video_duration_seconds", -1)) - video_duration) > 0.12:
+                    errors.append("audio manifest video duration is stale")
+            except (OSError, ValueError, TypeError, json.JSONDecodeError):
+                errors.append("audio manifest is unreadable")
+    if integrity_policy.get("require_cache_text_match_effective_tts", True):
+        prior_captions: list[str] = []
+        for index, source_scene in enumerate(spec["scenes"]):
+            expected_caption = smooth_prose(add_character_intro(effective_scene_caption(spec, index, normalize_text(str(source_scene["caption"])), prior_captions), prior_captions))
+            prior_captions.append(expected_caption)
+            cache_path = epdir / "audio" / f"scene_{index + 1:02d}_cache.json"
+            if not cache_path.exists():
+                errors.append(f"missing narration cache for scene {index + 1:02d}")
+                continue
+            try:
+                cache = json.loads(cache_path.read_text(encoding="utf-8"))
+                if cache.get("spoken_text") != speech_text(expected_caption):
+                    errors.append(f"scene {index + 1:02d} TTS cache does not match effective caption")
+                if "text" in cache:
+                    errors.append(f"scene {index + 1:02d} narration cache contains duplicate legacy text field")
+            except (OSError, ValueError, TypeError, json.JSONDecodeError):
+                errors.append(f"scene {index + 1:02d} narration cache is unreadable")
     caps = tl["narration"]["captions"]
     intro_policy = FEEDBACK_POLICY.get("character_intros", {})
     if intro_policy.get("spoiler_free", True):

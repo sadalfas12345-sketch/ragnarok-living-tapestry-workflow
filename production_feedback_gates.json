@@ -58,7 +58,17 @@
   },
   "audio": {
     "narration_is_master_clock": true,
-    "audition_required_when_available": true
+    "audition_required_when_available": true,
+    "require_mix_manifest": true,
+    "require_narration_mix_hash_match": true,
+    "require_separate_stems_for_delivery": false
+  },
+  "delivery_integrity": {
+    "require_timeline_asset_paths_exist": true,
+    "require_srt_match_timeline_captions": true,
+    "require_cache_text_match_effective_tts": true,
+    "require_holistic_review": true,
+    "review_roles": ["procedural_pipeline_audit", "adversarial_render_review"]
   },
   "pronunciation": {
     "fallback": "english_source_spelling",

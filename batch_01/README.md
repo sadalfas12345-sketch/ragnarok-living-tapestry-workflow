@@ -72,6 +72,19 @@ When that gate fails, regenerate the deficient scene with a different
 narrative composition; do not hide the problem with a faster camera move or a
 crop reset.
 
+## Delivery integrity and review
+
+The audio stage writes `audio/audio_manifest.json`, hashing the narration,
+music, SFX, final mix, and final MP4. QA fails if the delivered mix or video is
+not traceably built from the current narration waveform. QA also verifies that
+every timeline asset path exists, cache `spoken_text` matches effective TTS
+text, and rendered output agrees with the timeline.
+
+Before delivery, run the two-role review in
+[`REVIEW_PROTOCOL.md`](REVIEW_PROTOCOL.md): one procedural pipeline audit and
+one adversarial encoded-render review. Record unavailable playback or missing
+optional stems instead of claiming those checks passed.
+
 Provenance bridges are deduplicated before narration. If the authoritative
 caption already says “in Arabian Nights tradition,” the pipeline must not add
 another “tradition.” Repeated provenance terms fail QA before delivery.
