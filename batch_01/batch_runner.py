@@ -703,6 +703,11 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             source_asset = horizontal_asset if horizontal_asset.exists() else epdir / "assets" / f"P{i:02d}.png"
         if not source_asset.exists():
             raise FileNotFoundError(source_asset)
+        # The renderer's panorama asset is authoritative once the horizontal
+        # artwork gate is enabled. Do not leave the timeline pointing at a
+        # legacy P## portrait while rendering H##.
+        if horizontal_asset.exists() and require_horizontal:
+            scene["asset"] = f"assets/H{i:02d}.png"
         source_scene = spec["scenes"][i - 1]
         start = float(scene["start"]); end = float(scene["end"])
         progression = source_scene.get("visual_progression", {})

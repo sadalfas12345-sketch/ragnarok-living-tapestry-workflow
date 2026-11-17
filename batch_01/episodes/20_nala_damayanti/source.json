@@ -94,7 +94,7 @@
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
+      "asset": "assets/H01.png",
       "caption": "What if love could not protect a royal couple from ruin? Damayanti chose King Nala despite the gods appearing among her suitors. Their union began with devotion, but happiness would not protect them from disaster.",
       "beat_title": "A chosen love",
       "required_visuals": [
@@ -125,7 +125,7 @@
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
+      "asset": "assets/H02.png",
       "caption": "Nala fell under a ruinous influence and lost his kingdom at dice to his brother Pushkara. With power gone, the couple entered the wilderness.",
       "beat_title": "The dice",
       "required_visuals": [
@@ -155,7 +155,7 @@
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
+      "asset": "assets/H03.png",
       "caption": "Exhausted and ashamed, Nala abandoned Damayanti while she slept. She woke alone in a forest full of danger and set out to find him.",
       "beat_title": "Separation",
       "required_visuals": [
@@ -186,7 +186,7 @@
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
+      "asset": "assets/H04.png",
       "caption": "Nala wandered in disguise, learned new skills, and struggled with regret. Damayanti refused to accept that their story was finished.",
       "beat_title": "Transformation",
       "required_visuals": [
@@ -216,7 +216,7 @@
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
+      "asset": "assets/H05.png",
       "caption": "Through ingenuity and careful tests, Damayanti discovered Nala’s whereabouts. The two could finally speak after years of fear and separation.",
       "beat_title": "Recognition",
       "required_visuals": [
@@ -246,7 +246,7 @@
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
+      "asset": "assets/H06.png",
       "caption": "Nala recovered his position, but the deeper victory was their reunion. The tale understands that pride can destroy what misfortune alone could not.",
       "beat_title": "Restoration",
       "required_visuals": [
