@@ -267,7 +267,7 @@
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
+      "asset": "assets/H01.png",
       "start": 0.0,
       "speech_end": 16.86,
       "end": 17.441,
@@ -321,7 +321,7 @@
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
+      "asset": "assets/H02.png",
       "start": 17.441,
       "speech_end": 27.28,
       "end": 28.014,
@@ -375,7 +375,7 @@
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
+      "asset": "assets/H03.png",
       "start": 28.014,
       "speech_end": 37.5,
       "end": 38.394,
@@ -429,7 +429,7 @@
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
+      "asset": "assets/H04.png",
       "start": 38.394,
       "speech_end": 47.06,
       "end": 47.863,
@@ -483,7 +483,7 @@
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
+      "asset": "assets/H05.png",
       "start": 47.863,
       "speech_end": 56.53,
       "end": 57.63,
@@ -537,7 +537,7 @@
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
+      "asset": "assets/H06.png",
       "start": 57.63,
       "speech_end": 67.38,
       "end": 69.089,

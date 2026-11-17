@@ -2,21 +2,21 @@
 
 ## Verdict
 
-PASS after metadata and QA-artifact reconciliation.
+PASS for the regenerated Episode 19 delivery, with separate music/SFX stem export still unresolved.
 
-The final MP4 was independently reviewed after rendering. It uses museum-quality Arabic coastal manuscript art rather than cartoon or glossy fantasy styling. The six scenes are compositionally distinct and progress from discovery, threat, clever challenge, smoke reversal, negotiation, to calm resolution.
-
-## Reconciled delivery
+## Verified
 
 - Timeline runtime: 69.089 seconds.
-- Final MP4 runtime: 69.100 seconds.
-- Final video: 1080x1920, approximately 5.2 Mbps.
+- Narration source: 69.090 seconds.
+- Final mixed audio: 69.089 seconds.
+- Final MP4: 69.100 seconds, 1080x1920, H.264 with AAC stereo audio.
 - Captions: 25 cues, zero overlap.
-- Timeline assets: H01.png through H06.png.
+- The provenance word "tradition" appears once in the spoken source, alignment, and captions.
+- Timeline assets: H01.png through H06.png, all present.
 - Camera: rightward horizontal travel, no shake, no hard crop changes.
 - Visual gates: PASS.
 - Batch QA: PASS.
 - Transition audit: PASS with no near-black boundary frames.
-- Audio playback: unavailable; waveform and loudness checks completed.
+- Audio playback: unavailable; waveform, loudness, rendered-frame, and synchronization checks completed.
 
-The earlier review identified stale P01-P06 references in the timeline. They were corrected to H01-H06 and rechecked against the filesystem. The spoken narration and captions contain the provenance word “tradition” once; the cache's duplicated `text` and `spoken_text` fields are metadata copies of the same phrase, not repeated narration.
+The source-to-narration provenance phrase is an intentional pipeline addition requested for story-source context, not a duplicate-word error. Separate music and SFX stems were cleaned locally after the final mix to recover disk space and are not included in this redo delivery.
