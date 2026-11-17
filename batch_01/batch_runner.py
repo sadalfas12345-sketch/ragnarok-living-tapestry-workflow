@@ -984,6 +984,16 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
                 for term in FEEDBACK_POLICY.get("provenance", {}).get("dedupe_terms", []):
                     if re.search(rf"\b{re.escape(str(term))}\s+{re.escape(str(term))}\b", first_scene_text, re.IGNORECASE):
                         errors.append(f"first What if scene repeats provenance term {term!r}")
+    if FEEDBACK_POLICY.get("provenance", {}).get("dedupe_repeated_terms", True):
+        for cache_file in sorted((epdir / "audio").glob("scene_*_cache.json")):
+            try:
+                cached = json.loads(cache_file.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            cached_text = str(cached.get("spoken_text", cached.get("text", "")))
+            for term in FEEDBACK_POLICY.get("provenance", {}).get("dedupe_terms", []):
+                if re.search(rf"\b{re.escape(str(term))}\s+{re.escape(str(term))}\b", cached_text, re.IGNORECASE):
+                    errors.append(f"{cache_file.name} repeats provenance term {term!r}")
     if SUBTITLE_MODE not in {"burned", "soft"}:
         errors.append(f"unsupported subtitle mode: {SUBTITLE_MODE}")
     if SUBTITLE_MODE == "soft":

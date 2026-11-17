@@ -39,6 +39,7 @@
     "must_be_derived_from_civilization": true,
     "dedupe_repeated_terms": true,
     "dedupe_terms": ["mythology", "legend", "tradition", "folklore", "historical account", "epic"],
+    "ordinary_duplicate_words": "review_only",
     "recognized_markers": ["mythology", "legend", "tradition", "century", "historical account", "epic"]
   },
   "rendered_caption_text": {

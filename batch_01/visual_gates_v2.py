@@ -151,6 +151,12 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if i and cap["start"] < captions[i - 1]["end"] - 0.001: errors.append(f"caption overlap {i} -> {i + 1}")
 
     caption_text = " ".join(str(c.get("text", "")) for c in captions)
+    if POLICY.get("provenance", {}).get("ordinary_duplicate_words") == "review_only":
+        hard_terms = {str(x).lower() for x in POLICY.get("provenance", {}).get("dedupe_terms", [])}
+        for match in re.finditer(r"\b([A-Za-z][\w'-]+)\s+\1\b", caption_text, re.IGNORECASE):
+            word = match.group(1).lower()
+            if word not in hard_terms:
+                warnings.append(f"ordinary repeated word requires story-context review: {word!r}")
     for bad in POLICY.get("rendered_caption_text", {}).get("forbidden_sequences", []):
         if bad in caption_text:
             errors.append(f"captions contain forbidden mojibake sequence {bad!r}")
@@ -186,6 +192,15 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
                 for term in POLICY.get("provenance", {}).get("dedupe_terms", []):
                     if re.search(rf"\b{re.escape(str(term))}\s+{re.escape(str(term))}\b", first_text, re.IGNORECASE):
                         errors.append(f"first What if scene repeats provenance term {term!r}")
+        for cache_file in sorted((epdir / "audio").glob("scene_*_cache.json")):
+            try:
+                cached = json.loads(cache_file.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            cached_text = str(cached.get("spoken_text", cached.get("text", "")))
+            for term in POLICY.get("provenance", {}).get("dedupe_terms", []):
+                if re.search(rf"\b{re.escape(str(term))}\s+{re.escape(str(term))}\b", cached_text, re.IGNORECASE):
+                    errors.append(f"{cache_file.name} repeats provenance term {term!r}")
 
     artwork_policy = POLICY.get("artwork", {})
     for index in range(1, len(scenes) + 1):
