@@ -279,13 +279,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 0.0,
         "end": 17.441
       },
-      "measured_pause_after": 0.581
+      "measured_pause_after": 0.581,
+      "visual_beats": [
+        {
+          "start": 0.0,
+          "end": 4.96,
+          "reason": "Opening: fisherman lifts brass jar from blue fishing shore",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "What if a fisherman opened a vessel imprisoning a dangerous spirit?"
+        },
+        {
+          "start": 4.96,
+          "end": 11.8,
+          "reason": "Development: fisherman lifts brass jar from blue fishing shore",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "In Arabian Nights tradition, A poor fisherman hauled a heavy sealed vessel from the sea."
+        },
+        {
+          "start": 11.8,
+          "end": 17.441,
+          "reason": "Reveal: The catch; fisherman lifts brass jar from blue fishing shore",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Inside was no treasure, only an enormous spirit imprisoned for centuries."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S02",
@@ -301,13 +333,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 17.441,
         "end": 28.014
       },
-      "measured_pause_after": 0.734
+      "measured_pause_after": 0.734,
+      "visual_beats": [
+        {
+          "start": 17.441,
+          "end": 25.3,
+          "reason": "Opening: towering smoke jinni above miniature fisherman",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The jinni emerged in smoke and announced that his first decision was to kill the person who had freed him."
+        },
+        {
+          "start": 25.3,
+          "end": 27.28,
+          "reason": "Development: towering smoke jinni above miniature fisherman",
+          "anchor": "development",
+          "x_focus": 0.4213,
+          "y_focus": 0.5,
+          "spoken_anchor": "Gratitude had curdled into rage."
+        },
+        {
+          "start": 27.28,
+          "end": 28.014,
+          "reason": "Reveal: A cruel promise; towering smoke jinni above miniature fisherman",
+          "anchor": "reveal",
+          "x_focus": 0.8247,
+          "y_focus": 0.5,
+          "spoken_anchor": "Gratitude had curdled into rage."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S03",
@@ -323,13 +387,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 28.014,
         "end": 38.394
       },
-      "measured_pause_after": 0.894
+      "measured_pause_after": 0.894,
+      "visual_beats": [
+        {
+          "start": 28.014,
+          "end": 31.12,
+          "reason": "Opening: tiny jar next to giant looming figure",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The fisherman did not reach for a sword."
+        },
+        {
+          "start": 31.12,
+          "end": 37.5,
+          "reason": "Development: tiny jar next to giant looming figure",
+          "anchor": "development",
+          "x_focus": 0.4136,
+          "y_focus": 0.5,
+          "spoken_anchor": "He asked a question: how could such a gigantic spirit ever have fitted into so small a vessel?"
+        },
+        {
+          "start": 37.5,
+          "end": 38.394,
+          "reason": "Reveal: The impossible claim; tiny jar next to giant looming figure",
+          "anchor": "reveal",
+          "x_focus": 0.8096,
+          "y_focus": 0.5,
+          "spoken_anchor": "He asked a question: how could such a gigantic spirit ever have fitted into so small a vessel?"
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S04",
@@ -345,13 +441,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 38.394,
         "end": 47.863
       },
-      "measured_pause_after": 0.803
+      "measured_pause_after": 0.803,
+      "visual_beats": [
+        {
+          "start": 38.394,
+          "end": 44.4,
+          "reason": "Opening: smoke spirals downward into jar",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Offended, the jinni turned to smoke and flowed back inside to prove the feat."
+        },
+        {
+          "start": 44.4,
+          "end": 47.06,
+          "reason": "Development: fisherman closes seal",
+          "anchor": "development",
+          "x_focus": 0.3773,
+          "y_focus": 0.5,
+          "spoken_anchor": "The fisherman immediately sealed the lid."
+        },
+        {
+          "start": 47.06,
+          "end": 47.863,
+          "reason": "Reveal: The demonstration; fisherman closes seal",
+          "anchor": "reveal",
+          "x_focus": 0.7386,
+          "y_focus": 0.5,
+          "spoken_anchor": "The fisherman immediately sealed the lid."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S05",
@@ -367,13 +495,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 47.863,
         "end": 57.63
       },
-      "measured_pause_after": 1.1
+      "measured_pause_after": 1.1,
+      "visual_beats": [
+        {
+          "start": 47.863,
+          "end": 51.02,
+          "reason": "Opening: fisherman faces jar",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Now the prisoner begged for release."
+        },
+        {
+          "start": 51.02,
+          "end": 56.53,
+          "reason": "Development: jinni face appears in brass",
+          "anchor": "development",
+          "x_focus": 0.3892,
+          "y_focus": 0.5,
+          "spoken_anchor": "The fisherman had reversed their positions with nothing but a question and quick hands."
+        },
+        {
+          "start": 56.53,
+          "end": 57.63,
+          "reason": "Reveal: A new negotiation; jinni face appears in brass",
+          "anchor": "reveal",
+          "x_focus": 0.7618,
+          "y_focus": 0.5,
+          "spoken_anchor": "The fisherman had reversed their positions with nothing but a question and quick hands."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S06",
@@ -389,13 +549,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 57.63,
         "end": 69.089
       },
-      "measured_pause_after": 1.709
+      "measured_pause_after": 1.709,
+      "visual_beats": [
+        {
+          "start": 57.63,
+          "end": 63.68,
+          "reason": "Opening: fisherman carries jar",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "In stories like this, intelligence is the weapon of those without force."
+        },
+        {
+          "start": 63.68,
+          "end": 67.38,
+          "reason": "Development: setting sun across harbor",
+          "anchor": "development",
+          "x_focus": 0.4566,
+          "y_focus": 0.5,
+          "spoken_anchor": "The man who owned almost nothing suddenly controlled the bargain."
+        },
+        {
+          "start": 67.38,
+          "end": 69.089,
+          "reason": "Reveal: The rule; setting sun across harbor",
+          "anchor": "reveal",
+          "x_focus": 0.8938,
+          "y_focus": 0.5,
+          "spoken_anchor": "The man who owned almost nothing suddenly controlled the bargain."
+        }
+      ],
+      "travel_axis": "horizontal"
     }
   ],
   "music": [
