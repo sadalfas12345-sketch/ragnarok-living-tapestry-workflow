@@ -13,29 +13,14 @@
     "required_visual_beats": 3,
     "transition_max_black_luma": 2.0,
     "transition_min_progression_diff": 0.05,
-    "require_actual_rendered_progression": true,
-    "require_narrative_state_change_between_scenes": true,
-    "minimum_new_transition_tokens": 2
+    "require_actual_rendered_progression": true
   },
   "artwork": {
     "require_horizontal_panorama": true,
     "required_asset_prefix": "H",
     "allow_legacy_portrait_fallback": false,
     "minimum_width_pixels": 2500,
-    "minimum_height_pixels": 1600,
-    "density_direction": "dense_narrative_tableau",
-    "density_requirements": [
-      "meaningful foreground, midground, and background activity",
-      "multiple figures with expressive reactions",
-      "layered actions and symbolic narrative details",
-      "distinct chronological developments within one contiguous panorama",
-      "culture- and period-aligned clothing, architecture, objects, and materials"
-    ],
-    "density_avoid": [
-      "single-subject composition with empty surrounding space",
-      "three copies of the same pose",
-      "generic fantasy substitutions that conflict with the episode culture or period"
-    ]
+    "minimum_height_pixels": 1600
   },
   "provenance": {
     "required_after_what_if": true,
