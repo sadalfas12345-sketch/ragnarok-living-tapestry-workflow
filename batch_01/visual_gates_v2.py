@@ -168,6 +168,12 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             prompt = str(scene_spec.get("image_prompt", "")).lower()
             if civilization and civilization.lower() not in prompt and art_style.lower() not in prompt:
                 warnings.append(f"scene S{index:02d} image prompt does not repeat the episode's cultural/style direction")
+            forbidden = [str(x).lower() for x in POLICY.get("artwork", {}).get("forbidden_style_terms", [])]
+            if any(term in prompt for term in forbidden):
+                errors.append(f"scene S{index:02d} image prompt contains a forbidden low-fidelity style term")
+        style_text = " ".join([str(reference.get("style_board_prompt", "")), art_style]).lower()
+        if any(term in style_text for term in POLICY.get("artwork", {}).get("forbidden_style_terms", [])):
+            errors.append("authoritative art direction contains a forbidden low-fidelity style term")
     if source_path.exists() and POLICY.get("provenance", {}).get("required_after_what_if", True):
         source = json.loads(source_path.read_text(encoding="utf-8"))
         first_scene_id = str(scenes[0].get("id", "S01")) if scenes else "S01"
@@ -176,6 +182,10 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             expected = expected_provenance(str(source.get("civilization", "")))
             if expected not in first_text.lower() and not any(marker in first_text.lower() for marker in POLICY["provenance"].get("recognized_markers", [])):
                 errors.append(f"first What if scene lacks source/provenance phrase for {source.get('civilization', 'unknown civilization')}")
+            if POLICY.get("provenance", {}).get("dedupe_repeated_terms", True):
+                for term in POLICY.get("provenance", {}).get("dedupe_terms", []):
+                    if re.search(rf"\b{re.escape(str(term))}\s+{re.escape(str(term))}\b", first_text, re.IGNORECASE):
+                        errors.append(f"first What if scene repeats provenance term {term!r}")
 
     artwork_policy = POLICY.get("artwork", {})
     for index in range(1, len(scenes) + 1):

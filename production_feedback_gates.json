@@ -23,7 +23,9 @@
     "minimum_height_pixels": 1600,
     "require_culture_specific_style": true,
     "require_distinct_adjacent_scene_storytelling": true,
-    "culture_direction_source": "authoritative episode JSON civilization, art_style, palette, image_prompt, and visual_progression"
+    "culture_direction_source": "authoritative episode JSON civilization, art_style, palette, image_prompt, and visual_progression",
+    "museum_quality_art_direction": true,
+    "forbidden_style_terms": ["cartoon", "cartoony", "comic-book", "glossy 3d", "glossy fantasy poster", "generic stock illustration"]
   },
   "scene_contrast": {
     "enabled": true,
@@ -35,6 +37,8 @@
   "provenance": {
     "required_after_what_if": true,
     "must_be_derived_from_civilization": true,
+    "dedupe_repeated_terms": true,
+    "dedupe_terms": ["mythology", "legend", "tradition", "folklore", "historical account", "epic"],
     "recognized_markers": ["mythology", "legend", "tradition", "century", "historical account", "epic"]
   },
   "rendered_caption_text": {

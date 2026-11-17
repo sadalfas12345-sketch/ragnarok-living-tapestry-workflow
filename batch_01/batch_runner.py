@@ -395,6 +395,10 @@ def origin_context(spec: dict[str, Any]) -> str:
 
 def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str, prior_captions: list[str]) -> str:
     """Add brief provenance and first-use character context without editing source JSON."""
+    provenance_policy = FEEDBACK_POLICY.get("provenance", {})
+    if provenance_policy.get("dedupe_repeated_terms", True):
+        for term in provenance_policy.get("dedupe_terms", []):
+            caption = re.sub(rf"\b({re.escape(str(term))})\s+\1\b", r"\1", caption, flags=re.IGNORECASE)
     if scene_index != 0 or not re.match(r"^What if\b", caption.strip(), re.IGNORECASE):
         return caption
     sentences = split_sentences(caption)
@@ -409,6 +413,8 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
     if bridge.lower().rstrip(",") in caption.lower() or has_provenance:
         return caption
     caption = " ".join([sentences[0], bridge, *sentences[1:]])
+    for term in provenance_policy.get("dedupe_terms", []):
+        caption = re.sub(rf"\b({re.escape(str(term))})\s+\1\b", r"\1", caption, flags=re.IGNORECASE)
     return caption
 
 
@@ -964,6 +970,10 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
             markers = tuple(str(x).lower() for x in FEEDBACK_POLICY.get("provenance", {}).get("recognized_markers", []))
             if not any(marker in first_scene_text.lower() for marker in markers):
                 errors.append("first What if scene is missing a spoken source/provenance phrase")
+            if FEEDBACK_POLICY.get("provenance", {}).get("dedupe_repeated_terms", True):
+                for term in FEEDBACK_POLICY.get("provenance", {}).get("dedupe_terms", []):
+                    if re.search(rf"\b{re.escape(str(term))}\s+{re.escape(str(term))}\b", first_scene_text, re.IGNORECASE):
+                        errors.append(f"first What if scene repeats provenance term {term!r}")
     if SUBTITLE_MODE not in {"burned", "soft"}:
         errors.append(f"unsupported subtitle mode: {SUBTITLE_MODE}")
     if SUBTITLE_MODE == "soft":

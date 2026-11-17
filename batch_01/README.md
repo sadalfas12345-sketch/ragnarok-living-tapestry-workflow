@@ -60,9 +60,18 @@ clothing, architecture, landscape, ornament, and visual tradition while
 remaining cinematic and legible on a phone. A generic historical-painting
 treatment must not be reused across unrelated cultures.
 
+The finish must read as artful, museum-quality work rather than cartoon,
+comic-book, glossy game-poster, or generic stock illustration. Cultural
+specificity and high-end fine-art composition are required without forcing
+photorealism.
+
 Every scene remains a left-to-right three-beat panorama, but adjacent scenes
 must also be meaningfully different. Rendered QA compares opening, middle, and
 ending samples between neighboring scenes and fails when they are too similar.
 When that gate fails, regenerate the deficient scene with a different
 narrative composition; do not hide the problem with a faster camera move or a
 crop reset.
+
+Provenance bridges are deduplicated before narration. If the authoritative
+caption already says “in Arabian Nights tradition,” the pipeline must not add
+another “tradition.” Repeated provenance terms fail QA before delivery.
