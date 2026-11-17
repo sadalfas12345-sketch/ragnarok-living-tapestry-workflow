@@ -550,8 +550,11 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         wav = audio_dir / f"scene_{idx:02d}.wav"
         cache_file = audio_dir / f"scene_{idx:02d}_cache.json"
         spoken_caption = speech_text(scene["caption"])
+        # Keep one canonical narration string in the cache. Storing the same
+        # sentence in both `text` and `spoken_text` made review tools mistake
+        # metadata duplication for a repeated spoken word. The TTS input is
+        # `spoken_text`; captions and gates are derived from that same value.
         cache_key = {
-            "text": scene["caption"],
             "spoken_text": spoken_caption,
             "voice": VOICE,
             "rate": os.environ.get("LIVING_TAPESTRIES_RATE", "-15%"),

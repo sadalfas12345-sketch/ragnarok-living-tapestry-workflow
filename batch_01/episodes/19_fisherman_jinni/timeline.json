@@ -2,237 +2,264 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 62.248,
+  "runtime_seconds": 69.089,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
     "phrases": [
       {
         "scene": "S01",
-        "text": "A poor fisherman hauled a heavy sealed vessel from the sea.",
+        "text": "What if a fisherman opened a vessel imprisoning a dangerous spirit?",
         "start": 0.0,
         "end": 4.38
       },
       {
         "scene": "S01",
-        "text": "Inside was no treasure, only an enormous spirit imprisoned for centuries.",
+        "text": "In Arabian Nights tradition, A poor fisherman hauled a heavy sealed vessel from the sea.",
         "start": 4.96,
-        "end": 10.04
+        "end": 11.08
+      },
+      {
+        "scene": "S01",
+        "text": "Inside was no treasure, only an enormous spirit imprisoned for centuries.",
+        "start": 11.8,
+        "end": 16.86
       },
       {
         "scene": "S02",
         "text": "The jinni emerged in smoke and announced that his first decision was to kill the person who had freed him.",
-        "start": 10.9,
-        "end": 17.98
+        "start": 17.76,
+        "end": 24.86
       },
       {
         "scene": "S02",
         "text": "Gratitude had curdled into rage.",
-        "start": 18.46,
-        "end": 20.46
+        "start": 25.3,
+        "end": 27.28
       },
       {
         "scene": "S03",
         "text": "The fisherman did not reach for a sword.",
-        "start": 21.42,
-        "end": 23.7
+        "start": 28.014,
+        "end": 30.54
       },
       {
         "scene": "S03",
         "text": "He asked a question: how could such a gigantic spirit ever have fitted into so small a vessel?",
-        "start": 24.26,
-        "end": 30.68
+        "start": 31.12,
+        "end": 37.5
       },
       {
         "scene": "S04",
         "text": "Offended, the jinni turned to smoke and flowed back inside to prove the feat.",
-        "start": 32.04,
-        "end": 37.58
+        "start": 38.78,
+        "end": 44.4
       },
       {
         "scene": "S04",
         "text": "The fisherman immediately sealed the lid.",
-        "start": 37.58,
-        "end": 40.222
+        "start": 44.4,
+        "end": 47.06
       },
       {
         "scene": "S05",
         "text": "Now the prisoner begged for release.",
-        "start": 41.4,
-        "end": 43.52
+        "start": 48.22,
+        "end": 50.36
       },
       {
         "scene": "S05",
         "text": "The fisherman had reversed their positions with nothing but a question and quick hands.",
-        "start": 44.16,
-        "end": 49.66
+        "start": 51.02,
+        "end": 56.53
       },
       {
         "scene": "S06",
         "text": "In stories like this, intelligence is the weapon of those without force.",
-        "start": 50.79,
-        "end": 56.14
+        "start": 57.98,
+        "end": 62.96
       },
       {
         "scene": "S06",
         "text": "The man who owned almost nothing suddenly controlled the bargain.",
-        "start": 56.84,
-        "end": 60.54
+        "start": 63.68,
+        "end": 67.38
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "A poor fisherman hauled a heavy sealed",
+        "text": "What if a fisherman opened a vessel",
         "start": 0.0,
-        "end": 3.02,
+        "end": 2.44,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "vessel from the sea.",
-        "start": 3.02,
+        "text": "imprisoning a dangerous spirit?",
+        "start": 2.45,
         "end": 4.38,
         "word_count": 4
       },
       {
         "scene": "S01",
-        "text": "Inside was no treasure,",
+        "text": "In Arabian Nights tradition,",
         "start": 4.96,
-        "end": 6.34,
+        "end": 6.68,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "A poor fisherman hauled a heavy sealed",
+        "start": 7.26,
+        "end": 9.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "vessel from the sea.",
+        "start": 9.79,
+        "end": 11.08,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "Inside was no treasure,",
+        "start": 11.8,
+        "end": 13.18,
         "word_count": 4
       },
       {
         "scene": "S01",
         "text": "only an enormous spirit imprisoned for centuries.",
-        "start": 6.86,
-        "end": 10.04,
+        "start": 13.66,
+        "end": 16.86,
         "word_count": 7
       },
       {
         "scene": "S02",
         "text": "The jinni emerged in smoke and announced",
-        "start": 10.9,
-        "end": 13.66,
+        "start": 17.76,
+        "end": 20.48,
         "word_count": 7
       },
       {
         "scene": "S02",
         "text": "that his first decision was to kill",
-        "start": 13.66,
-        "end": 15.92,
+        "start": 20.49,
+        "end": 22.76,
         "word_count": 7
       },
       {
         "scene": "S02",
         "text": "the person who had freed him.",
-        "start": 15.92,
-        "end": 17.98,
+        "start": 22.77,
+        "end": 24.86,
         "word_count": 6
       },
       {
         "scene": "S02",
         "text": "Gratitude had curdled into rage.",
-        "start": 18.46,
-        "end": 20.46,
+        "start": 25.3,
+        "end": 27.28,
         "word_count": 5
       },
       {
         "scene": "S03",
         "text": "The fisherman did not reach for a",
-        "start": 21.42,
-        "end": 23.4,
+        "start": 28.014,
+        "end": 30.24,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "sword. He asked a question:",
-        "start": 23.4,
-        "end": 25.44,
+        "start": 30.25,
+        "end": 32.28,
         "word_count": 5
       },
       {
         "scene": "S03",
         "text": "how could such a gigantic spirit ever",
-        "start": 25.44,
-        "end": 28.36,
+        "start": 32.78,
+        "end": 35.2,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "have fitted into so small a vessel?",
-        "start": 28.36,
-        "end": 30.68,
+        "start": 35.21,
+        "end": 37.5,
         "word_count": 7
       },
       {
         "scene": "S04",
         "text": "Offended, the jinni turned to smoke and",
-        "start": 32.04,
-        "end": 34.96,
+        "start": 38.78,
+        "end": 41.8,
         "word_count": 7
       },
       {
         "scene": "S04",
         "text": "flowed back inside to prove the feat.",
-        "start": 34.96,
-        "end": 37.58,
+        "start": 41.81,
+        "end": 44.4,
         "word_count": 7
       },
       {
         "scene": "S04",
         "text": "The fisherman immediately sealed the lid.",
-        "start": 37.58,
-        "end": 40.222,
+        "start": 44.41,
+        "end": 47.06,
         "word_count": 6
       },
       {
         "scene": "S05",
         "text": "Now the prisoner begged for release.",
-        "start": 41.4,
-        "end": 43.52,
+        "start": 48.22,
+        "end": 50.36,
         "word_count": 6
       },
       {
         "scene": "S05",
         "text": "The fisherman had reversed their positions with",
-        "start": 44.16,
-        "end": 46.9,
+        "start": 51.02,
+        "end": 53.74,
         "word_count": 7
       },
       {
         "scene": "S05",
         "text": "nothing but a question and quick hands.",
-        "start": 46.9,
-        "end": 49.66,
+        "start": 53.75,
+        "end": 56.53,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "In stories like this,",
-        "start": 50.79,
-        "end": 52.8,
+        "start": 57.98,
+        "end": 59.64,
         "word_count": 4
       },
       {
         "scene": "S06",
         "text": "intelligence is the weapon of those without",
-        "start": 53.16,
-        "end": 55.58,
+        "start": 60.02,
+        "end": 62.42,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "force. The man who owned almost nothing",
-        "start": 55.58,
-        "end": 58.94,
+        "start": 62.43,
+        "end": 65.76,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "suddenly controlled the bargain.",
-        "start": 58.94,
-        "end": 60.54,
+        "start": 65.77,
+        "end": 67.38,
         "word_count": 4
       }
     ]
@@ -242,8 +269,8 @@
       "id": "S01",
       "asset": "assets/P01.png",
       "start": 0.0,
-      "speech_end": 10.04,
-      "end": 10.6,
+      "speech_end": 16.86,
+      "end": 17.441,
       "pause_after": 0.45,
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
@@ -256,16 +283,16 @@
       },
       "image_interval": {
         "start": 0.0,
-        "end": 10.6
+        "end": 17.441
       },
-      "measured_pause_after": 0.56
+      "measured_pause_after": 0.581
     },
     {
       "id": "S02",
       "asset": "assets/P02.png",
-      "start": 10.6,
-      "speech_end": 20.46,
-      "end": 21.173,
+      "start": 17.441,
+      "speech_end": 27.28,
+      "end": 28.014,
       "pause_after": 0.65,
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
@@ -277,17 +304,17 @@
         }
       },
       "image_interval": {
-        "start": 10.6,
-        "end": 21.173
+        "start": 17.441,
+        "end": 28.014
       },
-      "measured_pause_after": 0.713
+      "measured_pause_after": 0.734
     },
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "start": 21.173,
-      "speech_end": 30.68,
-      "end": 31.553,
+      "start": 28.014,
+      "speech_end": 37.5,
+      "end": 38.394,
       "pause_after": 0.8,
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
@@ -299,17 +326,17 @@
         }
       },
       "image_interval": {
-        "start": 21.173,
-        "end": 31.553
+        "start": 28.014,
+        "end": 38.394
       },
-      "measured_pause_after": 0.873
+      "measured_pause_after": 0.894
     },
     {
       "id": "S04",
       "asset": "assets/P04.png",
-      "start": 31.553,
-      "speech_end": 40.222,
-      "end": 41.022,
+      "start": 38.394,
+      "speech_end": 47.06,
+      "end": 47.863,
       "pause_after": 0.8,
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
@@ -321,17 +348,17 @@
         }
       },
       "image_interval": {
-        "start": 31.553,
-        "end": 41.022
+        "start": 38.394,
+        "end": 47.863
       },
-      "measured_pause_after": 0.8
+      "measured_pause_after": 0.803
     },
     {
       "id": "S05",
       "asset": "assets/P05.png",
-      "start": 41.022,
-      "speech_end": 49.66,
-      "end": 50.79,
+      "start": 47.863,
+      "speech_end": 56.53,
+      "end": 57.63,
       "pause_after": 1.1,
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
@@ -343,17 +370,17 @@
         }
       },
       "image_interval": {
-        "start": 41.022,
-        "end": 50.79
+        "start": 47.863,
+        "end": 57.63
       },
-      "measured_pause_after": 1.13
+      "measured_pause_after": 1.1
     },
     {
       "id": "S06",
       "asset": "assets/P06.png",
-      "start": 50.79,
-      "speech_end": 60.54,
-      "end": 62.248,
+      "start": 57.63,
+      "speech_end": 67.38,
+      "end": 69.089,
       "pause_after": 1.5,
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
@@ -365,10 +392,10 @@
         }
       },
       "image_interval": {
-        "start": 50.79,
-        "end": 62.248
+        "start": 57.63,
+        "end": 69.089
       },
-      "measured_pause_after": 1.708
+      "measured_pause_after": 1.709
     }
   ],
   "music": [
@@ -379,7 +406,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 10.6
+      "end": 17.441
     },
     {
       "scene": "S02",
@@ -387,8 +414,8 @@
       "instrumentation": "oud, ney, riq, eerie drones, splash",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 10.6,
-      "end": 21.173
+      "start": 17.441,
+      "end": 28.014
     },
     {
       "scene": "S03",
@@ -396,8 +423,8 @@
       "instrumentation": "oud, ney, riq, eerie drones, splash",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 21.173,
-      "end": 31.553
+      "start": 28.014,
+      "end": 38.394
     },
     {
       "scene": "S04",
@@ -405,8 +432,8 @@
       "instrumentation": "oud, ney, riq, eerie drones, splash",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 31.553,
-      "end": 41.022
+      "start": 38.394,
+      "end": 47.863
     },
     {
       "scene": "S05",
@@ -414,8 +441,8 @@
       "instrumentation": "oud, ney, riq, eerie drones, splash",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 41.022,
-      "end": 50.79
+      "start": 47.863,
+      "end": 57.63
     },
     {
       "scene": "S06",
@@ -423,8 +450,8 @@
       "instrumentation": "oud, ney, riq, eerie drones, splash",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 50.79,
-      "end": 62.248
+      "start": 57.63,
+      "end": 69.089
     }
   ],
   "sfx": [
@@ -433,42 +460,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 10.6
+      "end": 17.441
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 10.6,
-      "end": 21.173
+      "start": 17.441,
+      "end": 28.014
     },
     {
       "scene": "S03",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 21.173,
-      "end": 31.553
+      "start": 28.014,
+      "end": 38.394
     },
     {
       "scene": "S04",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 31.553,
-      "end": 41.022
+      "start": 38.394,
+      "end": 47.863
     },
     {
       "scene": "S05",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 41.022,
-      "end": 50.79
+      "start": 47.863,
+      "end": 57.63
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 50.79,
-      "end": 62.248
+      "start": 57.63,
+      "end": 69.089
     }
   ]
 }
