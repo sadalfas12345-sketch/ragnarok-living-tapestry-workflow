@@ -806,11 +806,21 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
             x = f"(iw-ow)*({progress})"
             y = "0"
             scene["travel_axis"] = "horizontal"
+            scene.setdefault("camera", {}).update({
+                "primary_direction": "right",
+                "no_shake": True,
+                "no_hard_crop_changes": True,
+            })
         else:
             zoom = f"1.55+0.10*{eased}"
             x = "iw/2-(iw/zoom/2)"
             y = f"(ih-ih/zoom)*({yprogress})"
             scene["travel_axis"] = "vertical"
+            scene.setdefault("camera", {}).update({
+                "primary_direction": "vertical",
+                "no_shake": True,
+                "no_hard_crop_changes": True,
+            })
         # Scene boundaries are composited later as incoming-scene alpha fades.
         # Do not fade individual segments to black here.
         if horizontal:
