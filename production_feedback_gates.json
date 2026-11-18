@@ -25,6 +25,25 @@
     "require_distinct_adjacent_scene_storytelling": true,
     "culture_direction_source": "authoritative episode JSON civilization, art_style, palette, image_prompt, and visual_progression",
     "museum_quality_art_direction": true,
+    "intra_scene_seam_hard_gate": true,
+    "medieval_european_style_gate": {
+      "enabled": true,
+      "minimum_episode_number": 31,
+      "trigger_terms": [
+        "arthurian", "medieval europe", "medieval britain", "british", "welsh", "irish",
+        "anglo-saxon", "saxon", "frankish", "german", "holy roman empire", "norse",
+        "viking", "celtic", "slavic", "french", "english"
+      ],
+      "required_direction": "late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, psychological depth, natural human faces, historically informed fabrics and armor, weathered stone architecture, atmospheric light, muted crimson, forest green and aged bronze. Tragic grandeur, complex multi-figure composition, painterly brushwork, noble but imperfect characters. Avoid excessive gilding, jewel-encrusted costumes, glossy fantasy aesthetics, plastic faces and decorative clutter.",
+      "required_terms": [
+        "pre-raphaelite", "medieval realism", "psychological depth", "natural human faces",
+        "historically informed fabrics", "weathered stone architecture", "atmospheric light",
+        "muted crimson", "forest green", "aged bronze", "tragic grandeur",
+        "complex multi-figure composition", "painterly brushwork", "noble but imperfect",
+        "avoid excessive gilding", "glossy fantasy", "plastic faces", "decorative clutter"
+      ],
+      "fail_on_missing_direction": true
+    },
     "forbidden_style_terms": ["cartoon", "cartoony", "comic-book", "glossy 3d", "glossy fantasy poster", "generic stock illustration"]
   },
   "scene_contrast": {

@@ -209,6 +209,23 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         style_text = " ".join([str(reference.get("style_board_prompt", "")), art_style]).lower()
         if any(term in style_text for term in POLICY.get("artwork", {}).get("forbidden_style_terms", [])):
             errors.append("authoritative art direction contains a forbidden low-fidelity style term")
+        medieval_gate = POLICY.get("artwork", {}).get("medieval_european_style_gate", {})
+        episode_number = int(re.match(r"\d+", epdir.name).group(0)) if re.match(r"\d+", epdir.name) else 0
+        trigger_text = " ".join([
+            civilization,
+            str(source.get("title", "")),
+            art_style,
+            str(reference.get("style_board_prompt", "")),
+        ]).lower()
+        trigger_terms = [str(term).lower() for term in medieval_gate.get("trigger_terms", [])]
+        if medieval_gate.get("enabled") and episode_number >= int(medieval_gate.get("minimum_episode_number", 31)) and any(term in trigger_text for term in trigger_terms):
+            missing = [term for term in medieval_gate.get("required_terms", []) if str(term).lower() not in style_text]
+            if missing and medieval_gate.get("fail_on_missing_direction", True):
+                errors.append("medieval European art-direction gate missing required terms: " + ", ".join(missing))
+            for index, scene_spec in enumerate(source.get("scenes", []), 1):
+                prompt = str(scene_spec.get("image_prompt", "")).lower()
+                if "pre-raphaelite" not in prompt or "medieval realism" not in prompt:
+                    errors.append(f"scene S{index:02d} does not carry the required medieval European Pre-Raphaelite direction")
     if source_path.exists() and POLICY.get("provenance", {}).get("required_after_what_if", True):
         source = json.loads(source_path.read_text(encoding="utf-8"))
         first_scene_id = str(scenes[0].get("id", "S01")) if scenes else "S01"
