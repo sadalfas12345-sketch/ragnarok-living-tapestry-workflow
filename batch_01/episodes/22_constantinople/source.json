@@ -35,8 +35,8 @@
   "image_reference": {
     "path": "references/style_board.png",
     "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Constantinople 1453: The Last Walls in Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Constantinople 1453: The Last Walls in Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks, major-religion figures, and devotional portraits or medallions.",
+    "art_style": "Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls",
     "palette": "derive from the specified art style, not the preceding episode",
     "character_design_lock": [
       "Constantine XI",
@@ -104,7 +104,7 @@
         "Byzantine defenders hold the walls; the Ottoman army remains outside the fortifications",
         "do not depict Byzantine soldiers attacking their own walls"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: vast Theodosian walls, Golden Horn and advancing army. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: vast Theodosian walls, Golden Horn and advancing army. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors; no major-religion figures or devotional portraits or medallions.",
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
         "style": "continuous_panorama_when_possible",
@@ -138,7 +138,7 @@
         "Ottoman artillery fires toward the Theodosian walls; Byzantine defenders repair the damage",
         "do not reverse the attacking and defending sides"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: giant bronze bombard facing pitted walls. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: giant bronze bombard facing pitted walls. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors; no major-religion figures or devotional portraits or medallions.",
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
         "style": "continuous_panorama_when_possible",
@@ -172,7 +172,7 @@
         "Ottoman forces move ships overland into the Golden Horn while defenders observe from the city",
         "do not show Byzantine forces dragging the Ottoman fleet"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: ships on greased timbers above hills into harbor. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: ships on greased timbers above hills into harbor. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors; no major-religion figures or devotional portraits or medallions.",
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
         "style": "continuous_panorama_when_possible",
@@ -206,7 +206,7 @@
         "Ottoman attackers assault the breach and Byzantine defenders resist from the walls",
         "do not show the defenders attacking their own fortifications"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: pre-dawn siege ladders and breach at walls. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: pre-dawn siege ladders and breach at walls. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors; no major-religion figures or devotional portraits or medallions.",
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
         "style": "continuous_panorama_when_possible",
@@ -238,10 +238,10 @@
         "no fabricated final duel"
       ],
       "historical_constraints": [
-        "preserve uncertainty about the exact circumstances of Constantine XI's death",
+        "preserve uncertainty about the exact circumstances of Constantine XI’s death",
         "do not depict a fabricated final duel or a confirmed identifiable death scene"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: emperor’s cloak among smoke, no fabricated final duel. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: emperor’s cloak among smoke, no fabricated final duel. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors; no major-religion figures or devotional portraits or medallions.",
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
         "style": "continuous_panorama_when_possible",
@@ -272,10 +272,10 @@
         "split image of cathedral domes and Ottoman imperial skyline"
       ],
       "historical_constraints": [
-        "show the transition from Byzantine rule to Ottoman imperial rule without erasing the city's layered history",
+        "show the transition from Byzantine rule to Ottoman imperial rule without erasing the city’s layered history",
         "do not depict the new capital as an ahistorical modern skyline"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine icon mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: split image of cathedral domes and Ottoman imperial skyline. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls. Scene: split image of cathedral domes and Ottoman imperial skyline. The source story is Constantinople 1453: The Last Walls. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors; no major-religion figures or devotional portraits or medallions.",
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
         "style": "continuous_panorama_when_possible",
