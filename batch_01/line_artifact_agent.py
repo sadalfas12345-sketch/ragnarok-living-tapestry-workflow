@@ -24,10 +24,12 @@ def inspect_video(video: Path, scenes: list[dict[str, Any]], runtime: float) -> 
     gate = POLICY.get("line_artifact_review", {})
     samples = []
     flagged = []
+    interval = float(gate.get("sample_interval_seconds", 0.5))
     for scene in scenes:
         start, end = float(scene["start"]), float(scene["end"])
-        for fraction in gate.get("sample_fractions", [0.2, 0.5, 0.8]):
-            timestamp = min(runtime - 0.05, start + (end - start) * float(fraction))
+        timestamps = list(np.arange(start + 0.10, min(end, runtime - 0.05), interval))
+        timestamps += [min(runtime - 0.05, end - 0.05)]
+        for timestamp in sorted(set(round(float(x), 3) for x in timestamps if x > start and x < end)):
             gray = _frame(video, timestamp)
             edges = np.abs(np.diff(gray, axis=1))[:, 20:-20]
             means = edges.mean(axis=0)
@@ -38,4 +40,14 @@ def inspect_video(video: Path, scenes: list[dict[str, Any]], runtime: float) -> 
             samples.append(row)
             if row["mean_edge"] >= float(gate.get("max_mean_edge", 18.0)) and row["continuity"] >= float(gate.get("min_continuity", 0.06)):
                 flagged.append(row)
-    return {"reviewer": "line_artifact_agent", "scope": "visible vertical panorama seams only", "status": "FAIL" if flagged else "PASS", "samples": samples, "flagged_samples": flagged}
+    hard_gate = bool(gate.get("hard_gate", True))
+    fail_on_any = bool(gate.get("fail_on_any_flagged_sample", True))
+    failed = bool(flagged) if hard_gate and fail_on_any else bool(flagged)
+    return {
+        "reviewer": "line_artifact_agent",
+        "scope": "visible intra-scene vertical joins and panorama seams only",
+        "hard_gate": hard_gate,
+        "status": "FAIL" if failed else "PASS",
+        "samples": samples,
+        "flagged_samples": flagged,
+    }

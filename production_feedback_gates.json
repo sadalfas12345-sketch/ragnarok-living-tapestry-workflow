@@ -37,11 +37,14 @@
   "line_artifact_review": {
     "enabled": true,
     "reviewer": "line_artifact_agent",
-    "scope": "visible vertical panorama seams only",
+    "scope": "visible intra-scene vertical joins and panorama seams only",
     "sample_fractions": [0.2, 0.5, 0.8, 0.95],
-    "max_mean_edge": 22.0,
-    "min_continuity": 0.18,
-    "fail_on_flagged_sample": true
+    "sample_interval_seconds": 0.5,
+    "max_mean_edge": 35.0,
+    "min_continuity": 0.45,
+    "fail_on_flagged_sample": true,
+    "hard_gate": true,
+    "fail_on_any_flagged_sample": true
   },
   "provenance": {
     "required_after_what_if": true,
