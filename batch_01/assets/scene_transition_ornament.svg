@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9a7650" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#d2ae73" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#6d4d35" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+  <g fill="none" stroke="url(#bronze)" stroke-linecap="round">
+    <path d="M80 960 C220 760 280 760 390 960 C500 1160 580 1160 690 960 C800 760 860 760 1000 960" stroke-width="7" opacity=".48" filter="url(#soft)"/>
+    <path d="M80 960 C220 760 280 760 390 960 C500 1160 580 1160 690 960 C800 760 860 760 1000 960" stroke-width="2.5" opacity=".8"/>
+    <path d="M80 960 C220 1160 280 1160 390 960 C500 760 580 760 690 960 C800 1160 860 1160 1000 960" stroke-width="2.5" opacity=".8"/>
+    <path d="M440 960 C500 900 580 900 640 960 C580 1020 500 1020 440 960Z" stroke-width="3" opacity=".72"/>
+  </g>
+  <g fill="#b38a58" opacity=".65">
+    <path d="M245 785 C205 745 155 770 178 815 C205 824 226 815 245 785Z"/>
+    <path d="M835 785 C875 745 925 770 902 815 C875 824 854 815 835 785Z"/>
+    <path d="M245 1135 C205 1175 155 1150 178 1105 C205 1096 226 1105 245 1135Z"/>
+    <path d="M835 1135 C875 1175 925 1150 902 1105 C875 1096 854 1105 835 1135Z"/>
+  </g>
+</svg>

@@ -37,7 +37,8 @@ Inspect the encoded MP4 and sampled frames, not only JSON fields. Check:
 - The first hook is present once and the provenance/source phrase is not duplicated.
 - The actual TTS and captions do not repeat words that are absent from the story.
 - Each scene reveals three distinct visual developments with smooth, purposeful horizontal travel.
-- Scene transitions have no black flash, crop teleport, frozen frame, or accidental intermediate scene.
+- Scene transitions have no black flash, crop teleport, frozen frame, hard rectangular seam, or accidental intermediate scene.
+- Scene boundaries use the reusable decorative incoming dissolve. The ornament is brief and subtle, does not add runtime, and must not replace the outgoing/incoming artwork with a black frame.
 - Artwork is culture-specific, artful, and readable on a phone rather than generic or cartoonish.
 - Audio is present, narration remains intelligible, and no stale mix or caption version is being delivered.
 
