@@ -179,6 +179,19 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         agent_reports["wording"] = inspect_wording(source_for_agents, caption_text)
         if agent_reports["wording"]["status"] == "FAIL":
             errors.append("wording agent found repetitive or awkward narration wording")
+    if source_for_agents:
+        from .procedural_pipeline_audit import inspect_episode as inspect_procedure
+        from .natural_speech_agent import inspect_episode as inspect_speech
+        agent_reports["procedural_pipeline_audit"] = inspect_procedure(epdir, tl, video, srt)
+        agent_reports["natural_speech_review"] = inspect_speech(epdir, tl)
+        if agent_reports["procedural_pipeline_audit"]["status"] == "FAIL":
+            errors.append("procedural pipeline audit found missing or stale production artifacts")
+        if agent_reports["natural_speech_review"]["status"] == "FAIL":
+            errors.append("natural speech review found merged words, encoding errors, or unnatural internal gaps")
+    from .adversarial_render_agent import inspect_episode as inspect_render
+    agent_reports["adversarial_render_review"] = inspect_render(video, scenes)
+    if agent_reports["adversarial_render_review"]["status"] == "FAIL":
+        errors.append("adversarial render review found a black, frozen, or visually static rendered state")
     if agent_reports:
         audit_dir = epdir / "visual_gates_audit"
         audit_dir.mkdir(exist_ok=True)

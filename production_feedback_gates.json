@@ -156,6 +156,16 @@
     "require_holistic_review": true,
     "review_roles": ["procedural_pipeline_audit", "name_spelling_agent", "historical_scene_agent", "wording_agent", "natural_speech_review", "adversarial_render_review"]
   },
+  "multi_agent_review": {
+    "enabled": true,
+    "procedural_pipeline_audit": {"enabled": true, "hard_gate": true},
+    "name_spelling_agent": {"enabled": true, "hard_gate": true},
+    "historical_scene_agent": {"enabled": true, "hard_gate_on_declared_contradiction": true},
+    "wording_agent": {"enabled": true, "hard_gate": true},
+    "natural_speech_review": {"enabled": true, "hard_gate": true, "auditory_playback_required_when_available": true},
+    "adversarial_render_review": {"enabled": true, "hard_gate": true},
+    "line_artifact_agent": {"enabled": true, "hard_gate": true}
+  },
   "pronunciation": {
     "fallback": "english_source_spelling",
     "preserve_caption_spelling": true,

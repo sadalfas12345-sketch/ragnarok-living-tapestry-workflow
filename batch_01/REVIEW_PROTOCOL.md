@@ -4,6 +4,9 @@ Every delivery requires two independent reviews after rendering.
 
 ## Procedural pipeline audit
 
+`batch_01/procedural_pipeline_audit.py` performs the artifact-existence and
+master-clock checks described below before delivery can pass.
+
 Trace the actual artifact chain:
 
 `authoritative JSON -> effective narration text -> TTS cache -> narration.wav -> word alignment -> SRT -> panorama timeline -> rendered MP4 -> final mixed audio`
@@ -19,7 +22,16 @@ The reviewer must confirm:
 
 ## Adversarial render review
 
+`batch_01/adversarial_render_agent.py` independently samples the encoded MP4,
+not the source artwork. It checks every scene for near-black frames and static
+visual states, and checks each scene boundary for a frozen or black incoming
+frame. Any finding fails the rendered-output gate.
+
 ## Natural-speech review
+
+`batch_01/natural_speech_agent.py` checks measured phrase gaps, narration cache
+content, duplicate or merged words, and encoding artifacts. It reports when
+live playback is unavailable instead of claiming an audition pass.
 
 Inspect the effective TTS text, cache, word timing artifacts, and rendered audio for:
 
