@@ -162,6 +162,27 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if i and cap["start"] < captions[i - 1]["end"] - 0.001: errors.append(f"caption overlap {i} -> {i + 1}")
 
     caption_text = " ".join(str(c.get("text", "")) for c in captions)
+    source_for_agents = json.loads(source_path.read_text(encoding="utf-8")) if (source_path := epdir / "source.json").exists() else {}
+    agent_reports: dict[str, Any] = {}
+    if POLICY.get("name_spelling_review", {}).get("enabled") and source_for_agents:
+        from .name_spelling_agent import inspect_episode as inspect_names
+        agent_reports["name_spelling"] = inspect_names(source_for_agents, caption_text)
+        if agent_reports["name_spelling"]["status"] == "FAIL":
+            errors.append("name spelling agent found a caption mismatch or misspelling")
+    if POLICY.get("historical_scene_review", {}).get("enabled") and source_for_agents:
+        from .historical_scene_agent import inspect_episode as inspect_history
+        agent_reports["historical_scene"] = inspect_history(source_for_agents)
+        if agent_reports["historical_scene"]["status"] == "FAIL":
+            errors.append("historical scene agent found a declared visual contradiction")
+    if POLICY.get("wording_review", {}).get("enabled") and source_for_agents:
+        from .wording_agent import inspect_episode as inspect_wording
+        agent_reports["wording"] = inspect_wording(source_for_agents, caption_text)
+        if agent_reports["wording"]["status"] == "FAIL":
+            errors.append("wording agent found repetitive or awkward narration wording")
+    if agent_reports:
+        audit_dir = epdir / "visual_gates_audit"
+        audit_dir.mkdir(exist_ok=True)
+        (audit_dir / "independent_agent_reports.json").write_text(json.dumps(agent_reports, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if POLICY.get("provenance", {}).get("ordinary_duplicate_words") == "review_only":
         hard_terms = {str(x).lower() for x in POLICY.get("provenance", {}).get("dedupe_terms", [])}
         for match in re.finditer(r"\b([A-Za-z][\w'-]+)\s+\1\b", caption_text, re.IGNORECASE):
@@ -302,7 +323,7 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     report = {
         "episode": epdir.name, "status": "PASS" if not errors else "FAIL", "errors": errors,
         "warnings": warnings, "timeline_runtime_seconds": runtime, "video_runtime_seconds": round(actual_runtime, 3),
-        "dimensions": [width, height], "video_bitrate": bitrate, "caption_count": len(captions), "line_artifact_review": line_report,
+        "dimensions": [width, height], "video_bitrate": bitrate, "caption_count": len(captions), "line_artifact_review": line_report, "independent_agent_reports": agent_reports,
         "scene_visual_audit": scene_audit, "transition_audit": transition_audit,
         "adjacent_scene_contrast_audit": adjacent_scene_audit,
     }

@@ -82,6 +82,33 @@
     "reject_awkward_intro_joins": true,
     "review_sentence_joins": true
   },
+  "name_spelling_review": {
+    "enabled": true,
+    "reviewer": "name_spelling_agent",
+    "fail_on_misspelling": true,
+    "common_misspellings": {
+      "Mehmed": ["Mehmet", "Mehmedh", "Mahmed"],
+      "Mitsuhide": ["Mitsuhidi", "Mitsuhideh"],
+      "Osiris": ["Oziris", "Osirys"]
+    },
+    "accepted_aliases": {
+      "Constantine XI": ["Constantine the Eleventh"]
+    }
+  },
+  "historical_scene_review": {
+    "enabled": true,
+    "reviewer": "historical_scene_agent",
+    "fail_on_declared_contradiction": true,
+    "missing_constraints_status": "REVIEW"
+  },
+  "wording_review": {
+    "enabled": true,
+    "reviewer": "wording_agent",
+    "max_year_repeats": 1,
+    "max_civilization_label_repeats": 1,
+    "fail_on_findings": true,
+    "smooth_safe_gate_insertions_before_tts": true
+  },
   "word_timing": {
     "require_nonempty_scene_artifacts": true,
     "check_internal_pauses": true,
@@ -116,7 +143,7 @@
     "require_srt_match_timeline_captions": true,
     "require_cache_text_match_effective_tts": true,
     "require_holistic_review": true,
-    "review_roles": ["procedural_pipeline_audit", "natural_speech_review", "adversarial_render_review"]
+    "review_roles": ["procedural_pipeline_audit", "name_spelling_agent", "historical_scene_agent", "wording_agent", "natural_speech_review", "adversarial_render_review"]
   },
   "pronunciation": {
     "fallback": "english_source_spelling",

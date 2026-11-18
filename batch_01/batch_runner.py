@@ -550,6 +550,9 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         caption = effective_scene_caption(spec, idx, caption, prior_captions)
         caption = add_character_intro(caption, prior_captions)
         caption = smooth_prose(caption)
+        if FEEDBACK_POLICY.get("wording_review", {}).get("smooth_safe_gate_insertions_before_tts", True):
+            from .wording_agent import smooth_gate_insertions
+            caption = smooth_gate_insertions(caption)
         effective_scenes.append({**scene, "caption": caption})
         prior_captions.append(caption)
     scene_wavs: list[np.ndarray] = []
