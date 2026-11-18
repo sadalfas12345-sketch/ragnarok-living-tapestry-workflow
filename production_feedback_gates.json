@@ -59,8 +59,8 @@
     "scope": "visible intra-scene vertical joins and panorama seams only",
     "sample_fractions": [0.2, 0.5, 0.8, 0.95],
     "sample_interval_seconds": 0.5,
-    "max_mean_edge": 35.0,
-    "min_continuity": 0.45,
+    "max_mean_edge": 52.0,
+    "min_continuity": 0.70,
     "fail_on_flagged_sample": true,
     "hard_gate": true,
     "fail_on_any_flagged_sample": true
