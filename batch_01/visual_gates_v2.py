@@ -230,6 +230,18 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         style_text = " ".join([str(reference.get("style_board_prompt", "")), art_style]).lower()
         if any(term in style_text for term in POLICY.get("artwork", {}).get("forbidden_style_terms", [])):
             errors.append("authoritative art direction contains a forbidden low-fidelity style term")
+        religious_gate = POLICY.get("artwork", {}).get("major_religious_imagery_gate", {})
+        if religious_gate.get("enabled"):
+            forbidden_religious = [str(term).lower() for term in religious_gate.get("forbidden_terms", [])]
+            def contains_forbidden_phrase(text, term):
+                return bool(re.search(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])", text))
+            if any(contains_forbidden_phrase(style_text, term) for term in forbidden_religious):
+                errors.append(religious_gate.get("failure_message", "forbidden religious imagery in art direction"))
+            for index, scene_spec in enumerate(source.get("scenes", []), 1):
+                prompt = str(scene_spec.get("image_prompt", "")).lower()
+                found = [term for term in forbidden_religious if contains_forbidden_phrase(prompt, term)]
+                if found:
+                    errors.append(f"scene S{index:02d} contains forbidden major-religion imagery terms: {', '.join(found)}")
         medieval_gate = POLICY.get("artwork", {}).get("medieval_european_style_gate", {})
         episode_number = int(re.match(r"\d+", epdir.name).group(0)) if re.match(r"\d+", epdir.name) else 0
         trigger_text = " ".join([

@@ -26,6 +26,19 @@
     "culture_direction_source": "authoritative episode JSON civilization, art_style, palette, image_prompt, and visual_progression",
     "museum_quality_art_direction": true,
     "intra_scene_seam_hard_gate": true,
+    "major_religious_imagery_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "forbidden_terms": [
+        "jesus", "christ", "mary", "virgin mary", "saint", "saints", "halo",
+        "crucifix", "crucifixion", "christian cross", "cross of christ",
+        "devotional icon", "religious icon", "religious medallion",
+        "saint portrait", "holy family", "allah", "muhammad", "prophet muhammad",
+        "islamic crescent", "crescent and star", "star of david", "menorah",
+        "buddha statue", "hindu deity", "ganesha", "shiva", "krishna"
+      ],
+      "failure_message": "major-religion figures and explicit devotional symbols are forbidden in the rendered visual direction; minor incidental cultural motifs are allowed"
+    },
     "medieval_european_style_gate": {
       "enabled": true,
       "minimum_episode_number": 31,
