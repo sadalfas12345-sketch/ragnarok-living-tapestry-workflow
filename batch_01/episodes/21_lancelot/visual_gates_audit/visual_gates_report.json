@@ -1,0 +1,322 @@
+{
+  "episode": "21_lancelot",
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "timeline_runtime_seconds": 81.104,
+  "video_runtime_seconds": 81.133,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "video_bitrate": 6038919,
+  "caption_count": 29,
+  "scene_visual_audit": [
+    {
+      "scene": "S01",
+      "sample_times": [
+        1.691,
+        10.569,
+        19.448
+      ],
+      "mean_abs_diffs": [
+        42.36,
+        44.712
+      ],
+      "frame_sha256": [
+        "b0d010209e89ded7",
+        "28e8dba04d031933",
+        "73fb44ca21d1b168"
+      ]
+    },
+    {
+      "scene": "S02",
+      "sample_times": [
+        22.103,
+        27.166,
+        32.228
+      ],
+      "mean_abs_diffs": [
+        45.232,
+        42.692
+      ],
+      "frame_sha256": [
+        "8a0eeb4697c5eb18",
+        "f25cd995553b3b78",
+        "1747a171658a21db"
+      ]
+    },
+    {
+      "scene": "S03",
+      "sample_times": [
+        34.025,
+        38.397,
+        42.769
+      ],
+      "mean_abs_diffs": [
+        39.919,
+        38.303
+      ],
+      "frame_sha256": [
+        "0d7ec8c89bb020e1",
+        "7a35fd1151ccf7fb",
+        "2fd73dbccc2bea07"
+      ]
+    },
+    {
+      "scene": "S04",
+      "sample_times": [
+        44.568,
+        49.639,
+        54.711
+      ],
+      "mean_abs_diffs": [
+        38.735,
+        38.748
+      ],
+      "frame_sha256": [
+        "d8dc2e3fcffcd0d1",
+        "9a3c01b1155306e6",
+        "c605a582a49ec988"
+      ]
+    },
+    {
+      "scene": "S05",
+      "sample_times": [
+        56.676,
+        61.918,
+        67.161
+      ],
+      "mean_abs_diffs": [
+        44.414,
+        43.628
+      ],
+      "frame_sha256": [
+        "06e96235872eed29",
+        "9bd692d289dfd618",
+        "801100dbba1fb837"
+      ]
+    },
+    {
+      "scene": "S06",
+      "sample_times": [
+        69.196,
+        74.632,
+        80.068
+      ],
+      "mean_abs_diffs": [
+        43.387,
+        36.825
+      ],
+      "frame_sha256": [
+        "83affe7bf93854c1",
+        "1907ef535c4ec77e",
+        "ab120cf72e6c023d"
+      ]
+    }
+  ],
+  "transition_audit": [
+    {
+      "from": "S01",
+      "to": "S02",
+      "boundary": 21.139,
+      "offsets": [
+        -0.18,
+        -0.06,
+        0.04,
+        0.14,
+        0.26
+      ],
+      "mean_abs_diffs": [
+        22.424,
+        20.975,
+        24.33,
+        29.43
+      ],
+      "mean_luma": [
+        109.7,
+        109.17,
+        107.72,
+        105.0,
+        103.11
+      ]
+    },
+    {
+      "from": "S02",
+      "to": "S03",
+      "boundary": 33.192,
+      "offsets": [
+        -0.18,
+        -0.06,
+        0.04,
+        0.14,
+        0.26
+      ],
+      "mean_abs_diffs": [
+        22.225,
+        28.172,
+        25.565,
+        34.626
+      ],
+      "mean_luma": [
+        99.51,
+        99.9,
+        101.07,
+        103.72,
+        104.96
+      ]
+    },
+    {
+      "from": "S03",
+      "to": "S04",
+      "boundary": 43.602,
+      "offsets": [
+        -0.18,
+        -0.06,
+        0.04,
+        0.14,
+        0.26
+      ],
+      "mean_abs_diffs": [
+        30.322,
+        29.329,
+        25.279,
+        29.121
+      ],
+      "mean_luma": [
+        108.29,
+        107.43,
+        106.04,
+        103.82,
+        101.83
+      ]
+    },
+    {
+      "from": "S04",
+      "to": "S05",
+      "boundary": 55.677,
+      "offsets": [
+        -0.18,
+        -0.06,
+        0.04,
+        0.14,
+        0.26
+      ],
+      "mean_abs_diffs": [
+        27.135,
+        18.886,
+        26.637,
+        33.577
+      ],
+      "mean_luma": [
+        112.03,
+        111.98,
+        112.4,
+        114.4,
+        117.01
+      ]
+    },
+    {
+      "from": "S05",
+      "to": "S06",
+      "boundary": 68.16,
+      "offsets": [
+        -0.18,
+        -0.06,
+        0.04,
+        0.14,
+        0.26
+      ],
+      "mean_abs_diffs": [
+        28.752,
+        20.675,
+        26.543,
+        30.521
+      ],
+      "mean_luma": [
+        107.61,
+        107.85,
+        108.24,
+        109.31,
+        111.0
+      ]
+    }
+  ],
+  "adjacent_scene_contrast_audit": [
+    {
+      "from": "S01",
+      "to": "S02",
+      "sample_fractions": [
+        0.08,
+        0.5,
+        0.92
+      ],
+      "mean_abs_diffs": [
+        43.525,
+        41.541,
+        44.548
+      ],
+      "distinct_sample_count": 3
+    },
+    {
+      "from": "S02",
+      "to": "S03",
+      "sample_fractions": [
+        0.08,
+        0.5,
+        0.92
+      ],
+      "mean_abs_diffs": [
+        43.332,
+        42.171,
+        42.099
+      ],
+      "distinct_sample_count": 3
+    },
+    {
+      "from": "S03",
+      "to": "S04",
+      "sample_fractions": [
+        0.08,
+        0.5,
+        0.92
+      ],
+      "mean_abs_diffs": [
+        43.388,
+        38.796,
+        40.613
+      ],
+      "distinct_sample_count": 3
+    },
+    {
+      "from": "S04",
+      "to": "S05",
+      "sample_fractions": [
+        0.08,
+        0.5,
+        0.92
+      ],
+      "mean_abs_diffs": [
+        44.156,
+        40.111,
+        43.645
+      ],
+      "distinct_sample_count": 3
+    },
+    {
+      "from": "S05",
+      "to": "S06",
+      "sample_fractions": [
+        0.08,
+        0.5,
+        0.92
+      ],
+      "mean_abs_diffs": [
+        44.521,
+        42.464,
+        44.772
+      ],
+      "distinct_sample_count": 3
+    }
+  ]
+}

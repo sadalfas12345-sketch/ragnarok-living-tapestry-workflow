@@ -1,34 +1,34 @@
 {
   "episode": 21,
   "title": "Lancelot and Guinevere: Love Against a Kingdom",
-  "timeline_runtime_seconds": 73.379,
-  "narration_runtime_seconds": 73.379,
-  "video_runtime_seconds": 73.333,
-  "caption_count": 28,
+  "timeline_runtime_seconds": 81.104,
+  "narration_runtime_seconds": 81.104,
+  "video_runtime_seconds": 81.133,
+  "caption_count": 29,
   "caption_overlap_count": 0,
   "scene_pauses_seconds": [
     {
       "from": "S01",
       "to": "S02",
-      "seconds": 0.454,
+      "seconds": 0.479,
       "intended_seconds": 0.45
     },
     {
       "from": "S02",
       "to": "S03",
-      "seconds": 0.807,
+      "seconds": 0.732,
       "intended_seconds": 0.65
     },
     {
       "from": "S03",
       "to": "S04",
-      "seconds": 0.8,
+      "seconds": 0.802,
       "intended_seconds": 0.8
     },
     {
       "from": "S04",
       "to": "S05",
-      "seconds": 0.852,
+      "seconds": 0.8,
       "intended_seconds": 0.8
     },
     {

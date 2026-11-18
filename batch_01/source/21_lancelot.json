@@ -94,7 +94,7 @@
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
+      "asset": "assets/H01.png",
       "caption": "What if the greatest knight betrayed the very court he served? Sir Lancelot was among Arthur’s greatest knights, celebrated for courage and loyalty. Yet his devotion to Queen Guinevere grew into a love that threatened the court itself.",
       "beat_title": "The loyal knight",
       "required_visuals": [
@@ -124,7 +124,7 @@
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
+      "asset": "assets/H02.png",
       "caption": "Their relationship could not remain private forever. In many Arthurian tellings, the very bonds that made Camelot glorious became tangled in betrayal.",
       "beat_title": "The secret",
       "required_visuals": [
@@ -155,7 +155,7 @@
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
+      "asset": "assets/H03.png",
       "caption": "When the affair was revealed, conflict erupted among people who had once fought shoulder to shoulder. Loyalty divided the Round Table.",
       "beat_title": "The exposure",
       "required_visuals": [
@@ -186,7 +186,7 @@
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
+      "asset": "assets/H04.png",
       "caption": "Lancelot acted to save Guinevere, but the rescue intensified the war within Arthur’s kingdom. Each choice made the next disaster harder to prevent.",
       "beat_title": "The rescue",
       "required_visuals": [
@@ -216,7 +216,7 @@
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
+      "asset": "assets/H05.png",
       "caption": "While Arthur pursued the conflict, other enemies exploited the division. Camelot’s downfall arrived not through lack of strength, but through broken trust.",
       "beat_title": "The collapse",
       "required_visuals": [
@@ -247,7 +247,7 @@
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
+      "asset": "assets/H06.png",
       "caption": "Later retellings remember not one villain, but a tragic knot of love, honor, and duty. A perfect court could not contain imperfect human hearts.",
       "beat_title": "The elegy",
       "required_visuals": [

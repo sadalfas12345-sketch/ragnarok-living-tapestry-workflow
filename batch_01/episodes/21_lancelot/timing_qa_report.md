@@ -2,10 +2,10 @@
 
 - **episode:** 21
 - **title:** Lancelot and Guinevere: Love Against a Kingdom
-- **timeline_runtime_seconds:** 73.379
-- **narration_runtime_seconds:** 73.379
-- **video_runtime_seconds:** 73.333
-- **caption_count:** 28
+- **timeline_runtime_seconds:** 81.104
+- **narration_runtime_seconds:** 81.104
+- **video_runtime_seconds:** 81.133
+- **caption_count:** 29
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** traditional_narrative_or_literary_retelling
 - **research_status:** editorial_outline_needs_source_review_before_publication
@@ -13,10 +13,10 @@
 - **status:** PASS
 
 ## Scene pauses
-- S01 -> S02: 0.454s
-- S02 -> S03: 0.807s
-- S03 -> S04: 0.800s
-- S04 -> S05: 0.852s
+- S01 -> S02: 0.479s
+- S02 -> S03: 0.732s
+- S03 -> S04: 0.802s
+- S04 -> S05: 0.800s
 - S05 -> S06: 1.100s
 
 ## Errors
