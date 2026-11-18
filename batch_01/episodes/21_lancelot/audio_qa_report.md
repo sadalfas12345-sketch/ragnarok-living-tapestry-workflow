@@ -2,8 +2,8 @@
 
 - Final mix: 48 kHz stereo WAV
 - Narrator: `en-US-AvaNeural`, rate `-15%`
-- Loudness: -14.3 LUFS integrated, -1.0 dBTP true peak, 2.7 LU LRA
-- Loudness-normalized check: -14.3 LUFS integrated, -1.0 dBTP true peak, 2.7 LU output LRA
+- Loudness: -14.2 LUFS integrated, -1.0 dBTP true peak, 2.7 LU LRA
+- Loudness-normalized check: -14.2 LUFS integrated, -1.0 dBTP true peak, 2.7 LU output LRA
 - Narration ducking: enabled, with smooth 60 ms attack and 700 ms release
 - Stems present: narration, music, and SFX
 - Music profile: `lancelot_guinevere_forbidden_love`

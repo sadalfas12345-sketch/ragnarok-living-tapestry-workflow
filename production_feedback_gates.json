@@ -48,7 +48,15 @@
   },
   "prose": {
     "smooth_character_intro_joins": true,
-    "reject_awkward_intro_joins": true
+    "reject_awkward_intro_joins": true,
+    "review_sentence_joins": true
+  },
+  "word_timing": {
+    "require_nonempty_scene_artifacts": true,
+    "check_internal_pauses": true,
+    "warn_internal_gap_seconds": 0.35,
+    "fail_internal_gap_seconds": 0.5,
+    "sentence_terminal_punctuation": [".", "!", "?"]
   },
   "captions": {
     "allow_overlap_seconds": 0.0,

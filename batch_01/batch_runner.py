@@ -361,6 +361,9 @@ def script_tokens(text: str) -> list[str]:
 def speech_text(text: str) -> str:
     """Use native-friendly TTS phonetics while preserving caption spelling."""
     spoken = normalize_text(text)
+    # Keep punctuation in captions, but prevent TTS engines from turning
+    # ordinary internal commas into long, distracting word-to-word gaps.
+    spoken = re.sub(r",(?=\s+\w)", "", spoken)
     for written, phonetic in sorted(PRONUNCIATION_LEXICON.items(), key=lambda item: len(item[0]), reverse=True):
         spoken = re.sub(rf"(?<!\w){re.escape(written)}(?!\w)", phonetic, spoken)
     return spoken
@@ -396,6 +399,8 @@ def origin_context(spec: dict[str, Any]) -> str:
         return "In Japanese legend,"
     if "china" in lower:
         return "In Chinese legend,"
+    if "arthurian" in lower:
+        return "In Arthurian legend,"
     if civilization:
         return f"In {civilization} tradition,"
     return "In this traditional story,"
@@ -613,7 +618,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     captions = []
     phrases = []
     cursor_word = 0
-    for scene, scene_tl in zip(effective_scenes, scenes):
+    for scene_index, (scene, scene_tl) in enumerate(zip(effective_scenes, scenes), 1):
         tokens = script_tokens(scene["caption"])
         scene_measured = [x for x in measured if x["end"] >= scene_tl["start"] - 0.2 and x["start"] <= scene_tl["speech_end"] + 0.2]
         scene_pairs = []
@@ -635,6 +640,15 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         if scene_pairs:
             scene_pairs = [{**x, "start": max(scene_tl["start"], x["start"]), "end": min(scene_tl["speech_end"], x["end"])} for x in scene_pairs]
             scene_tl["speech_end"] = round(max(x["end"] for x in scene_pairs), 3)
+        # Preserve a non-empty, canonical per-scene word-timing artifact even
+        # when the TTS backend does not emit native WordBoundary events. The
+        # measured waveform alignment remains the timing source, while the
+        # written words remain the authoritative TTS text.
+        scene_words_path = audio_dir / f"scene_{scene_index:02d}_words.json"
+        scene_words_path.write_text(json.dumps([
+            {"text": pair["text"], "start": round(pair["start"], 3), "end": round(pair["end"], 3), "source": "measured_waveform_alignment"}
+            for pair in scene_pairs
+        ], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         local = 0
         for phrase in split_sentences(scene["caption"]):
             n = len(script_tokens(phrase))
@@ -939,6 +953,24 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
 def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
     tl = json.loads((epdir / "timeline.json").read_text(encoding="utf-8"))
     errors = []
+    word_policy = FEEDBACK_POLICY.get("word_timing", {})
+    if word_policy.get("require_nonempty_scene_artifacts", True):
+        for index in range(1, len(spec.get("scenes", [])) + 1):
+            words_path = epdir / "audio" / f"scene_{index:02d}_words.json"
+            try:
+                scene_words = json.loads(words_path.read_text(encoding="utf-8"))
+            except (OSError, ValueError, TypeError, json.JSONDecodeError):
+                scene_words = []
+            if not isinstance(scene_words, list) or not scene_words:
+                errors.append(f"scene_{index:02d}_words.json is missing or empty")
+                continue
+            if word_policy.get("check_internal_pauses", True):
+                fail_gap = float(word_policy.get("fail_internal_gap_seconds", 0.5))
+                for previous, current in zip(scene_words, scene_words[1:]):
+                    gap = float(current.get("start", 0.0)) - float(previous.get("end", 0.0))
+                    terminal = str(previous.get("text", "")).rstrip().endswith(tuple(word_policy.get("sentence_terminal_punctuation", [".", "!", "?"])))
+                    if gap > fail_gap and not terminal:
+                        errors.append(f"{words_path.name} has an unexplained {gap:.3f}s internal pause after {previous.get('text', '')!r}")
     sources_path = epdir / "music_sources.json"
     if sources_path.exists():
         sources = json.loads(sources_path.read_text(encoding="utf-8"))
