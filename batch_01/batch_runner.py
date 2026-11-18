@@ -417,8 +417,11 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
     bridge = origin_context(spec)
     existing_context = " ".join(sentences[1:]).lstrip().lower()
     provenance_markers = tuple(str(x).lower() for x in FEEDBACK_POLICY.get("provenance", {}).get("recognized_markers", []))
-    has_provenance = bool(re.match(r"^(in|from|according to|set in)\b", existing_context)) and any(
-        marker in existing_context for marker in provenance_markers
+    has_provenance = (
+        bool(re.match(r"^(in|from|according to|set in)\b", existing_context)) and any(
+            marker in existing_context for marker in provenance_markers
+        )
+        or bool(re.search(r"\b(?:in|from|during)\s+(?:the\s+)?(?:\d{3,4}|[a-z]+-century)\b", existing_context))
     )
     if bridge.lower().rstrip(",") in caption.lower() or has_provenance:
         return caption

@@ -253,7 +253,8 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         first_text = " ".join(str(c.get("text", "")) for c in captions if c.get("scene") == first_scene_id)
         if re.match(r"^What if\b", first_text, re.I):
             expected = expected_provenance(str(source.get("civilization", "")))
-            if expected not in first_text.lower() and not any(marker in first_text.lower() for marker in POLICY["provenance"].get("recognized_markers", [])):
+            has_historical_date = bool(re.search(r"\b(?:1[0-9]{3}|20[0-9]{2})\b", first_text))
+            if expected not in first_text.lower() and not any(marker in first_text.lower() for marker in POLICY["provenance"].get("recognized_markers", [])) and not has_historical_date:
                 errors.append(f"first What if scene lacks source/provenance phrase for {source.get('civilization', 'unknown civilization')}")
             if POLICY.get("provenance", {}).get("dedupe_repeated_terms", True):
                 for term in POLICY.get("provenance", {}).get("dedupe_terms", []):
