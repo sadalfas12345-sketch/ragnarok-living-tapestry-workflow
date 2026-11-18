@@ -30,14 +30,12 @@
       "enabled": true,
       "hard_gate": true,
       "forbidden_terms": [
-        "jesus", "christ", "mary", "virgin mary", "saint", "saints", "halo",
-        "crucifix", "crucifixion", "christian cross", "cross of christ",
+        "jesus", "christ", "mary", "virgin mary", "saint", "saints",
         "devotional icon", "religious icon", "religious medallion",
         "saint portrait", "holy family", "allah", "muhammad", "prophet muhammad",
-        "islamic crescent", "crescent and star", "star of david", "menorah",
         "buddha statue", "hindu deity", "ganesha", "shiva", "krishna"
       ],
-      "failure_message": "major-religion figures and explicit devotional symbols are forbidden in the rendered visual direction; minor incidental cultural motifs are allowed"
+      "failure_message": "major-religion figures and devotional portraits or medallions are forbidden; standalone symbols, architecture, and minor cultural motifs are allowed"
     },
     "medieval_european_style_gate": {
       "enabled": true,
