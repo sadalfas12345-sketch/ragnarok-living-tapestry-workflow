@@ -56,7 +56,16 @@
     "check_internal_pauses": true,
     "warn_internal_gap_seconds": 0.35,
     "fail_internal_gap_seconds": 0.5,
-    "sentence_terminal_punctuation": [".", "!", "?"]
+    "sentence_terminal_punctuation": [".", "!", "?"],
+    "pause_justifying_punctuation": [",", ";", ":", ".", "!", "?"]
+  },
+  "natural_speech_review": {
+    "required": true,
+    "review_merged_words": true,
+    "review_clause_separation": true,
+    "review_provenance_flow": true,
+    "review_mojibake_and_encoding": true,
+    "review_live_playback_when_available": true
   },
   "captions": {
     "allow_overlap_seconds": 0.0,
@@ -76,7 +85,7 @@
     "require_srt_match_timeline_captions": true,
     "require_cache_text_match_effective_tts": true,
     "require_holistic_review": true,
-    "review_roles": ["procedural_pipeline_audit", "adversarial_render_review"]
+    "review_roles": ["procedural_pipeline_audit", "natural_speech_review", "adversarial_render_review"]
   },
   "pronunciation": {
     "fallback": "english_source_spelling",

@@ -361,9 +361,6 @@ def script_tokens(text: str) -> list[str]:
 def speech_text(text: str) -> str:
     """Use native-friendly TTS phonetics while preserving caption spelling."""
     spoken = normalize_text(text)
-    # Keep punctuation in captions, but prevent TTS engines from turning
-    # ordinary internal commas into long, distracting word-to-word gaps.
-    spoken = re.sub(r",(?=\s+\w)", "", spoken)
     for written, phonetic in sorted(PRONUNCIATION_LEXICON.items(), key=lambda item: len(item[0]), reverse=True):
         spoken = re.sub(rf"(?<!\w){re.escape(written)}(?!\w)", phonetic, spoken)
     return spoken
@@ -968,8 +965,8 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
                 fail_gap = float(word_policy.get("fail_internal_gap_seconds", 0.5))
                 for previous, current in zip(scene_words, scene_words[1:]):
                     gap = float(current.get("start", 0.0)) - float(previous.get("end", 0.0))
-                    terminal = str(previous.get("text", "")).rstrip().endswith(tuple(word_policy.get("sentence_terminal_punctuation", [".", "!", "?"])))
-                    if gap > fail_gap and not terminal:
+                    justified = str(previous.get("text", "")).rstrip().endswith(tuple(word_policy.get("pause_justifying_punctuation", [",", ";", ":", ".", "!", "?"])))
+                    if gap > fail_gap and not justified:
                         errors.append(f"{words_path.name} has an unexplained {gap:.3f}s internal pause after {previous.get('text', '')!r}")
     sources_path = epdir / "music_sources.json"
     if sources_path.exists():

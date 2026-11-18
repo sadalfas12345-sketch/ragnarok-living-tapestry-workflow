@@ -19,6 +19,19 @@ The reviewer must confirm:
 
 ## Adversarial render review
 
+## Natural-speech review
+
+Inspect the effective TTS text, cache, word timing artifacts, and rendered audio for:
+
+- merged adjacent words;
+- missing clause separation;
+- awkward provenance flow;
+- duplicate or malformed words;
+- encoding artifacts;
+- unnatural internal pauses.
+
+Audition the rendered audio when playback is available and record the limitation when it is not.
+
 Inspect the encoded MP4 and sampled frames, not only JSON fields. Check:
 
 - The first hook is present once and the provenance/source phrase is not duplicated.
