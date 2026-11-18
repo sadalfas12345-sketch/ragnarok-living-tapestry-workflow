@@ -13,12 +13,7 @@
     "required_visual_beats": 3,
     "transition_max_black_luma": 2.0,
     "transition_min_progression_diff": 0.05,
-    "require_actual_rendered_progression": true,
-    "boundary_treatment": "decorative_incoming_dissolve",
-    "decorative_overlay_required": true,
-    "decorative_overlay_duration_seconds": 0.44,
-    "forbid_hard_scene_seams": true,
-    "forbid_fade_to_black": true
+    "require_actual_rendered_progression": true
   },
   "artwork": {
     "require_horizontal_panorama": true,

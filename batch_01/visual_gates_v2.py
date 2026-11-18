@@ -102,11 +102,6 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     errors: list[str] = []
     warnings: list[str] = []
 
-    if POLICY.get("scenes", {}).get("decorative_overlay_required", False):
-        ornament = WORK / "assets" / "scene_transition_ornament.png"
-        if not ornament.exists():
-            errors.append("required decorative scene-transition overlay is missing")
-
     if not timeline_path.exists(): errors.append("missing timeline.json")
     if not video.exists(): errors.append("missing final_vertical_1080x1920.mp4")
     if not srt.exists(): errors.append("missing Captions_final.srt")

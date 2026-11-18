@@ -700,12 +700,6 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
     segdir = epdir / "segments"; segdir.mkdir(exist_ok=True)
     files = []
     transition_duration = 0.22
-    # A brief hand-painted foliate knot makes the scene change read as a
-    # deliberate tapestry ornament instead of exposing a hard rectangular
-    # seam between unrelated panoramas. It is composited over the same
-    # incoming-scene dissolve and never adds runtime.
-    ornament_path = ROOT / "assets" / "scene_transition_ornament.png"
-    ornament_duration = 0.44
     for i, scene in enumerate(tl["scenes"], 1):
         horizontal_asset = epdir / "assets" / f"H{i:02d}.png"
         require_horizontal = bool(FEEDBACK_POLICY.get("artwork", {}).get("require_horizontal_panorama", True))
@@ -887,20 +881,6 @@ def render_video(spec: dict[str, Any], epdir: Path) -> Path:
         graph.append(f"{current}{incoming}overlay=0:0:eof_action=pass:format=auto{nxt}")
         current = nxt
         offset += durations[idx]
-    if ornament_path.exists():
-        ornament_start = len(files)
-        for boundary_index in range(1, len(files)):
-            inputs += ["-loop", "1", "-t", f"{ornament_duration:.2f}", "-i", str(ornament_path)]
-            boundary = sum(durations[:boundary_index])
-            ornament = f"[orn{boundary_index}]"
-            ornament_video = f"[ornv{boundary_index}]"
-            graph.append(
-                f"[{ornament_start + boundary_index - 1}:v]format=rgba,trim=duration={ornament_duration:.2f},"
-                f"fade=t=in:st=0:d=0.12:alpha=1,fade=t=out:st=0.28:d=0.16:alpha=1,"
-                f"setpts=PTS-STARTPTS+{boundary - ornament_duration / 2:.3f}/TB{ornament}"
-            )
-            graph.append(f"{current}{ornament}overlay=0:0:eof_action=pass:format=auto{ornament_video}")
-            current = ornament_video
     graph.append(f"{current}trim=duration={runtime:.3f},setpts=PTS-STARTPTS,format=yuv420p[outv]")
     raw = epdir / "video_only.mp4"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", *inputs, "-filter_complex", ";".join(graph), "-map", "[outv]", "-an", "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "6M", "-bufsize", "12M", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(raw)])
