@@ -35,9 +35,9 @@
   "image_reference": {
     "path": "references/style_board.png",
     "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Lancelot and Guinevere: Love Against a Kingdom in Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders",
-    "palette": "derive from the specified art style, not the preceding episode",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Lancelot and Guinevere: Love Against a Kingdom as a monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, psychological depth, natural human faces, historically informed fabrics and armor, weathered stone architecture, atmospheric light, muted crimson, forest green and aged bronze, tragic grandeur, complex multi-figure composition, painterly brushwork. Avoid excessive gilding, jewel-encrusted costumes, glossy fantasy aesthetics, plastic faces and decorative clutter. No text or watermark.",
+    "art_style": "monumental late-19th-century Pre-Raphaelite oil painting, restrained medieval realism, painterly brushwork",
+    "palette": "muted crimson, forest green and aged bronze with atmospheric natural light",
     "character_design_lock": [
       "Lancelot",
       "Guinevere",
@@ -100,7 +100,7 @@
       "required_visuals": [
         "knight kneels before queen under gothic arch"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Scene: knight kneels before queen under gothic arch. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, natural faces, historically informed fabrics and armor, muted crimson, forest green and aged bronze. Scene: knight kneels before queen under weathered stone arch. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and atmospheric painterly treatment from references/style_board.png; no glossy fantasy, excessive gilding, plastic faces, printed captions or watermark.",
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
         "style": "continuous_panorama_when_possible",
@@ -131,7 +131,7 @@
         "discreet meeting behind tapestry",
         "shadowed observers"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Scene: discreet meeting behind tapestry, shadowed observers. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, natural faces, historically informed fabrics and armor, muted crimson, forest green and aged bronze. Scene: discreet meeting behind tapestry, shadowed observers. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and atmospheric painterly treatment from references/style_board.png; no glossy fantasy, excessive gilding, plastic faces, printed captions or watermark.",
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
         "style": "continuous_panorama_when_possible",
@@ -162,7 +162,7 @@
         "round table split by painted crack",
         "knights draw swords"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Scene: round table split by painted crack, knights draw swords. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, natural faces, historically informed fabrics and armor, muted crimson, forest green and aged bronze. Scene: round table split by a physical fracture, knights draw swords. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and atmospheric painterly treatment from references/style_board.png; no glossy fantasy, excessive gilding, plastic faces, printed captions or watermark.",
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
         "style": "continuous_panorama_when_possible",
@@ -192,7 +192,7 @@
       "required_visuals": [
         "armed knight rescues queen at castle gate"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Scene: armed knight rescues queen at castle gate. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, natural faces, historically informed fabrics and armor, muted crimson, forest green and aged bronze. Scene: armed knight rescues queen at castle gate. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and atmospheric painterly treatment from references/style_board.png; no glossy fantasy, excessive gilding, plastic faces, printed captions or watermark.",
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
         "style": "continuous_panorama_when_possible",
@@ -223,7 +223,7 @@
         "castle banners torn",
         "gold manuscript edges darken"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Scene: castle banners torn, gold manuscript edges darken. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, natural faces, historically informed fabrics and armor, muted crimson, forest green and aged bronze. Scene: castle banners torn, weathered stone darkens. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and atmospheric painterly treatment from references/style_board.png; no glossy fantasy, excessive gilding, plastic faces, printed captions or watermark.",
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
         "style": "continuous_panorama_when_possible",
@@ -254,7 +254,7 @@
         "empty Round Table",
         "one candle fading"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic illuminated manuscript, stained-glass ruby and sapphire, gold leaf borders. Scene: empty Round Table, one candle fading. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential monumental late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, natural faces, historically informed fabrics and armor, muted crimson, forest green and aged bronze. Scene: empty Round Table, one candle fading in a weathered stone hall. The source story is Lancelot and Guinevere: Love Against a Kingdom. Reuse exact character designs and atmospheric painterly treatment from references/style_board.png; no glossy fantasy, excessive gilding, plastic faces, printed captions or watermark.",
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
         "style": "continuous_panorama_when_possible",

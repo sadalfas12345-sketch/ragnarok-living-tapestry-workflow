@@ -4,7 +4,7 @@
 - **title:** Lancelot and Guinevere: Love Against a Kingdom
 - **timeline_runtime_seconds:** 79.36
 - **narration_runtime_seconds:** 79.36
-- **video_runtime_seconds:** 79.366
+- **video_runtime_seconds:** 79.367
 - **caption_count:** 29
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** traditional_narrative_or_literary_retelling

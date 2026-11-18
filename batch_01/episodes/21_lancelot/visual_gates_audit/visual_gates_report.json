@@ -2,14 +2,21 @@
   "episode": "21_lancelot",
   "status": "PASS",
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "scene S01 image prompt does not repeat the episode's cultural/style direction",
+    "scene S02 image prompt does not repeat the episode's cultural/style direction",
+    "scene S03 image prompt does not repeat the episode's cultural/style direction",
+    "scene S04 image prompt does not repeat the episode's cultural/style direction",
+    "scene S05 image prompt does not repeat the episode's cultural/style direction",
+    "scene S06 image prompt does not repeat the episode's cultural/style direction"
+  ],
   "timeline_runtime_seconds": 79.36,
-  "video_runtime_seconds": 79.366,
+  "video_runtime_seconds": 79.367,
   "dimensions": [
     1080,
     1920
   ],
-  "video_bitrate": 6005195,
+  "video_bitrate": 4791949,
   "caption_count": 29,
   "scene_visual_audit": [
     {
@@ -20,13 +27,13 @@
         17.844
       ],
       "mean_abs_diffs": [
-        42.66,
-        44.862
+        30.814,
+        30.84
       ],
       "frame_sha256": [
-        "adf6edb9535d925e",
-        "b0420a4eb7aa3600",
-        "1f2e89bd413dfcdf"
+        "c0b26e89ee023be3",
+        "88d0a8fef080d340",
+        "24249f776fd19b31"
       ]
     },
     {
@@ -37,13 +44,13 @@
         30.485
       ],
       "mean_abs_diffs": [
-        44.163,
-        41.336
+        34.247,
+        24.919
       ],
       "frame_sha256": [
-        "404e1d8fe435293d",
-        "ba0a785cbbe82e5c",
-        "4211f765cac98a93"
+        "da2b62e53e63fb53",
+        "982cc22c864d0fd2",
+        "fc0df0bb5e8bcd2a"
       ]
     },
     {
@@ -54,13 +61,13 @@
         41.026
       ],
       "mean_abs_diffs": [
-        39.913,
-        37.422
+        32.004,
+        28.124
       ],
       "frame_sha256": [
-        "7fb95f584114b305",
-        "90877e9d4ce297d3",
-        "9b53cde0aa3553c3"
+        "74649596b149ce91",
+        "0aa0336c07b0c9ba",
+        "5a2232b9c91c79dc"
       ]
     },
     {
@@ -71,13 +78,13 @@
         52.967
       ],
       "mean_abs_diffs": [
-        38.717,
-        38.744
+        34.933,
+        29.876
       ],
       "frame_sha256": [
-        "c32ecf588ad16db2",
-        "642f3174c3f98fc8",
-        "ba607bab8465f4a7"
+        "6488fa25dca7f4fc",
+        "b4be69e937eb0bd2",
+        "1c2e908008d7afad"
       ]
     },
     {
@@ -88,13 +95,13 @@
         65.417
       ],
       "mean_abs_diffs": [
-        44.443,
-        43.503
+        39.536,
+        37.617
       ],
       "frame_sha256": [
-        "98d6ecd168fe729b",
-        "4ecaef5527f2acca",
-        "86a7edd3bae4fa2e"
+        "ce3878ecab794190",
+        "a0392498af5962d5",
+        "371b7c32fc804994"
       ]
     },
     {
@@ -105,13 +112,13 @@
         78.324
       ],
       "mean_abs_diffs": [
-        43.328,
-        36.846
+        25.33,
+        22.45
       ],
       "frame_sha256": [
-        "f732d90c332ac50a",
-        "685cc723c1199d3d",
-        "8aef303a2e75c5e9"
+        "4fe21e0f9828cb29",
+        "4e3e1ecccf8bb84a",
+        "35e1918ef77bf32b"
       ]
     }
   ],
@@ -128,17 +135,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        23.884,
-        24.699,
-        24.642,
-        27.64
+        7.578,
+        13.74,
+        19.965,
+        19.11
       ],
       "mean_luma": [
-        109.64,
-        109.16,
-        106.61,
-        104.12,
-        103.67
+        68.73,
+        68.79,
+        68.02,
+        67.68,
+        67.94
       ]
     },
     {
@@ -153,17 +160,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        30.555,
-        20.953,
-        28.815,
-        34.755
+        11.607,
+        9.004,
+        17.215,
+        19.164
       ],
       "mean_luma": [
-        99.68,
-        100.17,
-        101.05,
-        103.42,
-        104.6
+        64.17,
+        64.31,
+        66.63,
+        72.01,
+        76.59
       ]
     },
     {
@@ -178,17 +185,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        22.595,
-        29.092,
-        24.918,
-        33.004
+        9.286,
+        13.139,
+        15.348,
+        17.88
       ],
       "mean_luma": [
-        108.1,
-        107.9,
-        105.99,
-        104.3,
-        101.97
+        67.21,
+        67.11,
+        67.67,
+        67.11,
+        65.34
       ]
     },
     {
@@ -203,17 +210,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        31.298,
-        21.476,
-        25.529,
-        29.461
+        11.555,
+        12.087,
+        16.646,
+        16.78
       ],
       "mean_luma": [
-        112.02,
-        112.05,
-        112.74,
-        115.08,
-        117.02
+        89.54,
+        89.29,
+        85.46,
+        80.6,
+        78.51
       ]
     },
     {
@@ -228,17 +235,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        29.086,
-        20.914,
-        26.191,
-        30.043
+        14.086,
+        10.679,
+        17.258,
+        18.912
       ],
       "mean_luma": [
-        108.02,
-        107.96,
-        108.42,
-        109.39,
-        110.99
+        83.41,
+        83.04,
+        81.66,
+        76.8,
+        72.89
       ]
     }
   ],
@@ -252,9 +259,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        43.49,
-        39.931,
-        44.613
+        35.308,
+        29.681,
+        30.35
       ],
       "distinct_sample_count": 3
     },
@@ -267,9 +274,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        43.341,
-        41.628,
-        41.442
+        39.702,
+        24.951,
+        25.615
       ],
       "distinct_sample_count": 3
     },
@@ -282,9 +289,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        43.422,
-        38.806,
-        39.726
+        32.837,
+        30.787,
+        35.962
       ],
       "distinct_sample_count": 3
     },
@@ -297,9 +304,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        44.146,
-        40.406,
-        43.549
+        34.132,
+        31.955,
+        33.186
       ],
       "distinct_sample_count": 3
     },
@@ -312,9 +319,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        44.451,
-        42.469,
-        45.204
+        29.559,
+        39.717,
+        28.091
       ],
       "distinct_sample_count": 3
     }
