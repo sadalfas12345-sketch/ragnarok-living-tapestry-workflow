@@ -34,6 +34,15 @@
     "minimum_distinct_samples": 2,
     "failure_message": "adjacent scenes are visually too similar; regenerate the deficient scene with a distinct narrative composition"
   },
+  "line_artifact_review": {
+    "enabled": true,
+    "reviewer": "line_artifact_agent",
+    "scope": "visible vertical panorama seams only",
+    "sample_fractions": [0.2, 0.5, 0.8, 0.95],
+    "max_mean_edge": 22.0,
+    "min_continuity": 0.18,
+    "fail_on_flagged_sample": true
+  },
   "provenance": {
     "required_after_what_if": true,
     "must_be_derived_from_civilization": true,

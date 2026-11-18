@@ -117,6 +117,12 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     actual_runtime = float(fmt.get("duration", 0))
     width, height = int(stream.get("width", 0)), int(stream.get("height", 0))
     bitrate = int(stream.get("bit_rate") or fmt.get("bit_rate") or 0)
+    line_report = None
+    if POLICY.get("line_artifact_review", {}).get("enabled", False):
+        from .line_artifact_agent import inspect_video
+        line_report = inspect_video(video, scenes, runtime)
+        if POLICY["line_artifact_review"].get("fail_on_flagged_sample", True) and line_report["status"] == "FAIL":
+            errors.append(f"line-artifact agent flagged {len(line_report['flagged_samples'])} rendered sample(s)")
 
     if abs(actual_runtime - runtime) > 0.12: errors.append(f"runtime mismatch: video={actual_runtime:.3f}s timeline={runtime:.3f}s")
     if (width, height) != (1080, 1920): errors.append(f"output is {width}x{height}, expected 1080x1920")
@@ -279,7 +285,7 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     report = {
         "episode": epdir.name, "status": "PASS" if not errors else "FAIL", "errors": errors,
         "warnings": warnings, "timeline_runtime_seconds": runtime, "video_runtime_seconds": round(actual_runtime, 3),
-        "dimensions": [width, height], "video_bitrate": bitrate, "caption_count": len(captions),
+        "dimensions": [width, height], "video_bitrate": bitrate, "caption_count": len(captions), "line_artifact_review": line_report,
         "scene_visual_audit": scene_audit, "transition_audit": transition_audit,
         "adjacent_scene_contrast_audit": adjacent_scene_audit,
     }

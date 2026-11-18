@@ -38,6 +38,7 @@ Inspect the encoded MP4 and sampled frames, not only JSON fields. Check:
 - The actual TTS and captions do not repeat words that are absent from the story.
 - Each scene reveals three distinct visual developments with smooth, purposeful horizontal travel.
 - Scene transitions have no black flash, crop teleport, frozen frame, or accidental intermediate scene.
+- The line-artifact agent has one job: inspect encoded frames for persistent vertical panorama seams. It must fail delivery when it finds a strong, continuous line in the artwork, even if all other QA gates pass.
 - Artwork is culture-specific, artful, and readable on a phone rather than generic or cartoonish.
 - Audio is present, narration remains intelligible, and no stale mix or caption version is being delivered.
 
