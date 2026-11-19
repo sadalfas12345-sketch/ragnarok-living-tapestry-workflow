@@ -2,272 +2,393 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 78.638,
+  "runtime_seconds": 107.417,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
     "phrases": [
       {
         "scene": "S01",
-        "text": "What if a city was struck by an outbreak of uncontrollable dancing?",
+        "text": "What if a city suddenly began dancing—and could not stop?",
         "start": 0.0,
-        "end": 4.48
+        "end": 4.16
       },
       {
         "scene": "S01",
-        "text": "In the summer of 1518, people in Strasbourg began dancing uncontrollably.",
-        "start": 5.06,
-        "end": 11.76
+        "text": "In Strasbourg, in the summer of 1518, one exhausted woman began to move in the street.",
+        "start": 4.86,
+        "end": 11.68
       },
       {
         "scene": "S01",
-        "text": "Contemporary and later accounts describe a troubling outbreak that baffled the city.",
-        "start": 12.24,
-        "end": 17.718
+        "text": "Then another joined her.",
+        "start": 12.3,
+        "end": 13.8
+      },
+      {
+        "scene": "S01",
+        "text": "Soon, the city was watching a frightening outbreak no one understood.",
+        "start": 14.2,
+        "end": 18.46
       },
       {
         "scene": "S02",
-        "text": "Reports describe more people joining, some apparently unable to stop.",
-        "start": 18.6,
-        "end": 23.48
+        "text": "The dancers multiplied.",
+        "start": 19.34,
+        "end": 20.96
       },
       {
         "scene": "S02",
-        "text": "The numbers and exact details vary in the sources, but the episode became notorious.",
-        "start": 23.48,
-        "end": 29.94
+        "text": "Some moved for hours, some for days, while horrified neighbors watched their strength disappear.",
+        "start": 21.82,
+        "end": 27.68
+      },
+      {
+        "scene": "S02",
+        "text": "The exact numbers remain uncertain—but the terror they left behind became notorious.",
+        "start": 27.68,
+        "end": 34.32
       },
       {
         "scene": "S03",
-        "text": "Authorities tried measures that included organizing space and musicians for the dancers.",
-        "start": 31.14,
-        "end": 36.4
+        "text": "The authorities searched for a cure and made a desperate decision: give the dancers room, and bring in musicians.",
+        "start": 35.48,
+        "end": 43.0
       },
       {
         "scene": "S03",
-        "text": "Those choices reflected medical beliefs very different from ours today.",
-        "start": 37.06,
-        "end": 41.685
+        "text": "They believed movement might burn the sickness out.",
+        "start": 43.74,
+        "end": 46.84
+      },
+      {
+        "scene": "S03",
+        "text": "Instead, the remedy risked feeding the spectacle.",
+        "start": 47.48,
+        "end": 51.02
       },
       {
         "scene": "S04",
-        "text": "Chroniclers reported exhaustion and suffering.",
-        "start": 42.84,
-        "end": 45.82
+        "text": "But the music could not hide the cost.",
+        "start": 52.26,
+        "end": 54.52
       },
       {
         "scene": "S04",
-        "text": "Claims about large numbers of deaths are much less securely documented than popular retellings suggest.",
-        "start": 45.82,
-        "end": 53.209
+        "text": "Chroniclers described bodies driven past exhaustion and people collapsing in the streets.",
+        "start": 54.52,
+        "end": 61.2
+      },
+      {
+        "scene": "S04",
+        "text": "Later retellings speak of mass deaths, though the surviving evidence cannot firmly prove those numbers.",
+        "start": 61.98,
+        "end": 68.607
       },
       {
         "scene": "S05",
-        "text": "Modern historians have considered stress, belief, disease and social contagion.",
-        "start": 54.48,
-        "end": 60.66
+        "text": "Centuries later, the mystery still resists a single answer.",
+        "start": 69.8,
+        "end": 73.96
       },
       {
         "scene": "S05",
-        "text": "No single cause has been proved from the surviving evidence.",
-        "start": 61.2,
-        "end": 64.56
+        "text": "Historians have considered famine and stress, belief, disease, and social contagion—but no surviving evidence proves one cause beyond doubt.",
+        "start": 74.82,
+        "end": 85.861
       },
       {
         "scene": "S06",
-        "text": "What remains is a city confronting behavior it could not control, while leaders acted without understanding its mechanism.",
-        "start": 66.06,
-        "end": 73.92
+        "text": "What remains is more disturbing than a ghost story: a real city confronting behavior it could not control, while its leaders acted without understanding what they were seeing.",
+        "start": 87.36,
+        "end": 98.86
       },
       {
         "scene": "S06",
-        "text": "The strangest part may be the response.",
-        "start": 73.92,
-        "end": 77.06
+        "text": "The strangest part was not that people danced.",
+        "start": 99.54,
+        "end": 102.12
+      },
+      {
+        "scene": "S06",
+        "text": "It was that everyone around them watched—and joined in.",
+        "start": 102.7,
+        "end": 105.917
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "What if a city was struck by",
+        "text": "What if a city suddenly began dancing",
         "start": 0.0,
-        "end": 1.86,
+        "end": 2.5,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "an outbreak of uncontrollable dancing?",
-        "start": 1.87,
-        "end": 4.48,
-        "word_count": 5
+        "text": "and could not stop?",
+        "start": 2.51,
+        "end": 4.16,
+        "word_count": 4
       },
       {
         "scene": "S01",
-        "text": "In the summer of 1518,",
-        "start": 5.06,
-        "end": 7.04,
-        "word_count": 5
+        "text": "In Strasbourg, in the summer of 1518,",
+        "start": 4.86,
+        "end": 8.06,
+        "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "people in Strasbourg began dancing uncontrollably.",
-        "start": 7.74,
-        "end": 11.76,
+        "text": "one exhausted woman began to move in",
+        "start": 8.7,
+        "end": 11.14,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "the street. Then another joined her.",
+        "start": 11.15,
+        "end": 13.8,
         "word_count": 6
       },
       {
         "scene": "S01",
-        "text": "Contemporary and later accounts describe a troubling",
-        "start": 12.24,
-        "end": 15.64,
+        "text": "Soon, the city was watching a frightening",
+        "start": 14.2,
+        "end": 16.78,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "outbreak that baffled the city.",
-        "start": 15.65,
-        "end": 17.718,
-        "word_count": 5
+        "text": "outbreak no one understood.",
+        "start": 16.79,
+        "end": 18.46,
+        "word_count": 4
       },
       {
         "scene": "S02",
-        "text": "Reports describe more people joining,",
-        "start": 18.6,
-        "end": 20.9,
-        "word_count": 5
-      },
-      {
-        "scene": "S02",
-        "text": "some apparently unable to stop.",
-        "start": 21.34,
-        "end": 23.48,
-        "word_count": 5
-      },
-      {
-        "scene": "S02",
-        "text": "The numbers and exact details vary in",
-        "start": 23.49,
-        "end": 26.5,
-        "word_count": 7
-      },
-      {
-        "scene": "S02",
-        "text": "the sources, but the episode became notorious.",
-        "start": 26.51,
-        "end": 29.94,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "Authorities tried measures that included organizing space",
-        "start": 31.14,
-        "end": 34.7,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "and musicians for the dancers.",
-        "start": 34.71,
-        "end": 36.4,
-        "word_count": 5
-      },
-      {
-        "scene": "S03",
-        "text": "Those choices reflected medical beliefs very different",
-        "start": 37.06,
-        "end": 40.64,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "from ours today.",
-        "start": 40.65,
-        "end": 41.685,
+        "text": "The dancers multiplied.",
+        "start": 19.34,
+        "end": 20.96,
         "word_count": 3
       },
       {
-        "scene": "S04",
-        "text": "Chroniclers reported exhaustion and suffering.",
-        "start": 42.84,
-        "end": 45.82,
-        "word_count": 5
+        "scene": "S02",
+        "text": "Some moved for hours,",
+        "start": 21.82,
+        "end": 23.04,
+        "word_count": 4
       },
       {
-        "scene": "S04",
-        "text": "Claims about large numbers of deaths are",
-        "start": 45.83,
-        "end": 48.92,
+        "scene": "S02",
+        "text": "some for days,",
+        "start": 23.3,
+        "end": 24.08,
+        "word_count": 3
+      },
+      {
+        "scene": "S02",
+        "text": "while horrified neighbors watched their strength disappear.",
+        "start": 24.32,
+        "end": 27.68,
         "word_count": 7
       },
       {
-        "scene": "S04",
-        "text": "much less securely documented than popular retellings",
-        "start": 48.93,
-        "end": 52.48,
+        "scene": "S02",
+        "text": "The exact numbers remain uncertain but the",
+        "start": 27.69,
+        "end": 31.6,
         "word_count": 7
       },
       {
-        "scene": "S04",
-        "text": "suggest.",
-        "start": 52.49,
-        "end": 53.209,
+        "scene": "S02",
+        "text": "terror they left behind became notorious.",
+        "start": 31.61,
+        "end": 34.32,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "The authorities searched for a cure and",
+        "start": 35.48,
+        "end": 37.86,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "made a desperate decision:",
+        "start": 37.87,
+        "end": 39.3,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "give the dancers room,",
+        "start": 39.82,
+        "end": 41.26,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "and bring in musicians.",
+        "start": 41.27,
+        "end": 43.0,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "They believed movement might burn the sickness",
+        "start": 43.74,
+        "end": 46.34,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "out. Instead, the remedy risked feeding the",
+        "start": 46.35,
+        "end": 50.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "spectacle.",
+        "start": 50.53,
+        "end": 51.02,
         "word_count": 1
       },
       {
-        "scene": "S05",
-        "text": "Modern historians have considered stress,",
-        "start": 54.48,
-        "end": 57.04,
-        "word_count": 5
+        "scene": "S04",
+        "text": "But the music could not hide the",
+        "start": 52.26,
+        "end": 54.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "cost. Chroniclers described bodies driven past exhaustion",
+        "start": 54.09,
+        "end": 58.64,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "and people collapsing in the streets.",
+        "start": 58.65,
+        "end": 61.2,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Later retellings speak of mass deaths,",
+        "start": 61.98,
+        "end": 64.16,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "though the surviving evidence cannot firmly prove",
+        "start": 64.64,
+        "end": 67.64,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "those numbers.",
+        "start": 67.65,
+        "end": 68.607,
+        "word_count": 2
       },
       {
         "scene": "S05",
-        "text": "belief, disease and social contagion.",
-        "start": 57.38,
-        "end": 60.66,
-        "word_count": 5
-      },
-      {
-        "scene": "S05",
-        "text": "No single cause has been proved from",
-        "start": 61.2,
-        "end": 63.28,
+        "text": "Centuries later, the mystery still resists a",
+        "start": 69.8,
+        "end": 73.34,
         "word_count": 7
       },
       {
         "scene": "S05",
-        "text": "the surviving evidence.",
-        "start": 63.29,
-        "end": 64.56,
+        "text": "single answer. Historians have considered famine and",
+        "start": 73.35,
+        "end": 77.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "stress, belief, disease,",
+        "start": 77.25,
+        "end": 79.58,
         "word_count": 3
       },
       {
+        "scene": "S05",
+        "text": "and social contagion but no surviving evidence",
+        "start": 79.74,
+        "end": 83.56,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "proves one cause beyond doubt.",
+        "start": 83.57,
+        "end": 85.861,
+        "word_count": 5
+      },
+      {
         "scene": "S06",
-        "text": "What remains is a city confronting behavior",
-        "start": 66.06,
-        "end": 68.76,
+        "text": "What remains is more disturbing than a",
+        "start": 87.36,
+        "end": 89.52,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "ghost story: a real city confronting behavior",
+        "start": 89.53,
+        "end": 93.2,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "it could not control,",
-        "start": 68.77,
-        "end": 70.18,
+        "start": 93.21,
+        "end": 94.64,
         "word_count": 4
       },
       {
         "scene": "S06",
-        "text": "while leaders acted without understanding its mechanism.",
-        "start": 70.76,
-        "end": 73.92,
+        "text": "while its leaders acted without understanding what",
+        "start": 95.28,
+        "end": 98.12,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "The strangest part may be the response.",
-        "start": 73.93,
-        "end": 77.06,
+        "text": "they were seeing.",
+        "start": 98.13,
+        "end": 98.86,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "The strangest part was not that people",
+        "start": 99.54,
+        "end": 101.58,
         "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "danced. It was that everyone around them",
+        "start": 101.59,
+        "end": 104.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "watched and joined in.",
+        "start": 104.59,
+        "end": 105.917,
+        "word_count": 4
       }
     ]
   },
@@ -276,8 +397,8 @@
       "id": "S01",
       "asset": "assets/H01.png",
       "start": 0.0,
-      "speech_end": 17.718,
-      "end": 18.168,
+      "speech_end": 18.46,
+      "end": 19.058,
       "pause_after": 0.45,
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
@@ -286,20 +407,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 0.0,
-        "end": 18.168
+        "end": 19.058
       },
-      "measured_pause_after": 0.45
+      "measured_pause_after": 0.598,
+      "visual_beats": [
+        {
+          "start": 0.0,
+          "end": 4.86,
+          "reason": "Opening: crowded Renaissance square",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "What if a city suddenly began dancing—and could not stop?"
+        },
+        {
+          "start": 4.86,
+          "end": 12.3,
+          "reason": "Development: figure dancing beneath clock",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "In Strasbourg, in the summer of 1518, one exhausted woman began to move in the street."
+        },
+        {
+          "start": 12.3,
+          "end": 19.058,
+          "reason": "Reveal: An impossible sight; figure dancing beneath clock",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Then another joined her."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S02",
       "asset": "assets/H02.png",
-      "start": 18.168,
-      "speech_end": 29.94,
-      "end": 30.67,
+      "start": 19.058,
+      "speech_end": 34.32,
+      "end": 35.151,
       "pause_after": 0.65,
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
@@ -308,20 +461,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 18.168,
-        "end": 30.67
+        "start": 19.058,
+        "end": 35.151
       },
-      "measured_pause_after": 0.73
+      "measured_pause_after": 0.831,
+      "visual_beats": [
+        {
+          "start": 19.058,
+          "end": 21.82,
+          "reason": "Opening: lines of dancers spread through timbered square",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The dancers multiplied."
+        },
+        {
+          "start": 21.82,
+          "end": 27.68,
+          "reason": "Development: lines of dancers spread through timbered square",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "Some moved for hours, some for days, while horrified neighbors watched their strength disappear."
+        },
+        {
+          "start": 27.68,
+          "end": 35.151,
+          "reason": "Reveal: The spread; lines of dancers spread through timbered square",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "The exact numbers remain uncertain—but the terror they left behind became notorious."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S03",
       "asset": "assets/H03.png",
-      "start": 30.67,
-      "speech_end": 41.685,
-      "end": 42.485,
+      "start": 35.151,
+      "speech_end": 51.02,
+      "end": 51.98,
       "pause_after": 0.8,
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
@@ -330,20 +515,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 30.67,
-        "end": 42.485
+        "start": 35.151,
+        "end": 51.98
       },
-      "measured_pause_after": 0.8
+      "measured_pause_after": 0.96,
+      "visual_beats": [
+        {
+          "start": 35.151,
+          "end": 43.74,
+          "reason": "Opening: town council and musicians at raised platform",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The authorities searched for a cure and made a desperate decision: give the dancers room, and bring in musicians."
+        },
+        {
+          "start": 43.74,
+          "end": 47.48,
+          "reason": "Development: town council and musicians at raised platform",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "They believed movement might burn the sickness out."
+        },
+        {
+          "start": 47.48,
+          "end": 51.98,
+          "reason": "Reveal: The response; town council and musicians at raised platform",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Instead, the remedy risked feeding the spectacle."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S04",
       "asset": "assets/H04.png",
-      "start": 42.485,
-      "speech_end": 53.209,
-      "end": 54.009,
+      "start": 51.98,
+      "speech_end": 68.607,
+      "end": 69.407,
       "pause_after": 0.8,
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
@@ -352,20 +569,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 42.485,
-        "end": 54.009
+        "start": 51.98,
+        "end": 69.407
       },
-      "measured_pause_after": 0.8
+      "measured_pause_after": 0.8,
+      "visual_beats": [
+        {
+          "start": 51.98,
+          "end": 54.52,
+          "reason": "Opening: exhausted dancers on benches",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "But the music could not hide the cost."
+        },
+        {
+          "start": 54.52,
+          "end": 61.98,
+          "reason": "Development: rain in square",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "Chroniclers described bodies driven past exhaustion and people collapsing in the streets."
+        },
+        {
+          "start": 61.98,
+          "end": 69.407,
+          "reason": "Reveal: The danger; rain in square",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Later retellings speak of mass deaths, though the surviving evidence cannot firmly prove those numbers."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S05",
       "asset": "assets/H05.png",
-      "start": 54.009,
-      "speech_end": 64.56,
-      "end": 65.691,
+      "start": 69.407,
+      "speech_end": 85.861,
+      "end": 86.961,
       "pause_after": 1.1,
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
@@ -374,20 +623,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 54.009,
-        "end": 65.691
+        "start": 69.407,
+        "end": 86.961
       },
-      "measured_pause_after": 1.131
+      "measured_pause_after": 1.1,
+      "visual_beats": [
+        {
+          "start": 69.407,
+          "end": 74.82,
+          "reason": "Opening: connected painted narrative: famine field",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Centuries later, the mystery still resists a single answer."
+        },
+        {
+          "start": 74.82,
+          "end": 85.861,
+          "reason": "Development: folk beliefs",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "Historians have considered famine and stress, belief, disease, and social contagion—but no surviving evidence proves one cause beyond doubt."
+        },
+        {
+          "start": 85.861,
+          "end": 86.961,
+          "reason": "Reveal: The explanations; physician",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Historians have considered famine and stress, belief, disease, and social contagion—but no surviving evidence proves one cause beyond doubt."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S06",
       "asset": "assets/H06.png",
-      "start": 65.691,
-      "speech_end": 77.06,
-      "end": 78.638,
+      "start": 86.961,
+      "speech_end": 105.917,
+      "end": 107.417,
       "pause_after": 1.5,
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
@@ -396,13 +677,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 65.691,
-        "end": 78.638
+        "start": 86.961,
+        "end": 107.417
       },
-      "measured_pause_after": 1.578
+      "measured_pause_after": 1.5,
+      "visual_beats": [
+        {
+          "start": 86.961,
+          "end": 99.54,
+          "reason": "Opening: empty street",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "What remains is more disturbing than a ghost story: a real city confronting behavior it could not control, while its leaders acted without understanding what they were seeing."
+        },
+        {
+          "start": 99.54,
+          "end": 102.7,
+          "reason": "Development: abandoned shoes",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "The strangest part was not that people danced."
+        },
+        {
+          "start": 102.7,
+          "end": 107.417,
+          "reason": "Reveal: The mystery; clock continues",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "It was that everyone around them watched—and joined in."
+        }
+      ],
+      "travel_axis": "horizontal"
     }
   ],
   "music": [
@@ -413,7 +726,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 18.168
+      "end": 19.058
     },
     {
       "scene": "S02",
@@ -421,8 +734,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 18.168,
-      "end": 30.67
+      "start": 19.058,
+      "end": 35.151
     },
     {
       "scene": "S03",
@@ -430,8 +743,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 30.67,
-      "end": 42.485
+      "start": 35.151,
+      "end": 51.98
     },
     {
       "scene": "S04",
@@ -439,8 +752,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 42.485,
-      "end": 54.009
+      "start": 51.98,
+      "end": 69.407
     },
     {
       "scene": "S05",
@@ -448,8 +761,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 54.009,
-      "end": 65.691
+      "start": 69.407,
+      "end": 86.961
     },
     {
       "scene": "S06",
@@ -457,8 +770,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 65.691,
-      "end": 78.638
+      "start": 86.961,
+      "end": 107.417
     }
   ],
   "sfx": [
@@ -467,42 +780,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 18.168
+      "end": 19.058
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 18.168,
-      "end": 30.67
+      "start": 19.058,
+      "end": 35.151
     },
     {
       "scene": "S03",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 30.67,
-      "end": 42.485
+      "start": 35.151,
+      "end": 51.98
     },
     {
       "scene": "S04",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 42.485,
-      "end": 54.009
+      "start": 51.98,
+      "end": 69.407
     },
     {
       "scene": "S05",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 54.009,
-      "end": 65.691
+      "start": 69.407,
+      "end": 86.961
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 65.691,
-      "end": 78.638
+      "start": 86.961,
+      "end": 107.417
     }
   ]
 }

@@ -92,9 +92,12 @@
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
-      "caption": "What if a city was struck by an outbreak of uncontrollable dancing? In the summer of 1518, people in Strasbourg began dancing uncontrollably. Contemporary and later accounts describe a troubling outbreak that baffled the city.",
+      "asset": "assets/H01.png",
+      "caption": "What if a city suddenly began dancing—and could not stop? In Strasbourg, in the summer of 1518, one exhausted woman began to move in the street. Then another joined her. Soon, the city was watching a frightening outbreak no one understood.",
       "beat_title": "An impossible sight",
+      "intended_emotion": "uncanny curiosity turning into dread",
+      "visual_evidence": "an ordinary civic square becomes threatening as one clearly distressed dancer draws alarmed witnesses",
+      "emotional_turn": "normality breaks into an inexplicable public crisis",
       "historical_constraints": ["Depict the 1518 dancing outbreak as a documented but contested historical episode; do not present supernatural causation as fact."],
       "required_visuals": [
         "crowded Renaissance square",
@@ -124,9 +127,12 @@
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
-      "caption": "Reports describe more people joining, some apparently unable to stop. The numbers and exact details vary in the sources, but the episode became notorious.",
+      "asset": "assets/H02.png",
+      "caption": "The dancers multiplied. Some moved for hours, some for days, while horrified neighbors watched their strength disappear. The exact numbers remain uncertain—but the terror they left behind became notorious.",
       "beat_title": "The spread",
+      "intended_emotion": "escalating panic and helplessness",
+      "visual_evidence": "more sufferers appear across the square while witnesses recoil and cannot stop the spread",
+      "emotional_turn": "a single impossible sight becomes a communal danger",
       "historical_constraints": ["Show reports of more people joining as historical accounts with uncertain numbers and details; do not depict an exact census or invented testimony."],
       "required_visuals": [
         "lines of dancers spread through timbered square"
@@ -155,9 +161,12 @@
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
-      "caption": "Authorities tried measures that included organizing space and musicians for the dancers. Those choices reflected medical beliefs very different from ours today.",
+      "asset": "assets/H03.png",
+      "caption": "The authorities searched for a cure and made a desperate decision: give the dancers room, and bring in musicians. They believed movement might burn the sickness out. Instead, the remedy risked feeding the spectacle.",
       "beat_title": "The response",
+      "intended_emotion": "grim desperation",
+      "visual_evidence": "officials and musicians prepare a public remedy while exhausted dancers remain in view",
+      "emotional_turn": "authority responds visibly, but its confidence feels dangerously misplaced",
       "historical_constraints": ["Present the council's response and musicians as reported or plausible historical reconstruction; do not claim a single proven medical policy caused the outbreak."],
       "required_visuals": [
         "town council and musicians at raised platform"
@@ -186,9 +195,12 @@
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
-      "caption": "Chroniclers reported exhaustion and suffering. Claims about large numbers of deaths are much less securely documented than popular retellings suggest.",
+      "asset": "assets/H04.png",
+      "caption": "But the music could not hide the cost. Chroniclers described bodies driven past exhaustion and people collapsing in the streets. Later retellings speak of mass deaths, though the surviving evidence cannot firmly prove those numbers.",
       "beat_title": "The danger",
+      "intended_emotion": "horror and physical exhaustion",
+      "visual_evidence": "collapsed bodies, strained faces, and rain-darkened streets show the cost without inventing a death toll",
+      "emotional_turn": "the spectacle becomes suffering",
       "historical_constraints": ["Show exhaustion, illness, and social strain without asserting a single confirmed cause or a precise death toll."],
       "required_visuals": [
         "exhausted dancers on benches",
@@ -218,9 +230,12 @@
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
-      "caption": "Modern historians have considered stress, belief, disease and social contagion. No single cause has been proved from the surviving evidence.",
+      "asset": "assets/H05.png",
+      "caption": "Centuries later, the mystery still resists a single answer. Historians have considered famine and stress, belief, disease, and social contagion—but no surviving evidence proves one cause beyond doubt.",
       "beat_title": "The explanations",
+      "intended_emotion": "unresolved mystery",
+      "visual_evidence": "competing explanations are suggested through observers and records without presenting one as proven",
+      "emotional_turn": "the passage of time does not produce certainty",
       "historical_constraints": ["Depict famine, folk explanations, and medical observation as competing historical interpretations; avoid devotional major-religion imagery and do not state one explanation as proven."],
       "required_visuals": [
         "connected painted narrative: famine field",
@@ -252,9 +267,12 @@
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
-      "caption": "What remains is a city confronting behavior it could not control, while leaders acted without understanding its mechanism. The strangest part may be the response.",
+      "asset": "assets/H06.png",
+      "caption": "What remains is more disturbing than a ghost story: a real city confronting behavior it could not control, while its leaders acted without understanding what they were seeing. The strangest part was not that people danced. It was that everyone around them watched—and joined in.",
       "beat_title": "The mystery",
+      "intended_emotion": "lingering unease",
+      "visual_evidence": "the city remains watchful beneath a darkening sky as the final dancers and authorities recede",
+      "emotional_turn": "the mystery ends without relief or supernatural certainty",
       "historical_constraints": ["Keep the ending unresolved: the abandoned shoes and continuing clock are symbolic reconstruction, not proof of a specific final outcome."],
       "required_visuals": [
         "empty street",
