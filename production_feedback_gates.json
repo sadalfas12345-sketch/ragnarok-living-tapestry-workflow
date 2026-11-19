@@ -25,6 +25,14 @@
         "required_style_terms": ["byzantine civic mosaic", "ottoman miniature panorama", "gold tesserae", "cobalt walls"],
         "preserve_explicit_source_style": false,
         "failure_message": "Byzantine/Ottoman eastern-Mediterranean stories must use the Constantinople visual language unless this policy is explicitly revised"
+      },
+      {
+        "id": "indian_myth_folklore_style_reuse",
+        "enabled": true,
+        "trigger_terms": ["indian mythology", "indian folklore", "ancient india", "mahabharata", "ramayana", "nala", "damayanti", "savitri"],
+        "approved_reuse_direction": "Rajput miniature illuminated folio, forest greens, pink sandstone palaces, golden patterns",
+        "mode": "approved_reuse_not_mandatory",
+        "historical_rule": "For historically grounded Indian stories, derive the visual medium, clothing, architecture, weapons, palette, and inscriptions from the documented culture and period; do not inherit the Rajput miniature direction automatically."
       }
     ],
     "require_horizontal_panorama": true,

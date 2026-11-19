@@ -5,6 +5,8 @@ Each episode JSON is a fully distinct story outline with six original narrated s
 ## Pipeline
 1. Review every episode’s source-integrity classification. Historical mysteries must not be presented as solved.
 2. Generate `references/style_board.png` from `image_reference.style_board_prompt` (NOT included: the JSON specifies it).
+
+Regional style reuse: Indian mythology and folklore may reuse the Nala and Damayanti direction: Rajput miniature illuminated folio, forest greens, pink sandstone palaces, and golden patterns. This is an approved reuse option, not a mandatory style. Historically grounded Indian stories must instead use a culture- and period-relevant visual direction based on their authoritative JSON and historical review.
 3. Generate 6 coherent vertical panels `assets/P01.png` to `assets/P06.png` using the story’s scene `image_prompt`.
 4. Generate sentence narration **from `scenes[].caption` only**; do not read divergent `audio/Sxx.txt`.
 5. Adapt `compose_timeline_v2.py` from Ragnarök so the time authority is final narration WAV; respect `pause_after_seconds_hint`, then derive visual scene and caption timings. DO NOT reuse the stale `start/end/duration_seconds` from the legacy Ragnarök config.
