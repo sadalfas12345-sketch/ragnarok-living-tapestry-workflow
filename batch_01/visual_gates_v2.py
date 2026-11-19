@@ -272,6 +272,21 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
                 prompt = str(scene_spec.get("image_prompt", "")).lower()
                 if medieval_gate.get("fail_on_unapproved_style_family", True) and allowed_families and not any(term in prompt for term in allowed_families):
                     errors.append(f"scene S{index:02d} does not carry an approved medieval European style family")
+        for style_default in POLICY.get("artwork", {}).get("culture_period_style_defaults", []):
+            if not style_default.get("enabled", True):
+                continue
+            default_terms = [str(term).lower() for term in style_default.get("trigger_terms", [])]
+            if not any(term in trigger_text for term in default_terms):
+                continue
+            required_style_terms = [str(term).lower() for term in style_default.get("required_style_terms", [])]
+            missing_default_terms = [term for term in required_style_terms if term not in style_text]
+            if missing_default_terms:
+                errors.append(style_default.get("failure_message", "culture-period style direction is missing") + ": " + ", ".join(missing_default_terms))
+            for index, scene_spec in enumerate(source.get("scenes", []), 1):
+                prompt = str(scene_spec.get("image_prompt", "")).lower()
+                missing_prompt_terms = [term for term in required_style_terms if term not in prompt]
+                if missing_prompt_terms:
+                    errors.append(f"scene S{index:02d} does not carry the culture-period style direction: {', '.join(missing_prompt_terms)}")
     if source_path.exists() and POLICY.get("provenance", {}).get("required_after_what_if", True):
         source = json.loads(source_path.read_text(encoding="utf-8"))
         first_scene_id = str(scenes[0].get("id", "S01")) if scenes else "S01"

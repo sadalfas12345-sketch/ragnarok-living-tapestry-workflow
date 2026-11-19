@@ -16,6 +16,17 @@
     "require_actual_rendered_progression": true
   },
   "artwork": {
+    "culture_period_style_defaults": [
+      {
+        "id": "byzantine_ottoman_eastern_mediterranean",
+        "enabled": true,
+        "trigger_terms": ["byzantine", "ottoman", "constantinople", "eastern mediterranean", "1453"],
+        "style_direction": "Byzantine civic mosaic meets Ottoman miniature panorama, gold tesserae, cobalt walls",
+        "required_style_terms": ["byzantine civic mosaic", "ottoman miniature panorama", "gold tesserae", "cobalt walls"],
+        "preserve_explicit_source_style": false,
+        "failure_message": "Byzantine/Ottoman eastern-Mediterranean stories must use the Constantinople visual language unless this policy is explicitly revised"
+      }
+    ],
     "require_horizontal_panorama": true,
     "required_asset_prefix": "H",
     "allow_legacy_portrait_fallback": false,
