@@ -13,7 +13,15 @@
     "required_visual_beats": 3,
     "transition_max_black_luma": 2.0,
     "transition_min_progression_diff": 0.05,
-    "require_actual_rendered_progression": true
+    "require_actual_rendered_progression": true,
+    "audience_emotion_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "required_fields": ["intended_emotion", "visual_evidence", "emotional_turn"],
+      "require_emotion_specific_to_scene": true,
+      "require_visual_evidence_for_emotion": true,
+      "failure_message": "each scene must state what the audience should feel, what visible details create that feeling, and how the emotion changes across the scene"
+    }
   },
   "artwork": {
     "culture_period_style_defaults": [
@@ -216,7 +224,9 @@
     "required_verdict": "PASS",
     "forbidden_findings": [
       "extra limb", "duplicated limb", "merged figure", "melted anatomy",
-      "duplicated face", "impossible joint", "fused hand", "malformed body"
+        "duplicated face", "impossible joint", "fused hand", "malformed body",
+        "rotated head", "180 degree head", "unnatural neck", "reversed face",
+        "twisted face", "dislocated head"
     ]
   },
   "pronunciation": {
