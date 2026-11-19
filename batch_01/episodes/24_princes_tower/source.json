@@ -35,8 +35,8 @@
   "image_reference": {
     "path": "references/style_board.png",
     "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for The Princes in the Tower: A Vanishing in English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for The Princes in the Tower: A Vanishing as a monumental late-medieval English Gothic fresco on aged lime plaster, with tower masonry, grey rain, scarlet dynastic roses, restrained historical realism, natural faces, and painterly mineral pigments. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses",
     "palette": "derive from the specified art style, not the preceding episode",
     "character_design_lock": [
       "Edward V",
@@ -100,7 +100,7 @@
       "required_visuals": [
         "two boys entering medieval stone gateway"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Scene: two boys entering medieval stone gateway. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses. Scene: two boys entering medieval stone gateway. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
         "style": "continuous_panorama_when_possible",
@@ -131,7 +131,7 @@
       "required_visuals": [
         "crown passes between manuscript hands while tower darkens"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Scene: crown passes between manuscript hands while tower darkens. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses. Scene: crown passes between manuscript hands while tower darkens. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
         "style": "continuous_panorama_when_possible",
@@ -163,7 +163,7 @@
         "empty chamber with two unmade beds",
         "barred window"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Scene: empty chamber with two unmade beds, barred window. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses. Scene: empty chamber with two unmade beds, barred window. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
         "style": "continuous_panorama_when_possible",
@@ -195,7 +195,7 @@
         "silhouetted claimants around closed door",
         "no accusation as fact"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Scene: silhouetted claimants around closed door, no accusation as fact. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses. Scene: silhouetted claimants around closed door, no accusation as fact. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
         "style": "continuous_panorama_when_possible",
@@ -227,7 +227,7 @@
         "stone stair and sealed urn",
         "uncertain manuscript marginalia"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Scene: stone stair and sealed urn, uncertain manuscript marginalia. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses. Scene: stone stair and sealed urn, uncertain manuscript marginalia. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
         "style": "continuous_panorama_when_possible",
@@ -259,7 +259,7 @@
         "tower recedes into storm",
         "two tiny crowns on sill"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential English Tudor manuscript miniature with tower masonry, grey rain, scarlet dynastic roses. Scene: tower recedes into storm, two tiny crowns on sill. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Gothic fresco, monumental late-medieval English wall painting, aged lime plaster, restrained historical realism, grey rain, scarlet dynastic roses. Scene: tower recedes into storm, two tiny crowns on sill. The source story is The Princes in the Tower: A Vanishing. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
         "style": "continuous_panorama_when_possible",
