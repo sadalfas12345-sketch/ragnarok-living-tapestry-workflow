@@ -2,251 +2,271 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 74.038,
+  "runtime_seconds": 78.638,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
     "phrases": [
       {
         "scene": "S01",
-        "text": "In the summer of 1518, people in Strasbourg began dancing uncontrollably.",
+        "text": "What if a city was struck by an outbreak of uncontrollable dancing?",
         "start": 0.0,
-        "end": 6.94
+        "end": 4.48
+      },
+      {
+        "scene": "S01",
+        "text": "In the summer of 1518, people in Strasbourg began dancing uncontrollably.",
+        "start": 5.06,
+        "end": 11.76
       },
       {
         "scene": "S01",
         "text": "Contemporary and later accounts describe a troubling outbreak that baffled the city.",
-        "start": 7.46,
-        "end": 12.938
+        "start": 12.24,
+        "end": 17.718
       },
       {
         "scene": "S02",
         "text": "Reports describe more people joining, some apparently unable to stop.",
-        "start": 13.7,
-        "end": 18.7
+        "start": 18.6,
+        "end": 23.48
       },
       {
         "scene": "S02",
         "text": "The numbers and exact details vary in the sources, but the episode became notorious.",
-        "start": 19.22,
-        "end": 25.04
+        "start": 23.48,
+        "end": 29.94
       },
       {
         "scene": "S03",
         "text": "Authorities tried measures that included organizing space and musicians for the dancers.",
-        "start": 25.891,
-        "end": 31.62
+        "start": 31.14,
+        "end": 36.4
       },
       {
         "scene": "S03",
-        "text": "Those choices reflected theories about the illness that we would not share today.",
-        "start": 32.34,
-        "end": 37.082
+        "text": "Those choices reflected medical beliefs very different from ours today.",
+        "start": 37.06,
+        "end": 41.685
       },
       {
         "scene": "S04",
         "text": "Chroniclers reported exhaustion and suffering.",
-        "start": 38.44,
-        "end": 41.22
+        "start": 42.84,
+        "end": 45.82
       },
       {
         "scene": "S04",
         "text": "Claims about large numbers of deaths are much less securely documented than popular retellings suggest.",
-        "start": 41.9,
-        "end": 48.6
+        "start": 45.82,
+        "end": 53.209
       },
       {
         "scene": "S05",
         "text": "Modern historians have considered stress, belief, disease and social contagion.",
-        "start": 49.406,
-        "end": 56.18
+        "start": 54.48,
+        "end": 60.66
       },
       {
         "scene": "S05",
         "text": "No single cause has been proved from the surviving evidence.",
-        "start": 56.72,
-        "end": 59.96
+        "start": 61.2,
+        "end": 64.56
       },
       {
         "scene": "S06",
         "text": "What remains is a city confronting behavior it could not control, while leaders acted without understanding its mechanism.",
-        "start": 61.44,
-        "end": 69.38
+        "start": 66.06,
+        "end": 73.92
       },
       {
         "scene": "S06",
         "text": "The strangest part may be the response.",
-        "start": 70.1,
-        "end": 72.42
+        "start": 73.92,
+        "end": 77.06
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "In the summer of 1518,",
+        "text": "What if a city was struck by",
         "start": 0.0,
-        "end": 2.34,
+        "end": 1.86,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "an outbreak of uncontrollable dancing?",
+        "start": 1.87,
+        "end": 4.48,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "In the summer of 1518,",
+        "start": 5.06,
+        "end": 7.04,
         "word_count": 5
       },
       {
         "scene": "S01",
         "text": "people in Strasbourg began dancing uncontrollably.",
-        "start": 2.96,
-        "end": 6.94,
+        "start": 7.74,
+        "end": 11.76,
         "word_count": 6
       },
       {
         "scene": "S01",
         "text": "Contemporary and later accounts describe a troubling",
-        "start": 7.46,
-        "end": 10.88,
+        "start": 12.24,
+        "end": 15.64,
         "word_count": 7
       },
       {
         "scene": "S01",
         "text": "outbreak that baffled the city.",
-        "start": 10.88,
-        "end": 12.938,
+        "start": 15.65,
+        "end": 17.718,
         "word_count": 5
       },
       {
         "scene": "S02",
         "text": "Reports describe more people joining,",
-        "start": 13.7,
-        "end": 16.16,
+        "start": 18.6,
+        "end": 20.9,
         "word_count": 5
       },
       {
         "scene": "S02",
         "text": "some apparently unable to stop.",
-        "start": 16.58,
-        "end": 18.7,
+        "start": 21.34,
+        "end": 23.48,
         "word_count": 5
       },
       {
         "scene": "S02",
         "text": "The numbers and exact details vary in",
-        "start": 19.22,
-        "end": 21.7,
+        "start": 23.49,
+        "end": 26.5,
         "word_count": 7
       },
       {
         "scene": "S02",
         "text": "the sources, but the episode became notorious.",
-        "start": 21.7,
-        "end": 25.04,
+        "start": 26.51,
+        "end": 29.94,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "Authorities tried measures that included organizing space",
-        "start": 25.891,
-        "end": 29.92,
+        "start": 31.14,
+        "end": 34.7,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "and musicians for the dancers.",
-        "start": 29.92,
-        "end": 31.62,
+        "start": 34.71,
+        "end": 36.4,
         "word_count": 5
       },
       {
         "scene": "S03",
-        "text": "Those choices reflected theories about the illness",
-        "start": 32.34,
-        "end": 35.32,
+        "text": "Those choices reflected medical beliefs very different",
+        "start": 37.06,
+        "end": 40.64,
         "word_count": 7
       },
       {
         "scene": "S03",
-        "text": "that we would not share today.",
-        "start": 35.32,
-        "end": 37.082,
-        "word_count": 6
+        "text": "from ours today.",
+        "start": 40.65,
+        "end": 41.685,
+        "word_count": 3
       },
       {
         "scene": "S04",
         "text": "Chroniclers reported exhaustion and suffering.",
-        "start": 38.44,
-        "end": 41.22,
+        "start": 42.84,
+        "end": 45.82,
         "word_count": 5
       },
       {
         "scene": "S04",
         "text": "Claims about large numbers of deaths are",
-        "start": 41.9,
-        "end": 44.32,
+        "start": 45.83,
+        "end": 48.92,
         "word_count": 7
       },
       {
         "scene": "S04",
         "text": "much less securely documented than popular retellings",
-        "start": 44.32,
-        "end": 47.86,
+        "start": 48.93,
+        "end": 52.48,
         "word_count": 7
       },
       {
         "scene": "S04",
         "text": "suggest.",
-        "start": 47.86,
-        "end": 48.6,
+        "start": 52.49,
+        "end": 53.209,
         "word_count": 1
       },
       {
         "scene": "S05",
         "text": "Modern historians have considered stress,",
-        "start": 49.406,
-        "end": 52.42,
+        "start": 54.48,
+        "end": 57.04,
         "word_count": 5
       },
       {
         "scene": "S05",
         "text": "belief, disease and social contagion.",
-        "start": 52.8,
-        "end": 56.18,
+        "start": 57.38,
+        "end": 60.66,
         "word_count": 5
       },
       {
         "scene": "S05",
         "text": "No single cause has been proved from",
-        "start": 56.72,
-        "end": 58.68,
+        "start": 61.2,
+        "end": 63.28,
         "word_count": 7
       },
       {
         "scene": "S05",
         "text": "the surviving evidence.",
-        "start": 58.68,
-        "end": 59.96,
+        "start": 63.29,
+        "end": 64.56,
         "word_count": 3
       },
       {
         "scene": "S06",
         "text": "What remains is a city confronting behavior",
-        "start": 61.44,
-        "end": 64.16,
+        "start": 66.06,
+        "end": 68.76,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "it could not control,",
-        "start": 64.16,
-        "end": 65.56,
+        "start": 68.77,
+        "end": 70.18,
         "word_count": 4
       },
       {
         "scene": "S06",
         "text": "while leaders acted without understanding its mechanism.",
-        "start": 66.16,
-        "end": 69.38,
+        "start": 70.76,
+        "end": 73.92,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "The strangest part may be the response.",
-        "start": 70.1,
-        "end": 72.42,
+        "start": 73.93,
+        "end": 77.06,
         "word_count": 7
       }
     ]
@@ -254,10 +274,10 @@
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
+      "asset": "assets/H01.png",
       "start": 0.0,
-      "speech_end": 12.938,
-      "end": 13.388,
+      "speech_end": 17.718,
+      "end": 18.168,
       "pause_after": 0.45,
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
@@ -270,16 +290,16 @@
       },
       "image_interval": {
         "start": 0.0,
-        "end": 13.388
+        "end": 18.168
       },
       "measured_pause_after": 0.45
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
-      "start": 13.388,
-      "speech_end": 25.04,
-      "end": 25.891,
+      "asset": "assets/H02.png",
+      "start": 18.168,
+      "speech_end": 29.94,
+      "end": 30.67,
       "pause_after": 0.65,
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
@@ -291,17 +311,17 @@
         }
       },
       "image_interval": {
-        "start": 13.388,
-        "end": 25.891
+        "start": 18.168,
+        "end": 30.67
       },
-      "measured_pause_after": 0.851
+      "measured_pause_after": 0.73
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
-      "start": 25.891,
-      "speech_end": 37.082,
-      "end": 37.882,
+      "asset": "assets/H03.png",
+      "start": 30.67,
+      "speech_end": 41.685,
+      "end": 42.485,
       "pause_after": 0.8,
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
@@ -313,17 +333,17 @@
         }
       },
       "image_interval": {
-        "start": 25.891,
-        "end": 37.882
+        "start": 30.67,
+        "end": 42.485
       },
       "measured_pause_after": 0.8
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
-      "start": 37.882,
-      "speech_end": 48.6,
-      "end": 49.406,
+      "asset": "assets/H04.png",
+      "start": 42.485,
+      "speech_end": 53.209,
+      "end": 54.009,
       "pause_after": 0.8,
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
@@ -335,17 +355,17 @@
         }
       },
       "image_interval": {
-        "start": 37.882,
-        "end": 49.406
+        "start": 42.485,
+        "end": 54.009
       },
-      "measured_pause_after": 0.806
+      "measured_pause_after": 0.8
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
-      "start": 49.406,
-      "speech_end": 59.96,
-      "end": 61.091,
+      "asset": "assets/H05.png",
+      "start": 54.009,
+      "speech_end": 64.56,
+      "end": 65.691,
       "pause_after": 1.1,
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
@@ -357,17 +377,17 @@
         }
       },
       "image_interval": {
-        "start": 49.406,
-        "end": 61.091
+        "start": 54.009,
+        "end": 65.691
       },
       "measured_pause_after": 1.131
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
-      "start": 61.091,
-      "speech_end": 72.42,
-      "end": 74.038,
+      "asset": "assets/H06.png",
+      "start": 65.691,
+      "speech_end": 77.06,
+      "end": 78.638,
       "pause_after": 1.5,
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
@@ -379,10 +399,10 @@
         }
       },
       "image_interval": {
-        "start": 61.091,
-        "end": 74.038
+        "start": 65.691,
+        "end": 78.638
       },
-      "measured_pause_after": 1.618
+      "measured_pause_after": 1.578
     }
   ],
   "music": [
@@ -393,7 +413,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 13.388
+      "end": 18.168
     },
     {
       "scene": "S02",
@@ -401,8 +421,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 13.388,
-      "end": 25.891
+      "start": 18.168,
+      "end": 30.67
     },
     {
       "scene": "S03",
@@ -410,8 +430,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 25.891,
-      "end": 37.882
+      "start": 30.67,
+      "end": 42.485
     },
     {
       "scene": "S04",
@@ -419,8 +439,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 37.882,
-      "end": 49.406
+      "start": 42.485,
+      "end": 54.009
     },
     {
       "scene": "S05",
@@ -428,8 +448,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 49.406,
-      "end": 61.091
+      "start": 54.009,
+      "end": 65.691
     },
     {
       "scene": "S06",
@@ -437,8 +457,8 @@
       "instrumentation": "fiddle fragment, wooden clogs, uneasy drone, crowd noise",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 61.091,
-      "end": 74.038
+      "start": 65.691,
+      "end": 78.638
     }
   ],
   "sfx": [
@@ -447,42 +467,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 13.388
+      "end": 18.168
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 13.388,
-      "end": 25.891
+      "start": 18.168,
+      "end": 30.67
     },
     {
       "scene": "S03",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 25.891,
-      "end": 37.882
+      "start": 30.67,
+      "end": 42.485
     },
     {
       "scene": "S04",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 37.882,
-      "end": 49.406
+      "start": 42.485,
+      "end": 54.009
     },
     {
       "scene": "S05",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 49.406,
-      "end": 61.091
+      "start": 54.009,
+      "end": 65.691
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 61.091,
-      "end": 74.038
+      "start": 65.691,
+      "end": 78.638
     }
   ]
 }
