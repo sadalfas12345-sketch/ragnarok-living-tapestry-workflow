@@ -101,7 +101,8 @@
         "banners fading"
       ],
       "historical_constraints": [
-        "present Joan’s claimed voices as a historical claim, not a verified supernatural event",
+        "present Joan's claimed voices as a historical claim, not a verified supernatural event",
+        "keep the French royal court and fifteenth-century clothing historically grounded",
         "do not depict supernatural beings or modern political symbols"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: young Joan at French royal hall, banners fading. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
@@ -135,8 +136,8 @@
         "armored Joan with standard before river town walls"
       ],
       "historical_constraints": [
-        "show the siege of Orléans and French military momentum without modern weapons or uniforms",
-        "do not depict Joan as the sole commander or invent a modern battlefield"
+        "show the siege of Orléans with period-appropriate weapons, fortifications, and river transport",
+        "do not depict Joan as the sole commander or invent modern battlefield equipment"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: armored Joan with standard before river town walls. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
@@ -169,7 +170,7 @@
         "coronation cathedral interior gold leaf illumination"
       ],
       "historical_constraints": [
-        "show Charles VII’s coronation at Reims with Joan present but not being crowned as king",
+        "show Charles VII's coronation at Reims with Joan present but not being crowned as king",
         "keep the ceremony in a historically plausible fifteenth-century French setting"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: coronation cathedral interior gold leaf illumination. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
@@ -204,7 +205,7 @@
         "judges in dark robes"
       ],
       "historical_constraints": [
-        "Joan is captured by Burgundian forces and transferred into English custody before the trial",
+        "show Joan captured by Burgundian forces and transferred into English custody before the trial",
         "do not reverse the factions or depict a modern courtroom"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: prison and tribunal benches, judges in dark robes. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
