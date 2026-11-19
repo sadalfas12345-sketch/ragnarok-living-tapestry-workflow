@@ -96,6 +96,7 @@
       "asset": "assets/P01.png",
       "caption": "What if two young princes vanished amid a struggle for the crown? In 1483, young Edward the Fifth and his brother Richard were housed in the Tower of London during a struggle over the English crown.",
       "beat_title": "Two brothers",
+      "historical_constraints": ["Keep Edward V and Richard of Shrewsbury in the 1483 Tower setting; do not depict their later fate as established fact."],
       "required_visuals": [
         "two boys entering medieval stone gateway"
       ],
@@ -126,6 +127,7 @@
       "asset": "assets/P02.png",
       "caption": "Their uncle became King Richard the Third after the boys’ claim was declared invalid. The princes gradually disappeared from public view.",
       "beat_title": "A changed succession",
+      "historical_constraints": ["Treat Richard III's accession and the invalidation of the princes' claim as disputed political context; do not depict Richard as the killer."],
       "required_visuals": [
         "crown passes between manuscript hands while tower darkens"
       ],
@@ -156,6 +158,7 @@
       "asset": "assets/P03.png",
       "caption": "No secure record shows exactly when or how the brothers died. Their absence became the most enduring mystery of the dynasty.",
       "beat_title": "The silence",
+      "historical_constraints": ["Preserve the absence of a secure record after the princes disappeared; do not depict bodies or a definitive murder scene."],
       "required_visuals": [
         "empty chamber with two unmade beds",
         "barred window"
@@ -187,6 +190,7 @@
       "asset": "assets/P04.png",
       "caption": "Richard the Third has long been suspected, but other possible perpetrators and scenarios have been proposed. The surviving evidence does not conclusively identify a killer.",
       "beat_title": "The suspicion",
+      "historical_constraints": ["Present Richard and other possible perpetrators as historical possibilities only; do not show a killer as established fact."],
       "required_visuals": [
         "silhouetted claimants around closed door",
         "no accusation as fact"
@@ -218,6 +222,7 @@
       "asset": "assets/P05.png",
       "caption": "Centuries later, remains found in the Tower were traditionally identified as the princes, but their identity has not been conclusively established by modern testing.",
       "beat_title": "Bones in stone",
+      "historical_constraints": ["Treat the remains traditionally identified as the princes as unproven by modern testing; do not depict them as conclusively authenticated."],
       "required_visuals": [
         "stone stair and sealed urn",
         "uncertain manuscript marginalia"
@@ -249,6 +254,7 @@
       "asset": "assets/P06.png",
       "caption": "The brothers became symbols of a brutal question: when a kingdom changes hands, who can protect children whose existence threatens the new ruler?",
       "beat_title": "The power of absence",
+      "historical_constraints": ["Keep the ending as an unresolved historical question; do not invent testimony or identify a definitive culprit."],
       "required_visuals": [
         "tower recedes into storm",
         "two tiny crowns on sill"
