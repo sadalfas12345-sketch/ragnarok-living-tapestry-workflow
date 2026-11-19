@@ -149,6 +149,16 @@
     "reviewer": "wording_agent",
     "max_year_repeats": 1,
     "max_civilization_label_repeats": 1,
+    "awkward_phrase_patterns": [
+      {
+        "pattern": "\\bwe would not share today\\b",
+        "message": "anachronistic first-person phrasing sounds editorial rather than narrated"
+      },
+      {
+        "pattern": "\\b(?:those|these) choices reflected theories about .*\\bwe\\b",
+        "message": "abstract gate-inserted clause needs natural historical narration"
+      }
+    ],
     "fail_on_findings": true,
     "smooth_safe_gate_insertions_before_tts": true
   },
@@ -197,6 +207,17 @@
     "natural_speech_review": {"enabled": true, "hard_gate": true, "auditory_playback_required_when_available": true},
     "adversarial_render_review": {"enabled": true, "hard_gate": true},
     "line_artifact_agent": {"enabled": true, "hard_gate": true}
+  },
+  "anatomy_review": {
+    "enabled": true,
+    "reviewer": "anatomy_artifact_agent",
+    "hard_gate": true,
+    "required_samples_per_scene": 3,
+    "required_verdict": "PASS",
+    "forbidden_findings": [
+      "extra limb", "duplicated limb", "merged figure", "melted anatomy",
+      "duplicated face", "impossible joint", "fused hand", "malformed body"
+    ]
   },
   "pronunciation": {
     "fallback": "english_source_spelling",

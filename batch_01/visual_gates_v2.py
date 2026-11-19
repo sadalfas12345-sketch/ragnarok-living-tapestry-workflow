@@ -188,6 +188,11 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             errors.append("procedural pipeline audit found missing or stale production artifacts")
         if agent_reports["natural_speech_review"]["status"] == "FAIL":
             errors.append("natural speech review found merged words, encoding errors, or unnatural internal gaps")
+    if POLICY.get("anatomy_review", {}).get("enabled"):
+        from .anatomy_artifact_agent import inspect_episode as inspect_anatomy
+        agent_reports["anatomy_artifact_review"] = inspect_anatomy(epdir, scenes)
+        if agent_reports["anatomy_artifact_review"]["status"] == "FAIL":
+            errors.append("anatomy artifact gate found missing review or mutant-looking anatomy")
     from .adversarial_render_agent import inspect_episode as inspect_render
     agent_reports["adversarial_render_review"] = inspect_render(video, scenes)
     if agent_reports["adversarial_render_review"]["status"] == "FAIL":

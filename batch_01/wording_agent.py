@@ -40,5 +40,13 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
             findings.append({"type": "duplicate_sentence", "text": current, "message": "adjacent sentence repeated"})
         if re.match(r"^(and|but|so|then)\b", current, re.IGNORECASE) and len(current.split()) <= 4:
             findings.append({"type": "awkward_join", "text": current, "message": "short conjunction fragment may be an awkward gate insertion"})
+    for item in policy.get("awkward_phrase_patterns", []):
+        pattern = str(item.get("pattern", ""))
+        if pattern and re.search(pattern, caption_text, re.IGNORECASE | re.DOTALL):
+            findings.append({
+                "type": "awkward_phrase",
+                "text": pattern,
+                "message": str(item.get("message", "awkward phrase pattern detected")),
+            })
     hard = bool(policy.get("fail_on_findings", True))
     return {"reviewer": "wording_agent", "status": "FAIL" if findings and hard else ("REVIEW" if findings else "PASS"), "findings": findings}
