@@ -264,14 +264,14 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             str(reference.get("style_board_prompt", "")),
         ]).lower()
         trigger_terms = [str(term).lower() for term in medieval_gate.get("trigger_terms", [])]
-        if medieval_gate.get("enabled") and episode_number >= int(medieval_gate.get("minimum_episode_number", 31)) and any(term in trigger_text for term in trigger_terms):
-            missing = [term for term in medieval_gate.get("required_terms", []) if str(term).lower() not in style_text]
-            if missing and medieval_gate.get("fail_on_missing_direction", True):
-                errors.append("medieval European art-direction gate missing required terms: " + ", ".join(missing))
+        if medieval_gate.get("enabled") and episode_number >= int(medieval_gate.get("minimum_episode_number", 1)) and any(term in trigger_text for term in trigger_terms):
+            allowed_families = [str(term).lower() for term in medieval_gate.get("allowed_style_families", [])]
+            if medieval_gate.get("fail_on_unapproved_style_family", True) and allowed_families and not any(term in style_text for term in allowed_families):
+                errors.append("medieval European art-direction gate requires an approved style family")
             for index, scene_spec in enumerate(source.get("scenes", []), 1):
                 prompt = str(scene_spec.get("image_prompt", "")).lower()
-                if "pre-raphaelite" not in prompt or "medieval realism" not in prompt:
-                    errors.append(f"scene S{index:02d} does not carry the required medieval European Pre-Raphaelite direction")
+                if medieval_gate.get("fail_on_unapproved_style_family", True) and allowed_families and not any(term in prompt for term in allowed_families):
+                    errors.append(f"scene S{index:02d} does not carry an approved medieval European style family")
     if source_path.exists() and POLICY.get("provenance", {}).get("required_after_what_if", True):
         source = json.loads(source_path.read_text(encoding="utf-8"))
         first_scene_id = str(scenes[0].get("id", "S01")) if scenes else "S01"

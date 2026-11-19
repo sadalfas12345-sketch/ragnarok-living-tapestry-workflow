@@ -35,8 +35,8 @@
   "image_reference": {
     "path": "references/style_board.png",
     "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Joan of Arc: The Girl on Trial in French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Joan of Arc: The Girl on Trial in French Gothic illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "French Gothic illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry",
     "palette": "derive from the specified art style, not the preceding episode",
     "character_design_lock": [
       "Joan of Arc",
@@ -104,7 +104,7 @@
         "present Joan’s claimed voices as a historical claim, not a verified supernatural event",
         "do not depict supernatural beings or modern political symbols"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Scene: young Joan at French royal hall, banners fading. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: young Joan at French royal hall, banners fading. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
         "style": "continuous_panorama_when_possible",
@@ -138,7 +138,7 @@
         "show the siege of Orléans and French military momentum without modern weapons or uniforms",
         "do not depict Joan as the sole commander or invent a modern battlefield"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Scene: armored Joan with standard before river town walls. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: armored Joan with standard before river town walls. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
         "style": "continuous_panorama_when_possible",
@@ -172,7 +172,7 @@
         "show Charles VII’s coronation at Reims with Joan present but not being crowned as king",
         "keep the ceremony in a historically plausible fifteenth-century French setting"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Scene: coronation cathedral interior gold leaf illumination. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: coronation cathedral interior gold leaf illumination. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
         "style": "continuous_panorama_when_possible",
@@ -207,7 +207,7 @@
         "Joan is captured by Burgundian forces and transferred into English custody before the trial",
         "do not reverse the factions or depict a modern courtroom"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Scene: prison and tribunal benches, judges in dark robes. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: prison and tribunal benches, judges in dark robes. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
         "style": "continuous_panorama_when_possible",
@@ -243,7 +243,7 @@
         "show the 1431 Rouen execution respectfully and without graphic close-up detail",
         "do not invent a different death method or a modern memorial scene"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Scene: unlit stake, crowd from manuscript distance, respectful depiction. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: unlit stake, crowd from manuscript distance, respectful depiction. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
         "style": "continuous_panorama_when_possible",
@@ -277,7 +277,7 @@
         "show a later inquiry overturning the condemnation while preserving the period setting",
         "do not replace the historical inquiry with a modern courtroom or definitive theological verdict"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval manuscript and woodcut, parchment, blue-and-gold heraldry. Scene: trial parchments close over illuminated standard. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential French late-medieval illuminated manuscript and painted parchment narrative art, parchment, blue-and-gold heraldry. Scene: trial parchments close over illuminated standard. The source story is Joan of Arc: The Girl on Trial. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut or block-print aesthetic, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
         "style": "continuous_panorama_when_possible",

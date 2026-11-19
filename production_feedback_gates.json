@@ -39,13 +39,24 @@
     },
     "medieval_european_style_gate": {
       "enabled": true,
-      "minimum_episode_number": 31,
+      "minimum_episode_number": 1,
       "trigger_terms": [
         "arthurian", "medieval europe", "medieval britain", "british", "welsh", "irish",
         "anglo-saxon", "saxon", "frankish", "german", "holy roman empire", "norse",
         "viking", "celtic", "slavic", "french", "english"
       ],
-      "required_direction": "late-19th-century Pre-Raphaelite oil painting. Restrained medieval realism, psychological depth, natural human faces, historically informed fabrics and armor, weathered stone architecture, atmospheric light, muted crimson, forest green and aged bronze. Tragic grandeur, complex multi-figure composition, painterly brushwork, noble but imperfect characters. Avoid excessive gilding, jewel-encrusted costumes, glossy fantasy aesthetics, plastic faces and decorative clutter.",
+      "allowed_style_families": [
+        "illuminated manuscript",
+        "french gothic illuminated manuscript",
+        "painted parchment narrative art",
+        "narrative tapestry",
+        "gothic fresco",
+        "gothic panel painting",
+        "northern renaissance realism",
+        "pre-raphaelite oil painting",
+        "restrained historical oil painting"
+      ],
+      "style_direction_note": "Select one culturally and historically appropriate family from the allowed list. Woodcut and block-print styles are not allowed.",
       "required_terms": [
         "pre-raphaelite", "medieval realism", "psychological depth", "natural human faces",
         "historically informed fabrics", "weathered stone architecture", "atmospheric light",
@@ -53,7 +64,8 @@
         "complex multi-figure composition", "painterly brushwork", "noble but imperfect",
         "avoid excessive gilding", "glossy fantasy", "plastic faces", "decorative clutter"
       ],
-      "fail_on_missing_direction": true
+      "fail_on_missing_direction": true,
+      "fail_on_unapproved_style_family": true
     },
     "forbidden_style_terms": ["cartoon", "cartoony", "comic-book", "glossy 3d", "glossy fantasy poster", "generic stock illustration"]
   },
