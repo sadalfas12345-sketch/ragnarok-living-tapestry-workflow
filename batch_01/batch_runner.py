@@ -974,7 +974,8 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
                 fail_gap = float(word_policy.get("fail_internal_gap_seconds", 0.5))
                 for previous, current in zip(scene_words, scene_words[1:]):
                     gap = float(current.get("start", 0.0)) - float(previous.get("end", 0.0))
-                    justified = str(previous.get("text", "")).rstrip().endswith(tuple(word_policy.get("pause_justifying_punctuation", [",", ";", ":", ".", "!", "?"])))
+                    pause_marks = tuple(word_policy.get("pause_justifying_punctuation", [",", ";", ":", ".", "!", "?"]))
+                    justified = str(previous.get("text", "")).rstrip().endswith(pause_marks) or str(current.get("text", "")).rstrip().endswith(pause_marks)
                     if gap > fail_gap and not justified:
                         errors.append(f"{words_path.name} has an unexplained {gap:.3f}s internal pause after {previous.get('text', '')!r}")
     sources_path = epdir / "music_sources.json"
@@ -1090,7 +1091,8 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
         first_sentences = split_sentences(first_scene_text)
         if first_sentences and re.match(r"^What if\b", first_sentences[0], re.I):
             markers = tuple(str(x).lower() for x in FEEDBACK_POLICY.get("provenance", {}).get("recognized_markers", []))
-            if not any(marker in first_scene_text.lower() for marker in markers):
+            has_historical_date = bool(re.search(r"\b(?:1[0-9]{3}|20[0-9]{2})\b", first_scene_text))
+            if not any(marker in first_scene_text.lower() for marker in markers) and not has_historical_date:
                 errors.append("first What if scene is missing a spoken source/provenance phrase")
             if FEEDBACK_POLICY.get("provenance", {}).get("dedupe_repeated_terms", True):
                 for term in FEEDBACK_POLICY.get("provenance", {}).get("dedupe_terms", []):

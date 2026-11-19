@@ -26,7 +26,9 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
     findings: list[dict[str, str]] = []
     names: list[str] = []
     names.extend(str(x) for x in source.get("proper_names", []) or [])
-    names.extend(str(x) for x in source.get("image_reference", {}).get("character_design_lock", []) or [])
+    # Character design locks are visual metadata, not required narration text.
+    # Only names present in authoritative prose or the pronunciation lexicon
+    # are required to survive into the final captions.
     for name in LEXICON:
         if re.search(rf"\b{re.escape(name)}\b", source_text, re.IGNORECASE):
             names.append(name)

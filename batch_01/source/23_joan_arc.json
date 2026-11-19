@@ -155,7 +155,7 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "The campaign helped clear a path for Charles the Seventh to be crowned at Reims. Joan had helped accomplish what had seemed unreachable.",
+      "caption": "The campaign helped clear a path for Charles the Seventh to be crowned at Reims, accomplishing what had seemed unreachable.",
       "beat_title": "Reims",
       "required_visuals": [
         "coronation cathedral interior gold leaf illumination"
