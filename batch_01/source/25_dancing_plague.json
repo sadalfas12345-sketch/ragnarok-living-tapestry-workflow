@@ -35,8 +35,8 @@
   "image_reference": {
     "path": "references/style_board.png",
     "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Strasbourg 1518: The Dancing Plague in Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Strasbourg 1518: The Dancing Plague in Northern Renaissance realism, a late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, and oxblood, umber, slate-blue and aged bronze pigments. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
+    "art_style": "Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments",
     "palette": "derive from the specified art style, not the preceding episode",
     "character_design_lock": [
       "town residents",
@@ -95,11 +95,12 @@
       "asset": "assets/P01.png",
       "caption": "What if a city was struck by an outbreak of uncontrollable dancing? In the summer of 1518, people in Strasbourg began dancing uncontrollably. Contemporary and later accounts describe a troubling outbreak that baffled the city.",
       "beat_title": "An impossible sight",
+      "historical_constraints": ["Depict the 1518 dancing outbreak as a documented but contested historical episode; do not present supernatural causation as fact."],
       "required_visuals": [
         "crowded Renaissance square",
         "figure dancing beneath clock"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: crowded Renaissance square, figure dancing beneath clock. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments. Scene: crowded Renaissance square, figure dancing beneath clock. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut, no block print, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
         "style": "continuous_panorama_when_possible",
@@ -126,10 +127,11 @@
       "asset": "assets/P02.png",
       "caption": "Reports describe more people joining, some apparently unable to stop. The numbers and exact details vary in the sources, but the episode became notorious.",
       "beat_title": "The spread",
+      "historical_constraints": ["Show reports of more people joining as historical accounts with uncertain numbers and details; do not depict an exact census or invented testimony."],
       "required_visuals": [
         "lines of dancers spread through timbered square"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: lines of dancers spread through timbered square. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments. Scene: lines of dancers spread through timbered square. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut, no block print, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
         "style": "continuous_panorama_when_possible",
@@ -154,12 +156,13 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "Authorities tried measures that included organizing space and musicians for the dancers. Those choices reflected theories about the illness that we would not share today.",
+      "caption": "Authorities tried measures that included organizing space and musicians for the dancers. Those choices reflected medical beliefs very different from ours today.",
       "beat_title": "The response",
+      "historical_constraints": ["Present the council's response and musicians as reported or plausible historical reconstruction; do not claim a single proven medical policy caused the outbreak."],
       "required_visuals": [
         "town council and musicians at raised platform"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: town council and musicians at raised platform. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments. Scene: town council and musicians at raised platform. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut, no block print, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
         "style": "continuous_panorama_when_possible",
@@ -186,11 +189,12 @@
       "asset": "assets/P04.png",
       "caption": "Chroniclers reported exhaustion and suffering. Claims about large numbers of deaths are much less securely documented than popular retellings suggest.",
       "beat_title": "The danger",
+      "historical_constraints": ["Show exhaustion, illness, and social strain without asserting a single confirmed cause or a precise death toll."],
       "required_visuals": [
         "exhausted dancers on benches",
         "rain in square"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: exhausted dancers on benches, rain in square. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments. Scene: exhausted dancers on benches, rain in square. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut, no block print, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
         "style": "continuous_panorama_when_possible",
@@ -217,13 +221,14 @@
       "asset": "assets/P05.png",
       "caption": "Modern historians have considered stress, belief, disease and social contagion. No single cause has been proved from the surviving evidence.",
       "beat_title": "The explanations",
+      "historical_constraints": ["Depict famine, folk explanations, and medical observation as competing historical interpretations; avoid devotional major-religion imagery and do not state one explanation as proven."],
       "required_visuals": [
-        "woodcut panels: famine field",
-        "saints",
+        "connected painted narrative: famine field",
+        "folk beliefs",
         "crowd",
         "physician"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: woodcut panels: famine field, saints, crowd, physician. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments. Scene: connected painted narrative of famine field, folk beliefs, crowd, physician. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut, no block print, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
         "style": "continuous_panorama_when_possible",
@@ -250,12 +255,13 @@
       "asset": "assets/P06.png",
       "caption": "What remains is a city confronting behavior it could not control, while leaders acted without understanding its mechanism. The strangest part may be the response.",
       "beat_title": "The mystery",
+      "historical_constraints": ["Keep the ending unresolved: the abandoned shoes and continuing clock are symbolic reconstruction, not proof of a specific final outcome."],
       "required_visuals": [
         "empty street",
         "abandoned shoes",
         "clock continues"
       ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Renaissance German woodcut and hand-colored broadsheet, ink hatching, oxblood red. Scene: empty street, abandoned shoes, clock continues. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
+      "image_prompt": "Vertical cinematic crop of a coherent sequential Northern Renaissance realism, late-15th/early-16th-century German oil-and-tempera panel painting with restrained historical detail, natural faces, timber architecture, painterly brushwork, oxblood, umber, slate-blue and aged bronze pigments. Scene: empty street, abandoned shoes, clock continues. The source story is Strasbourg 1518: The Dancing Plague. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no woodcut, no block print, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
         "style": "continuous_panorama_when_possible",

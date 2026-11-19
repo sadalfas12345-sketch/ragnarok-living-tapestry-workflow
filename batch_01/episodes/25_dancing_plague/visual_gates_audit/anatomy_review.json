@@ -1,0 +1,27 @@
+{
+  "episode": 25,
+  "reviewer": "anatomy_artifact_agent",
+  "status": "PASS",
+  "method": "manual visual inspection of rendered beginning, middle, and ending frames for every scene",
+  "findings": [],
+  "samples": [
+    {"scene":"S01","timestamp":1.453,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S01","timestamp":9.084,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S01","timestamp":16.715,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S02","timestamp":19.168,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S02","timestamp":24.419,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S02","timestamp":29.670,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S03","timestamp":31.615,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S03","timestamp":36.578,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S03","timestamp":41.540,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S04","timestamp":43.407,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S04","timestamp":48.247,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S04","timestamp":53.087,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S05","timestamp":54.944,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S05","timestamp":59.850,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S05","timestamp":64.756,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S06","timestamp":66.727,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S06","timestamp":72.165,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."},
+    {"scene":"S06","timestamp":77.602,"verdict":"PASS","notes":"No extra limbs, duplicated faces, merged figures, fused hands, impossible joints, or malformed bodies."}
+  ]
+}

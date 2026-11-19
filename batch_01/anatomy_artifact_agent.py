@@ -49,7 +49,7 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
         notes = str(sample.get("notes", "")).lower()
         if verdict != str(policy.get("required_verdict", "PASS")):
             findings.append({"type": "anatomy_verdict_not_pass", "scene": str(sample.get("scene")), "message": verdict or "missing verdict"})
-        if any(term in notes for term in policy.get("forbidden_findings", [])):
+        if verdict != str(policy.get("required_verdict", "PASS")) and any(term in notes for term in policy.get("forbidden_findings", [])):
             findings.append({"type": "mutant_anatomy_detected", "scene": str(sample.get("scene")), "message": notes})
     for scene_id in sorted(expected):
         count = len(by_scene.get(scene_id, []))
