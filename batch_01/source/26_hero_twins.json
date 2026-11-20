@@ -164,14 +164,14 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "After surviving the houses, the brothers faced the Lords at the ballcourt. The Lords used a deadly ball and impossible demands to turn the game into an execution. In the House of Bats, a death bat named Camazotz seized Hunahpu's head, but Xbalanque replaced it with a squash and recovered the real head.",
+      "caption": "After surviving the houses, the brothers faced the Lords at the ballcourt. The Lords turned the game into a deadly trap with a bladed ball and impossible demands. In the House of Bats, Camazotz, a bat spirit of the underworld, seized Hunahpu's head, but Xbalanque replaced it with a squash and recovered the real head.",
       "beat_title": "A dangerous game",
       "intended_emotion": "fear turning into grim strategic suspense",
       "visual_evidence": "the ballcourt becomes a contest of observation as the twins turn the lords’ rules against them",
       "emotional_turn": "physical danger shifts into strategic play",
       "required_visuals": [
         "the brothers face a deadly ball and impossible demands in the Mesoamerican ballcourt",
-        "a death bat named Camazotz seizes Hunahpu's head in the House of Bats",
+        "Camazotz, a bat spirit of the underworld, seizes Hunahpu's head in the House of Bats",
         "Xbalanque replaces the head with a squash and recovers the real head"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential Maya codex screenfold with glyphic motifs, jade, cinnabar, black line art. Scene: Mesoamerican ballcourt beneath skeletal lords. The source story is The Maya Hero Twins and the Lords of Death. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
