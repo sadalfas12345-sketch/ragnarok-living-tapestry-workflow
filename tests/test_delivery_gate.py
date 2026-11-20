@@ -27,13 +27,14 @@ class DeliveryGateTests(unittest.TestCase):
     def test_matching_drive_proof_passes(self):
         root = self.make_bundle()
         video = root / "final_vertical_1080x1920.mp4"
-        result = validate(root, "https://drive.google.com/file/d/example/view", video.name, sha256(video))
+        render_id = sha256(video)[:12]
+        result = validate(root, "https://drive.google.com/file/d/example/view", f"{video.stem}_{render_id}{video.suffix}", sha256(video))
         self.assertEqual(result["status"], "PASS")
         self.assertEqual(json.loads((root / "delivery_manifest.json").read_text())["status"], "PASS")
 
     def test_stale_hash_fails(self):
         root = self.make_bundle()
-        result = validate(root, "https://drive.google.com/file/d/example/view", "final_vertical_1080x1920.mp4", "0" * 64)
+        result = validate(root, "https://drive.google.com/file/d/example/view", "final_vertical_1080x1920_deadbeef0000.mp4", "0" * 64)
         self.assertEqual(result["status"], "FAIL")
         self.assertTrue(any("does not match" in error for error in result["errors"]))
 

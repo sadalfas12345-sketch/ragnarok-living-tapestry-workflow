@@ -56,9 +56,11 @@ def validate(epdir: Path, drive_url: str | None = None, drive_name: str | None =
         errors.append("Drive URL is missing")
     if not drive_name:
         errors.append("uploaded Drive filename is missing")
-    if drive_name and video.exists() and drive_name != video.name:
-        errors.append(f"Drive filename does not match final local filename: {drive_name} != {video.name}")
     local_hash = sha256(video) if video.exists() else None
+    render_id = local_hash[:12] if local_hash else None
+    expected_drive_name = f"{video.stem}_{render_id}{video.suffix}" if render_id else None
+    if drive_name and expected_drive_name and drive_name != expected_drive_name:
+        errors.append(f"Drive filename does not identify this render: {drive_name} != {expected_drive_name}")
     if not drive_sha256 or not re.fullmatch(r"[0-9a-fA-F]{64}", drive_sha256):
         errors.append("uploaded Drive SHA-256 is missing")
     elif local_hash != drive_sha256.lower():
@@ -69,6 +71,8 @@ def validate(epdir: Path, drive_url: str | None = None, drive_name: str | None =
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "video": video.name,
         "video_sha256": local_hash,
+        "render_id": render_id,
+        "expected_drive_filename": expected_drive_name,
         "srt": srt.name,
         "qa": qa_path.name,
         "visual_gates": visual_path.name,
