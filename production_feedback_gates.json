@@ -83,6 +83,7 @@
       "minimum_caption_words": 10,
       "forbidden_generic_patterns": ["something happened", "things changed", "people suffered", "a hero appeared", "the story continued"],
       "forbidden_vague_phrases": ["the story did not end there", "reading the danger", "one of their own", "the tricks", "do the same", "in some way", "somehow", "something like", "things like"],
+      "forbidden_encoding_markers": ["�", "Ã", "â€"],
       "require_story_anchor": true,
       "failure_message": "each scene script must communicate concrete story-specific entities, setting, actions, or consequences; generic filler is forbidden"
     },
@@ -198,7 +199,7 @@
   },
   "rendered_caption_text": {
     "reject_mojibake": true,
-    "forbidden_sequences": ["â€™", "â€œ", "â€", "Ã¢", "Ã‚"]
+    "forbidden_sequences": ["�", "â€™", "â€œ", "â€", "Ã¢", "Ã‚"]
   },
   "prose": {
     "smooth_character_intro_joins": true,

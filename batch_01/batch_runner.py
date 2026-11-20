@@ -340,6 +340,9 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
             if len(concrete) < int(specificity.get("minimum_concrete_terms_per_caption", 3)):
                 errors.append(f"scene {i} script lacks concrete story-specific terms")
             lower_caption = caption.casefold()
+            for marker in specificity.get("forbidden_encoding_markers", []):
+                if str(marker) in caption:
+                    errors.append(f"scene {i} script contains encoding corruption marker: {marker!r}")
             for pattern in specificity.get("forbidden_generic_patterns", []):
                 if str(pattern).casefold() in lower_caption:
                     errors.append(f"scene {i} script contains generic filler: {pattern!r}")
