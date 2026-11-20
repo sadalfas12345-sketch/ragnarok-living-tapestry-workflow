@@ -2,258 +2,292 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 68.966,
+  "runtime_seconds": 75.252,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
     "phrases": [
       {
         "scene": "S01",
-        "text": "Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld.",
+        "text": "What if two brothers had to outwit the lords of the underworld?",
         "start": 0.0,
-        "end": 6.6
+        "end": 3.66
+      },
+      {
+        "scene": "S01",
+        "text": "In K’iche’ Maya tradition, Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld.",
+        "start": 4.46,
+        "end": 12.44
       },
       {
         "scene": "S01",
         "text": "Its lords specialized in humiliating and defeating visitors through trickery.",
-        "start": 7.3,
-        "end": 12.26
+        "start": 13.12,
+        "end": 18.1
       },
       {
         "scene": "S02",
         "text": "The brothers entered houses filled with darkness, sharp blades, cold and fierce creatures.",
-        "start": 13.1,
-        "end": 19.84
+        "start": 18.92,
+        "end": 25.64
       },
       {
         "scene": "S02",
         "text": "Each test demanded more than physical courage.",
-        "start": 20.42,
-        "end": 23.42
+        "start": 25.64,
+        "end": 29.336
       },
       {
         "scene": "S03",
         "text": "The lords challenged them at ball play and set cruel tasks.",
-        "start": 24.44,
-        "end": 29.26
+        "start": 30.32,
+        "end": 35.14
       },
       {
         "scene": "S03",
         "text": "The twins answered with observation, cooperation and deception of their own.",
-        "start": 29.26,
-        "end": 34.274
+        "start": 35.14,
+        "end": 40.096
       },
       {
         "scene": "S04",
-        "text": "The story tells of death, transformation and astonishing returns.",
-        "start": 35.6,
-        "end": 40.48
+        "text": "The story tells of death and transformation before astonishing returns.",
+        "start": 41.22,
+        "end": 46.02
       },
       {
         "scene": "S04",
-        "text": "In the end the twins used the lords’ desire for spectacle against them.",
-        "start": 41.1,
-        "end": 45.476
+        "text": "In the end, the twins used the lords’ desire for spectacle against them.",
+        "start": 46.64,
+        "end": 51.762
       },
       {
         "scene": "S05",
         "text": "When the lords expected to be restored after imitating the trick, the brothers refused.",
-        "start": 46.56,
-        "end": 52.0
+        "start": 52.562,
+        "end": 58.32
       },
       {
         "scene": "S05",
         "text": "Xibalba’s authority was broken.",
-        "start": 52.82,
-        "end": 54.871
+        "start": 59.12,
+        "end": 61.156
       },
       {
         "scene": "S06",
         "text": "In the Popol Vuh, the victory helps reorder the cosmos and honors family memory.",
-        "start": 55.971,
-        "end": 62.5
+        "start": 62.56,
+        "end": 68.78
       },
       {
         "scene": "S06",
         "text": "The strongest weapon is knowing a trickster better than he knows himself.",
-        "start": 63.18,
-        "end": 67.42
+        "start": 68.78,
+        "end": 73.752
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "Two young heroes,",
+        "text": "What if two brothers had to outwit",
         "start": 0.0,
-        "end": 1.72,
+        "end": 2.08,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "the lords of the underworld?",
+        "start": 2.09,
+        "end": 3.66,
+        "word_count": 5
+      },
+      {
+        "scene": "S01",
+        "text": "In K’iche’ Maya tradition,",
+        "start": 4.46,
+        "end": 5.98,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "Two young heroes,",
+        "start": 6.54,
+        "end": 7.52,
         "word_count": 3
       },
       {
         "scene": "S01",
         "text": "Hunahpu and Xbalanque,",
-        "start": 2.16,
-        "end": 3.4,
+        "start": 7.92,
+        "end": 9.32,
         "word_count": 3
       },
       {
         "scene": "S01",
         "text": "were summoned into Xibalba,",
-        "start": 3.84,
-        "end": 5.42,
+        "start": 9.82,
+        "end": 11.32,
         "word_count": 4
       },
       {
         "scene": "S01",
         "text": "the underworld. Its lords specialized in humiliating",
-        "start": 5.84,
-        "end": 9.8,
+        "start": 11.7,
+        "end": 15.62,
         "word_count": 7
       },
       {
         "scene": "S01",
         "text": "and defeating visitors through trickery.",
-        "start": 9.8,
-        "end": 12.26,
+        "start": 15.63,
+        "end": 18.1,
         "word_count": 5
       },
       {
         "scene": "S02",
         "text": "The brothers entered houses filled with darkness,",
-        "start": 13.1,
-        "end": 16.04,
+        "start": 18.92,
+        "end": 21.86,
         "word_count": 7
       },
       {
         "scene": "S02",
         "text": "sharp blades, cold and fierce creatures.",
-        "start": 16.7,
-        "end": 19.84,
+        "start": 22.4,
+        "end": 25.64,
         "word_count": 6
       },
       {
         "scene": "S02",
         "text": "Each test demanded more than physical courage.",
-        "start": 20.42,
-        "end": 23.42,
+        "start": 25.65,
+        "end": 29.336,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "The lords challenged them at ball play",
-        "start": 24.44,
-        "end": 27.3,
+        "start": 30.32,
+        "end": 33.1,
         "word_count": 7
       },
       {
         "scene": "S03",
         "text": "and set cruel tasks.",
-        "start": 27.3,
-        "end": 29.26,
+        "start": 33.11,
+        "end": 35.14,
         "word_count": 4
       },
       {
         "scene": "S03",
         "text": "The twins answered with observation,",
-        "start": 29.26,
-        "end": 32.3,
+        "start": 35.15,
+        "end": 38.08,
         "word_count": 5
       },
       {
         "scene": "S03",
         "text": "cooperation and deception of their own.",
-        "start": 32.86,
-        "end": 34.274,
+        "start": 38.42,
+        "end": 40.096,
         "word_count": 6
       },
       {
         "scene": "S04",
-        "text": "The story tells of death,",
-        "start": 35.6,
-        "end": 37.06,
-        "word_count": 5
-      },
-      {
-        "scene": "S04",
-        "text": "transformation and astonishing returns.",
-        "start": 37.74,
-        "end": 40.48,
-        "word_count": 4
-      },
-      {
-        "scene": "S04",
-        "text": "In the end the twins used the",
-        "start": 41.1,
-        "end": 42.82,
+        "text": "The story tells of death and transformation",
+        "start": 41.22,
+        "end": 43.86,
         "word_count": 7
       },
       {
         "scene": "S04",
-        "text": "lords’ desire for spectacle against them.",
-        "start": 42.82,
-        "end": 45.476,
-        "word_count": 6
+        "text": "before astonishing returns.",
+        "start": 43.87,
+        "end": 46.02,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "In the end,",
+        "start": 46.64,
+        "end": 47.6,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "the twins used the lords’ desire for",
+        "start": 47.94,
+        "end": 50.38,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "spectacle against them.",
+        "start": 50.39,
+        "end": 51.762,
+        "word_count": 3
       },
       {
         "scene": "S05",
         "text": "When the lords expected to be restored",
-        "start": 46.56,
-        "end": 48.66,
+        "start": 52.562,
+        "end": 54.98,
         "word_count": 7
       },
       {
         "scene": "S05",
         "text": "after imitating the trick,",
-        "start": 48.66,
-        "end": 50.26,
+        "start": 54.99,
+        "end": 56.54,
         "word_count": 4
       },
       {
         "scene": "S05",
         "text": "the brothers refused.",
-        "start": 50.84,
-        "end": 52.0,
+        "start": 57.12,
+        "end": 58.32,
         "word_count": 3
       },
       {
         "scene": "S05",
         "text": "Xibalba’s authority was broken.",
-        "start": 52.82,
-        "end": 54.871,
+        "start": 59.12,
+        "end": 61.156,
         "word_count": 4
       },
       {
         "scene": "S06",
         "text": "In the Popol Vuh,",
-        "start": 55.971,
-        "end": 57.5,
+        "start": 62.56,
+        "end": 63.68,
         "word_count": 4
       },
       {
         "scene": "S06",
         "text": "the victory helps reorder the cosmos and",
-        "start": 57.88,
-        "end": 61.0,
+        "start": 64.14,
+        "end": 67.28,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "honors family memory.",
-        "start": 61.0,
-        "end": 62.5,
+        "start": 67.29,
+        "end": 68.78,
         "word_count": 3
       },
       {
         "scene": "S06",
         "text": "The strongest weapon is knowing a trickster",
-        "start": 63.18,
-        "end": 65.8,
+        "start": 68.79,
+        "end": 72.1,
         "word_count": 7
       },
       {
         "scene": "S06",
         "text": "better than he knows himself.",
-        "start": 65.8,
-        "end": 67.42,
+        "start": 72.11,
+        "end": 73.752,
         "word_count": 5
       }
     ]
@@ -261,10 +295,10 @@
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
+      "asset": "assets/H01.png",
       "start": 0.0,
-      "speech_end": 12.26,
-      "end": 12.789,
+      "speech_end": 18.1,
+      "end": 18.611,
       "pause_after": 0.45,
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
@@ -273,20 +307,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 0.0,
-        "end": 12.789
+        "end": 18.611
       },
-      "measured_pause_after": 0.529
+      "measured_pause_after": 0.511,
+      "visual_beats": [
+        {
+          "start": 0.0,
+          "end": 4.46,
+          "reason": "Opening: two Maya heroes before underworld staircase",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "What if two brothers had to outwit the lords of the underworld?"
+        },
+        {
+          "start": 4.46,
+          "end": 13.12,
+          "reason": "Development: two Maya heroes before underworld staircase",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "In K’iche’ Maya tradition, Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld."
+        },
+        {
+          "start": 13.12,
+          "end": 18.611,
+          "reason": "Reveal: A deadly invitation; two Maya heroes before underworld staircase",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Its lords specialized in humiliating and defeating visitors through trickery."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
-      "start": 12.789,
-      "speech_end": 23.42,
-      "end": 24.164,
+      "asset": "assets/H02.png",
+      "start": 18.611,
+      "speech_end": 29.336,
+      "end": 29.986,
       "pause_after": 0.65,
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
@@ -295,20 +361,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 12.789,
-        "end": 24.164
+        "start": 18.611,
+        "end": 29.986
       },
-      "measured_pause_after": 0.744
+      "measured_pause_after": 0.65,
+      "visual_beats": [
+        {
+          "start": 18.611,
+          "end": 25.64,
+          "reason": "Opening: codex panels of house of bats and knives",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The brothers entered houses filled with darkness, sharp blades, cold and fierce creatures."
+        },
+        {
+          "start": 25.64,
+          "end": 29.336,
+          "reason": "Development: codex panels of house of bats and knives",
+          "anchor": "development",
+          "x_focus": 0.4533,
+          "y_focus": 0.5,
+          "spoken_anchor": "Each test demanded more than physical courage."
+        },
+        {
+          "start": 29.336,
+          "end": 29.986,
+          "reason": "Reveal: The traps; codex panels of house of bats and knives",
+          "anchor": "reveal",
+          "x_focus": 0.8872,
+          "y_focus": 0.5,
+          "spoken_anchor": "Each test demanded more than physical courage."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
-      "start": 24.164,
-      "speech_end": 34.274,
-      "end": 35.074,
+      "asset": "assets/H03.png",
+      "start": 29.986,
+      "speech_end": 40.096,
+      "end": 40.896,
       "pause_after": 0.8,
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
@@ -317,20 +415,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 24.164,
-        "end": 35.074
+        "start": 29.986,
+        "end": 40.896
       },
-      "measured_pause_after": 0.8
+      "measured_pause_after": 0.8,
+      "visual_beats": [
+        {
+          "start": 29.986,
+          "end": 35.14,
+          "reason": "Opening: Mesoamerican ballcourt beneath skeletal lords",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The lords challenged them at ball play and set cruel tasks."
+        },
+        {
+          "start": 35.14,
+          "end": 40.096,
+          "reason": "Development: Mesoamerican ballcourt beneath skeletal lords",
+          "anchor": "development",
+          "x_focus": 0.4347,
+          "y_focus": 0.5,
+          "spoken_anchor": "The twins answered with observation, cooperation and deception of their own."
+        },
+        {
+          "start": 40.096,
+          "end": 40.896,
+          "reason": "Reveal: A dangerous game; Mesoamerican ballcourt beneath skeletal lords",
+          "anchor": "reveal",
+          "x_focus": 0.851,
+          "y_focus": 0.5,
+          "spoken_anchor": "The twins answered with observation, cooperation and deception of their own."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
-      "start": 35.074,
-      "speech_end": 45.476,
-      "end": 46.276,
+      "asset": "assets/H04.png",
+      "start": 40.896,
+      "speech_end": 51.762,
+      "end": 52.562,
       "pause_after": 0.8,
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
@@ -339,20 +469,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 35.074,
-        "end": 46.276
+        "start": 40.896,
+        "end": 52.562
       },
-      "measured_pause_after": 0.8
+      "measured_pause_after": 0.8,
+      "visual_beats": [
+        {
+          "start": 40.896,
+          "end": 46.64,
+          "reason": "Opening: twins perform ritual transformation under glyphic stars",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The story tells of death and transformation before astonishing returns."
+        },
+        {
+          "start": 46.64,
+          "end": 51.762,
+          "reason": "Development: twins perform ritual transformation under glyphic stars",
+          "anchor": "development",
+          "x_focus": 0.4649,
+          "y_focus": 0.5,
+          "spoken_anchor": "In the end, the twins used the lords’ desire for spectacle against them."
+        },
+        {
+          "start": 51.762,
+          "end": 52.562,
+          "reason": "Reveal: The reversal; twins perform ritual transformation under glyphic stars",
+          "anchor": "reveal",
+          "x_focus": 0.9099,
+          "y_focus": 0.5,
+          "spoken_anchor": "In the end, the twins used the lords’ desire for spectacle against them."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
-      "start": 46.276,
-      "speech_end": 54.871,
-      "end": 55.971,
+      "asset": "assets/H05.png",
+      "start": 52.562,
+      "speech_end": 61.156,
+      "end": 62.256,
       "pause_after": 1.1,
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
@@ -361,20 +523,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 46.276,
-        "end": 55.971
+        "start": 52.562,
+        "end": 62.256
       },
-      "measured_pause_after": 1.1
+      "measured_pause_after": 1.1,
+      "visual_beats": [
+        {
+          "start": 52.562,
+          "end": 59.12,
+          "reason": "Opening: lords kneel as radiant twins stand with ritual tools",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "When the lords expected to be restored after imitating the trick, the brothers refused."
+        },
+        {
+          "start": 59.12,
+          "end": 61.156,
+          "reason": "Development: lords kneel as radiant twins stand with ritual tools",
+          "anchor": "development",
+          "x_focus": 0.3863,
+          "y_focus": 0.5,
+          "spoken_anchor": "Xibalba’s authority was broken."
+        },
+        {
+          "start": 61.156,
+          "end": 62.256,
+          "reason": "Reveal: The defeat; lords kneel as radiant twins stand with ritual tools",
+          "anchor": "reveal",
+          "x_focus": 0.7561,
+          "y_focus": 0.5,
+          "spoken_anchor": "Xibalba’s authority was broken."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
-      "start": 55.971,
-      "speech_end": 67.42,
-      "end": 68.966,
+      "asset": "assets/H06.png",
+      "start": 62.256,
+      "speech_end": 73.752,
+      "end": 75.252,
       "pause_after": 1.5,
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
@@ -383,13 +577,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 55.971,
-        "end": 68.966
+        "start": 62.256,
+        "end": 75.252
       },
-      "measured_pause_after": 1.546
+      "measured_pause_after": 1.5,
+      "visual_beats": [
+        {
+          "start": 62.256,
+          "end": 68.78,
+          "reason": "Opening: codex folds reveal dawn",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "In the Popol Vuh, the victory helps reorder the cosmos and honors family memory."
+        },
+        {
+          "start": 68.78,
+          "end": 73.752,
+          "reason": "Development: maize",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "The strongest weapon is knowing a trickster better than he knows himself."
+        },
+        {
+          "start": 73.752,
+          "end": 75.252,
+          "reason": "Reveal: A new order; ancestors",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "The strongest weapon is knowing a trickster better than he knows himself."
+        }
+      ],
+      "travel_axis": "horizontal"
     }
   ],
   "music": [
@@ -400,7 +626,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 12.789
+      "end": 18.611
     },
     {
       "scene": "S02",
@@ -408,8 +634,8 @@
       "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 12.789,
-      "end": 24.164
+      "start": 18.611,
+      "end": 29.986
     },
     {
       "scene": "S03",
@@ -417,8 +643,8 @@
       "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 24.164,
-      "end": 35.074
+      "start": 29.986,
+      "end": 40.896
     },
     {
       "scene": "S04",
@@ -426,8 +652,8 @@
       "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 35.074,
-      "end": 46.276
+      "start": 40.896,
+      "end": 52.562
     },
     {
       "scene": "S05",
@@ -435,8 +661,8 @@
       "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 46.276,
-      "end": 55.971
+      "start": 52.562,
+      "end": 62.256
     },
     {
       "scene": "S06",
@@ -444,8 +670,8 @@
       "instrumentation": "wood flute, turtle-shell percussion, marimba-like original motif, cavern drips",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 55.971,
-      "end": 68.966
+      "start": 62.256,
+      "end": 75.252
     }
   ],
   "sfx": [
@@ -454,42 +680,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 12.789
+      "end": 18.611
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 12.789,
-      "end": 24.164
+      "start": 18.611,
+      "end": 29.986
     },
     {
       "scene": "S03",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 24.164,
-      "end": 35.074
+      "start": 29.986,
+      "end": 40.896
     },
     {
       "scene": "S04",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 35.074,
-      "end": 46.276
+      "start": 40.896,
+      "end": 52.562
     },
     {
       "scene": "S05",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 46.276,
-      "end": 55.971
+      "start": 52.562,
+      "end": 62.256
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 55.971,
-      "end": 68.966
+      "start": 62.256,
+      "end": 75.252
     }
   ]
 }

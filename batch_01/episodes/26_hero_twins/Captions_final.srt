@@ -1,99 +1,115 @@
 1
-00:00:00,000 --> 00:00:01,720
-Two young heroes,
+00:00:00,000 --> 00:00:02,080
+What if two brothers had to outwit
 
 2
-00:00:02,160 --> 00:00:03,400
-Hunahpu and Xbalanque,
+00:00:02,090 --> 00:00:03,660
+the lords of the underworld?
 
 3
-00:00:03,840 --> 00:00:05,420
-were summoned into Xibalba,
+00:00:04,460 --> 00:00:05,980
+In K’iche’ Maya tradition,
 
 4
-00:00:05,840 --> 00:00:09,800
-the underworld. Its lords specialized in humiliating
+00:00:06,540 --> 00:00:07,520
+Two young heroes,
 
 5
-00:00:09,800 --> 00:00:12,260
-and defeating visitors through trickery.
+00:00:07,920 --> 00:00:09,320
+Hunahpu and Xbalanque,
 
 6
-00:00:13,100 --> 00:00:16,040
-The brothers entered houses filled with darkness,
+00:00:09,820 --> 00:00:11,320
+were summoned into Xibalba,
 
 7
-00:00:16,700 --> 00:00:19,840
-sharp blades, cold and fierce creatures.
+00:00:11,700 --> 00:00:15,620
+the underworld. Its lords specialized in humiliating
 
 8
-00:00:20,420 --> 00:00:23,420
-Each test demanded more than physical courage.
+00:00:15,630 --> 00:00:18,100
+and defeating visitors through trickery.
 
 9
-00:00:24,440 --> 00:00:27,300
-The lords challenged them at ball play
+00:00:18,920 --> 00:00:21,860
+The brothers entered houses filled with darkness,
 
 10
-00:00:27,300 --> 00:00:29,260
-and set cruel tasks.
+00:00:22,400 --> 00:00:25,640
+sharp blades, cold and fierce creatures.
 
 11
-00:00:29,260 --> 00:00:32,300
-The twins answered with observation,
+00:00:25,650 --> 00:00:29,336
+Each test demanded more than physical courage.
 
 12
-00:00:32,860 --> 00:00:34,274
-cooperation and deception of their own.
+00:00:30,320 --> 00:00:33,100
+The lords challenged them at ball play
 
 13
-00:00:35,600 --> 00:00:37,060
-The story tells of death,
+00:00:33,110 --> 00:00:35,140
+and set cruel tasks.
 
 14
-00:00:37,740 --> 00:00:40,480
-transformation and astonishing returns.
+00:00:35,150 --> 00:00:38,080
+The twins answered with observation,
 
 15
-00:00:41,100 --> 00:00:42,820
-In the end the twins used the
+00:00:38,420 --> 00:00:40,096
+cooperation and deception of their own.
 
 16
-00:00:42,820 --> 00:00:45,476
-lords’ desire for spectacle against them.
+00:00:41,220 --> 00:00:43,860
+The story tells of death and transformation
 
 17
-00:00:46,560 --> 00:00:48,660
-When the lords expected to be restored
+00:00:43,870 --> 00:00:46,020
+before astonishing returns.
 
 18
-00:00:48,660 --> 00:00:50,260
-after imitating the trick,
+00:00:46,640 --> 00:00:47,600
+In the end,
 
 19
-00:00:50,840 --> 00:00:52,000
-the brothers refused.
+00:00:47,940 --> 00:00:50,380
+the twins used the lords’ desire for
 
 20
-00:00:52,820 --> 00:00:54,871
-Xibalba’s authority was broken.
+00:00:50,390 --> 00:00:51,762
+spectacle against them.
 
 21
-00:00:55,971 --> 00:00:57,500
-In the Popol Vuh,
+00:00:52,562 --> 00:00:54,980
+When the lords expected to be restored
 
 22
-00:00:57,880 --> 00:01:01,000
-the victory helps reorder the cosmos and
+00:00:54,990 --> 00:00:56,540
+after imitating the trick,
 
 23
-00:01:01,000 --> 00:01:02,500
-honors family memory.
+00:00:57,120 --> 00:00:58,320
+the brothers refused.
 
 24
-00:01:03,180 --> 00:01:05,800
-The strongest weapon is knowing a trickster
+00:00:59,120 --> 00:01:01,156
+Xibalba’s authority was broken.
 
 25
-00:01:05,800 --> 00:01:07,420
+00:01:02,560 --> 00:01:03,680
+In the Popol Vuh,
+
+26
+00:01:04,140 --> 00:01:07,280
+the victory helps reorder the cosmos and
+
+27
+00:01:07,290 --> 00:01:08,780
+honors family memory.
+
+28
+00:01:08,790 --> 00:01:12,100
+The strongest weapon is knowing a trickster
+
+29
+00:01:12,110 --> 00:01:13,752
 better than he knows himself.

@@ -1,0 +1,26 @@
+{
+  "reviewer": "anatomy_artifact_agent",
+  "episode": "26_hero_twins",
+  "status": "PASS",
+  "review_method": "manual review of opening, middle, and ending frames from the encoded MP4 contact sheet",
+  "samples": [
+    {"scene":"S01","timestamp":1.489,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S01","timestamp":9.306,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S01","timestamp":17.122,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S02","timestamp":19.521,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S02","timestamp":24.299,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S02","timestamp":29.076,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S03","timestamp":30.859,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S03","timestamp":35.441,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S03","timestamp":40.023,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S04","timestamp":41.829,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S04","timestamp":46.729,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S04","timestamp":51.629,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S05","timestamp":53.338,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S05","timestamp":57.409,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S05","timestamp":61.48,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S06","timestamp":63.296,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S06","timestamp":68.754,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."},
+    {"scene":"S06","timestamp":74.212,"verdict":"PASS","notes":"Distinct separated figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed hands."}
+  ]
+}

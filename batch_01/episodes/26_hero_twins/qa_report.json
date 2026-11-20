@@ -1,22 +1,22 @@
 {
   "episode": 26,
   "title": "The Maya Hero Twins and the Lords of Death",
-  "timeline_runtime_seconds": 68.966,
-  "narration_runtime_seconds": 68.966,
-  "video_runtime_seconds": 68.966,
-  "caption_count": 27,
+  "timeline_runtime_seconds": 75.252,
+  "narration_runtime_seconds": 75.252,
+  "video_runtime_seconds": 75.267,
+  "caption_count": 29,
   "caption_overlap_count": 0,
   "scene_pauses_seconds": [
     {
       "from": "S01",
       "to": "S02",
-      "seconds": 0.529,
+      "seconds": 0.511,
       "intended_seconds": 0.45
     },
     {
       "from": "S02",
       "to": "S03",
-      "seconds": 0.744,
+      "seconds": 0.65,
       "intended_seconds": 0.65
     },
     {
