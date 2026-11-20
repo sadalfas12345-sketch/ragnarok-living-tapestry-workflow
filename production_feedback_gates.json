@@ -52,6 +52,17 @@
       "requires_drive_delivery_pass": true
     }
   },
+  "continuation_policy": {
+    "enabled": true,
+    "hard_gate": true,
+    "continue_until_all_pass": true,
+    "forbid_success_after_any_failure": true,
+    "failure_is_not_terminal": true,
+    "allowed_terminal_pause": "explicit_external_input_required",
+    "require_blocker_report_before_pause": true,
+    "require_next_action_on_failure": true,
+    "message_policy": "do_not_report_worked_or_success_while_required_gates_are_unresolved"
+  },
   "camera": {
     "default_direction": "right",
     "max_normalized_travel_per_second": 0.078,
