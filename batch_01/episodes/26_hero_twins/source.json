@@ -94,7 +94,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "What if two brothers had to outwit the lords of the underworld? In K'iche' Maya tradition, the Lords of Death heard Hunahpu and Xbalanque playing ball. Messengers summoned the brothers to Xibalba, where they entered knowing the underworld wanted them dead.",
+      "caption": "What if two brothers had to outwit the lords of the underworld? In K'iche' Maya tradition, two death lords called One Death and Seven Death heard Hunahpu and Xbalanque playing ball. Their messengers summoned the brothers to Xibalba, where they entered knowing the Lords wanted them dead.",
       "beat_title": "A deadly invitation",
       "intended_emotion": "ominous curiosity and danger",
       "visual_evidence": "the brothers approach a monumental underworld entrance while hidden lords watch from above",
@@ -129,15 +129,15 @@
     {
       "id": "S02",
       "asset": "assets/P02.png",
-      "caption": "The Lords sent the brothers through the Houses of Darkness, Blades, Cold, Jaguars, Fire, and Bats. They extinguished torches, avoided blades, endured the cold, and escaped the animals by working together.",
+      "caption": "The Lords sent the brothers through the Houses of Darkness, Blades, Cold, Jaguars, Fire, and Bats. In the House of Darkness, the brothers were ordered to return burning torches and cigars at dawn. They hid fireflies in the cigar tips and placed a red feather on the torch, fooling the Lords and surviving the test.",
       "beat_title": "The traps",
-      "intended_emotion": "claustrophobic fear and rising tension",
+      "intended_emotion": "claustrophobic dread and tactical suspense",
       "visual_evidence": "bats, blades, and creatures close around the brothers as each passage becomes more dangerous",
       "emotional_turn": "the underworld tests their courage and cooperation",
       "required_visuals": [
         "the House of Darkness and House of Blades",
-        "the brothers extinguish torches and avoid blades",
-        "the Houses of Cold, Jaguars, Fire, and Bats continue behind them"
+        "the brothers fool the Lords with fireflies and a red feather",
+        "the Houses of Blades, Cold, Jaguars, Fire, and Bats continue behind them"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential Maya codex screenfold with glyphic motifs, jade, cinnabar, black line art. Scene: codex panels of house of bats and knives. The source story is The Maya Hero Twins and the Lords of Death. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
@@ -164,15 +164,15 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "At the ballcourt, the Lords tried to humiliate them with a rigged game and cruel demands. The twins kept the ball in play, recognized the false instructions, and used deception to survive the next test.",
+      "caption": "After surviving the houses, the brothers faced the Lords at the ballcourt. The Lords used a deadly ball and impossible demands to turn the game into an execution. In the House of Bats, a death bat named Camazotz seized Hunahpu's head, but Xbalanque replaced it with a squash and recovered the real head.",
       "beat_title": "A dangerous game",
-      "intended_emotion": "nervous excitement and suspense",
+      "intended_emotion": "fear turning into grim strategic suspense",
       "visual_evidence": "the ballcourt becomes a contest of observation as the twins turn the lords’ rules against them",
       "emotional_turn": "physical danger shifts into strategic play",
       "required_visuals": [
-        "a rigged Mesoamerican ballcourt",
-        "the Lords issue a false challenge",
-        "the twins keep the ball in play and reverse the trap"
+        "the brothers face a deadly ball and impossible demands in the Mesoamerican ballcourt",
+        "a death bat named Camazotz seizes Hunahpu's head in the House of Bats",
+        "Xbalanque replaces the head with a squash and recovers the real head"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential Maya codex screenfold with glyphic motifs, jade, cinnabar, black line art. Scene: Mesoamerican ballcourt beneath skeletal lords. The source story is The Maya Hero Twins and the Lords of Death. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
@@ -199,15 +199,15 @@
     {
       "id": "S04",
       "asset": "assets/P04.png",
-      "caption": "The Lords killed the twins, burned their bodies, and cast their bones into a river. Hunahpu and Xbalanque returned in disguise as performers who killed and revived one another.",
+      "caption": "The brothers now knew the Lords could be defeated only through deception. With help from two unnamed diviners, they leapt into a fire and allowed the Lords to believe they were dead. Their bones were ground and thrown into a river, but five days later Hunahpu and Xbalanque returned as traveling performers.",
       "beat_title": "The reversal",
-      "intended_emotion": "astonishment and uncanny wonder",
+      "intended_emotion": "ritual grief turning into uncanny dread",
       "visual_evidence": "ritual transformation and return leave the lords fascinated while the twins control the spectacle",
       "emotional_turn": "apparent defeat becomes deliberate deception",
       "required_visuals": [
-        "the Lords kill the twins and cast their bones into a river",
-        "the twins return disguised as traveling performers",
-        "the performers kill and revive one another before the watching Lords"
+        "the brothers leap into a fire as a deliberate sacrifice",
+        "their bones are ground and thrown into a river",
+        "five days later the twins return as traveling performers"
       ],
       "image_prompt": "Vertical cinematic crop of a coherent sequential Maya codex screenfold with glyphic motifs, jade, cinnabar, black line art. Scene: twins perform ritual transformation under glyphic stars. The source story is The Maya Hero Twins and the Lords of Death. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
       "camera": {
@@ -236,7 +236,7 @@
       "asset": "assets/P05.png",
       "caption": "The Lords of Death were fascinated. One Death and Seven Death demanded that the performers kill and revive them as well. The twins sacrificed the Lords, then left them dead.",
       "beat_title": "The defeat",
-      "intended_emotion": "triumphant release",
+      "intended_emotion": "terrifying catharsis and controlled triumph",
       "visual_evidence": "the lords kneel as the twins refuse to restore their authority and the court begins to collapse",
       "emotional_turn": "the underworld’s power is broken",
       "required_visuals": [
@@ -271,7 +271,7 @@
       "asset": "assets/P06.png",
       "caption": "With One Death and Seven Death dead, the underworld lost its rule over the living. The Popol Vuh records the twins' victory: the death lords fall, and a new cosmic order begins.",
       "beat_title": "A new order",
-      "intended_emotion": "awe and hopeful resolution",
+      "intended_emotion": "awe after death's power is broken",
       "visual_evidence": "darkness opens into dawn, maize, ancestors, and a balanced cosmos beneath the victorious twins",
       "emotional_turn": "a deadly trial becomes a reordered world",
       "required_visuals": [
