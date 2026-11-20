@@ -22,6 +22,11 @@ from typing import Any
 import numpy as np
 import soundfile as sf
 
+try:
+    from .lifecycle import Lifecycle
+except ImportError:
+    from batch_01.lifecycle import Lifecycle
+
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -1144,16 +1149,36 @@ def main() -> int:
     if args.stage == "validate":
         report = validate_all(); print(json.dumps(report, ensure_ascii=False, indent=2)); return 0 if report["status"] == "PASS" else 1
     spec, epdir = ensure_episode(args.episode)
-    if args.stage in ("narration", "timeline", "captions", "render", "audio", "qa", "all"):
-        narration = build_narration(spec, epdir)
-        print(f"narration={narration}")
-    if args.stage in ("captions", "render", "audio", "qa", "all"):
-        tl = json.loads((epdir / "timeline.json").read_text(encoding="utf-8")); write_srt(tl, epdir / "Captions_final.srt")
-    if args.stage in ("render", "audio", "qa", "all"): render_video(spec, epdir)
-    if args.stage in ("audio", "qa", "all"): build_audio(spec, epdir)
-    if args.stage in ("qa", "all"):
-        result = qa(spec, epdir); print(json.dumps(result, ensure_ascii=False, indent=2)); return 0 if result["status"] == "PASS" else 1
-    return 0
+    lifecycle = Lifecycle(epdir, args.episode, int(FEEDBACK_POLICY.get("lifecycle_monitoring", {}).get("heartbeat_interval_seconds", 60)))
+    lifecycle.start()
+    try:
+        if args.stage in ("narration", "timeline", "captions", "render", "audio", "qa", "all"):
+            lifecycle.phase("narration")
+            narration = build_narration(spec, epdir)
+            print(f"narration={narration}")
+        if args.stage in ("captions", "render", "audio", "qa", "all"):
+            lifecycle.phase("timeline")
+            tl = json.loads((epdir / "timeline.json").read_text(encoding="utf-8")); write_srt(tl, epdir / "Captions_final.srt")
+        if args.stage in ("render", "audio", "qa", "all"):
+            lifecycle.phase("scene_render", epdir / "video_only.mp4")
+            render_video(spec, epdir)
+            lifecycle.phase("caption_encode", epdir / "video_captioned.mp4")
+        if args.stage in ("audio", "qa", "all"):
+            lifecycle.phase("audio_mux", epdir / "final_vertical_1080x1920.mp4")
+            build_audio(spec, epdir)
+        if args.stage in ("qa", "all"):
+            lifecycle.phase("qa", epdir / "qa_report.json")
+            result = qa(spec, epdir)
+            if result["status"] != "PASS":
+                raise RuntimeError("QA failed: " + "; ".join(result.get("errors", [])))
+            lifecycle.phase("delivery", epdir / "final_vertical_1080x1920.mp4")
+            lifecycle.complete()
+            print(json.dumps(result, ensure_ascii=False, indent=2)); return 0
+        lifecycle.complete()
+        return 0
+    except Exception as exc:
+        lifecycle.fail(exc)
+        raise
 
 
 if __name__ == "__main__":

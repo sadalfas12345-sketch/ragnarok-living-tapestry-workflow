@@ -1,6 +1,19 @@
 {
   "policy": "living_tapestries_v2_feedback",
   "source_of_truth": "narration_waveform_and_authoritative_episode_json",
+  "lifecycle_monitoring": {
+    "enabled": true,
+    "continue_until_terminal": true,
+    "terminal_states": ["complete", "stopped", "blocked"],
+    "stop_only_on_explicit_interrupt_or_block": true,
+    "do_not_stop_on_turn_boundary": true,
+    "heartbeat_interval_seconds": 60,
+    "required_phases": ["narration", "timeline", "scene_render", "scene_merge", "caption_encode", "audio_mux", "qa", "delivery"],
+    "require_active_child_process_check": true,
+    "require_output_growth_check_during_encode": true,
+    "forbid_completion_report_while_process_active": true,
+    "failure_message": "long-running production jobs must report a current phase and heartbeat; never report completion while a child encoder or QA process remains active"
+  },
   "camera": {
     "default_direction": "right",
     "max_normalized_travel_per_second": 0.078,
