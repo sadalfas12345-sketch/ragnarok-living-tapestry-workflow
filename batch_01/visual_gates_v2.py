@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -22,8 +23,10 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "batch_01"
-FFMPEG = Path(shutil.which("ffmpeg") or (Path.home() / "Wan2GP" / "ffmpeg_bins" / "ffmpeg.exe"))
-FFPROBE = Path(shutil.which("ffprobe") or (Path.home() / "Wan2GP" / "ffmpeg_bins" / "ffprobe.exe"))
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+FFMPEG = Path(os.environ.get("FFMPEG") or shutil.which("ffmpeg") or (Path.home() / "Wan2GP" / "ffmpeg_bins" / "ffmpeg.exe"))
+FFPROBE = Path(os.environ.get("FFPROBE") or shutil.which("ffprobe") or (Path.home() / "Wan2GP" / "ffmpeg_bins" / "ffprobe.exe"))
 POLICY = json.loads((ROOT / "production_feedback_gates.json").read_text(encoding="utf-8"))
 
 
@@ -119,7 +122,10 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     bitrate = int(stream.get("bit_rate") or fmt.get("bit_rate") or 0)
     line_report = None
     if POLICY.get("line_artifact_review", {}).get("enabled", False):
-        from .line_artifact_agent import inspect_video
+        try:
+            from .line_artifact_agent import inspect_video
+        except ImportError:
+            from batch_01.line_artifact_agent import inspect_video
         line_report = inspect_video(video, scenes, runtime)
         if POLICY["line_artifact_review"].get("fail_on_flagged_sample", True) and line_report["status"] == "FAIL":
             errors.append(f"line-artifact agent flagged {len(line_report['flagged_samples'])} rendered sample(s)")
@@ -165,23 +171,36 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     source_for_agents = json.loads(source_path.read_text(encoding="utf-8")) if (source_path := epdir / "source.json").exists() else {}
     agent_reports: dict[str, Any] = {}
     if POLICY.get("name_spelling_review", {}).get("enabled") and source_for_agents:
-        from .name_spelling_agent import inspect_episode as inspect_names
+        try:
+            from .name_spelling_agent import inspect_episode as inspect_names
+        except ImportError:
+            from batch_01.name_spelling_agent import inspect_episode as inspect_names
         agent_reports["name_spelling"] = inspect_names(source_for_agents, caption_text)
         if agent_reports["name_spelling"]["status"] == "FAIL":
             errors.append("name spelling agent found a caption mismatch or misspelling")
     if POLICY.get("historical_scene_review", {}).get("enabled") and source_for_agents:
-        from .historical_scene_agent import inspect_episode as inspect_history
+        try:
+            from .historical_scene_agent import inspect_episode as inspect_history
+        except ImportError:
+            from batch_01.historical_scene_agent import inspect_episode as inspect_history
         agent_reports["historical_scene"] = inspect_history(source_for_agents)
         if agent_reports["historical_scene"]["status"] == "FAIL":
             errors.append("historical scene agent found a declared visual contradiction")
     if POLICY.get("wording_review", {}).get("enabled") and source_for_agents:
-        from .wording_agent import inspect_episode as inspect_wording
+        try:
+            from .wording_agent import inspect_episode as inspect_wording
+        except ImportError:
+            from batch_01.wording_agent import inspect_episode as inspect_wording
         agent_reports["wording"] = inspect_wording(source_for_agents, caption_text)
         if agent_reports["wording"]["status"] == "FAIL":
             errors.append("wording agent found repetitive or awkward narration wording")
     if source_for_agents:
-        from .procedural_pipeline_audit import inspect_episode as inspect_procedure
-        from .natural_speech_agent import inspect_episode as inspect_speech
+        try:
+            from .procedural_pipeline_audit import inspect_episode as inspect_procedure
+            from .natural_speech_agent import inspect_episode as inspect_speech
+        except ImportError:
+            from batch_01.procedural_pipeline_audit import inspect_episode as inspect_procedure
+            from batch_01.natural_speech_agent import inspect_episode as inspect_speech
         agent_reports["procedural_pipeline_audit"] = inspect_procedure(epdir, tl, video, srt)
         agent_reports["natural_speech_review"] = inspect_speech(epdir, tl)
         if agent_reports["procedural_pipeline_audit"]["status"] == "FAIL":
@@ -189,11 +208,17 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if agent_reports["natural_speech_review"]["status"] == "FAIL":
             errors.append("natural speech review found merged words, encoding errors, or unnatural internal gaps")
     if POLICY.get("anatomy_review", {}).get("enabled"):
-        from .anatomy_artifact_agent import inspect_episode as inspect_anatomy
+        try:
+            from .anatomy_artifact_agent import inspect_episode as inspect_anatomy
+        except ImportError:
+            from batch_01.anatomy_artifact_agent import inspect_episode as inspect_anatomy
         agent_reports["anatomy_artifact_review"] = inspect_anatomy(epdir, scenes)
         if agent_reports["anatomy_artifact_review"]["status"] == "FAIL":
             errors.append("anatomy artifact gate found missing review or mutant-looking anatomy")
-    from .adversarial_render_agent import inspect_episode as inspect_render
+    try:
+        from .adversarial_render_agent import inspect_episode as inspect_render
+    except ImportError:
+        from batch_01.adversarial_render_agent import inspect_episode as inspect_render
     agent_reports["adversarial_render_review"] = inspect_render(video, scenes)
     if agent_reports["adversarial_render_review"]["status"] == "FAIL":
         errors.append("adversarial render review found a black, frozen, or visually static rendered state")
@@ -376,7 +401,10 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     (audit_dir / "visual_gates_report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     if not keep_audit:
         for child in audit_dir.iterdir():
-            child.unlink()
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
         audit_dir.rmdir()
     return report
 
