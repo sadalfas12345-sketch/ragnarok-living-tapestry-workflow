@@ -1293,6 +1293,11 @@
     "flagged_samples": []
   },
   "independent_agent_reports": {
+    "audience_emotion_gate": {
+      "reviewer": "audience_emotion_gate",
+      "status": "PASS",
+      "findings": []
+    },
     "name_spelling": {
       "reviewer": "name_spelling_agent",
       "status": "PASS",

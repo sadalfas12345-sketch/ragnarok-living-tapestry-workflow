@@ -170,6 +170,25 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     caption_text = " ".join(str(c.get("text", "")) for c in captions)
     source_for_agents = json.loads(source_path.read_text(encoding="utf-8")) if (source_path := epdir / "source.json").exists() else {}
     agent_reports: dict[str, Any] = {}
+    emotion_policy = POLICY.get("scenes", {}).get("audience_emotion_gate", {})
+    if emotion_policy.get("enabled") and emotion_policy.get("hard_gate") and source_for_agents:
+        emotion_findings: list[dict[str, str]] = []
+        required_fields = tuple(emotion_policy.get("required_fields", ("intended_emotion", "visual_evidence", "emotional_turn")))
+        for source_scene in source_for_agents.get("scenes", []):
+            scene_id = str(source_scene.get("id", "unknown"))
+            for field in required_fields:
+                value = str(source_scene.get(field, "")).strip()
+                if not value:
+                    emotion_findings.append({"scene": scene_id, "field": field, "message": "missing audience-emotion field"})
+                elif len(value.split()) < 2:
+                    emotion_findings.append({"scene": scene_id, "field": field, "message": "field is too vague to guide a visual or narration review"})
+        agent_reports["audience_emotion_gate"] = {
+            "reviewer": "audience_emotion_gate",
+            "status": "FAIL" if emotion_findings else "PASS",
+            "findings": emotion_findings,
+        }
+        if emotion_findings:
+            errors.append("audience-emotion gate found missing or underspecified scene intent")
     if POLICY.get("name_spelling_review", {}).get("enabled") and source_for_agents:
         try:
             from .name_spelling_agent import inspect_episode as inspect_names

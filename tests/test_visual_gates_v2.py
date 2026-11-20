@@ -59,6 +59,12 @@ class VisualGateUnitTests(unittest.TestCase):
         self.assertTrue(gates.POLICY["prose"]["smooth_character_intro_joins"])
         self.assertTrue(gates.POLICY["prose"]["reject_awkward_intro_joins"])
 
+    def test_audience_emotion_gate_is_hard_and_specific(self):
+        policy = gates.POLICY["scenes"]["audience_emotion_gate"]
+        self.assertTrue(policy["enabled"])
+        self.assertTrue(policy["hard_gate"])
+        self.assertEqual(set(policy["required_fields"]), {"intended_emotion", "visual_evidence", "emotional_turn"})
+
 
 if __name__ == "__main__":
     unittest.main()
