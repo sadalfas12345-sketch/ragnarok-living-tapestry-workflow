@@ -256,7 +256,7 @@
         "narration_masking_forbidden": true
       },
       "pause_after_seconds_hint": 1.1
-    },
+    }
   ],
   "opening_hook": "What if a trickster used a magical fishhook to pull land from the sea?"
 }
