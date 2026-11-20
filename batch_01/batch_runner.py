@@ -24,8 +24,10 @@ import soundfile as sf
 
 try:
     from .lifecycle import Lifecycle
+    from .delivery_gate import validate as validate_delivery
 except ImportError:
     from batch_01.lifecycle import Lifecycle
+    from batch_01.delivery_gate import validate as validate_delivery
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -1145,6 +1147,9 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--episode", type=int, default=1)
     ap.add_argument("--stage", choices=["validate", "narration", "timeline", "captions", "render", "audio", "qa", "all"], default="all")
+    ap.add_argument("--drive-url")
+    ap.add_argument("--drive-name")
+    ap.add_argument("--drive-sha256")
     args = ap.parse_args()
     if args.stage == "validate":
         report = validate_all(); print(json.dumps(report, ensure_ascii=False, indent=2)); return 0 if report["status"] == "PASS" else 1
@@ -1172,6 +1177,9 @@ def main() -> int:
             if result["status"] != "PASS":
                 raise RuntimeError("QA failed: " + "; ".join(result.get("errors", [])))
             lifecycle.phase("delivery", epdir / "final_vertical_1080x1920.mp4")
+            delivery = validate_delivery(epdir, args.drive_url, args.drive_name, args.drive_sha256)
+            if delivery["status"] != "PASS":
+                raise RuntimeError("delivery gate failed: " + "; ".join(delivery.get("errors", [])))
             lifecycle.complete()
             print(json.dumps(result, ensure_ascii=False, indent=2)); return 0
         lifecycle.complete()

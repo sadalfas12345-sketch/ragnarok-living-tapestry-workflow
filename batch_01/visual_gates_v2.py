@@ -241,6 +241,16 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
     agent_reports["adversarial_render_review"] = inspect_render(video, scenes)
     if agent_reports["adversarial_render_review"]["status"] == "FAIL":
         errors.append("adversarial render review found a black, frozen, or visually static rendered state")
+    multi_policy = POLICY.get("multi_agent_review", {})
+    if multi_policy.get("enabled") and multi_policy.get("hard_gate"):
+        required_roles = multi_policy.get("required_roles", [])
+        required_status = multi_policy.get("required_report_status", "PASS")
+        for role in required_roles:
+            report = agent_reports.get(role)
+            if not report:
+                errors.append(f"required independent agent report is missing: {role}")
+            elif report.get("status") != required_status:
+                errors.append(f"independent agent report is not {required_status}: {role}")
     if agent_reports:
         audit_dir = epdir / "visual_gates_audit"
         audit_dir.mkdir(exist_ok=True)

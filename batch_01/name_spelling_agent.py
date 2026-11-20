@@ -14,6 +14,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 POLICY = json.loads((ROOT / "production_feedback_gates.json").read_text(encoding="utf-8"))
 LEXICON = json.loads((ROOT / "batch_01" / "pronunciation_lexicon.json").read_text(encoding="utf-8"))
+NAME_CATALOG = json.loads((ROOT / "batch_01" / "proper_name_catalog.json").read_text(encoding="utf-8"))
 
 
 def _source_text(source: dict[str, Any]) -> str:
@@ -27,6 +28,9 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
     findings: list[dict[str, str]] = []
     names: list[str] = []
     names.extend(str(x) for x in source.get("proper_names", []) or [])
+    for name in NAME_CATALOG:
+        if re.search(rf"\b{re.escape(name)}\b", source_text, re.IGNORECASE):
+            names.append(name)
     # Character design locks are visual metadata, not required narration text.
     # Only names present in authoritative prose or the pronunciation lexicon
     # are required to survive into the final captions.

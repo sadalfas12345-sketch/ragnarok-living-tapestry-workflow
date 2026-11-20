@@ -259,6 +259,10 @@
   },
   "multi_agent_review": {
     "enabled": true,
+    "hard_gate": true,
+    "require_all_enabled_roles": true,
+    "required_report_status": "PASS",
+    "required_roles": ["audience_emotion_gate", "procedural_pipeline_audit", "name_spelling", "historical_scene", "wording", "natural_speech_review", "anatomy_artifact_review", "adversarial_render_review"],
     "procedural_pipeline_audit": {"enabled": true, "hard_gate": true},
     "name_spelling_agent": {"enabled": true, "hard_gate": true},
     "historical_scene_agent": {"enabled": true, "hard_gate_on_declared_contradiction": true},
