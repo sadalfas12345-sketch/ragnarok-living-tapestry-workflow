@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from batch_01.batch_runner import source_files, validate_spec
+from batch_01.batch_runner import effective_scene_caption, source_files, validate_spec
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,6 +46,14 @@ class ScriptGateRegressionTests(unittest.TestCase):
         self.assertIn("leapt into a fire", joined)
         self.assertIn("returned as traveling performers", joined)
         self.assertNotIn("The Lords killed the twins", joined)
+
+    def test_existing_source_intro_is_not_duplicated_by_pipeline(self):
+        path = ROOT / "batch_01" / "source" / "26_hero_twins.json"
+        spec = json.loads(path.read_text(encoding="utf-8-sig"))
+        source_caption = spec["scenes"][0]["caption"]
+        effective = effective_scene_caption(spec, 0, source_caption, [])
+        self.assertEqual(effective.lower().count("k’iche’ maya tradition"), 1)
+        self.assertNotIn("In K’iche’ Maya tradition, In K’iche’ Maya tradition", effective)
 
 
 if __name__ == "__main__":
