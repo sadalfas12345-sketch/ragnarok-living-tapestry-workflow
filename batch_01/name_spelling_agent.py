@@ -18,7 +18,20 @@ NAME_CATALOG = json.loads((ROOT / "batch_01" / "proper_name_catalog.json").read_
 
 
 def _source_text(source: dict[str, Any]) -> str:
-    return json.dumps(source, ensure_ascii=False)
+    spoken: dict[str, Any] = {
+        "title": source.get("title", ""),
+        "opening_hook": source.get("opening_hook", ""),
+        "proper_names": source.get("proper_names", []),
+        "scenes": [
+            {
+                key: scene.get(key, "")
+                for key in ("caption", "narration", "spoken_text", "script")
+                if scene.get(key)
+            }
+            for scene in source.get("scenes", [])
+        ],
+    }
+    return json.dumps(spoken, ensure_ascii=False)
 
 
 def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]:
