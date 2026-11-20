@@ -38,6 +38,13 @@ class DeliveryGateTests(unittest.TestCase):
         self.assertEqual(result["status"], "FAIL")
         self.assertTrue(any("does not match" in error for error in result["errors"]))
 
+    def test_delivery_phase_is_allowed_only_for_runner_handshake(self):
+        root = self.make_bundle()
+        (root / "lifecycle_status.json").write_text(json.dumps({"status": "running", "phase": "delivery"}), encoding="utf-8")
+        video = root / "final_vertical_1080x1920.mp4"
+        result = validate(root, "https://drive.google.com/file/d/example/view", f"{video.stem}_{sha256(video)[:12]}{video.suffix}", sha256(video), allow_delivery_phase=True)
+        self.assertEqual(result["status"], "PASS")
+
 
 if __name__ == "__main__":
     unittest.main()

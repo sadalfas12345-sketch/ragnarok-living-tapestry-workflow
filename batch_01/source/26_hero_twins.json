@@ -94,7 +94,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "What if two brothers had to outwit the lords of the underworld? Two young heroes, Hunahpu and Xbalanque, were summoned into Xibalba, the underworld. Its lords specialized in humiliating and defeating visitors through trickery.",
+      "caption": "What if two brothers had to outwit the lords of the underworld? In K’iche’ Maya tradition, two young heroes named Hunahpu and Xbalanque were summoned into Xibalba, the underworld. Its lords specialized in humiliating visitors through trickery.",
       "beat_title": "A deadly invitation",
       "intended_emotion": "ominous curiosity and danger",
       "visual_evidence": "the brothers approach a monumental underworld entrance while hidden lords watch from above",
@@ -127,7 +127,7 @@
     {
       "id": "S02",
       "asset": "assets/P02.png",
-      "caption": "The brothers entered houses filled with darkness, sharp blades, cold and fierce creatures. Each test demanded more than physical courage.",
+      "caption": "The brothers entered houses of darkness, where sharp blades, bitter cold, and fierce creatures awaited them. Each trial demanded more than physical courage.",
       "beat_title": "The traps",
       "intended_emotion": "claustrophobic fear and rising tension",
       "visual_evidence": "bats, blades, and creatures close around the brothers as each passage becomes more dangerous",
@@ -160,7 +160,7 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "The lords challenged them at ball play and set cruel tasks. The twins answered with observation, cooperation and deception of their own.",
+      "caption": "The lords challenged them to a ball game and set cruel tasks. The twins answered with observation, cooperation, and deception of their own.",
       "beat_title": "A dangerous game",
       "intended_emotion": "nervous excitement and suspense",
       "visual_evidence": "the ballcourt becomes a contest of observation as the twins turn the lords’ rules against them",
@@ -193,7 +193,7 @@
     {
       "id": "S04",
       "asset": "assets/P04.png",
-      "caption": "The story tells of death and transformation before astonishing returns. In the end, the twins used the lords’ desire for spectacle against them.",
+      "caption": "The story moves through death and transformation before its astonishing return. In the end, the twins turned the lords’ hunger for spectacle against them.",
       "beat_title": "The reversal",
       "intended_emotion": "astonishment and uncanny wonder",
       "visual_evidence": "ritual transformation and return leave the lords fascinated while the twins control the spectacle",
@@ -226,7 +226,7 @@
     {
       "id": "S05",
       "asset": "assets/P05.png",
-      "caption": "When the lords expected to be restored after imitating the trick, the brothers refused. Xibalba’s authority was broken.",
+      "caption": "When the lords expected the twins to restore them after the ritual, the brothers refused. Xibalba’s authority was broken.",
       "beat_title": "The defeat",
       "intended_emotion": "triumphant release",
       "visual_evidence": "the lords kneel as the twins refuse to restore their authority and the court begins to collapse",
@@ -259,7 +259,7 @@
     {
       "id": "S06",
       "asset": "assets/P06.png",
-      "caption": "In the Popol Vuh, the victory helps reorder the cosmos and honors family memory. The strongest weapon is knowing a trickster better than he knows himself.",
+      "caption": "In the Popol Vuh, their victory helps reorder the cosmos and preserve family memory. The strongest weapon is knowing a trickster better than he knows himself.",
       "beat_title": "A new order",
       "intended_emotion": "awe and hopeful resolution",
       "visual_evidence": "darkness opens into dawn, maize, ancestors, and a balanced cosmos beneath the victorious twins",

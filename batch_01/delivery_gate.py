@@ -18,7 +18,7 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def validate(epdir: Path, drive_url: str | None = None, drive_name: str | None = None, drive_sha256: str | None = None) -> dict:
+def validate(epdir: Path, drive_url: str | None = None, drive_name: str | None = None, drive_sha256: str | None = None, allow_delivery_phase: bool = False) -> dict:
     video = epdir / "final_vertical_1080x1920.mp4"
     srt = epdir / "Captions_final.srt"
     qa_path = epdir / "qa_report.json"
@@ -50,7 +50,8 @@ def validate(epdir: Path, drive_url: str | None = None, drive_name: str | None =
         errors.append("timing QA is not PASS")
     if visual.get("status") != "PASS":
         errors.append("visual gates are not PASS")
-    if lifecycle.get("status") != "complete":
+    lifecycle_ok = lifecycle.get("status") == "complete" or (allow_delivery_phase and lifecycle.get("phase") == "delivery" and lifecycle.get("status") == "running")
+    if not lifecycle_ok:
         errors.append("lifecycle is not complete")
     if not drive_url or not re.match(r"^https://drive\.google\.com/", drive_url):
         errors.append("Drive URL is missing")
@@ -92,8 +93,9 @@ def main() -> int:
     parser.add_argument("--drive-url")
     parser.add_argument("--drive-name")
     parser.add_argument("--drive-sha256")
+    parser.add_argument("--allow-delivery-phase", action="store_true")
     args = parser.parse_args()
-    result = validate(Path(args.episode_dir), args.drive_url, args.drive_name, args.drive_sha256)
+    result = validate(Path(args.episode_dir), args.drive_url, args.drive_name, args.drive_sha256, args.allow_delivery_phase)
     print(json.dumps(result, indent=2))
     return 0 if result["status"] == "PASS" else 1
 

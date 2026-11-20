@@ -1177,7 +1177,7 @@ def main() -> int:
             if result["status"] != "PASS":
                 raise RuntimeError("QA failed: " + "; ".join(result.get("errors", [])))
             lifecycle.phase("delivery", epdir / "final_vertical_1080x1920.mp4")
-            delivery = validate_delivery(epdir, args.drive_url, args.drive_name, args.drive_sha256)
+            delivery = validate_delivery(epdir, args.drive_url, args.drive_name, args.drive_sha256, allow_delivery_phase=True)
             if delivery["status"] != "PASS":
                 raise RuntimeError("delivery gate failed: " + "; ".join(delivery.get("errors", [])))
             lifecycle.complete()
