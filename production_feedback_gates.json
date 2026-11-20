@@ -76,6 +76,15 @@
     "transition_max_black_luma": 2.0,
     "transition_min_progression_diff": 0.05,
     "require_actual_rendered_progression": true,
+    "story_specificity_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "minimum_concrete_terms_per_caption": 3,
+      "minimum_caption_words": 10,
+      "forbidden_generic_patterns": ["something happened", "things changed", "people suffered", "a hero appeared", "the story continued"],
+      "require_story_anchor": true,
+      "failure_message": "each scene script must communicate concrete story-specific entities, setting, actions, or consequences; generic filler is forbidden"
+    },
     "audience_emotion_gate": {
       "enabled": true,
       "hard_gate": true,

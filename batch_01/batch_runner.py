@@ -329,6 +329,20 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
                 errors.append(f"scene {i} pause hint outside 0-3 seconds")
         except (TypeError, ValueError):
             errors.append(f"scene {i} pause hint is not numeric")
+        specificity = FEEDBACK_POLICY.get("scenes", {}).get("story_specificity_gate", {})
+        if specificity.get("enabled") and specificity.get("hard_gate"):
+            caption = normalize_text(str(scene.get("caption", "")))
+            words = re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ’'-]+", caption)
+            abstract = {"what", "if", "the", "and", "then", "they", "their", "were", "was", "are", "with", "from", "into", "this", "that", "story", "end", "did", "more", "than", "through", "before", "after", "could", "would", "when", "in", "of", "to", "a", "an", "as", "for", "on", "at", "by", "its", "it", "one", "two", "three", "not", "only", "each", "all", "their"}
+            concrete = [word for word in words if len(word) >= 4 and word.casefold() not in abstract]
+            if len(words) < int(specificity.get("minimum_caption_words", 10)):
+                errors.append(f"scene {i} script is too short for story-specific narration")
+            if len(concrete) < int(specificity.get("minimum_concrete_terms_per_caption", 3)):
+                errors.append(f"scene {i} script lacks concrete story-specific terms")
+            lower_caption = caption.casefold()
+            for pattern in specificity.get("forbidden_generic_patterns", []):
+                if str(pattern).casefold() in lower_caption:
+                    errors.append(f"scene {i} script contains generic filler: {pattern!r}")
     si = spec.get("source_integrity", {})
     if not si.get("classification") or not si.get("research_status"):
         errors.append("source_integrity must include classification and research_status")

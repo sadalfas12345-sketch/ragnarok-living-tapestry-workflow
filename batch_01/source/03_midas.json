@@ -3,6 +3,7 @@
   "episode_number": 3,
   "slug": "03_midas",
   "title": "Midas: The King Whose Wish Became a Curse",
+  "opening_hook": "What if every touch turned a king’s wish into a curse?",
   "series": "Living Tapestries — The World’s Great Stories",
   "genre": "myth, ironic tragedy",
   "civilization": "Ancient Greece",
@@ -93,7 +94,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "King Midas did a kindness for a companion of Dionysus. In return, the god offered him a reward. Midas chose the power to turn anything he touched into gold.",
+      "caption": "What if every touch turned a king’s wish into a curse? King Midas did a kindness for a companion of Dionysus. In return, the god offered him a reward. Midas chose the power to turn anything he touched into gold.",
       "beat_title": "The gift",
       "required_visuals": [
         "king kneels at feast",

@@ -3,6 +3,7 @@
   "episode_number": 4,
   "slug": "04_pandora",
   "title": "Pandora: The Jar That Changed the World",
+  "opening_hook": "What if opening one sealed jar unleashed every sorrow in the world?",
   "series": "Living Tapestries — The World’s Great Stories",
   "genre": "myth, curiosity",
   "civilization": "Ancient Greece",
@@ -93,7 +94,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "In an ancient Greek account, the gods fashioned Pandora and sent her among humans. She carried a sealed jar, though its contents were not hers to command.",
+      "caption": "What if opening one sealed jar unleashed every sorrow in the world? In an ancient Greek account, the gods fashioned Pandora and sent her among humans. She carried a sealed jar, though its contents were not hers to command.",
       "beat_title": "A strange gift",
       "required_visuals": [
         "Pandora arrives with immense painted storage jar",

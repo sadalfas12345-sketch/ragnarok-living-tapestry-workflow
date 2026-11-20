@@ -3,6 +3,7 @@
   "episode_number": 5,
   "slug": "05_orpheus",
   "title": "Orpheus: The Song That Almost Defeated Death",
+  "opening_hook": "What if a song could bring the dead back—but only if its singer never looked back?",
   "series": "Living Tapestries — The World’s Great Stories",
   "genre": "myth, love",
   "civilization": "Ancient Greece",
@@ -94,7 +95,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Orpheus could make the world listen when he sang. But when his wife Eurydice died, music could not reach her where she had gone.",
+      "caption": "What if a song could bring the dead back—but only if its singer never looked back? Orpheus could make the world listen when he sang. But when his wife Eurydice died, music could not reach her where she had gone.",
       "beat_title": "One last song",
       "required_visuals": [
         "musician at burial beside river under dim cypress"

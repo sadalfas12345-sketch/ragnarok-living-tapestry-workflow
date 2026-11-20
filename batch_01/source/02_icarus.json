@@ -3,6 +3,7 @@
   "episode_number": 2,
   "slug": "02_icarus",
   "title": "Icarus: The Flight That Went Too High",
+  "opening_hook": "What if the sky itself became a trap for a boy who wanted to be free?",
   "series": "Living Tapestries — The World’s Great Stories",
   "genre": "myth, tragedy",
   "civilization": "Ancient Greece",
@@ -93,7 +94,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "A father and son were trapped on Crete. Daedalus, the brilliant craftsman, could build almost anything, but he could not persuade King Minos to let them go.",
+      "caption": "What if the sky itself became a trap for a boy who wanted to be free? A father and son were trapped on Crete. Daedalus, the brilliant craftsman, could build almost anything, but he could not persuade King Minos to let them go.",
       "beat_title": "The prison",
       "required_visuals": [
         "Daedalus and Icarus on high labyrinth walls",

@@ -3,6 +3,7 @@
   "episode_number": 1,
   "slug": "01_prometheus",
   "title": "Prometheus: The God Who Stole Fire",
+  "opening_hook": "What if one act of defiance gave humanity the power to survive?",
   "series": "Living Tapestries — The World’s Great Stories",
   "genre": "myth, defiance",
   "civilization": "Ancient Greece",
@@ -94,7 +95,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "Before humans mastered fire, one Titan dared to defy Zeus. Prometheus saw people shivering in darkness and decided they deserved more than the gods allowed.",
+      "caption": "What if one act of defiance gave humanity the power to survive? Before humans mastered fire, one Titan dared to defy Zeus. Prometheus saw people shivering in darkness and decided they deserved more than the gods allowed.",
       "beat_title": "The theft",
       "required_visuals": [
         "Prometheus above cold small human figures",
