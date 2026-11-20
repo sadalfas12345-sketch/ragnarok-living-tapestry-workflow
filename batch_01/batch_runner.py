@@ -343,6 +343,9 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
             for pattern in specificity.get("forbidden_generic_patterns", []):
                 if str(pattern).casefold() in lower_caption:
                     errors.append(f"scene {i} script contains generic filler: {pattern!r}")
+            for phrase in specificity.get("forbidden_vague_phrases", []):
+                if str(phrase).casefold() in lower_caption:
+                    errors.append(f"scene {i} script contains vague wording: {phrase!r}")
     si = spec.get("source_integrity", {})
     if not si.get("classification") or not si.get("research_status"):
         errors.append("source_integrity must include classification and research_status")
