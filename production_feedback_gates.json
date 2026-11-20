@@ -14,6 +14,44 @@
     "forbid_completion_report_while_process_active": true,
     "failure_message": "long-running production jobs must report a current phase and heartbeat; never report completion while a child encoder or QA process remains active"
   },
+  "failure_prevention_gates": {
+    "enabled": true,
+    "hard_gate": true,
+    "continue_until_all_pass": true,
+    "artifact_identity": {
+      "required": true,
+      "require_single_delivery_bundle": true,
+      "require_sha256_manifest": true,
+      "require_same_render_id_across_video_srt_qa_visual_gates": true
+    },
+    "latest_render_match": {
+      "required": true,
+      "reject_stale_drive_file": true,
+      "require_local_output_newer_than_previous_delivery": true,
+      "require_uploaded_filename_to_include_render_id": true
+    },
+    "drive_delivery": {
+      "required": true,
+      "require_upload_success": true,
+      "require_drive_url": true,
+      "require_uploaded_name_match": true,
+      "require_uploaded_sha256_match": true,
+      "preserve_previous_files_until_verified": true
+    },
+    "diagnostic_commands": {
+      "required": true,
+      "fail_on_nonzero_exit": true,
+      "fail_on_missing_output": true,
+      "do_not_report_unverified_results": true
+    },
+    "success_claim": {
+      "required": true,
+      "requires_lifecycle_complete": true,
+      "requires_timing_qa_pass": true,
+      "requires_visual_gates_pass": true,
+      "requires_drive_delivery_pass": true
+    }
+  },
   "camera": {
     "default_direction": "right",
     "max_normalized_travel_per_second": 0.078,
