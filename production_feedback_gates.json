@@ -285,7 +285,18 @@
     "preserve_caption_spelling": true,
     "reject_empty_overrides": true,
     "reject_letter_by_letter_overrides": true,
-    "audit_proper_names": true
+    "audit_proper_names": true,
+    "native_pronunciation_when_available": true
+  },
+  "proper_name_pronunciation_gate": {
+    "enabled": true,
+    "hard_gate": true,
+    "require_name_identification": true,
+    "require_caption_spelling_match": true,
+    "use_native_pronunciation_when_lexicon_entry_exists": true,
+    "allow_english_source_spelling_fallback": true,
+    "preserve_written_name_in_captions": true,
+    "failure_message": "every identified proper name must be checked for spelling; use the native pronunciation lexicon when available, otherwise use the English source spelling without changing the caption"
   },
   "character_intros": {
     "enabled": true,
