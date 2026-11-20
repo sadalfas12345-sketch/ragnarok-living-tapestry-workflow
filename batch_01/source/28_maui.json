@@ -96,6 +96,9 @@
       "asset": "assets/P01.png",
       "caption": "What if a trickster used a magical fishhook to pull land from the sea? Across Polynesian traditions, Māui is a restless trickster and culture hero. In some stories, he hid a miraculous fishhook aboard his brothers’ canoe.",
       "beat_title": "The secret hook",
+      "intended_emotion": "curious wonder turning into secretive anticipation",
+      "emotional_turn": "a playful trickster reveals a dangerous plan aboard the canoe",
+      "visual_evidence": "the concealed luminous hook and brothers' canoe establish the scheme before the sea answers",
       "required_visuals": [
         "carved canoe offshore",
         "Māui conceals bright hook"
@@ -127,6 +130,9 @@
       "asset": "assets/P02.png",
       "caption": "The brothers rowed out to sea. Māui lowered his line far below the surface, where it caught on something too vast to move easily.",
       "beat_title": "Into the deep",
+      "intended_emotion": "mounting suspense and vertigo",
+      "emotional_turn": "a familiar fishing gesture becomes contact with an impossible depth",
+      "visual_evidence": "the line travels past fish into a dark patterned abyss while the canoe strains above",
       "required_visuals": [
         "hook descends past fish into abyss in tapa-like pattern"
       ],
@@ -157,6 +163,9 @@
       "asset": "assets/P03.png",
       "caption": "The canoe shook. Māui urged his brothers to pull together, but what rose was no ordinary catch. Earth itself came up from the water.",
       "beat_title": "The strain",
+      "intended_emotion": "awe and physical peril",
+      "emotional_turn": "the brothers' effort changes from hauling a catch to lifting the earth itself",
+      "visual_evidence": "the canoe, taut line, rising landmass, and reacting brothers form one escalating action",
       "required_visuals": [
         "island-shaped mass emerging on giant line"
       ],
@@ -187,6 +196,9 @@
       "asset": "assets/P04.png",
       "caption": "In Māori traditions, this story is associated with the North Island of Aotearoa New Zealand, Te Ika-a-Māui, the fish of Māui. Other islands tell different versions.",
       "beat_title": "A new landscape",
+      "intended_emotion": "geographic wonder with cultural specificity",
+      "emotional_turn": "a mythic catch becomes a named landscape with more than one living version",
+      "visual_evidence": "the fish-shaped island form and distinct island motifs clarify the Aotearoa strand without printed labels",
       "required_visuals": [
         "stylized North Island as fish form; labeled in metadata only"
       ],
@@ -217,6 +229,9 @@
       "asset": "assets/P05.png",
       "caption": "The brothers’ actions shaped the new land in some tellings. The terrain became hills and valleys, a landscape explained through the hero’s audacity.",
       "beat_title": "An unsettled gift",
+      "intended_emotion": "triumphant wonder tempered by unease",
+      "emotional_turn": "Māui's audacity leaves a real landscape whose beauty still carries the violence of its making",
+      "visual_evidence": "ridges, valleys, and settling water visibly resolve from the pulled land",
       "required_visuals": [
         "contours settle into islands and mountain ridges"
       ],
@@ -247,6 +262,9 @@
       "asset": "assets/P06.png",
       "caption": "Māui’s feats belong to living cultures, not a single interchangeable Pacific myth. This episode follows one strand of a much wider ocean of stories.",
       "beat_title": "The continuing tale",
+      "intended_emotion": "quiet reverence and expansive humility",
+      "emotional_turn": "one remembered strand opens into a living ocean of related stories",
+      "visual_evidence": "the departing canoe, multiple star-island motifs, and continuous tapa border create a non-final, culturally respectful ending",
       "required_visuals": [
         "canoe motif sails beneath multiple distinct island stars"
       ],
