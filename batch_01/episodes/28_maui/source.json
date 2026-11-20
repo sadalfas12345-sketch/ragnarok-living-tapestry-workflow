@@ -257,39 +257,6 @@
       },
       "pause_after_seconds_hint": 1.1
     },
-    {
-      "id": "S06",
-      "asset": "assets/P06.png",
-      "caption": "Māui’s feats belong to living cultures, not a single interchangeable Pacific myth. This episode follows one strand of a much wider ocean of stories.",
-      "beat_title": "The continuing tale",
-      "intended_emotion": "quiet reverence and expansive humility",
-      "emotional_turn": "one remembered strand opens into a living ocean of related stories",
-      "visual_evidence": "the departing canoe, multiple star-island motifs, and continuous tapa border create a non-final, culturally respectful ending",
-      "required_visuals": [
-        "canoe motif sails beneath multiple distinct island stars"
-      ],
-      "image_prompt": "Vertical cinematic crop of a coherent sequential Polynesian tapa cloth pattern and carved canoe relief; motif specificity reviewed by locale. Scene: canoe motif sails beneath multiple distinct island stars. The source story is Māui: The Hero Who Fished Up Islands. Reuse exact character designs and border motifs from references/style_board.png; narrative relief/illustration, no modern objects, no printed captions or illegible text, no photorealistic cinematic actors.",
-      "camera": {
-        "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
-        "style": "continuous_panorama_when_possible",
-        "max_zoom_fraction": 0.12,
-        "no_shake": true,
-        "caption_safe_area": {
-          "bottom_percent": 20
-        }
-      },
-      "music": {
-        "cue": "resolution",
-        "instrumentation": "pahu drum, nose-flute-like airy tone, ocean percussion, conch",
-        "voice_priority": true,
-        "duck_on_speech": true
-      },
-      "sfx": {
-        "cue": "fade_to_atmosphere",
-        "narration_masking_forbidden": true
-      },
-      "pause_after_seconds_hint": 1.5
-    }
   ],
   "opening_hook": "What if a trickster used a magical fishhook to pull land from the sea?"
 }
