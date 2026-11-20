@@ -1,0 +1,26 @@
+{
+  "reviewer": "anatomy_artifact_agent",
+  "episode": "27_anansi",
+  "status": "PASS",
+  "review_method": "direct visual inspection of opening, middle, and ending frames from the encoded MP4 contact sheet",
+  "samples": [
+    {"scene":"S01","timestamp":1.581,"verdict":"PASS","notes":"Separated sky god, spider, and village figures; no extra limbs, duplicated faces, fused bodies, twisted heads, or malformed anatomy."},
+    {"scene":"S01","timestamp":9.880,"verdict":"PASS","notes":"Figures and spider remain coherent across the carved-panel transition; no mutant-looking anatomy."},
+    {"scene":"S01","timestamp":18.179,"verdict":"PASS","notes":"Sky god and spider remain recognizable and anatomically coherent."},
+    {"scene":"S02","timestamp":20.994,"verdict":"PASS","notes":"Python, hornets, leopard, and human figure are distinct and coherent."},
+    {"scene":"S02","timestamp":27.470,"verdict":"PASS","notes":"Animal anatomy remains recognizable; no fused bodies or duplicated faces."},
+    {"scene":"S02","timestamp":33.946,"verdict":"PASS","notes":"Leopard and surrounding carved figures remain coherent."},
+    {"scene":"S03","timestamp":36.859,"verdict":"PASS","notes":"Anansi and python are clearly separated with coherent limbs and head shape."},
+    {"scene":"S03","timestamp":45.674,"verdict":"PASS","notes":"Extended python body remains continuous and anatomically recognizable."},
+    {"scene":"S03","timestamp":54.489,"verdict":"PASS","notes":"Spider and python remain coherent at the reveal."},
+    {"scene":"S04","timestamp":57.511,"verdict":"PASS","notes":"Anansi and hornet swarm are distinct; no malformed human anatomy."},
+    {"scene":"S04","timestamp":64.563,"verdict":"PASS","notes":"Hornets and calabash remain visually coherent."},
+    {"scene":"S04","timestamp":71.615,"verdict":"PASS","notes":"Sealed calabash and surrounding figures show no mutant-looking defects."},
+    {"scene":"S05","timestamp":74.566,"verdict":"PASS","notes":"Nyame, Anansi, python, hornets, and leopard remain distinct."},
+    {"scene":"S05","timestamp":83.011,"verdict":"PASS","notes":"Sky god and animals retain coherent faces, limbs, and silhouettes."},
+    {"scene":"S05","timestamp":91.455,"verdict":"PASS","notes":"Anansi and Nyame remain recognizable with no fused bodies."},
+    {"scene":"S06","timestamp":94.839,"verdict":"PASS","notes":"Nyame and released story symbols remain coherent."},
+    {"scene":"S06","timestamp":104.162,"verdict":"PASS","notes":"Web, animals, and village silhouettes remain separated and coherent."},
+    {"scene":"S06","timestamp":113.486,"verdict":"PASS","notes":"Gathered villagers remain distinct with no duplicated faces or malformed anatomy."}
+  ]
+}

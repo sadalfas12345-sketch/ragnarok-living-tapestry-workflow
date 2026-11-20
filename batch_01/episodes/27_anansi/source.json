@@ -100,6 +100,7 @@
       "beat_title": "Who owned stories",
       "intended_emotion": "wonder turning into dangerous ambition",
       "emotional_turn": "a playful challenge becomes a threat from the sky god",
+      "visual_evidence": "Nyame guards luminous stories above Anansi and the village",
       "required_visuals": [
         "sky god high above miniature village",
         "spider on thread"
@@ -133,6 +134,7 @@
       "beat_title": "The impossible price",
       "intended_emotion": "dread mixed with anticipation",
       "emotional_turn": "impossible creatures become a test Anansi must accept",
+      "visual_evidence": "the great python, fierce hornets, and swift leopard loom as distinct trials",
       "required_visuals": [
         "sky god displays silhouette of python",
         "hornets",
@@ -167,6 +169,7 @@
       "beat_title": "A measured snake",
       "intended_emotion": "tense amusement and clever suspense",
       "emotional_turn": "the python’s pride creates the opening for the trap",
+      "visual_evidence": "Anansi measures the stretched python and ties the trap",
       "required_visuals": [
         "python stretched along branch",
         "spider ties cord"
@@ -200,6 +203,7 @@
       "beat_title": "A swarm fooled",
       "intended_emotion": "surprise and delighted ingenuity",
       "emotional_turn": "a false storm turns the hornets’ fear against them",
+      "visual_evidence": "the hornet swarm enters the calabash beneath a false storm",
       "required_visuals": [
         "hornet swarm funnels into calabash gourd"
       ],
@@ -232,6 +236,7 @@
       "beat_title": "The final bargain",
       "intended_emotion": "triumph under pressure",
       "emotional_turn": "the smallest challenger forces the sky god to honor his word",
+      "visual_evidence": "Anansi presents the captured creatures while Nyame honors the bargain",
       "required_visuals": [
         "tiny spider before sky god with trapped creatures"
       ],
@@ -264,6 +269,7 @@
       "beat_title": "Stories for everyone",
       "intended_emotion": "hopeful wonder and communal joy",
       "emotional_turn": "a private victory becomes a gift shared by every village",
+      "visual_evidence": "released stories travel through a web to villagers gathered to listen",
       "required_visuals": [
         "spider’s web becomes village storytelling network"
       ],
