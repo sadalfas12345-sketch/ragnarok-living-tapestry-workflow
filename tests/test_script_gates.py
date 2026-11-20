@@ -55,6 +55,13 @@ class ScriptGateRegressionTests(unittest.TestCase):
         self.assertEqual(effective.lower().count("k’iche’ maya tradition"), 1)
         self.assertNotIn("In K’iche’ Maya tradition, In K’iche’ Maya tradition", effective)
 
+    def test_episode_27_existing_akan_source_intro_is_not_duplicated(self):
+        path = ROOT / "batch_01" / "source" / "27_anansi.json"
+        spec = json.loads(path.read_text(encoding="utf-8-sig"))
+        effective = effective_scene_caption(spec, 0, spec["scenes"][0]["caption"], [])
+        self.assertEqual(effective.lower().count("akan"), 1)
+        self.assertNotIn("In Akan / Ghana tradition", effective)
+
 
 if __name__ == "__main__":
     unittest.main()

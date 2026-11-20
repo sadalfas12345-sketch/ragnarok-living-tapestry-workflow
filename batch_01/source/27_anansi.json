@@ -96,7 +96,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "What if a spider could win the world’s stories from the sky god? In one Akan tale, all the world’s stories belonged to Nyame, the sky god. The spider Anansi wanted to bring them down to the people.",
+      "caption": "What if a spider could challenge the sky god Nyame for every story in the world? In an Akan tale, Nyame kept those stories far above the earth. Anansi, the clever spider, wanted to bring them down—but the sky god demanded a price no spider should survive.",
       "beat_title": "Who owned stories",
       "required_visuals": [
         "sky god high above miniature village",
@@ -127,7 +127,7 @@
     {
       "id": "S02",
       "asset": "assets/P02.png",
-      "caption": "Nyame demanded extraordinarily difficult prizes. Among them were dangerous creatures no small spider should have been able to capture.",
+      "caption": "Nyame named three prizes: the great python, the fierce hornets, and the swift leopard. Anansi had no strength, weapons, or army. He had only patience—and a dangerous plan.",
       "beat_title": "The impossible price",
       "required_visuals": [
         "sky god displays silhouette of python",
@@ -159,7 +159,7 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "Anansi tricked a great python by persuading it to lie against a long stick for measurement. The comparison became a trap.",
+      "caption": "Anansi approached the great python and claimed that the creature was too short to be measured properly. Curious, the python stretched itself along a branch. As the great python held still, Anansi tied it fast. The first prize was won by turning pride into a trap.",
       "beat_title": "A measured snake",
       "required_visuals": [
         "python stretched along branch",
@@ -190,7 +190,7 @@
     {
       "id": "S04",
       "asset": "assets/P04.png",
-      "caption": "He deceived hornets with a story about rain and coaxed them into a container. His greatest resource was not size but inventiveness.",
+      "caption": "Next, Anansi cried that rain was coming and offered the fierce hornets shelter inside a calabash. The swarm rushed in. Anansi sealed the opening before the hornets realized the storm had never existed.",
       "beat_title": "A swarm fooled",
       "required_visuals": [
         "hornet swarm funnels into calabash gourd"
@@ -220,7 +220,7 @@
     {
       "id": "S05",
       "asset": "assets/P05.png",
-      "caption": "By one clever stratagem after another, Anansi assembled the price. The sky god had to honor the bargain he himself had offered.",
+      "caption": "With the great python, the fierce hornets, and the swift leopard captured, Anansi returned to Nyame. The sky god could no longer deny the bargain. Anansi had defeated creatures far stronger than himself—not by force, but by cunning.",
       "beat_title": "The final bargain",
       "required_visuals": [
         "tiny spider before sky god with trapped creatures"
@@ -250,7 +250,7 @@
     {
       "id": "S06",
       "asset": "assets/P06.png",
-      "caption": "Anansi won the stories, which could now circulate among people. His small body carried a large proposition: wit can confront authority on its own terms.",
+      "caption": "Nyame released the stories. Anansi, the clever spider, carried them down to the villages, where elders, children, and strangers gathered to listen. From that day on, even the smallest creature could challenge the greatest power—with nothing but wit.",
       "beat_title": "Stories for everyone",
       "required_visuals": [
         "spider’s web becomes village storytelling network"
