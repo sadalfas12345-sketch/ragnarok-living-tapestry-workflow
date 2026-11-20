@@ -323,6 +323,10 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
         seen.add(scene.get("id"))
         if not isinstance(scene.get("caption"), str) or not scene.get("caption", "").strip():
             errors.append(f"scene {i} caption is empty")
+        canonical_forms = FEEDBACK_POLICY.get("proper_name_pronunciation_gate", {}).get("canonical_written_forms", {})
+        for incorrect, canonical in canonical_forms.items():
+            if str(incorrect) in str(scene.get("caption", "")):
+                errors.append(f"scene {i} uses non-canonical written form {incorrect!r}; use {canonical!r}")
         try:
             pause = float(scene.get("pause_after_seconds_hint"))
             if not 0.0 <= pause <= 3.0:

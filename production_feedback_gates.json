@@ -322,6 +322,11 @@
     "use_native_pronunciation_when_lexicon_entry_exists": true,
     "allow_english_source_spelling_fallback": true,
     "preserve_written_name_in_captions": true,
+    "canonical_written_forms": {
+      "K'iche'": "K’iche’",
+      "Kâ€™icheâ€™": "K’iche’",
+      "Kiche": "K’iche’"
+    },
     "failure_message": "every identified proper name must be checked for spelling; use the native pronunciation lexicon when available, otherwise use the English source spelling without changing the caption"
   },
   "character_intros": {
