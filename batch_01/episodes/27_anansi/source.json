@@ -98,6 +98,8 @@
       "asset": "assets/P01.png",
       "caption": "What if a spider could challenge the sky god Nyame for the world’s stories? Akan storytellers say Nyame kept every story high above the earth. Anansi, the clever spider, wanted to bring them down, but the sky god demanded a price no spider should survive.",
       "beat_title": "Who owned stories",
+      "intended_emotion": "wonder turning into dangerous ambition",
+      "emotional_turn": "a playful challenge becomes a threat from the sky god",
       "required_visuals": [
         "sky god high above miniature village",
         "spider on thread"
@@ -129,6 +131,8 @@
       "asset": "assets/P02.png",
       "caption": "Nyame named three prizes: the great python, the fierce hornets, and the swift leopard. Anansi had no strength, weapons, or army. He had only patience—and a dangerous plan.",
       "beat_title": "The impossible price",
+      "intended_emotion": "dread mixed with anticipation",
+      "emotional_turn": "impossible creatures become a test Anansi must accept",
       "required_visuals": [
         "sky god displays silhouette of python",
         "hornets",
@@ -161,6 +165,8 @@
       "asset": "assets/P03.png",
       "caption": "Anansi approached the great python and claimed that the creature was too short to be measured properly. Curious, the python stretched itself along a branch. As the great python held still, Anansi tied it fast. The first prize was won by turning pride into a trap.",
       "beat_title": "A measured snake",
+      "intended_emotion": "tense amusement and clever suspense",
+      "emotional_turn": "the python’s pride creates the opening for the trap",
       "required_visuals": [
         "python stretched along branch",
         "spider ties cord"
@@ -192,6 +198,8 @@
       "asset": "assets/P04.png",
       "caption": "Next, Anansi cried that rain was coming and offered the fierce hornets shelter inside a calabash. The swarm rushed in. Anansi sealed the opening before the hornets realized the storm had never existed.",
       "beat_title": "A swarm fooled",
+      "intended_emotion": "surprise and delighted ingenuity",
+      "emotional_turn": "a false storm turns the hornets’ fear against them",
       "required_visuals": [
         "hornet swarm funnels into calabash gourd"
       ],
@@ -222,6 +230,8 @@
       "asset": "assets/P05.png",
       "caption": "With the great python, the fierce hornets, and the swift leopard captured, Anansi returned to Nyame. The sky god could no longer deny the bargain. Anansi had defeated creatures far stronger than himself—not by force, but by cunning.",
       "beat_title": "The final bargain",
+      "intended_emotion": "triumph under pressure",
+      "emotional_turn": "the smallest challenger forces the sky god to honor his word",
       "required_visuals": [
         "tiny spider before sky god with trapped creatures"
       ],
@@ -252,6 +262,8 @@
       "asset": "assets/P06.png",
       "caption": "Nyame released the stories. Anansi, the clever spider, carried them down to the villages, where elders, children, and strangers gathered to listen. From that day on, even the smallest creature could challenge the greatest power—with nothing but wit.",
       "beat_title": "Stories for everyone",
+      "intended_emotion": "hopeful wonder and communal joy",
+      "emotional_turn": "a private victory becomes a gift shared by every village",
       "required_visuals": [
         "spider’s web becomes village storytelling network"
       ],
