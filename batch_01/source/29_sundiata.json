@@ -96,6 +96,9 @@
       "asset": "assets/P01.png",
       "caption": "What if the child others dismissed was destined to become a great ruler? The epic of Sunjata tells of a boy whose early difficulties made others doubt him. His mother Sogolon endured ridicule, while rivals plotted around the court.",
       "beat_title": "The child underestimated",
+      "intended_emotion": "tender concern turning into ominous anticipation",
+      "emotional_turn": "a mocked child becomes the quiet center of a court threatened by rivalry",
+      "visual_evidence": "Sogolon shields young Sunjata while court factions watch from layered palace spaces",
       "required_visuals": [
         "Manding royal courtyard",
         "mother holding young Sunjata"
@@ -127,6 +130,9 @@
       "asset": "assets/P02.png",
       "caption": "In a celebrated episode, Sunjata rises and shows strength that surprises everyone. Oral versions differ, but the moment becomes a symbol of possibility.",
       "beat_title": "Standing",
+      "intended_emotion": "astonishment and defiant hope",
+      "emotional_turn": "public doubt breaks when Sunjata rises with impossible strength",
+      "visual_evidence": "the iron rod bends or the baobab responds as the boy stands and witnesses recoil in wonder",
       "required_visuals": [
         "young hero stands beneath iron rod or baobab imagery"
       ],
@@ -157,6 +163,9 @@
       "asset": "assets/P03.png",
       "caption": "Court rivalries forced Sunjata and his family away from their home. They survived through networks of welcome and loyalty beyond the palace walls.",
       "beat_title": "Exile",
+      "intended_emotion": "grief tempered by endurance",
+      "emotional_turn": "palace hostility becomes a long journey sustained by strangers' welcome",
+      "visual_evidence": "the family caravan crosses changing Sahel and river landscapes while communities offer shelter",
       "required_visuals": [
         "family caravan crosses Sahel and river lands"
       ],
@@ -187,6 +196,9 @@
       "asset": "assets/P04.png",
       "caption": "When the ruler Sumanguru threatened the region, Sunjata returned with allies gathered across communities. His power depended on coalition, not bloodline alone.",
       "beat_title": "Return",
+      "intended_emotion": "gathering resolve and communal solidarity",
+      "emotional_turn": "the exiled hero returns with a coalition rather than a solitary claim to power",
+      "visual_evidence": "distinct allied banners and communities converge before Sahelian walls around Sunjata",
       "required_visuals": [
         "allied banners meet beneath Sahelian city walls"
       ],
@@ -217,6 +229,9 @@
       "asset": "assets/P05.png",
       "caption": "The epic associates his victory with the battle of Kirina. Details of the contest belong to oral traditions that are not identical to a modern military record.",
       "beat_title": "The battle",
+      "intended_emotion": "epic danger and disciplined courage",
+      "emotional_turn": "coalition becomes decisive action at Kirina while the oral epic remains larger than a modern military record",
+      "visual_evidence": "Manding cavalry, infantry, banners, and symbolic battlefield formations show coordinated victory without invented literal history",
       "required_visuals": [
         "Manding cavalry and infantry in symbolic battle frieze"
       ],
@@ -247,6 +262,9 @@
       "asset": "assets/P06.png",
       "caption": "Sunjata became the founding figure of the Mali Empire in collective memory. His story is preserved through living griot performance, where history and meaning travel together.",
       "beat_title": "The foundation",
+      "intended_emotion": "reverence and living continuity",
+      "emotional_turn": "a remembered founder becomes a story carried forward by griots and families",
+      "visual_evidence": "the griot performs before mud-brick Mali, elders and children linking memory to a living community",
       "required_visuals": [
         "griot plays instrument before mud-brick city and families"
       ],
