@@ -197,9 +197,9 @@ MUSIC_PROFILES = {
         {"title": "Sports Highlights", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_sports_highlights_ahjay_stelino.mp3"},
     ],
     29: [
-        {"title": "I Won't surrender", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_i_wont_surrender_michael_ramir_c.mp3"},
-        {"title": "Life's a Movie", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_lifes_a_movie_arulo.mp3"},
-        {"title": "Miss You", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_miss_you_eugenio_mininni.mp3"},
+        {"title": "Hazy After Hours", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_hazy_after_hours_alejandro_magana.mp3"},
+        {"title": "Complicated", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_complicated_arulo.mp3"},
+        {"title": "Valley Sunset (Version 2)", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_valley_sunset_alejandro_magana_v2.mp3"},
     ],
     30: [
         {"title": "I Won't surrender", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_i_wont_surrender_michael_ramir_c.mp3"},
