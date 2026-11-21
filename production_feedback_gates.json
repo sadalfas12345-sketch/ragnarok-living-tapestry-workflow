@@ -252,6 +252,9 @@
         {"pattern": "\\bat this point in time\\b", "message": "bureaucratic substitute for now or then"},
         {"pattern": "\\bit is important to note that\\b", "message": "editorial filler; state the fact directly"},
         {"pattern": "\\bfor the purpose of\\b", "message": "bureaucratic substitute for to"}
+        ,{"pattern": "\\bcenters the .* record\\b", "message": "bureaucratic framing; say whose story the phrase tells"}
+        ,{"pattern": "\\babsence of .* is not proof of\\b", "message": "bureaucratic negation; state directly what the evidence does or does not show"}
+        ,{"pattern": "\\buncertain evidence\\b", "message": "abstract evidence phrase; name the uncertainty plainly"}
       ]
     },
     "fail_on_findings": true,
