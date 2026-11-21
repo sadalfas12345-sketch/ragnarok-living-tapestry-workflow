@@ -41,8 +41,8 @@
   "image_reference": {
     "path": "references/style_board.png",
     "status": "GENERATE_BEFORE_RENDER",
-    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Roanoke: The Colony That Disappeared in Elizabethan engraved map meets Algonquian landscape illustration, weathered parchment, coastal fog. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Distinct epoch-appropriate clothes and artifacts. Clear blank safe zones for vertical crops. Avoid fonts, literal writing, watermarks.",
-    "art_style": "Elizabethan engraved map meets Algonquian landscape illustration, weathered parchment, coastal fog",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for Roanoke: Dark Romanticism fused with late-16th-century Elizabethan historical painting. Historically accurate 1587 Roanoke colony, weathered timber buildings, coastal Carolina maritime forests, Spanish moss, misty Atlantic shorelines, overcast skies, muted umber, moss green and slate blue palette, dramatic chiaroscuro, painterly oil textures, atmospheric depth, cinematic historical mystery, period-correct English clothing and architecture, restrained realism. Depict beginning, conflict, irreversible consequence, and ending. Same protagonist model across all panels. Clear blank safe zones for vertical crops. No modern objects, fantasy monsters, decorative text, or watermarks.",
+    "art_style": "Dark Romanticism fused with late-16th-century Elizabethan historical painting; historically accurate 1587 Roanoke colony, weathered timber buildings, coastal Carolina maritime forests, Spanish moss, misty Atlantic shorelines, overcast skies, muted umber, moss green and slate blue, dramatic chiaroscuro, painterly oil textures, atmospheric depth, cinematic historical mystery, period-correct English clothing and architecture, restrained realism",
     "palette": "derive from the specified art style, not the preceding episode",
     "character_design_lock": [
       "John White",
