@@ -212,6 +212,14 @@ MUSIC_PROFILES = {
 # was already used by an earlier rendered episode.
 MUSIC_PROFILES[25][2] = {"title": "Games Worldbeat", "artist": "Bernardo R.", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_games_worldbeat_bernardo_r.mp3"}
 
+# Episode 30 uses an eerie, medieval-tagged Mixkit bed with a restrained
+# period atmosphere instead of the earlier modern dance-oriented cues.
+MUSIC_PROFILES[30] = [
+    {"title": "Condor", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/medieval/", "file": "mixkit_condor_eugenio_mininni.mp3"},
+    {"title": "Vampires in the City", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/mood/dark/", "file": "mixkit_vampires_in_the_city_michael_ramir_c.mp3"},
+    {"title": "First Kiss", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/dark/", "file": "mixkit_first_kiss_eugenio_mininni.mp3"},
+]
+
 # Episode 06 uses a distinct licensed trio so the soundtrack QA gate can
 # distinguish this rebuild from earlier episode renders.
 MUSIC_PROFILES[6] = [
@@ -951,7 +959,7 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     # Keep the cinematic bed present beneath speech. Episodes 07 and 08 already
     # use the stronger profile; Episode 21 needs the same treatment because
     # its narrative mix was measuring around -36 LUFS before ducking.
-    music_scale = 1.5 if spec["episode_number"] in (7, 8) else (2.0 if spec["episode_number"] == 21 else 1.0)
+    music_scale = 1.5 if spec["episode_number"] in (7, 8) else (2.0 if spec["episode_number"] == 21 else (1.6 if spec["episode_number"] == 30 else 1.0))
     cue_two = round(tl["scenes"][1]["start"] * 1000)
     cue_three = round(tl["scenes"][3]["start"] * 1000)
     f = (f"[0:a]atrim=0:{runtime:.3f},asetpts=PTS-STARTPTS,volume={0.22*music_scale:.3f},lowpass=f=3200,afade=t=in:st=0:d=3,afade=t=out:st={max(0,runtime-3):.3f}:d=3[m0];"
@@ -965,7 +973,7 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     tone = "aevalsrc=0.018*sin(2*PI*110*t)*exp(-2*t):s=48000:d=1"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", tone, "-filter_complex", f"apad=pad_dur={runtime:.3f},atrim=0:{runtime:.3f},pan=stereo|c0=c0|c1=c0", "-ac", "2", "-c:a", "pcm_s16le", str(sfx)])
     final = adir / "final_mixed_audio.wav"
-    final_music_gain = 2.5 if spec["episode_number"] in (7, 8) else (2.0 if spec["episode_number"] == 21 else 1.0)
+    final_music_gain = 2.5 if spec["episode_number"] in (7, 8) else (2.0 if spec["episode_number"] == 21 else (1.35 if spec["episode_number"] == 30 else 1.0))
     mix = f"[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[narr][key];[1:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume={final_music_gain:.2f}[music];[music][key]sidechaincompress=threshold=0.015:ratio=5:attack=60:release=700:makeup=1[duck];[2:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume=0.45[s];[narr][duck][s]amix=inputs=3:duration=longest:dropout_transition=0,atrim=0:{runtime:.3f},loudnorm=I=-14:TP=-1:LRA=11:print_format=summary[out]"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "warning", "-i", str(narration), "-i", str(music), "-i", str(sfx), "-filter_complex", mix, "-map", "[out]", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(final)])
     profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery"}.get(spec["episode_number"], "default_ragnarok_palette")
