@@ -94,7 +94,10 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "What if you returned to a settlement and found everyone gone? In 1590, governor John White returned to an English settlement on Roanoke Island. He expected to find colonists, including his family. Instead, the site was deserted.",
+      "caption": "What if an entire town just disappeared? In 1590, governor John White returned to an English settlement on Roanoke Island. He expected to find colonists, including his family. Instead, the site was deserted.",
+      "intended_emotion": "immediate shock and historical dread",
+      "emotional_turn": "John White's hopeful return becomes the discovery of an empty settlement",
+      "visual_evidence": "the abandoned houses, silent paths, and White searching for family make the disappearance immediate",
       "beat_title": "An empty settlement",
       "required_visuals": [
         "small 16th-century coastal palisade overgrown",
@@ -126,6 +129,9 @@
       "id": "S02",
       "asset": "assets/P02.png",
       "caption": "A word associated with Croatoan was carved at the site. It offered a possible clue, but not a complete explanation of where everyone had gone.",
+      "intended_emotion": "tense curiosity without false certainty",
+      "emotional_turn": "one carved clue opens possibilities while refusing to solve the mystery",
+      "visual_evidence": "the carved word is shown as a partial clue beside the empty settlement, never as a complete answer",
       "beat_title": "The word",
       "required_visuals": [
         "tree or post bearing CROATOAN",
@@ -157,6 +163,9 @@
       "id": "S03",
       "asset": "assets/P03.png",
       "caption": "White had been delayed for years by war and supply difficulties across the Atlantic. The colony had spent that time without the help it expected.",
+      "intended_emotion": "mounting isolation and helplessness",
+      "emotional_turn": "a delayed rescue becomes years of separation across a dangerous Atlantic",
+      "visual_evidence": "stormy ocean routes, delayed ships, and the settlement surviving without supplies show the pressure of isolation",
       "beat_title": "Years apart",
       "required_visuals": [
         "Atlantic map with storm and English ships diverted"
@@ -187,6 +196,9 @@
       "id": "S04",
       "asset": "assets/P04.png",
       "caption": "The settlers may have moved, joined Indigenous communities, or faced several hardships. Historians cannot reconstruct the full fate of every person from the evidence.",
+      "intended_emotion": "uncertainty and sober human vulnerability",
+      "emotional_turn": "the mystery branches into plausible human outcomes rather than a supernatural answer",
+      "visual_evidence": "multiple restrained possibilities appear as separate historical paths while the evidence remains visibly incomplete",
       "beat_title": "Possibilities",
       "required_visuals": [
         "multiple transparent paths across islands and mainland"
@@ -217,6 +229,9 @@
       "id": "S05",
       "asset": "assets/P05.png",
       "caption": "The popular phrase lost colony centers the English record. Indigenous peoples already lived in the region, and their history is not an empty backdrop to a European mystery.",
+      "intended_emotion": "corrective perspective and moral seriousness",
+      "emotional_turn": "a European mystery frame widens to acknowledge Indigenous lives and history already present",
+      "visual_evidence": "Indigenous communities and landscapes share the frame as subjects with their own continuity, not background scenery",
       "beat_title": "Whose history",
       "required_visuals": [
         "coastal villages and trade meeting from respectful distance"
@@ -247,6 +262,9 @@
       "id": "S06",
       "asset": "assets/P06.png",
       "caption": "Roanoke remains unresolved, but absence of a surviving English account is not proof of supernatural disappearance. The true story is about isolation, contact, and uncertain evidence.",
+      "intended_emotion": "lingering unease grounded in humility",
+      "emotional_turn": "the unanswered mystery resolves into a warning about evidence, contact, and what history cannot recover",
+      "visual_evidence": "the empty site, ocean horizon, and layered human traces end the story without inventing a disappearance explanation",
       "beat_title": "Not a ghost story",
       "required_visuals": [
         "weathered map dissolves into real coastline without phantoms"
