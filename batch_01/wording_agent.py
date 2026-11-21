@@ -58,7 +58,7 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
                     "text": pattern,
                     "message": str(item.get("message", "rewrite in direct spoken language")),
                 })
-    natural = POLICY.get("natural_speech_gate", {})
+    natural = policy.get("natural_speech_gate", {})
     if natural.get("enabled"):
         for item in natural.get("patterns", []):
             pattern = str(item.get("pattern", ""))

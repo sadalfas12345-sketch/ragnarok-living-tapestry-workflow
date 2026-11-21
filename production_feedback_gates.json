@@ -268,6 +268,7 @@
         {"pattern": "\\b(?:silence|distance)\\b.*\\b(?:ship|road|wall|stone)\\b.*\\b(?:undo|erase|close)\\b", "message": "strained object metaphor; describe the concrete separation or loss"},
         {"pattern": "\\bthe distance between .*\\b(?:became|turned into)\\b", "message": "abstract transformation; say what physically or historically happened"},
         {"pattern": "\\b(?:history|the records?)\\b.*\\bremembers? only a\\b", "message": "artificial personification; state what survives in the record"},
+        {"pattern": "\\bno\\s+[^.!?]{0,60}\\bcan\\s+(?:restore|bring back|erase|undo)\\b", "message": "stock rhetorical construction; state the concrete fact directly"},
         {"pattern": "\\b(?:the answer|the truth|the fate)\\b.*\\b(?:begins|waits|sleeps|hangs)\\b", "message": "abstract dramatic phrasing; state the unresolved fact directly"}
       ]
     },
