@@ -182,6 +182,15 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
                     emotion_findings.append({"scene": scene_id, "field": field, "message": "missing audience-emotion field"})
                 elif len(value.split()) < 2:
                     emotion_findings.append({"scene": scene_id, "field": field, "message": "field is too vague to guide a visual or narration review"})
+                elif field == "intended_emotion":
+                    lowered = value.lower()
+                    primal_terms = tuple(str(term).lower() for term in emotion_policy.get("primal_emotion_terms", []))
+                    editorial_terms = tuple(str(term).lower() for term in emotion_policy.get("forbidden_editorial_emotion_terms", []))
+                    if not any(re.search(rf"\b{re.escape(term)}\b", lowered) for term in primal_terms):
+                        emotion_findings.append({"scene": scene_id, "field": field, "message": "must name a concrete human emotion, not an editorial objective"})
+                    for term in editorial_terms:
+                        if term in lowered:
+                            emotion_findings.append({"scene": scene_id, "field": field, "message": f"editorial label {term!r} is not an audience emotion"})
         agent_reports["audience_emotion_gate"] = {
             "reviewer": "audience_emotion_gate",
             "status": "FAIL" if emotion_findings else "PASS",
