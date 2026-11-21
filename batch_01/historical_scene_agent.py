@@ -22,7 +22,7 @@ def inspect_episode(source: dict[str, Any]) -> dict[str, Any]:
     historical = str(source.get("source_integrity", {}).get("classification", "")).lower() == "historical_reconstruction_with_disputed_details"
     for index, scene in enumerate(source.get("scenes", []), 1):
         prompt = " ".join(str(scene.get(k, "")) for k in ("caption", "image_prompt", "required_visuals", "visual_progression")).lower()
-        constraints = [str(x) for x in scene.get("historical_constraints", []) or []]
+        constraints = [str(x) for x in (scene.get("historical_constraints", []) or source.get("historical_constraints", []) or [])]
         prohibited = [str(x) for x in scene.get("prohibited_visual_actions", []) or []]
         if historical and not constraints and not prohibited:
             unresolved += 1

@@ -1,0 +1,25 @@
+{
+  "reviewer": "anatomy_artifact_agent",
+  "status": "PASS",
+  "method": "Reviewed beginning, middle, and ending rendered frames for each scene. Human figures remain anatomically plausible at phone-scale; no extra limbs, fused hands, duplicated faces, impossible joints, or rotated heads were observed.",
+  "samples": [
+    {"scene":"S01","timestamp":0.1,"verdict":"PASS","notes":"figures and boat silhouettes are coherent"},
+    {"scene":"S01","timestamp":10.657,"verdict":"PASS","notes":"John White figure remains coherent"},
+    {"scene":"S01","timestamp":21.214,"verdict":"PASS","notes":"empty settlement; no anatomy artifact"},
+    {"scene":"S02","timestamp":21.414,"verdict":"PASS","notes":"searching figures coherent"},
+    {"scene":"S02","timestamp":28.23,"verdict":"PASS","notes":"figures and distant village coherent"},
+    {"scene":"S02","timestamp":35.047,"verdict":"PASS","notes":"fog path; no anatomy artifact"},
+    {"scene":"S03","timestamp":35.247,"verdict":"PASS","notes":"waiting group coherent"},
+    {"scene":"S03","timestamp":44.011,"verdict":"PASS","notes":"ships and shoreline figures coherent"},
+    {"scene":"S03","timestamp":52.774,"verdict":"PASS","notes":"settlement figures coherent"},
+    {"scene":"S04","timestamp":52.974,"verdict":"PASS","notes":"departing group coherent"},
+    {"scene":"S04","timestamp":60.323,"verdict":"PASS","notes":"meeting figures coherent"},
+    {"scene":"S04","timestamp":67.673,"verdict":"PASS","notes":"empty paths; no anatomy artifact"},
+    {"scene":"S05","timestamp":67.873,"verdict":"PASS","notes":"shoreline figures coherent"},
+    {"scene":"S05","timestamp":78.549,"verdict":"PASS","notes":"village figures and activities coherent"},
+    {"scene":"S05","timestamp":89.225,"verdict":"PASS","notes":"continuing village life coherent"},
+    {"scene":"S06","timestamp":89.425,"verdict":"PASS","notes":"map scene; no anatomy artifact"},
+    {"scene":"S06","timestamp":99.754,"verdict":"PASS","notes":"coastline and birds coherent"},
+    {"scene":"S06","timestamp":110.082,"verdict":"PASS","notes":"empty shoreline; no anatomy artifact"}
+  ]
+}

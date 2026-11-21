@@ -2,296 +2,436 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 79.902,
+  "runtime_seconds": 110.182,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
     "phrases": [
       {
         "scene": "S01",
-        "text": "In 1590, governor John White returned to an English settlement on Roanoke Island.",
+        "text": "What if an entire town just disappeared?",
         "start": 0.0,
-        "end": 6.84
+        "end": 2.46
       },
       {
         "scene": "S01",
-        "text": "He expected to find colonists, including his family.",
-        "start": 7.5,
-        "end": 10.96
+        "text": "In 1590, governor John White returned to Roanoke Island after years away.",
+        "start": 3.1,
+        "end": 9.32
       },
       {
         "scene": "S01",
-        "text": "Instead, the site was deserted.",
-        "start": 11.7,
-        "end": 13.84
+        "text": "He came looking for his family and the colonists he had left behind.",
+        "start": 9.9,
+        "end": 14.32
+      },
+      {
+        "scene": "S01",
+        "text": "Instead, he found empty houses, silent paths, and no one waiting for him.",
+        "start": 15.1,
+        "end": 20.864
       },
       {
         "scene": "S02",
-        "text": "A word associated with Croatoan was carved at the site.",
-        "start": 14.8,
-        "end": 18.42
+        "text": "Then he found one word carved into the settlement: Croatoan.",
+        "start": 21.62,
+        "end": 25.52
       },
       {
         "scene": "S02",
-        "text": "It offered a possible clue, but not a complete explanation of where everyone had gone.",
-        "start": 18.84,
-        "end": 25.145
+        "text": "It was the first sign that the settlers may have left alive.",
+        "start": 25.52,
+        "end": 29.68
+      },
+      {
+        "scene": "S02",
+        "text": "But it was only a clue—and the people who could explain it were gone.",
+        "start": 30.16,
+        "end": 34.497
       },
       {
         "scene": "S03",
-        "text": "White had been delayed for years by war and supply difficulties across the Atlantic.",
-        "start": 25.795,
-        "end": 31.74
+        "text": "White had been trapped across the Atlantic by war and failing supplies.",
+        "start": 35.52,
+        "end": 40.0
       },
       {
         "scene": "S03",
-        "text": "The colony had spent that time without the help it expected.",
-        "start": 32.46,
-        "end": 35.9
+        "text": "Year after year, the colony had waited without rescue.",
+        "start": 40.62,
+        "end": 44.56
+      },
+      {
+        "scene": "S03",
+        "text": "By the time he returned, years had passed and the settlers had been left to survive without help.",
+        "start": 45.22,
+        "end": 52.074
       },
       {
         "scene": "S04",
-        "text": "The settlers may have moved, joined Indigenous communities, or faced several hardships.",
-        "start": 37.02,
-        "end": 43.18
+        "text": "Maybe the settlers moved inland.",
+        "start": 52.874,
+        "end": 55.16
       },
       {
         "scene": "S04",
-        "text": "Historians cannot reconstruct the full fate of every person from the evidence.",
-        "start": 44.34,
-        "end": 49.24
+        "text": "Maybe they joined Indigenous communities.",
+        "start": 55.92,
+        "end": 57.98
+      },
+      {
+        "scene": "S04",
+        "text": "Maybe hunger, disease, or violence ended their journey.",
+        "start": 58.84,
+        "end": 62.96
+      },
+      {
+        "scene": "S04",
+        "text": "No one left a record explaining what happened to them all.",
+        "start": 63.68,
+        "end": 66.973
       },
       {
         "scene": "S05",
-        "text": "The popular phrase lost colony centers the English record.",
-        "start": 50.44,
-        "end": 54.12
+        "text": "The English remembered it as the Lost Colony.",
+        "start": 68.08,
+        "end": 70.82
       },
       {
         "scene": "S05",
-        "text": "Indigenous peoples already lived in the region, and their history is not an empty backdrop to a European mystery.",
-        "start": 54.12,
-        "end": 62.708
+        "text": "But this was not an empty wilderness waiting for a European mystery.",
+        "start": 71.38,
+        "end": 76.12
+      },
+      {
+        "scene": "S05",
+        "text": "Indigenous communities already lived here, and they may have seen the settlers' fear, flight, or disappearance from a side the surviving records never preserved.",
+        "start": 76.12,
+        "end": 88.18
       },
       {
         "scene": "S06",
-        "text": "Roanoke remains unresolved, but absence of a surviving English account is not proof of supernatural disappearance.",
-        "start": 64.34,
-        "end": 72.18
+        "text": "Roanoke still offers no final answer.",
+        "start": 89.7,
+        "end": 92.18
       },
       {
         "scene": "S06",
-        "text": "The true story is about isolation, contact, and uncertain evidence.",
-        "start": 72.98,
-        "end": 78.32
+        "text": "The surviving records cannot tell us who lived, who died, or where the settlers went.",
+        "start": 92.84,
+        "end": 98.94
+      },
+      {
+        "scene": "S06",
+        "text": "What remains is the terror of isolation, and the knowledge that an entire community can vanish without leaving a clear explanation.",
+        "start": 98.94,
+        "end": 108.42
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "In 1590, governor John White returned to",
+        "text": "What if an entire town just disappeared?",
         "start": 0.0,
-        "end": 4.06,
+        "end": 2.46,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "an English settlement on Roanoke Island.",
-        "start": 4.06,
-        "end": 6.84,
-        "word_count": 6
+        "text": "In 1590, governor John White returned to",
+        "start": 3.1,
+        "end": 6.94,
+        "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "He expected to find colonists,",
-        "start": 7.5,
+        "text": "Roanoke Island after years away.",
+        "start": 6.95,
         "end": 9.32,
         "word_count": 5
       },
       {
         "scene": "S01",
-        "text": "including his family.",
-        "start": 9.84,
-        "end": 10.96,
-        "word_count": 3
+        "text": "He came looking for his family and",
+        "start": 9.9,
+        "end": 11.92,
+        "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "Instead, the site was deserted.",
-        "start": 11.7,
-        "end": 13.84,
+        "text": "the colonists he had left behind.",
+        "start": 11.93,
+        "end": 14.32,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "Instead, he found empty houses,",
+        "start": 15.1,
+        "end": 17.64,
         "word_count": 5
       },
       {
+        "scene": "S01",
+        "text": "silent paths, and no one waiting for",
+        "start": 18.26,
+        "end": 20.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "him.",
+        "start": 20.59,
+        "end": 20.864,
+        "word_count": 1
+      },
+      {
         "scene": "S02",
-        "text": "A word associated with Croatoan was carved",
-        "start": 14.8,
-        "end": 17.62,
+        "text": "Then he found one word carved into",
+        "start": 21.62,
+        "end": 23.84,
         "word_count": 7
       },
       {
         "scene": "S02",
-        "text": "at the site.",
-        "start": 17.62,
-        "end": 18.42,
+        "text": "the settlement: Croatoan.",
+        "start": 23.85,
+        "end": 25.52,
         "word_count": 3
       },
       {
         "scene": "S02",
-        "text": "It offered a possible clue,",
-        "start": 18.84,
-        "end": 20.74,
-        "word_count": 5
-      },
-      {
-        "scene": "S02",
-        "text": "but not a complete explanation of where",
-        "start": 21.18,
-        "end": 23.9,
+        "text": "It was the first sign that the",
+        "start": 25.53,
+        "end": 27.88,
         "word_count": 7
       },
       {
         "scene": "S02",
-        "text": "everyone had gone.",
-        "start": 23.9,
-        "end": 25.145,
-        "word_count": 3
-      },
-      {
-        "scene": "S03",
-        "text": "White had been delayed for years by",
-        "start": 25.795,
-        "end": 28.42,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "war and supply difficulties across the Atlantic.",
-        "start": 28.42,
-        "end": 31.74,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "The colony had spent that time without",
-        "start": 32.46,
-        "end": 34.64,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "the help it expected.",
-        "start": 34.64,
-        "end": 35.9,
-        "word_count": 4
-      },
-      {
-        "scene": "S04",
-        "text": "The settlers may have moved,",
-        "start": 37.02,
-        "end": 38.64,
+        "text": "settlers may have left alive.",
+        "start": 27.89,
+        "end": 29.68,
         "word_count": 5
       },
       {
-        "scene": "S04",
-        "text": "joined Indigenous communities,",
-        "start": 39.08,
-        "end": 40.68,
-        "word_count": 3
-      },
-      {
-        "scene": "S04",
-        "text": "or faced several hardships.",
-        "start": 41.24,
-        "end": 43.18,
-        "word_count": 4
-      },
-      {
-        "scene": "S04",
-        "text": "Historians cannot reconstruct the full fate of",
-        "start": 44.34,
-        "end": 47.46,
+        "scene": "S02",
+        "text": "But it was only a clue and",
+        "start": 30.16,
+        "end": 32.46,
         "word_count": 7
       },
       {
-        "scene": "S04",
-        "text": "every person from the evidence.",
+        "scene": "S02",
+        "text": "the people who could explain it were",
+        "start": 32.47,
+        "end": 34.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "gone.",
+        "start": 34.07,
+        "end": 34.497,
+        "word_count": 1
+      },
+      {
+        "scene": "S03",
+        "text": "White had been trapped across the Atlantic",
+        "start": 35.52,
+        "end": 37.58,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "by war and failing supplies.",
+        "start": 37.59,
+        "end": 40.0,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "Year after year,",
+        "start": 40.62,
+        "end": 41.82,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "the colony had waited without rescue.",
+        "start": 42.18,
+        "end": 44.56,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "By the time he returned,",
+        "start": 45.22,
+        "end": 46.6,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "years had passed and the settlers had",
         "start": 47.46,
-        "end": 49.24,
+        "end": 49.82,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "been left to survive without help.",
+        "start": 49.83,
+        "end": 52.074,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "Maybe the settlers moved inland.",
+        "start": 52.874,
+        "end": 55.16,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Maybe they joined Indigenous communities.",
+        "start": 55.92,
+        "end": 57.98,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Maybe hunger, disease,",
+        "start": 58.84,
+        "end": 60.52,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "or violence ended their journey.",
+        "start": 60.84,
+        "end": 62.96,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "No one left a record explaining what",
+        "start": 63.68,
+        "end": 65.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "happened to them all.",
+        "start": 65.89,
+        "end": 66.973,
+        "word_count": 4
+      },
+      {
+        "scene": "S05",
+        "text": "The English remembered it as the Lost",
+        "start": 68.08,
+        "end": 70.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "Colony. But this was not an empty",
+        "start": 70.41,
+        "end": 73.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "wilderness waiting for a European mystery.",
+        "start": 73.25,
+        "end": 76.12,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "Indigenous communities already lived here,",
+        "start": 76.13,
+        "end": 79.7,
         "word_count": 5
       },
       {
         "scene": "S05",
-        "text": "The popular phrase lost colony centers the",
-        "start": 50.44,
-        "end": 53.3,
+        "text": "and they may have seen the settlers'",
+        "start": 79.8,
+        "end": 81.36,
         "word_count": 7
       },
       {
         "scene": "S05",
-        "text": "English record. Indigenous peoples already lived in",
-        "start": 53.3,
-        "end": 57.02,
+        "text": "fear, flight, or disappearance from a side",
+        "start": 81.37,
+        "end": 86.1,
         "word_count": 7
       },
       {
         "scene": "S05",
-        "text": "the region, and their history is not",
-        "start": 57.02,
-        "end": 59.7,
-        "word_count": 7
+        "text": "the surviving records never preserved.",
+        "start": 86.11,
+        "end": 88.18,
+        "word_count": 5
       },
       {
-        "scene": "S05",
-        "text": "an empty backdrop to a European mystery.",
-        "start": 59.7,
-        "end": 62.708,
+        "scene": "S06",
+        "text": "Roanoke still offers no final answer.",
+        "start": 89.7,
+        "end": 92.18,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "The surviving records cannot tell us who",
+        "start": 92.84,
+        "end": 95.44,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "Roanoke remains unresolved,",
-        "start": 64.34,
-        "end": 66.0,
+        "text": "lived, who died,",
+        "start": 95.45,
+        "end": 97.02,
         "word_count": 3
       },
       {
         "scene": "S06",
-        "text": "but absence of a surviving English account",
-        "start": 66.48,
-        "end": 69.24,
+        "text": "or where the settlers went.",
+        "start": 97.2,
+        "end": 98.94,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "What remains is the terror of isolation,",
+        "start": 98.95,
+        "end": 102.08,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "is not proof of supernatural disappearance.",
-        "start": 69.24,
-        "end": 72.18,
-        "word_count": 6
+        "text": "and the knowledge that an entire community",
+        "start": 102.09,
+        "end": 105.3,
+        "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "The true story is about isolation,",
-        "start": 72.98,
-        "end": 75.4,
-        "word_count": 6
-      },
-      {
-        "scene": "S06",
-        "text": "contact, and uncertain evidence.",
-        "start": 76.1,
-        "end": 78.32,
-        "word_count": 4
+        "text": "can vanish without leaving a clear explanation.",
+        "start": 105.31,
+        "end": 108.42,
+        "word_count": 7
       }
     ]
   },
   "scenes": [
     {
       "id": "S01",
-      "asset": "assets/P01.png",
+      "asset": "assets/H01.png",
       "start": 0.0,
-      "speech_end": 13.84,
-      "end": 14.452,
+      "speech_end": 20.864,
+      "end": 21.314,
       "pause_after": 0.45,
       "camera": {
         "description": "begin on a symbolic close-up, then ease out to reveal the entire opening tableau",
@@ -300,20 +440,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
         "start": 0.0,
-        "end": 14.452
+        "end": 21.314
       },
-      "measured_pause_after": 0.612
+      "measured_pause_after": 0.45,
+      "visual_beats": [
+        {
+          "start": 0.0,
+          "end": 3.1,
+          "reason": "Opening: small 16th-century coastal palisade overgrown",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "What if an entire town just disappeared?"
+        },
+        {
+          "start": 3.1,
+          "end": 9.9,
+          "reason": "Development: arriving boat",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "In 1590, governor John White returned to Roanoke Island after years away."
+        },
+        {
+          "start": 9.9,
+          "end": 21.314,
+          "reason": "Reveal: An empty settlement; arriving boat",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "He came looking for his family and the colonists he had left behind."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S02",
-      "asset": "assets/P02.png",
-      "start": 14.452,
-      "speech_end": 25.145,
-      "end": 25.795,
+      "asset": "assets/H02.png",
+      "start": 21.314,
+      "speech_end": 34.497,
+      "end": 35.147,
       "pause_after": 0.65,
       "camera": {
         "description": "slow lateral travel following the characters, with separate foreground ornamental border parallax",
@@ -322,20 +494,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 14.452,
-        "end": 25.795
+        "start": 21.314,
+        "end": 35.147
       },
-      "measured_pause_after": 0.65
+      "measured_pause_after": 0.65,
+      "visual_beats": [
+        {
+          "start": 21.314,
+          "end": 25.52,
+          "reason": "Opening: tree or post bearing CROATOAN",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Then he found one word carved into the settlement: Croatoan."
+        },
+        {
+          "start": 25.52,
+          "end": 30.16,
+          "reason": "Development: historically careful placement",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "It was the first sign that the settlers may have left alive."
+        },
+        {
+          "start": 30.16,
+          "end": 35.147,
+          "reason": "Reveal: The word; historically careful placement",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "But it was only a clue—and the people who could explain it were gone."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S03",
-      "asset": "assets/P03.png",
-      "start": 25.795,
-      "speech_end": 35.9,
-      "end": 36.727,
+      "asset": "assets/H03.png",
+      "start": 35.147,
+      "speech_end": 52.074,
+      "end": 52.874,
       "pause_after": 0.8,
       "camera": {
         "description": "push gently into the key object or decision; hold for the last important word",
@@ -344,20 +548,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 25.795,
-        "end": 36.727
+        "start": 35.147,
+        "end": 52.874
       },
-      "measured_pause_after": 0.827
+      "measured_pause_after": 0.8,
+      "visual_beats": [
+        {
+          "start": 35.147,
+          "end": 40.62,
+          "reason": "Opening: Atlantic map with storm and English ships diverted",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "White had been trapped across the Atlantic by war and failing supplies."
+        },
+        {
+          "start": 40.62,
+          "end": 45.22,
+          "reason": "Development: Atlantic map with storm and English ships diverted",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "Year after year, the colony had waited without rescue."
+        },
+        {
+          "start": 45.22,
+          "end": 52.874,
+          "reason": "Reveal: Years apart; Atlantic map with storm and English ships diverted",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "By the time he returned, years had passed and the settlers had been left to survive without help."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S04",
-      "asset": "assets/P04.png",
-      "start": 36.727,
-      "speech_end": 49.24,
-      "end": 50.112,
+      "asset": "assets/H04.png",
+      "start": 52.874,
+      "speech_end": 66.973,
+      "end": 67.773,
       "pause_after": 0.8,
       "camera": {
         "description": "wide camera drift across consequences; slower movement and space for narration to breathe",
@@ -366,20 +602,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 36.727,
-        "end": 50.112
+        "start": 52.874,
+        "end": 67.773
       },
-      "measured_pause_after": 0.872
+      "measured_pause_after": 0.8,
+      "visual_beats": [
+        {
+          "start": 52.874,
+          "end": 55.92,
+          "reason": "Opening: multiple transparent paths across islands and mainland",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Maybe the settlers moved inland."
+        },
+        {
+          "start": 55.92,
+          "end": 58.84,
+          "reason": "Development: multiple transparent paths across islands and mainland",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "Maybe they joined Indigenous communities."
+        },
+        {
+          "start": 58.84,
+          "end": 67.773,
+          "reason": "Reveal: Possibilities; multiple transparent paths across islands and mainland",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Maybe hunger, disease, or violence ended their journey."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S05",
-      "asset": "assets/P05.png",
-      "start": 50.112,
-      "speech_end": 62.708,
-      "end": 63.808,
+      "asset": "assets/H05.png",
+      "start": 67.773,
+      "speech_end": 88.18,
+      "end": 89.325,
       "pause_after": 1.1,
       "camera": {
         "description": "controlled zoom into the turning point, then stillness during the reveal",
@@ -388,20 +656,52 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 50.112,
-        "end": 63.808
+        "start": 67.773,
+        "end": 89.325
       },
-      "measured_pause_after": 1.1
+      "measured_pause_after": 1.145,
+      "visual_beats": [
+        {
+          "start": 67.773,
+          "end": 71.38,
+          "reason": "Opening: coastal villages and trade meeting from respectful distance",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The English remembered it as the Lost Colony."
+        },
+        {
+          "start": 71.38,
+          "end": 76.12,
+          "reason": "Development: coastal villages and trade meeting from respectful distance",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "But this was not an empty wilderness waiting for a European mystery."
+        },
+        {
+          "start": 76.12,
+          "end": 89.325,
+          "reason": "Reveal: Whose history; coastal villages and trade meeting from respectful distance",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Indigenous communities already lived here, and they may have seen the settlers' fear, flight, or disappearance from a side the surviving records never preserved."
+        }
+      ],
+      "travel_axis": "horizontal"
     },
     {
       "id": "S06",
-      "asset": "assets/P06.png",
-      "start": 63.808,
-      "speech_end": 78.32,
-      "end": 79.902,
+      "asset": "assets/H06.png",
+      "start": 89.325,
+      "speech_end": 108.42,
+      "end": 110.182,
       "pause_after": 1.5,
       "camera": {
         "description": "pull back to reveal the full illustrated sequence and resolve on a distinctive final symbol",
@@ -410,13 +710,45 @@
         "no_shake": true,
         "caption_safe_area": {
           "bottom_percent": 20
-        }
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 63.808,
-        "end": 79.902
+        "start": 89.325,
+        "end": 110.182
       },
-      "measured_pause_after": 1.582
+      "measured_pause_after": 1.762,
+      "visual_beats": [
+        {
+          "start": 89.325,
+          "end": 92.84,
+          "reason": "Opening: weathered map dissolves into real coastline without phantoms",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Roanoke still offers no final answer."
+        },
+        {
+          "start": 92.84,
+          "end": 98.94,
+          "reason": "Development: weathered map dissolves into real coastline without phantoms",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "The surviving records cannot tell us who lived, who died, or where the settlers went."
+        },
+        {
+          "start": 98.94,
+          "end": 110.182,
+          "reason": "Reveal: Not a ghost story; weathered map dissolves into real coastline without phantoms",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "What remains is the terror of isolation, and the knowledge that an entire community can vanish without leaving a clear explanation."
+        }
+      ],
+      "travel_axis": "horizontal"
     }
   ],
   "music": [
@@ -427,7 +759,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 14.452
+      "end": 21.314
     },
     {
       "scene": "S02",
@@ -435,8 +767,8 @@
       "instrumentation": "quiet viol, sea wind, distant gull, wooden creak",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 14.452,
-      "end": 25.795
+      "start": 21.314,
+      "end": 35.147
     },
     {
       "scene": "S03",
@@ -444,8 +776,8 @@
       "instrumentation": "quiet viol, sea wind, distant gull, wooden creak",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 25.795,
-      "end": 36.727
+      "start": 35.147,
+      "end": 52.874
     },
     {
       "scene": "S04",
@@ -453,8 +785,8 @@
       "instrumentation": "quiet viol, sea wind, distant gull, wooden creak",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 36.727,
-      "end": 50.112
+      "start": 52.874,
+      "end": 67.773
     },
     {
       "scene": "S05",
@@ -462,8 +794,8 @@
       "instrumentation": "quiet viol, sea wind, distant gull, wooden creak",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 50.112,
-      "end": 63.808
+      "start": 67.773,
+      "end": 89.325
     },
     {
       "scene": "S06",
@@ -471,8 +803,8 @@
       "instrumentation": "quiet viol, sea wind, distant gull, wooden creak",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 63.808,
-      "end": 79.902
+      "start": 89.325,
+      "end": 110.182
     }
   ],
   "sfx": [
@@ -481,42 +813,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 14.452
+      "end": 21.314
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 14.452,
-      "end": 25.795
+      "start": 21.314,
+      "end": 35.147
     },
     {
       "scene": "S03",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 25.795,
-      "end": 36.727
+      "start": 35.147,
+      "end": 52.874
     },
     {
       "scene": "S04",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 36.727,
-      "end": 50.112
+      "start": 52.874,
+      "end": 67.773
     },
     {
       "scene": "S05",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 50.112,
-      "end": 63.808
+      "start": 67.773,
+      "end": 89.325
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 63.808,
-      "end": 79.902
+      "start": 89.325,
+      "end": 110.182
     }
   ]
 }

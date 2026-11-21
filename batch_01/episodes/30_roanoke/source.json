@@ -5,6 +5,7 @@
   "title": "Roanoke: The Colony That Disappeared",
   "series": "Living Tapestries — The World’s Great Stories",
   "genre": "history, unresolved mystery",
+  "historical_period": "late 16th-century early modern colonial North America",
   "civilization": "English colonization of North America, 1587–1590",
   "source_integrity": {
     "primary_source_or_tradition": "Roanoke colony records; fate unresolved and Indigenous perspectives essential",
@@ -13,6 +14,11 @@
     "translation_policy": "New original paraphrase only; do not quote protected translations",
     "research_status": "editorial_outline_needs_source_review_before_publication"
   },
+  "historical_constraints": [
+    "Roanoke's final fate remains unresolved; do not present one explanation as proven.",
+    "Indigenous communities and histories must be shown as existing independently of the English settlement.",
+    "Do not depict a confirmed supernatural disappearance or a definitive rescue outcome."
+  ],
   "format": {
     "width": 1080,
     "height": 1920,
@@ -163,7 +169,7 @@
       "id": "S03",
       "asset": "assets/P03.png",
       "caption": "White had been trapped across the Atlantic by war and failing supplies. Year after year, the colony had waited without rescue. By the time he returned, years had passed and the settlers had been left to survive without help.",
-      "intended_emotion": "mounting isolation and helplessness",
+      "intended_emotion": "mounting dread and helplessness",
       "emotional_turn": "a delayed rescue becomes years of separation across a dangerous Atlantic",
       "visual_evidence": "stormy ocean routes, delayed ships, and the settlement surviving without supplies show the pressure of isolation",
       "beat_title": "Years apart",
@@ -196,7 +202,7 @@
       "id": "S04",
       "asset": "assets/P04.png",
       "caption": "Maybe the settlers moved inland. Maybe they joined Indigenous communities. Maybe hunger, disease, or violence ended their journey. No one left a record explaining what happened to them all.",
-      "intended_emotion": "uncertainty and sober human vulnerability",
+      "intended_emotion": "fear and sober human vulnerability",
       "emotional_turn": "the mystery branches into plausible human outcomes rather than a supernatural answer",
       "visual_evidence": "multiple restrained possibilities appear as separate historical paths while the evidence remains visibly incomplete",
       "beat_title": "Possibilities",

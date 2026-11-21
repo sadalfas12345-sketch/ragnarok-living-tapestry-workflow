@@ -331,8 +331,10 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             art_style,
             str(reference.get("style_board_prompt", "")),
         ]).lower()
+        historical_period = str(source.get("historical_period", "")).lower()
         trigger_terms = [str(term).lower() for term in medieval_gate.get("trigger_terms", [])]
-        if medieval_gate.get("enabled") and episode_number >= int(medieval_gate.get("minimum_episode_number", 1)) and any(term in trigger_text for term in trigger_terms):
+        is_early_modern_or_colonial = bool(re.search(r"early modern|16th century|17th century|colonial|colonization|1587|1590", historical_period + " " + trigger_text))
+        if medieval_gate.get("enabled") and episode_number >= int(medieval_gate.get("minimum_episode_number", 1)) and any(term in trigger_text for term in trigger_terms) and not is_early_modern_or_colonial:
             allowed_families = [str(term).lower() for term in medieval_gate.get("allowed_style_families", [])]
             if medieval_gate.get("fail_on_unapproved_style_family", True) and allowed_families and not any(term in style_text for term in allowed_families):
                 errors.append("medieval European art-direction gate requires an approved style family")

@@ -1,0 +1,171 @@
+{
+  "audience_emotion_gate": {
+    "reviewer": "audience_emotion_gate",
+    "status": "PASS",
+    "findings": []
+  },
+  "name_spelling": {
+    "reviewer": "name_spelling_agent",
+    "status": "PASS",
+    "identified_names": [
+      {
+        "name": "Roanoke",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Roanoke"
+      },
+      {
+        "name": "John White",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "John White"
+      },
+      {
+        "name": "Croatoan",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Croatoan"
+      }
+    ],
+    "findings": []
+  },
+  "historical_scene": {
+    "reviewer": "historical_scene_agent",
+    "status": "PASS",
+    "findings": []
+  },
+  "wording": {
+    "reviewer": "wording_agent",
+    "status": "PASS",
+    "findings": []
+  },
+  "procedural_pipeline_audit": {
+    "reviewer": "procedural_pipeline_audit",
+    "status": "PASS",
+    "findings": []
+  },
+  "natural_speech_review": {
+    "reviewer": "natural_speech_review",
+    "status": "PASS",
+    "findings": [],
+    "auditory_playback": "not available to automated gate"
+  },
+  "anatomy_artifact_review": {
+    "reviewer": "anatomy_artifact_agent",
+    "status": "PASS",
+    "findings": [],
+    "samples": [
+      {
+        "scene": "S01",
+        "timestamp": 0.1,
+        "verdict": "PASS",
+        "notes": "figures and boat silhouettes are coherent"
+      },
+      {
+        "scene": "S01",
+        "timestamp": 10.657,
+        "verdict": "PASS",
+        "notes": "John White figure remains coherent"
+      },
+      {
+        "scene": "S01",
+        "timestamp": 21.214,
+        "verdict": "PASS",
+        "notes": "empty settlement; no anatomy artifact"
+      },
+      {
+        "scene": "S02",
+        "timestamp": 21.414,
+        "verdict": "PASS",
+        "notes": "searching figures coherent"
+      },
+      {
+        "scene": "S02",
+        "timestamp": 28.23,
+        "verdict": "PASS",
+        "notes": "figures and distant village coherent"
+      },
+      {
+        "scene": "S02",
+        "timestamp": 35.047,
+        "verdict": "PASS",
+        "notes": "fog path; no anatomy artifact"
+      },
+      {
+        "scene": "S03",
+        "timestamp": 35.247,
+        "verdict": "PASS",
+        "notes": "waiting group coherent"
+      },
+      {
+        "scene": "S03",
+        "timestamp": 44.011,
+        "verdict": "PASS",
+        "notes": "ships and shoreline figures coherent"
+      },
+      {
+        "scene": "S03",
+        "timestamp": 52.774,
+        "verdict": "PASS",
+        "notes": "settlement figures coherent"
+      },
+      {
+        "scene": "S04",
+        "timestamp": 52.974,
+        "verdict": "PASS",
+        "notes": "departing group coherent"
+      },
+      {
+        "scene": "S04",
+        "timestamp": 60.323,
+        "verdict": "PASS",
+        "notes": "meeting figures coherent"
+      },
+      {
+        "scene": "S04",
+        "timestamp": 67.673,
+        "verdict": "PASS",
+        "notes": "empty paths; no anatomy artifact"
+      },
+      {
+        "scene": "S05",
+        "timestamp": 67.873,
+        "verdict": "PASS",
+        "notes": "shoreline figures coherent"
+      },
+      {
+        "scene": "S05",
+        "timestamp": 78.549,
+        "verdict": "PASS",
+        "notes": "village figures and activities coherent"
+      },
+      {
+        "scene": "S05",
+        "timestamp": 89.225,
+        "verdict": "PASS",
+        "notes": "continuing village life coherent"
+      },
+      {
+        "scene": "S06",
+        "timestamp": 89.425,
+        "verdict": "PASS",
+        "notes": "map scene; no anatomy artifact"
+      },
+      {
+        "scene": "S06",
+        "timestamp": 99.754,
+        "verdict": "PASS",
+        "notes": "coastline and birds coherent"
+      },
+      {
+        "scene": "S06",
+        "timestamp": 110.082,
+        "verdict": "PASS",
+        "notes": "empty shoreline; no anatomy artifact"
+      }
+    ],
+    "audit_path": "C:\\Users\\USER\\living-tapestries-ragnarok\\batch_01\\episodes\\30_roanoke\\visual_gates_audit\\anatomy_review.json"
+  },
+  "adversarial_render_review": {
+    "reviewer": "adversarial_render_review",
+    "status": "PASS",
+    "findings": []
+  }
+}

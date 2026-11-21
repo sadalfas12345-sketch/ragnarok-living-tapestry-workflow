@@ -202,9 +202,9 @@ MUSIC_PROFILES = {
         {"title": "Valley Sunset (Version 2)", "artist": "Alejandro Magaña (A. M.)", "url": "https://mixkit.co/free-stock-music/mood/mysterious/", "file": "mixkit_valley_sunset_alejandro_magana_v2.mp3"},
     ],
     30: [
-        {"title": "I Won't surrender", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_i_wont_surrender_michael_ramir_c.mp3"},
-        {"title": "Life's a Movie", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_lifes_a_movie_arulo.mp3"},
-        {"title": "Miss You", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_miss_you_eugenio_mininni.mp3"},
+        {"title": "Can't Get You Off My Mind", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_cant_get_you_off_my_mind_michael_ramir_c.mp3"},
+        {"title": "Latin Lovers", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_latin_lovers_ahjay_stelino.mp3"},
+        {"title": "Tech House vibes", "artist": "Alejandro Magaña", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_tech_house_vibes_alejandro_magana.mp3"},
     ],
 }
 
