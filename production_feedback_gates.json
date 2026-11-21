@@ -240,6 +240,20 @@
         "message": "abstract gate-inserted clause needs natural historical narration"
       }
     ],
+    "plainspoken_language_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "patterns": [
+        {"pattern": "\\bcannot reconstruct the full fate\\b", "message": "bureaucratic abstraction; state plainly what the evidence cannot tell us"},
+        {"pattern": "\\bfrom the evidence\\b", "message": "bureaucratic evidence phrasing; name the records or say what they cannot tell us"},
+        {"pattern": "\\bdue to the fact that\\b", "message": "bureaucratic substitute for because"},
+        {"pattern": "\\bin accordance with\\b", "message": "bureaucratic substitute for under or following"},
+        {"pattern": "\\bwith regard to\\b", "message": "bureaucratic substitute for about"},
+        {"pattern": "\\bat this point in time\\b", "message": "bureaucratic substitute for now or then"},
+        {"pattern": "\\bit is important to note that\\b", "message": "editorial filler; state the fact directly"},
+        {"pattern": "\\bfor the purpose of\\b", "message": "bureaucratic substitute for to"}
+      ]
+    },
     "fail_on_findings": true,
     "smooth_safe_gate_insertions_before_tts": true
   },

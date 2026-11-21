@@ -48,5 +48,15 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
                 "text": pattern,
                 "message": str(item.get("message", "awkward phrase pattern detected")),
             })
+    plainspoken = policy.get("plainspoken_language_gate", {})
+    if plainspoken.get("enabled"):
+        for item in plainspoken.get("patterns", []):
+            pattern = str(item.get("pattern", ""))
+            if pattern and re.search(pattern, caption_text, re.IGNORECASE | re.DOTALL):
+                findings.append({
+                    "type": "bureaucratic_language",
+                    "text": pattern,
+                    "message": str(item.get("message", "rewrite in direct spoken language")),
+                })
     hard = bool(policy.get("fail_on_findings", True))
     return {"reviewer": "wording_agent", "status": "FAIL" if findings and hard else ("REVIEW" if findings else "PASS"), "findings": findings}
