@@ -259,6 +259,18 @@
         ,{"pattern": "\\buncertain evidence\\b", "message": "abstract evidence phrase; name the uncertainty plainly"}
       ]
     },
+    "natural_speech_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "purpose": "Reject strained metaphors, artificial dramatic phrasing, and sentences that sound written for effect instead of spoken to an audience.",
+      "patterns": [
+        {"pattern": "\\b(?:suspended|hanging) in the dark\\b", "message": "forced metaphor; state what is unknown in plain spoken language"},
+        {"pattern": "\\b(?:silence|distance)\\b.*\\b(?:ship|road|wall|stone)\\b.*\\b(?:undo|erase|close)\\b", "message": "strained object metaphor; describe the concrete separation or loss"},
+        {"pattern": "\\bthe distance between .*\\b(?:became|turned into)\\b", "message": "abstract transformation; say what physically or historically happened"},
+        {"pattern": "\\b(?:history|the records?)\\b.*\\bremembers? only a\\b", "message": "artificial personification; state what survives in the record"},
+        {"pattern": "\\b(?:the answer|the truth|the fate)\\b.*\\b(?:begins|waits|sleeps|hangs)\\b", "message": "abstract dramatic phrasing; state the unresolved fact directly"}
+      ]
+    },
     "fail_on_findings": true,
     "smooth_safe_gate_insertions_before_tts": true
   },

@@ -94,7 +94,7 @@
     {
       "id": "S01",
       "asset": "assets/P01.png",
-      "caption": "What if an entire town just disappeared? In 1590, governor John White returned to an English settlement on Roanoke Island. He expected to find colonists, including his family. Instead, the site was deserted.",
+      "caption": "What if an entire town just disappeared? In 1590, governor John White returned to Roanoke Island after years away. He came looking for his family and the colonists he had left behind. Instead, he found empty houses, silent paths, and no one waiting for him.",
       "intended_emotion": "immediate shock and historical dread",
       "emotional_turn": "John White's hopeful return becomes the discovery of an empty settlement",
       "visual_evidence": "the abandoned houses, silent paths, and White searching for family make the disappearance immediate",
@@ -128,7 +128,7 @@
     {
       "id": "S02",
       "asset": "assets/P02.png",
-      "caption": "A word associated with Croatoan was carved at the site. It offered a possible clue, but not a complete explanation of where everyone had gone.",
+      "caption": "Then he found one word carved into the settlement: Croatoan. It was the first sign that the settlers may have left alive. But it was only a clue—and the people who could explain it were gone.",
       "intended_emotion": "tense curiosity without false certainty",
       "emotional_turn": "one carved clue opens possibilities while refusing to solve the mystery",
       "visual_evidence": "the carved word is shown as a partial clue beside the empty settlement, never as a complete answer",
@@ -162,7 +162,7 @@
     {
       "id": "S03",
       "asset": "assets/P03.png",
-      "caption": "White had been delayed for years by war and supply difficulties across the Atlantic. The colony had spent that time without the help it expected.",
+      "caption": "White had been trapped across the Atlantic by war and failing supplies. Year after year, the colony had waited without rescue. By the time he returned, years had passed and the settlers had been left to survive without help.",
       "intended_emotion": "mounting isolation and helplessness",
       "emotional_turn": "a delayed rescue becomes years of separation across a dangerous Atlantic",
       "visual_evidence": "stormy ocean routes, delayed ships, and the settlement surviving without supplies show the pressure of isolation",
@@ -195,7 +195,7 @@
     {
       "id": "S04",
       "asset": "assets/P04.png",
-      "caption": "The settlers may have moved, joined Indigenous communities, or faced several hardships. No surviving record tells us what happened to everyone.",
+      "caption": "Maybe the settlers moved inland. Maybe they joined Indigenous communities. Maybe hunger, disease, or violence ended their journey. No one left a record explaining what happened to them all.",
       "intended_emotion": "uncertainty and sober human vulnerability",
       "emotional_turn": "the mystery branches into plausible human outcomes rather than a supernatural answer",
       "visual_evidence": "multiple restrained possibilities appear as separate historical paths while the evidence remains visibly incomplete",
@@ -228,7 +228,7 @@
     {
       "id": "S05",
       "asset": "assets/P05.png",
-      "caption": "The phrase lost colony tells the story from the English side. Indigenous peoples already lived in the region, with histories of their own beyond this European mystery.",
+      "caption": "The English remembered it as the Lost Colony. But this was not an empty wilderness waiting for a European mystery. Indigenous communities already lived here, and they may have seen the settlers' fear, flight, or disappearance from a side the surviving records never preserved.",
       "intended_emotion": "unease turning into humility and empathy",
       "emotional_turn": "a European mystery frame widens to acknowledge Indigenous lives and history already present",
       "visual_evidence": "Indigenous communities and landscapes share the frame as subjects with their own continuity, not background scenery",
@@ -261,7 +261,7 @@
     {
       "id": "S06",
       "asset": "assets/P06.png",
-      "caption": "Roanoke remains unresolved. The surviving evidence does not prove that anyone vanished by supernatural means. The real story is about isolation, contact, and uncertainty.",
+      "caption": "Roanoke still offers no final answer. No ghost story can restore the missing names, and no surviving record can tell us who reached safety. What remains is the terror of isolation—and the knowledge that an entire community can vanish while history remembers only a question.",
       "intended_emotion": "lingering unease grounded in humility",
       "emotional_turn": "the unanswered mystery resolves into a warning about evidence, contact, and what history cannot recover",
       "visual_evidence": "the empty site, ocean horizon, and layered human traces end the story without inventing a disappearance explanation",

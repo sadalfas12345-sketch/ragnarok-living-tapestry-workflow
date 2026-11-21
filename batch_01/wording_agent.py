@@ -58,5 +58,15 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
                     "text": pattern,
                     "message": str(item.get("message", "rewrite in direct spoken language")),
                 })
+    natural = POLICY.get("natural_speech_gate", {})
+    if natural.get("enabled"):
+        for item in natural.get("patterns", []):
+            pattern = str(item.get("pattern", ""))
+            if pattern and re.search(pattern, caption_text, re.IGNORECASE | re.DOTALL):
+                findings.append({
+                    "type": "unnatural_phrase",
+                    "text": pattern,
+                    "message": str(item.get("message", "rewrite in natural spoken language")),
+                })
     hard = bool(policy.get("fail_on_findings", True))
     return {"reviewer": "wording_agent", "status": "FAIL" if findings and hard else ("REVIEW" if findings else "PASS"), "findings": findings}
