@@ -197,9 +197,9 @@ MUSIC_PROFILES = {
         {"title": "Sports Highlights", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/", "file": "mixkit_sports_highlights_ahjay_stelino.mp3"},
     ],
     29: [
-        {"title": "Nield Grohm Hanging 1", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_nield_grohm_hanging_1_eugenio_mininni.mp3"},
-        {"title": "Oscar el Asesino", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_oscar_el_asesino_michael_ramir_c.mp3"},
-        {"title": "Never Say Die", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_never_say_die_michael_ramir_c.mp3"},
+        {"title": "I Won't surrender", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_i_wont_surrender_michael_ramir_c.mp3"},
+        {"title": "Life's a Movie", "artist": "Arulo", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_lifes_a_movie_arulo.mp3"},
+        {"title": "Miss You", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_miss_you_eugenio_mininni.mp3"},
     ],
     30: [
         {"title": "I Won't surrender", "artist": "Michael Ramir C.", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_i_wont_surrender_michael_ramir_c.mp3"},
