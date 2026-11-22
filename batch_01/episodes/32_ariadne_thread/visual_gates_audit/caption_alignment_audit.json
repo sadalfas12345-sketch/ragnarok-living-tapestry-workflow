@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "caption 4 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 5 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 10 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 24 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 33 could not be matched exactly to Whisper text; boundary was not independently scored"
+  ],
+  "samples": [
+    {
+      "caption": 1,
+      "expected_start": 0.0,
+      "actual_start": 0.0,
+      "start_error": 0.0,
+      "expected_end": 2.38,
+      "actual_end": 2.38,
+      "end_error": 0.0
+    },
+    {
+      "caption": 2,
+      "expected_start": 2.38,
+      "actual_start": 2.39,
+      "start_error": 0.01,
+      "expected_end": 4.66,
+      "actual_end": 4.66,
+      "end_error": 0.0
+    },
+    {
+      "caption": 3,
+      "expected_start": 5.32,
+      "actual_start": 5.32,
+      "start_error": 0.0,
+      "expected_end": 6.18,
+      "actual_end": 6.18,
+      "end_error": 0.0
+    },
+    {
+      "caption": 6,
+      "expected_start": 13.68,
+      "actual_start": 13.68,
+      "start_error": 0.0,
+      "expected_end": 15.66,
+      "actual_end": 15.66,
+      "end_error": 0.0
+    },
+    {
+      "caption": 7,
+      "expected_start": 16.34,
+      "actual_start": 16.34,
+      "start_error": 0.0,
+      "expected_end": 18.02,
+      "actual_end": 18.02,
+      "end_error": 0.0
+    },
+    {
+      "caption": 8,
+      "expected_start": 18.54,
+      "actual_start": 18.54,
+      "start_error": 0.0,
+      "expected_end": 19.78,
+      "actual_end": 19.78,
+      "end_error": 0.0
+    },
+    {
+      "caption": 9,
+      "expected_start": 20.48,
+      "actual_start": 20.48,
+      "start_error": 0.0,
+      "expected_end": 22.46,
+      "actual_end": 22.46,
+      "end_error": 0.0
+    },
+    {
+      "caption": 11,
+      "expected_start": 26.34,
+      "actual_start": 26.35,
+      "start_error": 0.01,
+      "expected_end": 27.54,
+      "actual_end": 27.54,
+      "end_error": 0.0
+    },
+    {
+      "caption": 12,
+      "expected_start": 27.54,
+      "actual_start": 27.55,
+      "start_error": 0.01,
+      "expected_end": 29.36,
+      "actual_end": 29.36,
+      "end_error": 0.0
+    },
+    {
+      "caption": 13,
+      "expected_start": 29.98,
+      "actual_start": 29.98,
+      "start_error": 0.0,
+      "expected_end": 32.0,
+      "actual_end": 32.0,
+      "end_error": 0.0
+    },
+    {
+      "caption": 14,
+      "expected_start": 32.0,
+      "actual_start": 32.01,
+      "start_error": 0.01,
+      "expected_end": 34.76,
+      "actual_end": 34.76,
+      "end_error": 0.0
+    },
+    {
+      "caption": 15,
+      "expected_start": 34.76,
+      "actual_start": 34.77,
+      "start_error": 0.01,
+      "expected_end": 37.42,
+      "actual_end": 37.42,
+      "end_error": 0.0
+    },
+    {
+      "caption": 16,
+      "expected_start": 37.42,
+      "actual_start": 37.43,
+      "start_error": 0.01,
+      "expected_end": 40.24,
+      "actual_end": 40.24,
+      "end_error": 0.0
+    },
+    {
+      "caption": 17,
+      "expected_start": 40.24,
+      "actual_start": 40.25,
+      "start_error": 0.01,
+      "expected_end": 40.88,
+      "actual_end": 40.674,
+      "end_error": -0.206
+    },
+    {
+      "caption": 18,
+      "expected_start": 41.66,
+      "actual_start": 41.66,
+      "start_error": 0.0,
+      "expected_end": 45.1,
+      "actual_end": 45.1,
+      "end_error": 0.0
+    },
+    {
+      "caption": 19,
+      "expected_start": 45.1,
+      "actual_start": 45.11,
+      "start_error": 0.01,
+      "expected_end": 46.2,
+      "actual_end": 46.2,
+      "end_error": 0.0
+    },
+    {
+      "caption": 20,
+      "expected_start": 46.88,
+      "actual_start": 46.88,
+      "start_error": 0.0,
+      "expected_end": 48.46,
+      "actual_end": 48.46,
+      "end_error": 0.0
+    },
+    {
+      "caption": 21,
+      "expected_start": 49.1,
+      "actual_start": 49.1,
+      "start_error": 0.0,
+      "expected_end": 50.48,
+      "actual_end": 50.48,
+      "end_error": 0.0
+    },
+    {
+      "caption": 22,
+      "expected_start": 51.1,
+      "actual_start": 51.1,
+      "start_error": 0.0,
+      "expected_end": 53.64,
+      "actual_end": 53.64,
+      "end_error": 0.0
+    },
+    {
+      "caption": 23,
+      "expected_start": 53.64,
+      "actual_start": 53.65,
+      "start_error": 0.01,
+      "expected_end": 54.64,
+      "actual_end": 54.64,
+      "end_error": 0.0
+    },
+    {
+      "caption": 25,
+      "expected_start": 58.58,
+      "actual_start": 58.58,
+      "start_error": 0.0,
+      "expected_end": 61.94,
+      "actual_end": 61.94,
+      "end_error": 0.0
+    },
+    {
+      "caption": 26,
+      "expected_start": 61.94,
+      "actual_start": 61.95,
+      "start_error": 0.01,
+      "expected_end": 63.44,
+      "actual_end": 63.44,
+      "end_error": 0.0
+    },
+    {
+      "caption": 27,
+      "expected_start": 63.8,
+      "actual_start": 63.8,
+      "start_error": 0.0,
+      "expected_end": 64.98,
+      "actual_end": 64.98,
+      "end_error": 0.0
+    },
+    {
+      "caption": 28,
+      "expected_start": 65.4,
+      "actual_start": 65.4,
+      "start_error": 0.0,
+      "expected_end": 67.68,
+      "actual_end": 67.68,
+      "end_error": 0.0
+    },
+    {
+      "caption": 29,
+      "expected_start": 67.68,
+      "actual_start": 67.69,
+      "start_error": 0.01,
+      "expected_end": 70.14,
+      "actual_end": 70.14,
+      "end_error": 0.0
+    },
+    {
+      "caption": 30,
+      "expected_start": 70.14,
+      "actual_start": 70.15,
+      "start_error": 0.01,
+      "expected_end": 73.7,
+      "actual_end": 73.7,
+      "end_error": 0.0
+    },
+    {
+      "caption": 31,
+      "expected_start": 74.04,
+      "actual_start": 74.04,
+      "start_error": 0.0,
+      "expected_end": 76.48,
+      "actual_end": 76.48,
+      "end_error": 0.0
+    },
+    {
+      "caption": 32,
+      "expected_start": 76.48,
+      "actual_start": 76.49,
+      "start_error": 0.01,
+      "expected_end": 78.72,
+      "actual_end": 78.26,
+      "end_error": -0.46
+    },
+    {
+      "caption": 34,
+      "expected_start": 82.88,
+      "actual_start": 82.88,
+      "start_error": 0.0,
+      "expected_end": 85.26,
+      "actual_end": 85.26,
+      "end_error": 0.0
+    },
+    {
+      "caption": 35,
+      "expected_start": 85.26,
+      "actual_start": 85.27,
+      "start_error": 0.01,
+      "expected_end": 87.7,
+      "actual_end": 87.7,
+      "end_error": 0.0
+    },
+    {
+      "caption": 36,
+      "expected_start": 88.32,
+      "actual_start": 88.32,
+      "start_error": 0.0,
+      "expected_end": 89.5,
+      "actual_end": 89.5,
+      "end_error": 0.0
+    },
+    {
+      "caption": 37,
+      "expected_start": 89.78,
+      "actual_start": 89.78,
+      "start_error": 0.0,
+      "expected_end": 92.92,
+      "actual_end": 92.92,
+      "end_error": 0.0
+    },
+    {
+      "caption": 38,
+      "expected_start": 93.48,
+      "actual_start": 93.48,
+      "start_error": 0.0,
+      "expected_end": 94.64,
+      "actual_end": 94.64,
+      "end_error": 0.0
+    },
+    {
+      "caption": 39,
+      "expected_start": 95.24,
+      "actual_start": 95.24,
+      "start_error": 0.0,
+      "expected_end": 96.96,
+      "actual_end": 96.91,
+      "end_error": -0.05
+    },
+    {
+      "caption": 40,
+      "expected_start": 98.18,
+      "actual_start": 98.18,
+      "start_error": 0.0,
+      "expected_end": 101.78,
+      "actual_end": 101.78,
+      "end_error": 0.0
+    },
+    {
+      "caption": 41,
+      "expected_start": 102.26,
+      "actual_start": 102.26,
+      "start_error": 0.0,
+      "expected_end": 103.6,
+      "actual_end": 103.6,
+      "end_error": 0.0
+    },
+    {
+      "caption": 42,
+      "expected_start": 104.2,
+      "actual_start": 104.2,
+      "start_error": 0.0,
+      "expected_end": 106.06,
+      "actual_end": 106.06,
+      "end_error": 0.0
+    },
+    {
+      "caption": 43,
+      "expected_start": 106.06,
+      "actual_start": 106.07,
+      "start_error": 0.01,
+      "expected_end": 108.24,
+      "actual_end": 108.24,
+      "end_error": 0.0
+    },
+    {
+      "caption": 44,
+      "expected_start": 108.24,
+      "actual_start": 108.25,
+      "start_error": 0.01,
+      "expected_end": 109.82,
+      "actual_end": 109.82,
+      "end_error": 0.0
+    },
+    {
+      "caption": 45,
+      "expected_start": 110.34,
+      "actual_start": 110.34,
+      "start_error": 0.0,
+      "expected_end": 112.68,
+      "actual_end": 112.68,
+      "end_error": 0.0
+    },
+    {
+      "caption": 46,
+      "expected_start": 112.68,
+      "actual_start": 112.69,
+      "start_error": 0.01,
+      "expected_end": 115.86,
+      "actual_end": 115.768,
+      "end_error": -0.092
+    }
+  ],
+  "tolerance_seconds": 0.12,
+  "unmatched_count": 5
+}

@@ -1,16 +1,16 @@
 {
   "status": "PASS",
-  "generated_at": "2026-11-22T22:07:59.082870+00:00",
+  "generated_at": "2026-11-22T23:01:30.611160+00:00",
   "video": "final_vertical_1080x1920.mp4",
-  "video_sha256": "47815d76c6f588bb0f9f9342f65a2138549caa382aca205e3c49449454ee9a9e",
-  "render_id": "47815d76c6f5",
-  "expected_drive_filename": "final_vertical_1080x1920_47815d76c6f5.mp4",
+  "video_sha256": "7d6f3181493537ccfe314ac56239c7f2c86e2cec84965f32313460fd7b53e10c",
+  "render_id": "7d6f31814935",
+  "expected_drive_filename": "final_vertical_1080x1920_7d6f31814935.mp4",
   "srt": "Captions_final.srt",
   "qa": "qa_report.json",
   "visual_gates": "visual_gates_report.json",
   "lifecycle": "lifecycle_status.json",
-  "drive_url": "https://drive.google.com/file/d/1fC9EOW-dYTYhOArxJ6L1-FzaKU1UuY_v/view?usp=drivesdk",
-  "drive_filename": "final_vertical_1080x1920_47815d76c6f5.mp4",
-  "drive_sha256": "47815d76c6f588bb0f9f9342f65a2138549caa382aca205e3c49449454ee9a9e",
+  "drive_url": "https://drive.google.com/file/d/1I9SvyENaUyE8y23f7Uqxa4lqUaiOB4xt/view?usp=drivesdk",
+  "drive_filename": "final_vertical_1080x1920_7d6f31814935.mp4",
+  "drive_sha256": "7d6f3181493537ccfe314ac56239c7f2c86e2cec84965f32313460fd7b53e10c",
   "errors": []
 }

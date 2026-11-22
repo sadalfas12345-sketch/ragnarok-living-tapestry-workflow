@@ -2,15 +2,21 @@
   "episode": "32_ariadne_thread",
   "status": "PASS",
   "errors": [],
-  "warnings": [],
-  "timeline_runtime_seconds": 113.428,
-  "video_runtime_seconds": 113.433,
+  "warnings": [
+    "caption 4 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 5 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 10 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 24 could not be matched exactly to Whisper text; boundary was not independently scored",
+    "caption 33 could not be matched exactly to Whisper text; boundary was not independently scored"
+  ],
+  "timeline_runtime_seconds": 117.168,
+  "video_runtime_seconds": 117.2,
   "dimensions": [
     1080,
     1920
   ],
-  "video_bitrate": 5790885,
-  "caption_count": 45,
+  "video_bitrate": 5779219,
+  "caption_count": 46,
   "line_artifact_review": {
     "reviewer": "line_artifact_agent",
     "scope": "visible intra-scene vertical joins and panorama seams only",
@@ -21,495 +27,495 @@
         "scene": "S01",
         "timestamp": 0.1,
         "column": 105,
-        "mean_edge": 25.89,
-        "continuity": 0.254,
-        "score": 6.58
+        "mean_edge": 25.82,
+        "continuity": 0.258,
+        "score": 6.67
       },
       {
         "scene": "S01",
         "timestamp": 0.6,
         "column": 107,
-        "mean_edge": 23.83,
-        "continuity": 0.227,
-        "score": 5.41
+        "mean_edge": 23.86,
+        "continuity": 0.229,
+        "score": 5.47
       },
       {
         "scene": "S01",
         "timestamp": 1.1,
         "column": 162,
-        "mean_edge": 24.77,
-        "continuity": 0.304,
-        "score": 7.53
+        "mean_edge": 24.83,
+        "continuity": 0.31,
+        "score": 7.71
       },
       {
         "scene": "S01",
         "timestamp": 1.6,
         "column": 153,
-        "mean_edge": 23.79,
-        "continuity": 0.296,
-        "score": 7.04
+        "mean_edge": 23.77,
+        "continuity": 0.3,
+        "score": 7.13
       },
       {
         "scene": "S01",
         "timestamp": 2.1,
         "column": 59,
-        "mean_edge": 24.74,
-        "continuity": 0.267,
-        "score": 6.6
+        "mean_edge": 24.73,
+        "continuity": 0.271,
+        "score": 6.7
       },
       {
         "scene": "S01",
         "timestamp": 2.6,
         "column": 50,
-        "mean_edge": 27.12,
-        "continuity": 0.267,
-        "score": 7.23
+        "mean_edge": 27.13,
+        "continuity": 0.273,
+        "score": 7.4
       },
       {
         "scene": "S01",
         "timestamp": 3.1,
         "column": 127,
-        "mean_edge": 24.82,
-        "continuity": 0.325,
-        "score": 8.07
+        "mean_edge": 24.86,
+        "continuity": 0.327,
+        "score": 8.13
       },
       {
         "scene": "S01",
         "timestamp": 3.6,
         "column": 118,
-        "mean_edge": 23.71,
-        "continuity": 0.31,
-        "score": 7.36
+        "mean_edge": 23.63,
+        "continuity": 0.306,
+        "score": 7.24
       },
       {
         "scene": "S01",
         "timestamp": 4.1,
         "column": 130,
-        "mean_edge": 23.57,
-        "continuity": 0.244,
-        "score": 5.75
+        "mean_edge": 23.61,
+        "continuity": 0.248,
+        "score": 5.85
       },
       {
         "scene": "S01",
         "timestamp": 4.6,
         "column": 196,
-        "mean_edge": 25.64,
-        "continuity": 0.248,
-        "score": 6.36
+        "mean_edge": 25.61,
+        "continuity": 0.244,
+        "score": 6.24
       },
       {
         "scene": "S01",
         "timestamp": 5.1,
         "column": 92,
-        "mean_edge": 21.26,
-        "continuity": 0.294,
-        "score": 6.25
+        "mean_edge": 21.35,
+        "continuity": 0.287,
+        "score": 6.14
       },
       {
         "scene": "S01",
         "timestamp": 5.6,
         "column": 83,
-        "mean_edge": 20.65,
-        "continuity": 0.267,
-        "score": 5.51
+        "mean_edge": 20.61,
+        "continuity": 0.256,
+        "score": 5.28
       },
       {
         "scene": "S01",
         "timestamp": 6.1,
         "column": 95,
-        "mean_edge": 23.46,
+        "mean_edge": 23.43,
         "continuity": 0.221,
-        "score": 5.18
+        "score": 5.17
       },
       {
         "scene": "S01",
         "timestamp": 6.6,
         "column": 86,
-        "mean_edge": 26.39,
-        "continuity": 0.244,
-        "score": 6.43
+        "mean_edge": 26.5,
+        "continuity": 0.25,
+        "score": 6.62
       },
       {
         "scene": "S01",
         "timestamp": 7.1,
         "column": 152,
-        "mean_edge": 26.15,
-        "continuity": 0.254,
-        "score": 6.65
+        "mean_edge": 26.24,
+        "continuity": 0.258,
+        "score": 6.78
       },
       {
         "scene": "S01",
         "timestamp": 7.6,
         "column": 48,
-        "mean_edge": 22.05,
-        "continuity": 0.294,
-        "score": 6.48
+        "mean_edge": 22.15,
+        "continuity": 0.296,
+        "score": 6.55
       },
       {
         "scene": "S01",
         "timestamp": 8.1,
         "column": 39,
-        "mean_edge": 21.67,
-        "continuity": 0.275,
-        "score": 5.96
+        "mean_edge": 21.49,
+        "continuity": 0.267,
+        "score": 5.73
       },
       {
         "scene": "S01",
         "timestamp": 8.6,
         "column": 30,
-        "mean_edge": 22.78,
-        "continuity": 0.298,
-        "score": 6.79
+        "mean_edge": 22.69,
+        "continuity": 0.294,
+        "score": 6.67
       },
       {
         "scene": "S01",
         "timestamp": 9.1,
         "column": 22,
-        "mean_edge": 23.65,
-        "continuity": 0.304,
-        "score": 7.19
+        "mean_edge": 23.7,
+        "continuity": 0.308,
+        "score": 7.31
       },
       {
         "scene": "S01",
         "timestamp": 9.6,
         "column": 108,
-        "mean_edge": 24.94,
+        "mean_edge": 24.9,
         "continuity": 0.265,
-        "score": 6.6
+        "score": 6.59
       },
       {
         "scene": "S01",
         "timestamp": 10.1,
         "column": 25,
-        "mean_edge": 20.4,
-        "continuity": 0.206,
-        "score": 4.21
+        "mean_edge": 20.43,
+        "continuity": 0.21,
+        "score": 4.3
       },
       {
         "scene": "S01",
         "timestamp": 10.6,
         "column": 90,
-        "mean_edge": 26.2,
-        "continuity": 0.271,
-        "score": 7.1
+        "mean_edge": 26.21,
+        "continuity": 0.273,
+        "score": 7.15
       },
       {
         "scene": "S01",
         "timestamp": 11.1,
         "column": 149,
-        "mean_edge": 27.69,
-        "continuity": 0.281,
-        "score": 7.79
+        "mean_edge": 27.68,
+        "continuity": 0.285,
+        "score": 7.9
       },
       {
         "scene": "S01",
         "timestamp": 11.6,
         "column": 140,
-        "mean_edge": 26.82,
+        "mean_edge": 26.95,
         "continuity": 0.281,
-        "score": 7.54
+        "score": 7.58
       },
       {
         "scene": "S01",
         "timestamp": 12.1,
         "column": 132,
-        "mean_edge": 27.96,
-        "continuity": 0.256,
-        "score": 7.17
+        "mean_edge": 27.91,
+        "continuity": 0.252,
+        "score": 7.04
       },
       {
         "scene": "S01",
         "timestamp": 12.6,
         "column": 55,
-        "mean_edge": 23.94,
-        "continuity": 0.242,
-        "score": 5.78
+        "mean_edge": 23.96,
+        "continuity": 0.244,
+        "score": 5.84
       },
       {
         "scene": "S01",
         "timestamp": 13.1,
         "column": 114,
-        "mean_edge": 25.89,
-        "continuity": 0.292,
-        "score": 7.55
+        "mean_edge": 25.86,
+        "continuity": 0.3,
+        "score": 7.76
       },
       {
         "scene": "S01",
         "timestamp": 13.6,
         "column": 141,
         "mean_edge": 28.25,
-        "continuity": 0.24,
-        "score": 6.77
+        "continuity": 0.242,
+        "score": 6.83
       },
       {
         "scene": "S01",
         "timestamp": 14.1,
-        "column": 100,
-        "mean_edge": 27.52,
-        "continuity": 0.215,
-        "score": 5.91
+        "column": 96,
+        "mean_edge": 26.66,
+        "continuity": 0.221,
+        "score": 5.89
       },
       {
         "scene": "S01",
         "timestamp": 14.6,
         "column": 20,
-        "mean_edge": 25.09,
+        "mean_edge": 25.15,
         "continuity": 0.254,
-        "score": 6.38
+        "score": 6.39
       },
       {
         "scene": "S01",
         "timestamp": 15.1,
         "column": 79,
-        "mean_edge": 25.05,
-        "continuity": 0.273,
-        "score": 6.84
+        "mean_edge": 25.03,
+        "continuity": 0.271,
+        "score": 6.78
       },
       {
         "scene": "S01",
         "timestamp": 15.6,
         "column": 201,
-        "mean_edge": 27.31,
-        "continuity": 0.233,
-        "score": 6.37
+        "mean_edge": 27.19,
+        "continuity": 0.227,
+        "score": 6.17
       },
       {
         "scene": "S01",
         "timestamp": 16.1,
         "column": 238,
-        "mean_edge": 24.03,
-        "continuity": 0.227,
-        "score": 5.46
+        "mean_edge": 19.89,
+        "continuity": 0.206,
+        "score": 4.1
       },
       {
         "scene": "S01",
         "timestamp": 16.6,
         "column": 229,
-        "mean_edge": 20.41,
-        "continuity": 0.215,
-        "score": 4.38
+        "mean_edge": 24.16,
+        "continuity": 0.233,
+        "score": 5.64
       },
       {
         "scene": "S01",
         "timestamp": 17.1,
         "column": 231,
-        "mean_edge": 22.06,
-        "continuity": 0.248,
-        "score": 5.47
+        "mean_edge": 23.66,
+        "continuity": 0.26,
+        "score": 6.16
       },
       {
         "scene": "S01",
         "timestamp": 17.6,
-        "column": 222,
-        "mean_edge": 21.72,
-        "continuity": 0.252,
-        "score": 5.47
+        "column": 212,
+        "mean_edge": 27.49,
+        "continuity": 0.254,
+        "score": 6.99
       },
       {
         "scene": "S01",
         "timestamp": 18.1,
         "column": 214,
-        "mean_edge": 20.19,
-        "continuity": 0.225,
-        "score": 4.54
+        "mean_edge": 20.22,
+        "continuity": 0.229,
+        "score": 4.63
       },
       {
         "scene": "S01",
         "timestamp": 18.6,
-        "column": 150,
-        "mean_edge": 25.31,
-        "continuity": 0.194,
-        "score": 4.9
+        "column": 204,
+        "mean_edge": 23.65,
+        "continuity": 0.233,
+        "score": 5.52
       },
       {
         "scene": "S01",
         "timestamp": 19.1,
-        "column": 196,
-        "mean_edge": 22.96,
-        "continuity": 0.256,
-        "score": 5.88
+        "column": 186,
+        "mean_edge": 24.86,
+        "continuity": 0.248,
+        "score": 6.16
       },
       {
         "scene": "S01",
         "timestamp": 19.6,
         "column": 187,
-        "mean_edge": 23.57,
-        "continuity": 0.263,
-        "score": 6.19
+        "mean_edge": 24.79,
+        "continuity": 0.271,
+        "score": 6.71
       },
       {
         "scene": "S01",
         "timestamp": 20.1,
         "column": 168,
-        "mean_edge": 28.84,
-        "continuity": 0.254,
-        "score": 7.33
+        "mean_edge": 20.94,
+        "continuity": 0.217,
+        "score": 4.54
       },
       {
         "scene": "S01",
         "timestamp": 20.6,
-        "column": 248,
-        "mean_edge": 20.55,
-        "continuity": 0.256,
-        "score": 5.27
+        "column": 169,
+        "mean_edge": 24.79,
+        "continuity": 0.252,
+        "score": 6.25
       },
       {
         "scene": "S01",
         "timestamp": 21.1,
-        "column": 151,
-        "mean_edge": 21.33,
-        "continuity": 0.25,
-        "score": 5.33
+        "column": 161,
+        "mean_edge": 24.93,
+        "continuity": 0.283,
+        "score": 7.06
       },
       {
         "scene": "S01",
         "timestamp": 21.6,
-        "column": 152,
-        "mean_edge": 27.45,
-        "continuity": 0.273,
-        "score": 7.49
+        "column": 248,
+        "mean_edge": 23.51,
+        "continuity": 0.277,
+        "score": 6.51
       },
       {
         "scene": "S01",
         "timestamp": 22.1,
         "column": 240,
-        "mean_edge": 21.72,
-        "continuity": 0.258,
-        "score": 5.61
+        "mean_edge": 21.86,
+        "continuity": 0.263,
+        "score": 5.74
       },
       {
         "scene": "S01",
         "timestamp": 22.6,
         "column": 231,
-        "mean_edge": 21.19,
-        "continuity": 0.24,
-        "score": 5.08
+        "mean_edge": 21.06,
+        "continuity": 0.237,
+        "score": 5.0
       },
       {
         "scene": "S01",
         "timestamp": 22.975,
-        "column": 127,
-        "mean_edge": 21.5,
-        "continuity": 0.24,
-        "score": 5.15
+        "column": 223,
+        "mean_edge": 21.01,
+        "continuity": 0.248,
+        "score": 5.21
       },
       {
         "scene": "S02",
         "timestamp": 23.125,
         "column": 115,
-        "mean_edge": 15.84,
-        "continuity": 0.15,
-        "score": 2.38
+        "mean_edge": 15.72,
+        "continuity": 0.152,
+        "score": 2.39
       },
       {
         "scene": "S02",
         "timestamp": 23.625,
         "column": 97,
-        "mean_edge": 27.66,
-        "continuity": 0.298,
-        "score": 8.24
+        "mean_edge": 27.61,
+        "continuity": 0.296,
+        "score": 8.17
       },
       {
         "scene": "S02",
         "timestamp": 24.125,
         "column": 83,
-        "mean_edge": 30.82,
-        "continuity": 0.302,
-        "score": 9.31
+        "mean_edge": 30.68,
+        "continuity": 0.306,
+        "score": 9.39
       },
       {
         "scene": "S02",
         "timestamp": 24.625,
         "column": 75,
-        "mean_edge": 28.62,
-        "continuity": 0.281,
-        "score": 8.05
+        "mean_edge": 28.71,
+        "continuity": 0.292,
+        "score": 8.37
       },
       {
         "scene": "S02",
         "timestamp": 25.125,
         "column": 183,
-        "mean_edge": 28.97,
-        "continuity": 0.267,
-        "score": 7.73
+        "mean_edge": 29.15,
+        "continuity": 0.275,
+        "score": 8.02
       },
       {
         "scene": "S02",
         "timestamp": 25.625,
         "column": 81,
-        "mean_edge": 34.59,
-        "continuity": 0.335,
-        "score": 11.6
+        "mean_edge": 34.7,
+        "continuity": 0.333,
+        "score": 11.57
       },
       {
         "scene": "S02",
         "timestamp": 26.125,
         "column": 81,
-        "mean_edge": 32.09,
-        "continuity": 0.269,
-        "score": 8.62
+        "mean_edge": 32.1,
+        "continuity": 0.265,
+        "score": 8.49
       },
       {
         "scene": "S02",
         "timestamp": 26.625,
         "column": 30,
-        "mean_edge": 24.9,
-        "continuity": 0.26,
-        "score": 6.48
+        "mean_edge": 25.0,
+        "continuity": 0.256,
+        "score": 6.41
       },
       {
         "scene": "S02",
         "timestamp": 27.125,
         "column": 20,
-        "mean_edge": 25.66,
-        "continuity": 0.267,
-        "score": 6.84
+        "mean_edge": 25.64,
+        "continuity": 0.271,
+        "score": 6.94
       },
       {
         "scene": "S02",
         "timestamp": 27.625,
         "column": 158,
-        "mean_edge": 24.1,
-        "continuity": 0.212,
-        "score": 5.12
+        "mean_edge": 24.0,
+        "continuity": 0.21,
+        "score": 5.05
       },
       {
         "scene": "S02",
         "timestamp": 28.125,
         "column": 116,
-        "mean_edge": 24.03,
-        "continuity": 0.265,
-        "score": 6.36
+        "mean_edge": 24.16,
+        "continuity": 0.252,
+        "score": 6.09
       },
       {
         "scene": "S02",
         "timestamp": 28.625,
         "column": 104,
-        "mean_edge": 25.99,
-        "continuity": 0.271,
-        "score": 7.04
+        "mean_edge": 25.95,
+        "continuity": 0.269,
+        "score": 6.98
       },
       {
         "scene": "S02",
         "timestamp": 29.125,
         "column": 97,
-        "mean_edge": 25.15,
-        "continuity": 0.248,
-        "score": 6.24
+        "mean_edge": 25.23,
+        "continuity": 0.246,
+        "score": 6.2
       },
       {
         "scene": "S02",
         "timestamp": 29.625,
         "column": 223,
-        "mean_edge": 21.71,
-        "continuity": 0.242,
-        "score": 5.25
+        "mean_edge": 21.61,
+        "continuity": 0.25,
+        "score": 5.4
       },
       {
         "scene": "S02",
         "timestamp": 30.125,
         "column": 197,
-        "mean_edge": 24.2,
+        "mean_edge": 24.19,
         "continuity": 0.265,
         "score": 6.4
       },
@@ -517,7 +523,7 @@
         "scene": "S02",
         "timestamp": 30.625,
         "column": 205,
-        "mean_edge": 27.3,
+        "mean_edge": 27.31,
         "continuity": 0.275,
         "score": 7.51
       },
@@ -525,8 +531,8 @@
         "scene": "S02",
         "timestamp": 31.125,
         "column": 187,
-        "mean_edge": 27.45,
-        "continuity": 0.265,
+        "mean_edge": 27.23,
+        "continuity": 0.267,
         "score": 7.26
       },
       {
@@ -534,94 +540,94 @@
         "timestamp": 31.625,
         "column": 183,
         "mean_edge": 27.47,
-        "continuity": 0.275,
-        "score": 7.55
+        "continuity": 0.281,
+        "score": 7.73
       },
       {
         "scene": "S02",
         "timestamp": 32.125,
-        "column": 240,
-        "mean_edge": 23.66,
-        "continuity": 0.285,
-        "score": 6.75
+        "column": 172,
+        "mean_edge": 25.15,
+        "continuity": 0.271,
+        "score": 6.81
       },
       {
         "scene": "S02",
         "timestamp": 32.625,
         "column": 164,
-        "mean_edge": 28.2,
-        "continuity": 0.26,
-        "score": 7.34
+        "mean_edge": 28.24,
+        "continuity": 0.263,
+        "score": 7.41
       },
       {
         "scene": "S02",
         "timestamp": 33.125,
-        "column": 150,
-        "mean_edge": 25.67,
-        "continuity": 0.292,
-        "score": 7.49
+        "column": 221,
+        "mean_edge": 28.3,
+        "continuity": 0.263,
+        "score": 7.43
       },
       {
         "scene": "S02",
         "timestamp": 33.625,
         "column": 134,
-        "mean_edge": 27.13,
-        "continuity": 0.277,
-        "score": 7.52
+        "mean_edge": 27.02,
+        "continuity": 0.275,
+        "score": 7.43
       },
       {
         "scene": "S02",
         "timestamp": 34.125,
         "column": 199,
-        "mean_edge": 27.16,
-        "continuity": 0.294,
-        "score": 7.98
+        "mean_edge": 27.18,
+        "continuity": 0.29,
+        "score": 7.87
       },
       {
         "scene": "S02",
         "timestamp": 34.625,
         "column": 244,
-        "mean_edge": 28.56,
-        "continuity": 0.279,
-        "score": 7.97
+        "mean_edge": 28.4,
+        "continuity": 0.275,
+        "score": 7.81
       },
       {
         "scene": "S02",
         "timestamp": 35.125,
         "column": 105,
-        "mean_edge": 28.22,
-        "continuity": 0.25,
-        "score": 7.06
+        "mean_edge": 28.29,
+        "continuity": 0.258,
+        "score": 7.31
       },
       {
         "scene": "S02",
         "timestamp": 35.625,
         "column": 213,
-        "mean_edge": 27.21,
-        "continuity": 0.29,
-        "score": 7.88
+        "mean_edge": 27.13,
+        "continuity": 0.292,
+        "score": 7.91
       },
       {
         "scene": "S02",
         "timestamp": 36.125,
         "column": 212,
-        "mean_edge": 29.11,
-        "continuity": 0.294,
-        "score": 8.55
+        "mean_edge": 29.07,
+        "continuity": 0.3,
+        "score": 8.72
       },
       {
         "scene": "S02",
         "timestamp": 36.625,
         "column": 191,
-        "mean_edge": 35.32,
-        "continuity": 0.294,
-        "score": 10.38
+        "mean_edge": 35.45,
+        "continuity": 0.292,
+        "score": 10.34
       },
       {
         "scene": "S02",
         "timestamp": 37.125,
         "column": 191,
-        "mean_edge": 31.94,
+        "mean_edge": 31.96,
         "continuity": 0.25,
         "score": 7.99
       },
@@ -629,135 +635,135 @@
         "scene": "S02",
         "timestamp": 37.625,
         "column": 174,
-        "mean_edge": 31.37,
-        "continuity": 0.312,
-        "score": 9.8
+        "mean_edge": 31.36,
+        "continuity": 0.31,
+        "score": 9.74
       },
       {
         "scene": "S02",
         "timestamp": 38.125,
         "column": 174,
-        "mean_edge": 31.25,
-        "continuity": 0.298,
-        "score": 9.31
+        "mean_edge": 31.32,
+        "continuity": 0.304,
+        "score": 9.53
       },
       {
         "scene": "S02",
         "timestamp": 38.625,
         "column": 162,
-        "mean_edge": 30.96,
-        "continuity": 0.323,
-        "score": 10.0
+        "mean_edge": 31.0,
+        "continuity": 0.327,
+        "score": 10.14
       },
       {
         "scene": "S02",
         "timestamp": 39.125,
         "column": 146,
-        "mean_edge": 27.0,
-        "continuity": 0.29,
-        "score": 7.82
+        "mean_edge": 27.01,
+        "continuity": 0.306,
+        "score": 8.27
       },
       {
         "scene": "S02",
         "timestamp": 39.625,
         "column": 125,
-        "mean_edge": 27.65,
-        "continuity": 0.285,
-        "score": 7.89
+        "mean_edge": 27.83,
+        "continuity": 0.294,
+        "score": 8.17
       },
       {
         "scene": "S02",
         "timestamp": 40.125,
         "column": 121,
-        "mean_edge": 27.54,
+        "mean_edge": 27.49,
         "continuity": 0.277,
-        "score": 7.63
+        "score": 7.62
       },
       {
         "scene": "S02",
         "timestamp": 40.625,
         "column": 118,
-        "mean_edge": 26.24,
-        "continuity": 0.29,
-        "score": 7.6
+        "mean_edge": 26.14,
+        "continuity": 0.292,
+        "score": 7.62
       },
       {
         "scene": "S02",
         "timestamp": 41.125,
         "column": 101,
-        "mean_edge": 23.12,
-        "continuity": 0.275,
-        "score": 6.36
+        "mean_edge": 23.21,
+        "continuity": 0.265,
+        "score": 6.14
       },
       {
         "scene": "S02",
         "timestamp": 41.224,
         "column": 99,
-        "mean_edge": 24.01,
-        "continuity": 0.285,
-        "score": 6.85
+        "mean_edge": 24.11,
+        "continuity": 0.287,
+        "score": 6.93
       },
       {
         "scene": "S03",
         "timestamp": 41.374,
         "column": 95,
         "mean_edge": 15.81,
-        "continuity": 0.129,
-        "score": 2.04
+        "continuity": 0.123,
+        "score": 1.94
       },
       {
         "scene": "S03",
         "timestamp": 41.874,
         "column": 116,
-        "mean_edge": 29.48,
-        "continuity": 0.319,
-        "score": 9.4
+        "mean_edge": 29.46,
+        "continuity": 0.321,
+        "score": 9.45
       },
       {
         "scene": "S03",
         "timestamp": 42.374,
         "column": 105,
-        "mean_edge": 27.82,
-        "continuity": 0.277,
-        "score": 7.71
+        "mean_edge": 27.83,
+        "continuity": 0.279,
+        "score": 7.77
       },
       {
         "scene": "S03",
         "timestamp": 42.874,
         "column": 93,
-        "mean_edge": 23.21,
-        "continuity": 0.275,
-        "score": 6.38
+        "mean_edge": 23.09,
+        "continuity": 0.273,
+        "score": 6.3
       },
       {
         "scene": "S03",
         "timestamp": 43.374,
         "column": 81,
-        "mean_edge": 29.41,
+        "mean_edge": 29.43,
         "continuity": 0.312,
-        "score": 9.19
+        "score": 9.2
       },
       {
         "scene": "S03",
         "timestamp": 43.874,
         "column": 69,
-        "mean_edge": 25.05,
-        "continuity": 0.267,
-        "score": 6.68
+        "mean_edge": 25.08,
+        "continuity": 0.265,
+        "score": 6.64
       },
       {
         "scene": "S03",
         "timestamp": 44.374,
         "column": 57,
-        "mean_edge": 30.76,
+        "mean_edge": 30.85,
         "continuity": 0.319,
-        "score": 9.81
+        "score": 9.83
       },
       {
         "scene": "S03",
         "timestamp": 44.874,
         "column": 45,
-        "mean_edge": 24.71,
+        "mean_edge": 24.68,
         "continuity": 0.242,
         "score": 5.97
       },
@@ -765,71 +771,71 @@
         "scene": "S03",
         "timestamp": 45.374,
         "column": 33,
-        "mean_edge": 29.82,
-        "continuity": 0.298,
-        "score": 8.88
+        "mean_edge": 29.81,
+        "continuity": 0.3,
+        "score": 8.94
       },
       {
         "scene": "S03",
         "timestamp": 45.874,
         "column": 21,
-        "mean_edge": 22.81,
-        "continuity": 0.246,
-        "score": 5.61
+        "mean_edge": 22.79,
+        "continuity": 0.25,
+        "score": 5.7
       },
       {
         "scene": "S03",
         "timestamp": 46.374,
         "column": 63,
-        "mean_edge": 17.4,
+        "mean_edge": 17.52,
         "continuity": 0.202,
-        "score": 3.52
+        "score": 3.54
       },
       {
         "scene": "S03",
         "timestamp": 46.874,
         "column": 95,
-        "mean_edge": 23.08,
-        "continuity": 0.2,
-        "score": 4.62
+        "mean_edge": 23.18,
+        "continuity": 0.202,
+        "score": 4.68
       },
       {
         "scene": "S03",
         "timestamp": 47.374,
         "column": 44,
-        "mean_edge": 23.49,
-        "continuity": 0.19,
-        "score": 4.45
+        "mean_edge": 23.43,
+        "continuity": 0.188,
+        "score": 4.39
       },
       {
         "scene": "S03",
         "timestamp": 47.874,
         "column": 71,
         "mean_edge": 17.65,
-        "continuity": 0.179,
-        "score": 3.16
+        "continuity": 0.181,
+        "score": 3.2
       },
       {
         "scene": "S03",
         "timestamp": 48.374,
         "column": 59,
-        "mean_edge": 18.84,
-        "continuity": 0.181,
-        "score": 3.41
+        "mean_edge": 18.82,
+        "continuity": 0.177,
+        "score": 3.33
       },
       {
         "scene": "S03",
         "timestamp": 48.874,
         "column": 47,
-        "mean_edge": 16.35,
+        "mean_edge": 16.38,
         "continuity": 0.15,
-        "score": 2.45
+        "score": 2.46
       },
       {
         "scene": "S03",
         "timestamp": 49.374,
         "column": 104,
-        "mean_edge": 22.17,
+        "mean_edge": 22.16,
         "continuity": 0.142,
         "score": 3.14
       },
@@ -837,143 +843,143 @@
         "scene": "S03",
         "timestamp": 49.874,
         "column": 108,
-        "mean_edge": 20.7,
+        "mean_edge": 20.64,
         "continuity": 0.148,
-        "score": 3.06
+        "score": 3.05
       },
       {
         "scene": "S03",
         "timestamp": 50.374,
         "column": 106,
-        "mean_edge": 19.75,
+        "mean_edge": 19.59,
         "continuity": 0.146,
-        "score": 2.88
+        "score": 2.86
       },
       {
         "scene": "S03",
         "timestamp": 50.874,
         "column": 66,
-        "mean_edge": 14.68,
-        "continuity": 0.121,
-        "score": 1.77
+        "mean_edge": 14.63,
+        "continuity": 0.119,
+        "score": 1.74
       },
       {
         "scene": "S03",
         "timestamp": 51.374,
         "column": 56,
-        "mean_edge": 21.3,
-        "continuity": 0.154,
-        "score": 3.28
+        "mean_edge": 21.2,
+        "continuity": 0.152,
+        "score": 3.22
       },
       {
         "scene": "S03",
         "timestamp": 51.874,
         "column": 140,
-        "mean_edge": 19.7,
-        "continuity": 0.154,
-        "score": 3.04
+        "mean_edge": 19.67,
+        "continuity": 0.158,
+        "score": 3.11
       },
       {
         "scene": "S03",
         "timestamp": 52.374,
         "column": 128,
-        "mean_edge": 19.27,
+        "mean_edge": 19.34,
         "continuity": 0.148,
-        "score": 2.85
+        "score": 2.86
       },
       {
         "scene": "S03",
         "timestamp": 52.874,
         "column": 169,
-        "mean_edge": 22.08,
+        "mean_edge": 21.96,
         "continuity": 0.142,
-        "score": 3.13
+        "score": 3.11
       },
       {
         "scene": "S03",
         "timestamp": 53.374,
         "column": 104,
-        "mean_edge": 19.12,
-        "continuity": 0.148,
-        "score": 2.83
+        "mean_edge": 19.01,
+        "continuity": 0.154,
+        "score": 2.93
       },
       {
         "scene": "S03",
         "timestamp": 53.874,
         "column": 211,
-        "mean_edge": 15.57,
-        "continuity": 0.121,
-        "score": 1.88
+        "mean_edge": 15.56,
+        "continuity": 0.119,
+        "score": 1.85
       },
       {
         "scene": "S03",
         "timestamp": 54.374,
         "column": 219,
-        "mean_edge": 18.62,
+        "mean_edge": 18.66,
         "continuity": 0.133,
-        "score": 2.48
+        "score": 2.49
       },
       {
         "scene": "S03",
         "timestamp": 54.874,
-        "column": 67,
-        "mean_edge": 13.11,
-        "continuity": 0.098,
-        "score": 1.28
+        "column": 68,
+        "mean_edge": 13.13,
+        "continuity": 0.104,
+        "score": 1.37
       },
       {
         "scene": "S03",
         "timestamp": 55.374,
         "column": 56,
-        "mean_edge": 21.67,
-        "continuity": 0.152,
-        "score": 3.3
+        "mean_edge": 21.58,
+        "continuity": 0.15,
+        "score": 3.24
       },
       {
         "scene": "S03",
         "timestamp": 55.874,
         "column": 43,
-        "mean_edge": 21.19,
+        "mean_edge": 21.07,
         "continuity": 0.156,
-        "score": 3.31
+        "score": 3.29
       },
       {
         "scene": "S03",
         "timestamp": 56.374,
         "column": 193,
-        "mean_edge": 18.79,
-        "continuity": 0.123,
-        "score": 2.31
+        "mean_edge": 18.87,
+        "continuity": 0.127,
+        "score": 2.4
       },
       {
         "scene": "S03",
         "timestamp": 56.874,
         "column": 214,
-        "mean_edge": 21.08,
-        "continuity": 0.144,
-        "score": 3.03
+        "mean_edge": 21.09,
+        "continuity": 0.142,
+        "score": 2.99
       },
       {
         "scene": "S03",
         "timestamp": 57.374,
         "column": 208,
         "mean_edge": 19.32,
-        "continuity": 0.135,
-        "score": 2.62
+        "continuity": 0.131,
+        "score": 2.54
       },
       {
         "scene": "S03",
         "timestamp": 57.874,
         "column": 245,
         "mean_edge": 15.82,
-        "continuity": 0.142,
-        "score": 2.24
+        "continuity": 0.144,
+        "score": 2.27
       },
       {
         "scene": "S03",
         "timestamp": 58.049,
         "column": 244,
-        "mean_edge": 16.16,
+        "mean_edge": 16.18,
         "continuity": 0.148,
         "score": 2.39
       },
@@ -981,725 +987,781 @@
         "scene": "S04",
         "timestamp": 58.199,
         "column": 81,
-        "mean_edge": 13.69,
-        "continuity": 0.119,
-        "score": 1.63
+        "mean_edge": 13.68,
+        "continuity": 0.123,
+        "score": 1.68
       },
       {
         "scene": "S04",
         "timestamp": 58.699,
-        "column": 133,
-        "mean_edge": 29.46,
-        "continuity": 0.327,
-        "score": 9.63
+        "column": 71,
+        "mean_edge": 35.26,
+        "continuity": 0.344,
+        "score": 12.12
       },
       {
         "scene": "S04",
         "timestamp": 59.199,
-        "column": 105,
-        "mean_edge": 28.44,
-        "continuity": 0.321,
-        "score": 9.12
+        "column": 62,
+        "mean_edge": 35.99,
+        "continuity": 0.371,
+        "score": 13.34
       },
       {
         "scene": "S04",
         "timestamp": 59.699,
-        "column": 111,
-        "mean_edge": 29.05,
-        "continuity": 0.325,
-        "score": 9.44
+        "column": 52,
+        "mean_edge": 31.77,
+        "continuity": 0.344,
+        "score": 10.92
       },
       {
         "scene": "S04",
         "timestamp": 60.199,
-        "column": 83,
-        "mean_edge": 28.23,
-        "continuity": 0.335,
-        "score": 9.47
+        "column": 82,
+        "mean_edge": 31.36,
+        "continuity": 0.312,
+        "score": 9.8
       },
       {
         "scene": "S04",
         "timestamp": 60.699,
-        "column": 89,
-        "mean_edge": 31.66,
-        "continuity": 0.35,
-        "score": 11.08
+        "column": 96,
+        "mean_edge": 26.94,
+        "continuity": 0.308,
+        "score": 8.31
       },
       {
         "scene": "S04",
         "timestamp": 61.199,
-        "column": 78,
-        "mean_edge": 30.75,
-        "continuity": 0.362,
-        "score": 11.15
+        "column": 87,
+        "mean_edge": 29.9,
+        "continuity": 0.346,
+        "score": 10.34
       },
       {
         "scene": "S04",
         "timestamp": 61.699,
-        "column": 67,
-        "mean_edge": 35.97,
-        "continuity": 0.344,
-        "score": 12.37
+        "column": 77,
+        "mean_edge": 30.71,
+        "continuity": 0.331,
+        "score": 10.17
       },
       {
         "scene": "S04",
         "timestamp": 62.199,
-        "column": 56,
-        "mean_edge": 25.93,
-        "continuity": 0.321,
-        "score": 8.32
+        "column": 68,
+        "mean_edge": 26.66,
+        "continuity": 0.29,
+        "score": 7.72
       },
       {
         "scene": "S04",
         "timestamp": 62.699,
-        "column": 45,
-        "mean_edge": 29.35,
-        "continuity": 0.323,
-        "score": 9.48
+        "column": 58,
+        "mean_edge": 26.24,
+        "continuity": 0.283,
+        "score": 7.44
       },
       {
         "scene": "S04",
         "timestamp": 63.199,
-        "column": 34,
-        "mean_edge": 25.26,
-        "continuity": 0.302,
-        "score": 7.63
+        "column": 83,
+        "mean_edge": 24.57,
+        "continuity": 0.256,
+        "score": 6.3
       },
       {
         "scene": "S04",
         "timestamp": 63.699,
-        "column": 23,
-        "mean_edge": 26.87,
-        "continuity": 0.285,
-        "score": 7.67
+        "column": 21,
+        "mean_edge": 23.7,
+        "continuity": 0.275,
+        "score": 6.52
       },
       {
         "scene": "S04",
         "timestamp": 64.199,
-        "column": 28,
-        "mean_edge": 20.93,
-        "continuity": 0.231,
-        "score": 4.84
+        "column": 29,
+        "mean_edge": 25.8,
+        "continuity": 0.3,
+        "score": 7.74
       },
       {
         "scene": "S04",
         "timestamp": 64.699,
-        "column": 88,
-        "mean_edge": 28.49,
-        "continuity": 0.208,
-        "score": 5.93
+        "column": 78,
+        "mean_edge": 28.29,
+        "continuity": 0.248,
+        "score": 7.01
       },
       {
         "scene": "S04",
         "timestamp": 65.199,
-        "column": 88,
-        "mean_edge": 28.55,
-        "continuity": 0.215,
-        "score": 6.13
+        "column": 26,
+        "mean_edge": 21.5,
+        "continuity": 0.242,
+        "score": 5.19
       },
       {
         "scene": "S04",
         "timestamp": 65.699,
-        "column": 88,
-        "mean_edge": 28.4,
-        "continuity": 0.206,
-        "score": 5.86
+        "column": 50,
+        "mean_edge": 26.55,
+        "continuity": 0.231,
+        "score": 6.14
       },
       {
         "scene": "S04",
         "timestamp": 66.199,
-        "column": 58,
-        "mean_edge": 19.89,
-        "continuity": 0.221,
-        "score": 4.39
+        "column": 50,
+        "mean_edge": 26.05,
+        "continuity": 0.244,
+        "score": 6.35
       },
       {
         "scene": "S04",
         "timestamp": 66.699,
-        "column": 76,
-        "mean_edge": 25.12,
-        "continuity": 0.208,
-        "score": 5.23
+        "column": 56,
+        "mean_edge": 21.27,
+        "continuity": 0.252,
+        "score": 5.36
       },
       {
         "scene": "S04",
         "timestamp": 67.199,
-        "column": 47,
-        "mean_edge": 21.66,
-        "continuity": 0.229,
-        "score": 4.96
+        "column": 61,
+        "mean_edge": 21.99,
+        "continuity": 0.221,
+        "score": 4.86
       },
       {
         "scene": "S04",
         "timestamp": 67.699,
-        "column": 36,
-        "mean_edge": 18.89,
-        "continuity": 0.212,
-        "score": 4.01
+        "column": 29,
+        "mean_edge": 23.34,
+        "continuity": 0.242,
+        "score": 5.64
       },
       {
         "scene": "S04",
         "timestamp": 68.199,
-        "column": 26,
-        "mean_edge": 19.8,
-        "continuity": 0.196,
-        "score": 3.88
+        "column": 55,
+        "mean_edge": 26.62,
+        "continuity": 0.235,
+        "score": 6.27
       },
       {
         "scene": "S04",
         "timestamp": 68.699,
-        "column": 216,
-        "mean_edge": 22.73,
-        "continuity": 0.192,
-        "score": 4.36
+        "column": 32,
+        "mean_edge": 23.51,
+        "continuity": 0.244,
+        "score": 5.73
       },
       {
         "scene": "S04",
         "timestamp": 69.199,
-        "column": 201,
-        "mean_edge": 21.36,
-        "continuity": 0.194,
-        "score": 4.14
+        "column": 40,
+        "mean_edge": 26.91,
+        "continuity": 0.217,
+        "score": 5.83
       },
       {
         "scene": "S04",
         "timestamp": 69.699,
-        "column": 157,
-        "mean_edge": 21.23,
-        "continuity": 0.163,
-        "score": 3.45
+        "column": 28,
+        "mean_edge": 22.62,
+        "continuity": 0.215,
+        "score": 4.85
       },
       {
         "scene": "S04",
         "timestamp": 70.199,
-        "column": 166,
-        "mean_edge": 19.96,
-        "continuity": 0.177,
-        "score": 3.53
+        "column": 33,
+        "mean_edge": 22.13,
+        "continuity": 0.192,
+        "score": 4.24
       },
       {
         "scene": "S04",
         "timestamp": 70.699,
-        "column": 209,
-        "mean_edge": 21.25,
-        "continuity": 0.173,
-        "score": 3.67
+        "column": 205,
+        "mean_edge": 25.0,
+        "continuity": 0.181,
+        "score": 4.53
       },
       {
         "scene": "S04",
         "timestamp": 71.199,
-        "column": 124,
-        "mean_edge": 15.27,
-        "continuity": 0.142,
-        "score": 2.16
+        "column": 187,
+        "mean_edge": 22.62,
+        "continuity": 0.196,
+        "score": 4.43
       },
       {
         "scene": "S04",
         "timestamp": 71.699,
-        "column": 145,
-        "mean_edge": 21.26,
-        "continuity": 0.196,
-        "score": 4.16
+        "column": 188,
+        "mean_edge": 20.78,
+        "continuity": 0.212,
+        "score": 4.42
       },
       {
         "scene": "S04",
         "timestamp": 72.199,
-        "column": 145,
-        "mean_edge": 21.44,
-        "continuity": 0.179,
-        "score": 3.84
+        "column": 217,
+        "mean_edge": 21.94,
+        "continuity": 0.196,
+        "score": 4.3
       },
       {
         "scene": "S04",
         "timestamp": 72.699,
-        "column": 59,
-        "mean_edge": 24.3,
-        "continuity": 0.15,
-        "score": 3.65
+        "column": 187,
+        "mean_edge": 22.27,
+        "continuity": 0.185,
+        "score": 4.13
       },
       {
         "scene": "S04",
         "timestamp": 73.199,
-        "column": 214,
-        "mean_edge": 22.21,
-        "continuity": 0.198,
-        "score": 4.39
+        "column": 142,
+        "mean_edge": 24.8,
+        "continuity": 0.194,
+        "score": 4.8
       },
       {
         "scene": "S04",
         "timestamp": 73.699,
-        "column": 213,
-        "mean_edge": 22.27,
-        "continuity": 0.212,
-        "score": 4.73
+        "column": 111,
+        "mean_edge": 14.5,
+        "continuity": 0.142,
+        "score": 2.05
       },
       {
         "scene": "S04",
         "timestamp": 74.199,
-        "column": 202,
-        "mean_edge": 23.19,
-        "continuity": 0.219,
-        "score": 5.07
+        "column": 240,
+        "mean_edge": 22.49,
+        "continuity": 0.175,
+        "score": 3.94
       },
       {
         "scene": "S04",
         "timestamp": 74.699,
-        "column": 191,
-        "mean_edge": 25.35,
-        "continuity": 0.219,
-        "score": 5.54
+        "column": 223,
+        "mean_edge": 23.65,
+        "continuity": 0.181,
+        "score": 4.29
       },
       {
         "scene": "S04",
         "timestamp": 75.199,
-        "column": 218,
-        "mean_edge": 21.49,
-        "continuity": 0.212,
-        "score": 4.57
+        "column": 223,
+        "mean_edge": 23.93,
+        "continuity": 0.179,
+        "score": 4.29
       },
       {
         "scene": "S04",
         "timestamp": 75.699,
-        "column": 247,
-        "mean_edge": 17.46,
-        "continuity": 0.19,
-        "score": 3.31
+        "column": 217,
+        "mean_edge": 23.24,
+        "continuity": 0.202,
+        "score": 4.7
       },
       {
         "scene": "S04",
         "timestamp": 76.199,
-        "column": 237,
-        "mean_edge": 17.31,
-        "continuity": 0.185,
-        "score": 3.21
+        "column": 208,
+        "mean_edge": 23.83,
+        "continuity": 0.229,
+        "score": 5.46
       },
       {
         "scene": "S04",
-        "timestamp": 76.308,
-        "column": 232,
-        "mean_edge": 17.54,
-        "continuity": 0.194,
-        "score": 3.4
-      },
-      {
-        "scene": "S05",
-        "timestamp": 76.458,
-        "column": 193,
-        "mean_edge": 11.9,
-        "continuity": 0.079,
-        "score": 0.94
-      },
-      {
-        "scene": "S05",
-        "timestamp": 76.958,
-        "column": 158,
-        "mean_edge": 25.38,
-        "continuity": 0.219,
-        "score": 5.55
-      },
-      {
-        "scene": "S05",
-        "timestamp": 77.458,
-        "column": 135,
-        "mean_edge": 27.37,
-        "continuity": 0.24,
-        "score": 6.56
-      },
-      {
-        "scene": "S05",
-        "timestamp": 77.958,
-        "column": 158,
-        "mean_edge": 26.3,
-        "continuity": 0.235,
-        "score": 6.19
-      },
-      {
-        "scene": "S05",
-        "timestamp": 78.458,
-        "column": 161,
-        "mean_edge": 24.91,
-        "continuity": 0.217,
-        "score": 5.4
-      },
-      {
-        "scene": "S05",
-        "timestamp": 78.958,
-        "column": 135,
-        "mean_edge": 25.51,
-        "continuity": 0.231,
-        "score": 5.9
-      },
-      {
-        "scene": "S05",
-        "timestamp": 79.458,
-        "column": 47,
-        "mean_edge": 26.58,
-        "continuity": 0.237,
-        "score": 6.31
-      },
-      {
-        "scene": "S05",
-        "timestamp": 79.958,
-        "column": 161,
-        "mean_edge": 25.18,
-        "continuity": 0.206,
-        "score": 5.19
-      },
-      {
-        "scene": "S05",
-        "timestamp": 80.458,
-        "column": 102,
-        "mean_edge": 20.79,
-        "continuity": 0.177,
-        "score": 3.68
-      },
-      {
-        "scene": "S05",
-        "timestamp": 80.958,
-        "column": 69,
-        "mean_edge": 17.24,
-        "continuity": 0.165,
-        "score": 2.84
-      },
-      {
-        "scene": "S05",
-        "timestamp": 81.458,
-        "column": 217,
-        "mean_edge": 16.84,
-        "continuity": 0.148,
-        "score": 2.49
-      },
-      {
-        "scene": "S05",
-        "timestamp": 81.958,
-        "column": 149,
-        "mean_edge": 20.26,
-        "continuity": 0.165,
-        "score": 3.33
-      },
-      {
-        "scene": "S05",
-        "timestamp": 82.458,
-        "column": 22,
-        "mean_edge": 19.77,
-        "continuity": 0.179,
-        "score": 3.54
-      },
-      {
-        "scene": "S05",
-        "timestamp": 82.958,
-        "column": 185,
-        "mean_edge": 18.65,
-        "continuity": 0.173,
-        "score": 3.22
-      },
-      {
-        "scene": "S05",
-        "timestamp": 83.458,
-        "column": 174,
-        "mean_edge": 15.4,
-        "continuity": 0.156,
-        "score": 2.41
-      },
-      {
-        "scene": "S05",
-        "timestamp": 83.958,
-        "column": 159,
-        "mean_edge": 19.43,
-        "continuity": 0.194,
-        "score": 3.77
-      },
-      {
-        "scene": "S05",
-        "timestamp": 84.458,
-        "column": 149,
-        "mean_edge": 22.0,
-        "continuity": 0.194,
-        "score": 4.26
-      },
-      {
-        "scene": "S05",
-        "timestamp": 84.958,
-        "column": 125,
-        "mean_edge": 22.39,
-        "continuity": 0.204,
-        "score": 4.57
-      },
-      {
-        "scene": "S05",
-        "timestamp": 85.458,
-        "column": 137,
-        "mean_edge": 23.92,
-        "continuity": 0.225,
-        "score": 5.38
-      },
-      {
-        "scene": "S05",
-        "timestamp": 85.958,
-        "column": 122,
-        "mean_edge": 25.03,
-        "continuity": 0.208,
-        "score": 5.21
-      },
-      {
-        "scene": "S05",
-        "timestamp": 86.458,
-        "column": 97,
-        "mean_edge": 24.51,
-        "continuity": 0.221,
-        "score": 5.41
-      },
-      {
-        "scene": "S05",
-        "timestamp": 86.958,
+        "timestamp": 76.699,
         "column": 92,
-        "mean_edge": 23.53,
-        "continuity": 0.235,
-        "score": 5.54
-      },
-      {
-        "scene": "S05",
-        "timestamp": 87.458,
-        "column": 81,
-        "mean_edge": 22.61,
-        "continuity": 0.223,
-        "score": 5.04
-      },
-      {
-        "scene": "S05",
-        "timestamp": 87.958,
-        "column": 68,
-        "mean_edge": 23.12,
-        "continuity": 0.215,
-        "score": 4.96
-      },
-      {
-        "scene": "S05",
-        "timestamp": 88.458,
-        "column": 58,
-        "mean_edge": 26.65,
-        "continuity": 0.231,
-        "score": 6.16
-      },
-      {
-        "scene": "S05",
-        "timestamp": 88.958,
-        "column": 210,
-        "mean_edge": 27.88,
-        "continuity": 0.194,
-        "score": 5.4
-      },
-      {
-        "scene": "S05",
-        "timestamp": 89.458,
-        "column": 36,
-        "mean_edge": 16.16,
-        "continuity": 0.146,
-        "score": 2.36
-      },
-      {
-        "scene": "S05",
-        "timestamp": 89.958,
-        "column": 51,
-        "mean_edge": 17.68,
-        "continuity": 0.181,
-        "score": 3.2
-      },
-      {
-        "scene": "S05",
-        "timestamp": 90.458,
-        "column": 169,
-        "mean_edge": 18.34,
+        "mean_edge": 22.43,
         "continuity": 0.183,
-        "score": 3.36
+        "score": 4.11
+      },
+      {
+        "scene": "S04",
+        "timestamp": 77.199,
+        "column": 163,
+        "mean_edge": 20.94,
+        "continuity": 0.185,
+        "score": 3.88
+      },
+      {
+        "scene": "S04",
+        "timestamp": 77.699,
+        "column": 178,
+        "mean_edge": 25.97,
+        "continuity": 0.233,
+        "score": 6.06
+      },
+      {
+        "scene": "S04",
+        "timestamp": 78.199,
+        "column": 169,
+        "mean_edge": 22.95,
+        "continuity": 0.217,
+        "score": 4.97
+      },
+      {
+        "scene": "S04",
+        "timestamp": 78.699,
+        "column": 241,
+        "mean_edge": 17.74,
+        "continuity": 0.185,
+        "score": 3.29
+      },
+      {
+        "scene": "S04",
+        "timestamp": 78.96,
+        "column": 232,
+        "mean_edge": 17.7,
+        "continuity": 0.196,
+        "score": 3.47
       },
       {
         "scene": "S05",
-        "timestamp": 90.958,
-        "column": 157,
-        "mean_edge": 16.16,
-        "continuity": 0.165,
+        "timestamp": 79.11,
+        "column": 193,
+        "mean_edge": 11.91,
+        "continuity": 0.09,
+        "score": 1.07
+      },
+      {
+        "scene": "S05",
+        "timestamp": 79.61,
+        "column": 104,
+        "mean_edge": 19.29,
+        "continuity": 0.208,
+        "score": 4.02
+      },
+      {
+        "scene": "S05",
+        "timestamp": 80.11,
+        "column": 91,
+        "mean_edge": 21.33,
+        "continuity": 0.208,
+        "score": 4.44
+      },
+      {
+        "scene": "S05",
+        "timestamp": 80.61,
+        "column": 92,
+        "mean_edge": 22.89,
+        "continuity": 0.202,
+        "score": 4.63
+      },
+      {
+        "scene": "S05",
+        "timestamp": 81.11,
+        "column": 210,
+        "mean_edge": 22.36,
+        "continuity": 0.183,
+        "score": 4.1
+      },
+      {
+        "scene": "S05",
+        "timestamp": 81.61,
+        "column": 61,
+        "mean_edge": 21.61,
+        "continuity": 0.202,
+        "score": 4.37
+      },
+      {
+        "scene": "S05",
+        "timestamp": 82.11,
+        "column": 75,
+        "mean_edge": 21.27,
+        "continuity": 0.215,
+        "score": 4.56
+      },
+      {
+        "scene": "S05",
+        "timestamp": 82.61,
+        "column": 83,
+        "mean_edge": 17.47,
+        "continuity": 0.152,
         "score": 2.66
       },
       {
         "scene": "S05",
-        "timestamp": 91.458,
-        "column": 147,
-        "mean_edge": 14.9,
-        "continuity": 0.144,
-        "score": 2.14
+        "timestamp": 83.11,
+        "column": 53,
+        "mean_edge": 23.73,
+        "continuity": 0.183,
+        "score": 4.35
       },
       {
         "scene": "S05",
-        "timestamp": 91.958,
-        "column": 142,
-        "mean_edge": 20.24,
-        "continuity": 0.169,
-        "score": 3.42
-      },
-      {
-        "scene": "S05",
-        "timestamp": 92.458,
-        "column": 124,
-        "mean_edge": 23.38,
+        "timestamp": 83.61,
+        "column": 96,
+        "mean_edge": 23.48,
         "continuity": 0.202,
+        "score": 4.74
+      },
+      {
+        "scene": "S05",
+        "timestamp": 84.11,
+        "column": 205,
+        "mean_edge": 22.36,
+        "continuity": 0.185,
+        "score": 4.15
+      },
+      {
+        "scene": "S05",
+        "timestamp": 84.61,
+        "column": 198,
+        "mean_edge": 23.85,
+        "continuity": 0.198,
         "score": 4.72
       },
       {
         "scene": "S05",
-        "timestamp": 92.958,
-        "column": 112,
-        "mean_edge": 18.09,
+        "timestamp": 85.11,
+        "column": 205,
+        "mean_edge": 22.21,
+        "continuity": 0.196,
+        "score": 4.35
+      },
+      {
+        "scene": "S05",
+        "timestamp": 85.61,
+        "column": 193,
+        "mean_edge": 23.32,
+        "continuity": 0.208,
+        "score": 4.86
+      },
+      {
+        "scene": "S05",
+        "timestamp": 86.11,
+        "column": 193,
+        "mean_edge": 21.85,
+        "continuity": 0.175,
+        "score": 3.82
+      },
+      {
+        "scene": "S05",
+        "timestamp": 86.61,
+        "column": 49,
+        "mean_edge": 21.29,
         "continuity": 0.181,
-        "score": 3.28
+        "score": 3.86
       },
       {
         "scene": "S05",
-        "timestamp": 93.458,
-        "column": 244,
-        "mean_edge": 16.15,
+        "timestamp": 87.11,
+        "column": 157,
+        "mean_edge": 20.99,
+        "continuity": 0.19,
+        "score": 3.98
+      },
+      {
+        "scene": "S05",
+        "timestamp": 87.61,
+        "column": 71,
+        "mean_edge": 20.43,
+        "continuity": 0.202,
+        "score": 4.13
+      },
+      {
+        "scene": "S05",
+        "timestamp": 88.11,
+        "column": 138,
+        "mean_edge": 16.77,
+        "continuity": 0.165,
+        "score": 2.76
+      },
+      {
+        "scene": "S05",
+        "timestamp": 88.61,
+        "column": 127,
+        "mean_edge": 23.62,
+        "continuity": 0.212,
+        "score": 5.02
+      },
+      {
+        "scene": "S05",
+        "timestamp": 89.11,
+        "column": 117,
+        "mean_edge": 20.67,
+        "continuity": 0.192,
+        "score": 3.96
+      },
+      {
+        "scene": "S05",
+        "timestamp": 89.61,
+        "column": 108,
+        "mean_edge": 15.3,
+        "continuity": 0.156,
+        "score": 2.39
+      },
+      {
+        "scene": "S05",
+        "timestamp": 90.11,
+        "column": 89,
+        "mean_edge": 25.78,
+        "continuity": 0.215,
+        "score": 5.53
+      },
+      {
+        "scene": "S05",
+        "timestamp": 90.61,
+        "column": 84,
+        "mean_edge": 25.41,
+        "continuity": 0.244,
+        "score": 6.19
+      },
+      {
+        "scene": "S05",
+        "timestamp": 91.11,
+        "column": 83,
+        "mean_edge": 24.3,
+        "continuity": 0.21,
+        "score": 5.11
+      },
+      {
+        "scene": "S05",
+        "timestamp": 91.61,
+        "column": 63,
+        "mean_edge": 21.36,
+        "continuity": 0.208,
+        "score": 4.45
+      },
+      {
+        "scene": "S05",
+        "timestamp": 92.11,
+        "column": 210,
+        "mean_edge": 25.55,
+        "continuity": 0.204,
+        "score": 5.22
+      },
+      {
+        "scene": "S05",
+        "timestamp": 92.61,
+        "column": 198,
+        "mean_edge": 27.96,
+        "continuity": 0.25,
+        "score": 6.99
+      },
+      {
+        "scene": "S05",
+        "timestamp": 93.11,
+        "column": 31,
+        "mean_edge": 15.72,
+        "continuity": 0.152,
+        "score": 2.39
+      },
+      {
+        "scene": "S05",
+        "timestamp": 93.61,
+        "column": 177,
+        "mean_edge": 16.75,
         "continuity": 0.177,
-        "score": 2.86
+        "score": 2.97
       },
       {
         "scene": "S05",
-        "timestamp": 93.958,
-        "column": 232,
-        "mean_edge": 16.12,
-        "continuity": 0.167,
-        "score": 2.69
+        "timestamp": 94.11,
+        "column": 166,
+        "mean_edge": 15.88,
+        "continuity": 0.163,
+        "score": 2.58
       },
       {
         "scene": "S05",
-        "timestamp": 94.07,
+        "timestamp": 94.61,
+        "column": 155,
+        "mean_edge": 16.65,
+        "continuity": 0.158,
+        "score": 2.64
+      },
+      {
+        "scene": "S05",
+        "timestamp": 95.11,
+        "column": 145,
+        "mean_edge": 15.04,
+        "continuity": 0.135,
+        "score": 2.04
+      },
+      {
+        "scene": "S05",
+        "timestamp": 95.61,
+        "column": 142,
+        "mean_edge": 20.8,
+        "continuity": 0.165,
+        "score": 3.42
+      },
+      {
+        "scene": "S05",
+        "timestamp": 96.11,
+        "column": 124,
+        "mean_edge": 23.38,
+        "continuity": 0.219,
+        "score": 5.11
+      },
+      {
+        "scene": "S05",
+        "timestamp": 96.61,
+        "column": 117,
+        "mean_edge": 21.68,
+        "continuity": 0.16,
+        "score": 3.48
+      },
+      {
+        "scene": "S05",
+        "timestamp": 97.11,
+        "column": 245,
+        "mean_edge": 16.19,
+        "continuity": 0.169,
+        "score": 2.73
+      },
+      {
+        "scene": "S05",
+        "timestamp": 97.61,
+        "column": 234,
+        "mean_edge": 15.51,
+        "continuity": 0.165,
+        "score": 2.55
+      },
+      {
+        "scene": "S05",
+        "timestamp": 97.81,
         "column": 211,
-        "mean_edge": 16.24,
-        "continuity": 0.167,
-        "score": 2.71
+        "mean_edge": 16.1,
+        "continuity": 0.152,
+        "score": 2.45
       },
       {
         "scene": "S06",
-        "timestamp": 94.22,
-        "column": 213,
-        "mean_edge": 11.15,
-        "continuity": 0.075,
-        "score": 0.84
+        "timestamp": 97.96,
+        "column": 214,
+        "mean_edge": 11.41,
+        "continuity": 0.1,
+        "score": 1.14
       },
       {
         "scene": "S06",
-        "timestamp": 94.72,
+        "timestamp": 98.46,
         "column": 107,
-        "mean_edge": 24.71,
-        "continuity": 0.185,
-        "score": 4.58
+        "mean_edge": 24.73,
+        "continuity": 0.188,
+        "score": 4.64
       },
       {
         "scene": "S06",
-        "timestamp": 95.22,
+        "timestamp": 98.96,
         "column": 169,
-        "mean_edge": 23.5,
-        "continuity": 0.233,
-        "score": 5.48
+        "mean_edge": 23.59,
+        "continuity": 0.229,
+        "score": 5.41
       },
       {
         "scene": "S06",
-        "timestamp": 95.72,
+        "timestamp": 99.46,
         "column": 122,
-        "mean_edge": 25.04,
-        "continuity": 0.21,
-        "score": 5.27
+        "mean_edge": 25.11,
+        "continuity": 0.215,
+        "score": 5.39
       },
       {
         "scene": "S06",
-        "timestamp": 96.22,
+        "timestamp": 99.96,
         "column": 58,
-        "mean_edge": 25.01,
-        "continuity": 0.21,
-        "score": 5.26
+        "mean_edge": 24.95,
+        "continuity": 0.212,
+        "score": 5.3
       },
       {
         "scene": "S06",
-        "timestamp": 96.72,
+        "timestamp": 100.46,
         "column": 169,
-        "mean_edge": 25.25,
+        "mean_edge": 25.23,
         "continuity": 0.24,
         "score": 6.05
       },
       {
         "scene": "S06",
-        "timestamp": 97.22,
+        "timestamp": 100.96,
         "column": 169,
-        "mean_edge": 23.78,
+        "mean_edge": 23.92,
         "continuity": 0.227,
-        "score": 5.4
+        "score": 5.43
       },
       {
         "scene": "S06",
-        "timestamp": 97.72,
+        "timestamp": 101.46,
         "column": 169,
-        "mean_edge": 23.13,
+        "mean_edge": 23.16,
         "continuity": 0.204,
-        "score": 4.72
+        "score": 4.73
       },
       {
         "scene": "S06",
-        "timestamp": 98.22,
+        "timestamp": 101.96,
         "column": 109,
-        "mean_edge": 16.83,
+        "mean_edge": 16.82,
         "continuity": 0.169,
         "score": 2.84
       },
       {
         "scene": "S06",
-        "timestamp": 98.72,
-        "column": 110,
-        "mean_edge": 22.39,
-        "continuity": 0.19,
-        "score": 4.25
+        "timestamp": 102.46,
+        "column": 125,
+        "mean_edge": 22.33,
+        "continuity": 0.188,
+        "score": 4.19
       },
       {
         "scene": "S06",
-        "timestamp": 99.22,
+        "timestamp": 102.96,
         "column": 101,
-        "mean_edge": 24.49,
-        "continuity": 0.192,
-        "score": 4.69
+        "mean_edge": 24.47,
+        "continuity": 0.19,
+        "score": 4.64
       },
       {
         "scene": "S06",
-        "timestamp": 99.72,
+        "timestamp": 103.46,
         "column": 110,
-        "mean_edge": 22.83,
-        "continuity": 0.204,
-        "score": 4.66
+        "mean_edge": 22.81,
+        "continuity": 0.202,
+        "score": 4.61
       },
       {
         "scene": "S06",
-        "timestamp": 100.22,
+        "timestamp": 103.96,
         "column": 64,
-        "mean_edge": 16.82,
+        "mean_edge": 16.86,
         "continuity": 0.167,
-        "score": 2.8
+        "score": 2.81
       },
       {
         "scene": "S06",
-        "timestamp": 100.72,
+        "timestamp": 104.46,
         "column": 54,
-        "mean_edge": 24.26,
-        "continuity": 0.192,
-        "score": 4.65
+        "mean_edge": 24.39,
+        "continuity": 0.188,
+        "score": 4.57
       },
       {
         "scene": "S06",
-        "timestamp": 101.22,
+        "timestamp": 104.96,
         "column": 52,
-        "mean_edge": 22.92,
-        "continuity": 0.192,
-        "score": 4.39
+        "mean_edge": 23.01,
+        "continuity": 0.198,
+        "score": 4.55
       },
       {
         "scene": "S06",
-        "timestamp": 101.72,
+        "timestamp": 105.46,
         "column": 54,
         "mean_edge": 23.38,
         "continuity": 0.179,
@@ -1707,195 +1769,195 @@
       },
       {
         "scene": "S06",
-        "timestamp": 102.22,
+        "timestamp": 105.96,
         "column": 58,
-        "mean_edge": 22.33,
+        "mean_edge": 22.3,
         "continuity": 0.212,
         "score": 4.74
       },
       {
         "scene": "S06",
-        "timestamp": 102.72,
+        "timestamp": 106.46,
         "column": 112,
-        "mean_edge": 20.44,
-        "continuity": 0.198,
-        "score": 4.04
+        "mean_edge": 20.4,
+        "continuity": 0.206,
+        "score": 4.21
       },
       {
         "scene": "S06",
-        "timestamp": 103.22,
+        "timestamp": 106.96,
         "column": 113,
-        "mean_edge": 20.07,
+        "mean_edge": 20.1,
         "continuity": 0.181,
         "score": 3.64
       },
       {
         "scene": "S06",
-        "timestamp": 103.72,
+        "timestamp": 107.46,
         "column": 91,
-        "mean_edge": 24.0,
+        "mean_edge": 24.02,
         "continuity": 0.194,
         "score": 4.65
       },
       {
         "scene": "S06",
-        "timestamp": 104.22,
+        "timestamp": 107.96,
         "column": 67,
-        "mean_edge": 22.6,
-        "continuity": 0.173,
-        "score": 3.91
+        "mean_edge": 22.75,
+        "continuity": 0.175,
+        "score": 3.98
       },
       {
         "scene": "S06",
-        "timestamp": 104.72,
+        "timestamp": 108.46,
         "column": 70,
-        "mean_edge": 16.12,
-        "continuity": 0.135,
-        "score": 2.18
+        "mean_edge": 19.54,
+        "continuity": 0.173,
+        "score": 3.38
       },
       {
         "scene": "S06",
-        "timestamp": 105.22,
+        "timestamp": 108.96,
         "column": 60,
-        "mean_edge": 17.35,
+        "mean_edge": 17.29,
         "continuity": 0.158,
-        "score": 2.75
+        "score": 2.74
       },
       {
         "scene": "S06",
-        "timestamp": 105.72,
+        "timestamp": 109.46,
         "column": 57,
-        "mean_edge": 19.7,
-        "continuity": 0.154,
-        "score": 3.04
-      },
-      {
-        "scene": "S06",
-        "timestamp": 106.22,
-        "column": 39,
-        "mean_edge": 16.43,
-        "continuity": 0.152,
-        "score": 2.5
-      },
-      {
-        "scene": "S06",
-        "timestamp": 106.72,
-        "column": 186,
-        "mean_edge": 21.17,
-        "continuity": 0.148,
-        "score": 3.13
-      },
-      {
-        "scene": "S06",
-        "timestamp": 107.22,
-        "column": 178,
-        "mean_edge": 19.3,
-        "continuity": 0.14,
-        "score": 2.69
-      },
-      {
-        "scene": "S06",
-        "timestamp": 107.72,
-        "column": 168,
-        "mean_edge": 18.95,
+        "mean_edge": 19.49,
         "continuity": 0.15,
-        "score": 2.84
+        "score": 2.92
       },
       {
         "scene": "S06",
-        "timestamp": 108.22,
+        "timestamp": 109.96,
+        "column": 39,
+        "mean_edge": 16.34,
+        "continuity": 0.148,
+        "score": 2.42
+      },
+      {
+        "scene": "S06",
+        "timestamp": 110.46,
+        "column": 186,
+        "mean_edge": 21.1,
+        "continuity": 0.148,
+        "score": 3.12
+      },
+      {
+        "scene": "S06",
+        "timestamp": 110.96,
+        "column": 178,
+        "mean_edge": 19.37,
+        "continuity": 0.14,
+        "score": 2.7
+      },
+      {
+        "scene": "S06",
+        "timestamp": 111.46,
+        "column": 168,
+        "mean_edge": 18.84,
+        "continuity": 0.152,
+        "score": 2.87
+      },
+      {
+        "scene": "S06",
+        "timestamp": 111.96,
         "column": 154,
-        "mean_edge": 19.61,
+        "mean_edge": 19.63,
         "continuity": 0.144,
         "score": 2.82
       },
       {
         "scene": "S06",
-        "timestamp": 108.72,
+        "timestamp": 112.46,
         "column": 147,
-        "mean_edge": 18.84,
-        "continuity": 0.135,
-        "score": 2.55
+        "mean_edge": 18.85,
+        "continuity": 0.129,
+        "score": 2.44
       },
       {
         "scene": "S06",
-        "timestamp": 109.22,
+        "timestamp": 112.96,
         "column": 135,
-        "mean_edge": 24.35,
-        "continuity": 0.198,
-        "score": 4.82
+        "mean_edge": 24.4,
+        "continuity": 0.2,
+        "score": 4.88
       },
       {
         "scene": "S06",
-        "timestamp": 109.72,
+        "timestamp": 113.46,
         "column": 135,
         "mean_edge": 22.88,
-        "continuity": 0.16,
-        "score": 3.67
+        "continuity": 0.163,
+        "score": 3.72
       },
       {
         "scene": "S06",
-        "timestamp": 110.22,
+        "timestamp": 113.96,
         "column": 113,
-        "mean_edge": 23.52,
-        "continuity": 0.181,
-        "score": 4.26
+        "mean_edge": 23.53,
+        "continuity": 0.179,
+        "score": 4.22
       },
       {
         "scene": "S06",
-        "timestamp": 110.72,
+        "timestamp": 114.46,
         "column": 105,
-        "mean_edge": 22.52,
+        "mean_edge": 22.63,
         "continuity": 0.169,
-        "score": 3.8
+        "score": 3.82
       },
       {
         "scene": "S06",
-        "timestamp": 111.22,
+        "timestamp": 114.96,
         "column": 118,
-        "mean_edge": 21.45,
+        "mean_edge": 21.38,
         "continuity": 0.171,
-        "score": 3.67
+        "score": 3.65
       },
       {
         "scene": "S06",
-        "timestamp": 111.72,
+        "timestamp": 115.46,
         "column": 67,
-        "mean_edge": 22.27,
+        "mean_edge": 22.17,
         "continuity": 0.156,
-        "score": 3.48
+        "score": 3.46
       },
       {
         "scene": "S06",
-        "timestamp": 112.22,
-        "column": 74,
-        "mean_edge": 12.32,
+        "timestamp": 115.96,
+        "column": 70,
+        "mean_edge": 11.85,
+        "continuity": 0.094,
+        "score": 1.11
+      },
+      {
+        "scene": "S06",
+        "timestamp": 116.46,
+        "column": 61,
+        "mean_edge": 11.5,
         "continuity": 0.096,
-        "score": 1.18
+        "score": 1.1
       },
       {
         "scene": "S06",
-        "timestamp": 112.72,
-        "column": 63,
-        "mean_edge": 12.48,
-        "continuity": 0.087,
-        "score": 1.09
+        "timestamp": 116.96,
+        "column": 49,
+        "mean_edge": 11.76,
+        "continuity": 0.096,
+        "score": 1.13
       },
       {
         "scene": "S06",
-        "timestamp": 113.22,
-        "column": 53,
-        "mean_edge": 12.11,
-        "continuity": 0.09,
-        "score": 1.08
-      },
-      {
-        "scene": "S06",
-        "timestamp": 113.378,
+        "timestamp": 117.118,
         "column": 220,
-        "mean_edge": 23.3,
-        "continuity": 0.281,
-        "score": 6.55
+        "mean_edge": 23.52,
+        "continuity": 0.279,
+        "score": 6.57
       }
     ],
     "flagged_samples": []
@@ -1934,11 +1996,6 @@
           "name": "Labyrinth",
           "mode": "english_source_spelling_fallback",
           "pronunciation": "Labyrinth"
-        },
-        {
-          "name": "Aegean",
-          "mode": "english_source_spelling_fallback",
-          "pronunciation": "Aegean"
         },
         {
           "name": "Naxos",
@@ -2105,13 +2162,13 @@
         21.183
       ],
       "mean_abs_diffs": [
-        34.757,
-        32.626
+        34.766,
+        32.271
       ],
       "frame_sha256": [
-        "545d1ee058717a88",
-        "19424de1ff01bce6",
-        "706a0d42bc4d37c3"
+        "3cf0ed3e6904103c",
+        "9c1d142d3697ba57",
+        "f9573656710ed448"
       ]
     },
     {
@@ -2123,12 +2180,12 @@
       ],
       "mean_abs_diffs": [
         35.289,
-        41.2
+        41.207
       ],
       "frame_sha256": [
-        "f08f88647ee56553",
-        "5377f796abf605f6",
-        "d109fa3549969fcd"
+        "84f7f50899c6ee76",
+        "ce34aedce2196a12",
+        "8f7f41fa68d15bd8"
       ]
     },
     {
@@ -2139,64 +2196,64 @@
         56.753
       ],
       "mean_abs_diffs": [
-        31.454,
-        27.683
+        31.478,
+        27.692
       ],
       "frame_sha256": [
-        "9426da0067e63383",
-        "f1e8bd488a7f8366",
-        "9a314c81372bfb46"
+        "e923e4db2f5a73f7",
+        "d0afe8e1a4b68bc8",
+        "c05b3cc7cdcacd6d"
       ]
     },
     {
       "scene": "S04",
       "sample_times": [
-        59.56,
-        67.228,
-        74.897
+        59.772,
+        68.555,
+        77.337
       ],
       "mean_abs_diffs": [
-        30.791,
-        31.816
+        30.519,
+        32.315
       ],
       "frame_sha256": [
-        "abe2e568a8bbc6bc",
-        "b415c4d777d769cb",
-        "206df948ee091b2f"
+        "aec4ebd557864d8f",
+        "fb334d677e9fb68a",
+        "61f4b6fbf1b3c254"
       ]
     },
     {
       "scene": "S05",
       "sample_times": [
-        77.779,
-        85.239,
-        92.699
+        80.518,
+        88.435,
+        96.352
       ],
       "mean_abs_diffs": [
-        34.709,
-        33.478
+        32.962,
+        32.914
       ],
       "frame_sha256": [
-        "00155c7ed4f4b8be",
-        "124f4caf48db4175",
-        "9e6c182d2bb3bb71"
+        "15a127d58b43309b",
+        "c49f18e739f1222b",
+        "df4207b5a3b18b79"
       ]
     },
     {
       "scene": "S06",
       "sample_times": [
-        95.665,
-        103.774,
-        111.883
+        99.405,
+        107.514,
+        115.623
       ],
       "mean_abs_diffs": [
-        39.786,
-        24.788
+        39.755,
+        24.791
       ],
       "frame_sha256": [
-        "9caf9b48d2157891",
-        "e31278d790e1a630",
-        "187fde9d5069af58"
+        "fbdddc512cca8bc0",
+        "d0dfa8947b0b0f0e",
+        "36161c2f822606bb"
       ]
     }
   ],
@@ -2213,17 +2270,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        3.463,
-        7.821,
-        16.811,
-        16.413
+        3.453,
+        7.82,
+        16.764,
+        16.416
       ],
       "mean_luma": [
-        116.26,
-        116.56,
-        119.09,
-        125.81,
-        132.37
+        116.49,
+        116.57,
+        119.16,
+        125.83,
+        132.4
       ]
     },
     {
@@ -2238,16 +2295,16 @@
         0.26
       ],
       "mean_abs_diffs": [
-        5.432,
-        6.639,
-        16.671,
-        14.183
+        5.444,
+        6.63,
+        16.676,
+        14.176
       ],
       "mean_luma": [
-        105.95,
-        105.75,
-        105.66,
         105.94,
+        105.74,
+        105.67,
+        106.11,
         105.59
       ]
     },
@@ -2263,23 +2320,23 @@
         0.26
       ],
       "mean_abs_diffs": [
-        5.095,
-        16.628,
-        22.678,
-        14.277
+        5.082,
+        16.451,
+        22.604,
+        13.719
       ],
       "mean_luma": [
         88.17,
-        88.28,
-        101.78,
-        119.77,
-        129.49
+        88.41,
+        101.73,
+        119.59,
+        129.59
       ]
     },
     {
       "from": "S04",
       "to": "S05",
-      "boundary": 76.358,
+      "boundary": 79.01,
       "offsets": [
         -0.18,
         -0.06,
@@ -2288,23 +2345,23 @@
         0.26
       ],
       "mean_abs_diffs": [
-        5.505,
-        7.56,
-        19.506,
-        17.014
+        7.32,
+        7.258,
+        19.118,
+        17.031
       ],
       "mean_luma": [
-        130.2,
-        130.18,
-        129.81,
-        129.24,
-        129.23
+        130.61,
+        130.08,
+        129.92,
+        129.38,
+        128.72
       ]
     },
     {
       "from": "S05",
       "to": "S06",
-      "boundary": 94.12,
+      "boundary": 97.86,
       "offsets": [
         -0.18,
         -0.06,
@@ -2313,17 +2370,17 @@
         0.26
       ],
       "mean_abs_diffs": [
-        3.075,
-        9.36,
-        23.52,
-        20.964
+        3.087,
+        8.787,
+        23.884,
+        20.916
       ],
       "mean_luma": [
-        146.3,
-        146.27,
-        140.17,
-        122.3,
-        107.44
+        146.12,
+        146.17,
+        140.81,
+        122.27,
+        107.42
       ]
     }
   ],
@@ -2337,9 +2394,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        35.892,
-        32.467,
-        37.564
+        35.897,
+        32.483,
+        37.022
       ],
       "distinct_sample_count": 3
     },
@@ -2352,9 +2409,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        37.169,
-        43.758,
-        43.082
+        37.189,
+        43.77,
+        43.095
       ],
       "distinct_sample_count": 3
     },
@@ -2367,9 +2424,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        36.918,
-        45.671,
-        51.756
+        37.029,
+        45.007,
+        51.868
       ],
       "distinct_sample_count": 3
     },
@@ -2382,9 +2439,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        36.97,
-        41.263,
-        38.956
+        37.602,
+        40.053,
+        38.818
       ],
       "distinct_sample_count": 3
     },
@@ -2397,9 +2454,9 @@
         0.92
       ],
       "mean_abs_diffs": [
-        41.034,
-        37.842,
-        37.226
+        41.014,
+        36.05,
+        37.188
       ],
       "distinct_sample_count": 3
     }
