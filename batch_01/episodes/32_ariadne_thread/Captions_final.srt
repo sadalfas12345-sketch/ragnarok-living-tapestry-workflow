@@ -1,187 +1,179 @@
 1
-00:00:00,000 --> 00:00:01,900
-What if you saved the person you
+00:00:00,000 --> 00:00:02,380
+What if saving someone you love is
 
 2
-00:00:01,910 --> 00:00:04,580
-loved, only to be abandoned by them?
+00:00:02,390 --> 00:00:04,680
+the very act that leaves you alone?
 
 3
-00:00:05,060 --> 00:00:06,000
+00:00:05,320 --> 00:00:06,180
 In Greek myth,
 
 4
-00:00:06,360 --> 00:00:09,610
+00:00:06,560 --> 00:00:09,750
 Ariadne, daughter of King Minos of Crete,
 
 5
-00:00:10,380 --> 00:00:13,900
-sees the Athenian prince Theseus among young
+00:00:10,520 --> 00:00:14,580
+sees the Athenian prince Theseus among youths
 
 6
-00:00:13,910 --> 00:00:15,800
-people heading toward the Labyrinth.
+00:00:14,590 --> 00:00:16,160
+condemned to enter the Labyrinth.
 
 7
-00:00:18,960 --> 00:00:20,740
-He plans to confront the Minotaur.
+00:00:18,540 --> 00:00:20,300
+He intends to face the Minotaur,
 
 8
-00:00:20,750 --> 00:00:20,760
-Few expect him to emerge.
+00:00:20,940 --> 00:00:21,920
+a bull-headed monster.
 
 9
-00:00:21,700 --> 00:00:24,460
-Ariadne gives Theseus a sword and a
+00:00:21,930 --> 00:00:22,460
+No one expects him to return.
 
 10
-00:00:24,470 --> 00:00:25,340
-spool of thread.
+00:00:23,460 --> 00:00:26,340
+Ariadne gives Theseus a sword and a
 
 11
-00:00:25,350 --> 00:00:28,120
-She tells him to fasten one end
+00:00:26,350 --> 00:00:27,540
+spool of red thread.
 
 12
-00:00:28,130 --> 00:00:29,000
-at the entrance,
+00:00:27,550 --> 00:00:29,360
+At the maze entrance,
 
 13
-00:00:29,010 --> 00:00:31,920
-and unwind the rest as he walks.
+00:00:29,980 --> 00:00:32,020
+she ties one end to the stone
 
 14
-00:00:32,660 --> 00:00:34,160
-He can fight the monster if he
+00:00:32,030 --> 00:00:34,760
+and makes him promise to unwind it
 
 15
-00:00:34,170 --> 00:00:37,140
-chooses. But the thread is his only
+00:00:34,770 --> 00:00:37,420
+behind him. The blade may kill the
 
 16
-00:00:37,150 --> 00:00:38,380
-sure way through the maze.
+00:00:37,430 --> 00:00:40,240
+monster; only the thread can bring him
 
 17
-00:00:39,540 --> 00:00:42,460
-Theseus follows the thread through winding corridors
+00:00:40,250 --> 00:00:40,674
+back.
 
 18
-00:00:42,470 --> 00:00:44,320
-until he meets the Minotaur.
+00:00:41,660 --> 00:00:45,100
+Theseus follows the thread into darkness and
 
 19
-00:00:45,040 --> 00:00:46,480
-The struggle is brutal.
+00:00:45,110 --> 00:00:46,200
+finds the Minotaur.
 
 20
-00:00:47,140 --> 00:00:50,080
-At last, Theseus defeats the creature.
+00:00:46,880 --> 00:00:48,460
+Their fight shakes the maze.
 
 21
-00:00:50,090 --> 00:00:53,900
-He follows Ariadnes thread back toward daylight,
+00:00:49,100 --> 00:00:50,480
+When the creature falls,
 
 22
-00:00:54,400 --> 00:00:56,840
-while the people waiting outside listen for
+00:00:51,100 --> 00:00:53,640
+Theseus grips the red line and follows
 
 23
-00:00:56,850 --> 00:00:57,440
-footsteps.
+00:00:53,650 --> 00:00:54,640
+it toward daylight,
 
 24
-00:00:58,700 --> 00:01:01,260
-Ariadne leaves her father and her home
+00:00:55,120 --> 00:00:57,449
+while those outside wait for a sound.
 
 25
-00:01:01,270 --> 00:01:02,940
-to flee with Theseus.
+00:00:58,560 --> 00:01:01,600
+Ariadne abandons her father and sails with
 
 26
-00:01:03,500 --> 00:01:05,500
-Their ship cuts through the Aegean.
+00:01:01,610 --> 00:01:04,200
+Theseus into the open Aegean.
 
 27
-00:01:06,160 --> 00:01:08,620
-She has risked everything for him.
+00:01:04,560 --> 00:01:06,060
+Crete sinks behind them.
 
 28
-00:01:08,840 --> 00:01:10,020
-At night on deck,
+00:01:06,500 --> 00:01:08,020
+She has risked her home,
 
 29
-00:01:10,560 --> 00:01:13,340
-the island of Crete disappears behind them,
+00:01:08,280 --> 00:01:10,740
+her name, and everything she owns,
 
 30
-00:01:13,460 --> 00:01:16,260
-and she finally lets herself believe they
+00:01:11,280 --> 00:01:13,460
+but on the deck she lets herself
 
 31
-00:01:16,270 --> 00:01:17,120
-have a future.
+00:01:13,470 --> 00:01:15,608
+believe he will not abandon her.
 
 32
-00:01:17,969 --> 00:01:20,240
-The ship stops at Naxos.
+00:01:16,660 --> 00:01:20,420
+At Naxos, the ship leaves Ariadne sleeping
 
 33
-00:01:20,740 --> 00:01:22,720
-In a well-known version of the myth,
+00:01:20,430 --> 00:01:21,240
+on the shore.
 
 34
-00:01:23,340 --> 00:01:26,040
-Ariadne is left asleep on the shore
+00:01:21,960 --> 00:01:23,200
+She wakes to waves,
 
 35
-00:01:26,050 --> 00:01:28,120
-while Theseus sails away.
+00:01:23,820 --> 00:01:25,140
+searches empty sand,
 
 36
-00:01:28,800 --> 00:01:30,660
-She wakes to the sound of waves.
+00:01:25,420 --> 00:01:29,200
+and sees Theseus's sail shrinking beyond reach.
 
 37
-00:01:31,360 --> 00:01:32,680
-She searches the beach,
+00:01:29,880 --> 00:01:30,980
+In that instant,
 
 38
-00:01:33,200 --> 00:01:34,600
-sees a distant sail,
+00:01:31,500 --> 00:01:33,170
+rescue becomes betrayal.
 
 39
-00:01:34,780 --> 00:01:37,240
-and realizes she has been abandoned.
+00:01:34,440 --> 00:01:38,040
+Ancient tellings disagree about Ariadne's fate.
 
 40
-00:01:38,580 --> 00:01:41,300
-Other ancient tellings give Ariadne a different
+00:01:38,520 --> 00:01:39,860
+But the image endures:
 
 41
-00:01:41,310 --> 00:01:44,980
-fate. But the abandoned Ariadne remains a
+00:01:40,460 --> 00:01:42,320
+the woman who led a hero out
 
 42
-00:01:44,990 --> 00:01:48,220
-painful image: the woman whose courage brought
+00:01:42,330 --> 00:01:44,580
+of death is left without a home.
 
 43
-00:01:48,230 --> 00:01:50,500
-a hero home was left without a
+00:01:45,040 --> 00:01:46,040
+On the shore,
 
 44
-00:01:50,510 --> 00:01:52,800
-home herself. On the sand,
+00:01:46,600 --> 00:01:48,940
+Ariadne holds one end of the red
 
 45
-00:01:53,460 --> 00:01:55,140
-she holds the end of a red
-
-46
-00:01:55,150 --> 00:01:57,120
-thread with no one on the other
-
-47
-00:01:57,130 --> 00:01:57,580
-side.
+00:01:48,950 --> 00:01:52,020
+thread. Nothing answers from the other side.

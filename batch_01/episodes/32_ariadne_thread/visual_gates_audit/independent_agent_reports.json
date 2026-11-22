@@ -7,7 +7,48 @@
   "name_spelling": {
     "reviewer": "name_spelling_agent",
     "status": "PASS",
-    "identified_names": [],
+    "identified_names": [
+      {
+        "name": "Ariadne",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Ariadne"
+      },
+      {
+        "name": "Theseus",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Theseus"
+      },
+      {
+        "name": "Minotaur",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Minotaur"
+      },
+      {
+        "name": "Minos",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Minos"
+      },
+      {
+        "name": "Labyrinth",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Labyrinth"
+      },
+      {
+        "name": "Aegean",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Aegean"
+      },
+      {
+        "name": "Naxos",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Naxos"
+      },
+      {
+        "name": "Crete",
+        "mode": "english_source_spelling_fallback",
+        "pronunciation": "Crete"
+      }
+    ],
     "findings": []
   },
   "historical_scene": {

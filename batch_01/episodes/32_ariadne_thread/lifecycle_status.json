@@ -2,9 +2,9 @@
   "episode": 32,
   "phase": "complete",
   "status": "complete",
-  "pid": 6948,
-  "last_heartbeat": "2026-11-22T14:37:59.736239+00:00",
+  "pid": 26092,
+  "last_heartbeat": "2026-11-22T21:05:09.683819+00:00",
   "output_file": "batch_01\\episodes\\32_ariadne_thread\\final_vertical_1080x1920.mp4",
-  "output_bytes": 58391763,
-  "elapsed_seconds": 0.003
+  "output_bytes": 84987906,
+  "elapsed_seconds": 0.002
 }

@@ -1,40 +1,40 @@
 {
   "episode": 32,
   "title": "Ariadne: The Thread That Saved a Hero",
-  "timeline_runtime_seconds": 119.002,
-  "narration_runtime_seconds": 119.002,
-  "video_runtime_seconds": 119.033,
-  "caption_count": 47,
+  "timeline_runtime_seconds": 113.428,
+  "narration_runtime_seconds": 113.428,
+  "video_runtime_seconds": 113.433,
+  "caption_count": 45,
   "caption_overlap_count": 0,
   "scene_pauses_seconds": [
     {
       "from": "S01",
       "to": "S02",
-      "seconds": 0.52,
+      "seconds": 0.565,
       "intended_seconds": 0.45
     },
     {
       "from": "S02",
       "to": "S03",
-      "seconds": 0.631,
+      "seconds": 0.6,
       "intended_seconds": 0.6
     },
     {
       "from": "S03",
       "to": "S04",
-      "seconds": 0.749,
+      "seconds": 0.65,
       "intended_seconds": 0.65
     },
     {
       "from": "S04",
       "to": "S05",
-      "seconds": 0.849,
+      "seconds": 0.75,
       "intended_seconds": 0.75
     },
     {
       "from": "S05",
       "to": "S06",
-      "seconds": 1.015,
+      "seconds": 0.95,
       "intended_seconds": 0.95
     }
   ],

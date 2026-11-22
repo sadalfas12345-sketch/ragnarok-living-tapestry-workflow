@@ -100,7 +100,7 @@
                    {
                        "id":  "S01",
                        "asset":  "assets/P01.png",
-                       "caption":  "What if you saved the person you loved, only to be abandoned by them? In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among young people heading toward the Labyrinth. He plans to confront the Minotaur. Few expect him to emerge.",
+                       "caption":  "What if saving someone you love is the very act that leaves you alone? In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among youths condemned to enter the Labyrinth. He intends to face the Minotaur, a bull-headed monster. No one expects him to return.",
                        "intended_emotion":  "fear and attraction",
                        "emotional_turn":  "A prisoner in Crete: fear and attraction",
                        "visual_evidence":  "Ariadne meets a young prisoner through a gate while others shrink into shadow",
@@ -135,7 +135,7 @@
                    {
                        "id":  "S02",
                        "asset":  "assets/P02.png",
-                       "caption":  "Ariadne gives Theseus a sword and a spool of thread. She tells him to fasten one end at the entrance, and unwind the rest as he walks. He can fight the monster if he chooses. But the thread is his only sure way through the maze.",
+                       "caption":  "Ariadne gives Theseus a sword and a spool of red thread. At the maze entrance, she ties one end to the stone and makes him promise to unwind it behind him. The blade may kill the monster; only the thread can bring him back.",
                        "intended_emotion":  "hope with growing danger",
                        "emotional_turn":  "The thread: hope with growing danger",
                        "visual_evidence":  "red thread stretches between Ariadnes fingers and the labyrinth darkness",
@@ -170,7 +170,7 @@
                    {
                        "id":  "S03",
                        "asset":  "assets/P03.png",
-                       "caption":  "Theseus follows the thread through winding corridors until he meets the Minotaur. The struggle is brutal. At last, Theseus defeats the creature. He follows Ariadnes thread back toward daylight, while the people waiting outside listen for footsteps.",
+                       "caption":  "Theseus follows the thread into darkness and finds the Minotaur. Their fight shakes the maze. When the creature falls, Theseus grips the red line and follows it toward daylight, while those outside wait for a sound.",
                        "intended_emotion":  "dread turning to relief",
                        "emotional_turn":  "In the maze: dread turning to relief",
                        "visual_evidence":  "hands clutch thread in darkness then emerge into daylight",
@@ -205,7 +205,7 @@
                    {
                        "id":  "S04",
                        "asset":  "assets/P04.png",
-                       "caption":  "Ariadne leaves her father and her home to flee with Theseus. Their ship cuts through the Aegean. She has risked everything for him. At night on deck, the island of Crete disappears behind them, and she finally lets herself believe they have a future.",
+                       "caption":  "Ariadne abandons her father and sails with Theseus into the open Aegean. Crete sinks behind them. She has risked her home, her name, and everything she owns, but on the deck she lets herself believe he will not abandon her.",
                        "intended_emotion":  "joy mixed with vulnerability",
                        "emotional_turn":  "Escape by sea: joy mixed with vulnerability",
                        "visual_evidence":  "Ariadne looks back toward her receding homeland while Theseus faces forward",
@@ -240,7 +240,7 @@
                    {
                        "id":  "S05",
                        "asset":  "assets/P05.png",
-                       "caption":  "The ship stops at Naxos. In a well-known version of the myth, Ariadne is left asleep on the shore while Theseus sails away. She wakes to the sound of waves. She searches the beach, sees a distant sail, and realizes she has been abandoned.",
+                       "caption":  "At Naxos, the ship leaves Ariadne sleeping on the shore. She wakes to waves, searches empty sand, and sees Theseus's sail shrinking beyond reach. In that instant, rescue becomes betrayal.",
                        "intended_emotion":  "shock and betrayal",
                        "emotional_turn":  "Naxos: shock and betrayal",
                        "visual_evidence":  "a sleeping cloak on sand and a retreating sail reveal desertion",
@@ -275,7 +275,7 @@
                    {
                        "id":  "S06",
                        "asset":  "assets/P06.png",
-                       "caption":  "Other ancient tellings give Ariadne a different fate. But the abandoned Ariadne remains a painful image: the woman whose courage brought a hero home was left without a home herself. On the sand, she holds the end of a red thread with no one on the other side.",
+                       "caption":  "Ancient tellings disagree about Ariadne's fate. But the image endures: the woman who led a hero out of death is left without a home. On the shore, Ariadne holds one end of the red thread. Nothing answers from the other side.",
                        "intended_emotion":  "grief and defiant dignity",
                        "emotional_turn":  "What the thread could not save: grief and defiant dignity",
                        "visual_evidence":  "a single loose crimson thread in her hand contrasts the empty horizon",

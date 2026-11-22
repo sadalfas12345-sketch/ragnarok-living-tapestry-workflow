@@ -2,479 +2,447 @@
   "schema": "living_tapestry_timeline_v1",
   "master_clock": "audio/narration.wav",
   "sample_rate": 24000,
-  "runtime_seconds": 119.002,
+  "runtime_seconds": 113.428,
   "narration": {
     "voice": "en-US-AvaNeural",
     "alignment": "Edge TTS native word boundaries verified against Whisper tiny.en waveform alignment",
     "phrases": [
       {
         "scene": "S01",
-        "text": "What if you saved the person you loved, only to be abandoned by them?",
+        "text": "What if saving someone you love is the very act that leaves you alone?",
         "start": 0.0,
-        "end": 4.58
+        "end": 4.68
       },
       {
         "scene": "S01",
-        "text": "In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among young people heading toward the Labyrinth.",
-        "start": 5.06,
-        "end": 15.8
+        "text": "In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among youths condemned to enter the Labyrinth.",
+        "start": 5.32,
+        "end": 16.16
       },
       {
         "scene": "S01",
-        "text": "He plans to confront the Minotaur.",
-        "start": 18.96,
-        "end": 20.74
+        "text": "He intends to face the Minotaur, a bull-headed monster.",
+        "start": 18.54,
+        "end": 21.92
       },
       {
         "scene": "S01",
-        "text": "Few expect him to emerge.",
-        "start": 20.28,
-        "end": 20.74
+        "text": "No one expects him to return.",
+        "start": 21.92,
+        "end": 22.46
       },
       {
         "scene": "S02",
-        "text": "Ariadne gives Theseus a sword and a spool of thread.",
-        "start": 21.7,
-        "end": 25.34
+        "text": "Ariadne gives Theseus a sword and a spool of red thread.",
+        "start": 23.46,
+        "end": 27.54
       },
       {
         "scene": "S02",
-        "text": "She tells him to fasten one end at the entrance, and unwind the rest as he walks.",
-        "start": 25.34,
-        "end": 31.92
+        "text": "At the maze entrance, she ties one end to the stone and makes him promise to unwind it behind him.",
+        "start": 27.54,
+        "end": 35.82
       },
       {
         "scene": "S02",
-        "text": "He can fight the monster if he chooses.",
-        "start": 32.66,
-        "end": 34.56
-      },
-      {
-        "scene": "S02",
-        "text": "But the thread is his only sure way through the maze.",
-        "start": 35.16,
-        "end": 38.38
+        "text": "The blade may kill the monster; only the thread can bring him back.",
+        "start": 36.14,
+        "end": 40.674
       },
       {
         "scene": "S03",
-        "text": "Theseus follows the thread through winding corridors until he meets the Minotaur.",
-        "start": 39.54,
-        "end": 44.32
+        "text": "Theseus follows the thread into darkness and finds the Minotaur.",
+        "start": 41.66,
+        "end": 46.2
       },
       {
         "scene": "S03",
-        "text": "The struggle is brutal.",
-        "start": 45.04,
-        "end": 46.48
+        "text": "Their fight shakes the maze.",
+        "start": 46.88,
+        "end": 48.46
       },
       {
         "scene": "S03",
-        "text": "At last, Theseus defeats the creature.",
-        "start": 47.14,
-        "end": 50.08
-      },
-      {
-        "scene": "S03",
-        "text": "He follows Ariadnes thread back toward daylight, while the people waiting outside listen for footsteps.",
-        "start": 50.08,
-        "end": 57.44
+        "text": "When the creature falls, Theseus grips the red line and follows it toward daylight, while those outside wait for a sound.",
+        "start": 49.1,
+        "end": 57.449
       },
       {
         "scene": "S04",
-        "text": "Ariadne leaves her father and her home to flee with Theseus.",
-        "start": 58.7,
-        "end": 62.94
+        "text": "Ariadne abandons her father and sails with Theseus into the open Aegean.",
+        "start": 58.56,
+        "end": 64.2
       },
       {
         "scene": "S04",
-        "text": "Their ship cuts through the Aegean.",
-        "start": 63.5,
-        "end": 65.5
+        "text": "Crete sinks behind them.",
+        "start": 64.56,
+        "end": 66.06
       },
       {
         "scene": "S04",
-        "text": "She has risked everything for him.",
-        "start": 66.16,
-        "end": 68.62
-      },
-      {
-        "scene": "S04",
-        "text": "At night on deck, the island of Crete disappears behind them, and she finally lets herself believe they have a future.",
-        "start": 68.84,
-        "end": 77.12
+        "text": "She has risked her home, her name, and everything she owns, but on the deck she lets herself believe he will not abandon her.",
+        "start": 66.5,
+        "end": 75.608
       },
       {
         "scene": "S05",
-        "text": "The ship stops at Naxos.",
-        "start": 77.969,
-        "end": 80.24
+        "text": "At Naxos, the ship leaves Ariadne sleeping on the shore.",
+        "start": 76.66,
+        "end": 81.24
       },
       {
         "scene": "S05",
-        "text": "In a well-known version of the myth, Ariadne is left asleep on the shore while Theseus sails away.",
-        "start": 80.74,
-        "end": 88.12
+        "text": "She wakes to waves, searches empty sand, and sees Theseus's sail shrinking beyond reach.",
+        "start": 81.96,
+        "end": 89.2
       },
       {
         "scene": "S05",
-        "text": "She wakes to the sound of waves.",
-        "start": 88.8,
-        "end": 90.66
-      },
-      {
-        "scene": "S05",
-        "text": "She searches the beach, sees a distant sail, and realizes she has been abandoned.",
-        "start": 91.36,
-        "end": 97.24
+        "text": "In that instant, rescue becomes betrayal.",
+        "start": 89.88,
+        "end": 93.17
       },
       {
         "scene": "S06",
-        "text": "Other ancient tellings give Ariadne a different fate.",
-        "start": 98.58,
-        "end": 101.82
+        "text": "Ancient tellings disagree about Ariadne's fate.",
+        "start": 94.44,
+        "end": 98.04
       },
       {
         "scene": "S06",
-        "text": "But the abandoned Ariadne remains a painful image: the woman whose courage brought a hero home was left without a home herself.",
-        "start": 102.18,
-        "end": 111.4
+        "text": "But the image endures: the woman who led a hero out of death is left without a home.",
+        "start": 98.52,
+        "end": 104.58
       },
       {
         "scene": "S06",
-        "text": "On the sand, she holds the end of a red thread with no one on the other side.",
-        "start": 111.98,
-        "end": 117.58
+        "text": "On the shore, Ariadne holds one end of the red thread.",
+        "start": 105.04,
+        "end": 109.38
+      },
+      {
+        "scene": "S06",
+        "text": "Nothing answers from the other side.",
+        "start": 110.02,
+        "end": 112.02
       }
     ],
     "captions": [
       {
         "scene": "S01",
-        "text": "What if you saved the person you",
+        "text": "What if saving someone you love is",
         "start": 0.0,
-        "end": 1.9,
+        "end": 2.38,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "loved, only to be abandoned by them?",
-        "start": 1.91,
-        "end": 4.58,
+        "text": "the very act that leaves you alone?",
+        "start": 2.39,
+        "end": 4.68,
         "word_count": 7
       },
       {
         "scene": "S01",
         "text": "In Greek myth,",
-        "start": 5.06,
-        "end": 6.0,
+        "start": 5.32,
+        "end": 6.18,
         "word_count": 3
       },
       {
         "scene": "S01",
         "text": "Ariadne, daughter of King Minos of Crete,",
-        "start": 6.36,
-        "end": 9.61,
+        "start": 6.56,
+        "end": 9.75,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "sees the Athenian prince Theseus among young",
-        "start": 10.38,
-        "end": 13.9,
+        "text": "sees the Athenian prince Theseus among youths",
+        "start": 10.52,
+        "end": 14.58,
         "word_count": 7
       },
       {
         "scene": "S01",
-        "text": "people heading toward the Labyrinth.",
-        "start": 13.91,
-        "end": 15.8,
+        "text": "condemned to enter the Labyrinth.",
+        "start": 14.59,
+        "end": 16.16,
         "word_count": 5
       },
       {
         "scene": "S01",
-        "text": "He plans to confront the Minotaur.",
-        "start": 18.96,
-        "end": 20.74,
+        "text": "He intends to face the Minotaur,",
+        "start": 18.54,
+        "end": 20.3,
         "word_count": 6
       },
       {
         "scene": "S01",
-        "text": "Few expect him to emerge.",
-        "start": 20.75,
-        "end": 20.76,
-        "word_count": 5
+        "text": "a bull-headed monster.",
+        "start": 20.94,
+        "end": 21.92,
+        "word_count": 3
+      },
+      {
+        "scene": "S01",
+        "text": "No one expects him to return.",
+        "start": 21.93,
+        "end": 22.46,
+        "word_count": 6
       },
       {
         "scene": "S02",
         "text": "Ariadne gives Theseus a sword and a",
-        "start": 21.7,
-        "end": 24.46,
+        "start": 23.46,
+        "end": 26.34,
         "word_count": 7
       },
       {
         "scene": "S02",
-        "text": "spool of thread.",
-        "start": 24.47,
-        "end": 25.34,
-        "word_count": 3
-      },
-      {
-        "scene": "S02",
-        "text": "She tells him to fasten one end",
-        "start": 25.35,
-        "end": 28.12,
-        "word_count": 7
-      },
-      {
-        "scene": "S02",
-        "text": "at the entrance,",
-        "start": 28.13,
-        "end": 29.0,
-        "word_count": 3
-      },
-      {
-        "scene": "S02",
-        "text": "and unwind the rest as he walks.",
-        "start": 29.01,
-        "end": 31.92,
-        "word_count": 7
-      },
-      {
-        "scene": "S02",
-        "text": "He can fight the monster if he",
-        "start": 32.66,
-        "end": 34.16,
-        "word_count": 7
-      },
-      {
-        "scene": "S02",
-        "text": "chooses. But the thread is his only",
-        "start": 34.17,
-        "end": 37.14,
-        "word_count": 7
-      },
-      {
-        "scene": "S02",
-        "text": "sure way through the maze.",
-        "start": 37.15,
-        "end": 38.38,
-        "word_count": 5
-      },
-      {
-        "scene": "S03",
-        "text": "Theseus follows the thread through winding corridors",
-        "start": 39.54,
-        "end": 42.46,
-        "word_count": 7
-      },
-      {
-        "scene": "S03",
-        "text": "until he meets the Minotaur.",
-        "start": 42.47,
-        "end": 44.32,
-        "word_count": 5
-      },
-      {
-        "scene": "S03",
-        "text": "The struggle is brutal.",
-        "start": 45.04,
-        "end": 46.48,
+        "text": "spool of red thread.",
+        "start": 26.35,
+        "end": 27.54,
         "word_count": 4
       },
       {
-        "scene": "S03",
-        "text": "At last, Theseus defeats the creature.",
-        "start": 47.14,
-        "end": 50.08,
-        "word_count": 6
+        "scene": "S02",
+        "text": "At the maze entrance,",
+        "start": 27.55,
+        "end": 29.36,
+        "word_count": 4
       },
       {
-        "scene": "S03",
-        "text": "He follows Ariadnes thread back toward daylight,",
-        "start": 50.09,
-        "end": 53.9,
+        "scene": "S02",
+        "text": "she ties one end to the stone",
+        "start": 29.98,
+        "end": 32.02,
         "word_count": 7
       },
       {
-        "scene": "S03",
-        "text": "while the people waiting outside listen for",
-        "start": 54.4,
-        "end": 56.84,
+        "scene": "S02",
+        "text": "and makes him promise to unwind it",
+        "start": 32.03,
+        "end": 34.76,
         "word_count": 7
       },
       {
-        "scene": "S03",
-        "text": "footsteps.",
-        "start": 56.85,
-        "end": 57.44,
+        "scene": "S02",
+        "text": "behind him. The blade may kill the",
+        "start": 34.77,
+        "end": 37.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "monster; only the thread can bring him",
+        "start": 37.43,
+        "end": 40.24,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "back.",
+        "start": 40.25,
+        "end": 40.674,
         "word_count": 1
       },
       {
-        "scene": "S04",
-        "text": "Ariadne leaves her father and her home",
-        "start": 58.7,
-        "end": 61.26,
+        "scene": "S03",
+        "text": "Theseus follows the thread into darkness and",
+        "start": 41.66,
+        "end": 45.1,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "finds the Minotaur.",
+        "start": 45.11,
+        "end": 46.2,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "Their fight shakes the maze.",
+        "start": 46.88,
+        "end": 48.46,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "When the creature falls,",
+        "start": 49.1,
+        "end": 50.48,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "Theseus grips the red line and follows",
+        "start": 51.1,
+        "end": 53.64,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "it toward daylight,",
+        "start": 53.65,
+        "end": 54.64,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "while those outside wait for a sound.",
+        "start": 55.12,
+        "end": 57.449,
         "word_count": 7
       },
       {
         "scene": "S04",
-        "text": "to flee with Theseus.",
-        "start": 61.27,
-        "end": 62.94,
+        "text": "Ariadne abandons her father and sails with",
+        "start": 58.56,
+        "end": 61.6,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Theseus into the open Aegean.",
+        "start": 61.61,
+        "end": 64.2,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "Crete sinks behind them.",
+        "start": 64.56,
+        "end": 66.06,
         "word_count": 4
       },
       {
         "scene": "S04",
-        "text": "Their ship cuts through the Aegean.",
-        "start": 63.5,
-        "end": 65.5,
+        "text": "She has risked her home,",
+        "start": 66.5,
+        "end": 68.02,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "her name, and everything she owns,",
+        "start": 68.28,
+        "end": 70.74,
         "word_count": 6
       },
       {
         "scene": "S04",
-        "text": "She has risked everything for him.",
-        "start": 66.16,
-        "end": 68.62,
+        "text": "but on the deck she lets herself",
+        "start": 71.28,
+        "end": 73.46,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "believe he will not abandon her.",
+        "start": 73.47,
+        "end": 75.608,
         "word_count": 6
       },
       {
-        "scene": "S04",
-        "text": "At night on deck,",
-        "start": 68.84,
-        "end": 70.02,
-        "word_count": 4
-      },
-      {
-        "scene": "S04",
-        "text": "the island of Crete disappears behind them,",
-        "start": 70.56,
-        "end": 73.34,
+        "scene": "S05",
+        "text": "At Naxos, the ship leaves Ariadne sleeping",
+        "start": 76.66,
+        "end": 80.42,
         "word_count": 7
       },
       {
-        "scene": "S04",
-        "text": "and she finally lets herself believe they",
-        "start": 73.46,
-        "end": 76.26,
-        "word_count": 7
-      },
-      {
-        "scene": "S04",
-        "text": "have a future.",
-        "start": 76.27,
-        "end": 77.12,
+        "scene": "S05",
+        "text": "on the shore.",
+        "start": 80.43,
+        "end": 81.24,
         "word_count": 3
       },
       {
         "scene": "S05",
-        "text": "The ship stops at Naxos.",
-        "start": 77.969,
-        "end": 80.24,
-        "word_count": 5
-      },
-      {
-        "scene": "S05",
-        "text": "In a well-known version of the myth,",
-        "start": 80.74,
-        "end": 82.72,
-        "word_count": 7
-      },
-      {
-        "scene": "S05",
-        "text": "Ariadne is left asleep on the shore",
-        "start": 83.34,
-        "end": 86.04,
-        "word_count": 7
-      },
-      {
-        "scene": "S05",
-        "text": "while Theseus sails away.",
-        "start": 86.05,
-        "end": 88.12,
+        "text": "She wakes to waves,",
+        "start": 81.96,
+        "end": 83.2,
         "word_count": 4
       },
       {
         "scene": "S05",
-        "text": "She wakes to the sound of waves.",
-        "start": 88.8,
-        "end": 90.66,
+        "text": "searches empty sand,",
+        "start": 83.82,
+        "end": 85.14,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "and sees Theseus's sail shrinking beyond reach.",
+        "start": 85.42,
+        "end": 89.2,
         "word_count": 7
       },
       {
         "scene": "S05",
-        "text": "She searches the beach,",
-        "start": 91.36,
-        "end": 92.68,
-        "word_count": 4
+        "text": "In that instant,",
+        "start": 89.88,
+        "end": 90.98,
+        "word_count": 3
       },
       {
         "scene": "S05",
-        "text": "sees a distant sail,",
-        "start": 93.2,
-        "end": 94.6,
-        "word_count": 4
+        "text": "rescue becomes betrayal.",
+        "start": 91.5,
+        "end": 93.17,
+        "word_count": 3
       },
       {
-        "scene": "S05",
-        "text": "and realizes she has been abandoned.",
-        "start": 94.78,
-        "end": 97.24,
+        "scene": "S06",
+        "text": "Ancient tellings disagree about Ariadne's fate.",
+        "start": 94.44,
+        "end": 98.04,
         "word_count": 6
       },
       {
         "scene": "S06",
-        "text": "Other ancient tellings give Ariadne a different",
-        "start": 98.58,
-        "end": 101.3,
+        "text": "But the image endures:",
+        "start": 98.52,
+        "end": 99.86,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "the woman who led a hero out",
+        "start": 100.46,
+        "end": 102.32,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "fate. But the abandoned Ariadne remains a",
-        "start": 101.31,
-        "end": 104.98,
+        "text": "of death is left without a home.",
+        "start": 102.33,
+        "end": 104.58,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "painful image: the woman whose courage brought",
-        "start": 104.99,
-        "end": 108.22,
+        "text": "On the shore,",
+        "start": 105.04,
+        "end": 106.04,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "Ariadne holds one end of the red",
+        "start": 106.6,
+        "end": 108.94,
         "word_count": 7
       },
       {
         "scene": "S06",
-        "text": "a hero home was left without a",
-        "start": 108.23,
-        "end": 110.5,
+        "text": "thread. Nothing answers from the other side.",
+        "start": 108.95,
+        "end": 112.02,
         "word_count": 7
-      },
-      {
-        "scene": "S06",
-        "text": "home herself. On the sand,",
-        "start": 110.51,
-        "end": 112.8,
-        "word_count": 5
-      },
-      {
-        "scene": "S06",
-        "text": "she holds the end of a red",
-        "start": 113.46,
-        "end": 115.14,
-        "word_count": 7
-      },
-      {
-        "scene": "S06",
-        "text": "thread with no one on the other",
-        "start": 115.15,
-        "end": 117.12,
-        "word_count": 7
-      },
-      {
-        "scene": "S06",
-        "text": "side.",
-        "start": 117.13,
-        "end": 117.58,
-        "word_count": 1
       }
     ]
   },
@@ -483,8 +451,8 @@
       "id": "S01",
       "asset": "assets/H01.png",
       "start": 0.0,
-      "speech_end": 20.74,
-      "end": 21.26,
+      "speech_end": 22.46,
+      "end": 23.025,
       "pause_after": 0.45,
       "camera": {
         "description": "start with locked gate and move to exchange of determined glances; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
@@ -499,36 +467,36 @@
       },
       "image_interval": {
         "start": 0.0,
-        "end": 21.26
+        "end": 23.025
       },
-      "measured_pause_after": 0.52,
+      "measured_pause_after": 0.565,
       "visual_beats": [
         {
           "start": 0.0,
-          "end": 5.06,
+          "end": 5.32,
           "reason": "Opening: Cretan palace corridor",
           "anchor": "opening",
           "x_focus": 0.0,
           "y_focus": 0.5,
-          "spoken_anchor": "What if you saved the person you loved, only to be abandoned by them?"
+          "spoken_anchor": "What if saving someone you love is the very act that leaves you alone?"
         },
         {
-          "start": 5.06,
-          "end": 18.96,
+          "start": 5.32,
+          "end": 18.54,
           "reason": "Development: bound Athenian youths",
           "anchor": "development",
           "x_focus": 0.47,
           "y_focus": 0.5,
-          "spoken_anchor": "In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among young people heading toward the Labyrinth."
+          "spoken_anchor": "In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among youths condemned to enter the Labyrinth."
         },
         {
-          "start": 18.96,
-          "end": 21.26,
+          "start": 18.54,
+          "end": 23.025,
           "reason": "Reveal: A prisoner in Crete; Ariadne watching Theseus across gate",
           "anchor": "reveal",
           "x_focus": 0.92,
           "y_focus": 0.5,
-          "spoken_anchor": "He plans to confront the Minotaur."
+          "spoken_anchor": "He intends to face the Minotaur, a bull-headed monster."
         }
       ],
       "travel_axis": "horizontal"
@@ -536,9 +504,9 @@
     {
       "id": "S02",
       "asset": "assets/H02.png",
-      "start": 21.26,
-      "speech_end": 38.38,
-      "end": 39.011,
+      "start": 23.025,
+      "speech_end": 40.674,
+      "end": 41.274,
       "pause_after": 0.6,
       "camera": {
         "description": "trace thread from Ariadnes hand to first turn of the dark maze; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
@@ -552,37 +520,37 @@
         "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 21.26,
-        "end": 39.011
+        "start": 23.025,
+        "end": 41.274
       },
-      "measured_pause_after": 0.631,
+      "measured_pause_after": 0.6,
       "visual_beats": [
         {
-          "start": 21.26,
-          "end": 25.34,
+          "start": 23.025,
+          "end": 27.54,
           "reason": "Opening: Ariadne passing thread and blade",
           "anchor": "opening",
           "x_focus": 0.0,
           "y_focus": 0.5,
-          "spoken_anchor": "Ariadne gives Theseus a sword and a spool of thread."
+          "spoken_anchor": "Ariadne gives Theseus a sword and a spool of red thread."
         },
         {
-          "start": 25.34,
-          "end": 32.66,
+          "start": 27.54,
+          "end": 36.14,
           "reason": "Development: knot tied at stone entrance",
           "anchor": "development",
           "x_focus": 0.47,
           "y_focus": 0.5,
-          "spoken_anchor": "She tells him to fasten one end at the entrance, and unwind the rest as he walks."
+          "spoken_anchor": "At the maze entrance, she ties one end to the stone and makes him promise to unwind it behind him."
         },
         {
-          "start": 32.66,
-          "end": 39.011,
+          "start": 36.14,
+          "end": 41.274,
           "reason": "Reveal: The thread; thread entering maze",
           "anchor": "reveal",
           "x_focus": 0.92,
           "y_focus": 0.5,
-          "spoken_anchor": "He can fight the monster if he chooses."
+          "spoken_anchor": "The blade may kill the monster; only the thread can bring him back."
         }
       ],
       "travel_axis": "horizontal"
@@ -590,9 +558,9 @@
     {
       "id": "S03",
       "asset": "assets/H03.png",
-      "start": 39.011,
-      "speech_end": 57.44,
-      "end": 58.189,
+      "start": 41.274,
+      "speech_end": 57.449,
+      "end": 58.099,
       "pause_after": 0.65,
       "camera": {
         "description": "pan along thread past shadowed fight toward bright exit; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
@@ -606,37 +574,37 @@
         "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 39.011,
-        "end": 58.189
+        "start": 41.274,
+        "end": 58.099
       },
-      "measured_pause_after": 0.749,
+      "measured_pause_after": 0.65,
       "visual_beats": [
         {
-          "start": 39.011,
-          "end": 45.04,
+          "start": 41.274,
+          "end": 46.88,
           "reason": "Opening: giant winding masonry maze",
           "anchor": "opening",
           "x_focus": 0.0,
           "y_focus": 0.5,
-          "spoken_anchor": "Theseus follows the thread through winding corridors until he meets the Minotaur."
+          "spoken_anchor": "Theseus follows the thread into darkness and finds the Minotaur."
         },
         {
-          "start": 45.04,
-          "end": 47.14,
+          "start": 46.88,
+          "end": 49.1,
           "reason": "Development: fierce but non-graphic combat silhouettes",
           "anchor": "development",
           "x_focus": 0.47,
           "y_focus": 0.5,
-          "spoken_anchor": "The struggle is brutal."
+          "spoken_anchor": "Their fight shakes the maze."
         },
         {
-          "start": 47.14,
-          "end": 58.189,
+          "start": 49.1,
+          "end": 58.099,
           "reason": "Reveal: In the maze; Theseus gripping red thread toward light",
           "anchor": "reveal",
           "x_focus": 0.92,
           "y_focus": 0.5,
-          "spoken_anchor": "At last, Theseus defeats the creature."
+          "spoken_anchor": "When the creature falls, Theseus grips the red line and follows it toward daylight, while those outside wait for a sound."
         }
       ],
       "travel_axis": "horizontal"
@@ -644,9 +612,9 @@
     {
       "id": "S04",
       "asset": "assets/H04.png",
-      "start": 58.189,
-      "speech_end": 77.12,
-      "end": 77.969,
+      "start": 58.099,
+      "speech_end": 75.608,
+      "end": 76.358,
       "pause_after": 0.75,
       "camera": {
         "description": "move from receding palace to Ariadnes face and then open water; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
@@ -660,37 +628,37 @@
         "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 58.189,
-        "end": 77.969
+        "start": 58.099,
+        "end": 76.358
       },
-      "measured_pause_after": 0.849,
+      "measured_pause_after": 0.75,
       "visual_beats": [
         {
-          "start": 58.189,
-          "end": 63.5,
+          "start": 58.099,
+          "end": 64.56,
           "reason": "Opening: departing boat at dusk",
           "anchor": "opening",
           "x_focus": 0.0,
           "y_focus": 0.5,
-          "spoken_anchor": "Ariadne leaves her father and her home to flee with Theseus."
+          "spoken_anchor": "Ariadne abandons her father and sails with Theseus into the open Aegean."
         },
         {
-          "start": 63.5,
-          "end": 66.16,
+          "start": 64.56,
+          "end": 66.5,
           "reason": "Development: Ariadne alone watching Cretan coast",
           "anchor": "development",
           "x_focus": 0.47,
           "y_focus": 0.5,
-          "spoken_anchor": "Their ship cuts through the Aegean."
+          "spoken_anchor": "Crete sinks behind them."
         },
         {
-          "start": 66.16,
-          "end": 77.969,
+          "start": 66.5,
+          "end": 76.358,
           "reason": "Reveal: Escape by sea; shared cloaks at rail",
           "anchor": "reveal",
           "x_focus": 0.92,
           "y_focus": 0.5,
-          "spoken_anchor": "She has risked everything for him."
+          "spoken_anchor": "She has risked her home, her name, and everything she owns, but on the deck she lets herself believe he will not abandon her."
         }
       ],
       "travel_axis": "horizontal"
@@ -698,9 +666,9 @@
     {
       "id": "S05",
       "asset": "assets/H05.png",
-      "start": 77.969,
-      "speech_end": 97.24,
-      "end": 98.255,
+      "start": 76.358,
+      "speech_end": 93.17,
+      "end": 94.12,
       "pause_after": 0.95,
       "camera": {
         "description": "begin with empty space beside her then track across sea to the vanishing sail; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
@@ -714,37 +682,37 @@
         "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 77.969,
-        "end": 98.255
+        "start": 76.358,
+        "end": 94.12
       },
-      "measured_pause_after": 1.015,
+      "measured_pause_after": 0.95,
       "visual_beats": [
         {
-          "start": 77.969,
-          "end": 80.74,
+          "start": 76.358,
+          "end": 81.96,
           "reason": "Opening: Ariadne waking on deserted beach",
           "anchor": "opening",
           "x_focus": 0.0,
           "y_focus": 0.5,
-          "spoken_anchor": "The ship stops at Naxos."
+          "spoken_anchor": "At Naxos, the ship leaves Ariadne sleeping on the shore."
         },
         {
-          "start": 80.74,
-          "end": 88.8,
+          "start": 81.96,
+          "end": 89.88,
           "reason": "Development: empty footprint trail",
           "anchor": "development",
           "x_focus": 0.47,
           "y_focus": 0.5,
-          "spoken_anchor": "In a well-known version of the myth, Ariadne is left asleep on the shore while Theseus sails away."
+          "spoken_anchor": "She wakes to waves, searches empty sand, and sees Theseus's sail shrinking beyond reach."
         },
         {
-          "start": 88.8,
-          "end": 98.255,
+          "start": 89.88,
+          "end": 94.12,
           "reason": "Reveal: Naxos; sail small on horizon",
           "anchor": "reveal",
           "x_focus": 0.92,
           "y_focus": 0.5,
-          "spoken_anchor": "She wakes to the sound of waves."
+          "spoken_anchor": "In that instant, rescue becomes betrayal."
         }
       ],
       "travel_axis": "horizontal"
@@ -752,9 +720,9 @@
     {
       "id": "S06",
       "asset": "assets/H06.png",
-      "start": 98.255,
-      "speech_end": 117.58,
-      "end": 119.002,
+      "start": 94.12,
+      "speech_end": 112.02,
+      "end": 113.428,
       "pause_after": 1.4,
       "camera": {
         "description": "pull back from thread to solitary figure facing sunrise, without divine figures; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
@@ -768,37 +736,37 @@
         "no_hard_crop_changes": true
       },
       "image_interval": {
-        "start": 98.255,
-        "end": 119.002
+        "start": 94.12,
+        "end": 113.428
       },
-      "measured_pause_after": 1.422,
+      "measured_pause_after": 1.408,
       "visual_beats": [
         {
-          "start": 98.255,
-          "end": 102.18,
+          "start": 94.12,
+          "end": 98.52,
           "reason": "Opening: Ariadne standing upright at wave line",
           "anchor": "opening",
           "x_focus": 0.0,
           "y_focus": 0.5,
-          "spoken_anchor": "Other ancient tellings give Ariadne a different fate."
+          "spoken_anchor": "Ancient tellings disagree about Ariadne's fate."
         },
         {
-          "start": 102.18,
-          "end": 111.98,
+          "start": 98.52,
+          "end": 105.04,
           "reason": "Development: broken red thread in hand",
           "anchor": "development",
           "x_focus": 0.47,
           "y_focus": 0.5,
-          "spoken_anchor": "But the abandoned Ariadne remains a painful image: the woman whose courage brought a hero home was left without a home herself."
+          "spoken_anchor": "But the image endures: the woman who led a hero out of death is left without a home."
         },
         {
-          "start": 111.98,
-          "end": 119.002,
+          "start": 105.04,
+          "end": 113.428,
           "reason": "Reveal: What the thread could not save; empty sea under sunrise",
           "anchor": "reveal",
           "x_focus": 0.92,
           "y_focus": 0.5,
-          "spoken_anchor": "On the sand, she holds the end of a red thread with no one on the other side."
+          "spoken_anchor": "On the shore, Ariadne holds one end of the red thread."
         }
       ],
       "travel_axis": "horizontal"
@@ -812,7 +780,7 @@
       "voice_priority": true,
       "duck_on_speech": true,
       "start": 0.0,
-      "end": 21.26
+      "end": 23.025
     },
     {
       "scene": "S02",
@@ -820,8 +788,8 @@
       "instrumentation": "low frame drum, plucked lyre, surf, sparse plaintive reed",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 21.26,
-      "end": 39.011
+      "start": 23.025,
+      "end": 41.274
     },
     {
       "scene": "S03",
@@ -829,8 +797,8 @@
       "instrumentation": "low frame drum, plucked lyre, surf, sparse plaintive reed",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 39.011,
-      "end": 58.189
+      "start": 41.274,
+      "end": 58.099
     },
     {
       "scene": "S04",
@@ -838,8 +806,8 @@
       "instrumentation": "low frame drum, plucked lyre, surf, sparse plaintive reed",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 58.189,
-      "end": 77.969
+      "start": 58.099,
+      "end": 76.358
     },
     {
       "scene": "S05",
@@ -847,8 +815,8 @@
       "instrumentation": "low frame drum, plucked lyre, surf, sparse plaintive reed",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 77.969,
-      "end": 98.255
+      "start": 76.358,
+      "end": 94.12
     },
     {
       "scene": "S06",
@@ -856,8 +824,8 @@
       "instrumentation": "low frame drum, plucked lyre, surf, sparse plaintive reed",
       "voice_priority": true,
       "duck_on_speech": true,
-      "start": 98.255,
-      "end": 119.002
+      "start": 94.12,
+      "end": 113.428
     }
   ],
   "sfx": [
@@ -866,42 +834,42 @@
       "cue": "ambient_place",
       "narration_masking_forbidden": true,
       "start": 0.0,
-      "end": 21.26
+      "end": 23.025
     },
     {
       "scene": "S02",
       "cue": "gesture_detail",
       "narration_masking_forbidden": true,
-      "start": 21.26,
-      "end": 39.011
+      "start": 23.025,
+      "end": 41.274
     },
     {
       "scene": "S03",
       "cue": "texture_environment",
       "narration_masking_forbidden": true,
-      "start": 39.011,
-      "end": 58.189
+      "start": 41.274,
+      "end": 58.099
     },
     {
       "scene": "S04",
       "cue": "critical_event",
       "narration_masking_forbidden": true,
-      "start": 58.189,
-      "end": 77.969
+      "start": 58.099,
+      "end": 76.358
     },
     {
       "scene": "S05",
       "cue": "dramatic_hit",
       "narration_masking_forbidden": true,
-      "start": 77.969,
-      "end": 98.255
+      "start": 76.358,
+      "end": 94.12
     },
     {
       "scene": "S06",
       "cue": "fade_to_atmosphere",
       "narration_masking_forbidden": true,
-      "start": 98.255,
-      "end": 119.002
+      "start": 94.12,
+      "end": 113.428
     }
   ]
 }
