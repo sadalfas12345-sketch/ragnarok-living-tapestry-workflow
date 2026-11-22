@@ -363,6 +363,8 @@
   },
   "character_intros": {
     "enabled": true,
+    "require_first_use_intro_for_known_names": true,
+    "lexicon_source": "batch_01/character_intro_lexicon.json",
     "max_inserted_words": 6,
     "max_new_intro_per_scene": 1,
     "never_repeat": true,

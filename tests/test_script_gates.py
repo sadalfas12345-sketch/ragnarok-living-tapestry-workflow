@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from batch_01.batch_runner import effective_scene_caption, source_files, validate_spec
+from batch_01.batch_runner import add_character_intro, effective_scene_caption, source_files, validate_spec
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,6 +61,15 @@ class ScriptGateRegressionTests(unittest.TestCase):
         effective = effective_scene_caption(spec, 0, spec["scenes"][0]["caption"], [])
         self.assertEqual(effective.lower().count("akan"), 1)
         self.assertNotIn("In Akan / Ghana tradition", effective)
+
+    def test_first_use_minotaur_gets_short_non_spoiler_intro(self):
+        effective = add_character_intro("He plans to confront the Minotaur. Few expect him to emerge.", [])
+        self.assertEqual(effective, "He plans to confront the Minotaur, a bull-headed monster. Few expect him to emerge.")
+
+    def test_first_use_intro_is_not_repeated(self):
+        first = add_character_intro("He plans to confront the Minotaur.", [])
+        second = add_character_intro("Theseus meets the Minotaur.", [first])
+        self.assertEqual(second, "Theseus meets the Minotaur.")
 
 
 if __name__ == "__main__":

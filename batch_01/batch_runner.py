@@ -496,8 +496,15 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
         source_pattern = rf"\bIn\s+{re.escape(name)}\b\s*,?"
         if re.search(source_pattern, caption, re.IGNORECASE):
             return re.sub(source_pattern, f"{name}, {intro},", caption, count=1, flags=re.IGNORECASE)
+        # Preserve an existing article and sentence punctuation. This keeps
+        # first-use additions natural for phrases such as "the Minotaur."
+        article_pattern = rf"\b(?P<article>the|a|an)\s+{re.escape(name)}\b\s*,?"
+        article_match = re.search(article_pattern, caption, re.IGNORECASE)
+        if article_match:
+            replacement = f"{article_match.group('article')} {name}, {intro}"
+            return caption[:article_match.start()] + replacement + caption[article_match.end():]
         pattern = rf"\b{re.escape(name)}\b\s*,?"
-        replacement = f"{name}, {intro},"
+        replacement = f"{name}, {intro}"
         return re.sub(pattern, replacement, caption, count=1)
     return caption
 
