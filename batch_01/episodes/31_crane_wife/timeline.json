@@ -1,0 +1,913 @@
+{
+  "schema": "living_tapestry_timeline_v1",
+  "master_clock": "audio/narration.wav",
+  "sample_rate": 24000,
+  "runtime_seconds": 112.341,
+  "narration": {
+    "voice": "en-US-AvaNeural",
+    "alignment": "Whisper tiny.en word timestamps measured against final narration waveform",
+    "phrases": [
+      {
+        "scene": "S01",
+        "text": "What if the person you loved was destroying herself to keep you warm?",
+        "start": 0.0,
+        "end": 4.24
+      },
+      {
+        "scene": "S01",
+        "text": "In a Japanese folktale, a poor man finds a white crane caught in a trap.",
+        "start": 4.7,
+        "end": 10.04
+      },
+      {
+        "scene": "S01",
+        "text": "He frees its bloodied leg and watches it vanish into falling snow.",
+        "start": 10.64,
+        "end": 14.96
+      },
+      {
+        "scene": "S02",
+        "text": "Days later, a young woman arrives at his cottage in the winter dusk.",
+        "start": 15.78,
+        "end": 20.6
+      },
+      {
+        "scene": "S02",
+        "text": "She asks to stay, and in time they marry.",
+        "start": 21.28,
+        "end": 24.14
+      },
+      {
+        "scene": "S02",
+        "text": "Their home has little food and no fine clothing, but for a while, they are happy.",
+        "start": 24.14,
+        "end": 29.994
+      },
+      {
+        "scene": "S03",
+        "text": "When money runs out, the wife offers to weave a beautiful cloth.",
+        "start": 31.14,
+        "end": 35.72
+      },
+      {
+        "scene": "S03",
+        "text": "She asks only one thing: he must never look inside while she works.",
+        "start": 36.36,
+        "end": 41.16
+      },
+      {
+        "scene": "S03",
+        "text": "Behind the closed door, the loom moves for nights.",
+        "start": 41.82,
+        "end": 44.84
+      },
+      {
+        "scene": "S03",
+        "text": "At dawn, she emerges weak, holding silk unlike anything he has seen.",
+        "start": 45.58,
+        "end": 51.78
+      },
+      {
+        "scene": "S04",
+        "text": "He sells the cloth for a fortune.",
+        "start": 52.492,
+        "end": 54.88
+      },
+      {
+        "scene": "S04",
+        "text": "Soon another buyer offers even more, and the husband asks her to weave again.",
+        "start": 55.72,
+        "end": 60.76
+      },
+      {
+        "scene": "S04",
+        "text": "She agrees, though her face is drained.",
+        "start": 61.38,
+        "end": 64.34
+      },
+      {
+        "scene": "S04",
+        "text": "The loom begins behind the door.",
+        "start": 64.98,
+        "end": 67.04
+      },
+      {
+        "scene": "S04",
+        "text": "This time, fear and curiosity drive him to the keyhole.",
+        "start": 67.62,
+        "end": 71.895
+      },
+      {
+        "scene": "S05",
+        "text": "Inside, there is no woman at the loom.",
+        "start": 73.0,
+        "end": 75.68
+      },
+      {
+        "scene": "S05",
+        "text": "A white crane is pulling feathers from its own body and weaving them into cloth.",
+        "start": 75.68,
+        "end": 81.78
+      },
+      {
+        "scene": "S05",
+        "text": "The man recognizes the bird he once saved.",
+        "start": 82.48,
+        "end": 85.58
+      },
+      {
+        "scene": "S05",
+        "text": "She sees him in the doorway.",
+        "start": 86.26,
+        "end": 87.68
+      },
+      {
+        "scene": "S05",
+        "text": "The promise that kept them together is broken.",
+        "start": 88.46,
+        "end": 91.12
+      },
+      {
+        "scene": "S06",
+        "text": "The crane tells him she can no longer remain as his wife.",
+        "start": 92.36,
+        "end": 95.88
+      },
+      {
+        "scene": "S06",
+        "text": "In this telling, she spreads her injured wings and flies into the winter sky.",
+        "start": 96.42,
+        "end": 102.46
+      },
+      {
+        "scene": "S06",
+        "text": "He runs after her, too late.",
+        "start": 103.02,
+        "end": 104.76
+      },
+      {
+        "scene": "S06",
+        "text": "Back in the cottage, her unfinished cloth lies beside a bowl meant for two.",
+        "start": 104.76,
+        "end": 110.941
+      }
+    ],
+    "captions": [
+      {
+        "scene": "S01",
+        "text": "What if the person you loved was",
+        "start": 0.0,
+        "end": 2.16,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "destroying herself to keep you warm?",
+        "start": 2.17,
+        "end": 4.24,
+        "word_count": 6
+      },
+      {
+        "scene": "S01",
+        "text": "In a Japanese folktale,",
+        "start": 4.7,
+        "end": 5.98,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "a poor man finds a white crane",
+        "start": 6.88,
+        "end": 9.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "caught in a trap.",
+        "start": 9.07,
+        "end": 10.04,
+        "word_count": 4
+      },
+      {
+        "scene": "S01",
+        "text": "He frees its bloodied leg and watches",
+        "start": 10.64,
+        "end": 13.0,
+        "word_count": 7
+      },
+      {
+        "scene": "S01",
+        "text": "it vanish into falling snow.",
+        "start": 13.01,
+        "end": 14.96,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "Days later, a young woman arrives at",
+        "start": 15.78,
+        "end": 18.66,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "his cottage in the winter dusk.",
+        "start": 18.67,
+        "end": 20.6,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "She asks to stay,",
+        "start": 21.28,
+        "end": 22.58,
+        "word_count": 4
+      },
+      {
+        "scene": "S02",
+        "text": "and in time they marry.",
+        "start": 22.59,
+        "end": 24.14,
+        "word_count": 5
+      },
+      {
+        "scene": "S02",
+        "text": "Their home has little food and no",
+        "start": 24.15,
+        "end": 26.84,
+        "word_count": 7
+      },
+      {
+        "scene": "S02",
+        "text": "fine clothing, but for a while,",
+        "start": 26.85,
+        "end": 28.92,
+        "word_count": 6
+      },
+      {
+        "scene": "S02",
+        "text": "they are happy.",
+        "start": 28.93,
+        "end": 29.994,
+        "word_count": 3
+      },
+      {
+        "scene": "S03",
+        "text": "When money runs out,",
+        "start": 31.14,
+        "end": 32.42,
+        "word_count": 4
+      },
+      {
+        "scene": "S03",
+        "text": "the wife offers to weave a beautiful",
+        "start": 32.76,
+        "end": 35.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "cloth. She asks only one thing:",
+        "start": 35.21,
+        "end": 37.94,
+        "word_count": 6
+      },
+      {
+        "scene": "S03",
+        "text": "he must never look inside while she",
+        "start": 38.44,
+        "end": 40.68,
+        "word_count": 7
+      },
+      {
+        "scene": "S03",
+        "text": "works. Behind the closed door,",
+        "start": 40.69,
+        "end": 43.14,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "the loom moves for nights.",
+        "start": 43.54,
+        "end": 44.84,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "At dawn, she emerges weak,",
+        "start": 45.58,
+        "end": 48.14,
+        "word_count": 5
+      },
+      {
+        "scene": "S03",
+        "text": "holding silk unlike anything he has seen.",
+        "start": 48.62,
+        "end": 51.78,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "He sells the cloth for a fortune.",
+        "start": 52.492,
+        "end": 54.88,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "Soon another buyer offers even more,",
+        "start": 55.72,
+        "end": 57.96,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "and the husband asks her to weave",
+        "start": 58.22,
+        "end": 60.2,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "again. She agrees,",
+        "start": 60.21,
+        "end": 62.34,
+        "word_count": 3
+      },
+      {
+        "scene": "S04",
+        "text": "though her face is drained.",
+        "start": 62.52,
+        "end": 64.34,
+        "word_count": 5
+      },
+      {
+        "scene": "S04",
+        "text": "The loom begins behind the door.",
+        "start": 64.98,
+        "end": 67.04,
+        "word_count": 6
+      },
+      {
+        "scene": "S04",
+        "text": "This time, fear and curiosity drive him",
+        "start": 67.62,
+        "end": 71.06,
+        "word_count": 7
+      },
+      {
+        "scene": "S04",
+        "text": "to the keyhole.",
+        "start": 71.07,
+        "end": 71.895,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "Inside, there is no woman at the",
+        "start": 73.0,
+        "end": 75.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "loom. A white crane is pulling feathers",
+        "start": 75.41,
+        "end": 78.42,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "from its own body and weaving them",
+        "start": 78.43,
+        "end": 81.04,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "into cloth. The man recognizes the bird",
+        "start": 81.05,
+        "end": 84.4,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "he once saved.",
+        "start": 84.41,
+        "end": 85.58,
+        "word_count": 3
+      },
+      {
+        "scene": "S05",
+        "text": "She sees him in the doorway.",
+        "start": 86.26,
+        "end": 87.68,
+        "word_count": 6
+      },
+      {
+        "scene": "S05",
+        "text": "The promise that kept them together is",
+        "start": 88.46,
+        "end": 90.56,
+        "word_count": 7
+      },
+      {
+        "scene": "S05",
+        "text": "broken.",
+        "start": 90.57,
+        "end": 91.12,
+        "word_count": 1
+      },
+      {
+        "scene": "S06",
+        "text": "The crane tells him she can no",
+        "start": 92.36,
+        "end": 94.3,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "longer remain as his wife.",
+        "start": 94.31,
+        "end": 95.88,
+        "word_count": 5
+      },
+      {
+        "scene": "S06",
+        "text": "In this telling,",
+        "start": 96.42,
+        "end": 97.38,
+        "word_count": 3
+      },
+      {
+        "scene": "S06",
+        "text": "she spreads her injured wings and flies",
+        "start": 97.96,
+        "end": 100.96,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "into the winter sky.",
+        "start": 100.97,
+        "end": 102.46,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "He runs after her,",
+        "start": 103.02,
+        "end": 104.16,
+        "word_count": 4
+      },
+      {
+        "scene": "S06",
+        "text": "too late. Back in the cottage,",
+        "start": 104.17,
+        "end": 106.42,
+        "word_count": 6
+      },
+      {
+        "scene": "S06",
+        "text": "her unfinished cloth lies beside a bowl",
+        "start": 107.06,
+        "end": 110.32,
+        "word_count": 7
+      },
+      {
+        "scene": "S06",
+        "text": "meant for two.",
+        "start": 110.33,
+        "end": 110.941,
+        "word_count": 3
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/H01.png",
+      "start": 0.0,
+      "speech_end": 14.96,
+      "end": 15.445,
+      "pause_after": 0.45,
+      "camera": {
+        "description": "close on injured wing then drift right to the rescuer and the bird taking flight; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
+      },
+      "image_interval": {
+        "start": 0.0,
+        "end": 15.445
+      },
+      "measured_pause_after": 0.485,
+      "visual_beats": [
+        {
+          "start": 0.0,
+          "end": 4.7,
+          "reason": "Opening: close-up rope biting into white feathers",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "What if the person you loved was destroying herself to keep you warm?"
+        },
+        {
+          "start": 4.7,
+          "end": 10.64,
+          "reason": "Development: man kneeling in snow",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "In a Japanese folktale, a poor man finds a white crane caught in a trap."
+        },
+        {
+          "start": 10.64,
+          "end": 15.445,
+          "reason": "Reveal: A bird in the snow; freed crane rising over a poor cottage",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "He frees its bloodied leg and watches it vanish into falling snow."
+        }
+      ],
+      "travel_axis": "horizontal"
+    },
+    {
+      "id": "S02",
+      "asset": "assets/H02.png",
+      "start": 15.445,
+      "speech_end": 29.994,
+      "end": 30.595,
+      "pause_after": 0.6,
+      "camera": {
+        "description": "follow from frosted doorway toward the shared bowl and the couples faces; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
+      },
+      "image_interval": {
+        "start": 15.445,
+        "end": 30.595
+      },
+      "measured_pause_after": 0.601,
+      "visual_beats": [
+        {
+          "start": 15.445,
+          "end": 21.28,
+          "reason": "Opening: woman at snowy threshold",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Days later, a young woman arrives at his cottage in the winter dusk."
+        },
+        {
+          "start": 21.28,
+          "end": 24.14,
+          "reason": "Development: shared steaming bowl by hearth",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "She asks to stay, and in time they marry."
+        },
+        {
+          "start": 24.14,
+          "end": 30.595,
+          "reason": "Reveal: A stranger at the door; quiet laughter beside empty rice jar",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Their home has little food and no fine clothing, but for a while, they are happy."
+        }
+      ],
+      "travel_axis": "horizontal"
+    },
+    {
+      "id": "S03",
+      "asset": "assets/H03.png",
+      "start": 30.595,
+      "speech_end": 51.78,
+      "end": 52.492,
+      "pause_after": 0.65,
+      "camera": {
+        "description": "begin at door latch, track into her trembling hands and the luminous silk; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
+      },
+      "image_interval": {
+        "start": 30.595,
+        "end": 52.492
+      },
+      "measured_pause_after": 0.712,
+      "visual_beats": [
+        {
+          "start": 30.595,
+          "end": 36.36,
+          "reason": "Opening: closed loom-room door",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "When money runs out, the wife offers to weave a beautiful cloth."
+        },
+        {
+          "start": 36.36,
+          "end": 41.82,
+          "reason": "Development: husband waiting through lamplight",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "She asks only one thing: he must never look inside while she works."
+        },
+        {
+          "start": 41.82,
+          "end": 52.492,
+          "reason": "Reveal: One forbidden room; pale wife holding brilliant woven fabric",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "Behind the closed door, the loom moves for nights."
+        }
+      ],
+      "travel_axis": "horizontal"
+    },
+    {
+      "id": "S04",
+      "asset": "assets/H04.png",
+      "start": 52.492,
+      "speech_end": 71.895,
+      "end": 72.645,
+      "pause_after": 0.75,
+      "camera": {
+        "description": "track from coins toward untouched bowl then stop close to the keyhole; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
+      },
+      "image_interval": {
+        "start": 52.492,
+        "end": 72.645
+      },
+      "measured_pause_after": 0.75,
+      "visual_beats": [
+        {
+          "start": 52.492,
+          "end": 55.72,
+          "reason": "Opening: merchant counting coins",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "He sells the cloth for a fortune."
+        },
+        {
+          "start": 55.72,
+          "end": 61.38,
+          "reason": "Development: wife beside cold untouched food",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "Soon another buyer offers even more, and the husband asks her to weave again."
+        },
+        {
+          "start": 61.38,
+          "end": 72.645,
+          "reason": "Reveal: The second cloth; husband bending toward a door with light beneath it",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "She agrees, though her face is drained."
+        }
+      ],
+      "travel_axis": "horizontal"
+    },
+    {
+      "id": "S05",
+      "asset": "assets/H05.png",
+      "start": 72.645,
+      "speech_end": 91.12,
+      "end": 92.085,
+      "pause_after": 0.95,
+      "camera": {
+        "description": "reveal feathers first then the crane and finally the mans expression; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
+      },
+      "image_interval": {
+        "start": 72.645,
+        "end": 92.085
+      },
+      "measured_pause_after": 0.965,
+      "visual_beats": [
+        {
+          "start": 72.645,
+          "end": 75.68,
+          "reason": "Opening: crane losing feathers at loom",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "Inside, there is no woman at the loom."
+        },
+        {
+          "start": 75.68,
+          "end": 82.48,
+          "reason": "Development: tiny pile of red-stained white plumage",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "A white crane is pulling feathers from its own body and weaving them into cloth."
+        },
+        {
+          "start": 82.48,
+          "end": 92.085,
+          "reason": "Reveal: The truth; husband frozen in doorway",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "The man recognizes the bird he once saved."
+        }
+      ],
+      "travel_axis": "horizontal"
+    },
+    {
+      "id": "S06",
+      "asset": "assets/H06.png",
+      "start": 92.085,
+      "speech_end": 110.941,
+      "end": 112.341,
+      "pause_after": 1.4,
+      "camera": {
+        "description": "follow the departing crane then slowly settle on the second untouched bowl; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        },
+        "primary_direction": "right",
+        "no_hard_crop_changes": true
+      },
+      "image_interval": {
+        "start": 92.085,
+        "end": 112.341
+      },
+      "measured_pause_after": 1.4,
+      "visual_beats": [
+        {
+          "start": 92.085,
+          "end": 96.42,
+          "reason": "Opening: wife crane leaving snowy roof",
+          "anchor": "opening",
+          "x_focus": 0.0,
+          "y_focus": 0.5,
+          "spoken_anchor": "The crane tells him she can no longer remain as his wife."
+        },
+        {
+          "start": 96.42,
+          "end": 103.02,
+          "reason": "Development: man reaching upward",
+          "anchor": "development",
+          "x_focus": 0.47,
+          "y_focus": 0.5,
+          "spoken_anchor": "In this telling, she spreads her injured wings and flies into the winter sky."
+        },
+        {
+          "start": 103.02,
+          "end": 112.341,
+          "reason": "Reveal: An empty winter home; two bowls and unfinished cloth inside empty cottage",
+          "anchor": "reveal",
+          "x_focus": 0.92,
+          "y_focus": 0.5,
+          "spoken_anchor": "He runs after her, too late."
+        }
+      ],
+      "travel_axis": "horizontal"
+    }
+  ],
+  "music": [
+    {
+      "scene": "S01",
+      "cue": "mystery_and_hook",
+      "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 0.0,
+      "end": 15.445
+    },
+    {
+      "scene": "S02",
+      "cue": "rising_conflict",
+      "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 15.445,
+      "end": 30.595
+    },
+    {
+      "scene": "S03",
+      "cue": "moral_decision",
+      "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 30.595,
+      "end": 52.492
+    },
+    {
+      "scene": "S04",
+      "cue": "consequences",
+      "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 52.492,
+      "end": 72.645
+    },
+    {
+      "scene": "S05",
+      "cue": "climax",
+      "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 72.645,
+      "end": 92.085
+    },
+    {
+      "scene": "S06",
+      "cue": "resolution",
+      "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+      "voice_priority": true,
+      "duck_on_speech": true,
+      "start": 92.085,
+      "end": 112.341
+    }
+  ],
+  "sfx": [
+    {
+      "scene": "S01",
+      "cue": "ambient_place",
+      "narration_masking_forbidden": true,
+      "start": 0.0,
+      "end": 15.445
+    },
+    {
+      "scene": "S02",
+      "cue": "gesture_detail",
+      "narration_masking_forbidden": true,
+      "start": 15.445,
+      "end": 30.595
+    },
+    {
+      "scene": "S03",
+      "cue": "texture_environment",
+      "narration_masking_forbidden": true,
+      "start": 30.595,
+      "end": 52.492
+    },
+    {
+      "scene": "S04",
+      "cue": "critical_event",
+      "narration_masking_forbidden": true,
+      "start": 52.492,
+      "end": 72.645
+    },
+    {
+      "scene": "S05",
+      "cue": "dramatic_hit",
+      "narration_masking_forbidden": true,
+      "start": 72.645,
+      "end": 92.085
+    },
+    {
+      "scene": "S06",
+      "cue": "fade_to_atmosphere",
+      "narration_masking_forbidden": true,
+      "start": 92.085,
+      "end": 112.341
+    }
+  ]
+}

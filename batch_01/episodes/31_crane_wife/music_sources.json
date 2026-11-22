@@ -1,0 +1,31 @@
+{
+  "profile": "default_ragnarok_palette",
+  "license_policy": "commercial_use_true_attribution_required_false",
+  "sources": [
+    {
+      "title": "Epical Drums 05",
+      "artist": "Grigoriy Nuzhny",
+      "url": "https://mixkit.co/free-stock-music/orchestral-hybrid/",
+      "file": "mixkit_epical_drums_05_grigoriy_nuzhny.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_epical_drums_05_grigoriy_nuzhny.mp3"
+    },
+    {
+      "title": "Epic Games",
+      "artist": "Ahjay Stelino",
+      "url": "https://mixkit.co/free-stock-music/mood/tension/",
+      "file": "mixkit_epic_games_ahjay_stelino.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_epic_games_ahjay_stelino.mp3"
+    },
+    {
+      "title": "A New Life",
+      "artist": "Eugenio Mininni",
+      "url": "https://mixkit.co/free-stock-music/orchestral-hybrid/",
+      "file": "mixkit_a_new_life_eugenio_mininni.mp3",
+      "license_url": "https://mixkit.co/license/modal/musicFree/",
+      "local_file": "mixkit_a_new_life_eugenio_mininni.mp3"
+    }
+  ],
+  "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."
+}

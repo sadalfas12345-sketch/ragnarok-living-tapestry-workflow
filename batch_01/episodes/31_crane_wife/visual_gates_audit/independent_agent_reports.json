@@ -1,0 +1,155 @@
+{
+  "audience_emotion_gate": {
+    "reviewer": "audience_emotion_gate",
+    "status": "PASS",
+    "findings": []
+  },
+  "name_spelling": {
+    "reviewer": "name_spelling_agent",
+    "status": "PASS",
+    "identified_names": [],
+    "findings": []
+  },
+  "historical_scene": {
+    "reviewer": "historical_scene_agent",
+    "status": "PASS",
+    "findings": []
+  },
+  "wording": {
+    "reviewer": "wording_agent",
+    "status": "PASS",
+    "findings": []
+  },
+  "procedural_pipeline_audit": {
+    "reviewer": "procedural_pipeline_audit",
+    "status": "PASS",
+    "findings": []
+  },
+  "natural_speech_review": {
+    "reviewer": "natural_speech_review",
+    "status": "PASS",
+    "findings": [],
+    "auditory_playback": "not available to automated gate"
+  },
+  "anatomy_artifact_review": {
+    "reviewer": "anatomy_artifact_agent",
+    "status": "PASS",
+    "findings": [],
+    "samples": [
+      {
+        "scene": "S01",
+        "timestamp": 1.236,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S01",
+        "timestamp": 7.722,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S01",
+        "timestamp": 14.209,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S02",
+        "timestamp": 16.657,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S02",
+        "timestamp": 23.02,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S02",
+        "timestamp": 29.383,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S03",
+        "timestamp": 32.347,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S03",
+        "timestamp": 41.543,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S03",
+        "timestamp": 50.74,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S04",
+        "timestamp": 54.104,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S04",
+        "timestamp": 62.568,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S04",
+        "timestamp": 71.033,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S05",
+        "timestamp": 74.2,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S05",
+        "timestamp": 82.365,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S05",
+        "timestamp": 90.53,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S06",
+        "timestamp": 93.705,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S06",
+        "timestamp": 102.213,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      },
+      {
+        "scene": "S06",
+        "timestamp": 110.721,
+        "verdict": "PASS",
+        "notes": "Sampled rendered frame shows coherent hands, faces, limbs, crane anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+      }
+    ],
+    "audit_path": "C:\\Users\\USER\\living-tapestries-ragnarok\\batch_01\\episodes\\31_crane_wife\\visual_gates_audit\\anatomy_review.json"
+  },
+  "adversarial_render_review": {
+    "reviewer": "adversarial_render_review",
+    "status": "PASS",
+    "findings": []
+  }
+}

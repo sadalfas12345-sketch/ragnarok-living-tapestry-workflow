@@ -306,10 +306,16 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
             if civilization and civilization.lower() not in prompt and art_style.lower() not in prompt:
                 warnings.append(f"scene S{index:02d} image prompt does not repeat the episode's cultural/style direction")
             forbidden = [str(x).lower() for x in POLICY.get("artwork", {}).get("forbidden_style_terms", [])]
-            if any(term in prompt for term in forbidden):
+            # Negative prompt exclusions such as "no cartoon" are valid
+            # quality direction, not evidence that the generated style is
+            # cartoon-like. Flag only positive uses of forbidden terms.
+            def positive_forbidden_term(text: str, term: str) -> bool:
+                pattern = r"(?<!\bno )(?<!\bnot )(?<!\bavoid )(?<!\bwithout )" + re.escape(term)
+                return bool(re.search(pattern, text))
+            if any(positive_forbidden_term(prompt, term) for term in forbidden):
                 errors.append(f"scene S{index:02d} image prompt contains a forbidden low-fidelity style term")
         style_text = " ".join([str(reference.get("style_board_prompt", "")), art_style]).lower()
-        if any(term in style_text for term in POLICY.get("artwork", {}).get("forbidden_style_terms", [])):
+        if any(positive_forbidden_term(style_text, str(term).lower()) for term in POLICY.get("artwork", {}).get("forbidden_style_terms", [])):
             errors.append("authoritative art direction contains a forbidden low-fidelity style term")
         religious_gate = POLICY.get("artwork", {}).get("major_religious_imagery_gate", {})
         if religious_gate.get("enabled"):

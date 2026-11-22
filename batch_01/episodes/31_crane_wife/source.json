@@ -1,0 +1,312 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 31,
+  "slug": "31_crane_wife",
+  "title": "The Crane Wife: The Price of a Promise",
+  "series": "Living Tapestries â€” The Worldâ€™s Great Stories",
+  "genre": "Japanese folklore, tragic love",
+  "historical_period": "traditional rural Japan, intentionally unspecified era",
+  "civilization": "Japanese folktale tradition; variant details differ by telling",
+  "source_integrity": {
+    "primary_source_or_tradition": "Japanese oral folktale The Crane Wife, with multiple regional variants",
+    "classification": "traditional_folklore_reimagined",
+    "narration_style": "Original emotionally expressive retelling; mark folklore and legends as traditional stories, distinguish historical facts from invented interior states",
+    "translation_policy": "New original paraphrase only; never quote modern copyrighted translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "historical_constraints": [
+    "This is a traditional folktale, not a documented historical event.",
+    "Variations include a crane as wife or daughter; this version uses the wife tradition.",
+    "Do not depict the transformation as belonging to one provably original version."
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one horizontal 3:1 cohesive six-beat visual development frieze for The Crane Wife: The Price of a Promise. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Progress from opening, dilemma, irreversible consequence, to emotionally resonant ending. Keep character designs exactly consistent: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+    "art_style": "Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces",
+    "palette": "derive from specified civilization and visual style; do not inherit palette from previous episode",
+    "character_design_lock": [
+      "the poor woodcutter, gentle adult man in patched indigo",
+      "the mysterious wife, graceful adult woman in cream kimono",
+      "the wounded white crane with one scarlet head mark"
+    ],
+    "material_consistency": "all six scenes must appear painted on the same historically and culturally appropriate physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive storyteller with restrained emotional variation; natural human cadence, do not melodramatically shout",
+    "soundtrack_direction": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "verify current track licensing and retain evidence before production",
+      "track_titles": "unassigned; select licensed tracks during production"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read captions directly from scenes[].caption; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate six seamless horizontal panoramas H01â€“H06; adapt P01â€“P06 if existing legacy adapter still expects portrait paths",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render rightward panorama camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ],
+    "narration_source": "scenes[].caption (opening_hook metadata; do not narrate twice)"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "What if the person you loved was destroying herself to keep you warm? In a Japanese folktale, a poor man finds a white crane caught in a trap. He frees its bloodied leg and watches it vanish into falling snow.",
+      "intended_emotion": "compassion turning to wonder",
+      "emotional_turn": "A bird in the snow: compassion turning to wonder",
+      "visual_evidence": "the man loosens the rope as the wounded crane lifts its head",
+      "beat_title": "A bird in the snow",
+      "required_visuals": [
+        "close-up rope biting into white feathers",
+        "man kneeling in snow",
+        "freed crane rising over a poor cottage"
+      ],
+      "image_prompt": "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Three sequential visual beats: close-up rope biting into white feathers; man kneeling in snow; freed crane rising over a poor cottage. Key emotional evidence: the man loosens the rope as the wounded crane lifts its head. Maintain exact character appearances from references/style_board.png: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+      "camera": {
+        "description": "close on injured wing then drift right to the rescuer and the bird taking flight; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "Days later, a young woman arrives at his cottage in the winter dusk. She asks to stay, and in time they marry. Their home has little food and no fine clothing, but for a while, they are happy.",
+      "intended_emotion": "tenderness and hope",
+      "emotional_turn": "A stranger at the door: tenderness and hope",
+      "visual_evidence": "two people share one bowl beside the fire despite a nearly bare kitchen",
+      "beat_title": "A stranger at the door",
+      "required_visuals": [
+        "woman at snowy threshold",
+        "shared steaming bowl by hearth",
+        "quiet laughter beside empty rice jar"
+      ],
+      "image_prompt": "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Three sequential visual beats: woman at snowy threshold; shared steaming bowl by hearth; quiet laughter beside empty rice jar. Key emotional evidence: two people share one bowl beside the fire despite a nearly bare kitchen. Maintain exact character appearances from references/style_board.png: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+      "camera": {
+        "description": "follow from frosted doorway toward the shared bowl and the couples faces; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.6
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "When money runs out, the wife offers to weave a beautiful cloth. She asks only one thing: he must never look inside while she works. Behind the closed door, the loom moves for nights. At dawn, she emerges weak, holding silk unlike anything he has seen.",
+      "intended_emotion": "gratitude becoming unease",
+      "emotional_turn": "One forbidden room: gratitude becoming unease",
+      "visual_evidence": "the wife presents gorgeous cloth with visibly trembling exhausted hands",
+      "beat_title": "One forbidden room",
+      "required_visuals": [
+        "closed loom-room door",
+        "husband waiting through lamplight",
+        "pale wife holding brilliant woven fabric"
+      ],
+      "image_prompt": "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Three sequential visual beats: closed loom-room door; husband waiting through lamplight; pale wife holding brilliant woven fabric. Key emotional evidence: the wife presents gorgeous cloth with visibly trembling exhausted hands. Maintain exact character appearances from references/style_board.png: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+      "camera": {
+        "description": "begin at door latch, track into her trembling hands and the luminous silk; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "He sells the cloth for a fortune. Soon another buyer offers even more, and the husband asks her to weave again. She agrees, though her face is drained. The loom begins behind the door. This time, fear and curiosity drive him to the keyhole.",
+      "intended_emotion": "dread and conflicted desire",
+      "emotional_turn": "The second cloth: dread and conflicted desire",
+      "visual_evidence": "money placed beside the exhausted womans untouched dinner while husband leans toward the forbidden door",
+      "beat_title": "The second cloth",
+      "required_visuals": [
+        "merchant counting coins",
+        "wife beside cold untouched food",
+        "husband bending toward a door with light beneath it"
+      ],
+      "image_prompt": "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Three sequential visual beats: merchant counting coins; wife beside cold untouched food; husband bending toward a door with light beneath it. Key emotional evidence: money placed beside the exhausted womans untouched dinner while husband leans toward the forbidden door. Maintain exact character appearances from references/style_board.png: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+      "camera": {
+        "description": "track from coins toward untouched bowl then stop close to the keyhole; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.75
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Inside, there is no woman at the loom. A white crane is pulling feathers from its own body and weaving them into cloth. The man recognizes the bird he once saved. She sees him in the doorway. The promise that kept them together is broken.",
+      "intended_emotion": "shock turning to grief",
+      "emotional_turn": "The truth: shock turning to grief",
+      "visual_evidence": "featherless patches on the crane and husbands stunned stillness reveal the personal cost",
+      "beat_title": "The truth",
+      "required_visuals": [
+        "crane losing feathers at loom",
+        "tiny pile of red-stained white plumage",
+        "husband frozen in doorway"
+      ],
+      "image_prompt": "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Three sequential visual beats: crane losing feathers at loom; tiny pile of red-stained white plumage; husband frozen in doorway. Key emotional evidence: featherless patches on the crane and husbands stunned stillness reveal the personal cost. Maintain exact character appearances from references/style_board.png: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+      "camera": {
+        "description": "reveal feathers first then the crane and finally the mans expression; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.95
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "The crane tells him she can no longer remain as his wife. In this telling, she spreads her injured wings and flies into the winter sky. He runs after her, too late. Back in the cottage, her unfinished cloth lies beside a bowl meant for two.",
+      "intended_emotion": "grief and lingering tenderness",
+      "emotional_turn": "An empty winter home: grief and lingering tenderness",
+      "visual_evidence": "an untouched bowl and unfinished cloth stand where a loved person was",
+      "beat_title": "An empty winter home",
+      "required_visuals": [
+        "wife crane leaving snowy roof",
+        "man reaching upward",
+        "two bowls and unfinished cloth inside empty cottage"
+      ],
+      "image_prompt": "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Japanese Edo-period narrative screen painting and hand-painted washi scroll, subtle ink-and-mineral pigments, rice-paper texture, winter indigo, soft ivory, persimmon red, restrained gold accents, deeply expressive natural faces. Three sequential visual beats: wife crane leaving snowy roof; man reaching upward; two bowls and unfinished cloth inside empty cottage. Key emotional evidence: an untouched bowl and unfinished cloth stand where a loved person was. Maintain exact character appearances from references/style_board.png: the poor woodcutter, gentle adult man in patched indigo; the mysterious wife, graceful adult woman in cream kimono; the wounded white crane with one scarlet head mark. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+      "camera": {
+        "description": "follow the departing crane then slowly settle on the second untouched bowl; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "shakuhachi breath, restrained koto notes, winter wind, wooden loom",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.4
+    }
+  ],
+  "opening_hook": "What if the person you loved was destroying herself to keep you warm?"
+}

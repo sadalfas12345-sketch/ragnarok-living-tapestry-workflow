@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-11-22T12:27:38.871493+00:00",
+  "video": "final_vertical_1080x1920.mp4",
+  "video_sha256": "61ee68be920c521590fb2db19cef31fe1b03754c554428d693219f4d3591f0ca",
+  "render_id": "61ee68be920c",
+  "expected_drive_filename": "final_vertical_1080x1920_61ee68be920c.mp4",
+  "srt": "Captions_final.srt",
+  "qa": "qa_report.json",
+  "visual_gates": "visual_gates_report.json",
+  "lifecycle": "lifecycle_status.json",
+  "drive_url": "https://drive.google.com/file/d/1f7K5ajI1ceUrh2c7_FwChkw_cRSVc0N_/view?usp=drivesdk",
+  "drive_filename": "final_vertical_1080x1920_61ee68be920c.mp4",
+  "drive_sha256": "61EE68BE920C521590FB2DB19CEF31FE1B03754C554428D693219F4D3591F0CA",
+  "errors": []
+}
