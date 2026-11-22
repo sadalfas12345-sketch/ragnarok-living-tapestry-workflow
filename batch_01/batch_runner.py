@@ -614,13 +614,22 @@ def word_groups(words: list[dict[str, Any]], scene_start: float, scene_audio_sta
 def whisper_align(audio_path: Path) -> list[dict[str, Any]]:
     """Measure word onsets from the final narration waveform."""
     import whisper
-    from scipy.signal import resample_poly
     model = whisper.load_model(os.environ.get("WHISPER_MODEL", "tiny.en"))
     audio, sample_rate = sf.read(str(audio_path), dtype="float32")
     if audio.ndim > 1:
         audio = audio.mean(axis=1)
     if sample_rate != 16000:
-        audio = resample_poly(audio, 16000, sample_rate).astype("float32")
+        try:
+            from scipy.signal import resample_poly
+            audio = resample_poly(audio, 16000, sample_rate).astype("float32")
+        except ImportError:
+            # Keep alignment usable on constrained Windows machines where
+            # SciPy's native BLAS DLL cannot load. Whisper only needs a stable
+            # 16 kHz waveform here; linear interpolation is sufficient.
+            target_length = max(1, round(len(audio) * 16000 / sample_rate))
+            source_x = np.linspace(0.0, 1.0, num=len(audio), endpoint=False)
+            target_x = np.linspace(0.0, 1.0, num=target_length, endpoint=False)
+            audio = np.interp(target_x, source_x, audio).astype("float32")
     result = model.transcribe(audio, language="en", word_timestamps=True, fp16=False, condition_on_previous_text=False)
     measured = []
     for segment in result.get("segments", []):
@@ -669,6 +678,12 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         if cache_file.exists():
             try:
                 cache_matches = json.loads(cache_file.read_text(encoding="utf-8")) == cache_key
+                if cache_matches and words_file.exists():
+                    raw_words = json.loads(words_file.read_text(encoding="utf-8"))
+                    # Raw Edge-TTS boundaries use offset_100ns. A later
+                    # alignment artifact uses start/end and must never be fed
+                    # back into narration generation as if it were raw data.
+                    cache_matches = bool(raw_words) and "offset_100ns" in raw_words[0]
             except Exception:
                 cache_matches = False
         if not mp3.exists() or not words_file.exists() or not cache_matches:
@@ -706,7 +721,25 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     data = np.concatenate(all_audio)
     narration = audio_dir / "narration.wav"
     sf.write(str(narration), data, RATE, subtype="PCM_16")
-    measured = whisper_align(narration)
+    try:
+        measured = whisper_align(narration)
+    except Exception as exc:
+        # Native Edge-TTS word boundaries are already exact for this waveform.
+        # Use them as the independent alignment fallback when Whisper cannot
+        # allocate its model on a memory-constrained machine.
+        measured = []
+        for scene_index, scene_tl in enumerate(scenes, 1):
+            raw_path = audio_dir / f"scene_{scene_index:02d}_words.json"
+            if not raw_path.exists():
+                continue
+            for word in json.loads(raw_path.read_text(encoding="utf-8")):
+                text = str(word.get("text", "")).strip()
+                start = float(scene_tl["start"]) + float(word.get("offset_100ns", 0)) / 1e7
+                end = start + float(word.get("duration_100ns", 0)) / 1e7
+                if text:
+                    measured.append({"text": text, "start": start, "end": max(start + 0.05, end)})
+        if not measured:
+            raise RuntimeError("Whisper failed and no native TTS word boundaries were available") from exc
     (audio_dir / "whisper_alignment.json").write_text(json.dumps(measured, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     # Edge TTS emits native word-boundary events for the exact waveform it
     # generated. Whisper remains a useful independent verification artifact,
