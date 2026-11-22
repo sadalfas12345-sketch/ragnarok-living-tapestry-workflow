@@ -310,6 +310,27 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
     scenes = spec.get("scenes", [])
     if len(scenes) != 6:
         errors.append(f"expected 6 scenes, found {len(scenes)}")
+    if intro_policy.get("enabled", True) and intro_policy.get("require_first_use_intro_for_known_names", True):
+        # Validate the same effective captions that narration generation will
+        # use. A known name is not allowed to reach TTS on first use without
+        # its short, spoiler-free identifier.
+        prior_effective: list[str] = []
+        seen_names: set[str] = set()
+        for scene_index, scene in enumerate(scenes, 1):
+            raw_caption = normalize_text(str(scene.get("caption", "")))
+            effective = effective_scene_caption(spec, scene_index - 1, raw_caption, prior_effective)
+            effective = add_character_intro(effective, prior_effective)
+            for name, intro in CHARACTER_INTRO_LEXICON.items():
+                name_re = rf"\b{re.escape(name)}\b"
+                if not re.search(name_re, raw_caption, re.IGNORECASE) or name.lower() in seen_names:
+                    continue
+                intro_text = str(intro).lower()
+                intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
+                if (intro_text not in effective.lower() and intro_core not in effective.lower()
+                        and not has_local_character_context(raw_caption, name)):
+                    errors.append(f"scene {scene_index} first use of {name} lacks required short character intro")
+                seen_names.add(name.lower())
+            prior_effective.append(effective)
     # The authoritative story JSON owns the opening hook.  It must be the
     # first spoken/captioned text, and it must not be duplicated in another
     # scene.  Fail before any narration, art, or render work if the source
@@ -489,7 +510,7 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
             continue
         intro_text = str(intro).lower()
         intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
-        if intro_text in caption.lower() or intro_core in caption.lower():
+        if intro_text in caption.lower() or intro_core in caption.lower() or has_local_character_context(caption, name):
             continue
         if len(str(intro).split()) > max_words:
             continue
@@ -507,6 +528,22 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
         replacement = f"{name}, {intro}"
         return re.sub(pattern, replacement, caption, count=1)
     return caption
+
+
+def has_local_character_context(caption: str, name: str) -> bool:
+    """Recognize a source-provided role descriptor near a first-use name."""
+    match = re.search(rf"\b{re.escape(name)}\b", caption, re.IGNORECASE)
+    if not match:
+        return False
+    window = caption[max(0, match.start() - 55):match.end() + 55].lower()
+    role_terms = (
+        "young", "child", "goddess", "god", "king", "queen", "lord", "lords",
+        "ruler", "rulers", "hero", "princess", "prince", "spirit", "monster",
+        "creature", "brother", "sister", "father", "mother", "son", "daughter",
+        "husband", "wife", "warrior", "general", "emperor", "empress", "archer",
+        "bat", "woman", "man"
+    )
+    return any(re.search(rf"\b{re.escape(term)}\b", window) for term in role_terms)
 
 
 def smooth_prose(caption: str) -> str:

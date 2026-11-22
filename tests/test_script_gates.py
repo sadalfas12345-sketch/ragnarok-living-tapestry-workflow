@@ -71,6 +71,11 @@ class ScriptGateRegressionTests(unittest.TestCase):
         second = add_character_intro("Theseus meets the Minotaur.", [first])
         self.assertEqual(second, "Theseus meets the Minotaur.")
 
+    def test_minotaur_is_covered_by_the_validation_gate(self):
+        path = ROOT / "batch_01" / "source" / "32_ariadne_thread.json"
+        spec = json.loads(path.read_text(encoding="utf-8-sig"))
+        self.assertEqual(validate_spec(spec), [])
+
 
 if __name__ == "__main__":
     unittest.main()
