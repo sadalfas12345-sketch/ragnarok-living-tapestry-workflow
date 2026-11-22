@@ -205,7 +205,7 @@
                    {
                        "id":  "S04",
                        "asset":  "assets/P04.png",
-                       "caption":  "Ariadne abandons her father and sails with Theseus into the open Aegean. Crete sinks behind them. She has risked her home, her name, and everything she owns, but on the deck she lets herself believe he will not abandon her.",
+                       "caption":  "Ariadne chooses Theseus over her father and leaves Crete with him. She gives up her home, her family, and her place as a princess to save the man condemned to die. As the island recedes behind them, she believes she has traded her old life for a future with him.",
                        "intended_emotion":  "joy mixed with vulnerability",
                        "emotional_turn":  "Escape by sea: joy mixed with vulnerability",
                        "visual_evidence":  "Ariadne looks back toward her receding homeland while Theseus faces forward",
@@ -240,7 +240,7 @@
                    {
                        "id":  "S05",
                        "asset":  "assets/P05.png",
-                       "caption":  "At Naxos, the ship leaves Ariadne sleeping on the shore. She wakes to waves, searches empty sand, and sees Theseus's sail shrinking beyond reach. In that instant, rescue becomes betrayal.",
+                       "caption":  "At Naxos, while Ariadne sleeps, Theseus has the crew leave her on the shore. She wakes to waves, searches empty sand, and sees his sail shrinking beyond reach. In that instant, rescue becomes betrayal.",
                        "intended_emotion":  "shock and betrayal",
                        "emotional_turn":  "Naxos: shock and betrayal",
                        "visual_evidence":  "a sleeping cloak on sand and a retreating sail reveal desertion",

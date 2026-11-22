@@ -2,10 +2,10 @@
 
 - **episode:** 32
 - **title:** Ariadne: The Thread That Saved a Hero
-- **timeline_runtime_seconds:** 113.428
-- **narration_runtime_seconds:** 113.428
-- **video_runtime_seconds:** 113.433
-- **caption_count:** 45
+- **timeline_runtime_seconds:** 117.168
+- **narration_runtime_seconds:** 117.168
+- **video_runtime_seconds:** 117.2
+- **caption_count:** 46
 - **caption_overlap_count:** 0
 - **source_integrity_classification:** myth_reimagined_variant_aware
 - **research_status:** editorial_outline_needs_source_review_before_publication

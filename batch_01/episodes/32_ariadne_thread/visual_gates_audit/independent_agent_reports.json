@@ -34,11 +34,6 @@
         "pronunciation": "Labyrinth"
       },
       {
-        "name": "Aegean",
-        "mode": "english_source_spelling_fallback",
-        "pronunciation": "Aegean"
-      },
-      {
         "name": "Naxos",
         "mode": "english_source_spelling_fallback",
         "pronunciation": "Naxos"

@@ -1,7 +1,7 @@
 # Audio QA
 
 - Episode: 32
-- Runtime: 113.433 seconds encoded video, 113.428 seconds narration timeline
+- Runtime: 117.200 seconds encoded video, 117.168 seconds narration timeline
 - Integrated loudness: -14.16 LUFS measured, -13.99 LUFS after loudnorm target pass
 - True peak: -1.0 dBTP
 - Loudness range: 3.6 LU
