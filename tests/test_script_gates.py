@@ -76,6 +76,10 @@ class ScriptGateRegressionTests(unittest.TestCase):
         spec = json.loads(path.read_text(encoding="utf-8-sig"))
         self.assertEqual(validate_spec(spec), [])
 
+    def test_entity_resolver_treats_minotaur_as_known(self):
+        from batch_01.entity_resolver import audit_text
+        self.assertEqual(audit_text("He confronts the Minotaur."), [])
+
 
 if __name__ == "__main__":
     unittest.main()

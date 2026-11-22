@@ -371,5 +371,13 @@
     "timing_authority": "narration_waveform",
     "spoiler_free": true,
     "forbidden_outcome_terms": ["survivor", "dies", "dead", "murdered", "killed", "returns", "wins", "loses", "defeated"]
+  },
+  "entity_resolution": {
+    "enabled": true,
+    "hard_gate": true,
+    "execution_stage": "pre_render_entity_audit",
+    "provider_order": ["local_llm", "configured_lookup"],
+    "unknown_name_action": "fail_with_scene_and_context",
+    "require_role_intro_for_resolved_character": true
   }
 }
