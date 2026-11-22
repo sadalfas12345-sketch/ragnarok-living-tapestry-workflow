@@ -61,6 +61,64 @@ def parse_srt(path: Path) -> list[dict[str, Any]]:
     return out
 
 
+def independent_caption_alignment(epdir: Path, captions: list[dict[str, Any]], tolerance: float) -> dict[str, Any]:
+    """Compare SRT boundaries with independent Whisper word timings.
+
+    Native TTS word-boundary metadata is useful for construction, but it must
+    not be the only authority: a stale or shifted cache can make captions look
+    valid against the same bad timestamps. Whisper alignment is used here as
+    an independent rendered-audio check.
+    """
+    alignment_path = epdir / "audio" / "whisper_alignment.json"
+    if not alignment_path.exists():
+        return {"status": "FAIL", "errors": ["missing independent Whisper alignment"], "samples": []}
+    try:
+        words = json.loads(alignment_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return {"status": "FAIL", "errors": ["independent Whisper alignment is unreadable"], "samples": []}
+    if not isinstance(words, list) or not words:
+        return {"status": "FAIL", "errors": ["independent Whisper alignment has no words"], "samples": []}
+
+    def tokens(text: str) -> list[str]:
+        normalized = text.lower().replace("-", " ").replace("’", "'")
+        return [re.sub(r"[^a-z0-9]", "", token) for token in re.findall(r"[a-z0-9']+", normalized) if re.sub(r"[^a-z0-9]", "", token)]
+
+    measured: list[tuple[str, float, float]] = []
+    for item in words:
+        item_tokens = tokens(str(item.get("text", "")))
+        if not item_tokens:
+            continue
+        start = float(item.get("start", 0.0))
+        end = float(item.get("end", 0.0))
+        for item_token in item_tokens:
+            measured.append((item_token, start, end))
+    cursor = 0
+    samples: list[dict[str, Any]] = []
+    errors: list[str] = []
+    for index, caption in enumerate(captions, 1):
+        wanted = tokens(str(caption.get("text", "")))
+        match_start = None
+        for candidate in range(cursor, len(measured)):
+            if measured[candidate][0] != wanted[0]:
+                continue
+            if [item[0] for item in measured[candidate:candidate + len(wanted)]] == wanted:
+                match_start = candidate
+                break
+        if match_start is None:
+            errors.append(f"caption {index} cannot be matched to independent Whisper words")
+            continue
+        match_end = match_start + len(wanted) - 1
+        expected_start = measured[match_start][1]
+        expected_end = measured[match_end][2]
+        start_error = float(caption["start"]) - expected_start
+        end_error = float(caption["end"]) - expected_end
+        samples.append({"caption": index, "expected_start": round(expected_start, 3), "actual_start": round(float(caption["start"]), 3), "start_error": round(start_error, 3), "expected_end": round(expected_end, 3), "actual_end": round(float(caption["end"]), 3), "end_error": round(end_error, 3)})
+        if abs(start_error) > tolerance or abs(end_error) > tolerance:
+            errors.append(f"caption {index} boundary differs from Whisper by start={start_error:.3f}s end={end_error:.3f}s")
+        cursor = match_end + 1
+    return {"status": "PASS" if not errors else "FAIL", "errors": errors, "samples": samples, "tolerance_seconds": tolerance}
+
+
 def frame_bytes(video: Path, timestamp: float, width: int = 32, height: int = 57) -> bytes:
     # Small raw frames make the gate fast and keep the audit lightweight.
     p = subprocess.run(
@@ -166,6 +224,19 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if cap["end"] <= cap["start"]: errors.append(f"caption {i + 1} has non-positive duration")
         if cap["start"] < -0.01 or cap["end"] > runtime + 0.12: errors.append(f"caption {i + 1} is outside the timeline")
         if i and cap["start"] < captions[i - 1]["end"] - 0.001: errors.append(f"caption overlap {i} -> {i + 1}")
+
+    alignment_policy = POLICY.get("captions", {}).get("independent_whisper_alignment", {})
+    whisper_alignment_report = {"status": "SKIP", "errors": [], "samples": []}
+    if alignment_policy.get("required", True):
+        whisper_alignment_report = independent_caption_alignment(
+            epdir,
+            captions,
+            float(alignment_policy.get("max_boundary_error_seconds", 0.12)),
+        )
+        if whisper_alignment_report["status"] != "PASS":
+            errors.extend(whisper_alignment_report["errors"])
+        (epdir / "visual_gates_audit").mkdir(exist_ok=True)
+        (epdir / "visual_gates_audit" / "caption_alignment_audit.json").write_text(json.dumps(whisper_alignment_report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     caption_text = " ".join(str(c.get("text", "")) for c in captions)
     source_for_agents = json.loads(source_path.read_text(encoding="utf-8")) if (source_path := epdir / "source.json").exists() else {}

@@ -295,7 +295,12 @@
     "allow_overlap_seconds": 0.0,
     "speech_boundary_tolerance_seconds": 0.08,
     "must_follow_narration": true,
-    "must_not_linger_in_authored_silence": true
+    "must_not_linger_in_authored_silence": true,
+    "independent_whisper_alignment": {
+      "required": true,
+      "max_boundary_error_seconds": 0.12,
+      "failure_message": "caption boundaries must match independently measured Whisper speech timing"
+    }
   },
   "audio": {
     "narration_is_master_clock": true,
