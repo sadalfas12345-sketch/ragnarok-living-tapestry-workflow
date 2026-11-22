@@ -1,0 +1,2 @@
+# Optional: the Mermaid exporter works without this package.
+langgraph>=1.0,<2.0

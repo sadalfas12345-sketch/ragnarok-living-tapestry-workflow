@@ -1,0 +1,27 @@
+flowchart LR
+    source["Source JSON\nvalidate"]
+    assets["Style + scene\nassets"]
+    narration["Narration\nTTS"]
+    timeline["Measured\ntimeline"]
+    captions["Caption\nalignment"]
+    render["Panorama\nrender"]
+    audio["Music + SFX\nmix"]
+    qa["Timing + visual\nQA"]
+    review["Adversarial +\nprocedural review"]
+    delivery["Drive upload +\nverification"]
+    start((START)) --> source
+    source -->|valid| assets
+    assets -->|ready| narration
+    narration -->|waveform master| timeline
+    timeline -->|word timings| captions
+    captions -->|caption plan| render
+    render -->|video| audio
+    audio -->|muxed film| qa
+    qa -->|all hard gates pass| review
+    review -->|review pass| delivery
+    qa -.->|retry: visual/timing failure| render
+    review -.->|retry: wording/speech failure| narration
+    stop((DONE))
+    delivery -->|Drive verified| stop
+    classDef gate fill:#fff3cd,stroke:#b58105,color:#3d2b00
+    class qa,review gate

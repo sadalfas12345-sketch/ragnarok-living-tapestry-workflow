@@ -37,6 +37,20 @@ python batch_01/visual_gates_v2.py --episode 7
 
 `examples/episode_07_hou_yi_input.example.json` is a complete episode input example showing the three-beat visual progression schema.
 
+## Visual workflow map
+
+The production lifecycle is also available as a read-only LangGraph-compatible
+map. Export its Mermaid diagram with no extra dependency:
+
+```powershell
+python -m workflow_viz.export_graph
+```
+
+See `docs/workflow-visualization.md` and `docs/production_workflow.mmd`. The
+optional `requirements-workflow-viz.txt` enables LangGraph compilation for
+inspection; it does not replace the batch runner or execute production side
+effects.
+
 ## Audio rules
 
 - Narration timing is the master clock.
