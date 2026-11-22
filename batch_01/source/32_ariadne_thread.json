@@ -1,0 +1,312 @@
+﻿{
+    "schema_version":  "living_tapestry_story_v1",
+    "episode_number":  32,
+    "slug":  "32_ariadne_thread",
+    "title":  "Ariadne: The Thread That Saved a Hero",
+    "series":  "Living Tapestries â€” The Worldâ€™s Great Stories",
+    "genre":  "Greek mythology, love and abandonment",
+    "historical_period":  "mythic Bronze Age Aegean",
+    "civilization":  "ancient Greek mythic tradition; Crete, Athens, and Naxos",
+    "source_integrity":  {
+                             "primary_source_or_tradition":  "Greek Theseus and Ariadne myth; ancient sources differ on her fate and on Dionysus",
+                             "classification":  "myth_reimagined_variant_aware",
+                             "narration_style":  "Original emotionally expressive retelling; mark folklore and legends as traditional stories, distinguish historical facts from invented interior states",
+                             "translation_policy":  "New original paraphrase only; never quote modern copyrighted translations",
+                             "research_status":  "editorial_outline_needs_source_review_before_publication"
+                         },
+    "historical_constraints":  [
+                                   "The Minotaur and labyrinth belong to myth, not verified history.",
+                                   "Accounts of Ariadnes fate differ; depict the abandonment tradition without treating it as the only version.",
+                                   "Avoid depicting major deity figures or devotional iconography in the artwork."
+                               ],
+    "format":  {
+                   "width":  1080,
+                   "height":  1920,
+                   "fps":  30,
+                   "language":  "en"
+               },
+    "runtime":  {
+                    "target_seconds_range":  [
+                                                 85,
+                                                 135
+                                             ],
+                    "timing_authority":  "derive_from_final_narration_waveform",
+                    "no_hardcoded_scene_times":  true,
+                    "allow_longer_for_natural_delivery":  true,
+                    "voice_speed_wpm_target":  [
+                                                   125,
+                                                   145
+                                               ]
+                },
+    "image_reference":  {
+                            "path":  "references/style_board.png",
+                            "status":  "GENERATE_BEFORE_RENDER",
+                            "style_board_prompt":  "Create one horizontal 3:1 cohesive six-beat visual development frieze for Ariadne: The Thread That Saved a Hero. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Progress from opening, dilemma, irreversible consequence, to emotionally resonant ending. Keep character designs exactly consistent: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                            "art_style":  "Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces",
+                            "palette":  "derive from specified civilization and visual style; do not inherit palette from previous episode",
+                            "character_design_lock":  [
+                                                          "Ariadne, determined young adult Cretan princess in linen",
+                                                          "Theseus, weary young adult Athenian adventurer in bronze-age clothing",
+                                                          "Minotaur, mythical bull-headed creature rendered as restrained fresco monster"
+                                                      ],
+                            "material_consistency":  "all six scenes must appear painted on the same historically and culturally appropriate physical medium",
+                            "do_not_reuse_ragnarok_norse_tapestry":  true
+                        },
+    "audio":  {
+                  "narrator":  "one expressive storyteller with restrained emotional variation; natural human cadence, do not melodramatically shout",
+                  "soundtrack_direction":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                  "music_licensing":  {
+                                          "commercial_use":  true,
+                                          "attribution_required":  false,
+                                          "allow_attribution_if_explicitly_approved":  true,
+                                          "source_files":  "verify current track licensing and retain evidence before production",
+                                          "track_titles":  "unassigned; select licensed tracks during production"
+                                      },
+                  "dialogue":  false,
+                  "mix":  {
+                              "duck_music_on_speech":  true,
+                              "target_lufs":  -14,
+                              "max_true_peak_db":  -1,
+                              "music_relative_to_narration_db_start":  -18,
+                              "check_phone_speaker":  true
+                          }
+              },
+    "workflow":  {
+                     "renderer_repo":  "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+                     "manifest_role":  "authoritative_story_and_visual_intent",
+                     "adapter_required":  "read captions directly from scenes[].caption; do not rely on separate audio/Sxx.txt files",
+                     "steps":  [
+                                   "validate story JSON and factual claims",
+                                   "generate one style board first",
+                                   "generate six seamless horizontal panoramas H01â€“H06; adapt P01â€“P06 if existing legacy adapter still expects portrait paths",
+                                   "generate narration sentence by sentence from caption",
+                                   "compose one timeline.json from measured narration and explicit pauses",
+                                   "word-align captions to speech, no overlaps",
+                                   "render rightward panorama camera moves from the same timeline",
+                                   "build licensed soundtrack and SFX from same timeline",
+                                   "run audio-visual QA and deliver MP4, SRT, manifest"
+                               ],
+                     "outputs":  [
+                                     "final_vertical_1080x1920.mp4",
+                                     "Captions_final.srt",
+                                     "timeline.json",
+                                     "music_sources.json",
+                                     "QC_report.md",
+                                     "references/style_board.png"
+                                 ],
+                     "narration_source":  "scenes[].caption (opening_hook metadata; do not narrate twice)"
+                 },
+    "scenes":  [
+                   {
+                       "id":  "S01",
+                       "asset":  "assets/P01.png",
+                       "caption":  "What if you saved the person you loved, only to be abandoned by them? In Greek myth, Ariadne, daughter of King Minos of Crete, sees the Athenian prince Theseus among young people heading toward the Labyrinth. He plans to confront the Minotaur. Few expect him to emerge.",
+                       "intended_emotion":  "fear and attraction",
+                       "emotional_turn":  "A prisoner in Crete: fear and attraction",
+                       "visual_evidence":  "Ariadne meets a young prisoner through a gate while others shrink into shadow",
+                       "beat_title":  "A prisoner in Crete",
+                       "required_visuals":  [
+                                                "Cretan palace corridor",
+                                                "bound Athenian youths",
+                                                "Ariadne watching Theseus across gate"
+                                            ],
+                       "image_prompt":  "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Three sequential visual beats: Cretan palace corridor; bound Athenian youths; Ariadne watching Theseus across gate. Key emotional evidence: Ariadne meets a young prisoner through a gate while others shrink into shadow. Maintain exact character appearances from references/style_board.png: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                       "camera":  {
+                                      "description":  "start with locked gate and move to exchange of determined glances; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            }
+                                  },
+                       "music":  {
+                                     "cue":  "mystery_and_hook",
+                                     "instrumentation":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "ambient_place",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.45
+                   },
+                   {
+                       "id":  "S02",
+                       "asset":  "assets/P02.png",
+                       "caption":  "Ariadne gives Theseus a sword and a spool of thread. She tells him to fasten one end at the entrance, and unwind the rest as he walks. He can fight the monster if he chooses. But the thread is his only sure way through the maze.",
+                       "intended_emotion":  "hope with growing danger",
+                       "emotional_turn":  "The thread: hope with growing danger",
+                       "visual_evidence":  "red thread stretches between Ariadnes fingers and the labyrinth darkness",
+                       "beat_title":  "The thread",
+                       "required_visuals":  [
+                                                "Ariadne passing thread and blade",
+                                                "knot tied at stone entrance",
+                                                "thread entering maze"
+                                            ],
+                       "image_prompt":  "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Three sequential visual beats: Ariadne passing thread and blade; knot tied at stone entrance; thread entering maze. Key emotional evidence: red thread stretches between Ariadnes fingers and the labyrinth darkness. Maintain exact character appearances from references/style_board.png: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                       "camera":  {
+                                      "description":  "trace thread from Ariadnes hand to first turn of the dark maze; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            }
+                                  },
+                       "music":  {
+                                     "cue":  "rising_conflict",
+                                     "instrumentation":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "gesture_detail",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.6
+                   },
+                   {
+                       "id":  "S03",
+                       "asset":  "assets/P03.png",
+                       "caption":  "Theseus follows the thread through winding corridors until he meets the Minotaur. The struggle is brutal. At last, Theseus defeats the creature. He follows Ariadnes thread back toward daylight, while the people waiting outside listen for footsteps.",
+                       "intended_emotion":  "dread turning to relief",
+                       "emotional_turn":  "In the maze: dread turning to relief",
+                       "visual_evidence":  "hands clutch thread in darkness then emerge into daylight",
+                       "beat_title":  "In the maze",
+                       "required_visuals":  [
+                                                "giant winding masonry maze",
+                                                "fierce but non-graphic combat silhouettes",
+                                                "Theseus gripping red thread toward light"
+                                            ],
+                       "image_prompt":  "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Three sequential visual beats: giant winding masonry maze; fierce but non-graphic combat silhouettes; Theseus gripping red thread toward light. Key emotional evidence: hands clutch thread in darkness then emerge into daylight. Maintain exact character appearances from references/style_board.png: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                       "camera":  {
+                                      "description":  "pan along thread past shadowed fight toward bright exit; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            }
+                                  },
+                       "music":  {
+                                     "cue":  "moral_decision",
+                                     "instrumentation":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "texture_environment",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.65
+                   },
+                   {
+                       "id":  "S04",
+                       "asset":  "assets/P04.png",
+                       "caption":  "Ariadne leaves her father and her home to flee with Theseus. Their ship cuts through the Aegean. She has risked everything for him. At night on deck, the island of Crete disappears behind them, and she finally lets herself believe they have a future.",
+                       "intended_emotion":  "joy mixed with vulnerability",
+                       "emotional_turn":  "Escape by sea: joy mixed with vulnerability",
+                       "visual_evidence":  "Ariadne looks back toward her receding homeland while Theseus faces forward",
+                       "beat_title":  "Escape by sea",
+                       "required_visuals":  [
+                                                "departing boat at dusk",
+                                                "Ariadne alone watching Cretan coast",
+                                                "shared cloaks at rail"
+                                            ],
+                       "image_prompt":  "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Three sequential visual beats: departing boat at dusk; Ariadne alone watching Cretan coast; shared cloaks at rail. Key emotional evidence: Ariadne looks back toward her receding homeland while Theseus faces forward. Maintain exact character appearances from references/style_board.png: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                       "camera":  {
+                                      "description":  "move from receding palace to Ariadnes face and then open water; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            }
+                                  },
+                       "music":  {
+                                     "cue":  "consequences",
+                                     "instrumentation":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "critical_event",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.75
+                   },
+                   {
+                       "id":  "S05",
+                       "asset":  "assets/P05.png",
+                       "caption":  "The ship stops at Naxos. In a well-known version of the myth, Ariadne is left asleep on the shore while Theseus sails away. She wakes to the sound of waves. She searches the beach, sees a distant sail, and realizes she has been abandoned.",
+                       "intended_emotion":  "shock and betrayal",
+                       "emotional_turn":  "Naxos: shock and betrayal",
+                       "visual_evidence":  "a sleeping cloak on sand and a retreating sail reveal desertion",
+                       "beat_title":  "Naxos",
+                       "required_visuals":  [
+                                                "Ariadne waking on deserted beach",
+                                                "empty footprint trail",
+                                                "sail small on horizon"
+                                            ],
+                       "image_prompt":  "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Three sequential visual beats: Ariadne waking on deserted beach; empty footprint trail; sail small on horizon. Key emotional evidence: a sleeping cloak on sand and a retreating sail reveal desertion. Maintain exact character appearances from references/style_board.png: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                       "camera":  {
+                                      "description":  "begin with empty space beside her then track across sea to the vanishing sail; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            }
+                                  },
+                       "music":  {
+                                     "cue":  "climax",
+                                     "instrumentation":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "dramatic_hit",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  0.95
+                   },
+                   {
+                       "id":  "S06",
+                       "asset":  "assets/P06.png",
+                       "caption":  "Other ancient tellings give Ariadne a different fate. But the abandoned Ariadne remains a painful image: the woman whose courage brought a hero home was left without a home herself. On the sand, she holds the end of a red thread with no one on the other side.",
+                       "intended_emotion":  "grief and defiant dignity",
+                       "emotional_turn":  "What the thread could not save: grief and defiant dignity",
+                       "visual_evidence":  "a single loose crimson thread in her hand contrasts the empty horizon",
+                       "beat_title":  "What the thread could not save",
+                       "required_visuals":  [
+                                                "Ariadne standing upright at wave line",
+                                                "broken red thread in hand",
+                                                "empty sea under sunrise"
+                                            ],
+                       "image_prompt":  "Create one seamless horizontal scene panorama at least 3000x1800 pixels, designed for a 1080x1920 vertical crop that moves smoothly rightward. Aegean Bronze Age fresco language fused with classical Greek narrative vase-painting and matte tempera, lapis blue sea, chalk-white masonry, terracotta, oxblood, human psychological depth, period-informed linen, no modern Hellenistic palaces. Three sequential visual beats: Ariadne standing upright at wave line; broken red thread in hand; empty sea under sunrise. Key emotional evidence: a single loose crimson thread in her hand contrasts the empty horizon. Maintain exact character appearances from references/style_board.png: Ariadne, determined young adult Cretan princess in linen; Theseus, weary young adult Athenian adventurer in bronze-age clothing; Minotaur, mythical bull-headed creature rendered as restrained fresco monster. Physical continuity across the panorama, clear foreground silhouettes, meaningful middle-ground action, changing background depth. museum-quality sequential painted panorama, three legible visual developments from left to right, culturally accurate objects and setting, expressive natural human faces, hands and body language, deep atmospheric perspective, harmonious single physical painted surface, no visible panel seams, no subtitles, no decorative writing, no modern items, no watermark, no glossy fantasy, no cartoon, no portraits of religious figures; leave lower 20 percent composition clear for captions",
+                       "camera":  {
+                                      "description":  "pull back from thread to solitary figure facing sunrise, without divine figures; rightward smooth continuous traversal revealing opening, middle and final emotion, no crop teleports",
+                                      "style":  "continuous_panorama_when_possible",
+                                      "max_zoom_fraction":  0.12,
+                                      "no_shake":  true,
+                                      "caption_safe_area":  {
+                                                                "bottom_percent":  20
+                                                            }
+                                  },
+                       "music":  {
+                                     "cue":  "resolution",
+                                     "instrumentation":  "low frame drum, plucked lyre, surf, sparse plaintive reed",
+                                     "voice_priority":  true,
+                                     "duck_on_speech":  true
+                                 },
+                       "sfx":  {
+                                   "cue":  "fade_to_atmosphere",
+                                   "narration_masking_forbidden":  true
+                               },
+                       "pause_after_seconds_hint":  1.4
+                   }
+               ],
+    "opening_hook":  "What if you saved the person you loved, only to be abandoned by them?"
+}

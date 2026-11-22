@@ -1,0 +1,115 @@
+{
+    "reviewer":  "anatomy_artifact_agent",
+    "status":  "PASS",
+    "samples":  [
+                    {
+                        "scene":  "S01",
+                        "timestamp":  1.701,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S01",
+                        "timestamp":  10.63,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S01",
+                        "timestamp":  19.559,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S02",
+                        "timestamp":  22.68,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S02",
+                        "timestamp":  30.136,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S02",
+                        "timestamp":  37.591,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S03",
+                        "timestamp":  40.545,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S03",
+                        "timestamp":  48.6,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S03",
+                        "timestamp":  56.655,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S04",
+                        "timestamp":  59.771,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S04",
+                        "timestamp":  68.079,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S04",
+                        "timestamp":  76.387,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S05",
+                        "timestamp":  79.592,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S05",
+                        "timestamp":  88.112,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S05",
+                        "timestamp":  96.632,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S06",
+                        "timestamp":  99.915,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S06",
+                        "timestamp":  108.628,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    },
+                    {
+                        "scene":  "S06",
+                        "timestamp":  117.342,
+                        "verdict":  "PASS",
+                        "notes":  "Rendered frame review: coherent hands, faces, limbs, Minotaur anatomy, and period clothing; no extra limb, fused hand, impossible joint, rotated head, or malformed body."
+                    }
+                ],
+    "audit_path":  "batch_01\\episodes\\32_ariadne_thread/visual_gates_audit/anatomy_review.json"
+}

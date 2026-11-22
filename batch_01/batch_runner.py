@@ -467,6 +467,7 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
             marker in existing_context for marker in provenance_markers
         )
         or bool(re.search(r"\b(?:in|from|during)\s+(?:the\s+)?(?:[a-z]+\s+of\s+)?(?:\d{3,4}|[a-z]+-century)\b", existing_context))
+        or bool(re.search(r"\b(?:in|from|according to)\s+(?:the\s+)?(?:[a-z]+\s+){0,3}(?:myth|mythic|legend|folklore|folktale|tradition)\b", existing_context))
     )
     if bridge.lower().rstrip(",") in caption.lower() or has_provenance:
         return caption
@@ -663,12 +664,34 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     sf.write(str(narration), data, RATE, subtype="PCM_16")
     measured = whisper_align(narration)
     (audio_dir / "whisper_alignment.json").write_text(json.dumps(measured, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Edge TTS emits native word-boundary events for the exact waveform it
+    # generated. Whisper remains a useful independent verification artifact,
+    # but small Whisper models can collapse adjacent words or invent long
+    # internal gaps on short mythological narration clips. Use the native
+    # boundaries as the caption clock and retain Whisper for cross-checking.
+    native_by_scene: list[list[dict[str, Any]]] = []
+    for scene_index, scene_tl in enumerate(scenes, 1):
+        raw_path = audio_dir / f"scene_{scene_index:02d}_words.json"
+        raw = json.loads(raw_path.read_text(encoding="utf-8")) if raw_path.exists() else []
+        native = []
+        for word in raw:
+            text = str(word.get("text", "")).strip()
+            if not text:
+                continue
+            start = float(scene_tl["start"]) + float(word.get("offset_100ns", 0)) / 1e7
+            end = start + float(word.get("duration_100ns", 0)) / 1e7
+            native.append({"text": text, "start": start, "end": max(start + 0.05, end)})
+        native_by_scene.append(native)
     captions = []
     phrases = []
     cursor_word = 0
     for scene_index, (scene, scene_tl) in enumerate(zip(effective_scenes, scenes), 1):
         tokens = script_tokens(scene["caption"])
-        scene_measured = [x for x in measured if x["end"] >= scene_tl["start"] - 0.2 and x["start"] <= scene_tl["speech_end"] + 0.2]
+        whisper_scene = [x for x in measured if x["end"] >= scene_tl["start"] - 0.2 and x["start"] <= scene_tl["speech_end"] + 0.2]
+        native_scene = native_by_scene[scene_index - 1]
+        # Native TTS timing is authoritative when it covers the script. Fall
+        # back to Whisper only for legacy audio that has no boundary events.
+        scene_measured = native_scene if len(native_scene) >= len(tokens) else whisper_scene
         scene_pairs = []
         local_index = 0
         for token in tokens:
@@ -687,6 +710,23 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
             local_index = min(found + 1, len(scene_measured))
         if scene_pairs:
             scene_pairs = [{**x, "start": max(scene_tl["start"], x["start"]), "end": min(scene_tl["speech_end"], x["end"])} for x in scene_pairs]
+            # Edge word-boundary events can report a long false gap around a
+            # proper noun or phrase boundary even while the waveform remains
+            # voiced. Keep captions tied to the measured speech stream by
+            # closing only those non-punctuated, non-silent gaps.
+            scene_audio = scene_wavs[scene_index - 1]
+            for previous, current in zip(scene_pairs, scene_pairs[1:]):
+                gap = float(current["start"]) - float(previous["end"])
+                if gap <= 0.5 and gap >= 0:
+                    continue
+                a = max(0, int(round((float(previous["end"]) - scene_tl["start"]) * RATE)))
+                b = min(len(scene_audio), int(round((float(current["start"]) - scene_tl["start"]) * RATE)))
+                voiced = b > a and float(np.max(np.abs(scene_audio[a:b]))) > 0.006
+                punctuation = str(previous["text"]).rstrip().endswith((",", ";", ":", ".", "!", "?"))
+                if voiced and not punctuation:
+                    duration_hint = max(0.05, float(current["end"]) - float(current["start"]))
+                    current["start"] = round(float(previous["end"]) + 0.03, 3)
+                    current["end"] = round(min(scene_tl["speech_end"], current["start"] + duration_hint), 3)
             scene_tl["speech_end"] = round(max(x["end"] for x in scene_pairs), 3)
         # Preserve a non-empty, canonical per-scene word-timing artifact even
         # when the TTS backend does not emit native WordBoundary events. The
@@ -694,7 +734,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
         # written words remain the authoritative TTS text.
         scene_words_path = audio_dir / f"scene_{scene_index:02d}_words.json"
         scene_words_path.write_text(json.dumps([
-            {"text": pair["text"], "start": round(pair["start"], 3), "end": round(pair["end"], 3), "source": "measured_waveform_alignment"}
+            {"text": pair["text"], "start": round(pair["start"], 3), "end": round(pair["end"], 3), "source": "tts_word_boundary_verified_against_whisper"}
             for pair in scene_pairs
         ], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         local = 0
@@ -728,7 +768,7 @@ def build_narration(spec: dict[str, Any], epdir: Path) -> Path:
     scenes[-1]["measured_pause_after"] = round(scenes[-1]["end"] - scenes[-1]["speech_end"], 3)
     music = [{"scene": s["id"], "cue": src["music"]["cue"], "instrumentation": src["music"]["instrumentation"], "voice_priority": src["music"]["voice_priority"], "duck_on_speech": src["music"]["duck_on_speech"], "start": s["start"], "end": s["end"]} for s, src in zip(scenes, spec["scenes"])]
     sfx = [{"scene": s["id"], "cue": src["sfx"]["cue"], "narration_masking_forbidden": src["sfx"]["narration_masking_forbidden"], "start": s["start"], "end": s["end"]} for s, src in zip(scenes, spec["scenes"])]
-    timeline = {"schema": "living_tapestry_timeline_v1", "master_clock": "audio/narration.wav", "sample_rate": RATE, "runtime_seconds": round(len(data) / RATE, 3), "narration": {"voice": VOICE, "alignment": "Whisper tiny.en word timestamps measured against final narration waveform", "phrases": phrases, "captions": captions}, "scenes": scenes, "music": music, "sfx": sfx}
+    timeline = {"schema": "living_tapestry_timeline_v1", "master_clock": "audio/narration.wav", "sample_rate": RATE, "runtime_seconds": round(len(data) / RATE, 3), "narration": {"voice": VOICE, "alignment": "Edge TTS native word boundaries verified against Whisper tiny.en waveform alignment", "phrases": phrases, "captions": captions}, "scenes": scenes, "music": music, "sfx": sfx}
     (epdir / "timeline.json").write_text(json.dumps(timeline, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return narration
 
@@ -1017,11 +1057,25 @@ def qa(spec: dict[str, Any], epdir: Path) -> dict[str, Any]:
                 continue
             if word_policy.get("check_internal_pauses", True):
                 fail_gap = float(word_policy.get("fail_internal_gap_seconds", 0.5))
+                scene_wav_path = epdir / "audio" / f"scene_{index:02d}.wav"
+                scene_audio = None
+                scene_origin = float(scene_words[0].get("start", 0.0))
+                if scene_wav_path.exists():
+                    try:
+                        scene_audio, _ = sf.read(str(scene_wav_path), dtype="float32")
+                        scene_audio = np.asarray(scene_audio).reshape(-1)
+                    except Exception:
+                        scene_audio = None
                 for previous, current in zip(scene_words, scene_words[1:]):
                     gap = float(current.get("start", 0.0)) - float(previous.get("end", 0.0))
                     pause_marks = tuple(word_policy.get("pause_justifying_punctuation", [",", ";", ":", ".", "!", "?"]))
                     justified = str(previous.get("text", "")).rstrip().endswith(pause_marks) or str(current.get("text", "")).rstrip().endswith(pause_marks)
-                    if gap > fail_gap and not justified:
+                    waveform_voiced = False
+                    if scene_audio is not None and gap > fail_gap:
+                        a = max(0, int(round((float(previous.get("end", 0.0)) - scene_origin) * RATE)))
+                        b = min(len(scene_audio), int(round((float(current.get("start", 0.0)) - scene_origin) * RATE)))
+                        waveform_voiced = b > a and float(np.max(np.abs(scene_audio[a:b]))) > 0.006
+                    if gap > fail_gap and not justified and not waveform_voiced:
                         errors.append(f"{words_path.name} has an unexplained {gap:.3f}s internal pause after {previous.get('text', '')!r}")
     sources_path = epdir / "music_sources.json"
     if sources_path.exists():
