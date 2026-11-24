@@ -170,7 +170,14 @@
       "fail_on_missing_direction": true,
       "fail_on_unapproved_style_family": true
     },
-    "forbidden_style_terms": ["cartoon", "cartoony", "comic-book", "glossy 3d", "glossy fantasy poster", "generic stock illustration"]
+    "forbidden_style_terms": ["cartoon", "cartoony", "comic-book", "glossy 3d", "glossy fantasy poster", "generic stock illustration", "chibi", "kawaii", "toy-like", "plastic faces", "rubber anatomy"],
+    "anti_cartoon_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "required_realism_terms_any": ["painterly", "oil painting", "fresco", "relief", "mosaic", "tapestry", "engraving", "woodblock", "manuscript", "tempera", "carving", "museum-quality", "restrained realism"],
+      "required_negative_terms": ["no cartoon", "no cartoony", "no comic-book", "no glossy fantasy", "no plastic faces", "no toy-like characters"],
+      "failure_message": "art direction must specify a culturally grounded fine-art medium and explicitly reject cartoon or toy-like rendering"
+    }
   },
   "scene_contrast": {
     "enabled": true,

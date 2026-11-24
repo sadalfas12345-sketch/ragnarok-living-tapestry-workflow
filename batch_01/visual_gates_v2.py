@@ -436,6 +436,20 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         style_text = " ".join([str(reference.get("style_board_prompt", "")), art_style]).lower()
         if any(positive_forbidden_term(style_text, str(term).lower()) for term in POLICY.get("artwork", {}).get("forbidden_style_terms", [])):
             errors.append("authoritative art direction contains a forbidden low-fidelity style term")
+        anti_cartoon = POLICY.get("artwork", {}).get("anti_cartoon_gate", {})
+        if anti_cartoon.get("enabled", True):
+            realism_terms = [str(term).lower() for term in anti_cartoon.get("required_realism_terms_any", [])]
+            negative_terms = [str(term).lower() for term in anti_cartoon.get("required_negative_terms", [])]
+            if realism_terms and not any(term in style_text for term in realism_terms):
+                errors.append(anti_cartoon.get("failure_message", "anti-cartoon art-direction gate failed") + ": missing fine-art medium")
+            if negative_terms and not any(term in style_text for term in negative_terms):
+                errors.append(anti_cartoon.get("failure_message", "anti-cartoon art-direction gate failed") + ": missing negative style constraint")
+            for index, scene_spec in enumerate(source.get("scenes", []), 1):
+                prompt = str(scene_spec.get("image_prompt", "")).lower()
+                if realism_terms and not any(term in prompt for term in realism_terms):
+                    errors.append(f"scene S{index:02d} fails anti-cartoon gate: missing fine-art medium")
+                if negative_terms and not any(term in prompt for term in negative_terms):
+                    errors.append(f"scene S{index:02d} fails anti-cartoon gate: missing negative style constraint")
         religious_gate = POLICY.get("artwork", {}).get("major_religious_imagery_gate", {})
         if religious_gate.get("enabled"):
             forbidden_religious = [str(term).lower() for term in religious_gate.get("forbidden_terms", [])]
