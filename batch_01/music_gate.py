@@ -9,6 +9,8 @@ from typing import Any
 
 import numpy as np
 
+POLICY = json.loads((Path(__file__).resolve().parents[1] / "production_feedback_gates.json").read_text(encoding="utf-8"))
+
 
 def _sha256(path: Path) -> str:
     h = hashlib.sha256()
@@ -55,6 +57,45 @@ def validate(artifact_dir: Path) -> dict[str, Any]:
         return {**result, "status": "FAIL"}
 
     sources = source.get("sources")
+    music_policy = POLICY.get("music", {})
+    story_path = artifact_dir / "source.json"
+    story = {}
+    if story_path.exists():
+        try:
+            story = json.loads(story_path.read_text(encoding="utf-8-sig"))
+        except Exception as exc:
+            errors.append(f"source.json is unreadable for soundtrack-fit validation: {exc}")
+    story_audio = story.get("audio", {}) if isinstance(story, dict) else {}
+    direction = str(story_audio.get("soundtrack_direction", "")).strip()
+    profile = str(source.get("profile", "")).strip()
+    result["checks"]["profile"] = profile
+    result["checks"]["json_soundtrack_direction"] = direction
+    if music_policy.get("require_episode_specific_profile"):
+        rejected = {str(x).lower() for x in music_policy.get("reject_generic_fallback_profiles", [])}
+        if not profile or profile.lower() in rejected:
+            errors.append(f"soundtrack profile is generic or missing: {profile or '<missing>'}")
+        if not source.get("episode_specific_profile"):
+            errors.append("music_sources.json does not prove an episode-specific profile")
+    if music_policy.get("require_json_direction_evidence"):
+        if not direction:
+            errors.append("authoritative JSON has no soundtrack_direction")
+        if not source.get("soundtrack_direction"):
+            errors.append("music_sources.json does not preserve soundtrack_direction evidence")
+        elif str(source.get("soundtrack_direction")).strip().lower() != direction.lower():
+            errors.append("music_sources.json soundtrack_direction disagrees with source.json")
+        if not source.get("selection_rationale"):
+            errors.append("music_sources.json is missing selection_rationale")
+    if music_policy.get("require_scene_cue_coverage"):
+        expected_cues = [scene.get("music", {}) for scene in story.get("scenes", []) if isinstance(scene, dict)]
+        actual_cues = source.get("scene_cues", [])
+        if len(actual_cues) < len(expected_cues):
+            errors.append(f"music_sources.json covers {len(actual_cues)} scene cues but JSON declares {len(expected_cues)}")
+        for index, expected in enumerate(expected_cues):
+            if index >= len(actual_cues):
+                break
+            actual = actual_cues[index]
+            if str(actual.get("cue", "")) != str(expected.get("cue", "")) or str(actual.get("instrumentation", "")) != str(expected.get("instrumentation", "")):
+                errors.append(f"scene cue {index + 1:02d} does not match authoritative JSON")
     if not isinstance(sources, list) or not sources:
         errors.append("music source list is empty")
     result["checks"]["source_count"] = len(sources) if isinstance(sources, list) else 0

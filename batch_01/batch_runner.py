@@ -25,9 +25,11 @@ import soundfile as sf
 try:
     from .lifecycle import Lifecycle
     from .delivery_gate import validate as validate_delivery
+    from .entity_resolver import audit_text, find_name_candidates, resolve_unknown
 except ImportError:
     from batch_01.lifecycle import Lifecycle
     from batch_01.delivery_gate import validate as validate_delivery
+    from batch_01.entity_resolver import audit_text, find_name_candidates, resolve_unknown
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -220,6 +222,15 @@ MUSIC_PROFILES[30] = [
     {"title": "First Kiss", "artist": "Eugenio Mininni", "url": "https://mixkit.co/free-stock-music/mood/dark/", "file": "mixkit_first_kiss_eugenio_mininni.mp3"},
 ]
 
+# Episode 36: Psyche and Eros. This profile is intentionally separate from
+# Ragnarök's default bed and follows the JSON's intimate mystery, betrayal,
+# underworld descent, and fragile reunion arc.
+MUSIC_PROFILES[36] = [
+    {"title": "Romantic 03", "artist": "Lily J", "url": "https://mixkit.co/free-stock-music/world-fusion/", "file": "mixkit_romantic_03_lily_j.mp3"},
+    {"title": "Dark Shadows", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/traditional/", "file": "mixkit_dark_shadows_ahjay_stelino.mp3"},
+    {"title": "Forever Love", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_forever_love_ahjay_stelino.mp3"},
+]
+
 # Episode 06 uses a distinct licensed trio so the soundtrack QA gate can
 # distinguish this rebuild from earlier episode renders.
 MUSIC_PROFILES[6] = [
@@ -272,7 +283,17 @@ def load_episode(path: Path) -> dict[str, Any]:
 
 
 def episode_paths(ep: int) -> tuple[Path, Path]:
-    spec_path = sorted(SOURCE.glob(f"{ep:02d}_*.json"))[0]
+    matches = sorted(SOURCE.glob(f"{ep:02d}_*.json"))
+    if not matches:
+        package_path = SOURCE / "living_tapestries_30_new_episodes.json"
+        package = json.loads(package_path.read_text(encoding="utf-8-sig"))
+        episode = next((item for item in package.get("episodes", []) if int(item.get("episode_number", -1)) == ep), None)
+        if episode is None:
+            raise FileNotFoundError(f"authoritative source JSON missing episode {ep}")
+        spec_path = SOURCE / f"{ep:02d}_{episode['slug'][3:]}.json"
+        spec_path.write_text(json.dumps(episode, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    else:
+        spec_path = matches[0]
     return spec_path, WORK / f"{ep:02d}_{spec_path.stem[3:]}"
 
 
@@ -326,11 +347,16 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
                     continue
                 intro_text = str(intro).lower()
                 intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
-                if (intro_text not in effective.lower() and intro_core not in effective.lower()
-                        and not has_local_character_context(raw_caption, name)):
+                if intro_text not in effective.lower() and intro_core not in effective.lower():
                     errors.append(f"scene {scene_index} first use of {name} lacks required short character intro")
                 seen_names.add(name.lower())
             prior_effective.append(effective)
+        # The static lexicon is not authoritative. Every likely proper name
+        # in the story must be reviewed by the local LLM or configured lookup
+        # service. Unknown names must fail closed rather than being skipped.
+        story_text = " ".join(normalize_text(str(scene.get("caption", ""))) for scene in scenes)
+        for finding in audit_text(story_text):
+            errors.append("entity resolution: " + str(finding.get("name", "unknown")) + " — " + str(finding.get("reason", "unresolved")))
     # The authoritative story JSON owns the opening hook.  It must be the
     # first spoken/captioned text, and it must not be duplicated in another
     # scene.  Fail before any narration, art, or render work if the source
@@ -489,17 +515,20 @@ def effective_scene_caption(spec: dict[str, Any], scene_index: int, caption: str
         )
         or bool(re.search(r"\b(?:in|from|during)\s+(?:the\s+)?(?:[a-z]+\s+of\s+)?(?:\d{3,4}|[a-z]+-century)\b", existing_context))
         or bool(re.search(r"\b(?:in|from|according to)\s+(?:the\s+)?(?:[a-z]+\s+){0,3}(?:myth|mythic|legend|folklore|folktale|tradition)\b", existing_context))
+        or bool(re.search(r"\b(?:in|from|according to)\s+(?:an?\s+)?(?:[a-z]+\s+){0,3}(?:story|tale|legend|myth)\b", existing_context))
     )
     if bridge.lower().rstrip(",") in caption.lower() or has_provenance:
         return caption
     caption = " ".join([sentences[0], bridge, *sentences[1:]])
     for term in provenance_policy.get("dedupe_terms", []):
         caption = re.sub(rf"\b({re.escape(str(term))})\s+\1\b", r"\1", caption, flags=re.IGNORECASE)
+    caption = re.sub(r",\s+\.", ".", caption)
+    caption = re.sub(r",\s+,", ",", caption)
     return caption
 
 
 def add_character_intro(caption: str, prior_captions: list[str]) -> str:
-    """Add at most one short identifier for a character's first spoken appearance."""
+    """Add short identifiers for every first-use named story character."""
     if not CHARACTER_INTRO_POLICY.get("enabled", True):
         return caption
     prior = " ".join(prior_captions).lower()
@@ -510,23 +539,65 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
             continue
         intro_text = str(intro).lower()
         intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
-        if intro_text in caption.lower() or intro_core in caption.lower() or has_local_character_context(caption, name):
+        if intro_text in caption.lower() or intro_core in caption.lower():
             continue
         if len(str(intro).split()) > max_words:
             continue
         source_pattern = rf"\bIn\s+{re.escape(name)}\b\s*,?"
         if re.search(source_pattern, caption, re.IGNORECASE):
-            return re.sub(source_pattern, f"{name}, {intro},", caption, count=1, flags=re.IGNORECASE)
+            caption = re.sub(source_pattern, f"{name}, {intro},", caption, count=1, flags=re.IGNORECASE)
+            continue
         # Preserve an existing article and sentence punctuation. This keeps
         # first-use additions natural for phrases such as "the Minotaur."
         article_pattern = rf"\b(?P<article>the|a|an)\s+{re.escape(name)}\b\s*,?"
         article_match = re.search(article_pattern, caption, re.IGNORECASE)
         if article_match:
-            replacement = f"{article_match.group('article')} {name}, {intro}"
-            return caption[:article_match.start()] + replacement + caption[article_match.end():]
+            replacement = f"{article_match.group('article')} {name}, {intro}, "
+            caption = caption[:article_match.start()] + replacement + caption[article_match.end():]
+            continue
         pattern = rf"\b{re.escape(name)}\b\s*,?"
-        replacement = f"{name}, {intro}"
-        return re.sub(pattern, replacement, caption, count=1)
+        replacement = f"{name}, {intro}, "
+        caption = re.sub(pattern, replacement, caption, count=1)
+    # Expansion episodes can introduce names that are not in the static
+    # lexicon. Resolve a short role from the surrounding authoritative prose
+    # rather than requiring manual catalog insertion.
+    prior_lower = prior.lower()
+    for name in find_name_candidates(caption):
+        possessive_base = name[:-1] if name.casefold().endswith("s") else name
+        if (
+            name.casefold() in {"edo", "japan"}
+            or re.search(rf"\b{re.escape(name)}\b", prior_lower, re.IGNORECASE)
+            or (possessive_base != name and re.search(rf"\b{re.escape(possessive_base)}\b", prior_lower, re.IGNORECASE))
+        ):
+            continue
+        if has_local_character_context(caption, name):
+            continue
+        window = caption.lower()
+        if "samurai" in window or "ronin" in window:
+            intro = "a samurai leader"
+        elif "official" in window:
+            intro = "a court official"
+        elif "shogun" in window:
+            intro = "a military ruler"
+        else:
+            continue
+        pattern = rf"\b{re.escape(name)}\b\s*,?"
+        return re.sub(pattern, f"{name}, {intro}, ", caption, count=1)
+    # Every unresolved story name must be reviewed by the configured local
+    # LLM or lookup service. Never silently pass an unknown first-use name.
+    for name in find_name_candidates(caption):
+        if re.search(rf"\b{re.escape(name)}\b", prior, re.IGNORECASE):
+            continue
+        resolved = resolve_unknown(name, caption)
+        if not resolved or str(resolved.get("is_proper_name", "")).lower() not in {"true", "1", "yes"}:
+            continue
+        intro = str(resolved.get("intro", "")).strip()
+        if not intro or len(intro.split()) > max_words:
+            continue
+        pattern = rf"\b{re.escape(name)}\b\s*,?"
+        return re.sub(pattern, f"{name}, {intro}, ", caption, count=1)
+    caption = re.sub(r",\s+\.", ".", caption)
+    caption = re.sub(r",\s+,", ",", caption)
     return caption
 
 
@@ -538,10 +609,10 @@ def has_local_character_context(caption: str, name: str) -> bool:
     window = caption[max(0, match.start() - 55):match.end() + 55].lower()
     role_terms = (
         "young", "child", "goddess", "god", "king", "queen", "lord", "lords",
-        "ruler", "rulers", "hero", "princess", "prince", "spirit", "monster",
+        "ruler", "rulers", "hero", "princess", "prince", "spirit", "monster", "official",
         "creature", "brother", "sister", "father", "mother", "son", "daughter",
         "husband", "wife", "warrior", "general", "emperor", "empress", "archer",
-        "bat", "woman", "man"
+        "bat", "woman", "man", "samurai", "ronin", "shogun"
     )
     return any(re.search(rf"\b{re.escape(term)}\b", window) for term in role_terms)
 
@@ -564,7 +635,7 @@ def smooth_prose(caption: str) -> str:
         rest = rest[0].lower() + rest[1:]
     role_text = f"{match.group('article')} {match.group('role')}"
     role_lower = role_text.lower()
-    if any(word in role_lower for word in ("goddess", "woman", "queen", "mother", "girl")):
+    if any(word in role_lower for word in ("goddess", "woman", "queen", "mother", "girl", "princess")):
         pronoun = "She"
     elif any(word in role_lower for word in ("god", "king", "hero", "man", "father", "son", "boy")):
         pronoun = "He"
@@ -1093,8 +1164,11 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     final_music_gain = 2.5 if spec["episode_number"] in (7, 8) else (2.0 if spec["episode_number"] == 21 else (1.35 if spec["episode_number"] == 30 else 1.0))
     mix = f"[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[narr][key];[1:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume={final_music_gain:.2f}[music];[music][key]sidechaincompress=threshold=0.015:ratio=5:attack=60:release=700:makeup=1[duck];[2:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume=0.45[s];[narr][duck][s]amix=inputs=3:duration=longest:dropout_transition=0,atrim=0:{runtime:.3f},loudnorm=I=-14:TP=-1:LRA=11:print_format=summary[out]"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "warning", "-i", str(narration), "-i", str(music), "-i", str(sfx), "-filter_complex", mix, "-map", "[out]", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(final)])
-    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery"}.get(spec["episode_number"], "default_ragnarok_palette")
-    (epdir / "music_sources.json").write_text(json.dumps({"profile": profile_name, "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery", 36: "psyche_eros_forbidden_face"}.get(spec["episode_number"], "default_ragnarok_palette")
+    source_audio = spec.get("audio", {})
+    scene_cues = [{"scene": scene["id"], "cue": scene.get("music", {}).get("cue", ""), "instrumentation": scene.get("music", {}).get("instrumentation", "")} for scene in spec.get("scenes", [])]
+    music_sources = {"profile": profile_name, "episode_specific_profile": spec["episode_number"] in MUSIC_PROFILES and spec["episode_number"] != 0, "soundtrack_direction": source_audio.get("soundtrack_direction", ""), "scene_cues": scene_cues, "selection_rationale": f"Profile {profile_name} selected for the episode's JSON soundtrack direction and cue progression.", "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}
+    (epdir / "music_sources.json").write_text(json.dumps(music_sources, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     out = epdir / "final_vertical_1080x1920.mp4"
     video = epdir / ("video_captioned.mp4" if SUBTITLE_MODE == "burned" else "video_only.mp4")
     # Do not use -shortest here: an SRT's final cue can end before the

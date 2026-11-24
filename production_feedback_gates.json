@@ -93,7 +93,7 @@
       "required_fields": ["intended_emotion", "visual_evidence", "emotional_turn"],
       "require_emotion_specific_to_scene": true,
       "require_visual_evidence_for_emotion": true,
-      "primal_emotion_terms": ["awe", "anger", "compassion", "curiosity", "despair", "disgust", "dread", "empathy", "fear", "grief", "hope", "horror", "humility", "joy", "longing", "love", "relief", "reverence", "sadness", "shock", "shame", "sorrow", "suspense", "tenderness", "tension", "triumph", "unease", "wonder"],
+      "primal_emotion_terms": ["awe", "anger", "compassion", "curiosity", "despair", "disgust", "doubt", "dread", "empathy", "exhaustion", "fear", "grief", "hope", "horror", "humility", "joy", "longing", "love", "relief", "remorse", "reverence", "sadness", "shock", "shame", "sorrow", "suspense", "tenderness", "tension", "triumph", "unease", "wonder", "devastation", "determination", "recognition", "fragility"],
       "forbidden_editorial_emotion_terms": ["awareness", "corrective perspective", "historical significance", "moral seriousness", "importance", "context", "continuity", "editorial", "historical framing", "perspective"],
       "failure_message": "each scene must state what the audience should feel, what visible details create that feeling, and how the emotion changes across the scene"
     }
@@ -197,7 +197,7 @@
     "dedupe_repeated_terms": true,
     "dedupe_terms": ["mythology", "legend", "tradition", "folklore", "historical account", "epic"],
     "ordinary_duplicate_words": "review_only",
-    "recognized_markers": ["mythology", "myth", "mythic", "legend", "tradition", "tale", "storytellers", "century", "historical account", "epic"]
+    "recognized_markers": ["mythology", "myth", "mythic", "legend", "tradition", "tale", "story", "storytellers", "century", "historical account", "epic"]
   },
   "rendered_caption_text": {
     "reject_mojibake": true,
@@ -309,6 +309,15 @@
     "require_narration_mix_hash_match": true,
     "require_separate_stems_for_delivery": false
   },
+  "music": {
+    "hard_gate": true,
+    "require_episode_specific_profile": true,
+    "reject_generic_fallback_profiles": ["default", "default_ragnarok_palette"],
+    "require_json_direction_evidence": true,
+    "require_scene_cue_coverage": true,
+    "require_license_and_presence_gate": true,
+    "failure_message": "a soundtrack must be licensed, audible, and deliberately selected and arranged for this episode's authoritative JSON direction"
+  },
   "delivery_integrity": {
     "require_timeline_asset_paths_exist": true,
     "require_srt_match_timeline_captions": true,
@@ -371,7 +380,7 @@
     "require_first_use_intro_for_known_names": true,
     "lexicon_source": "batch_01/character_intro_lexicon.json",
     "max_inserted_words": 6,
-    "max_new_intro_per_scene": 1,
+    "max_new_intro_per_scene": 3,
     "never_repeat": true,
     "timing_authority": "narration_waveform",
     "spoiler_free": true,
