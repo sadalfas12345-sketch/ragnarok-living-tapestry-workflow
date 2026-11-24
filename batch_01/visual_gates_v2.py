@@ -440,9 +440,11 @@ def gate_episode(epdir: Path, keep_audit: bool = False) -> dict[str, Any]:
         if anti_cartoon.get("enabled", True):
             realism_terms = [str(term).lower() for term in anti_cartoon.get("required_realism_terms_any", [])]
             negative_terms = [str(term).lower() for term in anti_cartoon.get("required_negative_terms", [])]
-            if realism_terms and not any(term in style_text for term in realism_terms):
+            all_prompts_text = " ".join(str(scene_spec.get("image_prompt", "")) for scene_spec in source.get("scenes", [])).lower()
+            direction_text = f"{style_text} {all_prompts_text}"
+            if realism_terms and not any(term in direction_text for term in realism_terms):
                 errors.append(anti_cartoon.get("failure_message", "anti-cartoon art-direction gate failed") + ": missing fine-art medium")
-            if negative_terms and not any(term in style_text for term in negative_terms):
+            if negative_terms and not any(term in direction_text for term in negative_terms):
                 errors.append(anti_cartoon.get("failure_message", "anti-cartoon art-direction gate failed") + ": missing negative style constraint")
             for index, scene_spec in enumerate(source.get("scenes", []), 1):
                 prompt = str(scene_spec.get("image_prompt", "")).lower()
