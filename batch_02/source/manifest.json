@@ -1,0 +1,14 @@
+{
+  "schema_version": "living_tapestry_batch_registry_v1",
+  "batch": 2,
+  "series": "Living Tapestries",
+  "episode_range": [31, 60],
+  "episode_count": 30,
+  "authoritative_json": "batch_01/source/living_tapestries_30_new_episodes.json",
+  "lookup_rule": "Resolve the next episode by episode_number from authoritative_json before checking local materialized files.",
+  "next_after_episode_35": {
+    "episode_number": 36,
+    "slug": "36_psyche_eros",
+    "title": "Psyche and Eros: The Face She Was Forbidden to See"
+  }
+}

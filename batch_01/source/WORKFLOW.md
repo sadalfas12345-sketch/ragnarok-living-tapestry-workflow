@@ -1,5 +1,12 @@
 # Living Tapestries: 30-episode batch 01
 
+## Batch registry
+
+Batch 02 contains Episodes 31–60. Its authoritative package is
+'batch_01/source/living_tapestries_30_new_episodes.json', registered at
+'batch_02/source/manifest.json'. Always resolve the next episode by
+'episode_number' from that package before checking local materialized files.
+
 Each episode JSON is a fully distinct story outline with six original narrated scenes, scene-specific visual prompts, a coherent style-board generation prompt, camera movement, a culturally differentiated sound palette, licensing guidance, and source-integrity notes.
 
 ## Pipeline
