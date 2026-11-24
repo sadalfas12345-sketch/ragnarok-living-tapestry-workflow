@@ -68,5 +68,15 @@ def inspect_episode(source: dict[str, Any], caption_text: str) -> dict[str, Any]
                     "text": pattern,
                     "message": str(item.get("message", "rewrite in natural spoken language")),
                 })
+    grammar = policy.get("grammar_agreement_gate", {})
+    if grammar.get("enabled"):
+        for item in grammar.get("patterns", []):
+            pattern = str(item.get("pattern", ""))
+            if pattern and re.search(pattern, caption_text, re.IGNORECASE | re.DOTALL):
+                findings.append({
+                    "type": "grammar_agreement",
+                    "text": pattern,
+                    "message": str(item.get("message", "rewrite for correct grammar")),
+                })
     hard = bool(policy.get("fail_on_findings", True))
     return {"reviewer": "wording_agent", "status": "FAIL" if findings and hard else ("REVIEW" if findings else "PASS"), "findings": findings}

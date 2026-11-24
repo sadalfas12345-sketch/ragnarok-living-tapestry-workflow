@@ -277,6 +277,16 @@
         {"pattern": "\\b(?:history|the records?)\\b.*\\bremembers? only a\\b", "message": "artificial personification; state what survives in the record"},
         {"pattern": "\\bno\\s+[^.!?]{0,60}\\bcan\\s+(?:restore|bring back|erase|undo)\\b", "message": "stock rhetorical construction; state the concrete fact directly"},
         {"pattern": "\\b(?:the answer|the truth|the fate)\\b.*\\b(?:begins|waits|sleeps|hangs)\\b", "message": "abstract dramatic phrasing; state the unresolved fact directly"}
+        ,{"pattern": "\\bEven a [^.!?]{0,80}\\bslips from\\b", "message": "dangling even-construction; use a clear causal or contrastive sentence"}
+      ]
+    },
+    "grammar_agreement_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "patterns": [
+        {"pattern": "\\b(?:he|she|it)\\s+(?:are|were|have|do)\\b", "message": "subject and verb do not agree"},
+        {"pattern": "\\b(?:they|we)\\s+(?:is|was|has|does)\\b", "message": "subject and verb do not agree"},
+        {"pattern": "(?m)(?:^|[.!?]\\s+)(?:even|although|while)\\s+(?:a|an|the)\\b", "message": "dangling subordinate conjunction; complete the thought or rewrite the sentence"}
       ]
     },
     "semantic_repetition_gate": {
