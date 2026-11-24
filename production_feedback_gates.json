@@ -279,6 +279,13 @@
         {"pattern": "\\b(?:the answer|the truth|the fate)\\b.*\\b(?:begins|waits|sleeps|hangs)\\b", "message": "abstract dramatic phrasing; state the unresolved fact directly"}
       ]
     },
+    "semantic_repetition_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "max_same_scene_proper_noun_phrase_occurrences": 1,
+      "check_intro_descriptor_repetition": true,
+      "failure_message": "a character or place descriptor is repeated in the same scene; rewrite the second mention naturally"
+    },
     "fail_on_findings": true,
     "smooth_safe_gate_insertions_before_tts": true
   },

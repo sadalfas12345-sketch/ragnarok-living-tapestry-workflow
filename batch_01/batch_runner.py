@@ -370,6 +370,21 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
                 phrase = intro_core or str(intro).strip().lower()
                 count = len(re.findall(rf"\b{re.escape(phrase)}\b", effective.lower()))
                 intro_phrase_counts[name.lower()] = intro_phrase_counts.get(name.lower(), 0) + count
+            repetition_gate = FEEDBACK_POLICY.get("wording_review", {}).get("semantic_repetition_gate", {})
+            if repetition_gate.get("enabled", True):
+                max_count = int(repetition_gate.get("max_same_scene_proper_noun_phrase_occurrences", 1))
+                proper_phrases = re.findall(r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)+\b", effective)
+                for phrase in sorted(set(proper_phrases)):
+                    if len(re.findall(rf"\b{re.escape(phrase)}\b", effective)) > max_count:
+                        errors.append(f"scene {scene_index} repeats proper-noun phrase {phrase!r}")
+                if repetition_gate.get("check_intro_descriptor_repetition", True):
+                    for name, intro in CHARACTER_INTRO_LEXICON.items():
+                        words = [word for word in re.findall(r"[a-z]+", str(intro).lower()) if word not in {"the", "a", "an", "of", "their"}]
+                        if len(words) < 2:
+                            continue
+                        descriptor = " ".join(words[:2])
+                        if len(re.findall(rf"\b{re.escape(descriptor)}\b", effective.lower())) > 1:
+                            errors.append(f"scene {scene_index} repeats descriptor {descriptor!r} for {name}")
             prior_effective.append(effective)
         for name, count in intro_phrase_counts.items():
             if count > 1:

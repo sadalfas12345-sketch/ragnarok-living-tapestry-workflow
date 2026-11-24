@@ -1,0 +1,311 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 37,
+  "slug": "37_gilgamesh_enkidu",
+  "title": "Gilgamesh: The King Who Could Not Save His Friend",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "Mesopotamian epic",
+  "historical_period": "Traditional setting of the named narrative; avoid unverified precision",
+  "civilization": "Mesopotamian epic",
+  "source_integrity": {
+    "primary_source_or_tradition": "Epic of Gilgamesh, Standard Babylonian tablets and older Sumerian traditions",
+    "classification": "literary_retelling_or_traditional_legend",
+    "narration_style": "Original expressive retelling. Distinguish folklore, legend, literary fiction, and documented history; no invented events presented as verified history.",
+    "translation_policy": "New original paraphrase; do not reproduce copyrighted modern translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "historical_constraints": [
+    "Present this as a literary narrative or folklore, not established historical fact.",
+    "Respect variant traditions and avoid claiming a single definitive telling.",
+    "Avoid anachronistic clothing, materials, architecture and technology."
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one cohesive 3:1 horizontal six-beat visual development frieze for Gilgamesh: The King Who Could Not Save His Friend. Art direction: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters precisely locked: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. Tell a connected emotional progression across six narrative moments with readable facial expression, hands, silhouettes and physical consequences. Each scene is three sequential visual developments on one physical painted surface, museum-quality, accurate material culture, spacious lower 20% caption-safe band, no lines separating panels, no text, no watermarks, no generic fantasy poster, no photoreal actors.",
+    "art_style": "Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue",
+    "palette": "derive from this story’s named art tradition, not other episodes",
+    "character_design_lock": [
+      "Gilgamesh a bearded king in patterned robe",
+      "Enkidu a broad wild-haired companion"
+    ],
+    "material_consistency": "all six scenes must appear painted on the same historically and culturally appropriate physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive storyteller with restrained emotional variation; natural human cadence, do not melodramatically shout",
+    "soundtrack_direction": "frame drum, reed flute, low wind",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "verify current track licensing and retain evidence before production",
+      "track_titles": "unassigned; select licensed tracks during production"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read captions directly from scenes[].caption; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate six seamless horizontal panoramas H01–H06; adapt P01–P06 if existing legacy adapter still expects portrait paths",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render rightward panorama camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ],
+    "narration_source": "scenes[].caption (opening_hook metadata; do not narrate twice)"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "What if the strongest king in the world discovered he could not stop one death? In the Mesopotamian Epic of Gilgamesh, a proud ruler meets Enkidu, a stranger from the wild. They fight until rivalry becomes friendship.",
+      "intended_emotion": "awe turning to kinship",
+      "emotional_turn": "The scene moves from Uruk city walls to rivals clasping arms, creating awe turning to kinship.",
+      "visual_evidence": "Uruk city walls; then two men grappling in dust; finally rivals clasping arms. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Two men grappling in dust",
+      "required_visuals": [
+        "Uruk city walls",
+        "two men grappling in dust",
+        "rivals clasping arms"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Gilgamesh: The King Who Could Not Save His Friend. Art tradition: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters must match the style board exactly: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. LEFT scene beat: Uruk city walls. CENTER scene beat: two men grappling in dust. RIGHT scene beat: rivals clasping arms. Emotional effect: awe turning to kinship. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "begin close on the intimate human detail, then reveal its consequence rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "frame drum, reed flute, low wind",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "Together they travel beyond familiar roads. They face Humbaba beneath towering cedars. The king who once had no equal now has someone beside him when danger comes.",
+      "intended_emotion": "exhilaration and trust",
+      "emotional_turn": "The scene moves from departing gates of Uruk to two figures confronting Humbaba, creating exhilaration and trust.",
+      "visual_evidence": "departing gates of Uruk; then towering cedar trees; finally two figures confronting Humbaba. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Towering cedar trees",
+      "required_visuals": [
+        "departing gates of Uruk",
+        "towering cedar trees",
+        "two figures confronting Humbaba"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Gilgamesh: The King Who Could Not Save His Friend. Art tradition: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters must match the style board exactly: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. LEFT scene beat: departing gates of Uruk. CENTER scene beat: towering cedar trees. RIGHT scene beat: two figures confronting Humbaba. Emotional effect: exhilaration and trust. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "follow the decision through three connected spaces rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "frame drum, reed flute, low wind",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "But triumph does not protect them. The gods decree Enkidu must die. He weakens on his bed while Gilgamesh watches, unable to wrestle sickness as he wrestled monsters.",
+      "intended_emotion": "helplessness",
+      "emotional_turn": "The scene moves from victorious heroes returning to Gilgamesh gripping bed frame, creating helplessness.",
+      "visual_evidence": "victorious heroes returning; then Enkidu feverish beneath blankets; finally Gilgamesh gripping bed frame. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Enkidu feverish beneath blankets",
+      "required_visuals": [
+        "victorious heroes returning",
+        "Enkidu feverish beneath blankets",
+        "Gilgamesh gripping bed frame"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Gilgamesh: The King Who Could Not Save His Friend. Art tradition: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters must match the style board exactly: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. LEFT scene beat: victorious heroes returning. CENTER scene beat: Enkidu feverish beneath blankets. RIGHT scene beat: Gilgamesh gripping bed frame. Emotional effect: helplessness. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "move from close evidence into the wider consequence rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "frame drum, reed flute, low wind",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.75
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "When Enkidu dies, Gilgamesh refuses to believe the silence. He touches his friend and calls to him. Days pass. The body remains, but the man who shared his victories is gone.",
+      "intended_emotion": "raw grief",
+      "emotional_turn": "The scene moves from still hand on woven blanket to funeral shroud drawn closed, creating raw grief.",
+      "visual_evidence": "still hand on woven blanket; then Gilgamesh bending over friend; finally funeral shroud drawn closed. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Gilgamesh bending over friend",
+      "required_visuals": [
+        "still hand on woven blanket",
+        "Gilgamesh bending over friend",
+        "funeral shroud drawn closed"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Gilgamesh: The King Who Could Not Save His Friend. Art tradition: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters must match the style board exactly: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. LEFT scene beat: still hand on woven blanket. CENTER scene beat: Gilgamesh bending over friend. RIGHT scene beat: funeral shroud drawn closed. Emotional effect: raw grief. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "linger on the irreversible action before continuing rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "frame drum, reed flute, low wind",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Terrified that death waits for him too, Gilgamesh crosses wilderness and deadly waters seeking eternal life. Even a miraculous plant slips from his grasp when a snake carries it away.",
+      "intended_emotion": "desperation giving way to loss",
+      "emotional_turn": "The scene moves from lone king beneath stars to snake slipping away with plant, creating desperation giving way to loss.",
+      "visual_evidence": "lone king beneath stars; then boat across dark waters; finally snake slipping away with plant. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Boat across dark waters",
+      "required_visuals": [
+        "lone king beneath stars",
+        "boat across dark waters",
+        "snake slipping away with plant"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Gilgamesh: The King Who Could Not Save His Friend. Art tradition: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters must match the style board exactly: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. LEFT scene beat: lone king beneath stars. CENTER scene beat: boat across dark waters. RIGHT scene beat: snake slipping away with plant. Emotional effect: desperation giving way to loss. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "hold the emotional turning point at the central section then move rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "frame drum, reed flute, low wind",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.05
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "He returns to Uruk without immortality. The walls still stand, and the people still live. He cannot bring Enkidu back. But he can look at what human hands leave behind.",
+      "intended_emotion": "sober acceptance",
+      "emotional_turn": "The scene moves from king before city walls to sunrise over Uruk, creating sober acceptance.",
+      "visual_evidence": "king before city walls; then empty place beside him; finally sunrise over Uruk. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Empty place beside him",
+      "required_visuals": [
+        "king before city walls",
+        "empty place beside him",
+        "sunrise over Uruk"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Gilgamesh: The King Who Could Not Save His Friend. Art tradition: Neo-Assyrian palace relief and ancient lapis-inlaid carving, limestone, ochre, copper, lapis blue. Characters must match the style board exactly: Gilgamesh a bearded king in patterned robe; Enkidu a broad wild-haired companion. LEFT scene beat: king before city walls. CENTER scene beat: empty place beside him. RIGHT scene beat: sunrise over Uruk. Emotional effect: sober acceptance. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "pull through the final human detail to a wide closing tableau; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "frame drum, reed flute, low wind",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ],
+  "opening_hook": "What if the strongest king in the world discovered he could not stop one death?"
+}
