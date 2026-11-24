@@ -345,6 +345,7 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
         # its short, spoiler-free identifier.
         prior_effective: list[str] = []
         seen_names: set[str] = set()
+        intro_phrase_counts: dict[str, int] = {}
         for scene_index, scene in enumerate(scenes, 1):
             raw_caption = normalize_text(str(scene.get("caption", "")))
             effective = effective_scene_caption(spec, scene_index - 1, raw_caption, prior_effective)
@@ -358,7 +359,21 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
                 if intro_text not in effective.lower() and intro_core not in effective.lower():
                     errors.append(f"scene {scene_index} first use of {name} lacks required short character intro")
                 seen_names.add(name.lower())
+            # An entity can first appear inside an earlier generated intro,
+            # such as Uruk inside “the king of Uruk”.  Count that as its first
+            # use so later source captions do not demand the place intro again.
+            for name in CHARACTER_INTRO_LEXICON:
+                if re.search(rf"\b{re.escape(name)}\b", effective, re.IGNORECASE):
+                    seen_names.add(name.lower())
+            for name, intro in CHARACTER_INTRO_LEXICON.items():
+                intro_core = re.sub(r"^(?:the|a|an)\s+", "", str(intro).strip().lower())
+                phrase = intro_core or str(intro).strip().lower()
+                count = len(re.findall(rf"\b{re.escape(phrase)}\b", effective.lower()))
+                intro_phrase_counts[name.lower()] = intro_phrase_counts.get(name.lower(), 0) + count
             prior_effective.append(effective)
+        for name, count in intro_phrase_counts.items():
+            if count > 1:
+                errors.append(f"entity intro repeated for {name}: {count} occurrences")
         # The static lexicon is not authoritative. Every likely proper name
         # in the story must be reviewed by the local LLM or configured lookup
         # service. Unknown names must fail closed rather than being skipped.
@@ -539,13 +554,16 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     """Add short identifiers for every first-use named story character."""
     if not CHARACTER_INTRO_POLICY.get("enabled", True):
         return caption
-    prior = " ".join(prior_captions).lower()
+    # Keep a stable snapshot of the source caption.  Do not discover a second
+    # entity from wording inserted for the first entity in this same pass.
+    source_caption = caption
+    prior = " ".join(prior_captions)
     max_words = int(CHARACTER_INTRO_POLICY.get("max_inserted_words", 6))
     for name, intro in CHARACTER_INTRO_LEXICON.items():
         name_pattern = rf"\b{re.escape(name)}\b"
         # Require authoritative capitalization so ordinary phrases such as
         # “one death” cannot trigger the separate character “One Death”.
-        if not re.search(name_pattern, caption) or re.search(name_pattern, prior):
+        if not re.search(name_pattern, source_caption) or re.search(name_pattern, prior, re.IGNORECASE):
             continue
         intro_text = str(intro).lower()
         intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
@@ -571,8 +589,8 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     # Expansion episodes can introduce names that are not in the static
     # lexicon. Resolve a short role from the surrounding authoritative prose
     # rather than requiring manual catalog insertion.
-    prior_lower = prior.lower()
-    for name in find_name_candidates(caption):
+    prior_lower = prior.casefold()
+    for name in find_name_candidates(source_caption):
         possessive_base = name[:-1] if name.casefold().endswith("s") else name
         if (
             name.casefold() in {"edo", "japan"}
@@ -595,7 +613,7 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
         return re.sub(pattern, f"{name}, {intro}, ", caption, count=1)
     # Every unresolved story name must be reviewed by the configured local
     # LLM or lookup service. Never silently pass an unknown first-use name.
-    for name in find_name_candidates(caption):
+    for name in find_name_candidates(source_caption):
         if re.search(rf"\b{re.escape(name)}\b", prior, re.IGNORECASE):
             continue
         resolved = resolve_unknown(name, caption)
