@@ -231,6 +231,14 @@ MUSIC_PROFILES[36] = [
     {"title": "Forever Love", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_forever_love_ahjay_stelino.mp3"},
 ]
 
+# Episode 37: Gilgamesh and Enkidu. A separate arc for ancient-epic rivalry,
+# grief, wilderness, and the quiet endurance of Uruk's walls.
+MUSIC_PROFILES[37] = [
+    {"title": "Dark Shadows", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/traditional/", "file": "mixkit_dark_shadows_ahjay_stelino.mp3"},
+    {"title": "The Journey", "artist": "Ahjay Stelino", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_the_journey_ahjay_stelino.mp3"},
+    {"title": "Classical vibes 2", "artist": "Grigoriy Nuzhny", "url": "https://mixkit.co/free-stock-music/film-score/", "file": "mixkit_classical_vibes_2_grigoriy_nuzhny.mp3"},
+]
+
 # Episode 06 uses a distinct licensed trio so the soundtrack QA gate can
 # distinguish this rebuild from earlier episode renders.
 MUSIC_PROFILES[6] = [
@@ -343,7 +351,7 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
             effective = add_character_intro(effective, prior_effective)
             for name, intro in CHARACTER_INTRO_LEXICON.items():
                 name_re = rf"\b{re.escape(name)}\b"
-                if not re.search(name_re, raw_caption, re.IGNORECASE) or name.lower() in seen_names:
+                if not re.search(name_re, raw_caption) or name.lower() in seen_names:
                     continue
                 intro_text = str(intro).lower()
                 intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
@@ -535,7 +543,9 @@ def add_character_intro(caption: str, prior_captions: list[str]) -> str:
     max_words = int(CHARACTER_INTRO_POLICY.get("max_inserted_words", 6))
     for name, intro in CHARACTER_INTRO_LEXICON.items():
         name_pattern = rf"\b{re.escape(name)}\b"
-        if not re.search(name_pattern, caption, re.IGNORECASE) or re.search(name_pattern, prior, re.IGNORECASE):
+        # Require authoritative capitalization so ordinary phrases such as
+        # “one death” cannot trigger the separate character “One Death”.
+        if not re.search(name_pattern, caption) or re.search(name_pattern, prior):
             continue
         intro_text = str(intro).lower()
         intro_core = re.sub(r"^(?:the|a|an)\s+", "", intro_text)
@@ -1164,7 +1174,7 @@ def build_audio(spec: dict[str, Any], epdir: Path) -> Path:
     final_music_gain = 2.5 if spec["episode_number"] in (7, 8) else (2.0 if spec["episode_number"] == 21 else (1.35 if spec["episode_number"] == 30 else 1.0))
     mix = f"[0:a]aresample=48000,pan=stereo|c0=c0|c1=c0,asplit=2[narr][key];[1:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume={final_music_gain:.2f}[music];[music][key]sidechaincompress=threshold=0.015:ratio=5:attack=60:release=700:makeup=1[duck];[2:a]aresample=48000,pan=stereo|c0=c0|c1=c1,volume=0.45[s];[narr][duck][s]amix=inputs=3:duration=longest:dropout_transition=0,atrim=0:{runtime:.3f},loudnorm=I=-14:TP=-1:LRA=11:print_format=summary[out]"
     run([FFMPEG, "-y", "-hide_banner", "-loglevel", "warning", "-i", str(narration), "-i", str(music), "-i", str(sfx), "-filter_complex", mix, "-map", "[out]", "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(final)])
-    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery", 36: "psyche_eros_forbidden_face"}.get(spec["episode_number"], "default_ragnarok_palette")
+    profile_name = {3: "midas_mystery_reflection", 4: "pandora_liminal_mystery", 5: "orpheus_underworld_silence", 6: "amaterasu_sunrise_ritual", 7: "houyi_solar_balance", 8: "yuki_onna_winter_mystery", 9: "honnoji_fire_and_ash", 10: "sun_wukong_cloud_quest", 11: "osiris_afterlife_registers", 12: "inanna_seven_gates", 13: "sekhmet_red_flood", 14: "atrahasis_blue_flood", 15: "isis_scorpion_mercy", 16: "arjuna_dharma_choice", 17: "savitri_death_bargain", 18: "rostam_family_tragedy", 19: "fisherman_jinni_cunning", 20: "nala_damayanti_lost_kingdom", 21: "lancelot_guinevere_forbidden_love", 22: "constantinople_last_walls", 23: "joan_trial_and_fire", 24: "princes_tower_vanishing", 25: "dancing_plague_unrest", 26: "hero_twins_xibalba", 27: "anansi_stories_from_earth", 28: "maui_island_lift", 29: "sundiata_mali_lion", 30: "roanoke_coastal_mystery", 36: "psyche_eros_forbidden_face", 37: "gilgamesh_enkidu_grief_and_walls"}.get(spec["episode_number"], "default_ragnarok_palette")
     source_audio = spec.get("audio", {})
     scene_cues = [{"scene": scene["id"], "cue": scene.get("music", {}).get("cue", ""), "instrumentation": scene.get("music", {}).get("instrumentation", "")} for scene in spec.get("scenes", [])]
     music_sources = {"profile": profile_name, "episode_specific_profile": spec["episode_number"] in MUSIC_PROFILES and spec["episode_number"] != 0, "soundtrack_direction": source_audio.get("soundtrack_direction", ""), "scene_cues": scene_cues, "selection_rationale": f"Profile {profile_name} selected for the episode's JSON soundtrack direction and cue progression.", "license_policy": "commercial_use_true_attribution_required_false", "sources": [{**item, "license_url": "https://mixkit.co/license/modal/musicFree/", "local_file": track.name, "commercial_use": True, "attribution_required": False, "tiktok_use": True, "content_id_registration": False} for item, track in zip(profile, tracks)], "note": "Licensed stock bed is arranged for emotional shape; it is not claimed to be historically authentic instrumentation for the civilization. Episode-specific profiles prevent accidental soundtrack reuse."}

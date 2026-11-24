@@ -21,9 +21,14 @@ INTRO_LEXICON = json.loads((ROOT / "character_intro_lexicon.json").read_text(enc
 COMMON_NON_NAMES = {
     "What", "If", "The", "A", "An", "In", "On", "At", "But", "And", "Then",
     "He", "She", "They", "It", "Few", "Other", "This", "That", "When", "While",
+    "Either", "Later", "Every", "Their", "Yet", "Lord", "Lady", "General",
+    "King", "Queen", "Prince", "Princess", "Official", "Captain", "Terrible",
+    "Price", "Loyalty", "Ronin", "Forty-Seven",
     "After", "Before", "Only", "Some", "Many", "As", "For", "From", "By", "Into",
     "Greek", "Egyptian", "Maya", "Kiche", "K’iche’", "Athenian", "Cretan", "Bronze",
     "Age", "Mesopotamian", "Japanese", "Indian", "Chinese", "Roman", "English",
+    "Irish", "Where", "Seasons", "Still", "Her", "One", "Help", "Death",
+    "Epic", "Together", "Cedar", "Forest", "Days", "Terrified", "Even",
 }
 
 
@@ -114,17 +119,39 @@ def audit_text(text: str) -> list[dict[str, str]]:
             context = text[left:(len(text) if right < 0 else right + 1)].strip()
         else:
             context = text
-        # Places, demonyms, and ordinary story nouns are handled by the
-        # existing name-spelling gate. This resolver is specifically for
-        # possible people, creatures, deities, and named story agents.
-        if not re.search(r"\b(?:meets|confront|sees|follows|gives|carries|asks|tells|arrives|fights|defeats|kills|dared|defy|king|queen|god|goddess|monster|creature|hero|prince|princess)\b", context, re.IGNORECASE):
-            continue
+        # Never silently skip an unknown capitalized entity. The resolver may
+        # classify it as an ordinary word or a place, but that decision must
+        # come from the configured local reviewer rather than a heuristic.
         resolved = resolve_unknown(candidate, context)
         if not resolved:
             findings.append({"name": candidate, "context": context, "reason": "no local resolver result"})
         elif str(resolved.get("is_proper_name", "")).lower() not in {"true", "1", "yes"}:
             continue
     return findings
+
+
+# Expansion-schema name discovery.  Keep this after the legacy function so
+# older episode behavior remains intact while unlisted names are still sent
+# through the resolver instead of requiring manual catalog insertion.
+_legacy_find_name_candidates = find_name_candidates
+
+
+def find_name_candidates_expanded(text: str) -> list[str]:
+    candidates = _legacy_find_name_candidates(text)
+    patterns = (
+        r"\b(?:Lord|Lady|General|King|Queen|Prince|Princess|Official|Captain)\s+([A-Z][A-Za-z'-]{2,})",
+        r"\b(?:attacked|challenged|followed|carried|ordered|met|killed)\s+([A-Z][A-Za-z'-]{2,})",
+        r"(?<![.!?])\b([A-Z][A-Za-z'-]{2,})\b",
+    )
+    for pattern in patterns:
+        for match in re.finditer(pattern, text):
+            candidate = match.group(1).strip("'\"")
+            if candidate not in COMMON_NON_NAMES and candidate.casefold() not in {x.casefold() for x in candidates}:
+                candidates.append(candidate)
+    return list(dict.fromkeys(candidates))
+
+
+find_name_candidates = find_name_candidates_expanded
 
 
 if __name__ == "__main__":
