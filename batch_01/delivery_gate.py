@@ -60,8 +60,13 @@ def validate(epdir: Path, drive_url: str | None = None, drive_name: str | None =
     local_hash = sha256(video) if video.exists() else None
     render_id = local_hash[:12] if local_hash else None
     expected_drive_name = f"{video.stem}_{render_id}{video.suffix}" if render_id else None
-    if drive_name and expected_drive_name and drive_name != expected_drive_name:
-        errors.append(f"Drive filename does not identify this render: {drive_name} != {expected_drive_name}")
+    if drive_name and render_id:
+        # Descriptive filenames are allowed, but the short render hash must
+        # remain in the filename so an older upload cannot be mistaken for
+        # the current render.
+        hash_marker = re.search(rf"(?i)(?:^|[_-]){re.escape(render_id)}(?:[_\.-]|$)", drive_name)
+        if not hash_marker or not drive_name.lower().endswith(video.suffix.lower()):
+            errors.append(f"Drive filename does not identify this render hash: {drive_name} must contain {render_id}")
     if not drive_sha256 or not re.fullmatch(r"[0-9a-fA-F]{64}", drive_sha256):
         errors.append("uploaded Drive SHA-256 is missing")
     elif local_hash != drive_sha256.lower():
