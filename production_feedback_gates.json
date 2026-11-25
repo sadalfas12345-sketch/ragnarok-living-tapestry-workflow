@@ -378,6 +378,9 @@
     "required_samples_per_scene": 4,
     "required_positions": ["opening", "early", "middle", "ending"],
     "require_source_asset_review": true,
+    "require_overlapping_crop_review": true,
+    "overlap_fraction": 0.25,
+    "minimum_crops_per_asset": 3,
     "required_verdict": "PASS",
     "forbidden_findings": [
       "extra limb", "duplicated limb", "merged figure", "melted anatomy",

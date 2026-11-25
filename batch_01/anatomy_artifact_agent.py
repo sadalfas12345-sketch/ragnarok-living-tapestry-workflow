@@ -26,6 +26,7 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
     findings: list[dict[str, str]] = []
     samples: list[dict[str, Any]] = []
     asset_reviews: list[dict[str, Any]] = []
+    crop_reviews: list[dict[str, Any]] = []
 
     if not audit_path.exists():
         return {
@@ -38,6 +39,7 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
         audit = json.loads(audit_path.read_text(encoding="utf-8"))
         samples = list(audit.get("samples", []))
         asset_reviews = list(audit.get("asset_reviews", []))
+        crop_reviews = list(audit.get("crop_reviews", []))
     except Exception as exc:
         return {
             "reviewer": "anatomy_artifact_agent",
@@ -80,6 +82,23 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
             actual_hash = hashlib.sha256(asset.read_bytes()).hexdigest()
             if str(item.get("sha256", "")).lower() != actual_hash:
                 findings.append({"type": "source_asset_hash_mismatch", "asset": asset.name, "message": "review evidence does not match current artwork"})
+        if policy.get("require_overlapping_crop_review", True):
+            for asset in assets:
+                crops = [item for item in crop_reviews if str(item.get("asset")) == asset.name]
+                if len(crops) < int(policy.get("minimum_crops_per_asset", 3)):
+                    findings.append({"type": "insufficient_overlapping_crop_reviews", "asset": asset.name, "message": f"{len(crops)} reviews"})
+                    continue
+                ordered_crops = sorted(crops, key=lambda item: float(item.get("x_start", 2)))
+                if float(ordered_crops[0].get("x_start", 2)) > 0.001 or float(ordered_crops[-1].get("x_end", -1)) < 0.999:
+                    findings.append({"type": "crop_review_does_not_cover_full_asset", "asset": asset.name})
+                for previous, current in zip(ordered_crops, ordered_crops[1:]):
+                    if float(current.get("x_start", 2)) >= float(previous.get("x_end", -1)):
+                        findings.append({"type": "crop_reviews_do_not_overlap", "asset": asset.name})
+                for crop in ordered_crops:
+                    if str(crop.get("status", "")).upper() != str(policy.get("required_verdict", "PASS")) or crop.get("boundary_reviewed") is not True:
+                        findings.append({"type": "crop_review_not_pass", "asset": asset.name, "crop": crop.get("crop_id", "unknown")})
+                    if str(crop.get("sha256", "")).lower() != hashlib.sha256(asset.read_bytes()).hexdigest():
+                        findings.append({"type": "crop_review_hash_mismatch", "asset": asset.name, "crop": crop.get("crop_id", "unknown")})
 
     return {
         "reviewer": "anatomy_artifact_agent",
@@ -87,5 +106,6 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
         "findings": findings,
         "samples": samples,
         "asset_reviews": asset_reviews,
+        "crop_reviews": crop_reviews,
         "audit_path": str(audit_path),
     }
