@@ -174,7 +174,7 @@
     "anti_cartoon_gate": {
       "enabled": true,
       "hard_gate": true,
-      "required_realism_terms_any": ["painterly", "oil painting", "fresco", "relief", "mosaic", "tapestry", "engraving", "woodblock", "manuscript", "tempera", "carving", "museum-quality", "restrained realism"],
+      "required_realism_terms_any": ["painterly", "oil painting", "fresco", "relief", "mosaic", "tapestry", "engraving", "woodblock", "manuscript", "tempera", "carving", "museum-quality", "restrained realism", "greek tragic stage painting"],
       "required_negative_terms": ["no cartoon", "no cartoony", "no comic-book", "no glossy fantasy", "no plastic faces", "no toy-like characters"],
       "failure_message": "art direction must specify a culturally grounded fine-art medium and explicitly reject cartoon or toy-like rendering"
     }
@@ -204,7 +204,7 @@
     "dedupe_repeated_terms": true,
     "dedupe_terms": ["mythology", "legend", "tradition", "folklore", "historical account", "epic"],
     "ordinary_duplicate_words": "review_only",
-    "recognized_markers": ["mythology", "myth", "mythic", "legend", "tradition", "tale", "story", "storytellers", "century", "historical account", "epic"]
+    "recognized_markers": ["mythology", "myth", "mythic", "legend", "tradition", "tale", "story", "storytellers", "tragedy", "century", "historical account", "epic"]
   },
   "rendered_caption_text": {
     "reject_mojibake": true,
@@ -295,6 +295,14 @@
       "max_same_scene_proper_noun_phrase_occurrences": 1,
       "check_intro_descriptor_repetition": true,
       "failure_message": "a character or place descriptor is repeated in the same scene; rewrite the second mention naturally"
+    },
+    "motivation_gate": {
+      "enabled": true,
+      "hard_gate": true,
+      "required_fields": ["goal", "obstacle", "stakes"],
+      "minimum_words_per_field": 3,
+      "forbid_vague_values": ["something", "things", "because", "for some reason", "the story continues"],
+      "failure_message": "each scene must make the acting character's goal, obstacle, and stakes explicit"
     },
     "fail_on_findings": true,
     "smooth_safe_gate_insertions_before_tts": true

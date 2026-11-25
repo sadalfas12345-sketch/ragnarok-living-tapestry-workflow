@@ -1,0 +1,29 @@
+{
+  "episode": "38_antigone",
+  "reviewer": "codex_vision_anatomy_review",
+  "status": "PASS",
+  "audited_samples": 18,
+  "sampling": "opening, middle, and ending samples for S01-S06",
+  "findings": [],
+  "samples": [
+    {"scene": "S01", "position": "opening", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S01", "position": "middle", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S01", "position": "ending", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S02", "position": "opening", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S02", "position": "middle", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S02", "position": "ending", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S03", "position": "opening", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S03", "position": "middle", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S03", "position": "ending", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S04", "position": "opening", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S04", "position": "middle", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S04", "position": "ending", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S05", "position": "opening", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S05", "position": "middle", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S05", "position": "ending", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S06", "position": "opening", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S06", "position": "middle", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."},
+    {"scene": "S06", "position": "ending", "verdict": "PASS", "notes": "No malformed anatomy or visual artifact."}
+  ],
+  "note": "All labeled samples were inspected for malformed anatomy, mutant-looking bodies or faces, black frames, and obvious visual artifacts. None were found."
+}

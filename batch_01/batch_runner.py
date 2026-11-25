@@ -446,6 +446,20 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
             for phrase in specificity.get("forbidden_vague_phrases", []):
                 if str(phrase).casefold() in lower_caption:
                     errors.append(f"scene {i} script contains vague wording: {phrase!r}")
+        motivation_policy = FEEDBACK_POLICY.get("wording_review", {}).get("motivation_gate", {})
+        if motivation_policy.get("enabled", True) and motivation_policy.get("hard_gate", True):
+            motivation = scene.get("motivation")
+            if not isinstance(motivation, dict):
+                errors.append(f"scene {i} is missing motivation fields")
+            else:
+                minimum_words = int(motivation_policy.get("minimum_words_per_field", 3))
+                vague_values = [str(value).casefold() for value in motivation_policy.get("forbid_vague_values", [])]
+                for field in motivation_policy.get("required_fields", ["goal", "obstacle", "stakes"]):
+                    value = str(motivation.get(field, "")).strip()
+                    if len(value.split()) < minimum_words:
+                        errors.append(f"scene {i} motivation.{field} is too short")
+                    if any(term in value.casefold() for term in vague_values):
+                        errors.append(f"scene {i} motivation.{field} is vague")
     si = spec.get("source_integrity", {})
     if not si.get("classification") or not si.get("research_status"):
         errors.append("source_integrity must include classification and research_status")

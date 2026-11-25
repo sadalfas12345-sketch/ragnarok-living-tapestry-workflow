@@ -28,7 +28,7 @@ COMMON_NON_NAMES = {
     "Greek", "Egyptian", "Maya", "Kiche", "K’iche’", "Athenian", "Cretan", "Bronze",
     "Age", "Mesopotamian", "Japanese", "Indian", "Chinese", "Roman", "English",
     "Irish", "Where", "Seasons", "Still", "Her", "One", "Help", "Death",
-    "Epic", "Together", "Cedar", "Forest", "Days", "Terrified", "Even",
+    "Epic", "Together", "Cedar", "Forest", "Days", "Terrified", "Even", "His", "Neither", "Creon's", "Without",
 }
 
 

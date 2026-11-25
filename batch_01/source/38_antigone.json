@@ -1,0 +1,318 @@
+{
+  "schema_version": "living_tapestry_story_v1",
+  "episode_number": 38,
+  "slug": "38_antigone",
+  "title": "Antigone: The Sister Who Defied a King",
+  "series": "Living Tapestries — The World’s Great Stories",
+  "genre": "ancient Greek tragedy",
+  "historical_period": "Traditional setting of the named narrative; avoid unverified precision",
+  "civilization": "ancient Greek tragedy",
+  "source_integrity": {
+    "primary_source_or_tradition": "Sophocles Antigone, original literary retelling",
+    "classification": "literary_retelling_or_traditional_legend",
+    "narration_style": "Original expressive retelling. Distinguish folklore, legend, literary fiction, and documented history; no invented events presented as verified history.",
+    "translation_policy": "New original paraphrase; do not reproduce copyrighted modern translations",
+    "research_status": "editorial_outline_needs_source_review_before_publication"
+  },
+  "historical_constraints": [
+    "Present this as a literary narrative or folklore, not established historical fact.",
+    "Respect variant traditions and avoid claiming a single definitive telling.",
+    "Avoid anachronistic clothing, materials, architecture and technology."
+  ],
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "language": "en"
+  },
+  "runtime": {
+    "target_seconds_range": [
+      85,
+      135
+    ],
+    "timing_authority": "derive_from_final_narration_waveform",
+    "no_hardcoded_scene_times": true,
+    "allow_longer_for_natural_delivery": true,
+    "voice_speed_wpm_target": [
+      125,
+      145
+    ]
+  },
+  "image_reference": {
+    "path": "references/style_board.png",
+    "status": "GENERATE_BEFORE_RENDER",
+    "style_board_prompt": "Create one cohesive 3:1 horizontal six-beat visual development frieze for Antigone: The Sister Who Defied a King. Art direction: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters precisely locked: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. Tell a connected emotional progression across six narrative moments with readable facial expression, hands, silhouettes and physical consequences. Each scene is three sequential visual developments on one physical painted surface, museum-quality, accurate material culture, spacious lower 20% caption-safe band, no lines separating panels, no text, no watermarks, no generic fantasy poster, no photoreal actors.",
+    "art_style": "Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone",
+    "palette": "derive from this story’s named art tradition, not other episodes",
+    "character_design_lock": [
+      "Antigone young adult in dark peplos",
+      "Ismene in pale linen",
+      "Creon older crowned ruler"
+    ],
+    "material_consistency": "all six scenes must appear painted on the same historically and culturally appropriate physical medium",
+    "do_not_reuse_ragnarok_norse_tapestry": true
+  },
+  "audio": {
+    "narrator": "one expressive storyteller with restrained emotional variation; natural human cadence, do not melodramatically shout",
+    "soundtrack_direction": "aulos reed, low lyre, distant chorus",
+    "music_licensing": {
+      "commercial_use": true,
+      "attribution_required": false,
+      "allow_attribution_if_explicitly_approved": true,
+      "source_files": "verify current track licensing and retain evidence before production",
+      "track_titles": "unassigned; select licensed tracks during production"
+    },
+    "dialogue": false,
+    "mix": {
+      "duck_music_on_speech": true,
+      "target_lufs": -14,
+      "max_true_peak_db": -1,
+      "music_relative_to_narration_db_start": -18,
+      "check_phone_speaker": true
+    }
+  },
+  "workflow": {
+    "renderer_repo": "https://github.com/sadalfas12345-sketch/ragnarok-living-tapestry-workflow",
+    "manifest_role": "authoritative_story_and_visual_intent",
+    "adapter_required": "read captions directly from scenes[].caption; do not rely on separate audio/Sxx.txt files",
+    "steps": [
+      "validate story JSON and factual claims",
+      "generate one style board first",
+      "generate six seamless horizontal panoramas H01–H06; adapt P01–P06 if existing legacy adapter still expects portrait paths",
+      "generate narration sentence by sentence from caption",
+      "compose one timeline.json from measured narration and explicit pauses",
+      "word-align captions to speech, no overlaps",
+      "render rightward panorama camera moves from the same timeline",
+      "build licensed soundtrack and SFX from same timeline",
+      "run audio-visual QA and deliver MP4, SRT, manifest"
+    ],
+    "outputs": [
+      "final_vertical_1080x1920.mp4",
+      "Captions_final.srt",
+      "timeline.json",
+      "music_sources.json",
+      "QC_report.md",
+      "references/style_board.png"
+    ],
+    "narration_source": "scenes[].caption (opening_hook metadata; do not narrate twice)"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "asset": "assets/P01.png",
+      "caption": "What if burying your brother meant choosing death? A tragedy by Sophocles, the Athenian playwright, follows Antigone, a sister who defies the king, after a civil war. One brother is praised as a defender of the city; the other is branded a traitor. Creon, the ruler who forbids burial, leaves the traitor's body exposed outside Thebes.",
+      "intended_emotion": "shock and indignation",
+      "emotional_turn": "The scene moves from battlefield after fighting to Antigone staring across dust, creating shock and indignation.",
+      "motivation": {"goal": "Antigone wants her brother buried with dignity", "obstacle": "Creon brands him a traitor and forbids the rites", "stakes": "her family loses its final duty and she risks death by resisting"},
+      "visual_evidence": "battlefield after fighting; then uncovered brother beyond city wall; finally Antigone staring across dust. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Uncovered brother beyond city wall",
+      "required_visuals": [
+        "battlefield after fighting",
+        "uncovered brother beyond city wall",
+        "Antigone staring across dust"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Antigone: The Sister Who Defied a King. Art tradition: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters must match the style board exactly: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. LEFT scene beat: battlefield after fighting. CENTER scene beat: uncovered brother beyond city wall. RIGHT scene beat: Antigone staring across dust. Emotional effect: shock and indignation. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "begin close on the intimate human detail, then reveal its consequence rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "mystery_and_hook",
+        "instrumentation": "aulos reed, low lyre, distant chorus",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "ambient_place",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.45
+    },
+    {
+      "id": "S02",
+      "asset": "assets/P02.png",
+      "caption": "Ismene warns her that defying the decree means death. But Antigone believes a brother does not stop being family because a king calls him an enemy. Without burial rites, the dead are denied the rest their family owes them, so she goes alone, carrying dust to bury him in secret.",
+      "intended_emotion": "fear becoming resolve",
+      "emotional_turn": "The scene moves from sisters arguing in shadow to palm releasing earth over body, creating fear becoming resolve.",
+      "motivation": {"goal": "Antigone wants to perform the burial herself", "obstacle": "Ismene fears the king's punishment and refuses to join her", "stakes": "Antigone must choose between safety and loyalty to her dead brother"},
+      "visual_evidence": "sisters arguing in shadow; then Antigone leaving at night; finally palm releasing earth over body. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Antigone leaving at night",
+      "required_visuals": [
+        "sisters arguing in shadow",
+        "Antigone leaving at night",
+        "palm releasing earth over body"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Antigone: The Sister Who Defied a King. Art tradition: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters must match the style board exactly: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. LEFT scene beat: sisters arguing in shadow. CENTER scene beat: Antigone leaving at night. RIGHT scene beat: palm releasing earth over body. Emotional effect: fear becoming resolve. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "follow the decision through three connected spaces rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "rising_conflict",
+        "instrumentation": "aulos reed, low lyre, distant chorus",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "gesture_detail",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.65
+    },
+    {
+      "id": "S03",
+      "asset": "assets/P03.png",
+      "caption": "The guards catch her scattering dust over the body. Before Creon, she admits what she has done. He believes sparing a traitor would weaken his rule; she believes obeying him would betray her family. Neither will yield.",
+      "intended_emotion": "defiance and fear",
+      "emotional_turn": "The scene moves from guard seizing Antigone to Creon pointing toward prison, creating defiance against power.",
+      "motivation": {"goal": "Antigone wants to defend the burial as a family duty", "obstacle": "Creon treats her act as rebellion against his new rule", "stakes": "neither can retreat without surrendering the principle that guides them"},
+      "visual_evidence": "guard seizing Antigone; then throne room confrontation; finally Creon pointing toward prison. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Throne room confrontation",
+      "required_visuals": [
+        "guard seizing Antigone",
+        "throne room confrontation",
+        "Creon pointing toward prison"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Antigone: The Sister Who Defied a King. Art tradition: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters must match the style board exactly: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. LEFT scene beat: guard seizing Antigone. CENTER scene beat: throne room confrontation. RIGHT scene beat: Creon pointing toward prison. Emotional effect: defiance against power. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "move from close evidence into the wider consequence rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "moral_decision",
+        "instrumentation": "aulos reed, low lyre, distant chorus",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "texture_environment",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.75
+    },
+    {
+      "id": "S04",
+      "asset": "assets/P04.png",
+      "caption": "Creon orders her sealed alive inside a rocky tomb. His son Haemon pleads for mercy, warning that the city will turn against a king who punishes devotion. Creon hears only disobedience, and the last chance to reverse the sentence slips away.",
+      "intended_emotion": "hopelessness and grief",
+      "emotional_turn": "The scene moves from Haemon reaching toward father to stone opening sealed, creating hopelessness.",
+      "motivation": {"goal": "Haemon wants Creon to spare Antigone", "obstacle": "Creon mistakes his warning for disobedience", "stakes": "the tomb will become a sentence no apology can undo"},
+      "visual_evidence": "Haemon reaching toward father; then Creon turning aside; finally stone opening sealed. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Creon turning aside",
+      "required_visuals": [
+        "Haemon reaching toward father",
+        "Creon turning aside",
+        "stone opening sealed"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Antigone: The Sister Who Defied a King. Art tradition: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters must match the style board exactly: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. LEFT scene beat: Haemon reaching toward father. CENTER scene beat: Creon turning aside. RIGHT scene beat: stone opening sealed. Emotional effect: hopelessness and grief. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "linger on the irreversible action before continuing rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "consequences",
+        "instrumentation": "aulos reed, low lyre, distant chorus",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "critical_event",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 0.8
+    },
+    {
+      "id": "S05",
+      "asset": "assets/P05.png",
+      "caption": "Only when Tiresias warns that the gods reject Creon's decree does he relent. He hurries toward the tomb, but Antigone is already dead. Haemon dies beside her, and grief follows him back into the palace.",
+      "intended_emotion": "dread and irreversible loss",
+      "emotional_turn": "The scene moves from prophet before king to empty overturned lamp by tomb, creating dread and irreversible loss.",
+      "motivation": {"goal": "Creon wants to reverse the punishment before it is too late", "obstacle": "Tiresias's warning comes after Antigone has already died", "stakes": "his delay destroys Haemon as well as the woman he condemned"},
+      "visual_evidence": "prophet before king; then Creon running with torch; finally empty overturned lamp by tomb. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Creon running with torch",
+      "required_visuals": [
+        "prophet before king",
+        "Creon running with torch",
+        "empty overturned lamp by tomb"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Antigone: The Sister Who Defied a King. Art tradition: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters must match the style board exactly: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. LEFT scene beat: prophet before king. CENTER scene beat: Creon running with torch. RIGHT scene beat: empty overturned lamp by tomb. Emotional effect: dread and irreversible loss. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "hold the emotional turning point at the central section then move rightward; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "climax",
+        "instrumentation": "aulos reed, low lyre, distant chorus",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "dramatic_hit",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.05
+    },
+    {
+      "id": "S06",
+      "asset": "assets/P06.png",
+      "caption": "Creon survives with the power he defended and the family his decree destroyed. Antigone could not defeat the king, but his victory leaves him alone with the cost of being obeyed.",
+      "intended_emotion": "moral devastation",
+      "emotional_turn": "The scene moves from vacant royal chair to dawn over silent Thebes, creating moral devastation.",
+      "motivation": {"goal": "Creon wants to preserve the authority he defended", "obstacle": "his decree has destroyed his own family and emptied his victory", "stakes": "he must live with the human cost of being obeyed"},
+      "visual_evidence": "vacant royal chair; then Creon bowed on palace steps; finally dawn over silent Thebes. Emphasize hands, posture, gaze and visible consequences rather than generic atmosphere.",
+      "beat_title": "Creon bowed on palace steps",
+      "required_visuals": [
+        "vacant royal chair",
+        "Creon bowed on palace steps",
+        "dawn over silent Thebes"
+      ],
+      "image_prompt": "Generate one seamless painted horizontal 3:1 panorama at least 3000x1800, composed for smooth rightward motion of a vertical 1080x1920 crop. Story: Antigone: The Sister Who Defied a King. Art tradition: Attic red-figure vase motifs fused with austere Greek tragic stage painting, charcoal, cinnabar, limestone. Characters must match the style board exactly: Antigone young adult in dark peplos; Ismene in pale linen; Creon older crowned ruler. LEFT scene beat: vacant royal chair. CENTER scene beat: Creon bowed on palace steps. RIGHT scene beat: dawn over silent Thebes. Emotional effect: moral devastation. Make all three physically and temporally readable, with coherent space but distinct actions; expressive hands, faces and body language. Single unified painted surface with no panel seams, no generic fantasy poster, no cartoons, no written titles, no modern objects, no watermark. Leave lower 20 percent visually quiet for captions.",
+      "camera": {
+        "description": "pull through the final human detail to a wide closing tableau; continuous horizontal panorama with no snap resets",
+        "style": "continuous_panorama_when_possible",
+        "max_zoom_fraction": 0.12,
+        "no_shake": true,
+        "caption_safe_area": {
+          "bottom_percent": 20
+        }
+      },
+      "music": {
+        "cue": "resolution",
+        "instrumentation": "aulos reed, low lyre, distant chorus",
+        "voice_priority": true,
+        "duck_on_speech": true
+      },
+      "sfx": {
+        "cue": "fade_to_atmosphere",
+        "narration_masking_forbidden": true
+      },
+      "pause_after_seconds_hint": 1.5
+    }
+  ],
+  "opening_hook": "What if burying your brother became a crime punishable by death?"
+}
