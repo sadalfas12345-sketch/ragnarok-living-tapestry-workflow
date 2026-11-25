@@ -29,6 +29,7 @@ COMMON_NON_NAMES = {
     "Age", "Mesopotamian", "Japanese", "Indian", "Chinese", "Roman", "English",
     "Irish", "Where", "Seasons", "Still", "Her", "One", "Help", "Death",
     "Epic", "Together", "Cedar", "Forest", "Days", "Terrified", "Even", "His", "Neither", "Creon's", "Without",
+    "Arabian", "Nights", "Night", "Each", "Over",
 }
 
 
@@ -110,7 +111,8 @@ def audit_text(text: str) -> list[dict[str, str]]:
     known = _canonical_known_names()
     findings: list[dict[str, str]] = []
     for candidate in find_name_candidates(text):
-        if candidate.casefold() in known or candidate.rstrip("s").casefold() in known:
+        normalized = re.sub(r"['’]s$", "", candidate, flags=re.IGNORECASE)
+        if candidate.casefold() in known or normalized.casefold() in known or candidate.rstrip("s").casefold() in known:
             continue
         match = re.search(rf"\b{re.escape(candidate)}\b", text, re.IGNORECASE)
         if match:

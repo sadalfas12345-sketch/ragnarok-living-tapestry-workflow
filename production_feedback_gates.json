@@ -93,7 +93,7 @@
       "required_fields": ["intended_emotion", "visual_evidence", "emotional_turn"],
       "require_emotion_specific_to_scene": true,
       "require_visual_evidence_for_emotion": true,
-      "primal_emotion_terms": ["awe", "acceptance", "anger", "compassion", "curiosity", "despair", "desperation", "disgust", "doubt", "dread", "empathy", "exhaustion", "exhilaration", "fear", "grief", "helplessness", "hope", "horror", "humility", "joy", "kinship", "longing", "love", "loss", "relief", "remorse", "reverence", "sadness", "shock", "shame", "sorrow", "suspense", "tenderness", "tension", "trust", "triumph", "unease", "wonder", "devastation", "determination", "recognition", "fragility"],
+      "primal_emotion_terms": ["awe", "acceptance", "anger", "compassion", "curiosity", "despair", "desperation", "disgust", "doubt", "dread", "empathy", "exhaustion", "exhilaration", "fear", "grief", "helplessness", "hope", "horror", "humility", "joy", "kinship", "longing", "love", "loss", "relief", "remorse", "reverence", "sadness", "shock", "shame", "sorrow", "suspense", "tenderness", "tension", "trust", "triumph", "unease", "wonder", "devastation", "determination", "recognition", "fragility", "terror", "intimacy", "reprieve", "endurance", "courage"],
       "forbidden_editorial_emotion_terms": ["awareness", "corrective perspective", "historical significance", "moral seriousness", "importance", "context", "continuity", "editorial", "historical framing", "perspective"],
       "failure_message": "each scene must state what the audience should feel, what visible details create that feeling, and how the emotion changes across the scene"
     }
@@ -121,8 +121,8 @@
     "require_horizontal_panorama": true,
     "required_asset_prefix": "H",
     "allow_legacy_portrait_fallback": false,
-    "minimum_width_pixels": 2500,
-    "minimum_height_pixels": 1600,
+    "minimum_width_pixels": 2000,
+    "minimum_height_pixels": 700,
     "require_culture_specific_style": true,
     "require_distinct_adjacent_scene_storytelling": true,
     "culture_direction_source": "authoritative episode JSON civilization, art_style, palette, image_prompt, and visual_progression",

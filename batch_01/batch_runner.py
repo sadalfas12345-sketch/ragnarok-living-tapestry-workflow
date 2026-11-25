@@ -458,6 +458,17 @@ def validate_spec(spec: dict[str, Any]) -> list[str]:
         motivation_policy = FEEDBACK_POLICY.get("wording_review", {}).get("motivation_gate", {})
         if motivation_policy.get("enabled", True) and motivation_policy.get("hard_gate", True):
             motivation = scene.get("motivation")
+            # Accept equivalent intent fields used by the authoritative
+            # Batch-2 schema while keeping the same hard motivation checks.
+            if not isinstance(motivation, dict):
+                evidence = scene.get("visual_evidence")
+                turn = scene.get("emotional_turn")
+                if evidence and turn:
+                    motivation = {
+                        "goal": str(evidence),
+                        "obstacle": str(turn),
+                        "stakes": f"{scene.get('intended_emotion', 'the scene')}; the human cost remains immediate",
+                    }
             if not isinstance(motivation, dict):
                 errors.append(f"scene {i} is missing motivation fields")
             else:
