@@ -20,6 +20,7 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
     policy = POLICY.get("anatomy_review", {})
     audit_path = epdir / "visual_gates_audit" / "anatomy_review.json"
     required = int(policy.get("required_samples_per_scene", 3))
+    required_positions = tuple(policy.get("required_positions", ["opening", "middle", "ending"]))
     expected = {str(scene.get("id")) for scene in scenes}
     findings: list[dict[str, str]] = []
     samples: list[dict[str, Any]] = []
@@ -55,6 +56,10 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
         count = len(by_scene.get(scene_id, []))
         if count < required:
             findings.append({"type": "insufficient_anatomy_samples", "scene": scene_id, "message": f"{count}/{required} samples"})
+        positions = {str(sample.get("position", "")) for sample in by_scene.get(scene_id, [])}
+        for position in required_positions:
+            if position not in positions:
+                findings.append({"type": "missing_required_anatomy_position", "scene": scene_id, "message": position})
 
     return {
         "reviewer": "anatomy_artifact_agent",

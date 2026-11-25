@@ -375,7 +375,8 @@
     "enabled": true,
     "reviewer": "anatomy_artifact_agent",
     "hard_gate": true,
-    "required_samples_per_scene": 3,
+    "required_samples_per_scene": 4,
+    "required_positions": ["opening", "early", "middle", "ending"],
     "required_verdict": "PASS",
     "forbidden_findings": [
       "extra limb", "duplicated limb", "merged figure", "melted anatomy",
