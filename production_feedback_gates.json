@@ -377,6 +377,7 @@
     "hard_gate": true,
     "required_samples_per_scene": 4,
     "required_positions": ["opening", "early", "middle", "ending"],
+    "require_source_asset_review": true,
     "required_verdict": "PASS",
     "forbidden_findings": [
       "extra limb", "duplicated limb", "merged figure", "melted anatomy",

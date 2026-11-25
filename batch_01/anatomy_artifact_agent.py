@@ -8,6 +8,7 @@ visual reviewer. Missing or incomplete review fails closed.
 from __future__ import annotations
 
 import json
+import hashlib
 from pathlib import Path
 from typing import Any
 
@@ -24,6 +25,7 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
     expected = {str(scene.get("id")) for scene in scenes}
     findings: list[dict[str, str]] = []
     samples: list[dict[str, Any]] = []
+    asset_reviews: list[dict[str, Any]] = []
 
     if not audit_path.exists():
         return {
@@ -35,6 +37,7 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
     try:
         audit = json.loads(audit_path.read_text(encoding="utf-8"))
         samples = list(audit.get("samples", []))
+        asset_reviews = list(audit.get("asset_reviews", []))
     except Exception as exc:
         return {
             "reviewer": "anatomy_artifact_agent",
@@ -61,10 +64,28 @@ def inspect_episode(epdir: Path, scenes: list[dict[str, Any]]) -> dict[str, Any]
             if position not in positions:
                 findings.append({"type": "missing_required_anatomy_position", "scene": scene_id, "message": position})
 
+    if policy.get("require_source_asset_review", True):
+        asset_dir = epdir / "assets"
+        assets = sorted(asset_dir.glob("H*.png"))
+        reviewed = {str(item.get("asset")): item for item in asset_reviews}
+        if len(assets) < len(expected):
+            findings.append({"type": "missing_source_assets", "message": f"{len(assets)}/{len(expected)} artwork assets found"})
+        for asset in assets:
+            item = reviewed.get(asset.name)
+            if not item:
+                findings.append({"type": "missing_source_asset_review", "asset": asset.name, "message": "full artwork review is required"})
+                continue
+            if str(item.get("status", "")).upper() != str(policy.get("required_verdict", "PASS")):
+                findings.append({"type": "source_asset_verdict_not_pass", "asset": asset.name, "message": str(item.get("status", ""))})
+            actual_hash = hashlib.sha256(asset.read_bytes()).hexdigest()
+            if str(item.get("sha256", "")).lower() != actual_hash:
+                findings.append({"type": "source_asset_hash_mismatch", "asset": asset.name, "message": "review evidence does not match current artwork"})
+
     return {
         "reviewer": "anatomy_artifact_agent",
         "status": "FAIL" if findings else "PASS",
         "findings": findings,
         "samples": samples,
+        "asset_reviews": asset_reviews,
         "audit_path": str(audit_path),
     }
